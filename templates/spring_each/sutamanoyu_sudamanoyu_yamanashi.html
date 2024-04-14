@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">須玉の湯（すだまのゆ）</h2><h3 class="icon"> 所在地：山梨県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2363_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">巨大な断層帯が交差する地下150mから豊富に湧出する温泉、須玉の湯。八ヶ岳の裾野にたたずむ「若神楼」は、唯一、須玉の湯を堪能できる温泉宿。「わかみろう」と読む。温泉は宿の中では「若神楼温泉」という名が付けられている。八ヶ岳の火山活動によって形成された七里ヶ岩高台に建つ一軒宿で、宿が掲げる「休養・保養・療養」の三養がそろう良好な環境に恵まれている立地。富士山を望み、深い緑と清らかな空気に包まれた環境でゆっくりと温泉に浸かり、温泉の効能を存分に受けることができる。宿泊者は、甲州名物である馬刺しや、山梨名物のほうとう、季節によって変わる旬の食材を使った料理を食べることもできる。
+無色透明のナトリウム－炭酸水素・塩化物泉。神経痛、筋肉痛、肩こり、打ち身、慢性消化器病、痔疾、冷え性。疲労回復などの効果があるとされている。また、温泉圧や溶存物質による温熱効果や、老廃物などを体外に排出し疲労をとる静水圧効果、成分からの医学的効果なども期待できるとされている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="juumaisouonsen_juumaisou_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="juumaisouonsen_juumaisou_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.juumaisouonsen_juumaisou_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2359_0001.jpg"/></a><p class="feature">十枚荘温泉（じゅうまいそう）<br>類似度:1.990</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kiyosatoonsen_kiyosato_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="kiyosatoonsen_kiyosato_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.kiyosatoonsen_kiyosato_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1578_0001.jpg"/></a><p class="feature">清里温泉（きよさと）<br>類似度:1.915</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="iwaiyumotoonsen_iwaiyumoto_chiba">{% csrf_token %}<input name="id2" type="hidden" value="iwaiyumotoonsen_iwaiyumoto_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.iwaiyumotoonsen_iwaiyumoto_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1893_0001.jpg"/></a><p class="feature">岩井湯元温泉（いわいゆもと）<br>類似度:1.892</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sarukawaonsen_sarukawa_gunma">{% csrf_token %}<input name="id2" type="hidden" value="sarukawaonsen_sarukawa_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.sarukawaonsen_sarukawa_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2071_0001.jpg"/></a><p class="feature">猿川温泉（さるかわ）<br>類似度:1.861</br></p></div></form>
+{% endblock content %}

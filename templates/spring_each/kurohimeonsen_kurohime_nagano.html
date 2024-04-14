@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">黒姫温泉（くろひめ）</h2><h3 class="icon"> 所在地：長野県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1519_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、関節痛、疲労、婦人病、冷え性、皮膚病、痔疾など
+</td></tr></table></div><div class="con1"><p class="feature">黒姫山（くろひめやま）は、長野県上水内郡信濃町にある標高約2053mの成層火山。南東方向より見た整った姿から郷土富士として「信濃富士」とも呼ばれている。 東山麓は黒姫高原として観光地化しており、黒姫高原スノーパークがその面積の大半を占めるが、旬の花々を楽しめることでも有名だ。例年5月中旬からは菜の花、7月中旬からは雪アジサイ、7月下旬からはダリア、9月上旬からはコスモス、そして10月上旬からは紅葉と四季折々の美しい自然に包まれる。 黒姫温泉は黒姫高原スノーパークのそばに位置する温泉で、その広大な国有林に湧出する鉱泉を引湯している。黒姫駅からは車で約10分、信濃町ICからも約10分とアクセスも良好。周辺には野尻湖や牧場もあるので行動範囲が広がりそうだ。
+大浴場の大きな窓からは眼下に黒姫高原、正面には日本百名山の妙高山を見ることができる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shikaribetsukoazeonsen_shikaribetsukohan_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="shikaribetsukoazeonsen_shikaribetsukohan_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.shikaribetsukoazeonsen_shikaribetsukohan_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0659_0001.jpg"/></a><p class="feature">然別湖畔温泉（しかりべつこはん）<br>類似度:2.558</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenkeseonsen_amagase_ooita">{% csrf_token %}<input name="id2" type="hidden" value="tenkeseonsen_amagase_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.tenkeseonsen_amagase_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0010_0001.jpg"/></a><p class="feature">天ヶ瀬温泉（あまがせ）<br>類似度:2.550</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="uharaonsen_ubara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="uharaonsen_ubara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.uharaonsen_ubara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0195_0001.jpg"/></a><p class="feature">鵜原温泉（うばら）<br>類似度:2.546</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ajikesawakougenonsen_ajigasawakougen_aomori">{% csrf_token %}<input name="id2" type="hidden" value="ajikesawakougenonsen_ajigasawakougen_aomori"/><div class="con2"><a href="../spring_each/" onclick="document.ajikesawakougenonsen_ajigasawakougen_aomori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1062_0001.jpg"/></a><p class="feature">鯵ヶ沢高原温泉（あじがさわこうげん）<br>類似度:2.540</br></p></div></form>
+{% endblock content %}

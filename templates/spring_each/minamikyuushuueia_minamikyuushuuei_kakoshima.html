@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">南九州頴娃（みなみきゅうしゅう・えい）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1720_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>にごり、にごり（褐色）、神経痛、筋肉痛、関節痛、婦人病、冷え性、皮膚病
+</td></tr></table></div><div class="con1"><p class="feature">頴娃温泉は鹿児島県南九州市頴娃町にある温泉。平成６年の開業から６年後に入浴者数100万人を達成したという人気の温泉。近くには頴娃城があり、別名獅子城または野首城ともいわれる。1420年から８代・170年にわたって頴娃を治めていた伴姓頴娃氏の居城の跡と伝えられている。現在も当時の城壁や空堀・土塁などの跡が残っており、戦国時代末期の山城の構造を知る上で貴重な資料となっている。入り江の岩礁が突き出た所に鎮座する釜蓋神社は、厄除け・開運にもご利益がある話題のパワースポット。釜の蓋を頭にのせ、鳥居から拝殿まで落とさずに行くことができれば願いが叶うとも言われている。
+頴娃温泉の泉質はナトリウム炭酸水素塩泉、アルカリ性単純泉、塩化物泉。神経痛、筋肉痛、間節痛、打ち身、慢性消化器病、痔疾、冷え性、リウマチ、婦人病、疲労回復などに効能があるとされる。ほのかに薬草の匂いがする褐色の温泉は、慢性皮膚病にも効能があることで知られ、湯上がりは肌がツルツルになる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kokonoeonsensato_kujuu_ooita">{% csrf_token %}<input name="id2" type="hidden" value="kokonoeonsensato_kujuu_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.kokonoeonsensato_kujuu_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0197_0001.jpg"/></a><p class="feature">九重温泉郷（くじゅう）<br>類似度:2.806</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="arimaonsen_arima_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="arimaonsen_arima_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.arimaonsen_arima_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0016_0001.jpg"/></a><p class="feature">有馬温泉（ありま）<br>類似度:2.645</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="beppuonsensato_beppu_ooita">{% csrf_token %}<input name="id2" type="hidden" value="beppuonsensato_beppu_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.beppuonsensato_beppu_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1327_0001.jpg"/></a><p class="feature">別府温泉郷（べっぷ）<br>類似度:2.632</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kirishimaonsensato_kirishima_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="kirishimaonsensato_kirishima_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.kirishimaonsensato_kirishima_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0329_0001.jpg"/></a><p class="feature">霧島温泉郷（きりしま）<br>類似度:2.631</br></p></div></form>
+{% endblock content %}

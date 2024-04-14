@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">岩井温泉（いわい）</h2><h3 class="icon"> 所在地：鳥取県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0502_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">鳥取県と兵庫県の県境に連なる扇ノ山、氷ノ山山系の北北西の山麓にある温泉地。中国山地に源を発する清流・蒲生川沿いに3軒の旅館が建ち、温泉街を形成。穏やかで素朴な情緒が漂い、昭和48年には「国民保養温泉地」にも指定された。 約1200年の歴史を誇り、「湯かむり」という頭に手ぬぐいを乗せ柄杓で湯をかむるという珍しい風習が江戸時代から伝わる。この風習に欠かせないのが、「湯かむり唄」。 「岩井八景づくし」「芸題づくし」「忠臣蔵づくし」などの形式があり、いずれも数え歌で長いものでは100番までもあるとか。名調子にひかれていつまでも楽しく湯につかっていられることだろう。
+約1200年の歴史を誇る山陰最古の温泉。無色透明の湯は泉温約49.0℃で、施設に引くあいだに丁度良い温度になる。源泉数は1つで、湧出量は毎分約797Lと豊富。水で薄めることなく、源泉かけ流しでたっぷりの生の湯を楽しめる。入浴では神経痛、リウマチ、婦人科疾患などに効能があり、飲泉は慢性胃腸炎、痔疾にも良いとされる。「湯かぶり」という独特の風習で、長年にわたり大切に受け継がれている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="takaseonsen_takase_niigata">{% csrf_token %}<input name="id2" type="hidden" value="takaseonsen_takase_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.takaseonsen_takase_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0587_0001.jpg"/></a><p class="feature">高瀬温泉（たかせ）<br>類似度:1.300</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kawagoonsen_kawafuru_gunma">{% csrf_token %}<input name="id2" type="hidden" value="kawagoonsen_kawafuru_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.kawagoonsen_kawafuru_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0833_0001.jpg"/></a><p class="feature">川古温泉（かわふる）<br>類似度:1.272</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yamashiroonsen_1_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="yamashiroonsen_1_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.yamashiroonsen_1_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0143_0001.jpg"/></a><p class="feature">山代温泉（加賀温泉郷）（やましろ（かが））<br>類似度:1.261</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yamakawaonsen_yamakawa_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="yamakawaonsen_yamakawa_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.yamakawaonsen_yamakawa_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0907_0001.jpg"/></a><p class="feature">山川温泉（やまかわ）<br>類似度:1.253</br></p></div></form>
+{% endblock content %}

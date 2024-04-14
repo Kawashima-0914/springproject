@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">丹後温泉（たんご）</h2><h3 class="icon"> 所在地：京都府</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1008_0001.jpg"/><table><tr><th>効能</th><td>ラジウム泉
+</td></tr></table></div><div class="con1"><p class="feature">日本海に面した京丹後市（旧丹後町）、難読地名「間人（たいざ）」港の近くに佇む温泉地。間人港といえば、“究極の”と枕詞がつく高級松葉ガニ「間人ガニ」で知られる。数日停泊する沖合いカニ漁に対し、間人では地元漁協の小型船が近海に繰り出し、その日のうちに水揚げする「日帰り操業」を実践。緑色のタグ（識別票）が付けられた新鮮なカニだけが晴れて「間人ガニ」を名乗る事ができる。海が荒れる冬場は供給も不安定で、基本的には地元でしか食べられない幻のカニだ。もちろん冬のカニだけに留まらず、一年を通じて新鮮な海の幸に恵まれている。
+日帰り入浴もできる、天然湧出のナトリウム・カルシウム硫酸塩泉。神経痛、動脈硬化、肩こり、冷え性、ねんざ、やけど、皮膚病などさまざまな効能が期待できる。湯冷めしにくく、体があたたまった状態が長続きすることから、地元の常連客にも愛用されている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="esashionsen_esashi_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="esashionsen_esashi_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.esashionsen_esashi_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1863_0001.jpg"/></a><p class="feature">枝幸温泉（えさし）<br>類似度:2.151</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.035</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="suouooshimakatazoekehamaonsen_suouooshimakatasoigahama_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="suouooshimakatazoekehamaonsen_suouooshimakatasoigahama_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.suouooshimakatazoekehamaonsen_suouooshimakatasoigahama_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1068_0001.jpg"/></a><p class="feature">周防大島片添ヶ浜温泉（すおうおおしまかたそいがはま）<br>類似度:1.955</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ashizurionsensato_ashizuri_kouchi">{% csrf_token %}<input name="id2" type="hidden" value="ashizurionsensato_ashizuri_kouchi"/><div class="con2"><a href="../spring_each/" onclick="document.ashizurionsensato_ashizuri_kouchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0893_0001.jpg"/></a><p class="feature">あしずり温泉郷（あしずり）<br>類似度:1.938</br></p></div></form>
+{% endblock content %}

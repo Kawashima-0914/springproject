@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">上林温泉（かんばやし）</h2><h3 class="icon"> 所在地：長野県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0820_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">豊かな自然に囲まれた志賀高原の入口に位置する、湯田中渋温泉郷の最深部に佇む閑静な温泉地。標高約850mの高台にあり、北信五岳を望む景観が見事。 また、夏目漱石や志賀直哉、壺井栄ら多くの文人に愛された温泉地としても知られる。中でも壺井栄とはゆかりが深く、文部大臣賞を受賞した長編小説『母のない子と子のない母を。』を上林で3カ月にわたって書き上げたという。 代表作『二十四の瞳』のあとがきにも、「昨年『母のない子と子のない母を。』を書いた同じ家の同じ部屋（注・信州の山の宿）で、同じ向きに机を置いて、ペンをとった」とある。
+開湯は明治34年（1901年）で、「更科の佐助さん」と呼ばれた資産家・小林民作が上林の開発に乗り出したことに始まる。源泉は旧湯と新湯の2カ所。旧湯は地獄谷野猿公苑上流および周辺にあり、約2㎞にわたって引湯。新湯は野猿公苑下流500～600mの所から引湯している。ともに湯量は豊富で、87～67℃の高温泉。源泉のある野猿公苑までは遊歩道も整備されており、世界で唯一の温泉に浸かる野猿を見ながら、心和む散歩に出かけてみるのもおすすめだ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="takaseonsen_takase_niigata">{% csrf_token %}<input name="id2" type="hidden" value="takaseonsen_takase_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.takaseonsen_takase_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0587_0001.jpg"/></a><p class="feature">高瀬温泉（たかせ）<br>類似度:1.704</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tatsukuchionsen_tatsunokuchi_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="tatsukuchionsen_tatsunokuchi_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.tatsukuchionsen_tatsunokuchi_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0251_0001.jpg"/></a><p class="feature">辰口温泉（たつのくち）<br>類似度:1.699</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yudakawaonsen_yudagawa_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="yudakawaonsen_yudagawa_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.yudakawaonsen_yudagawa_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0854_0001.jpg"/></a><p class="feature">湯田川温泉（ゆだがわ）<br>類似度:1.697</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="souunkyouonsen_souunkyou_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="souunkyouonsen_souunkyou_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.souunkyouonsen_souunkyou_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0663_0001.jpg"/></a><p class="feature">層雲峡温泉（そううんきょう）<br>類似度:1.685</br></p></div></form>
+{% endblock content %}

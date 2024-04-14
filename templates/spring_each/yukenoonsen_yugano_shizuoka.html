@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯ヶ野温泉（ゆがの）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0459_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">アユ釣りの名所として知られる河津川畔に、昔ながらの温泉宿が並ぶいで湯の里。作家の川端康成が滞在し執筆活動にいそしんだ地として知られ、今なお文学の香りを色濃く残す。 川端の名作『伊豆の踊子』の舞台として登場し、抒情あふれる温泉街。また、湯ヶ野から天城に至る旧街道は別名「踊子ハイキングコース」。 道中には源頼朝ゆかりの小鍋神社や、河津川を望める町営の露天風呂などが点在している。
+7つの温泉が連なる河津温泉郷のひとつ。源泉温は46～54℃で、泉質は塩化物泉。神経痛や筋肉痛、慢性婦人病に効能があり、中でも肌がツルツルになる美肌の湯として女性を中心に人気が高い。川端康成の名作『伊豆の踊子』の舞台としても知られ、踊子が入ったとされる共同湯（地元の方のみ入浴可能）や昔ながらの温泉地の趣きを今に伝える、素朴で懐かしさをたたえる湯の里だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="minamikyuushuueia_minamikyuushuuei_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="minamikyuushuueia_minamikyuushuuei_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.minamikyuushuueia_minamikyuushuuei_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1720_0001.jpg"/></a><p class="feature">南九州頴娃（みなみきゅうしゅう・えい）<br>類似度:2.251</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="wakanouraonsen_wakanoura_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="wakanouraonsen_wakanoura_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.wakanouraonsen_wakanoura_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0070_0001.jpg"/></a><p class="feature">和歌の浦温泉（わかのうら）<br>類似度:2.238</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1251_0001.jpg"/></a><p class="feature">紀州みなべ千里浜温泉（きしゅうみなべせんりはま）<br>類似度:2.226</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.216</br></p></div></form>
+{% endblock content %}

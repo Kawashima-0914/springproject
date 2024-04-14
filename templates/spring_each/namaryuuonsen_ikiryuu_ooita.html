@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">生竜温泉（いきりゅう）</h2><h3 class="icon"> 所在地：大分県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2101_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">壁湯温泉と宝泉寺温泉の間、生竜地区に位置する生竜温泉。山あいの静かな環境が魅力で、静養地やリゾート地として訪れる人が多い。築100年以上の古民家を移築した和洋折衷の宿泊施設があり、地元の山で朝摘んだばかりの山菜を使った季節料理などが楽しめる。宿泊施設だけでなく、日帰りで入れる温泉施設もあり、かけ流しの家族風呂も選べる。「日本一の高さ」を誇る歩道専用吊り橋「九重“夢”大吊橋」などの観光施設も近い。どの季節に訪れても大自然の美しさを堪能でき、多くの人を魅了している。
+神経痛や筋肉痛、捻挫や冷え性また疲労回復や健康増進など、多くの効能があるとされる単純温泉。生竜温泉周辺は緑豊かな大自然が広がっているため、春は新緑、夏はホタル、秋は紅葉、冬は雪景色と、四季折々の風景を温泉施設から臨めるだろう。家族風呂や足湯などを提供している施設もあるので、立ち寄ってみたい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="okutenryuufudouonsen_okutenryuufudou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="okutenryuufudouonsen_okutenryuufudou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.okutenryuufudouonsen_okutenryuufudou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0811_0001.jpg"/></a><p class="feature">奥天竜不動温泉（オクテンリュウフドウ）<br>類似度:2.097</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="miyazawaonsen_miyazawa_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="miyazawaonsen_miyazawa_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.miyazawaonsen_miyazawa_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1890_0001.jpg"/></a><p class="feature">宮沢温泉（みやざわ）<br>類似度:2.012</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuchikeikokuonsen_kikuchikeikoku_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuchikeikokuonsen_kikuchikeikoku_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuchikeikokuonsen_kikuchikeikoku_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1132_0001.jpg"/></a><p class="feature">菊池渓谷温泉（きくちけいこく）<br>類似度:2.004</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okudairaonsen_okudaira_gunma">{% csrf_token %}<input name="id2" type="hidden" value="okudairaonsen_okudaira_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.okudairaonsen_okudaira_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2063_0001.jpg"/></a><p class="feature">奥平温泉（おくだいら）<br>類似度:1.976</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">蓼科三室温泉（たてしなみむろ）</h2><h3 class="icon"> 所在地：長野県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1814_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>美肌、関節痛、冷え性、動脈硬化、皮膚病、美肌
+</td></tr></table></div><div class="con1"><p class="feature">1961年に開発された温泉だが、歴史は長い。諏訪大社の神様「建御名方命（たてみなかたのみこと）」が3匹の大蛇として蓼科に逃れた際に、村人が暖かい穴を三つ掘ってかくまったという伝説があった。源泉の湧く「三室平（みむろだいら）」の名前はこれに由来する。源泉は浅く湯量も豊富で、別荘地に開発された温泉らしからぬ効能高い泉質である。自然豊かな「蓼科高原」にあって、高原の稜線を走る「ビーナスライン」は、秋になると紅葉やススキで鮮やかに彩られる。「北八ヶ岳ロープウェイ」で山頂まで行けば、高山植物の咲き乱れる「坪庭」や、「縞枯れ現象」で知られる島枯山などの絶景を満喫できる。
+pH3.15という弱酸性の温泉で、肌の角質を融かして美肌に導いてくれる。高温の源泉を別荘やホテル、温泉施設などの数多くの施設に供給しているが、湧出量が毎分2,200Lと豊富なため、すべてかけ流しだ。冷鉱泉もある蓼科の中では源泉温度がかなり高めで、湯船に入れるころには適温になっている、ありがたい温泉である。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="nakayamaheionizumi_nakayamadaira_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="nakayamaheionizumi_nakayamadaira_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.nakayamaheionizumi_nakayamadaira_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0946_0001.jpg"/></a><p class="feature">中山平温泉（なかやまだいら）<br>類似度:2.506</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nekomaonsen_nekoma_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="nekomaonsen_nekoma_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.nekomaonsen_nekoma_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1217_0001.jpg"/></a><p class="feature">猫魔温泉（ねこま）<br>類似度:2.439</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="komuroonsen_komuro_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="komuroonsen_komuro_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.komuroonsen_komuro_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1918_0001.jpg"/></a><p class="feature">小室温泉（こむろ）<br>類似度:2.421</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinosekionsensato_ichinoseki_iwate">{% csrf_token %}<input name="id2" type="hidden" value="ichinosekionsensato_ichinoseki_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.ichinosekionsensato_ichinoseki_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1076_0001.jpg"/></a><p class="feature">一関温泉郷（いちのせき）<br>類似度:2.402</br></p></div></form>
+{% endblock content %}

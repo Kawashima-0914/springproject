@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">こんぴら温泉郷（こんぴら）</h2><h3 class="icon"> 所在地：香川県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0780_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">参道口から御本宮まで785段、奥社まで1368段続く石段。両脇には灯籠や玉垣、お土産屋やうどん屋などが建ち並び、行き交う人々の目を楽しませる。一段ずつ踏みしめて登りきった先に佇むのが、「さぬきのこんぴらさん」こと金刀比羅宮。 江戸時代より「こんぴら詣で」と称する参拝客を迎え入れ続けてきた由緒ある古社だ。金刀比羅宮と並んで町の名所に挙げられるのが、日本最古の芝居小屋「旧金毘羅大芝居（金丸座）」。「こんぴら歌舞伎」と呼ばれる舞台が毎年行われ、地元住民はもちろん観光客にも親しまれている。 琴平町は“うどん屋発祥の地”としても有名。散策の途中で小腹が空いたなと感じたら個性的なうどん屋へ立ち寄ってみよう。
+海の神様を祀った「金刀比羅宮」の門前町として、江戸時代から栄えてきた琴平町。平成9年に温泉が発見され、参拝と温泉の両方を楽しめる観光地として人気を集めている。3つの源泉から毎分約400L湧き出る湯は、無色透明でさらりとした肌触りが特徴。JR「琴平駅」から金刀比羅宮本宮へと続く一帯に立ち並ぶ宿の湯船へと注がれ、こんぴら詣でに訪れた参拝客の疲れを癒してくれる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tamayuraonsen_tamayura_miyazaki">{% csrf_token %}<input name="id2" type="hidden" value="tamayuraonsen_tamayura_miyazaki"/><div class="con2"><a href="../spring_each/" onclick="document.tamayuraonsen_tamayura_miyazaki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1071_0001.jpg"/></a><p class="feature">たまゆら温泉（たまゆら）<br>類似度:1.872</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="netsuenonsen_atsushio_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="netsuenonsen_atsushio_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.netsuenonsen_atsushio_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0632_0001.jpg"/></a><p class="feature">熱塩温泉（あつしお）<br>類似度:1.863</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sanbeonsen_sanbe_shimane">{% csrf_token %}<input name="id2" type="hidden" value="sanbeonsen_sanbe_shimane"/><div class="con2"><a href="../spring_each/" onclick="document.sanbeonsen_sanbe_shimane.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0466_0001.jpg"/></a><p class="feature">三瓶温泉（さんべ）<br>類似度:1.850</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tennenyamatoonsen_tennenyamato_nara">{% csrf_token %}<input name="id2" type="hidden" value="tennenyamatoonsen_tennenyamato_nara"/><div class="con2"><a href="../spring_each/" onclick="document.tennenyamatoonsen_tennenyamato_nara.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1159_0001.jpg"/></a><p class="feature">天然大和温泉（てんねんやまと）<br>類似度:1.842</br></p></div></form>
+{% endblock content %}

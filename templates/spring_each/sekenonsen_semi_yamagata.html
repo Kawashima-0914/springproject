@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">瀬見温泉（せみ）</h2><h3 class="icon"> 所在地：山形県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0715_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>神経痛、疲労、婦人病、動脈硬化、皮膚病
+</td></tr></table></div><div class="con1"><p class="feature">山形県最上地方の亀割山南麓、小国川清流の左岸沿いに細長く続く温泉地。現在は静かなたたずまいを見せているが、明治時代には湯治客で大きな賑わいを見せていた。 温泉を発見したとされる義経伝説が色濃く語り継がれ、義経の子・亀若丸を北の方が産んだ地としても有名。周辺には、義経にまつわる「亀割子安観音」や「湯前神社」など、数々の史跡も残っている。どこか懐かしさを感じさせる風情とぬくもりがあふれる温泉街。清流を彩る新緑や紅葉、雪景色と四季折々の自然を感じることができる。 リニューアルオープンした共同浴場「せみの湯」では、内湯・ふかし湯・露天風呂が同時に楽しめる。ふかし湯は、浴衣を持参すれば着衣のまま入れる。足湯は無料で楽しめ、温泉卵を作るスペースもある。
+最上小国川の清流に臨む静かな温泉場。山水の景勝に恵まれ、特に紅葉の季節がすばらしい。源義経の妻、北の方が亀若丸を産んだ際、産湯を探しに出た弁慶が近くの岩陰から立ち昇る湯煙を見つけたのがこの温泉の始まりと伝えられている。近くには亀若丸の誕生に加護のあった亀割子安観音や瀬見温泉の守り神が祀られている湯前神社など、義経・弁慶に関する伝説や旧跡が数多く残っている。夏は、近くを流れる最上小国川でアユ釣りを楽しむ方を多く見かける。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:2.427</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ginzanonsen_ginzan_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="ginzanonsen_ginzan_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.ginzanonsen_ginzan_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0709_0001.jpg"/></a><p class="feature">銀山温泉（ぎんざん）<br>類似度:2.378</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sakunamionsen_sakunami_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sakunamionsen_sakunami_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sakunamionsen_sakunami_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0695_0001.jpg"/></a><p class="feature">作並温泉（さくなみ）<br>類似度:2.377</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.342</br></p></div></form>
+{% endblock content %}

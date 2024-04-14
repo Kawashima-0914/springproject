@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">安曇野みさと温泉（あずみのみさとおんんせん）</h2><h3 class="icon"> 所在地：長野県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1715_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">北アルプスの清流と爽やかな風が吹き抜ける安曇野市。1985年には環境庁（現環境省）が指定した「名水百選」に、1995年には国土庁の「水の郷百選」に選ばれており、「安曇野の名水」はブランドとして認知度が 高い。 その環境を生かして安曇野市では、ワサビとニジマスの生産に力を入れている。またブルーベリー・プルーン・ぶどう・りんごの販売や収穫体験も盛んだ。安曇野みさと温泉は標高約800mの高台に立つ一軒宿 で、松本市街地を眼下に望むロケーションが自慢だ。 広々とした大浴場、開放感あふれる露天風呂、ジャグジーやサウナも完備された寛ぎの空間。特に露天風呂からの眺めが素晴らしく、昼は美ヶ原高原を、夜は松本安曇平を大パノラマで楽しめる。紅葉や雪景色など、季節ごとに移ろう景色を眺めながらの入浴は格別。
+温度は約40 ℃、湯量は毎分166L。大浴場・露天風呂・サウナ・ジャグジーあり。日帰り入浴可能。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tsukurokougenonsen_tsugurokougen_okayama">{% csrf_token %}<input name="id2" type="hidden" value="tsukurokougenonsen_tsugurokougen_okayama"/><div class="con2"><a href="../spring_each/" onclick="document.tsukurokougenonsen_tsugurokougen_okayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1460_0001.jpg"/></a><p class="feature">津黒高原温泉（つぐろこうげん）<br>類似度:2.051</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tentokuonsen_tentoku_nagano">{% csrf_token %}<input name="id2" type="hidden" value="tentokuonsen_tentoku_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.tentokuonsen_tentoku_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1475_0001.jpg"/></a><p class="feature">天徳温泉（てんとく）<br>類似度:2.037</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shinshuumatsukawaonsen_shinshuumatsukawa_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shinshuumatsukawaonsen_shinshuumatsukawa_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shinshuumatsukawaonsen_shinshuumatsukawa_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1494_0001.jpg"/></a><p class="feature">信州まつかわ温泉（しんしゅうまつかわ）<br>類似度:2.027</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hatorimizuumionsen_hatoriko_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="hatorimizuumionsen_hatoriko_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.hatorimizuumionsen_hatoriko_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1298_0001.jpg"/></a><p class="feature">羽鳥湖温泉（はとりこ）<br>類似度:2.022</br></p></div></form>
+{% endblock content %}

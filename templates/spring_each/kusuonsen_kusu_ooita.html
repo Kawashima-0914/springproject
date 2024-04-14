@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">玖珠温泉（くす）</h2><h3 class="icon"> 所在地：大分県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0300_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">平安末期から続く歴史ある玖珠町。童謡「夕やけ小やけ」作詞者の久留島武彦の生地である町には、「日本童話祭」が開催される豊かな文化が根付いている。町はまた、計14ヶ所に温泉施設が点在する温泉地で、お湯ごとにそれぞれ異なった趣を楽しむことができる。町内の飲食店でよく見かける「だんご汁」は玖珠町の伝統的な食べ物。「子育てだんご汁」とも呼ばれ、子育てに良いとされて地元のおふくろの味として長年親しまれている。温泉を楽しんだ後は、地元の味を求めて飲食店を訪れてみてはいかがだろうか。
+「魔法の湯」とも呼ばれる良質な温泉が特徴の玖珠温泉。豊富な湯量で源泉かけ流しの温泉を楽しめる施設が多い。弱アルカリ性単純温泉は皮膚炎や神経痛などに関する効能を持つとされ、入った後は肌がサラサラに。神経痛や筋肉痛などの痛みにも効果が期待できる。湯治目的で訪れる人も多いとされる温泉で、ゆったりと流れる時間の中、心と身体を休ませてみてはいかがだろうか。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="bimataonsen_mimata_shimane">{% csrf_token %}<input name="id2" type="hidden" value="bimataonsen_mimata_shimane"/><div class="con2"><a href="../spring_each/" onclick="document.bimataonsen_mimata_shimane.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1205_0001.jpg"/></a><p class="feature">美又温泉（みまた）<br>類似度:2.505</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nishitanionsen_nishitani_ooita">{% csrf_token %}<input name="id2" type="hidden" value="nishitanionsen_nishitani_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.nishitanionsen_nishitani_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2114_0001.jpg"/></a><p class="feature">西谷温泉（にしたに）<br>類似度:2.489</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuchikeikokuonsen_kikuchikeikoku_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuchikeikokuonsen_kikuchikeikoku_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuchikeikokuonsen_kikuchikeikoku_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1132_0001.jpg"/></a><p class="feature">菊池渓谷温泉（きくちけいこく）<br>類似度:2.485</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.479</br></p></div></form>
+{% endblock content %}

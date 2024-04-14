@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">御神楽温泉（みかぐら）</h2><h3 class="icon"> 所在地：新潟県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1599_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>美肌、神経痛、リウマチ、筋肉痛、腰痛、関節痛、ねんざ、冷え性、高血圧、打撲、糖尿病、痔疾
+</td></tr></table></div><div class="con1"><p class="feature">一級河川である阿賀野川が流れることに由来した阿賀町。阿賀野川沿いにはたくさんの温泉地があるが、御神楽温泉はそこから少し離れた奥阿賀にある小さな温泉地だ。「肌がツルツルする」「よく温まる」と評判の弱ナト リウム硫酸塩泉が現在3軒の宿泊施設で楽しめる。 豊かな森の息吹を深呼吸して、せせらぎの音に耳を澄ます。炊きたてのコシヒカリに採れたて山菜料理。たっぷりとしたお湯に身を浸せば思わず極楽の溜め息がもれる。 何もしない贅沢を思う存分味わいながら、ただひたすら休息したい。美しい自然に囲まれ、情緒ある豊かな一日を過ごせば、都会で凝り固まった身体と心もゆっくりほぐれていくことだろう。そんな温泉旅にぴったりの秘境がここにある。
+温泉53.7℃、ろ過循環・熱交換あり、加水なしの源泉100％。湯量が豊富で「肌がツルツルする」「よく温まる」と評判だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="nakayamaheionizumi_nakayamadaira_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="nakayamaheionizumi_nakayamadaira_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.nakayamaheionizumi_nakayamadaira_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0946_0001.jpg"/></a><p class="feature">中山平温泉（なかやまだいら）<br>類似度:2.437</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.411</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="arimaonsen_arima_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="arimaonsen_arima_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.arimaonsen_arima_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0016_0001.jpg"/></a><p class="feature">有馬温泉（ありま）<br>類似度:2.380</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shintainaionsen_shintainai_niigata">{% csrf_token %}<input name="id2" type="hidden" value="shintainaionsen_shintainai_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.shintainaionsen_shintainai_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2231_0001.jpg"/></a><p class="feature">新胎内温泉（しんたいない）<br>類似度:2.374</br></p></div></form>
+{% endblock content %}

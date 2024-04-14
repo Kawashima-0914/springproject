@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">沼津温泉（ぬまづ）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1308_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">東名「沼津IC」から車で約15分の場所にある「ニューウェルサンピア沼津」に湧く温泉。アクセス良好でビジネス・観光の拠点にも便利だ。沼津市内では珍しい天然温泉。静岡県には「県民の健康を増進し、世界の健康福祉に 貢献する」を目的とした「ファルマバレープロジェクト」がある。 そこには、お湯へのこだわりともてなしを評価する「かかりつけ湯」という制度があり、温泉の衛生管理や食事やホスピタリティのすべてを兼ね備えている 宿が登録されている。 この「沼津 天然温泉」は「かかりつけ湯」として選定されており、信頼性の高い温泉として多くの人に愛用されてきた。富士山のお膝元でたっぷりとしたお湯に浸かり、日本ならではの休息日を堪能したい。
+無色透明で強い塩味、苦味があり、湯冷めしにくい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:2.263</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="inokashiraonsen_igashira_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="inokashiraonsen_igashira_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.inokashiraonsen_igashira_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1448_0001.jpg"/></a><p class="feature">井頭温泉（いがしら）<br>類似度:2.232</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="amakusayanagiminatoonsen_amakusayanagikou_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="amakusayanagiminatoonsen_amakusayanagikou_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.amakusayanagiminatoonsen_amakusayanagikou_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1287_0001.jpg"/></a><p class="feature">天草柳港温泉（あまくさやなぎこう）<br>類似度:2.144</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="oosawaonsen_1_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="oosawaonsen_1_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.oosawaonsen_1_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1655_0001.jpg"/></a><p class="feature">大沢温泉（兵庫県）（おおぞう）<br>類似度:2.130</br></p></div></form>
+{% endblock content %}

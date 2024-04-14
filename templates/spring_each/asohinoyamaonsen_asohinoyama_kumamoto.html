@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">阿蘇火の山温泉（あそひのやま）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1444_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">国道57号線沿線にあり、森と川に囲まれた阿蘇火の山温泉。外輪山で囲まれた阿蘇一帯はかつて巨大な湖（カルデラ湖）であった。のちにカルデラ湖は、豊かな水資源のある南阿蘇の一大温泉地へと姿を変えた。火の山温泉は阿蘇山の阿蘇登山口にある温泉で、雄大な自然を眺めながらお湯に浸かるという体験ができる。付近にはゴルフ場も多く、日中にゴルフを楽しんだ疲れを癒やすために温泉に入る人も多いようだ。滝や桜の名所があるため、季節を感じながら楽しめる温泉でもある。
+動脈硬化や切り傷、やけどなどに効果があり「美人の湯」としても知られる硫黄塩泉である阿蘇火の山温泉。阿蘇では珍しい緑白色のにごり湯があることでも有名で、ここだけでしか楽しめないお湯が魅力だ。色濃く残る大自然に囲まれながら入る温泉は、疲労回復や健康増進にもよいとされている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="hirayamaonsen_hirayama_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="hirayamaonsen_hirayama_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.hirayamaonsen_hirayama_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1035_0001.jpg"/></a><p class="feature">平山温泉（ひらやま）<br>類似度:2.333</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="harunamizuumionsen_harunako_gunma">{% csrf_token %}<input name="id2" type="hidden" value="harunamizuumionsen_harunako_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.harunamizuumionsen_harunako_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1193_0001.jpg"/></a><p class="feature">榛名湖温泉（はるなこ）<br>類似度:2.296</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="asoonsen_aso_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="asoonsen_aso_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.asoonsen_aso_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1468_0001.jpg"/></a><p class="feature">阿蘇温泉（あそ）<br>類似度:2.281</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekoonsensato_niseko_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekoonsensato_niseko_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekoonsensato_niseko_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1074_0001.jpg"/></a><p class="feature">ニセコ温泉郷（にせこ）<br>類似度:2.269</br></p></div></form>
+{% endblock content %}

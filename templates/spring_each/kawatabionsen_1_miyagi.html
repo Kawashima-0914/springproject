@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">川渡温泉（鳴子温泉郷）（かわたび（なるこ））</h2><h3 class="icon"> 所在地：宮城県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0693_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、炭酸水素塩泉、硫黄泉
+</td></tr><tr><th>効能</th><td>リウマチ、肩こり、疲労、冷え性、糖尿病、気管支炎、便秘、美肌など
+</td></tr></table></div><div class="con1"><p class="feature">宮城県大崎市にある鳴子温泉郷は5つの温泉地の総称で、そのひとつに数えられるのが川渡温泉。5つの中で最も歴史が古く、藩政中期にはその名が江戸まで知れ渡っていたという名湯だ。 神経痛やリウマチに効くことから、かつては「脚気川渡（かっけかわたび）」という名で親しまれていたという。 川渡温泉は小さな温泉街で、温泉旅館、自炊湯治の宿、共同浴場がのどかな田園地帯に集まっている。春になると川沿いの桜並木や菜の花畑が春の色に染まり、見物客で賑わいを見せる。
+宿泊施設「玉造荘」は単純泉・炭酸水素塩泉・硫黄泉の混合。日帰り入浴も可能。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="haratsuruonsen_harazuru_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="haratsuruonsen_harazuru_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.haratsuruonsen_harazuru_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0628_0001.jpg"/></a><p class="feature">原鶴温泉（はらづる）<br>類似度:2.779</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenkeseonsen_amagase_ooita">{% csrf_token %}<input name="id2" type="hidden" value="tenkeseonsen_amagase_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.tenkeseonsen_amagase_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0010_0001.jpg"/></a><p class="feature">天ヶ瀬温泉（あまがせ）<br>類似度:2.749</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tsuchiyuonsen_tsuchiyu_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="tsuchiyuonsen_tsuchiyu_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.tsuchiyuonsen_tsuchiyu_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0092_0001.jpg"/></a><p class="feature">土湯温泉（つちゆ）<br>類似度:2.671</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="narukoonsen_1_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="narukoonsen_1_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.narukoonsen_1_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0105_0001.jpg"/></a><p class="feature">鳴子温泉（鳴子温泉郷）（ナルコ）<br>類似度:2.655</br></p></div></form>
+{% endblock content %}

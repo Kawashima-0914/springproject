@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">瀬美温泉（せみ）</h2><h3 class="icon"> 所在地：岩手県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0278_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">秋田自動車道「北上西IC」から車で約10分、東北自動車道「北上江釣子IC」から車で約20分、夏油川沿いに位置する一軒宿の温泉地。大自然豊かな山間のロケーションはまさに秘湯といった雰囲気を醸し出す。 一軒宿である「桐の花・山吹の花」では、三種類の源泉の六つの天然温泉を愉しむことができ、温泉ファンに人気だ。近辺には北上カントリークラブや夏油高原スキー場など、レジャースポットも充実。 春は山菜採り、秋はきのこ狩りと、四季折々の美しい自然に親しめる点にも人気が集まっている。大自然のもとでレジャーを楽しんだ後は、三種類の源泉が心地良く疲れを癒してくれるだろう。
+夏油川沿いの自然豊かな山間に建つ旅館「桐の花・山吹の花」が一軒宿の温泉。泉質の異なる3つの源泉を森林浴をしながら楽しめる。アルカリ性単純温泉の湯は肌に良いと重宝され、アトピーにも効果があるのだとか。かけ流しで楽しめる点も、温泉好きにはうれしいところ。四季折々の山間の美しい景色を鑑賞しながらの湯浴みを楽しめば、まるで別世界に誘われた気分。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="yamanokamionsen_yamanokami_iwate">{% csrf_token %}<input name="id2" type="hidden" value="yamanokamionsen_yamanokami_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.yamanokamionsen_yamanokami_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1255_0001.jpg"/></a><p class="feature">山の神温泉（やまのかみ）<br>類似度:2.476</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="uesaiharaonsen_kamisaibara_okayama">{% csrf_token %}<input name="id2" type="hidden" value="uesaiharaonsen_kamisaibara_okayama"/><div class="con2"><a href="../spring_each/" onclick="document.uesaiharaonsen_kamisaibara_okayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1292_0001.jpg"/></a><p class="feature">上齋原温泉（かみさいばら）<br>類似度:2.444</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.439</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nishioonumaonsen_nishioonuma_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nishioonumaonsen_nishioonuma_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nishioonumaonsen_nishioonuma_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1282_0001.jpg"/></a><p class="feature">西大沼温泉（にしおおぬま）<br>類似度:2.394</br></p></div></form>
+{% endblock content %}

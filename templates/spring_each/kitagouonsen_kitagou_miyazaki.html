@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">北郷温泉（きたごう）</h2><h3 class="icon"> 所在地：宮崎県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0871_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>にごり、にごり（褐色）、神経痛、筋肉痛、関節痛、疲労、打撲など
+</td></tr></table></div><div class="con1"><p class="feature">北に鰐塚山、西に小松山連山を仰ぎ、鰐塚山から流れ出る清流・広渡川がいくつもの渓流や黒荷田川と合流し、やがて大きな流れとなって潤す北郷町に位置する素朴な山あいの温泉地。全国的に名高い名産・飫肥杉の山の麓、町の中心部を通る県道沿いにぽつぽつと宿泊施設が点在する。 旅を演出する四季の景観も美しく、中でも山桜が一斉に色付き可憐な花をほころばせる春はまさに絶景。花と緑、清流に温泉と、豊かな大自然の恵みや安らぎを感じずにはいられない。 夜のとばりが下りた頃、山里の静寂に包まれた露天風呂に浸かってふと夜空を見上げれば、日頃の疲れも忘れさせる満天の星に出会える。
+美人の湯
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:2.866</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tsurunoyuonizumi_tsurunoyu_akita">{% csrf_token %}<input name="id2" type="hidden" value="tsurunoyuonizumi_tsurunoyu_akita"/><div class="con2"><a href="../spring_each/" onclick="document.tsurunoyuonizumi_tsurunoyu_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0240_0001.jpg"/></a><p class="feature">鶴ノ湯温泉（つるのゆ）<br>類似度:2.837</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="amatsukominatoonsen_amatsukominato_chiba">{% csrf_token %}<input name="id2" type="hidden" value="amatsukominatoonsen_amatsukominato_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.amatsukominatoonsen_amatsukominato_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0014_0001.jpg"/></a><p class="feature">天津小湊温泉（あまつこみなと）<br>類似度:2.835</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yamagaonsen_yamaga_ooita">{% csrf_token %}<input name="id2" type="hidden" value="yamagaonsen_yamaga_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.yamagaonsen_yamaga_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1337_0001.jpg"/></a><p class="feature">山香温泉（やまが）<br>類似度:2.773</br></p></div></form>
+{% endblock content %}

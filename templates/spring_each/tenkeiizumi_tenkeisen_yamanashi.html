@@ -1,0 +1,13 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">天恵泉（てんけいせん）</h2><h3 class="icon"> 所在地：山梨県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2246_0001.jpg"/></div><div class="con1"><p class="feature">合併前は「白根町」であったことから、「白根に湧く天の恵みの湯」と呼ばれる、雄大な自然に囲まれた温泉地、天恵泉。日帰り入浴施設の「天恵泉白根桃源天笑閣」では、貴重な「木曽さわら材」を使った浴槽で入ることができる。日本でも有数の水素イオン濃度を誇る高アルカリ温泉を、湧出温度そのままの源泉槽と、温度を上げた加温槽で交互に入る「温冷交互浴」により、さらに高い効能を得られるとされる。豊かな自然の中にある温泉は、秋に訪れれば美しい紅葉を眺めながら温泉を楽しめる。温泉スタンドも設置されており、温泉を購入して自宅で楽しむこともできる。
+アルカリ性単純温泉（低張性アルカリ性低温泉）の泉質で、神経痛、筋肉痛、冷え性、疲労などの広い効能が期待できる。国内有数の水素イオン濃度であるpH10.6の高アルカリ性温泉は、肌に優しく美肌効果も高いとして女性にも人気。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="akiyamahinatsurunoyu_akiyamahinatsurunoyu_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="akiyamahinatsurunoyu_akiyamahinatsurunoyu_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.akiyamahinatsurunoyu_akiyamahinatsurunoyu_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2254_0001.jpg"/></a><p class="feature">秋山雛鶴の湯（あきやまひなつるのゆ）<br>類似度:1.232</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="oosawayamaonsen_oosawayama_niigata">{% csrf_token %}<input name="id2" type="hidden" value="oosawayamaonsen_oosawayama_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.oosawayamaonsen_oosawayama_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1188_0001.jpg"/></a><p class="feature">大沢山温泉（おおさわやま）<br>類似度:1.157</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okuyamaonsen_okuyama_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="okuyamaonsen_okuyama_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.okuyamaonsen_okuyama_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">奥山温泉（おくやま）<br>類似度:1.153</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tabayamaonsennomekoiyu_tabayamanomekoiyu_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="tabayamaonsennomekoiyu_tabayamanomekoiyu_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.tabayamaonsennomekoiyu_tabayamanomekoiyu_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2253_0001.jpg"/></a><p class="feature">丹波山温泉のめこい湯（たばやまのめこいゆ）<br>類似度:1.146</br></p></div></form>
+{% endblock content %}

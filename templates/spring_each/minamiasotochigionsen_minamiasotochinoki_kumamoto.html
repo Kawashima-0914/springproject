@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">南阿蘇栃木温泉（みなみあそとちのき）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1221_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">栃木温泉は栃木、垂玉、地獄、大阿蘇火の山、白水の5つの温泉からなる南阿蘇温泉郷のひとつで、阿蘇山西側山麓、白川渓谷沿いに位置する。傷を負ったイノシシが、岩の中の温泉に浸かって傷を癒しているところを猟師が見つけ発見したという言い伝えがあり、昔から近郷の人々の湯治湯として利用されてきた。山歩きやテント泊でも人気のある南外輪山が一望でき、北向山の静かな原生林に癒やしを求め保養・休養に訪れる人も多い。新緑や紅葉の名所としても名高く、四季を通してさまざまな景色に触れることができる。南阿蘇外輪山ではトレッキングツアーなども開催されており、豊かな自然の中で汗をかいた後ゆっくりと温泉に浸かり疲れを癒すこともできる。
+硫酸塩泉である栃木温泉は、切り傷や末梢循環障害、冷え性などにも効果的とされている。源泉でも入りやすいぬるめのお湯が特徴で、時間をかけてゆっくりと浸かることができる。冬には気温が下がり、近くを流れる渓谷の滝が凍る景色なども望め、幻想的な景色の中で温泉を楽しめる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="yudakawaonsen_yudagawa_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="yudakawaonsen_yudagawa_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.yudakawaonsen_yudagawa_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0854_0001.jpg"/></a><p class="feature">湯田川温泉（ゆだがわ）<br>類似度:2.260</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hatonoyuonizumi_hatonoyu_gunma">{% csrf_token %}<input name="id2" type="hidden" value="hatonoyuonizumi_hatonoyu_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.hatonoyuonizumi_hatonoyu_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2080_0001.jpg"/></a><p class="feature">鳩の湯温泉（はとのゆ）<br>類似度:2.174</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:2.168</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kuroisoonsen_kuroiso_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="kuroisoonsen_kuroiso_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.kuroisoonsen_kuroiso_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1702_0001.jpg"/></a><p class="feature">黒磯温泉（くろいそ）<br>類似度:2.141</br></p></div></form>
+{% endblock content %}

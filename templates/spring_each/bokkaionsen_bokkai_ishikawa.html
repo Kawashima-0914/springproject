@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">渤海温泉（ぼっかい）</h2><h3 class="icon"> 所在地：石川県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1559_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">日本海に向かって突き出す能登半島には古い歴史と独自の文化、美しい自然景観など見所が数多くある。2011年に世界農業遺産に認定された「能登の里山里海」のシンボルとして知られる「白米千枚田」は一度は見てお きたいスポット。 また「能登金剛」は志賀町の福浦港から関野鼻の海岸線沿いにかけ日本海の荒波が造り出した奇岩や断崖が続く景観のことを指し、驚異の造形美で訪れた人を楽しませている。そんな能登半島の中央・志賀 町に建つ「シーサイドヴィラ渤海」。 近隣住民だけでなく、町外・県外からも多くの観光客・ビジネス客が訪れる。天然の保湿成分であるメタケイ酸を含んだ弱アルカリ性の湯は、無色透明でさらりとし、クセがなく誰でも入りやすいのが特徴である。
+無色透明、大浴場の他露天風呂、ジャグジー、サウナあり。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="hatsukaishionsen_hatsukaishi_niigata">{% csrf_token %}<input name="id2" type="hidden" value="hatsukaishionsen_hatsukaishi_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.hatsukaishionsen_hatsukaishi_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1167_0001.jpg"/></a><p class="feature">ハツカ石温泉（はつかいし）<br>類似度:2.293</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="chirihamayawaragionsen_chirihamayawaragi_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="chirihamayawaragionsen_chirihamayawaragi_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.chirihamayawaragionsen_chirihamayawaragi_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1201_0001.jpg"/></a><p class="feature">千里浜やわらぎ温泉（ちりはまやわらぎ）<br>類似度:2.241</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gotenonsen_goten_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="gotenonsen_goten_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.gotenonsen_goten_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1301_0001.jpg"/></a><p class="feature">碁点温泉（ごてん）<br>類似度:2.234</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ushigakuonsen_ushidake_toyama">{% csrf_token %}<input name="id2" type="hidden" value="ushigakuonsen_ushidake_toyama"/><div class="con2"><a href="../spring_each/" onclick="document.ushigakuonsen_ushidake_toyama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1717_0001.jpg"/></a><p class="feature">牛岳温泉（うしだけ）<br>類似度:2.227</br></p></div></form>
+{% endblock content %}

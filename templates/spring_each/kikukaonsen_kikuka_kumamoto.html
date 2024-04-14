@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">菊鹿温泉（きくか）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2131_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">福岡と大分県境、菊鹿町に位置する山あいののどかな田園地帯にある温泉地。かつては「合瀬川温泉」と呼ばれており、1300年ほど前から良質なお湯に恵まれた歴史のある温泉郷だ。山鹿市内には熊本城建城の際に造られた門のある「光専寺」や、国指定重要文化財指定の芝居小屋「八千代座」などがあり、観光地としても適している。地元グルメとしては地鶏が挙げられ、地鶏料理を提供する飲食店も存在する。また、山鹿市では山鹿灯籠「金灯籠」を使ったアクティビティやチブサン古墳のナイトツアーなどここでしか出来ない楽しみも多い。様々に浸かって触れて温泉を楽しみたい。
+菊鹿温泉の泉質はアルカリ性単純温泉。温度が高めでとろりとした優しく独特の肌触りは、「化粧の湯」と呼ばれることもある。入浴施設の中には飲料用の温泉を提供しているところもあり、健康のためにと持ち帰る人も多いようだ。入れば肌が美しく、飲めば健康に。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shirasawakougenonsen_shirasawakougen_gunma">{% csrf_token %}<input name="id2" type="hidden" value="shirasawakougenonsen_shirasawakougen_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.shirasawakougenonsen_shirasawakougen_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1815_0001.jpg"/></a><p class="feature">白沢高原温泉（しらさわこうげん）<br>類似度:2.454</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="geroonsen_gero_gifu">{% csrf_token %}<input name="id2" type="hidden" value="geroonsen_gero_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.geroonsen_gero_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0053_0001.jpg"/></a><p class="feature">下呂温泉（げろ）<br>類似度:2.436</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="akamizuonsen_akamizu_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="akamizuonsen_akamizu_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.akamizuonsen_akamizu_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0003_0001.jpg"/></a><p class="feature">赤水温泉（あかみず）<br>類似度:2.347</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="futsukaichionsen_futsukaichi_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="futsukaichionsen_futsukaichi_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.futsukaichionsen_futsukaichi_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0629_0001.jpg"/></a><p class="feature">二日市温泉（ふつかいち）<br>類似度:2.339</br></p></div></form>
+{% endblock content %}

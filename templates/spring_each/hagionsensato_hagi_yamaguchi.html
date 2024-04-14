@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">萩温泉郷（はぎ）</h2><h3 class="icon"> 所在地：山口県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0925_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、塩化物泉、硫黄泉、ラジウム泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、関節痛、婦人病、冷え性、皮膚病、痔疾など
+</td></tr></table></div><div class="con1"><p class="feature">慶長9年（1604年）、毛利輝元によって築かれた城下町・萩に湧く歴史新しい温泉地。萩はおよそ260年にわたって毛利36万石の城下町として栄え、今なお市内の各所に貴重な史跡が残っている。 「萩城跡指月公園」は石垣と堀の一部が昔の姿をとどめ、約500本の桜が咲き誇る花見スポットとしても親しまれている。 また歴史の町並みが残る城下町や、幕末維新の志士を数多く輩出した松下村塾などが「明治日本の産業革命遺産」として世界遺産に登録されている。城下町を挟むように流れる橋本川・松本川など美しい自然にも恵まれ、一年を通して多くの人を惹きつけてやまない魅力あふれる城下町で、観光も温泉も心ゆくまで満喫したい。
+2004年10月に新たに掘削された温泉で、「はぎ温泉」「萩本陣温泉」「萩指月温泉」「萩温泉弘法寺の湯」「千春楽泉」「萩阿武川温泉」「田万川温泉」「長門峡温泉」など8つの温泉地からなる「萩温泉郷」。城下町観光を楽しんだ後は効能豊かな温泉につかって旅の疲れを癒したい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tenkeseonsen_amagase_ooita">{% csrf_token %}<input name="id2" type="hidden" value="tenkeseonsen_amagase_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.tenkeseonsen_amagase_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0010_0001.jpg"/></a><p class="feature">天ヶ瀬温泉（あまがせ）<br>類似度:3.058</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:3.057</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:3.018</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="waitaonsensato_waita_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="waitaonsensato_waita_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.waitaonsensato_waita_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1991_0001.jpg"/></a><p class="feature">わいた温泉郷（わいた）<br>類似度:2.982</br></p></div></form>
+{% endblock content %}

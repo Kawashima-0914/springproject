@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">猪苗代温泉（いなわしろ）</h2><h3 class="icon"> 所在地：福島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0161_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">磐梯山に囲まれ、猪苗代湖を一望する一大リゾート地。約70万㎡の広大な敷地内に、スキー場やテニスコート、キャンプ場にフィールドアスレチックなどの野外施設が点在。 普段はできないスポーツやアウトドアに挑戦してみるのもよい。ハーブ園や花畑なども広がり、満開時の美しさは圧巻。ヨーロッパ調の高層ホテルにサウナや温泉プール、アロマテラピーなどが高級感を満たしてくれる。 充実した施設であらゆる目的を叶えてくれる温泉リゾート。おしゃれなレストランで食事をいただけば、夢心地のリゾート休日を満喫できる。
+猪苗代湖畔の高原リゾート「リステルパーク」内にある温泉。地下1200mから湧く天然温泉を「クアハウス」で楽しめる。2300㎡のクアハウス内には、8種類の浴槽や2種類のサウナ、3種類の温泉プールなどを完備。美容やダイエットなどの入浴プログラムも用意されている。健康、美容、レジャーと目的に合わせて幅広く利用できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="sekiahiruzuonsen_sekiahiruzu_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="sekiahiruzuonsen_sekiahiruzu_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.sekiahiruzuonsen_sekiahiruzu_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0189_0001.jpg"/></a><p class="feature">セキアヒルズ温泉（せきあひるず）<br>類似度:1.828</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hatorimizuumionsen_hatoriko_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="hatorimizuumionsen_hatoriko_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.hatorimizuumionsen_hatoriko_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1298_0001.jpg"/></a><p class="feature">羽鳥湖温泉（はとりこ）<br>類似度:1.786</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="oomachikagokawakeikumoonsen_oomachikagogawakeiun_nagano">{% csrf_token %}<input name="id2" type="hidden" value="oomachikagokawakeikumoonsen_oomachikagogawakeiun_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.oomachikagokawakeikumoonsen_oomachikagogawakeiun_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1615_0001.jpg"/></a><p class="feature">大町・籠川渓雲温泉（おおまちかごがわけいうん）<br>類似度:1.783</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="igaaoyamaasazumaonsen_asatsuma_mie">{% csrf_token %}<input name="id2" type="hidden" value="igaaoyamaasazumaonsen_asatsuma_mie"/><div class="con2"><a href="../spring_each/" onclick="document.igaaoyamaasazumaonsen_asatsuma_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1633_0001.jpg"/></a><p class="feature">伊賀青山朝妻温泉（あさつま）<br>類似度:1.773</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">母畑温泉（ぼばた）</h2><h3 class="icon"> 所在地：福島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0639_0001.jpg"/><table><tr><th>効能</th><td>ラジウム泉
+</td></tr></table></div><div class="con1"><p class="feature">母畑湖の近く、北須川の清流沿いに位置する温泉地である母畑温泉には、5軒の温泉旅館が点在している。その歴史は大変長く、開湯はおよそ900年も前に遡る。八幡太郎義家・奥州征伐の時代に傷ついた兵馬を谷川の清水で洗ったところ回復したことから始まったと言われている。その後、兵士たちもこの温泉で傷を癒やし、戦場に向かったとか。そんな歴史ある温泉に浸かれば、勉学や仕事の運気も上がりそうだ。阿武隈の自然を活かした広大なゴルフ場も点在しており、レジャーの疲れを癒やすのにも好適だ。
+幅広い効能を持つラジウム泉（ラドン泉とも）。適応症に痛風がある唯一の泉質である。高血圧、動脈硬化、慢性皮膚病、慢性婦人病、リウマチなどによいとされている。飲泉や湯を持ち帰れる宿もあり、飲泉としては糖尿病や痛風、胃腸病、高血圧などに効能があるとされている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="takedaoonsen_takedao_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="takedaoonsen_takedao_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.takedaoonsen_takedao_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1022_0001.jpg"/></a><p class="feature">武田尾温泉（たけだお）<br>類似度:2.021</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nekoteionsen_nekonaki_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="nekoteionsen_nekonaki_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.nekoteionsen_nekonaki_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0637_0001.jpg"/></a><p class="feature">猫啼温泉（ねこなき）<br>類似度:1.985</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="wataseonsen_wataze_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="wataseonsen_wataze_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.wataseonsen_wataze_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1028_0001.jpg"/></a><p class="feature">渡瀬温泉（わたぜ）<br>類似度:1.937</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:1.881</br></p></div></form>
+{% endblock content %}

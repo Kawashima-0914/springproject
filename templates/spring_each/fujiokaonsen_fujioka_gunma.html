@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">藤岡温泉（ふじおか）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0801_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">関越自動車道、上信越自動車道、北関東自動車道がクロスする交通アクセス利便な“群馬の表玄関”こと藤岡市にある温泉地。首都圏に近い北関東の穴場温泉地として、近年じわじわと人気が高まりつつある。緑なす山々と清流、田園の織りなすのどかな農村風景は、どこか懐かしい素朴な雰囲気。 温泉地を見守るように流れる清流・鮎川は、鮎が生息するほど澄んだ水で知られ、「群馬の百川」にも選ばれている。 周辺には、ヘラ鮒釣りのメッカとして全国的に有名な三名湖、鮎川の浸食により作られた大自然の芸術・蛇喰渓谷など、自然を満喫できるスポットが点在。
+9.8という県内最高の高pH値を誇る単純アルカリ泉。トロッとした柔らかな肌触りが特徴で、浸かると肌がツルツルスベスベになる。この湯上がりのツルツル感にやみつきになり、リピーターになる女性も増えているとか。美肌効果以外にも、アトピー性皮膚炎やリウマチ、婦人病など様々な疾患に優れた効能を発揮し、こじんまりとした山間の温泉地ながら、一年を通じて湯客の足が絶える事がない。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="echigonakazatoonsen_echigonakazato_niigata">{% csrf_token %}<input name="id2" type="hidden" value="echigonakazatoonsen_echigonakazato_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.echigonakazatoonsen_echigonakazato_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0869_0001.jpg"/></a><p class="feature">越後中里温泉（えちごなかざと）<br>類似度:2.604</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="fukurodaonsen_fukuroda_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="fukurodaonsen_fukuroda_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.fukurodaonsen_fukuroda_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0262_0001.jpg"/></a><p class="feature">袋田温泉（ふくろだ）<br>類似度:2.555</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.161</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="oohorionsen_oohori_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="oohorionsen_oohori_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.oohorionsen_oohori_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1185_0001.jpg"/></a><p class="feature">大堀温泉（おおほり）<br>類似度:2.159</br></p></div></form>
+{% endblock content %}

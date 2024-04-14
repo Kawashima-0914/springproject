@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">山川温泉（やまかわ）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0907_0001.jpg"/><table><tr><th>泉質</th><td>硫酸塩泉、硫黄泉
+</td></tr><tr><th>効能</th><td>にごり、にごり（乳白色）、神経痛、筋肉痛、婦人病など
+</td></tr></table></div><div class="con1"><p class="feature">清流・塩井川の上流、「小国富士」と呼ばれる美しい姿を見せる湧蓋山（わいたさん）に抱かれた温泉地。近隣には、はげの湯温泉、丘の湯温泉、寺尾野温泉が湧き出ており、「湧蓋山麓温泉郷」を形成している。「阿蘇の奥座敷」とも呼ばれ、閑静でひなびた雰囲気が温泉ファンを中心に人気が高い。 「熊本ホタルの里百選」にも選ばれた塩井川に沿って10軒ほどの温泉施設が点在。ひっそりと自然の中に佇み、四季の装いに彩られた懐かしい田舎情緒を醸し出している。 肥後の地産物を使った料理も魅力。個性と趣向を凝らした料理を目当てに何度も訪れる湯客も多いとか。まるで田舎に帰ったようなのどかな山あいで、しばし都会の喧騒を忘れ、ゆるりと流れる阿蘇の雄大な自然に身をまかせたい。
+杖立はげの湯、田の原など歴史ある温泉が数多く点在する小国町に湧く温泉。硫黄の成分が多く、豊富な湯の華によって白濁した湯が特徴。切り傷をはじめ婦人病やリウマチに効能が高く、昔から隣接する奴留湯（ぬるゆ）温泉と並んで「キズの山川、やけどの奴留湯」と語り継がれ、近隣に住む人は温泉の効き目を上手に使い分けているとか。小さな山里に共同浴場や宿泊施設が点在し、惜しげもなく流れる源泉かけ流しの湯を楽しめる。地元の湯客と言葉を交わせば、旅情が一層かきたてられるに違いない。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shirakawaonsen_shirakawa_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="shirakawaonsen_shirakawa_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.shirakawaonsen_shirakawa_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1733_0001.jpg"/></a><p class="feature">白川温泉（しらかわ）<br>類似度:2.269</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hirayamaonsen_hirayama_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="hirayamaonsen_hirayama_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.hirayamaonsen_hirayama_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1035_0001.jpg"/></a><p class="feature">平山温泉（ひらやま）<br>類似度:2.259</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="daionsen_1_iwate">{% csrf_token %}<input name="id2" type="hidden" value="daionsen_1_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.daionsen_1_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0279_0001.jpg"/></a><p class="feature">台温泉（花巻温泉郷）（だい（はなまき））<br>類似度:2.217</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hoshikawaonsen_hoshikawa_nagano">{% csrf_token %}<input name="id2" type="hidden" value="hoshikawaonsen_hoshikawa_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.hoshikawaonsen_hoshikawa_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1952_0001.jpg"/></a><p class="feature">星川温泉（ほしかわ）<br>類似度:2.194</br></p></div></form>
+{% endblock content %}

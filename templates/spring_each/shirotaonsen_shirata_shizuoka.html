@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">白田温泉（しらた）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0452_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">鮎の生息する清流・白田川の南側に位置する、素朴で静けさ漂う温泉地。周辺一帯には手つかずの自然が残り、釣りや散策、スポーツを楽しめる。伊豆急行「片瀬白田駅」の近くにある「白田親水公園」は町民の憩いの場。 白田川のせせらぎを利用して作られた公園で、池には鯉が泳ぎ、羽休めに訪れる野鳥ウォッチングも楽しめる。天城万二郎岳方面に分け入ると、原生林の中に「不知沼の池」や樹齢1000年ともいわれる大杉があり、大迫力の自然に圧倒される。 さらに車や電車で10分以内の場所には「熱川バナナ・ワニ園」「伊豆アニマルキングダム」など伊豆の人気スポットが点在。観光と自然、湯を満喫し、良き思い出で胸をいっぱいに満たしたい。
+熱川、稲取など6つの温泉が湧く東伊豆町。そのひとつ、白田川のほとりに湧く温泉。町に点在する温泉櫓から吹き出した湯が勢い良く流れており、豊富な湯量を誇る。さらに、湧出口に堆積した湯の花が泉質の良さを物語る。古くから地元の人々に愛されてきた、生活に密着した温泉。塩化物泉の湯は体を芯から温め、湯冷めしにくいと評判。気取らずのんびりと楽しみたい素朴な温泉だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="choukaionsen_choukai_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="choukaionsen_choukai_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.choukaionsen_choukai_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1147_0001.jpg"/></a><p class="feature">鳥海温泉（ちょうかい）<br>類似度:1.805</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:1.771</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yumuraonsen_yumura_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="yumuraonsen_yumura_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.yumuraonsen_yumura_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0738_0001.jpg"/></a><p class="feature">湯村温泉（ゆむら）<br>類似度:1.764</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="seirouonsen_seirou_niigata">{% csrf_token %}<input name="id2" type="hidden" value="seirouonsen_seirou_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.seirouonsen_seirou_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1203_0001.jpg"/></a><p class="feature">聖籠温泉（せいろう）<br>類似度:1.763</br></p></div></form>
+{% endblock content %}

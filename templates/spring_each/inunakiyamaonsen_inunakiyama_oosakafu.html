@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">犬鳴山温泉（いぬなきやま）</h2><h3 class="icon"> 所在地：大阪府</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1018_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">阪和・関空自動車道「上之郷IC」より、和歌山方面へ約7㎞ほど行った場所に広がる“関西の奥座敷”。緑深い自然に覆われた犬鳴山麓に湧き出る秘湯だ。一帯は、昔から七宝滝寺の門前町として栄えたが、戦後に冷泉が掘削されてからは、温泉郷として多くの観光客が足を運ぶようになったという。 一方、温泉は南北朝の時代、戦いに敗れ傷ついた楠木正成率いる兵士を癒したという伝説も伝えられており、古くから湧き出ていたことがうかがえる。 大阪市内から車で約1時間という近さにもかかわらず、のどかな山々の大自然が楽しめます。
+大阪と和歌山の県境に聳える犬鳴山の麓に湧く温泉。泉質は純重曹泉で、硫黄の香りがかすかに漂う。湯に含まれる多くの成分が高い効能を帯び、足しげく通う根強いファンも多いとか。大阪の市街地から車で約1時間にもかかわらず、人里離れた山の雰囲気が秘湯感を漂わせ、落ち着いた気持ちにさせてくれる。都会の喧騒を離れリラックスしたい時、ぶらっと足を運びたくなる温泉郷だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="uenoharaonsen_1_gunma">{% csrf_token %}<input name="id2" type="hidden" value="uenoharaonsen_1_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.uenoharaonsen_1_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0199_0001.jpg"/></a><p class="feature">上の原温泉（水上温泉郷）（うえのはら（みなかみ））<br>類似度:1.791</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kojirionsen_kojiri_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="kojirionsen_kojiri_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.kojirionsen_kojiri_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1911_0001.jpg"/></a><p class="feature">湖尻温泉（こじり）<br>類似度:1.786</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="oniouonsen_onioshi_gunma">{% csrf_token %}<input name="id2" type="hidden" value="oniouonsen_onioshi_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.oniouonsen_onioshi_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0184_0001.jpg"/></a><p class="feature">鬼押温泉（おにおし）<br>類似度:1.783</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:1.779</br></p></div></form>
+{% endblock content %}

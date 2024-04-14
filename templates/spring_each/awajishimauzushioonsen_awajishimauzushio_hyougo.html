@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">淡路島うずしお温泉（あわじしまうずしお）</h2><h3 class="icon"> 所在地：兵庫県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1663_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">淡路島の南端に位置する南あわじ市は、イザナギとイザナミが最初に作ったのが淡路島といわれる国生み伝説の舞台ともなっている。鳴門海峡のうず潮は特に有名で、大潮時の直径約30mは世界一、時速約20㎞は日本一と もいわれており、その迫力には思わず息をのむ。 また、紀伊水道に育まれた海の幸も絶品だ。南あわじ市には6つの源泉があるが、淡路島うずしお温泉は淡路島では他にないナトリウム炭酸水素塩泉。特に炭酸イオン水素の 含有量は「日本三大美人の湯」の約4倍以上である404㎎と引けをとらない。 肌の角質を優しく落としツルツルになると女性客のリピーターも多い。新鮮な海の幸を堪能し、美肌の湯につかり自分磨きを満喫したい。
+炭酸イオン水素の含有量は4040㎎、pH7.55の弱アルカリの湯は美効果に優れている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="isoharaonsen_isohara_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="isoharaonsen_isohara_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.isoharaonsen_isohara_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0260_0001.jpg"/></a><p class="feature">磯原温泉（いそはら）<br>類似度:2.122</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tangookuineonsen_tangookuine_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tangookuineonsen_tangookuine_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tangookuineonsen_tangookuine_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2140_0001.jpg"/></a><p class="feature">丹後奥伊根温泉（たんごおくいね）<br>類似度:2.113</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hamanasuonsen_hamanasu_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="hamanasuonsen_hamanasu_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.hamanasuonsen_hamanasu_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1645_0001.jpg"/></a><p class="feature">はまなす温泉（はまなす）<br>類似度:2.113</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:2.106</br></p></div></form>
+{% endblock content %}

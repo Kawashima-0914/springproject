@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">白浜女来島温泉（しらはまめらいじま）</h2><h3 class="icon"> 所在地：千葉県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0172_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">房総半島の最南端、太平洋に突き出した南房総市（旧白浜町）の野島崎近くに位置する一軒宿の温泉地。黒潮に洗われ、静岡市より南に位置する白浜の地は温暖ですごしやすい常春の里。 房総のシンボル菜の花は12月にはもう咲きはじめ、1～3月にかけてが一番の見ごろ。ポピー、ストック、金魚草、白浜が日本一の生産量を誇るキンセンカも咲き誇る。初夏の新緑、夏の海水浴など楽しみは尽きず、よい漁場に恵まれた沿岸は新鮮な海の幸の宝庫。 漁港ではアワビやサザエの良好な生育環境が保てるように整備が進められるなど、伝統の海女漁に配慮して海を守る試みも進行中。自然と共生をめざす海辺と田園の町の美しい温泉である。
+白浜では古来より海女（あま）による素潜り漁が盛んで、海にそそり立つ大きな岩が海女の休息の場となったことから「女来島」（めらいじま）の名前が生まれた。黒潮に面したこの地に湧き出でる温泉は弱食塩泉の泉質で、保温力にすぐれ、美人の湯としても名高い。ゆったりした気分で湯浴みできる一軒宿「グランドホテル太陽」の大浴場には露天風呂を併設。男女交代制で、豪快に岩を配した露天風呂と、檜の芳香かぐわしい露天風呂と2つの異なる妙味を、潮の香りとともに味わえる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="uharaonsen_ubara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="uharaonsen_ubara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.uharaonsen_ubara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0195_0001.jpg"/></a><p class="feature">鵜原温泉（うばら）<br>類似度:1.929</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kinkesakionsen_kanagasaki_akita">{% csrf_token %}<input name="id2" type="hidden" value="kinkesakionsen_kanagasaki_akita"/><div class="con2"><a href="../spring_each/" onclick="document.kinkesakionsen_kanagasaki_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1283_0001.jpg"/></a><p class="feature">金ヶ崎温泉（かながさき）<br>類似度:1.921</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ajikesawakougenonsen_ajigasawakougen_aomori">{% csrf_token %}<input name="id2" type="hidden" value="ajikesawakougenonsen_ajigasawakougen_aomori"/><div class="con2"><a href="../spring_each/" onclick="document.ajikesawakougenonsen_ajigasawakougen_aomori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1062_0001.jpg"/></a><p class="feature">鯵ヶ沢高原温泉（あじがさわこうげん）<br>類似度:1.913</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shirahamaonsen_shirahama_chiba">{% csrf_token %}<input name="id2" type="hidden" value="shirahamaonsen_shirahama_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.shirahamaonsen_shirahama_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0074_0001.jpg"/></a><p class="feature">白浜温泉（しらはま）<br>類似度:1.883</br></p></div></form>
+{% endblock content %}

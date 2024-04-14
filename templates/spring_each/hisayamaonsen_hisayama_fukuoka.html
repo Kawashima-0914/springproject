@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">久山温泉（ひさやま）</h2><h3 class="icon"> 所在地：福岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1541_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">福岡空港より車で約25分。市街地からアクセスも良く、豊かな自然が残っているのが「博多の奥座敷」といわれている久山町だ。小さな集落と山林地帯の間に、ため池・ゴルフ場・植物園などが点在し、山里らしい光景が 広がっている。 久山温泉は一軒宿の温泉で、広大な日本庭園と12種22のお風呂が自慢だ。真珠風呂、ワイン風呂、薬湯風呂などがあり、日帰り入浴も可能なため、地元のリピーター客が日々の疲れを癒すためにやって来 るという。 久山町自体には観光名所は少ないが博多にも近いので、商業施設が立ち並ぶ天神ベイエリアの散策もおすすめ。観光を済ませた後は喧噪を離れ、ゆっくりと宿泊するのもいいだろう。バラエティ豊富なお風呂を余すところなく堪能したい。
+真珠風呂、ワイン風呂、薬湯風呂などが12種22の露天風呂。ヨモギサウナ、遠赤外線サウナなど多彩な施設が揃う。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="igaonsen_iga_mie">{% csrf_token %}<input name="id2" type="hidden" value="igaonsen_iga_mie"/><div class="con2"><a href="../spring_each/" onclick="document.igaonsen_iga_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1470_0001.jpg"/></a><p class="feature">伊賀温泉（いが）<br>類似度:2.271</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="genkaisatsukionsen_genkaisatsuki_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="genkaisatsukionsen_genkaisatsuki_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.genkaisatsukionsen_genkaisatsuki_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0949_0001.jpg"/></a><p class="feature">玄海さつき温泉（げんかいさつき）<br>類似度:2.263</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hatorimizuumionsen_hatoriko_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="hatorimizuumionsen_hatoriko_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.hatorimizuumionsen_hatoriko_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1298_0001.jpg"/></a><p class="feature">羽鳥湖温泉（はとりこ）<br>類似度:2.251</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kankuuonsen_kankuu_oosakafu">{% csrf_token %}<input name="id2" type="hidden" value="kankuuonsen_kankuu_oosakafu"/><div class="con2"><a href="../spring_each/" onclick="document.kankuuonsen_kankuu_oosakafu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1156_0001.jpg"/></a><p class="feature">関空温泉（かんくう）<br>類似度:2.241</br></p></div></form>
+{% endblock content %}

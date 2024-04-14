@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">妙高高原池の平温泉（みょうこうこうげんいけのたいら）</h2><h3 class="icon"> 所在地：新潟県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0138_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">日本百名山の一つ、妙高山東麓の標高約760mの高原にある温泉地。水芭蕉の群生地として知られる「いもり池」の周辺に幾つもの散策コースが設けられ、四季折々の雄大な自然を楽しむことができる。 「いもり池」を中心に約40軒の宿泊施設が点在し、冬季は24時間営業の近代的な温泉施設もある。ペンション村などもあり、観光温泉地というよりは、閑静な高原リゾートといった趣き。 静かなリゾート地ではあるが、冬になると良質のパウダースノーが楽しめ、関東・関西方面のお客様も多くグリーンシーズンとは違った賑わいがある。
+肌に心地よい適温で無色透明、婦人病や皮膚病に効く良湯。妙高山の標高約1800mにある南地獄谷に湧く源泉から、麓まで引き湯を行っている。源泉は温泉成分をたっぷり含んだ黒泥交じりの湯。多くの宿や温泉施設では、黒泥を完全に沈澱ろ過し使用しているため無色透明の湯となっているが、一部の施設では源泉100％で入浴させてくれる。興味がある人は珍しい黒色の温泉を楽しんでみるのもいいだろう。風呂上りには風味豊かな地ビール「妙高高原ビール」で一息。火照った肌を、爽やかな高原の風と冷えたビールが気持ちよく冷ましてくれる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="mitsunorionsen_koutoku_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="mitsunorionsen_koutoku_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.mitsunorionsen_koutoku_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0494_0001.jpg"/></a><p class="feature">光徳温泉（こうとく）<br>類似度:2.063</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="norikurakougenonsen_norikurakougen_nagano">{% csrf_token %}<input name="id2" type="hidden" value="norikurakougenonsen_norikurakougen_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.norikurakougenonsen_norikurakougen_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1330_0001.jpg"/></a><p class="feature">乗鞍高原温泉（のりくらこうげん）<br>類似度:2.052</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="zaouonsen_zaou_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="zaouonsen_zaou_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.zaouonsen_zaou_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0057_0001.jpg"/></a><p class="feature">蔵王温泉（ざおう）<br>類似度:2.025</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="chuuzenjionsen_chuuzenji_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="chuuzenjionsen_chuuzenji_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.chuuzenjionsen_chuuzenji_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0091_0001.jpg"/></a><p class="feature">中禅寺温泉（ちゅうぜんじ）<br>類似度:2.005</br></p></div></form>
+{% endblock content %}

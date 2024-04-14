@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">小金湯温泉（こがねゆ）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0971_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">人気の温泉地、定山渓から少し離れた地にある小さな温泉地、小金湯温泉。豊平川が流れる山の麓に、明治時代に開かれたとされている。温泉宿は、「湯元小金湯」と「湯元 小金湯温泉まつの湯」の2軒。開湯後は効能が高いと話題になり、その効能を求めて多くの人が押し寄せたと言われる。樹齢700年の「桂の木」はこの静かな温泉地のシンボル。根本に不動尊が祀られており、この不動尊は「桂不動」と呼ばれる。秋には紅葉が楽しめる風光明媚な温泉地としても名高い。周辺は秋になると紅葉が美しく、アイヌ民族の心と文化を伝える施設「札幌市アイヌ文化交流センターサッポロピリカコタン」は徒歩圏内。保養の地で、良湯も観光も楽しめる。
+無色透明で硫黄の香りが漂う単純硫黄泉で、皮膚病、神経痛、運動麻痺、うちみ、くじき、慢性消化器病、痔疾、冷え性、慢性婦人病、きりきず、糖尿病などさまざまな効能が期待できる。毛細血管を広げ、血圧を下げるとも言われており、古くから湯治場として親しまれている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="yunogenonizumi_yunomoto_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="yunogenonizumi_yunomoto_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.yunogenonizumi_yunomoto_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1840_0001.jpg"/></a><p class="feature">湯の元温泉（ゆのもと）<br>類似度:2.251</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1128_0001.jpg"/></a><p class="feature">天橋立・宮津温泉ピント湯（あまのはしだて・みやづぴんとゆ）<br>類似度:2.185</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shiobetsuonsen_shiobetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="shiobetsuonsen_shiobetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.shiobetsuonsen_shiobetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1979_0001.jpg"/></a><p class="feature">塩別温泉（しおべつ）<br>類似度:2.173</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yanagawaonsen_yanagawa_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="yanagawaonsen_yanagawa_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.yanagawaonsen_yanagawa_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1033_0001.jpg"/></a><p class="feature">柳川温泉（やながわ）<br>類似度:2.170</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">十津川温泉（とつがわ）</h2><h3 class="icon"> 所在地：奈良県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0567_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">十津川温泉は、奈良県吉野郡十津川村平谷にある温泉。十津川温泉郷の一つ。元禄年間に炭焼き職人によって発見されたといわれる。村内で最も多くの旅館や商店が集まりにぎわっている。源泉は上湯川沿いにあり、同温泉郷の上湯温泉に対して下湯と呼ばれていた。1974年にダム湖が出来た際に、湖畔の平谷地区まで源泉を引湯し、温泉街を形成した。 1985年に湯泉地温泉、上湯温泉とともに国民保養温泉地に指定され、2004年にはそれらの温泉からなる十津川温泉郷が全国で初めて「源泉かけ流し宣言」を行った。村の温泉施設すべてがお湯の循環、再利用を一切せず、沸かさず、塩素消毒をせず、薄めず、「ほんまもんの温泉」をこんこんとかけ流している。
+十津川温泉の泉質はナトリウム炭酸水素塩泉。きりきず・火傷などに効果がある。ナトリウムイオンが皮脂と反応するため、肌の古い角質を除去してくれるのでつるつる肌に。入浴中はぬるぬるするが、ダブルクレンジング効果があるため、入浴後の保湿が必要。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shiroganeonsenougonnoyu_shirokanekoganenoyu_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="shiroganeonsenougonnoyu_shirokanekoganenoyu_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.shiroganeonsenougonnoyu_shirokanekoganenoyu_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1813_0001.jpg"/></a><p class="feature">白金温泉黄金の湯（しろかねこがねのゆ）<br>類似度:2.093</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tsutsujinoyu_tsutsujinoyu_gunma">{% csrf_token %}<input name="id2" type="hidden" value="tsutsujinoyu_tsutsujinoyu_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.tsutsujinoyu_tsutsujinoyu_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2076_0001.jpg"/></a><p class="feature">つつじの湯（つつじのゆ）<br>類似度:2.050</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekokusurishionsen_nisekoyakushi_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekokusurishionsen_nisekoyakushi_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekokusurishionsen_nisekoyakushi_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1874_0001.jpg"/></a><p class="feature">ニセコ薬師温泉（にせこやくし）<br>類似度:2.042</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="oobokeiyaawaonsen_oobokeiyaawa_tokushima">{% csrf_token %}<input name="id2" type="hidden" value="oobokeiyaawaonsen_oobokeiyaawa_tokushima"/><div class="con2"><a href="../spring_each/" onclick="document.oobokeiyaawaonsen_oobokeiyaawa_tokushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0970_0001.jpg"/></a><p class="feature">大歩危祖谷阿波温泉（おおぼけいやあわ）<br>類似度:2.041</br></p></div></form>
+{% endblock content %}

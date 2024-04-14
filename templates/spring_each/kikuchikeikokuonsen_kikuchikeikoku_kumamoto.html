@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">菊池渓谷温泉（きくちけいこく）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1132_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">平安時代から450年にわたり栄えた菊池一族の城下町である菊池市は、今も歴史や風情のあるたたずまいが残る街。特に、菊池渓谷は天然広葉樹で覆われた避暑地で、大小さまざまな瀬と渕と滝をつくる絶景の自然休養林だ。美しい水や空気はもちろん、春は山藤、夏はあじさい、秋は紅葉と季節を通して美しい景色に触れることができ、その景色に囲まれて入る温泉は格別。また、菊池市には明治や大正時代に創業した老舗和菓子店から現代風の洋菓子店まで、多くの菓子店がある。名湯で癒やされた後は、お菓子めぐりもよいだろう。
+菊池渓谷の上流であり、菊池川沿いに湧く弱アルカリ性単純温泉の湯である菊池渓谷温泉。とろみの感じられる優しい肌触りの湯は、ツルツルのお肌になる「美肌の湯」としても親しまれている。ほかにも神経痛や冷え性、疲労回復などにも効果的とされている。四季折々さまざまな景色を見せる渓谷を望みながら楽しめる露天風呂が魅力。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.205</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okudairaonsen_okudaira_gunma">{% csrf_token %}<input name="id2" type="hidden" value="okudairaonsen_okudaira_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.okudairaonsen_okudaira_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2063_0001.jpg"/></a><p class="feature">奥平温泉（おくだいら）<br>類似度:2.203</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kawabaonsen_kawaba_gunma">{% csrf_token %}<input name="id2" type="hidden" value="kawabaonsen_kawaba_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.kawabaonsen_kawaba_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1348_0001.jpg"/></a><p class="feature">川場温泉（かわば）<br>類似度:2.155</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yamanokamionsen_yamanokami_iwate">{% csrf_token %}<input name="id2" type="hidden" value="yamanokamionsen_yamanokami_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.yamanokamionsen_yamanokami_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1255_0001.jpg"/></a><p class="feature">山の神温泉（やまのかみ）<br>類似度:2.149</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯原温泉（ゆばら）</h2><h3 class="icon"> 所在地：岡山県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0148_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">雄大な蒜山（ひるぜん）高原に源を発し、岡山市で児島湾に注ぎ出る旭川。山肌迫る谷あいを流れる湯原周辺では、高さ110mと中国地方一の名瀑「神庭（かんば）の滝」をはじめ豊かな渓谷美を望める。 その旭川を中心に元禄時代創業の老舗旅館や射的場、土産物屋が建ち並び昔ながらの温泉街を形成しているのが湯原温泉だ。シンボルは、河原に湧く共同露天風呂「砂湯」。川底からこんこんと湧き続けるお湯はもちろん源泉かけ流し。 露天風呂番付では西日本の横綱に選ばれた。混浴で仕切りもないが湯原を訪れたら一度は立ち寄りたい場所。豊富なお湯が流れ出た旭川から立ち上る湯煙に温泉に来た喜びが沸々と込み上げてくる。（写真提供：岡山県観光連盟）
+湯郷、奥津と並び「美作三湯」に数えられる湯原温泉。湯原温泉、足（たる）、真賀、下湯原、郷緑温泉を総称して「湯原温泉郷」と呼ぶ。豊富な湧出量を誇り、旅館では源泉かけ流しを楽しめる宿もある。歴史は古く、古墳時代には「たたら製鉄」の労働者たちの療養の場だったとか。米子自動車道・湯原ICから約5分とアクセスも便利で、関西を中心に人気の温泉地だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tsuchiyuonsen_tsuchiyu_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="tsuchiyuonsen_tsuchiyu_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.tsuchiyuonsen_tsuchiyu_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0092_0001.jpg"/></a><p class="feature">土湯温泉（つちゆ）<br>類似度:2.113</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yuseonsen_yuze_akita">{% csrf_token %}<input name="id2" type="hidden" value="yuseonsen_yuze_akita"/><div class="con2"><a href="../spring_each/" onclick="document.yuseonsen_yuze_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0786_0001.jpg"/></a><p class="feature">湯瀬温泉（ゆぜ）<br>類似度:2.035</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenkeseonsen_amagase_ooita">{% csrf_token %}<input name="id2" type="hidden" value="tenkeseonsen_amagase_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.tenkeseonsen_amagase_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0010_0001.jpg"/></a><p class="feature">天ヶ瀬温泉（あまがせ）<br>類似度:2.033</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuchionsen_kikuchi_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuchionsen_kikuchi_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuchionsen_kikuchi_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0377_0001.jpg"/></a><p class="feature">菊池温泉（きくち）<br>類似度:2.030</br></p></div></form>
+{% endblock content %}

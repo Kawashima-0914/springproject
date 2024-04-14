@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">野沢温泉（のざわ）</h2><h3 class="icon"> 所在地：長野県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0109_0001.jpg"/><table><tr><th>泉質</th><td>硫酸塩泉、硫黄泉
+</td></tr><tr><th>効能</th><td>神経痛、リウマチ、婦人病、胃腸病、皮膚病、糖尿病など
+</td></tr></table></div><div class="con1"><p class="feature">立ち並ぶ土産物屋のあちこちから立ち上る“おやき”の湯気に、思わず足が止まる。スキー場も近く季節を問わず多くの観光客で賑わう野沢温泉。一方、温泉が生活の中に息づく姿が昔ながらの湯の町情緒を一層高めている。江戸時代から住民が「湯仲間」制度で管理、維持してきた生活の場である13の外湯（無料）をはじめ、村の天然記念物「麻釜（おがま）」の熱泉で山菜をゆでる光景は野沢温泉ならではの風物詩だ。 京の天王寺蕪が野沢の気候で突然変異を起こして誕生したという野沢菜の漬物は、「おはづけ」と呼ばれ昔から親しまれてきた。
+新潟との県境、毛無山の山すそに広がる温泉地。行基上人発見説、修行山伏発見説、手負い熊発見説が残る歴史ある名湯。江戸時代に飯山藩主、松平氏が別荘を建ててから湯治場として多くの人が訪れるようになったという。38本の源泉から毎分1700Lのお湯が湧出。村が「地下水源保全条例」で地下水の採取を厳しく規制しているため、現在も自然湧出を保つ。少し熱めの100％天然温泉を、13カ所の外湯で心ゆくまで楽しみたい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.338</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="narukoonsen_1_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="narukoonsen_1_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.narukoonsen_1_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0105_0001.jpg"/></a><p class="feature">鳴子温泉（鳴子温泉郷）（ナルコ）<br>類似度:2.199</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="daionsen_1_iwate">{% csrf_token %}<input name="id2" type="hidden" value="daionsen_1_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.daionsen_1_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0279_0001.jpg"/></a><p class="feature">台温泉（花巻温泉郷）（だい（はなまき））<br>類似度:2.164</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nakayamaheionizumi_nakayamadaira_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="nakayamaheionizumi_nakayamadaira_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.nakayamaheionizumi_nakayamadaira_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0946_0001.jpg"/></a><p class="feature">中山平温泉（なかやまだいら）<br>類似度:2.154</br></p></div></form>
+{% endblock content %}

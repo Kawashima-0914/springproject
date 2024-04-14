@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">城山温泉（しろやま）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2167_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">国分平野が一望できる霧島市国分の高台にある温泉地。地下1200メートルから湧出する源泉をかけ流しで楽しむことができる、国分エリア随一の温泉でもある。温泉地から最寄駅の国分駅にかけてのエリアは、商業地が多い地域。ビジネスや観光などの宿泊地としても便利である。温泉と並んでこの街で提供されるのが、霧島市上小川の山麓に湧出する「筒之口名水」。江戸時代から酒の製造に使用されるほどおいしい水として知られている。温泉への入浴客だけではなく近隣住民も生活水として利用する。温泉地近くにはソメイヨシノと八重桜の美しい観光地、城山公園がある。春には温泉と共に花見に訪れるのもおすすめ。
+塩化物泉の泉質を持つ城山温泉。湯量も豊富に湧出する黄金色の湯は、塩分と鉄分を豊富に含んでおり、塩味が感じられる。入浴すれば、きりきず、やけど、皮膚病など、飲用すれば慢性消化器病、糖尿病、通風、肝臓病などに効能があるとされている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="rishirifujionsen_rishirifuji_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="rishirifujionsen_rishirifuji_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.rishirifujionsen_rishirifuji_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2025_0001.jpg"/></a><p class="feature">利尻富士温泉（りしりふじ）<br>類似度:1.812</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yaharaonsen_yawara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="yaharaonsen_yawara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.yaharaonsen_yawara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1900_0001.jpg"/></a><p class="feature">矢原温泉（やわら）<br>類似度:1.792</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:1.791</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="anrakuonsen_1_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="anrakuonsen_1_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.anrakuonsen_1_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2147_0001.jpg"/></a><p class="feature">安楽温泉（新川渓谷温泉）（あんらく（しんかわけいこくきょう））<br>類似度:1.786</br></p></div></form>
+{% endblock content %}

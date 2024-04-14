@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">伊豆駒の湯温泉（いずこまのゆ）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0940_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">伊豆の国市、奈古谷にある温泉地。近くに川が流れており、豊かな自然を楽しめる。龍泉院、徳隣院、国清寺、松月院、毘沙門堂、本立寺など多くの寺社が点在する。特に「本立寺」は1261年（弘長元年）、伊豆（伊東）に流されていた日蓮が、16代当主江川太郎左衛門英親に招かれ教化を行ったところとされる長い歴史を持つ寺だ。英親は身延山へ登り、日蓮より「日久」の法号を授けられたという。のちの1506年（永正３年）、24代当主英盛が江川邸内にあった大乗庵を移し、これが本立寺の起源とされている。近くを訪れた際は一度立ち寄りたい。また、近くには箱根ガラスの森美術館もあり、夜になると幻想的な風景を楽しむことができる。
+泉質はアルカリ性単純温泉。お湯は殆ど無色透明で無味・無臭。優しい肌触りのお湯で、体の内側からじんわりと温めてくれて、湯上りに肌がすべすべになる効果も期待できる。また、ぬる湯を楽しむことができる施設もあるため、伊豆の大自然を眺めながらのんびりゆったり過ごすことができるのも嬉しい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.317</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tounosawaonsen_tounosawa_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="tounosawaonsen_tounosawa_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.tounosawaonsen_tounosawa_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0353_0001.jpg"/></a><p class="feature">塔ノ沢温泉（とうのさわ）<br>類似度:2.308</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuchikeikokuonsen_kikuchikeikoku_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuchikeikokuonsen_kikuchikeikoku_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuchikeikokuonsen_kikuchikeikoku_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1132_0001.jpg"/></a><p class="feature">菊池渓谷温泉（きくちけいこく）<br>類似度:2.285</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shigiyamaonsen_shigisan_nara">{% csrf_token %}<input name="id2" type="hidden" value="shigiyamaonsen_shigisan_nara"/><div class="con2"><a href="../spring_each/" onclick="document.shigiyamaonsen_shigisan_nara.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0065_0001.jpg"/></a><p class="feature">信貴山温泉（しぎさん）<br>類似度:2.274</br></p></div></form>
+{% endblock content %}

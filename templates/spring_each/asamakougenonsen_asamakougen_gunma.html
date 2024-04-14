@@ -1,0 +1,13 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">浅間高原温泉（あさまこうげん）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0982_0001.jpg"/></div><div class="con1"><p class="feature">群馬県と長野県の県境近く、標高約1,100ｍの浅間高原に位置する温泉地。浅間山の雄大な姿を目の前に望み、高山植物や野生動物が多く生息する自然豊かなロケーションが、心身を存分にリフレッシュさせてくれる。周辺には、静かな樹林の中を大迫力で流れ落ちる「浅間大滝」や、名前の通り清水が幾筋もの糸のように流れ落ちる「白糸の滝」などの美しい名所が数多く点在。他にも、浅間山大噴火の溶岩が固まってできた景勝地「鬼押出し園」や、昭和初期に藤山一郎が歌って大ヒットした歌謡曲『丘を越えて』のモデルになった広大な県営牧場「浅間牧場」がある。
+泉質はナトリウム-塩化物・炭酸水素塩泉、ナトリウム-塩化物泉、単純温泉、メタケイ酸など豊富で、温泉施設により異なる泉質の湯が楽しめる。期待できる効能も、病後回復期、疲労回復、健康増進などのほか、美肌効果や冷え性など美に関するものまで豊富。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:0.956</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yaharaonsen_yawara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="yaharaonsen_yawara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.yaharaonsen_yawara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1900_0001.jpg"/></a><p class="feature">矢原温泉（やわら）<br>類似度:0.935</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kisoonsen_kiso_nagano">{% csrf_token %}<input name="id2" type="hidden" value="kisoonsen_kiso_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.kisoonsen_kiso_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1198_0001.jpg"/></a><p class="feature">木曽温泉（きそ）<br>類似度:0.925</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ninoheionizumi_ninotaira_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="ninoheionizumi_ninotaira_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.ninoheionizumi_ninotaira_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0355_0001.jpg"/></a><p class="feature">二ノ平温泉（にのたいら）<br>類似度:0.904</br></p></div></form>
+{% endblock content %}

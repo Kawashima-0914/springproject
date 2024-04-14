@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">七里田温泉（しちりだ）</h2><h3 class="icon"> 所在地：大分県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2108_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">大船山の南東川山麓に位置し、久住高原東部の静かな田園地帯にある温泉地。竹田市内にある他の温泉地と合わせて、国民保養温泉地に指定されている。奈良時代にはすでに存在したとされる、長い歴史を持つ温泉地には、宿泊施設のほか、地元の組合が運営する共同浴場がある。この温泉の最大の特徴は、「ラムネ温泉」と呼ばれることもあるほどに炭酸ガスを多量に含むお湯。換気をせずにいると酸欠を起こすほどに炭酸ガス濃度が高い。高い効能が期待され、大船山への登山客が、その疲れを癒やしに立ち寄る温泉地としても人気だ。温泉施設では、このあたりの郷土食とも言える「団子汁」を味わうこともできる。温泉の後に地元の味を堪能してみると良いだろう。
+「日本一の炭酸泉」とも言われるほどに高濃度の炭酸を含む炭酸水素塩泉が最大の特徴。お湯に浸かると体中に気泡がつき、次第にパチパチと弾け始める。このときに炭酸ガスが体内へ吸収され、血管を拡張して心臓疾患などに効果を発揮するとされている。。源泉の湯温は一年を通して37度前後。源泉かけ流しの炭酸泉を楽しみたいのなら、暖かい時期に入浴するのがおすすめだ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kaiooizumionsen_kaiooizumi_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="kaiooizumionsen_kaiooizumi_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.kaiooizumionsen_kaiooizumi_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0852_0001.jpg"/></a><p class="feature">甲斐大泉温泉（かいおおいずみ）<br>類似度:1.725</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hakoneashinoyuonizumi_hakoneashinoyu_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="hakoneashinoyuonizumi_hakoneashinoyu_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.hakoneashinoyuonizumi_hakoneashinoyu_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1600_0001.jpg"/></a><p class="feature">箱根芦ノ湯温泉（はこねあしのゆ）<br>類似度:1.637</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sagadaiwaonsen_sagayamato_saga">{% csrf_token %}<input name="id2" type="hidden" value="sagadaiwaonsen_sagayamato_saga"/><div class="con2"><a href="../spring_each/" onclick="document.sagadaiwaonsen_sagayamato_saga.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1346_0001.jpg"/></a><p class="feature">佐賀大和温泉（さがやまと）<br>類似度:1.630</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="aridaonsen_arita_saga">{% csrf_token %}<input name="id2" type="hidden" value="aridaonsen_arita_saga"/><div class="con2"><a href="../spring_each/" onclick="document.aridaonsen_arita_saga.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0739_0001.jpg"/></a><p class="feature">有田温泉（ありた）<br>類似度:1.621</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">人吉温泉（ひとよし）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0382_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、関節痛
+</td></tr></table></div><div class="con1"><p class="feature">戦国時代より相良氏の城下町として栄えた“九州の小京都”こと人吉市。JR肥薩線「人吉駅」を中心に狭い路地が行き交い、商店が密集するどこか懐かしい街並みが広がる。 山々に囲まれた人吉盆地の中央には球磨川が流れ、晩秋から初春にかけての朝夕は乳白色の川霧が街を包み込む、別名「霧の都」。斎藤茂吉が「みぎわには　冬草いまだ青くして　朝の球磨（くま）川　ゆ露たちのぼる」と詠んだ幻想的な情景に出合える。 良質の米と球磨川の清流から生まれる球磨焼酎は、ぜひ賞味したい逸品。日本の焼酎文化の中でも古い歴史を持ち、まろやかな口あたりが特徴。歴史深い街を散策し豊富に湧き出る名湯で疲れを癒した後は、お気に入りの焼酎でほろ酔い気分。
+日本三急流の球麿川に沿っておよそ50の源泉が湧き出る温泉。無色透明の湯や薄い黒湯など多彩な湯が豊富に湧出し、かけ流しで楽しめる。柔らかな肌ざわりで美肌効果が高い湯は飲泉も可能で、「よか男、よか女に大変身できる」と語り継がれる別名「若返りの湯」。開湯時期は不明だが、1492年には肥後国を支配した戦国大名・相良為続が入湯した記録も残る500年以上の歴史を誇る古湯だ。温泉街には31軒もの公衆浴場（立ち寄り湯を含む）が点在。中には大正～昭和初期より続く古い浴場もあり、温泉が人々の暮らしの中で息づく姿を垣間見ること
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.717</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="aoshimaonsen_aoshima_miyazaki">{% csrf_token %}<input name="id2" type="hidden" value="aoshimaonsen_aoshima_miyazaki"/><div class="con2"><a href="../spring_each/" onclick="document.aoshimaonsen_aoshima_miyazaki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0700_0001.jpg"/></a><p class="feature">青島温泉（あおしま）<br>類似度:2.710</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenkeseonsen_amagase_ooita">{% csrf_token %}<input name="id2" type="hidden" value="tenkeseonsen_amagase_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.tenkeseonsen_amagase_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0010_0001.jpg"/></a><p class="feature">天ヶ瀬温泉（あまがせ）<br>類似度:2.702</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="utoroonsen_utoro_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="utoroonsen_utoro_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.utoroonsen_utoro_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0787_0001.jpg"/></a><p class="feature">ウトロ温泉（うとろ）<br>類似度:2.686</br></p></div></form>
+{% endblock content %}

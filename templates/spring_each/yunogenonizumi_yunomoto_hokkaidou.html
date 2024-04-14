@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯の元温泉（ゆのもと）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1840_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">緑豊かな山あいにひっそりと佇む温泉地である湯の元温泉は、静かな環境にあり療養や休養の地としても最適。「湯の元温泉旅館」という日帰り入浴も可能な施設でこの湯を楽しむことができる。ダムによってできた桂沢湖、桂沢国設スキー場、キャンプ場などからもアクセスがよいため、ワカサギ釣りやスキー、キャンプなどでアクティブに楽しんでから、疲れた体を癒やす立ち寄り湯として利用するのもおすすめだ。また、湯の元温泉のある三笠市は農業のまちとしても知られている。米や玉ねぎ、かぼちゃ、きゅうりなどのほか、メロンやスイカ、ワイン用のぶどうなどさまざまな食材が作られている。食物調理科のある市立高校も建てられ、食のスペシャリストを育てる地域でもある。温泉を楽しんだら、グルメを堪能しに繰り出したいものだ。
+泉質は単純硫黄冷鉱泉で、神経痛、関節痛、慢性皮膚病、慢性婦人病、糖尿病、冷え性など効能は多岐にわたる。無色透明の湯で、柔らかな肌触りが特徴。秘湯とも呼ばれる温泉は、体の芯から温めてくれる保温効果の高い湯でもある。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="koganeyuonsen_koganeyu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="koganeyuonsen_koganeyu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.koganeyuonsen_koganeyu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0971_0001.jpg"/></a><p class="feature">小金湯温泉（こがねゆ）<br>類似度:2.227</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shiobetsuonsen_shiobetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="shiobetsuonsen_shiobetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.shiobetsuonsen_shiobetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1979_0001.jpg"/></a><p class="feature">塩別温泉（しおべつ）<br>類似度:2.203</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okudougoonsen_okudougo_ehime">{% csrf_token %}<input name="id2" type="hidden" value="okudougoonsen_okudougo_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.okudougoonsen_okudougo_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0288_0001.jpg"/></a><p class="feature">奥道後温泉（おくどうご）<br>類似度:2.155</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="waitaonsensato_waita_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="waitaonsensato_waita_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.waitaonsensato_waita_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1991_0001.jpg"/></a><p class="feature">わいた温泉郷（わいた）<br>類似度:2.139</br></p></div></form>
+{% endblock content %}

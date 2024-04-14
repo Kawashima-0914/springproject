@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">甲府昭和温泉（こうふしょうわ）</h2><h3 class="icon"> 所在地：山梨県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2262_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">温泉地の多い山梨県の中では珍しい、ビジネスホテルの中の天然温泉「甲府昭和温泉」。ビジネス用途の宿泊者も、日本一の渓谷美を誇る「昇仙峡」やワインセラー見学など甲府市内の観光名所を訪れた人も、自噴の源泉かけ流し天然温泉に入れることから、1日に100人以上が訪れる人気温浴施設でもある。ホテル宿泊者でなく日帰りでも入浴可能。入ると体が気泡に包まれ、体の芯まで温まる。また、山梨はぶどうをはじめとした果物やほうとうなどの郷土料理など、グルメも楽しめる地域。ホテルの中には地元・山梨県の名物などを食べられる食堂もあるほか、周辺にはフルーツ狩りを楽しめる場所も点在している。
+わずかにぬめりのある茶褐色のナトリウム一炭酸水素塩・塩化物温泉。湯量豊富な低張性の弱アルカリ性で、神経痛、関節痛、肩こり、慢性消化器病、痔疾、冷え性、疲労回復、きりきず、慢性皮膚病などへの効能が期待できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kiyosatoonsen_kiyosato_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="kiyosatoonsen_kiyosato_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.kiyosatoonsen_kiyosato_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1578_0001.jpg"/></a><p class="feature">清里温泉（きよさと）<br>類似度:1.692</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="juumaisouonsen_juumaisou_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="juumaisouonsen_juumaisou_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.juumaisouonsen_juumaisou_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2359_0001.jpg"/></a><p class="feature">十枚荘温泉（じゅうまいそう）<br>類似度:1.573</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sutamanoyu_sudamanoyu_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="sutamanoyu_sudamanoyu_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.sutamanoyu_sudamanoyu_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2363_0001.jpg"/></a><p class="feature">須玉の湯（すだまのゆ）<br>類似度:1.538</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kannoonsen_1_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kannoonsen_1_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kannoonsen_1_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2137_0001.jpg"/></a><p class="feature">神野温泉（久美の浜温泉郷）（じんの（くみのはま））<br>類似度:1.527</br></p></div></form>
+{% endblock content %}

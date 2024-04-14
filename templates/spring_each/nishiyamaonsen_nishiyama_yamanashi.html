@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">西山温泉（にしやま）</h2><h3 class="icon"> 所在地：山梨県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0734_0001.jpg"/><table><tr><th>効能</th><td>筋肉痛、胃腸病、便秘、美肌
+</td></tr></table></div><div class="con1"><p class="feature">ＪＲ「身延駅」から山梨交通バス奈良田行きで約90分、南アルプスの最高峰・北岳を源流とする早川沿いに湧く山間の温泉地。早川沿いに延びる南アルプス街道をさかのぼって温泉地へと向かう道中、目を楽しませてくれるのは早川の素晴らしい渓谷美。川幅の狭い所では巨岩が味わい深い自然の造形美を見せ、広いところでは水面が太陽の光を浴びてきらきらと輝く様が目を奪う。そんな自然の芸術を愛でながらたどり着いた先の温泉地は、山間の奥まったロケーションに佇み、歴史ある秘湯の風情たっぷり。徳川家康や武田信玄など、名だたる戦国武将も湯浴みしたといわれる古来から名高い温泉である。
+毎分1600リットルの湯が自噴する、ナトリウム・カルシウム－硫酸塩・塩化物泉（低張性アルカリ性高温泉）。胃腸病や筋肉痛、便秘、美肌などへの効能があるとされる。無色透明でわずかに温泉特有の硫黄臭がする湯が特徴。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="naradanosatoonsen_naratanosato_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="naradanosatoonsen_naratanosato_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.naradanosatoonsen_naratanosato_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1101_0001.jpg"/></a><p class="feature">奈良田の里温泉（ならたのさと）<br>類似度:1.646</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yuhajionsen_yubata_gunma">{% csrf_token %}<input name="id2" type="hidden" value="yuhajionsen_yubata_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.yuhajionsen_yubata_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2300_0001.jpg"/></a><p class="feature">湯端温泉（ゆばた）<br>類似度:1.641</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shikazawaonsen_kazawa_gunma">{% csrf_token %}<input name="id2" type="hidden" value="shikazawaonsen_kazawa_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.shikazawaonsen_kazawa_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0391_0001.jpg"/></a><p class="feature">鹿沢温泉（かざわ）<br>類似度:1.582</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="oosawayamaonsen_oosawayama_niigata">{% csrf_token %}<input name="id2" type="hidden" value="oosawayamaonsen_oosawayama_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.oosawayamaonsen_oosawayama_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1188_0001.jpg"/></a><p class="feature">大沢山温泉（おおさわやま）<br>類似度:1.553</br></p></div></form>
+{% endblock content %}

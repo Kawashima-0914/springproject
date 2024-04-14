@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">はやぶさ温泉（はやぶさ）</h2><h3 class="icon"> 所在地：山梨県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2364_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">武田信玄の菩提寺である乾徳山恵林寺に近い、富士山を眺める高台の温泉、はやぶさ温泉。温浴施設の名称でもある。「甲州の鎌倉」とも表現される景観の中に湧く、地下1,000mから湧出する温泉は、100％源泉かけ流しで提供され、県内だけではなく県外からも訪れる人がいる。敷地内には食事処もあり、温泉水を使用して調理した種類豊富な料理を楽しめることから食事処を目当てに施設を訪れる人も少なくない。温泉を用いた化粧品などのオリジナルグッズも販売されており、美肌効果があるとして女性に人気が高い。周辺には観光地も多く、山梨県内では人気の高い温泉地である。
+笛吹川断裂温泉帯から湧出するアルカリ性単純泉。PH値が大きいため、皮脂や汚れ、角質を落とすクレンジング効果を持つことから美肌の湯として特に女性に人気。飲泉もでき、神経痛、筋肉痛、冷え性、皮膚病、慢性消化器病、糖尿病、痛風、高血圧など幅広い効能が期待できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tenryuukyouonsen_tenryuukyou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="tenryuukyouonsen_tenryuukyou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.tenryuukyouonsen_tenryuukyou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0094_0001.jpg"/></a><p class="feature">天龍峡温泉（てんりゅうきょう）<br>類似度:2.251</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="takanosuonsen_takasu_fukui">{% csrf_token %}<input name="id2" type="hidden" value="takanosuonsen_takasu_fukui"/><div class="con2"><a href="../spring_each/" onclick="document.takanosuonsen_takasu_fukui.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0997_0001.jpg"/></a><p class="feature">鷹巣温泉（たかす）<br>類似度:2.239</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.234</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okudairaonsen_okudaira_gunma">{% csrf_token %}<input name="id2" type="hidden" value="okudairaonsen_okudaira_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.okudairaonsen_okudaira_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2063_0001.jpg"/></a><p class="feature">奥平温泉（おくだいら）<br>類似度:2.216</br></p></div></form>
+{% endblock content %}

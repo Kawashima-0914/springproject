@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">遠刈田温泉（とおがった）</h2><h3 class="icon"> 所在地：宮城県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0098_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">標高約330mの高原にあり昔は湯治場として栄えた遠刈田温泉。今も、温泉街には土産物屋やこけし店と一緒に精肉店、魚屋などが並ぶ。庶民的な街並みと道ばたの溝から立ち上る湯煙が、昔ながらの湯治場の雰囲気を漂わせる。 見上げる蔵王連峰は、蔵王のシンボルである「御釜」や山岳観光道路「蔵王エコーライン」の新緑、紅葉など見所が目白押し。蔵王の大自然を楽しむ拠点としても人気だ。さらに、華麗な花模様と前頭に施された赤い放射線状の模様が特徴の「遠刈田こけし」。 温泉街から「こけし橋」を渡ると広がる集落には、こけし工房が軒を連ねる。名湯とこけしに大自然。東北の伝統と魅力が出迎えてくれる。
+特徴：1601年、岩崎山金山で財を成した金売橘次が霊泉を発見したのが始まりと伝えられる古湯。その昔、三階滝の大ガニとの戦いに敗れた不動滝の大ウナギの切られた尾が流れ着いたことから、足腰の病に効く温泉になったとの伝説が残る。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="sakunamionsen_sakunami_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sakunamionsen_sakunami_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sakunamionsen_sakunami_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0695_0001.jpg"/></a><p class="feature">作並温泉（さくなみ）<br>類似度:1.823</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="takaseonsen_takase_niigata">{% csrf_token %}<input name="id2" type="hidden" value="takaseonsen_takase_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.takaseonsen_takase_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0587_0001.jpg"/></a><p class="feature">高瀬温泉（たかせ）<br>類似度:1.798</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yudakawaonsen_yudagawa_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="yudakawaonsen_yudagawa_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.yudakawaonsen_yudagawa_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0854_0001.jpg"/></a><p class="feature">湯田川温泉（ゆだがわ）<br>類似度:1.778</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sanchuuonsen_1_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="sanchuuonsen_1_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.sanchuuonsen_1_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0257_0001.jpg"/></a><p class="feature">山中温泉（加賀温泉郷）（やまなか（かが））<br>類似度:1.772</br></p></div></form>
+{% endblock content %}

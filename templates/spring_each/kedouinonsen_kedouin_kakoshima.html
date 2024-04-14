@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">祁答院温泉（けどういん）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1732_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">祁答院温泉は鹿児島県薩摩川内市祁答院町下手にある温泉。祁答院ゴルフ倶楽部のクラブハウスに隣接する、地上14階建ての「ホテル祁答院」に引かれている。近くには国際的条約「ラムサール条約」登録湿地である「藺牟田池自然公園」がある。7つの外輪山に囲まれた静かな池で、周囲約4kmの湖畔には春は2000本の桜が咲き誇る。多様な動植物種が生息する貴重な自然環境が残っている。また、日本で初めての木槽仕込み芋焼酎蔵「祁答院蒸溜所」では、手造りで麹を造り木槽で発酵させ、木樽の蒸留機で蒸留し洞窟で貯蔵熟成させるという、日本唯一の芋焼酎「野海棠」などを蔵人が造る様子を間近で見学出来る。
+祁答院温泉の泉質は無色透明のアルカリ性単純温泉。神経痛、筋肉痛、関節痛、疲労回復、冷え性、五十肩、打ち身、慢性消化器病、痔疾に効能があるとされる。自慢の露天風呂は池と滝を配した日本庭園風で心身ともにリラックスできる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="okuyamaonsen_okuyama_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="okuyamaonsen_okuyama_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.okuyamaonsen_okuyama_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">奥山温泉（おくやま）<br>類似度:2.349</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="minamigisoonsen_nagiso_nagano">{% csrf_token %}<input name="id2" type="hidden" value="minamigisoonsen_nagiso_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.minamigisoonsen_nagiso_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0957_0001.jpg"/></a><p class="feature">南木曽温泉（なぎそ）<br>類似度:2.345</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="minamikyuushuueia_minamikyuushuuei_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="minamikyuushuueia_minamikyuushuuei_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.minamikyuushuueia_minamikyuushuuei_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1720_0001.jpg"/></a><p class="feature">南九州頴娃（みなみきゅうしゅう・えい）<br>類似度:2.344</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.336</br></p></div></form>
+{% endblock content %}

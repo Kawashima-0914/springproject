@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">白峰温泉（しらみね）</h2><h3 class="icon"> 所在地：石川県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1103_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">石川県東南端の山奥に位置し、日本三霊山のひとつ・霊峰白山の麓に湧き出す温泉地。車でトンネルを抜けると手取川の雄大な景色とともに視界に飛び込んでくる温泉街は、山間の地ならではの素朴さと自然の美しさが魅力 。 いにしえよりこの大自然の中で湧出する温泉は、その住人ばかりでなく多くの観光客に親しまれ、心と身体を癒し続けてきた。村半分が国立公園という風光明媚な景観と温泉の効力があいまって、温泉情緒をさらに豊かなものにしてくれる。 白山麓のさらに奥まった地の豊かな自然によって育まれた山菜やニジマス料理に舌鼓を打つのも楽しみの一つ。付近にはスキー場や「恐竜の里」など、年代を問わず楽しめる観光スポットも充実している。
+日本三名山の麓に湧く、日本でも数少ない重曹泉が楽しめる温泉。その泉質は「絹肌の湯」と例えられるほど、すべすべと滑らかな肌触りで女性客から評判が高い。神経痛、筋肉痛、創傷、火傷、婦人病、リウマチなど効能は上げたらキリがないほど。国立公園に囲まれた立地にあり、当然のごとく景観も抜群。立ち寄り入浴が楽しめる白峰初の露天風呂「天望の湯」からは、その雄大な白山連峰の大パノラマが堪能できる。自然と一体になった安らぎの湯。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="uenoharaonsen_1_gunma">{% csrf_token %}<input name="id2" type="hidden" value="uenoharaonsen_1_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.uenoharaonsen_1_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0199_0001.jpg"/></a><p class="feature">上の原温泉（水上温泉郷）（うえのはら（みなかみ））<br>類似度:2.210</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekowaisukougenonsen_nisekowaisukougen_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1877_0001.jpg"/></a><p class="feature">ニセコワイス高原温泉（にせこわいすこうげん）<br>類似度:2.192</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sasakuraonsen_sasakura_niigata">{% csrf_token %}<input name="id2" type="hidden" value="sasakuraonsen_sasakura_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.sasakuraonsen_sasakura_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1129_0001.jpg"/></a><p class="feature">笹倉温泉（ささくら）<br>類似度:2.191</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yakumoonsen_1_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="yakumoonsen_1_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.yakumoonsen_1_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2050_0001.jpg"/></a><p class="feature">八雲温泉（北海道）（やくも）<br>類似度:2.172</br></p></div></form>
+{% endblock content %}

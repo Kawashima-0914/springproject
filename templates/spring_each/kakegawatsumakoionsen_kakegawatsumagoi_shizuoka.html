@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">掛川つま恋温泉（かけがわつまごい）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1776_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">周囲に茶畑が広がるこの地に、170万平米を誇る広大なリゾートが建設されたのは、1974年のこと。つま恋の北東に位置する小夜の中山で、平安時代の歌人・橘為仲が詠んだ和歌の一節から命名された。1975年に日本で初めて行われた野外フォークライブは、７万人もの観客が芝生に集まり一夜をともにした伝説のライブとなった。以来音楽の聖地として有名である。2016年にリニューアルオープンし、ペットと楽しめる総合リゾートに生まれ変わった。充実した音楽施設はもちろんのこと、テニスやゴルフ、乗馬、アーチェリーなどの幅広いスポーツが楽しめる環境も整えられている。
+弱アルカリ性で、ナトリウムを多く含む塩化物泉。「森林の湯」という、広大な敷地の中にある温泉施設では、「内の湯」「外の湯」が男女交互に入れ替えられて楽しむことができる。内の湯といっても露天風呂を備えており、外の湯には眺望サウナもある。どちらでも森林浴を楽しみながら温泉に入れそうだ。また、宿泊者限定で入浴できる内風呂が宿泊棟にある。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tamayuraonsen_tamayura_miyazaki">{% csrf_token %}<input name="id2" type="hidden" value="tamayuraonsen_tamayura_miyazaki"/><div class="con2"><a href="../spring_each/" onclick="document.tamayuraonsen_tamayura_miyazaki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1071_0001.jpg"/></a><p class="feature">たまゆら温泉（たまゆら）<br>類似度:2.478</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kitahiroshimaonsen_kitahiroshima_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="kitahiroshimaonsen_kitahiroshima_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.kitahiroshimaonsen_kitahiroshima_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1279_0001.jpg"/></a><p class="feature">北広島温泉（きたひろしま）<br>類似度:2.465</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kiroroonsen_kiroro_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="kiroroonsen_kiroro_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.kiroroonsen_kiroro_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">キロロ温泉（きろろ）<br>類似度:2.461</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hakubaryuujinonsen_hakubaryuujin_nagano">{% csrf_token %}<input name="id2" type="hidden" value="hakubaryuujinonsen_hakubaryuujin_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.hakubaryuujinonsen_hakubaryuujin_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1820_0001.jpg"/></a><p class="feature">白馬龍神温泉（はくばりゅうじん）<br>類似度:2.405</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">祖谷渓温泉（いやけい）</h2><h3 class="icon"> 所在地：徳島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1606_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">東京から約5時間、大阪からは約2時間半で行ける秘境、祖谷。徳島県の西部に位置し、四国第二の高峰・剣山山系西側の平地が少なく急峻な崖地が多いという過酷な自然環境。 ここには国の天然記念物に指定された大歩危峡や県指定天然記念物の黒沢湿原、紅葉の名所・竜ヶ岳といった豊かな自然がある。また、四国霊場第66番札所である雲辺寺、平家落人伝説の残る祖谷のかずら橋など、歴史的文化遺産も多数。豊かな自然とともに観光も楽 しめるのが魅力。 祖谷渓谷の原生林の広がる絶景とともに山郷ならではの湯浴みを楽しもう。野趣あふれる露天風呂やジェットバス、よもぎ薬湯、塩サウナなど本格的な温泉施設が充実しており、静寂な空間のなか心温まる癒しの湯を堪能したい。
+泉質はpH9.0、露天風呂の他、ジェットバス、よもぎ薬湯、塩サウナなど。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="okuhakubaonsen_okuhakuba_nagano">{% csrf_token %}<input name="id2" type="hidden" value="okuhakubaonsen_okuhakuba_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.okuhakubaonsen_okuhakuba_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1204_0001.jpg"/></a><p class="feature">奥白馬温泉（おくはくば）<br>類似度:2.170</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1120_0001.jpg"/></a><p class="feature">京都竹の郷温泉（きょうとたけのさと）<br>類似度:2.163</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kennaratennenonsen_minaratennen_ehime">{% csrf_token %}<input name="id2" type="hidden" value="kennaratennenonsen_minaratennen_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.kennaratennenonsen_minaratennen_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1340_0001.jpg"/></a><p class="feature">見奈良天然温泉（みならてんねん）<br>類似度:2.152</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenkeseonsen_amagase_ooita">{% csrf_token %}<input name="id2" type="hidden" value="tenkeseonsen_amagase_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.tenkeseonsen_amagase_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0010_0001.jpg"/></a><p class="feature">天ヶ瀬温泉（あまがせ）<br>類似度:2.134</br></p></div></form>
+{% endblock content %}

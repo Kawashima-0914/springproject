@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">八幡ひまわり温泉（やはたひまわり）</h2><h3 class="icon"> 所在地：福岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0950_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">北九州工業地帯のすぐ近くにあるリゾートホテルで、「アクティブリゾーツ福岡八幡」が建っている。北九州は明治時代から製鉄業で発展してきた街で、現在も製鉄所を中心に多くの工場が建っている。1901年に操業を開始した八幡製鉄所はシンボル的な存在で、2015年に「明治日本の産業革命遺産」として世界遺産に登録された。八幡製鉄所は徒歩10分ほどで行けるほか、周辺には「いのちのたび博物館」や「環境ミュージアム」「北九州市立美術館」などの展示施設も充実していて飽きることがない。さらに足を伸ばして皿倉山に行けば、「100億ドルの夜景」とも称される工業都市の夜景を楽しめる。駅も高速道路のICも近いので、観光やビジネスの拠点としても便利である。
+温泉の少ない福岡県北部では珍しい天然温泉だ。敏感肌の人でも入りやすいアルカリ性の単純泉で、源泉温度は30度近くと低めなので温めている。大浴場のほかに、サウナもある。筋肉痛や関節痛などの適応症があるまろやかなお湯に浸かれば、ビジネスやレジャーの疲れを癒してくれることだろう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="rurionsen_ruri_shiga">{% csrf_token %}<input name="id2" type="hidden" value="rurionsen_ruri_shiga"/><div class="con2"><a href="../spring_each/" onclick="document.rurionsen_ruri_shiga.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1326_0001.jpg"/></a><p class="feature">るり温泉（るり）<br>類似度:2.373</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="igaonsen_iga_mie">{% csrf_token %}<input name="id2" type="hidden" value="igaonsen_iga_mie"/><div class="con2"><a href="../spring_each/" onclick="document.igaonsen_iga_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1470_0001.jpg"/></a><p class="feature">伊賀温泉（いが）<br>類似度:2.346</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.330</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="genkaisatsukionsen_genkaisatsuki_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="genkaisatsukionsen_genkaisatsuki_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.genkaisatsukionsen_genkaisatsuki_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0949_0001.jpg"/></a><p class="feature">玄海さつき温泉（げんかいさつき）<br>類似度:2.320</br></p></div></form>
+{% endblock content %}

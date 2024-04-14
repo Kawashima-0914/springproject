@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">応徳温泉（おうとく）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1271_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫黄泉
+</td></tr><tr><th>効能</th><td>にごり、にごり（乳白色）、美肌、神経痛、筋肉痛、しびれ、疲労、婦人病、胃腸病、動脈硬化、皮膚病、糖尿病、痔疾
+</td></tr></table></div><div class="con1"><p class="feature">平安時代の応徳年間に発見されたことからその名が付いたとされる応徳温泉。千年にわたり多くの人が「草津の上がり湯」と呼び、強酸性である草津の湯の帰り道に立ち寄って肌を休めていた。古民家を改装して造られた温泉は道の駅の隣で、特産品である「花インゲン」などのお土産も買える。応徳温泉のある中之条町六合（くに）は、新潟県と長野県の県境にある、面積の92％を山林と原野が占める大自然に囲まれた地域。希少なコケの一種「チャツボミゴケ」の、本州で唯一の群生地としても知られる。重要伝統的建造物群保存地区に選定された赤岩集落には養蚕農家群が保存されており、「出梁造り」や「船外出し造り」などが特徴の伝統的な建造物群を見られる。
+平安時代の旅人によって発見されて以来の歴史を持つ応徳温泉。源泉かけ流しの硫黄泉で、泉質は一般適応症のほか、皮膚病や婦人病、糖尿病などにも効果的とされる。さらさらと手触りのよい湯は、少し白濁しており黒い湯の花が浮かんでいるのが特徴。肌に優しくつるつるになる美人の湯としても人気がある。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ichinomataonsen_ichinomata_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="ichinomataonsen_ichinomata_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.ichinomataonsen_ichinomata_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1123_0001.jpg"/></a><p class="feature">一の俣温泉（いちのまた）<br>類似度:2.251</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="akagawaonsen_akagawa_ooita">{% csrf_token %}<input name="id2" type="hidden" value="akagawaonsen_akagawa_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.akagawaonsen_akagawa_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1038_0001.jpg"/></a><p class="feature">赤川温泉（あかがわ）<br>類似度:2.239</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1128_0001.jpg"/></a><p class="feature">天橋立・宮津温泉ピント湯（あまのはしだて・みやづぴんとゆ）<br>類似度:2.224</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shirakawaonsen_shirakawa_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="shirakawaonsen_shirakawa_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.shirakawaonsen_shirakawa_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1733_0001.jpg"/></a><p class="feature">白川温泉（しらかわ）<br>類似度:2.209</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">吉田温泉（鹿児島県）（よしだ）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2190_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">霧島市の国分平野北西部から中部にかけて点在する温泉群の総称である日当山温泉。県内でもっとも古い温泉と言われ、隼人温泉とも呼ばれることもある。現在では二十数件の旅館や公衆浴場、家族湯が存在する。歴史は古く、イザナギ・イザナミの神話伝説にまで遡る。明治維新頃には西郷隆盛もよく訪れた温泉郷と言われ、昔から鹿児島の奥座敷として栄えてきた。温泉街には昔ながらの共同浴場が多く、温泉街の南部にはヒルコ伝説にちなむ蛭児神社や西郷隆盛が宿泊した宿を復元した施設などもある。周辺には観光名所としてもパワースポットとしても知られる霧島神社や、人物像としては日本一の大きさを誇る西郷隆盛像のある西郷公園などがあり、温泉と観光の両方を楽しめる地でもある。
+日当山温泉の泉質は、ナトリウム炭酸水素塩泉。神経痛やリウマチ、きりきず、皮膚病などへの効能が期待できる。また、美肌効果もあると言われ、女性にも人気がある。無色透明で一部の施設では飲用も可能。貸切風呂専門も多いため、家族やカップル、仲間でプライベートな楽しみ方をしに訪れてみるのも良いだろう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="anrakuonsen_1_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="anrakuonsen_1_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.anrakuonsen_1_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2147_0001.jpg"/></a><p class="feature">安楽温泉（新川渓谷温泉）（あんらく（しんかわけいこくきょう））<br>類似度:1.818</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kojirionsen_kojiri_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="kojirionsen_kojiri_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.kojirionsen_kojiri_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1911_0001.jpg"/></a><p class="feature">湖尻温泉（こじり）<br>類似度:1.771</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:1.759</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="uenoyuonsenkyou_kaminoyu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="uenoyuonsenkyou_kaminoyu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.uenoyuonsenkyou_kaminoyu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2084_0001.jpg"/></a><p class="feature">上の湯温泉郷（かみのゆ）<br>類似度:1.735</br></p></div></form>
+{% endblock content %}

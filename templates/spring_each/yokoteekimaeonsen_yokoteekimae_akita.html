@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">横手駅前温泉（よこてえきまえ）</h2><h3 class="icon"> 所在地：秋田県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1063_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">100を超えるかまくらや無数のミニかまくらが街を彩る「横手かまくら」で知られる秋田県横手市の「横手駅」前に湧く温泉。駅周辺は高速バスのターミナルやホテル、デパートが建ち並び近代的な賑わいを見せる繁華街。 町の中心まで足を延ばせば四季ごとに移ろう美しい彩りを見ることができる横手公園や、武家屋敷など横手城下町としての歴史を感じさせる建物などの見所も多い。また、奥羽山脈や出羽丘陵に囲まれ、雄物川や横手川が流れる風景は、石坂洋次郎の小説『山と川のある町』の舞台になった町としても有名。 どこか懐かしくほっと心が和む城下町が今も昔も変わらず出迎えてくれる。「横手かまくら」など古くから伝わる伝統行事や祭りも楽しみの一つ。駅周辺だけでも50軒はあるという名物「横手やきそば」も見逃せない。
+「横手プラザホテル」の駐車場工事中に湧き出した温泉。毎分約720L湧き出る約47℃の自噴温泉で、神経痛やリウマチ、皮膚病などの様々な効能を持つ。少しぬめり感のある湯は肌に心地よく、汗や疲れをすっかり洗い流してくれる。JR奥羽本線横手駅より徒歩約1分の「横手駅前温泉ゆうゆうプラザ」では手入れの行き届いた日本庭園を眺めながら湯浴みを楽しむことができ、平成18年11月にオープンした「ホテルプラザアネックス横手」には岩盤浴や展望大浴場、ジャグジー、エステ、スカイテラスなどの最新温浴設備を完備。駅前の繁華街の中にあ
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kinkesakionsen_kanagasaki_akita">{% csrf_token %}<input name="id2" type="hidden" value="kinkesakionsen_kanagasaki_akita"/><div class="con2"><a href="../spring_each/" onclick="document.kinkesakionsen_kanagasaki_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1283_0001.jpg"/></a><p class="feature">金ヶ崎温泉（かながさき）<br>類似度:2.053</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tamayuraonsen_tamayura_miyazaki">{% csrf_token %}<input name="id2" type="hidden" value="tamayuraonsen_tamayura_miyazaki"/><div class="con2"><a href="../spring_each/" onclick="document.tamayuraonsen_tamayura_miyazaki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1071_0001.jpg"/></a><p class="feature">たまゆら温泉（たまゆら）<br>類似度:1.999</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shiganosatoonsen_shikanosato_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="shiganosatoonsen_shikanosato_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.shiganosatoonsen_shikanosato_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0928_0001.jpg"/></a><p class="feature">志賀の郷温泉（しかのさと）<br>類似度:1.989</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gojouribaasaidoonsen_gojouribaasaido_nara">{% csrf_token %}<input name="id2" type="hidden" value="gojouribaasaidoonsen_gojouribaasaido_nara"/><div class="con2"><a href="../spring_each/" onclick="document.gojouribaasaidoonsen_gojouribaasaido_nara.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1207_0001.jpg"/></a><p class="feature">五條リバーサイド温泉（ごじょうりばーさいど）<br>類似度:1.986</br></p></div></form>
+{% endblock content %}

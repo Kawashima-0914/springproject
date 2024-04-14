@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">大塚温泉（おおつか）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2062_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">1596～1614年の慶長年間には「尻高暖湯」の名で隆盛を極め、群馬を代表する薬湯である大塚温泉。このぬる湯の由来として、宿の女中があまりの賑わいに、湯に馬の骨を入れたところ、湯の神が怒り、その温度を下げてしまったというユニークな言い伝えが残っている。湯温は34度前後なので、ゆったりとした気持ちでじっくりと湯に浸かろう。また、中之条には自然の観光スポットが多く存在する。「四万川ダム」によってせき止めて作られた人造湖・奥四万湖は、時間帯や光の加減で湖水の色が変化する。その美しさに、時間を忘れて見入ってしまうだろう。湖畔は新緑や紅葉の名所にもなっている。
+アルカリ性単純温泉で、神経痛や肩こり、腰痛、冷え性や痔疾など幅広い効能が期待できる。大塚温泉最大の特徴は34.2℃のぬる湯であること。ゆっくりと湯に浸かり、時間をかけて体を温めればストレスや疲れも洗い流してくれるだろう。閑静な環境にあるため、療養などにも向いている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.132</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.089</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kawabaonsen_kawaba_gunma">{% csrf_token %}<input name="id2" type="hidden" value="kawabaonsen_kawaba_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.kawabaonsen_kawaba_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1348_0001.jpg"/></a><p class="feature">川場温泉（かわば）<br>類似度:2.061</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hiekionsen_hinoemata_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="hiekionsen_hinoemata_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.hiekionsen_hinoemata_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1086_0001.jpg"/></a><p class="feature">檜枝岐温泉（ひのえまた）<br>類似度:2.057</br></p></div></form>
+{% endblock content %}

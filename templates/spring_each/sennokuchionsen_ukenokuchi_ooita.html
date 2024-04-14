@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">筌ノ口温泉（うけのくち）</h2><h3 class="icon"> 所在地：大分県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0295_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">日本一の大吊橋「九重“夢”大吊橋」や紅葉の名所の「九酔渓」に近く、やまなみハイウェイからやや奥まった場所にあるひなびた温泉地だ。1644年頃から村人が入浴していたが、1728年に田野徳右衛門が湯治小屋を建てたのが始まりという歴史ある温泉。1952年には文豪・川端康成がこの地を訪れており、後に九重を舞台とした未完の小説『波千鳥』を残しており、その中でこの地の紅葉や山の眺望を愛でている。現在は飯田高原の鳴子川近くに「旅館 新清館」と共同浴場が2件存在する。阿蘇くじゅう国立公園内にある「黒岳」からは1日2万トン湧き出るといわれる湧水がある。その下流にある名瀑「名水の滝」は冷たく、滝の周辺は夏でも寒さを感じるほどマイナスイオンを浴びることが出来る
+黄金色に輝く温泉は鉄分を多く含み胃腸病に特効があると評判。成分が多いにも関わらずさっぱりとしているのが特徴だ。旅館「筌の口温泉　新清館」の自慢の露天風呂は、鳴子川沿いの雑木林の中にあり、川のせせらぎと鳥のさえずりをBGMにしながら身も心もリラックスして秘湯気分を味わえる。夜は満天の星空を楽しめる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tenkoukawaonsen_amorigawa_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="tenkoukawaonsen_amorigawa_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.tenkoukawaonsen_amorigawa_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1749_0001.jpg"/></a><p class="feature">天降川温泉（あもりがわ）<br>類似度:1.736</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenkeseonsen_amagase_ooita">{% csrf_token %}<input name="id2" type="hidden" value="tenkeseonsen_amagase_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.tenkeseonsen_amagase_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0010_0001.jpg"/></a><p class="feature">天ヶ瀬温泉（あまがせ）<br>類似度:1.715</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="haratsuruonsen_harazuru_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="haratsuruonsen_harazuru_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.haratsuruonsen_harazuru_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0628_0001.jpg"/></a><p class="feature">原鶴温泉（はらづる）<br>類似度:1.714</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sagadaiwaonsen_sagayamato_saga">{% csrf_token %}<input name="id2" type="hidden" value="sagadaiwaonsen_sagayamato_saga"/><div class="con2"><a href="../spring_each/" onclick="document.sagadaiwaonsen_sagayamato_saga.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1346_0001.jpg"/></a><p class="feature">佐賀大和温泉（さがやまと）<br>類似度:1.707</br></p></div></form>
+{% endblock content %}

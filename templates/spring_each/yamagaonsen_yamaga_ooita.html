@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">山香温泉（やまが）</h2><h3 class="icon"> 所在地：大分県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1337_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>美肌、神経痛、ねんざ、婦人病、高血圧、動脈硬化、皮膚病
+</td></tr></table></div><div class="con1"><p class="feature">「日本の秘境100選」のひとつに選ばれた国東半島の付け根にある、杵築市山香町。山香温泉はこの町の高台にある温泉地。広い敷地にコテージが並ぶ、見晴らしの良い温泉施設だ。山に囲まれた自然豊かな山香町には、風車のある「甲尾山公園」があり、この風車は山香町のシンボルにもなっている。公園は風車のほか、桜の名所としても有名で、春には約1,000本もの桜を目当てに訪れる人も多い。また、山香町には山香三山と呼ばれる鋸山･津波戸山･雲ヶ岳があり、秋になると山々が美しく色づき紅葉の名所となっているところも多い。季節を通じて美しい景色を楽しめる温泉地で、公園や山歩きでレジャーを楽しんで見るのも良さそうだ。
+塩分がかなり濃く、空気に触れると茶褐色に変色する不思議なお湯と独特の香りが特徴。ぬるぬるとした肌触りの「美人の湯」でもある。この個性的なお湯は、源泉かけ流しの露天風呂や樽風呂などで楽しめる。源泉で入れば、炭酸ガス、硫化水素、鉄分など多種多様な成分が含まれていることから、多くの効能が期待できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="mitsunorionsen_koutoku_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="mitsunorionsen_koutoku_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.mitsunorionsen_koutoku_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0494_0001.jpg"/></a><p class="feature">光徳温泉（こうとく）<br>類似度:2.474</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekokonbuonsen_konbu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekokonbuonsen_konbu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekokonbuonsen_konbu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0655_0001.jpg"/></a><p class="feature">ニセコ昆布温泉（こんぶ）<br>類似度:2.441</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:2.397</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="narukoonsen_1_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="narukoonsen_1_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.narukoonsen_1_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0105_0001.jpg"/></a><p class="feature">鳴子温泉（鳴子温泉郷）（ナルコ）<br>類似度:2.385</br></p></div></form>
+{% endblock content %}

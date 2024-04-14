@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">光徳温泉（こうとく）</h2><h3 class="icon"> 所在地：栃木県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0494_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉、硫黄泉
+</td></tr><tr><th>効能</th><td>にごり、にごり（乳白色）、神経痛、筋肉痛、関節痛、婦人病、冷え性、高血圧、動脈硬化、皮膚病、糖尿病、痔疾など
+</td></tr></table></div><div class="con1"><p class="feature">中禅寺湖から北に約5㎞、戦場ヶ原北部に位置する温泉地。標高約1400mの高原地帯で、周囲を白樺や唐松林で覆われた爽やかでのどかな空気が流れる。朝、野鳥のさえずりで目覚め散策に出かけると、愛らしいリスに出くわす。 そんなシーンを当たり前に体験できる自然の宝庫だ。春の新緑から秋の紅葉まで季節ごとの風景を堪能できるのはもちろん、冬には歩くスキー“クロスカントリー”を楽しめる「光徳クロスカントリースキー場」がオープン。 「日光東照宮」や「中禅寺湖」、「華厳の滝」など名所の多い世界遺産・日光の観光拠点にもぴったり。観光客の多い市街地を離れ、豊かな自然あふれる日光の新たな魅力を発見できるかもしれない。
+中禅寺湖の北、約5㎞の高原に湧き出る温泉。豊富な湯量を誇り、源泉温度は約77℃。硫黄を含んだ湯は無色透明だが、空気に触れると変色する。時にはアクアブルーに、時にはエメラルドグリーンに変わる様子は幻想的。自然の壮大なパワーを感じさせる天然温泉だ。夜には、頭上を満天の星が覆い、息を飲む美しさ。高原ならではの湯浴みを存分に堪能できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="chuuzenjionsen_chuuzenji_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="chuuzenjionsen_chuuzenji_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.chuuzenjionsen_chuuzenji_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0091_0001.jpg"/></a><p class="feature">中禅寺温泉（ちゅうぜんじ）<br>類似度:2.943</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.877</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenkeseonsen_amagase_ooita">{% csrf_token %}<input name="id2" type="hidden" value="tenkeseonsen_amagase_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.tenkeseonsen_amagase_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0010_0001.jpg"/></a><p class="feature">天ヶ瀬温泉（あまがせ）<br>類似度:2.748</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="narukoonsen_1_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="narukoonsen_1_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.narukoonsen_1_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0105_0001.jpg"/></a><p class="feature">鳴子温泉（鳴子温泉郷）（ナルコ）<br>類似度:2.735</br></p></div></form>
+{% endblock content %}

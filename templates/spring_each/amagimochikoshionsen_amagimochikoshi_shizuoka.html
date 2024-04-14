@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">天城・持越温泉（あまぎ・もちこし）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0953_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">”湯の国”と呼ばれる天城湯ケ島にある、全く異なる源泉から生まれる7つの温泉・天城七湯のうちの1つ。中伊豆にある自然豊かな温泉地で、狩野川上流に位置しており、ゴルフ場やキャンプ場が点在している。1934～1950年ごろまでは金山として栄えていたが、現在は閉山されている。現在では、釣りやゴルフ、テニス、キャンプなどといったアウトドアが楽しめることもあって、家族連れでにぎわう温泉地だ。神経痛、筋肉痛、関節痛、うちみなどに効果がある。満天の星空と川のせせらぎに耳をすませば、アウトドアの疲れも癒されること間違いなし。
+泉質はナトリウム硫酸塩泉。神経痛、筋肉痛、関節痛、うちみなどに効果があり、アウトドアで疲れた体を癒してくれる。近くを流れる狩野川は大変水がきれいなため、釣りをしたり川遊びをするには最適だろう。露天風呂は川のせせらぎが聞こえ、美しい緑とともに、日々の疲れを癒してくれる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="akazawaonsen_akazawa_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="akazawaonsen_akazawa_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.akazawaonsen_akazawa_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0156_0001.jpg"/></a><p class="feature">赤沢温泉（あかざわ）<br>類似度:2.422</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kirinyamaonsen_kirinzan_niigata">{% csrf_token %}<input name="id2" type="hidden" value="kirinyamaonsen_kirinzan_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.kirinyamaonsen_kirinzan_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0579_0001.jpg"/></a><p class="feature">麒麟山温泉（きりんざん）<br>類似度:2.411</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ugusuonsen_ugusu_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="ugusuonsen_ugusu_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.ugusuonsen_ugusu_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0443_0001.jpg"/></a><p class="feature">宇久須温泉（うぐす）<br>類似度:2.317</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekohigashiyamaonsen_nisekohigashiyama_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekohigashiyamaonsen_nisekohigashiyama_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekohigashiyamaonsen_nisekohigashiyama_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1873_0001.jpg"/></a><p class="feature">ニセコ東山温泉（にせこひがしやま）<br>類似度:2.300</br></p></div></form>
+{% endblock content %}

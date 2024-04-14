@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">奥嬬恋温泉（おくつまごい）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0985_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">上信越自動車道「碓氷軽井沢IC」から車で約50分、浅間山の北麓に広がる嬬恋村に湧き出る天然温泉の一つ。12もの温泉が湧き出る良質の湯どころとして全国的に名高い村の中心部から、5㎞ほど西に広がる標高約1400mのバラギ高原。 高原のシンボル・バラギ湖をはじめ、「日本百名山」にも選ばれた標高約2354ｍの吾妻山（別名 四阿山）、大自然を見下ろす吾妻ゴンドラなどアウトドア派も満足のスポットが点在する一角に、ひっそりと湯けむりを上げている。 大地の力がみなぎる黒土の畑と白い噴気を上げる浅間山。日ごろのストレスも晴れることでしょう。
+地下約1000ｍから湧出する良質な天然温泉。薄い茶褐色の湯の中に黒い湯の花が咲き、口に含むと塩味とわずかな苦味が入り混じる。通称「塩温泉」と呼ばれ、山間部の温泉では珍しい泉質。源泉に含まれたナトリウムの影響で発汗作用に優れ、体が芯から温まると評判だ。豊富な源泉は宿の湯船に注がれ、立ち寄り入浴も可能（日帰り入浴時は要確認）。気軽にかけ流しの湯を満喫できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="choukaionsen_choukai_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="choukaionsen_choukai_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.choukaionsen_choukai_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1147_0001.jpg"/></a><p class="feature">鳥海温泉（ちょうかい）<br>類似度:2.432</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="akashionsen_akashi_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="akashionsen_akashi_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.akashionsen_akashi_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1126_0001.jpg"/></a><p class="feature">明石温泉（あかし）<br>類似度:2.428</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekowaisukougenonsen_nisekowaisukougen_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1877_0001.jpg"/></a><p class="feature">ニセコワイス高原温泉（にせこわいすこうげん）<br>類似度:2.416</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="mitsunorionsen_koutoku_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="mitsunorionsen_koutoku_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.mitsunorionsen_koutoku_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0494_0001.jpg"/></a><p class="feature">光徳温泉（こうとく）<br>類似度:2.398</br></p></div></form>
+{% endblock content %}

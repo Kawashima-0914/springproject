@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">桃沢温泉（ももさわ）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1785_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>神経痛、リウマチ、疲労、冷え性、美肌
+</td></tr></table></div><div class="con1"><p class="feature">沼津ICから15分ほどという都心からもアクセスしやすいロケーション。名前の由来となった桃沢川、そして周りを囲む山々と、日本の原風景のような雰囲気の中で温泉を楽しむことができる。川沿いに滝もあるので、マイナスイオンを感じつつレンタサイクルでサイクリングなども楽しいだろう。また、山のふもとに位置しており、長泉山荘が一軒宿として営業していて、近くにある主な施設はゴルフ場のみ。自然を楽しむためにあると言っても過言ではない。川岸には桜が植えられており、春の景色は圧巻。四季それぞれの顔を見せてくれるだろう。
+泉質はナトリウム・カルシウム-塩化物・硫酸塩泉。富士山麓の愛鷹(あしたか)山の地下1500ｍから湧き出た地下水が地熱によって温められたお湯は柔らかく、少しとろみのついているのが特徴。露天風呂と内湯の両方で源泉をそのまま楽しむことができる。保温効果・保湿効果にすぐれたお湯で、女性に嬉しい泉質だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="nisekoonsensato_niseko_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekoonsensato_niseko_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekoonsensato_niseko_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1074_0001.jpg"/></a><p class="feature">ニセコ温泉郷（にせこ）<br>類似度:2.644</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinosekionsensato_ichinoseki_iwate">{% csrf_token %}<input name="id2" type="hidden" value="ichinosekionsensato_ichinoseki_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.ichinosekionsensato_ichinoseki_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1076_0001.jpg"/></a><p class="feature">一関温泉郷（いちのせき）<br>類似度:2.643</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kuroisoonsen_kuroiso_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="kuroisoonsen_kuroiso_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.kuroisoonsen_kuroiso_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1702_0001.jpg"/></a><p class="feature">黒磯温泉（くろいそ）<br>類似度:2.641</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekowaisukougenonsen_nisekowaisukougen_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1877_0001.jpg"/></a><p class="feature">ニセコワイス高原温泉（にせこわいすこうげん）<br>類似度:2.641</br></p></div></form>
+{% endblock content %}

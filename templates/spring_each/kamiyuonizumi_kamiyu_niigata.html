@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">神湯温泉（かみゆ）</h2><h3 class="icon"> 所在地：新潟県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1725_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">新潟県魚沼市。南東には八海山、中ノ岳、越後駒ヶ岳の約2000m級の山々が雄大な稜線を描き、只見線と平行して破間川のせせらぎが流れる。そんな越後奥只見郷の麓に湧くのが神湯温泉だ。 広大な敷地の中に温泉施設、宿泊施設、トレーラーハウス、ソフトハウス、オートキャンプ場57区画が集まっており、さらに車で約10分ほど走ればテニスコート、フィッシング、スキーなどのレジャー施設にも行ける。 尾瀬への玄関口となるので春にはハイキングもいいだろう。家族や仲間たちと自然の中でワイワイ楽しみたい温泉地だ。露天風呂では大自然のぬくもりに包まれて、四季折々の風情を感じながら湯浴みを楽しめる。日帰りもあるので、気軽に温泉を楽しみたい方にもおすすめ。
+サウナ、ジャグジー、露天風呂あり。日帰り入浴可能。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="azuminomisatoonsen_azuminomisatoonnsen_nagano">{% csrf_token %}<input name="id2" type="hidden" value="azuminomisatoonsen_azuminomisatoonnsen_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.azuminomisatoonsen_azuminomisatoonnsen_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1715_0001.jpg"/></a><p class="feature">安曇野みさと温泉（あずみのみさとおんんせん）<br>類似度:2.523</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hatorimizuumionsen_hatoriko_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="hatorimizuumionsen_hatoriko_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.hatorimizuumionsen_hatoriko_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1298_0001.jpg"/></a><p class="feature">羽鳥湖温泉（はとりこ）<br>類似度:2.522</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="genkaisatsukionsen_genkaisatsuki_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="genkaisatsukionsen_genkaisatsuki_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.genkaisatsukionsen_genkaisatsuki_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0949_0001.jpg"/></a><p class="feature">玄海さつき温泉（げんかいさつき）<br>類似度:2.506</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="igaaoyamaasazumaonsen_asatsuma_mie">{% csrf_token %}<input name="id2" type="hidden" value="igaaoyamaasazumaonsen_asatsuma_mie"/><div class="con2"><a href="../spring_each/" onclick="document.igaaoyamaasazumaonsen_asatsuma_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1633_0001.jpg"/></a><p class="feature">伊賀青山朝妻温泉（あさつま）<br>類似度:2.506</br></p></div></form>
+{% endblock content %}

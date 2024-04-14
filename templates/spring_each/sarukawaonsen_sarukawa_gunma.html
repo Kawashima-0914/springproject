@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">猿川温泉（さるかわ）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2071_0001.jpg"/><table><tr><th>泉質</th><td>二酸化炭素泉、塩化物泉
+</td></tr><tr><th>効能</th><td>にごり、にごり（褐色）、神経痛、リウマチ、筋肉痛、肩こり、胃腸病、冷え性、高血圧、動脈硬化、皮膚病、痔疾
+</td></tr></table></div><div class="con1"><p class="feature">わたらせ渓谷鐵道の水沼駅は、構内に温泉施設「水沼駅温泉センター」がある駅としても知られる。駅舎に沿って造られた細長い施設の浴室と露天風呂は、赤城山麓を源泉とする猿川温泉の湯を引いたもの。「かっぱ風呂」の名称は、駅の近くを流れる渡良瀬川に古くから伝わる「釜が淵の河童伝説」にちなんだもの。大きな窓からは渡良瀬川の対岸や緑を眺望でき、爽やかな気分での入浴ができる。「かっぱ風呂」には食事処や広間なども併設されており、食事処では名物の「きりゅうどん」や「山うなぎ丼」などが食べられる。電車は1時間に1本程度なので、万一乗り過ごしたら温泉へ入って次の電車を待つのも楽しい。
+二酸化炭素ナトリウム・カルシウム塩化物・炭酸水素塩冷鉱泉の泉質を持つ猿川温泉は、神経痛や慢性消化器病、冷え性や動脈硬化など多くの効能が期待できる。よく温まり湯冷めしにくい。さらりとした感触とほんのり褐色がかっている湯は泉温が低いため、加温、し循環ろ過装置を使用している。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="yukawaonsen_yugawa_iwate">{% csrf_token %}<input name="id2" type="hidden" value="yukawaonsen_yugawa_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.yukawaonsen_yugawa_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1131_0001.jpg"/></a><p class="feature">湯川温泉（ゆがわ）<br>類似度:2.225</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yuyaonsen_yuya_gifu">{% csrf_token %}<input name="id2" type="hidden" value="yuyaonsen_yuya_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.yuyaonsen_yuya_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0367_0001.jpg"/></a><p class="feature">湯屋温泉（ゆや）<br>類似度:2.083</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="arimaonsen_arima_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="arimaonsen_arima_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.arimaonsen_arima_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0016_0001.jpg"/></a><p class="feature">有馬温泉（ありま）<br>類似度:2.062</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kirishimaonsensato_kirishima_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="kirishimaonsensato_kirishima_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.kirishimaonsensato_kirishima_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0329_0001.jpg"/></a><p class="feature">霧島温泉郷（きりしま）<br>類似度:2.020</br></p></div></form>
+{% endblock content %}

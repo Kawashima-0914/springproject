@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">赤沢温泉（あかざわ）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0156_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、婦人病、冷え性
+</td></tr></table></div><div class="con1"><p class="feature">赤沢温泉の特徴はなんといってもバラエティに富んだ温泉地であることだろう。25mもの大きさを誇る駿河湾を一望できる大パノラマが楽しめる宿であったり、はたまた伊豆の豊かな天然温泉にペットと一緒に浸かることのできる温泉があったりする。周辺にはボーリング場や、テニス場その他娯楽施設も多く点在しており、家族連れから友人カップル、ペット連れまで多岐にわたって楽しめること間違いなし。まさにワンダブルな温泉。神経痛、筋肉痛、関節痛などに効果があるため、一日たっぷり遊んだ後は、温泉にゆっくり浸かって疲れを癒すのがよいだろう。
+泉質はカルシウム・ナトリウム・塩化物・硫酸塩温泉。泉温は54.3℃とやや高め。神経痛、筋肉痛、関節痛その他健康増進にも効果が期待できる。単純泉が多い伊豆半島にあって、成分の濃い温泉は珍しい。大きな温泉地ではない分、お湯をぜいたくに使うことができる。2軒ある宿はどちらも源泉かけ流しだ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kannoonsen_1_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kannoonsen_1_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kannoonsen_1_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2137_0001.jpg"/></a><p class="feature">神野温泉（久美の浜温泉郷）（じんの（くみのはま））<br>類似度:2.827</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekowaisukougenonsen_nisekowaisukougen_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1877_0001.jpg"/></a><p class="feature">ニセコワイス高原温泉（にせこわいすこうげん）<br>類似度:2.826</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yaharaonsen_yawara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="yaharaonsen_yawara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.yaharaonsen_yawara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1900_0001.jpg"/></a><p class="feature">矢原温泉（やわら）<br>類似度:2.773</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="jougasakionsen_jougasaki_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="jougasakionsen_jougasaki_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.jougasakionsen_jougasaki_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0799_0001.jpg"/></a><p class="feature">城ケ崎温泉（じょうがさき）<br>類似度:2.748</br></p></div></form>
+{% endblock content %}

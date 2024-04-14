@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">宮浜温泉（みやはま）</h2><h3 class="icon"> 所在地：広島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0616_0001.jpg"/><table><tr><th>効能</th><td>ラジウム泉
+</td></tr></table></div><div class="con1"><p class="feature">干潮の時にだけ、その全景を現す海中の大鳥居で有名な日本三景の一つ、安芸の宮島。その宮島の対岸、海を見下ろす小高い丘に静かに佇むのが宮浜温泉だ。国道2号線沿いに位置し、宮島だけでなく広島や岩国といった山陽観光の拠点としても便利。 温泉地を基点に、妹背（いもせ）の滝や経小屋山（きょうごやさん）といった散策も楽しめる。一方で、穏やかな波間一面に浮かぶ「牡蠣（カキ）いかだ」が名物の“大野の瀬戸”。 のどかな瀬戸内の情景を眺める宮浜は、カキのほかにも大野アサリやナマコ、小魚など瀬戸内の幸が豊富に揃う。旬の美味を肴に、日本三大酒蔵・安芸西条の美酒に酔いしれる。これまさに、至福のひととき。
+日本三景、宮島を望む浜に湧く温泉ということで「宮浜温泉」と名付けられた風光明媚な温泉地。歴史は比較的浅く、昭和39年に開湯。現在の源泉は平成7年に掘削された。湧出量は毎分230Lほどで、ほぼ透明な無味無臭のお湯はラドンを豊富に含み神経痛に効くといわれる。高台に広がる閑静な温泉地は、瀬戸内の穏やかな情景や美味が自慢。ゆっくり流れる時間に包まれれば、日頃の疲れが徐々に癒されてゆく。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ajionsen_aji_kagawa">{% csrf_token %}<input name="id2" type="hidden" value="ajionsen_aji_kagawa"/><div class="con2"><a href="../spring_each/" onclick="document.ajionsen_aji_kagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0317_0001.jpg"/></a><p class="feature">あじ温泉（あじ）<br>類似度:2.171</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.106</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ashizurionsensato_ashizuri_kouchi">{% csrf_token %}<input name="id2" type="hidden" value="ashizurionsensato_ashizuri_kouchi"/><div class="con2"><a href="../spring_each/" onclick="document.ashizurionsensato_ashizuri_kouchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0893_0001.jpg"/></a><p class="feature">あしずり温泉郷（あしずり）<br>類似度:2.105</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okudougoonsen_okudougo_ehime">{% csrf_token %}<input name="id2" type="hidden" value="okudougoonsen_okudougo_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.okudougoonsen_okudougo_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0288_0001.jpg"/></a><p class="feature">奥道後温泉（おくどうご）<br>類似度:2.072</br></p></div></form>
+{% endblock content %}

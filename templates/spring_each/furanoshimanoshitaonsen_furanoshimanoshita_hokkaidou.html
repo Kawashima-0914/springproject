@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">富良野島の下温泉（ふらのしまのした）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1656_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">北海道のちょうど中央に位置する「へその町」、富良野。市街地は石狩川支流の空知川と富良野川の合流点に広がっている。十勝岳連峰と夕張山地に挟まれた富良野盆地にあることから、冬の寒さは非常に厳しいことで知ら れている。 よく晴れた冬の朝には、放射冷却によりダイヤモンドダストが見られることもある。キラキラと輝く、その光景は一見の価値あり。夏には、多くの人が富良野と聞けば連想するラベンダーが紫の絨毯のように一面 に咲き誇り見頃を迎える。 露天風呂にその身を浸し物思いに耽れば、ラベンダーの淡い香りが鼻孔をくすぐるだろう。富良野の澄んだ空気とともに思い切り吸い込み深呼吸をすれば、心も身体もリフレッシュする癒しのひとときを過ごせる。
+源泉温度 9.8℃、pH8.1、湧出量毎分30L、無色透明。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="towadaponiionsen_towadaponii_aomori">{% csrf_token %}<input name="id2" type="hidden" value="towadaponiionsen_towadaponii_aomori"/><div class="con2"><a href="../spring_each/" onclick="document.towadaponiionsen_towadaponii_aomori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1539_0001.jpg"/></a><p class="feature">十和田ポニー温泉（とわだぽにー）<br>類似度:2.231</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shikishimaonsen_shikishima_gunma">{% csrf_token %}<input name="id2" type="hidden" value="shikishimaonsen_shikishima_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.shikishimaonsen_shikishima_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1476_0001.jpg"/></a><p class="feature">敷島温泉（しきしま）<br>類似度:2.181</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="takanosuonsen_takasu_fukui">{% csrf_token %}<input name="id2" type="hidden" value="takanosuonsen_takasu_fukui"/><div class="con2"><a href="../spring_each/" onclick="document.takanosuonsen_takasu_fukui.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0997_0001.jpg"/></a><p class="feature">鷹巣温泉（たかす）<br>類似度:2.180</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yokokawaonsen_yokokawa_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="yokokawaonsen_yokokawa_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.yokokawaonsen_yokokawa_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1552_0001.jpg"/></a><p class="feature">横川温泉（よこかわ）<br>類似度:2.168</br></p></div></form>
+{% endblock content %}

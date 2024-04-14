@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">久美浜神の温泉（かんの）</h2><h3 class="icon"> 所在地：京都府</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1180_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">京都丹後鉄道「久美浜駅」より車で約10分、久美の浜海岸地区に湧き出す温泉地。周りには豊富な大自然が広がり、閑静な環境は保養に最適だ。久美浜湾沿いに点在する「久美浜温泉郷」の一つで、狭い範囲の中でいくつ もの異なる温泉が掘られているのが、ここ丹後半島の温泉の特徴でもある。 北に日本海、南に久美浜湾というロケーションならではの素晴らしい海景色。時間とともに刻々と移り変わる風景を愉しみながら、極上の湯にゆった り浸かる幸せがある。穏やかに流れていく時間に身を任せ、のんびりと寛ぎたい。 湾内で養殖するカキが名物として知られ、多くの観光客がその美味しさに舌鼓を打っている。無色透明の良質な温泉だけでなく、四季折々の新鮮な海の幸を使った料理を楽しめるのも魅力の一つだ。
+久美浜湾の静かな波の景色と雄大な日本海の景色の両方を望める風光明媚な地に湧く温泉。泉質はナトリウム‐カルシウム硫酸塩泉で、皮膚病、切り傷、慢性婦人病などに効能がある。無色透明の源泉は、お肌にやさしく、いつまでもポカポカすると冷え症効果も抜群!!　大自然に囲まれた露天風呂で湯浴みした後は、新鮮な海の幸をたっぷりと堪能するのが、ここでの楽しみ方の一つだ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tottorionsen_tottori_tottori">{% csrf_token %}<input name="id2" type="hidden" value="tottorionsen_tottori_tottori"/><div class="con2"><a href="../spring_each/" onclick="document.tottorionsen_tottori_tottori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0506_0001.jpg"/></a><p class="feature">鳥取温泉（とっとり）<br>類似度:2.139</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ainonoonsen_ainono_akita">{% csrf_token %}<input name="id2" type="hidden" value="ainonoonsen_ainono_akita"/><div class="con2"><a href="../spring_each/" onclick="document.ainonoonsen_ainono_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1253_0001.jpg"/></a><p class="feature">あいのの温泉（あいのの）<br>類似度:2.126</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shichikamaonsen_shichikama_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="shichikamaonsen_shichikama_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.shichikamaonsen_shichikama_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1107_0001.jpg"/></a><p class="feature">七釜温泉（しちかま）<br>類似度:2.100</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kirinyamaonsen_kirinzan_niigata">{% csrf_token %}<input name="id2" type="hidden" value="kirinyamaonsen_kirinzan_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.kirinyamaonsen_kirinzan_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0579_0001.jpg"/></a><p class="feature">麒麟山温泉（きりんざん）<br>類似度:2.095</br></p></div></form>
+{% endblock content %}

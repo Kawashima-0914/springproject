@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">大室温泉（おおむろ）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1839_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">伊豆高原にある温泉地。伊豆半島の東側に位置し、相模湾を望むことができる。近くには伊豆高原からくり時計博物館、伊豆アンモナイト博物館、モダンアート美術館、伊豆クラフトハウス、伊豆高原メルヘンの森美術館など、多くの美術館や工房が点在する。たくさんの芸術に触れることができるため、家族連れにオススメだ。また、少し足を延ばすと火山の噴火によって約4000年前に生まれたと言われる大室山があり、四季折々様々な植物が目を楽しませてくれるだろう。自然や芸術に触れてたっぷりと遊んだあとは、相模湾から聞こえる海の音を聞きながら旅の疲れを癒したい。
+泉質はアルカリ性単純温泉。源泉温度は47.7度とややぬるめで、pH値は8.6。お湯の肌ざわりは柔らかくて、くせがなく肌への刺激も少ないのが特徴。湯あたりを起こしにくいまろやかな温泉だ。アルカリ性の湯には皮脂を乳化して洗い流してくれるはたらきが期待できるため、入浴後は肌がしっとりする効果も期待できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shikishimaonsen_shikishima_gunma">{% csrf_token %}<input name="id2" type="hidden" value="shikishimaonsen_shikishima_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.shikishimaonsen_shikishima_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1476_0001.jpg"/></a><p class="feature">敷島温泉（しきしま）<br>類似度:2.152</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="akanmizuumionsen_akanko_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="akanmizuumionsen_akanko_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.akanmizuumionsen_akanko_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1545_0001.jpg"/></a><p class="feature">阿寒湖温泉（あかんこ）<br>類似度:2.152</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yamanashimanyouonsen_yamanashimanyou_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="yamanashimanyouonsen_yamanashimanyou_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.yamanashimanyouonsen_yamanashimanyou_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0966_0001.jpg"/></a><p class="feature">山梨万葉温泉（やまなしまんよう）<br>類似度:2.142</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="izukomanoyuonizumi_izukomanoyu_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="izukomanoyuonizumi_izukomanoyu_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.izukomanoyuonizumi_izukomanoyu_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0940_0001.jpg"/></a><p class="feature">伊豆駒の湯温泉（いずこまのゆ）<br>類似度:2.131</br></p></div></form>
+{% endblock content %}

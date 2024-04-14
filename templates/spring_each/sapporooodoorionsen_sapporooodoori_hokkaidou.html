@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">札幌大通温泉（さっぽろおおどおり）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1514_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">北海道の中心、札幌市。なかでも官庁や企業などが集積し、碁盤の目状の街並が美しい市の中核となるのが中央区。札幌市のシンボルとしてたびたびテレビや映画にも登場する「札幌市時計台」や「大通公園」など観光スポ ットも豊富である。 冬は「さっぽろ雪まつり」、初夏には「YOSAKOIソーラン祭り」など、大きなイベントには全国から多くの観光客が訪れる。昼は「札幌ラーメン」や「ジンギスカン」などのご当地グルメで舌鼓。 夜は日本3大歓楽街のひとつである「すすきの」で遊び、見所は尽きない。歩きまわった旅の疲れを癒すのには温泉が最適。宿泊者専用のこぢんまりとした温泉は筋肉痛や疲労回復に効能がある。交通の利便性も良いので市街地観光の拠点におすすめだ。
+宿泊者専用のこぢんまりとした温泉露天風呂。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="hiroshimaonsen_hiroshima_hiroshima">{% csrf_token %}<input name="id2" type="hidden" value="hiroshimaonsen_hiroshima_hiroshima"/><div class="con2"><a href="../spring_each/" onclick="document.hiroshimaonsen_hiroshima_hiroshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1200_0001.jpg"/></a><p class="feature">広島温泉（ひろしま）<br>類似度:2.562</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kiroroonsen_kiroro_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="kiroroonsen_kiroro_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.kiroroonsen_kiroro_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">キロロ温泉（きろろ）<br>類似度:2.491</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kinkesakionsen_kanagasaki_akita">{% csrf_token %}<input name="id2" type="hidden" value="kinkesakionsen_kanagasaki_akita"/><div class="con2"><a href="../spring_each/" onclick="document.kinkesakionsen_kanagasaki_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1283_0001.jpg"/></a><p class="feature">金ヶ崎温泉（かながさき）<br>類似度:2.434</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shikaribetsukoazeonsen_shikaribetsukohan_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="shikaribetsukoazeonsen_shikaribetsukohan_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.shikaribetsukoazeonsen_shikaribetsukohan_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0659_0001.jpg"/></a><p class="feature">然別湖畔温泉（しかりべつこはん）<br>類似度:2.373</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">芭蕉月待ちの湯（ばしょうつきまちのゆ）</h2><h3 class="icon"> 所在地：山梨県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2365_0001.jpg"/><table><tr><th>効能</th><td>ラジウム泉
+</td></tr></table></div><div class="con1"><p class="feature">都留市中心部から東に5キロ、7ヘクタールもの広大な森林公園内にたたずむ、戸沢川のほとりの一軒宿「芭蕉 月待ちの湯」。周囲を山に囲まれて建つ宿の名称は、松尾芭蕉が「名月の夜やさぞかしの宝池山」と詠んだと伝えられる二十六夜山の麓にあることによるもの。2種類ある露天風呂にはこの句を刻んだ句碑が建てられている。季節によって変わり湯を提供しており、毎回別の楽しみ方ができる温泉でもある。付近にはキャンプ場やバーベキュー場、ゴルフ場があるためレジャーを楽しみながら温泉に入る楽しみ方もできる。
+泉質はPH値の高いアルカリ性単純温泉。神経痛、筋肉痛、関節痛、五十肩、関節のこわばり、うちみ、くじき、慢性消化器病、痔疾、冷え性、病後回復など多くの効能があるとされる。また、肌がスベスベになる美肌効果も期待でき、女性に人気が高い。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="imaitaonsen_1_niigata">{% csrf_token %}<input name="id2" type="hidden" value="imaitaonsen_1_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.imaitaonsen_1_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1115_0001.jpg"/></a><p class="feature">今板温泉（五頭温泉郷）（いまいた（ごず））<br>類似度:1.336</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shinshuumatsukawaonsen_shinshuumatsukawa_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shinshuumatsukawaonsen_shinshuumatsukawa_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shinshuumatsukawaonsen_shinshuumatsukawa_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1494_0001.jpg"/></a><p class="feature">信州まつかわ温泉（しんしゅうまつかわ）<br>類似度:1.321</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ryuuonsen_ryuu_hiroshima">{% csrf_token %}<input name="id2" type="hidden" value="ryuuonsen_ryuu_hiroshima"/><div class="con2"><a href="../spring_each/" onclick="document.ryuuonsen_ryuu_hiroshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1285_0001.jpg"/></a><p class="feature">龍温泉（りゅう）<br>類似度:1.317</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okudougoonsen_okudougo_ehime">{% csrf_token %}<input name="id2" type="hidden" value="okudougoonsen_okudougo_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.okudougoonsen_okudougo_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0288_0001.jpg"/></a><p class="feature">奥道後温泉（おくどうご）<br>類似度:1.298</br></p></div></form>
+{% endblock content %}

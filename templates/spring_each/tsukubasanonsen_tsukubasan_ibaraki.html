@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">筑波山温泉（つくばさん）</h2><h3 class="icon"> 所在地：茨城県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1051_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">首都圏から車で約2～3時間、つくばエクスプレスの開通でますます身近になった茨城県つくば市に湧き出す温泉。街のシンボルでもある筑波山は山そのものが神社として親しまれ、古くは修験道の山岳修行の場として、江戸時代には庶民の信仰の山として人々の生活を静かに見守ってきた。 現在では「日本百名山」のひとつに選ばれ、登山やハイキングのメッカとして、そして都心から日帰りで楽しめるドライブコースとしても人気が高い。中でも、多くの行楽客で賑わいを見せるのは桜と紅葉のシーズン。レジャーを楽しんだ後は、中腹に湯けむりを上げる温泉へ。 温泉地内の多くの露天風呂は関東平野を一望するロケーションが楽しめ、晴れた日には富士山や日光連山も顔を出す。ゆったりと爽快な湯浴みを満喫し、旅の思い出を締めくくりたい。
+筑波山に湧出する「筑波温泉」とは別の、新たに掘削された新興の温泉。地元の旅館数軒が4年がかりで掘り当て、筑波温泉と合わせて「筑波温泉郷」と呼ばれ注目を集めている。湧出する湯は無色透明のサラリとした肌触りのアルカリ性単純泉。pH値が高く、肌がスベスベになる「美人の湯」として親しまれている。ほとんどの温泉旅館には筑波山中腹の立地を活かした見晴らしの良い露天風呂があり、いつまでも眺めていたい「絶景温泉」が楽しめると評判だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tsukubaonsen_tsukuba_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="tsukubaonsen_tsukuba_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.tsukubaonsen_tsukuba_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0186_0001.jpg"/></a><p class="feature">筑波温泉（つくば）<br>類似度:2.265</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1120_0001.jpg"/></a><p class="feature">京都竹の郷温泉（きょうとたけのさと）<br>類似度:2.169</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yamanashimanyouonsen_yamanashimanyou_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="yamanashimanyouonsen_yamanashimanyou_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.yamanashimanyouonsen_yamanashimanyou_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0966_0001.jpg"/></a><p class="feature">山梨万葉温泉（やまなしまんよう）<br>類似度:2.158</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kawauraonsen_kawaura_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="kawauraonsen_kawaura_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.kawauraonsen_kawaura_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0840_0001.jpg"/></a><p class="feature">川浦温泉（かわうら）<br>類似度:2.153</br></p></div></form>
+{% endblock content %}

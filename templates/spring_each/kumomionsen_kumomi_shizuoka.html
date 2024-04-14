@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">雲見温泉（くもみ）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0449_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">西伊豆の松崎にある温泉地。夏場は無料で入れる足湯が営業しており、海水浴客らに大人気だ。松崎には温泉地がいくつもあるが、ここの持ち味は景色の良さ。富士山が駿河湾の向こうに見える眺めは西伊豆随一で、写真愛好家も多く訪れるほど。見る価値が価千貫とのことで名づけられたという奇岩「千貫門」も荒々しい海の絶景スポットだ。夕焼けは紺碧の海をオレンジに染め上げる。漁師が営む宿が多く、手ごろな価格で新鮮で美味しい海の幸をお腹一杯になるまで味わえるのも大きな魅力である。全国的にも珍しい、セミクジラの全身骨格標本があることでも知られている。
+西伊豆の最奥にある温泉地ながら、泉質の良さは何度も訪れたくなるほど。西伊豆の中では比較的早い、1955年の開湯だ。カルシウムなども含む濃厚な塩化物泉で、なめると塩辛い。無色透明ながらしっかりと効くお湯である。肌の保湿だけではなく温まりにも優れるので、冬に訪れるのもおすすめしたい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:1.859</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hamasakaonsensato_hamasaka_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="hamasakaonsensato_hamasaka_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.hamasakaonsensato_hamasaka_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1023_0001.jpg"/></a><p class="feature">浜坂温泉郷（はまさか）<br>類似度:1.850</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="mihohagoromoonsen_mihohagoromo_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="mihohagoromoonsen_mihohagoromo_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.mihohagoromoonsen_mihohagoromo_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0910_0001.jpg"/></a><p class="feature">三保はごろも温泉（みほはごろも）<br>類似度:1.844</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="amatsukominatoonsen_amatsukominato_chiba">{% csrf_token %}<input name="id2" type="hidden" value="amatsukominatoonsen_amatsukominato_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.amatsukominatoonsen_amatsukominato_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0014_0001.jpg"/></a><p class="feature">天津小湊温泉（あまつこみなと）<br>類似度:1.842</br></p></div></form>
+{% endblock content %}

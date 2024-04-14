@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">成田温泉（なりた）</h2><h3 class="icon"> 所在地：千葉県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1490_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">千葉県北部、日本の空の玄関、成田空港国際ターミナルの近くに湧く温泉。成田のホテルでは初めての天然温泉を使用した温浴施設で、ビジネスや旅行の行き帰りに身体の疲れを癒す湯として人気を集めている。 地下約1000mより湧き出るナトリウム‐塩化物強塩温泉は保温効果が高く、疲労回復や神経痛などに効果があるほか、美肌効果も期待できるといわれている。また、東京から日帰りできるロケーションにあり、周辺には10 00年以上の歴史がある「成田山新勝寺」が有名。 正月三が日をはじめ、毎年多くの参拝客で賑わう。成田市内にはほかにも数多くの寺社が点在しており、空港に近いロケーションを活かして、近年は外国からも多くの観光客が訪れるスポットでもある。
+地下1000mより湧き出る湯はナトリウムを多く含み、保温効果が高い。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ooisoonsen_ooiso_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="ooisoonsen_ooiso_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.ooisoonsen_ooiso_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0911_0001.jpg"/></a><p class="feature">大磯温泉（おおいそ）<br>類似度:2.437</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="marukomaonsen_marukoma_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="marukomaonsen_marukoma_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.marukomaonsen_marukoma_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0681_0001.jpg"/></a><p class="feature">丸駒温泉（まるこま）<br>類似度:2.431</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="momosawaonsen_momosawa_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="momosawaonsen_momosawa_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.momosawaonsen_momosawa_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1785_0001.jpg"/></a><p class="feature">桃沢温泉（ももさわ）<br>類似度:2.356</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="miharashionsen_miharashi_hiroshima">{% csrf_token %}<input name="id2" type="hidden" value="miharashionsen_miharashi_hiroshima"/><div class="con2"><a href="../spring_each/" onclick="document.miharashionsen_miharashi_hiroshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1236_0001.jpg"/></a><p class="feature">みはらし温泉（みはらし）<br>類似度:2.349</br></p></div></form>
+{% endblock content %}

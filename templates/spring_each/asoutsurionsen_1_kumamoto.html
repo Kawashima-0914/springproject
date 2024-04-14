@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">麻生釣温泉（阿蘇鶴温泉）（あそづる）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1962_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">大分県・熊本の両県に位置し、広大な敷地に佇む温泉地だ。この地は、料金をタイマーに入れると湯船の温泉をすべて入れ替える形式「コインタイマー式貸切温泉」の発祥地である。湧出量が豊富な九州特有の形式で、毎回新鮮なお湯が入る贅沢さを楽しむことが出来る。「ジャージー牧場」では澄んだ空気と恵まれた大自然を生かし土づくりからエサづくりまでジャージー牛一筋にこだわっている。濃厚な味わいと口当たり・のど越しの良さを考え作り上げたジャージーソフトクリームは、しぼりたての味が楽しめる。直営レストランでいただける焼きカレーやジャージー牛乳プリンは絶品。
+広大な敷地に佇む「亀山の湯」は全て離れ造りとなっている。この静かな地で眠ると、森の中に住む鳥のさえずりで目を覚ますという贅沢さ。源泉は2本あり、四季を通して温度調整をしているためいつでも加温加水することなく源泉かけ流しを楽しむことが出来る。浴槽はコインタイマー式のため、いつ訪れても一番風呂を堪能できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kumegawaonsen_kumegawa_nagano">{% csrf_token %}<input name="id2" type="hidden" value="kumegawaonsen_kumegawa_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.kumegawaonsen_kumegawa_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0807_0001.jpg"/></a><p class="feature">久米川温泉（くめがわ）<br>類似度:2.274</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tamanaonsen_tamana_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="tamanaonsen_tamana_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.tamanaonsen_tamana_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0380_0001.jpg"/></a><p class="feature">玉名温泉（たまな）<br>類似度:2.269</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yamanokamionsen_yamanokami_iwate">{% csrf_token %}<input name="id2" type="hidden" value="yamanokamionsen_yamanokami_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.yamanokamionsen_yamanokami_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1255_0001.jpg"/></a><p class="feature">山の神温泉（やまのかみ）<br>類似度:2.234</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shugojinonsen_shugojin_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="shugojinonsen_shugojin_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.shugojinonsen_shugojin_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1980_0001.jpg"/></a><p class="feature">守護陣温泉（しゅごじん）<br>類似度:2.233</br></p></div></form>
+{% endblock content %}

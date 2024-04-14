@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">会津神指温泉（あいづこうざし）</h2><h3 class="icon"> 所在地：福島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1823_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">「大江戸温泉物語 あいづ」が建つ温泉地。神指（こうざし）地区のシンボルは「高瀬の大木」。幹の周囲12m以上、高さ約17mという大きなケヤキの木は、樹齢500年を超えると言われている。上杉景勝が神指城を築こうとした際に、土塁となったところに生えていた木だが、関ヶ原の戦いにより大ケヤキは伐採を逃れて今に至る。幕末の歴史を伝える「鶴ヶ城」や大正レトロな「七日町（なぬかまち）通り」などがある市の中心部までは、車で約15分。磐越自動車道のICからも近く、会津若松観光の拠点とするにも便利だ。
+泉質は「ナトリウム - 塩化物泉」。弱アルカリ性で、かすかにとろみがあるまろやかなお湯だ。無色透明で敏感肌の人でも入りやすい。保温効果・保湿効果が期待でき、冷え症などの適応症を有する。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="minamidaonsen_minamida_aomori">{% csrf_token %}<input name="id2" type="hidden" value="minamidaonsen_minamida_aomori"/><div class="con2"><a href="../spring_each/" onclick="document.minamidaonsen_minamida_aomori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0785_0001.jpg"/></a><p class="feature">南田温泉（みなみだ）<br>類似度:1.972</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="senganishionsen_senganishi_iwate">{% csrf_token %}<input name="id2" type="hidden" value="senganishionsen_senganishi_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.senganishionsen_senganishi_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1810_0001.jpg"/></a><p class="feature">千貫石温泉（せんがんいし）<br>類似度:1.956</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tangohanaremizuumionsen_tangohanareko_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tangohanaremizuumionsen_tangohanareko_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tangohanaremizuumionsen_tangohanareko_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1214_0001.jpg"/></a><p class="feature">丹後はなれ湖温泉（たんごはなれこ）<br>類似度:1.936</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="genbikeionsen_genbikei_iwate">{% csrf_token %}<input name="id2" type="hidden" value="genbikeionsen_genbikei_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.genbikeionsen_genbikei_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1724_0001.jpg"/></a><p class="feature">厳美渓温泉（げんびけい）<br>類似度:1.931</br></p></div></form>
+{% endblock content %}

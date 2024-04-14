@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">塩山温泉（えんざん）</h2><h3 class="icon"> 所在地：山梨県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0729_0001.jpg"/><table><tr><th>効能</th><td>神経痛、疲労、胃腸病、冷え性、皮膚病、貧血
+</td></tr></table></div><div class="con1"><p class="feature">JR「塩山駅」より徒歩で約15分、小中規模の湯宿が点在するこじんまりとした温泉地。街を見下ろすように構える「塩ノ山」は、『古今和歌集』にもその名が登場する宮廷歌人憧れの地。山全体が貴重な天然のアカマツで覆われ、散策コースも整備されている。周辺には「向嶽寺」や「恵林寺」「菅田天神社」など、古くから人々の信仰を集めてきた歴史ある神社・仏閣が残り、当地の歴史を偲ばせる。「塩山駅」の程近くに建つ「旧高野家住宅」は、江戸時代、幕府に薬用植物の甘草（かんぞう）を納めていた名家の住居跡だ。
+泉質はとろみがあり、ほんのり硫黄の香りがただよう硫黄泉。なめらかで肌にしっとりとなじむような湯ざわりである。高アルカリ性とくにアトピー性皮膚炎、尋常性乾癬、慢性湿疹、表皮化膿症など、皮膚疾患への効能が高いとされている。また、冷えへの効果も高く、湯冷めしにくいのが特徴だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ooyukikougenonsen_daisetsukougen_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="ooyukikougenonsen_daisetsukougen_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.ooyukikougenonsen_daisetsukougen_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0665_0001.jpg"/></a><p class="feature">大雪高原温泉（だいせつこうげん）<br>類似度:1.749</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="iwaobetsuonsen_iwaobetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="iwaobetsuonsen_iwaobetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.iwaobetsuonsen_iwaobetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1833_0001.jpg"/></a><p class="feature">岩尾別温泉（いわおべつ）<br>類似度:1.646</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="norikurakougenonsen_norikurakougen_nagano">{% csrf_token %}<input name="id2" type="hidden" value="norikurakougenonsen_norikurakougen_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.norikurakougenonsen_norikurakougen_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1330_0001.jpg"/></a><p class="feature">乗鞍高原温泉（のりくらこうげん）<br>類似度:1.645</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kasagionsen_kasagi_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kasagionsen_kasagi_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kasagionsen_kasagi_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2105_0001.jpg"/></a><p class="feature">笠置温泉（かさぎ）<br>類似度:1.623</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">新胎内温泉（しんたいない）</h2><h3 class="icon"> 所在地：新潟県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2231_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>美肌、神経痛、筋肉痛、冷え性、高血圧、動脈硬化、皮膚病、美肌
+</td></tr></table></div><div class="con1"><p class="feature">飯豊連峰を源とする「胎内川」、そして、緑豊かなブナ林が広がる自然豊かな環境にある新胎内温泉。この地に佇む高原リゾート「ロイヤル胎内パークホテル」が一軒宿だ。展望露天風呂やサウナなども充実した宿で、高級感のある建物が優雅な気持ちにさせてくれそう。敷地内にはバーベキューガーデンやテニス場、スワンボートなどもあり、敷地外に出ることなくレジャーを楽しめる。また、車で5分程度の場所には、「胎内スキー場」や「胎内フラワーパーク」、「スポーツハウスキャンプ場」など多くのレジャー施設があり、温泉と併せて楽しめるリフレッシュに好適な施設となっている。
+ナトリウムを含む、ナトリウム－炭酸水素塩・硫酸塩温泉で、動脈硬化症、きりきず、やけど、慢性皮膚病などによいとされ、とくに高血圧症の血圧降下作用、神経痛にもよく効くと言われている。また、皮膚の角質を軟化させ皮脂をさっぱりさせる。美肌効果が期待できる「美人の湯」でもあり、ぬるっとした濃厚な湯ざわりが特徴。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="usaonsen_usa_ooita">{% csrf_token %}<input name="id2" type="hidden" value="usaonsen_usa_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.usaonsen_usa_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1660_0001.jpg"/></a><p class="feature">宇佐温泉（うさ）<br>類似度:2.654</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekowaisukougenonsen_nisekowaisukougen_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1877_0001.jpg"/></a><p class="feature">ニセコワイス高原温泉（にせこわいすこうげん）<br>類似度:2.601</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hirayamaonsen_hirayama_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="hirayamaonsen_hirayama_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.hirayamaonsen_hirayama_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1035_0001.jpg"/></a><p class="feature">平山温泉（ひらやま）<br>類似度:2.535</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="higashinarukoonsen_1_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="higashinarukoonsen_1_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.higashinarukoonsen_1_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0896_0001.jpg"/></a><p class="feature">東鳴子温泉（鳴子温泉郷）（ひがしなるこ（なるこ））<br>類似度:2.516</br></p></div></form>
+{% endblock content %}

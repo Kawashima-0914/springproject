@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">七釜温泉（しちかま）</h2><h3 class="icon"> 所在地：兵庫県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1107_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">兵庫県北部、いかにも湯の町らしいネーミングの「新温泉町」に湯けむりを上げる温泉地。天然の鮎や鮭が遡上する岸田川畔に温泉街があり、18軒の宿泊施設と1軒の日帰り入浴施設「七釜温泉ゆーらく館」によって形成 されている。 周辺にある浜坂温泉と二日市温泉とともに「浜坂温泉郷」と呼び親しまれ、効能が高い良質の湯と但馬の海岸に臨む豊かな自然環境から環境省指定の国民保養温泉地にも選ばれた。 また、山陰有数の漁業基地・浜坂港から程近いため、とことん料理にこだわった温泉宿も多数。水揚げされたばかりの新鮮な海の幸に舌鼓を打つのも一興だ。特に冬の風物詩の「松葉ガニ」は天下一品なのだとか。うまい料理と優しいいで湯が、日頃疲れた旅人の心と身体をほぐしてくれるだろう。
+開湯は昭和30年。井戸を掘削していたところ偶然に温泉が湧き出したのが始まり。昭和36年に本格的に掘削を行った結果、地下約236ｍから46.5℃の入浴に適した源泉を発見。毎分約720Lもの豊富な湯量を誇り、旅館や温泉施設だけでなく、一般家庭にも引湯されている。 ※飲用の場合の効能：便秘・糖尿病
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="hamasakaonsensato_hamasaka_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="hamasakaonsensato_hamasaka_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.hamasakaonsensato_hamasaka_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1023_0001.jpg"/></a><p class="feature">浜坂温泉郷（はまさか）<br>類似度:1.946</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:1.932</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tottorionsen_tottori_tottori">{% csrf_token %}<input name="id2" type="hidden" value="tottorionsen_tottori_tottori"/><div class="con2"><a href="../spring_each/" onclick="document.tottorionsen_tottori_tottori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0506_0001.jpg"/></a><p class="feature">鳥取温泉（とっとり）<br>類似度:1.913</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yudakawaonsen_yudagawa_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="yudakawaonsen_yudagawa_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.yudakawaonsen_yudagawa_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0854_0001.jpg"/></a><p class="feature">湯田川温泉（ゆだがわ）<br>類似度:1.852</br></p></div></form>
+{% endblock content %}

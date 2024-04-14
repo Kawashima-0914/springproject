@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">東大沼温泉（ひがしおおぬま）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0676_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">駒ヶ岳の裾野に広がる国定公園、大沼国定公園。この大沼を挟んで、2カ所に温泉地がある。そのひとつが東大沼温泉。江戸時代末期の「安政」期からあるとされる、100年以上の長い歴史を持つ温泉地で、温泉地に長期滞在して病を癒やす「湯治」の発祥地ともされる。現在はその発祥を200年以上前までさかのぼることができる「東大沼温泉 旅館 留の湯」のみで入ることができる。素泊まりや日帰りでの利用も可能。施設が最初に建てられた明治時代から存在する「安政の湯」はじめ4種類あるお風呂はいずれも源泉100%かけ流し。窓からは美しい湖の自然を眺めることができる。
+神経痛、筋肉痛、冷え性、慢性消化器病、痔疾などに効果があるとされる単純温泉（中性低張性高温泉）。源泉は無色透明で癖がなく、誰でも入りやすい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="mahoranoyu_mahoranoyu_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="mahoranoyu_mahoranoyu_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.mahoranoyu_mahoranoyu_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2368_0001.jpg"/></a><p class="feature">まほらの湯（まほらのゆ）<br>類似度:2.264</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="bimataonsen_mimata_shimane">{% csrf_token %}<input name="id2" type="hidden" value="bimataonsen_mimata_shimane"/><div class="con2"><a href="../spring_each/" onclick="document.bimataonsen_mimata_shimane.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1205_0001.jpg"/></a><p class="feature">美又温泉（みまた）<br>類似度:2.222</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okuyamaonsen_okuyama_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="okuyamaonsen_okuyama_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.okuyamaonsen_okuyama_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">奥山温泉（おくやま）<br>類似度:2.184</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kawabaonsen_kawaba_gunma">{% csrf_token %}<input name="id2" type="hidden" value="kawabaonsen_kawaba_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.kawabaonsen_kawaba_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1348_0001.jpg"/></a><p class="feature">川場温泉（かわば）<br>類似度:2.155</br></p></div></form>
+{% endblock content %}

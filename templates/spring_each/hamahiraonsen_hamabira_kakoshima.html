@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">浜平温泉（はまびら）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2179_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">錦江湾、桜島、開聞岳、高隈山山系を望む最高のロケーションにある温泉地。夏には海水浴を楽しむこともでき、海水浴客や観光客で賑わう。2018年には「道の駅たるみずはまびら」という道の駅がオープンし、お土産品や特産品を購入したりカフェやレストランで食事を楽しんだりすることもできる。また、展望デッキからは錦江湾と桜島を一望できるので、記念撮影などをして楽しむのも良いだろう。垂水市は、春になると市内で行われる4つの春の催し物を総称した「たるみず春フェスタ」や、秋に特産品のぶりを堪能できる「ぶり大将」など季節によって様々なイベントも開催されている。温泉を楽しみに行くのはもちろん、イベントの季節を狙い訪れ垂水市の魅力を堪能してみるのも良さそうだ。
+浜平温泉の泉質は、単純温泉。神経痛や筋肉痛、冷え性や胃腸病など幅広い効能が期待できる。源泉温度は43.2度、湯は無色透明。錦江湾、桜島、開聞岳などの美しい景色を望む湯が自慢の入浴施設もあり、湯に浸かりながらゆっくりと垂水市の風景を楽しむこともできるだろう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="asotakamorionsen_1_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="asotakamorionsen_1_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.asotakamorionsen_1_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1625_0001.jpg"/></a><p class="feature">阿蘇高森温泉（阿蘇温泉郷）（あそたかもり（あそ））<br>類似度:2.455</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.416</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="izukougenonsen_izukougen_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="izukougenonsen_izukougen_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.izukougenonsen_izukougen_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0860_0001.jpg"/></a><p class="feature">伊豆高原温泉（いずこうげん）<br>類似度:2.401</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yunouraonsen_yunoura_ehime">{% csrf_token %}<input name="id2" type="hidden" value="yunouraonsen_yunoura_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.yunouraonsen_yunoura_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1031_0001.jpg"/></a><p class="feature">湯ノ浦温泉（ゆのうら）<br>類似度:2.392</br></p></div></form>
+{% endblock content %}

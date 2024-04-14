@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">松之山温泉（まつのやま）</h2><h3 class="icon"> 所在地：新潟県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0598_0001.jpg"/><table><tr><th>効能</th><td>神経痛、腰痛、冷え性、皮膚病、美肌
+</td></tr></table></div><div class="con1"><p class="feature">長野県との境に近い天水連峰の盆地一帯に共同浴場3軒、旅館15軒ほどが点在。賑わうというよりも、昔ながらののんびりとした湯治場の風情を感じさせる山間の温泉地だ。渓流沿いに設けられた野趣あふれる露天風呂が多く、豊かな自然に恵まれて秘湯気分に浸りながら湯浴みを愉しめる。太宰治と並ぶほど、昭和の人気作家だった新潟出身の坂口安吾もたびたび訪れていたという。没後、多くのファンの力によって、坂口安吾の石碑が温泉地周辺のブナ林内に建立。歌人・大伴家持にまつわる伝説の池もあり、穏やかな雰囲気の中にも文学的な情緒が漂う。
+海水並みの塩分濃度を誇り、高い保温効果のあるカルシウム・ナトリウム塩化物泉。基準値を大幅に超える温泉成分が含まれ、草津・有馬にならぶ薬湯のひとつに数えられている。また、天然保湿成分のメタケイ酸が含まれ、肌をなめらかにする効果も高い。さらに、消毒・洗浄効果のあるメタホウ酸の含有量は日本トップクラスで、やけどや切り傷などの傷の治療にも高い効果が期待できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="yudakawaonsen_yudagawa_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="yudakawaonsen_yudagawa_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.yudakawaonsen_yudagawa_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0854_0001.jpg"/></a><p class="feature">湯田川温泉（ゆだがわ）<br>類似度:1.825</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:1.802</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="miharashionsen_miharashi_hiroshima">{% csrf_token %}<input name="id2" type="hidden" value="miharashionsen_miharashi_hiroshima"/><div class="con2"><a href="../spring_each/" onclick="document.miharashionsen_miharashi_hiroshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1236_0001.jpg"/></a><p class="feature">みはらし温泉（みはらし）<br>類似度:1.794</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hatonoyuonizumi_hatonoyu_gunma">{% csrf_token %}<input name="id2" type="hidden" value="hatonoyuonizumi_hatonoyu_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.hatonoyuonizumi_hatonoyu_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2080_0001.jpg"/></a><p class="feature">鳩の湯温泉（はとのゆ）<br>類似度:1.781</br></p></div></form>
+{% endblock content %}

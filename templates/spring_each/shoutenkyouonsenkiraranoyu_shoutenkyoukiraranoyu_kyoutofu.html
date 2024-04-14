@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">小天橋温泉きららの湯（しょうてんきょうきららのゆ）</h2><h3 class="icon"> 所在地：京都府</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1010_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">日本海と久美浜湾をへだてる「小天橋」にある温泉地。小天橋は“西の天橋立”と呼ばれる風光明媚な砂州で、松林を抜ければ東西に長く続く白砂の浜辺、その先には明るい藍緑色の日本海と、どこか懐かしい日本の海景色が広がる。温泉街は、小さな子供でも海水浴が楽しめる浅瀬の小天橋海水浴場が目と鼻の先。釣船を持つ民宿も多く、海に繰り出せばタイ・ヒラメ・チヌなどの魚が釣れるという。冬場の日本海から水揚げされた松葉ガニ、湾内で育てられたカキなど四季を通じて味わえる海の幸も尽きることがない。
+海水に似た食塩を含むナトリウム塩化物泉で、「熱の湯」と呼ばれるほど保温効果が高く、湯あたりしにくいとされている。美肌効果や皮膚炎など肌への効能も期待でき、体がよく温まることから「子宝の湯」とも讃えられている。ほかにも、慢性婦人病や皮膚病、疲労回復や関節痛、やけどや痔疾などにもよいとされている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="marukomaonsen_marukoma_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="marukomaonsen_marukoma_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.marukomaonsen_marukoma_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0681_0001.jpg"/></a><p class="feature">丸駒温泉（まるこま）<br>類似度:2.371</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="iseshimasatoshishimaonsen_iseshimakashikojima_mie">{% csrf_token %}<input name="id2" type="hidden" value="iseshimasatoshishimaonsen_iseshimakashikojima_mie"/><div class="con2"><a href="../spring_each/" onclick="document.iseshimasatoshishimaonsen_iseshimakashikojima_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1238_0001.jpg"/></a><p class="feature">伊勢志摩賢島温泉（いせしまかしこじま）<br>類似度:2.336</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="enakyouonsen_enakyou_gifu">{% csrf_token %}<input name="id2" type="hidden" value="enakyouonsen_enakyou_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.enakyouonsen_enakyou_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0361_0001.jpg"/></a><p class="feature">恵那峡温泉（えなきょう）<br>類似度:2.331</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hatonoyuonizumi_hatonoyu_gunma">{% csrf_token %}<input name="id2" type="hidden" value="hatonoyuonizumi_hatonoyu_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.hatonoyuonizumi_hatonoyu_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2080_0001.jpg"/></a><p class="feature">鳩の湯温泉（はとのゆ）<br>類似度:2.321</br></p></div></form>
+{% endblock content %}

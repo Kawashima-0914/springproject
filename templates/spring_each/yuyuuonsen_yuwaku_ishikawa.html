@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯涌温泉（ゆわく）</h2><h3 class="icon"> 所在地：石川県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0258_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、関節痛、冷え性
+</td></tr></table></div><div class="con1"><p class="feature">石川県金沢市湯涌町および湯涌荒屋町にある温泉地。金沢温泉郷のひとつである。金沢市東南部の中山間地域に位置しており、金沢の奥座敷ともいうべき場所にある。 浅野川から分かれる道路沿いには、旅館・飲食店・商店・日帰り入浴施設「総湯 白鷺の湯」が並んでいる。 他にも、かつてこの地に滞在し湯涌温泉を題材にした書籍を発表した竹久夢二の記念館がある。最奥部には人造湖の玉泉湖があり、周りには遊歩道が整備されている。また、玉泉湖畔には、毎年行われる氷室行事に使われる氷室小屋がある。 2011年に放送されたテレビアニメ『花咲くいろは』の登場する「湯乃鷺温泉」は湯涌温泉街をモデルとしており、湯涌温泉観光協会が「取材協力」としてクレジットされている。
+718年に紙漉き職人が泉で1羽の白鷺が身を浸しているのを見て近づいてみると、湯が涌き出ているのを発見したため「湯涌温泉」と名付けられた。江戸時代には加賀藩主を初め、一族が常用したといわれている。明治以降は、竹久夢二を初め多くの文人・墨客が愛用し、大正初期にドイツで行われた万国鉱泉博覧会では、当時の内務省より「日本の名泉」として推薦され出展した。泉質はナトリウム・カルシウム - 塩化物・硫酸塩泉。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.278</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hamasakaonsensato_hamasaka_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="hamasakaonsensato_hamasaka_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.hamasakaonsensato_hamasaka_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1023_0001.jpg"/></a><p class="feature">浜坂温泉郷（はまさか）<br>類似度:2.271</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="izumi_1_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="izumi_1_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.izumi_1_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1915_0001.jpg"/></a><p class="feature">泉（伊豆湯河原）温泉（いずみ（いずゆがわら））<br>類似度:2.231</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:2.224</br></p></div></form>
+{% endblock content %}

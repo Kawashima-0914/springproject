@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">銀山温泉（ぎんざん）</h2><h3 class="icon"> 所在地：山形県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0709_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>にごり、にごり（乳白色）、神経痛、筋肉痛、関節痛、疲労、婦人病、冷え性、動脈硬化、皮膚病
+</td></tr></table></div><div class="con1"><p class="feature">川岸に温泉旅館がずらりと立ち並ぶ温泉街。ガス灯が立ち並ぶ夜の街並みは大正ロマンの風情がたっぷりで、一度は見てみたい美しさ。建物自体が芸術品といえる宿も多くドラマの舞台になったことでも有名。旅館の壁には漆喰を用いて作られるレリーフである鏝絵（こてえ）が描かれ、アスファルトには雪の結晶を模したタイルが埋め込まれている。カフェや食べ歩きスポット、おみやげ屋も充実しており、散策も楽しめる。 深い雪に覆われる秘境でありながら、東京から山形新幹線で約3時間+直通バス40分という好アクセス。雪見の露天温泉を楽しめるのも、豪雪地帯にある銀山温泉の嬉しいところ。
+寛保年間(1741)に温泉地として盛んになってから現在まで歴史を重ねてきた温泉街。細かな湯花が混じった乳白色の湯が特徴で、国民保養温泉地にも指定されている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="momosawaonsen_momosawa_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="momosawaonsen_momosawa_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.momosawaonsen_momosawa_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1785_0001.jpg"/></a><p class="feature">桃沢温泉（ももさわ）<br>類似度:2.309</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinosekionsensato_ichinoseki_iwate">{% csrf_token %}<input name="id2" type="hidden" value="ichinosekionsensato_ichinoseki_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.ichinosekionsensato_ichinoseki_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1076_0001.jpg"/></a><p class="feature">一関温泉郷（いちのせき）<br>類似度:2.294</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="asamainonsensato_asamakakushi_gunma">{% csrf_token %}<input name="id2" type="hidden" value="asamainonsensato_asamakakushi_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.asamainonsensato_asamakakushi_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0388_0001.jpg"/></a><p class="feature">浅間隠温泉郷（あさまかくし）<br>類似度:2.272</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sakunamionsen_sakunami_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sakunamionsen_sakunami_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sakunamionsen_sakunami_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0695_0001.jpg"/></a><p class="feature">作並温泉（さくなみ）<br>類似度:2.270</br></p></div></form>
+{% endblock content %}

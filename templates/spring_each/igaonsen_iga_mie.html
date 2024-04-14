@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">伊賀温泉（いが）</h2><h3 class="icon"> 所在地：三重県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1470_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">名阪国道「友生（トモノ）IC」より車で約3分、関西本線伊賀上野駅より車で約15分ほど、伊賀温泉は「ヒルホテル　サンピア伊賀」が一軒宿の温泉。京都・奈良に程近く、伊勢を結ぶ大和街道・伊賀街道・初瀬街道を有し、古来より都に隣接する地域、交通の要衝として栄えた。 江戸時代には藤堂家の城下町や伊勢神宮への参宮者の宿場町として往時より賑わいを見せた。忍者の里として世界一の忍術資料を展示した「忍者屋敷 」は観光名所の一つ。また松尾芭蕉の生誕地でもある伊賀には、芭蕉にちなんだ名所・旧跡が点在する。 城下町の趣き残す町並みを散策した後、良質な「芭蕉の湯」で疲れをゆっくりと癒し、宿自慢の「伊賀牛」を使った料理に舌鼓を打つのが、楽しみの一つだ。
+伊賀忍者の里に湧く「伊賀温泉」は宿泊施設「ヒルホテル サンピア伊賀」に湧く一軒宿の温泉。伊賀は松尾芭蕉の生誕地でもあることにちなみ名付けられた「芭蕉の湯」として親しまれる天然温泉は、平成11年（1999年）に湧出した。サウナや露天風呂も併設した「和風風呂」と「洋風風呂」を男女チェンジして利用できるのもうれしいところ。神経痛、関節痛、筋肉痛、疲労回復、冷え性など効能は多岐にわたり、pH9.4のアルカリ性の単純温泉は、湯欲み後、肌がツルツルになると女性に人気も高い。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="bimataonsen_mimata_shimane">{% csrf_token %}<input name="id2" type="hidden" value="bimataonsen_mimata_shimane"/><div class="con2"><a href="../spring_each/" onclick="document.bimataonsen_mimata_shimane.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1205_0001.jpg"/></a><p class="feature">美又温泉（みまた）<br>類似度:2.066</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.058</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="rurionsen_ruri_shiga">{% csrf_token %}<input name="id2" type="hidden" value="rurionsen_ruri_shiga"/><div class="con2"><a href="../spring_each/" onclick="document.rurionsen_ruri_shiga.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1326_0001.jpg"/></a><p class="feature">るり温泉（るり）<br>類似度:2.051</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuchikeikokuonsen_kikuchikeikoku_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuchikeikokuonsen_kikuchikeikoku_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuchikeikokuonsen_kikuchikeikoku_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1132_0001.jpg"/></a><p class="feature">菊池渓谷温泉（きくちけいこく）<br>類似度:2.037</br></p></div></form>
+{% endblock content %}

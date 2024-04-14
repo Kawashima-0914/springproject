@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">浜村温泉（はまむら）</h2><h3 class="icon"> 所在地：鳥取県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0507_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫酸塩泉、ラジウム泉
+</td></tr><tr><th>効能</th><td>神経痛、婦人病、胃腸病
+</td></tr></table></div><div class="con1"><p class="feature">鳥取県東部の5つの温泉からなる「いなば温泉郷」のひとつで、哀愁をおびた民謡「貝がら節」で知られる温泉地。古くからある勝見温泉と明治時代に開湯した浜村温泉を総称して、「浜村温泉」と呼んでいる。 周辺にはワニの背に見立てた「海食棚」や「気多の岬」、因幡の白兎伝説の舞台といわれる「白兎海岸」、「白兎神社」、白兎が身を洗ったという「不増不減の池」があり、訪れる者を神話の世界へと誘う。夕暮れ時に海に浮かぶ幻想的ないさり火を眺めながら、ロマンティックなひとときを満喫するのもおすすめ。 春は海釣り、夏は海水浴やウインドサーフィン、秋は二十世紀梨狩り、冬は松葉がに料理、と四季折々の楽しみ方ができるのも大きな魅力。
+約500年前に開かれた、山陰随一の湧出量を誇る温泉地。その豊富な湯量を活かし、温泉プールを持つ宿など風呂自慢の宿が揃う。古書には、傷ついた鷺が足の傷を癒したところに湧き出た温泉と記されており、そこからかつて「鷺の湯」と称された。目の前に砂丘と海が広がる眺望はダイナミックで美しく、小泉八雲の著書『知られぬ日本の面影』に、「不思議な程、渚に近い」との記述がある。多くの人々を魅了してきた絶景と良質な湯を、心ゆくまでじっくりと味わいたい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.973</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="arimaonsen_arima_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="arimaonsen_arima_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.arimaonsen_arima_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0016_0001.jpg"/></a><p class="feature">有馬温泉（ありま）<br>類似度:2.814</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.676</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hamasakaonsensato_hamasaka_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="hamasakaonsensato_hamasaka_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.hamasakaonsensato_hamasaka_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1023_0001.jpg"/></a><p class="feature">浜坂温泉郷（はまさか）<br>類似度:2.646</br></p></div></form>
+{% endblock content %}

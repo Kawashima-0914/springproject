@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">岩井湯元温泉（いわいゆもと）</h2><h3 class="icon"> 所在地：千葉県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1893_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">南房総温泉郷のひとつで、南房総の漁師町の風情が残る温泉地だ。この岩井エリアは新鮮な魚介類を楽しむことができ、中でも岩井エリアの名物である「地魚船盛り」などの豪快な網元料理は、旬の海産物を盛り込んだ特別なメニューだ。またこのエリアには岩井海水浴場や名倉海水浴場など千葉県の中でも豊富な数の海水浴場を有することが特徴的だ。岩井海水浴場は、波がおだやかで遠浅のためは小さな子ども連れファミリーにおすすめ。弓なりの海岸線と緑の山並みが訪れる人の心を和ませ、夕日ウォッチングとしても人気が高い。
+「網元の宿　ろくや」の敷地内で湧く温泉は、体の芯まで温まると好評。泉質はナトリウム塩化物泉で、神経痛、筋肉痛、関節痛、痔疾、冷え性、疲労回復、健康増進、慢性皮膚炎、慢性婦人病などに効果があると言われている。また男女別内場のほか、趣の異なる4つの貸切風呂は無料で利用が出来る。心も身体も休めて、旅の疲れをのんびりと癒せるだろう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kinkesakionsen_kanagasaki_akita">{% csrf_token %}<input name="id2" type="hidden" value="kinkesakionsen_kanagasaki_akita"/><div class="con2"><a href="../spring_each/" onclick="document.kinkesakionsen_kanagasaki_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1283_0001.jpg"/></a><p class="feature">金ヶ崎温泉（かながさき）<br>類似度:2.281</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tamagawaonsen_tamagawa_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="tamagawaonsen_tamagawa_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.tamagawaonsen_tamagawa_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1956_0001.jpg"/></a><p class="feature">田万川温泉（たまがわ）<br>類似度:2.251</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="misakionsen_misaki_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="misakionsen_misaki_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.misakionsen_misaki_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1197_0001.jpg"/></a><p class="feature">三崎温泉（みさき）<br>類似度:2.237</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="chikuramotoyuonsen_chikurayumoto_chiba">{% csrf_token %}<input name="id2" type="hidden" value="chikuramotoyuonsen_chikurayumoto_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.chikuramotoyuonsen_chikurayumoto_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1902_0001.jpg"/></a><p class="feature">千倉元湯温泉（ちくらゆもと）<br>類似度:2.225</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">古里温泉（ふるさと）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0336_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">砂蒸し風呂で有名な指宿温泉をはじめ、良質の温泉が点在する温泉天国・鹿児島県。その中でも錦江湾の大海原を目前に、南東に大隈半島の山並み、南西に開聞岳を見渡す開放的なロケーションが人気の温泉地。現在も火山活動を続ける桜島の南側に小ぢんまりと広がっている。女優・森光子主演の舞台で有名な『放浪記』の原作者・林芙美子の出身地でもあり、温泉街には芙美子の銅像や、『花の命はみじかくて 苦しきことのみ多かりき』という有名な詩を刻んだ歌碑が佇む。また、錦江湾に沈み行く夕日が美しいサンセットスポットとしても親しまれ、日中とは違う幻想的な時間を楽しむこともできる。
+ナトリウム-塩化物泉の泉質で、ほのかな塩味がする無色透明、無臭のお湯が特徴。きりきず、末梢循環障害、冷え性、うつ状態、皮膚乾燥症などに効能があるとされる。源泉の温度は42～47度で、飲用できる湯であることも特徴。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tangookuineonsen_tangookuine_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tangookuineonsen_tangookuine_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tangookuineonsen_tangookuine_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2140_0001.jpg"/></a><p class="feature">丹後奥伊根温泉（たんごおくいね）<br>類似度:2.527</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tangohanaremizuumionsen_tangohanareko_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tangohanaremizuumionsen_tangohanareko_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tangohanaremizuumionsen_tangohanareko_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1214_0001.jpg"/></a><p class="feature">丹後はなれ湖温泉（たんごはなれこ）<br>類似度:2.472</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="wakuraonsen_wakura_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="wakuraonsen_wakura_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.wakuraonsen_wakura_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0151_0001.jpg"/></a><p class="feature">和倉温泉（わくら）<br>類似度:2.466</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="iwaobetsuonsen_iwaobetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="iwaobetsuonsen_iwaobetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.iwaobetsuonsen_iwaobetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1833_0001.jpg"/></a><p class="feature">岩尾別温泉（いわおべつ）<br>類似度:2.439</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">熊の川温泉（くまのかわ）</h2><h3 class="icon"> 所在地：佐賀県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0434_0001.jpg"/><table><tr><th>効能</th><td>ラジウム泉
+</td></tr></table></div><div class="con1"><p class="feature">長崎自動車道「佐賀大和IC」より国道323号を北へ約9㎞、古湯温泉へ向かう手前に位置する山懐に抱かれた温泉地。何度も洪水や火災などの災害に見舞われているが、その度に発掘を繰り返し、現在のような安定した温泉地として発展していった。 効能の高い湯治場として親しまれているからこそ、長年に亘って守り続けられているのが伺える。昭和41年には古湯温泉とともに厚生省の国民健康保養地にも指定され、いで湯と周囲の環境の良さは折り紙つきとなった。 温泉街は清流・嘉瀬川沿いに10軒ほどの温泉施設で形成され、水と緑と湯宿の織りなす素朴な雰囲気が旅の心を和ませてくれる。マイナスイオンたっぷりの空気と効能豊かな温泉で、翌日からのエネルギーをチャージしたい。
+開湯は821年。弘法大師・空海が全国行脚の途中に立ち寄り、傷ついた水鳥の水浴びを見て発見したと伝わる温泉。全国有数のラドン含有量と、体にまとわりつくような柔らかな湯触りが特徴だ。浴用ではリウマチや通風から、アトピーなどの皮膚病にも薬効が高いと評判。湯上りにはつるスベ感のある美肌効果も感じ取れる。また呼吸によって湯気から成分を吸収することで鎮静作用が働き、ノイローゼなどの治療にも効果的なのだとか。飲用では慢性消化器疾患や糖尿病などに効くとされる、幅広い効能を誇る良湯である。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="wataseonsen_wataze_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="wataseonsen_wataze_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.wataseonsen_wataze_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1028_0001.jpg"/></a><p class="feature">渡瀬温泉（わたぜ）<br>類似度:1.768</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okudougoonsen_okudougo_ehime">{% csrf_token %}<input name="id2" type="hidden" value="okudougoonsen_okudougo_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.okudougoonsen_okudougo_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0288_0001.jpg"/></a><p class="feature">奥道後温泉（おくどうご）<br>類似度:1.733</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ashizurionsensato_ashizuri_kouchi">{% csrf_token %}<input name="id2" type="hidden" value="ashizurionsensato_ashizuri_kouchi"/><div class="con2"><a href="../spring_each/" onclick="document.ashizurionsensato_ashizuri_kouchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0893_0001.jpg"/></a><p class="feature">あしずり温泉郷（あしずり）<br>類似度:1.673</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:1.664</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">牧の戸温泉（まきのと）</h2><h3 class="icon"> 所在地：大分県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0305_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">牧の戸温泉は、大分県玖珠郡九重町にある温泉地。やまなみハイウェイの長者原から牧ノ戸峠にかけては、長者原温泉、寒の地獄温泉、星生温泉、牧の戸温泉といった温泉が並び、長者原温泉郷とも呼ばれている。九重町の南側に九重連山は連なっており、その中心に牧の戸温泉がある。九重連山の登山口として知られる牧ノ戸峠にもっとも近い位置にある一軒宿の温泉。九州本土最高峰の中岳（標高1,791m）をはじめとする標高約1,700m級の山々は“九州の屋根”とも呼ばれている。 牧の戸温泉という名は、登山ブームの最大の功労者である槙有恒氏が1958年九重登山に訪れた際、この山小屋と温泉をたいそう気に入り名付けた。近くには「九重夢吊橋」があり、1000mを超える美しい九重連山をのぞむことができる。
+古くより猿渡（猿戸）と呼ばれた温泉の自噴地域であった牧ノ戸温泉は、1904年『中野温泉』として開湯、鉱泥浴による治療効果によりその名は広く知られるようになった。現在も自然湧出する湯の泉質は単純硫黄泉。地下から湧出するときは無色透明だが、空気に触れることで酸化して黄色化する。金属を漬けると腐食し黒くなるのでアクセサリーなどに注意が必要。皮膚の弱い方は人は湯当たりを起こしやすい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="unzenonsen_unzen_nagasaki">{% csrf_token %}<input name="id2" type="hidden" value="unzenonsen_unzen_nagasaki"/><div class="con2"><a href="../spring_each/" onclick="document.unzenonsen_unzen_nagasaki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0525_0001.jpg"/></a><p class="feature">雲仙温泉（うんぜん）<br>類似度:1.573</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="takayuonizumi_takayu_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="takayuonizumi_takayu_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.takayuonizumi_takayu_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0777_0001.jpg"/></a><p class="feature">高湯温泉（たかゆ）<br>類似度:1.565</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ipponmatsuonsen_ipponmatsu_akita">{% csrf_token %}<input name="id2" type="hidden" value="ipponmatsuonsen_ipponmatsu_akita"/><div class="con2"><a href="../spring_each/" onclick="document.ipponmatsuonsen_ipponmatsu_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1884_0001.jpg"/></a><p class="feature">一本松温泉（いっぽんまつ）<br>類似度:1.556</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:1.542</br></p></div></form>
+{% endblock content %}

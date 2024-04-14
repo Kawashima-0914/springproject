@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">岩下温泉（いわした）</h2><h3 class="icon"> 所在地：山梨県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2066_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">数多くの温泉がある山梨県で、1300年以上の歴史を持つ県内最古の温泉とされる温泉地、岩下温泉。現在は、明治時代初期に建てられた温泉旅館「岩下温泉旅館」で入ることができる。宿の施設は旧館と新館があり、旧館は、国の登録有形文化財。明治・大正期特有の様式である半地下構造の木造建築で、日帰りで入るほか宿泊してのんびり浸かることもできる。宿泊すれば、日本ワイン生産発祥地の山梨県で醸造した上質な国産ワインと、富士山麓牛や甲斐サーモンなどの地場産食材で作る会席料理も食べられる。「フルーツ王国」の山梨県らしく、周囲にはぶどう畑をはじめ果樹園が多く、季節ごとに旬を迎える果物狩りも楽しめる。
+館内に源泉のある無色透明の単純温泉で、源泉の温度が28度と低めなのが特徴。加熱して利用する湯船と、源泉をそのまま使用している湯船の2種類があり、施設ではそれぞれを交互に入る方法をすすめている。神経痛、筋肉痛、冷え性、疲労などに効果があるとされる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kawabaonsen_kawaba_gunma">{% csrf_token %}<input name="id2" type="hidden" value="kawabaonsen_kawaba_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.kawabaonsen_kawaba_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1348_0001.jpg"/></a><p class="feature">川場温泉（かわば）<br>類似度:2.216</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="miyazawaonsen_miyazawa_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="miyazawaonsen_miyazawa_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.miyazawaonsen_miyazawa_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1890_0001.jpg"/></a><p class="feature">宮沢温泉（みやざわ）<br>類似度:2.208</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kasugaionsen_kasugai_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="kasugaionsen_kasugai_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.kasugaionsen_kasugai_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0765_0001.jpg"/></a><p class="feature">春日居温泉（かすがい）<br>類似度:2.200</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ikenoheionizumi_ikenotaira_nagano">{% csrf_token %}<input name="id2" type="hidden" value="ikenoheionizumi_ikenotaira_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.ikenoheionizumi_ikenotaira_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0568_0001.jpg"/></a><p class="feature">池の平温泉（いけのたいら）<br>類似度:2.196</br></p></div></form>
+{% endblock content %}

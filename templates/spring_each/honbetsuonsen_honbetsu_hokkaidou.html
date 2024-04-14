@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">本別温泉（ほんべつ）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1677_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">本別町は北海道十勝地方の東北部に位置し、主要都市である帯広市からは約50㎞の距離にある。冬の寒さは厳しいが、積雪は比較的少なく「十勝晴れ」と呼ばれる晴天日数が多い内陸性気候。 そのため、町の東西は豊かな森林と広大な畑作地帯となっており、本別町の基幹産業である小豆、金時豆、大豆などの豆類の生産が行われている。生産量だけではなく「本別ブランド」はその味わいも日本一との呼び声も高く、全国有数の上質な豆ど ころとして名を馳せている。 富んだ効能の温泉は、お肌もつるつるになるといわれ評判。また、湯冷めしにくく老若男女問わず人気。温泉にゆっくり浸かりリフレッシュしたら、本別町自慢の特産品をじっくり吟味したい。
+無色透明・無臭。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="arifukuonsen_arifuku_shimane">{% csrf_token %}<input name="id2" type="hidden" value="arifukuonsen_arifuku_shimane"/><div class="con2"><a href="../spring_each/" onclick="document.arifukuonsen_arifuku_shimane.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0461_0001.jpg"/></a><p class="feature">有福温泉（ありふく）<br>類似度:1.937</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="imutaonsen_imuta_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="imutaonsen_imuta_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.imutaonsen_imuta_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0324_0001.jpg"/></a><p class="feature">藺牟田温泉（いむた）<br>類似度:1.860</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kouzanryuujinonsen_takayamaryuujin_gifu">{% csrf_token %}<input name="id2" type="hidden" value="kouzanryuujinonsen_takayamaryuujin_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.kouzanryuujinonsen_takayamaryuujin_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1634_0001.jpg"/></a><p class="feature">高山龍神温泉（たかやまりゅうじん）<br>類似度:1.836</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ikenoheionizumi_ikenotaira_nagano">{% csrf_token %}<input name="id2" type="hidden" value="ikenoheionizumi_ikenotaira_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.ikenoheionizumi_ikenotaira_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0568_0001.jpg"/></a><p class="feature">池の平温泉（いけのたいら）<br>類似度:1.831</br></p></div></form>
+{% endblock content %}

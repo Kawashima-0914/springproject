@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">洞爺湖温泉（とうやこ）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0667_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">洞爺湖温泉は湖畔沿いに建つホテルも多く、客室や露天風呂などから洞爺湖の絶景を望める。展望台からの景観も素晴らしいのでぜひ足を運んでほしい。また、毎年4月末から10月末まで開催される「洞爺湖ロングラン花火大会」を温泉に入りながら眺めるのも最高だ。 花火大会に合わせ花火鑑賞船も運行し、温泉街の夜景をバックに湖上からの花火鑑賞は忘れられない思い出になるだろう。花火鑑賞船は日中は遊覧船として、温泉街と湖に浮かぶ中島を行き来しているため、中島への下船も可能（島への下船は夏季のみ）。 温泉街から少し車を走らせれば、有珠山ロープウェー、昭和新山クマ牧場、サイロ展望台などの観光地に行けるのも洞爺湖温泉の魅力だ。
+1910年（明治43年）、有珠山の四十三山噴火によってもたらされた洞爺湖温泉。2000年（平成12年）3月の23年ぶりの噴火後は、湯質もわずかに茶色がかったお湯に変化。多大な被害が及ぶ一方で、自然の恵みを町にもたらした。現在は2000年の噴火地域であった金比羅山でも高温泉の開発に成功し、さらに火山の恵みが享受された温泉となっている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="harunamizuumionsen_harunako_gunma">{% csrf_token %}<input name="id2" type="hidden" value="harunamizuumionsen_harunako_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.harunamizuumionsen_harunako_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1193_0001.jpg"/></a><p class="feature">榛名湖温泉（はるなこ）<br>類似度:1.430</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="utoroonsen_utoro_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="utoroonsen_utoro_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.utoroonsen_utoro_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0787_0001.jpg"/></a><p class="feature">ウトロ温泉（うとろ）<br>類似度:1.402</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="chuuzenjionsen_chuuzenji_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="chuuzenjionsen_chuuzenji_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.chuuzenjionsen_chuuzenji_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0091_0001.jpg"/></a><p class="feature">中禅寺温泉（ちゅうぜんじ）<br>類似度:1.384</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="abashirikohanonsen_abashirikohan_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="abashirikohanonsen_abashirikohan_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.abashirikohanonsen_abashirikohan_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0647_0001.jpg"/></a><p class="feature">網走湖畔温泉（あばしりこはん）<br>類似度:1.377</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">八雲温泉（北海道）（やくも）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2050_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">活火山に囲まれた噴火湾、内浦湾をのぞむ海岸沿いの町、八雲町。「秘湯」とされる温泉地を多く持つ町でもある。そのひとつが八雲温泉。雄鉾（おぼこ）岳の麓を望む自然豊かな温泉地で、始まりは松前藩が統治していた明治時代といわれる。長い歴史を持つ温泉地は日帰り利用も可能な「おぼこ荘」で入れる。鉄分が多く濁った源泉を張った露天風呂からは満天の星空を眺められる。鮮魚店が親会社を務めていることから、宿泊客には日本海から水揚げされたばかりの新鮮な海産物料理が提供される。また、八雲は国産ハーブ鶏発祥の地でもあり、温泉地の周辺にはハーブ鶏を使った料理を提供する食事処も多い。
+茶褐色に濁るナトリウム－塩化物・炭酸水素塩泉。神経痛、筋肉痛、関節痛、慢性消化器病、痔疾、冷え性、慢性皮膚病、慢性婦人病などに効能があるとされ、お湯が柔らかく肌によいといわれる。鉄分が多くよく温まる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="uenoyuonsenkyou_kaminoyu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="uenoyuonsenkyou_kaminoyu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.uenoyuonsenkyou_kaminoyu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2084_0001.jpg"/></a><p class="feature">上の湯温泉郷（かみのゆ）<br>類似度:2.399</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="marukomaonsen_marukoma_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="marukomaonsen_marukoma_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.marukomaonsen_marukoma_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0681_0001.jpg"/></a><p class="feature">丸駒温泉（まるこま）<br>類似度:2.392</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tomuraushionsen_tomuraushi_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="tomuraushionsen_tomuraushi_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.tomuraushionsen_tomuraushi_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0670_0001.jpg"/></a><p class="feature">トムラウシ温泉（とむらうし）<br>類似度:2.333</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ishikaritabionsen_ishikarifutomi_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="ishikaritabionsen_ishikarifutomi_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.ishikaritabionsen_ishikarifutomi_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2010_0001.jpg"/></a><p class="feature">石狩太美温泉（いしかりふとみ）<br>類似度:2.284</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>温泉ガイド-SpringList</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <!--jQueryとjapan-map-jsを読み込むコード-->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/japan-map-js@1.0.1/dist/jpmap.min.js"></script>
+    <script type="text/javascript" src="dist/jpmap.min.js"></script>
+    <link href="../static/shasin2.ico" rel="shortcut icon">
+</head>
+
+<body id="springlist">
+
+    <!-- headerの始まり-->
+    <header>
+        <div class="logo">
+            <a href="/startspring/"><img src="../static/images/logo.jpg"></a>
+        </div>
+        <nav>
+            <ul class="global-nav">
+                <li><a href="ranking.html">Ranking</a></li>
+                <li>SpringList</li>
+                <li><a href="qualityexp.html">QualityExp</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--  headerの終わり-->
+
+    <!--  wrapの始まり-->
+    <div id="wrap">
+        <div class="content">
+            <div class="main-center">
+                <h1>SpringList</h1>
+                <p>約1300の温泉地を表示するページです。
+                    <br>下の日本地図から、それぞれの県の温泉を表示することができます。
+                    <br>さらに個別の温泉にアクセスすることで、その温泉に似ている温泉を探すこともできます。
+                    <br>第1に泉質、それ以降に効能や特徴を参考に温泉の類似度を出しています。
+                    <br>泉質の一致する数が多いほど、類似度は高くなるようになっています。
+                    <br>同じ温泉同士でも、類似度に若干の誤差があることご理解お願いします。
+                </p>
+                <section class="profile clearfix">
+                    <div class="profile-txt">
+                        <h2 class="icon">JapanMap</h2>
+                        <form action="{% url 'appname:prefecture' %}" method="post">
+                            {% csrf_token %}
+                            <div id="my-map" onclick="sam()"></div>
+                            <div>
+                                <input type="text" id="id1" name="id1" style="visibility:hidden;">
+                            </div>
+                            <input type="submit" id="submit" style="visibility:hidden;">
+                            <script>
+                                let count = 100
+
+                                var d = new jpmap.japanMap(document.getElementById("my-map"), {
+                                    areas: [
+                                        { code: 1, name: "北海道", color: "#7f7eda", hoverColor: "#b3b2ee" },
+                                        { code: 2, name: "青森", color: "#759ef4", hoverColor: "#98b9ff" },
+                                        { code: 3, name: "岩手", color: "#759ef4", hoverColor: "#98b9ff" },
+                                        { code: 4, name: "宮城", color: "#759ef4", hoverColor: "#98b9ff" },
+                                        { code: 5, name: "秋田", color: "#759ef4", hoverColor: "#98b9ff" },
+                                        { code: 6, name: "山形", color: "#759ef4", hoverColor: "#98b9ff" },
+                                        { code: 7, name: "福島", color: "#759ef4", hoverColor: "#98b9ff" },
+                                        { code: 8, name: "茨城", color: "#7ecfea", hoverColor: "#b7e5f4" },
+                                        { code: 9, name: "栃木", color: "#7ecfea", hoverColor: "#b7e5f4" },
+                                        { code: 10, name: "群馬", color: "#7ecfea", hoverColor: "#b7e5f4" },
+                                        { code: 11, name: "埼玉", color: "#7ecfea", hoverColor: "#b7e5f4" },
+                                        { code: 12, name: "千葉", color: "#7ecfea", hoverColor: "#b7e5f4" },
+                                        { code: 13, name: "東京都", color: "#7ecfea", hoverColor: "#b7e5f4" },
+                                        { code: 14, name: "神奈川", color: "#7ecfea", hoverColor: "#b7e5f4" },
+                                        { code: 15, name: "新潟", color: "#7cdc92", hoverColor: "#aceebb" },
+                                        { code: 16, name: "富山", color: "#7cdc92", hoverColor: "#aceebb" },
+                                        { code: 17, name: "石川", color: "#7cdc92", hoverColor: "#aceebb" },
+                                        { code: 18, name: "福井", color: "#7cdc92", hoverColor: "#aceebb" },
+                                        { code: 19, name: "山梨", color: "#7cdc92", hoverColor: "#aceebb" },
+                                        { code: 20, name: "長野", color: "#7cdc92", hoverColor: "#aceebb" },
+                                        { code: 21, name: "岐阜", color: "#7cdc92", hoverColor: "#aceebb" },
+                                        { code: 22, name: "静岡", color: "#7cdc92", hoverColor: "#aceebb" },
+                                        { code: 23, name: "愛知", color: "#7cdc92", hoverColor: "#aceebb" },
+                                        { code: 24, name: "三重", color: "#ffe966", hoverColor: "#fff19c" },
+                                        { code: 25, name: "滋賀", color: "#ffe966", hoverColor: "#fff19c" },
+                                        { code: 26, name: "京都府", color: "#ffe966", hoverColor: "#fff19c" },
+                                        { code: 27, name: "大阪府", color: "#ffe966", hoverColor: "#fff19c" },
+                                        { code: 28, name: "兵庫", color: "#ffe966", hoverColor: "#fff19c" },
+                                        { code: 29, name: "奈良", color: "#ffe966", hoverColor: "#fff19c" },
+                                        { code: 30, name: "和歌山", color: "#ffe966", hoverColor: "#fff19c" },
+                                        { code: 31, name: "鳥取", color: "#ffcc66", hoverColor: "#ffe0a3" },
+                                        { code: 32, name: "島根", color: "#ffcc66", hoverColor: "#ffe0a3" },
+                                        { code: 33, name: "岡山", color: "#ffcc66", hoverColor: "#ffe0a3" },
+                                        { code: 34, name: "広島", color: "#ffcc66", hoverColor: "#ffe0a3" },
+                                        { code: 35, name: "山口", color: "#ffcc66", hoverColor: "#ffe0a3" },
+                                        { code: 36, name: "徳島", color: "#fb9466", hoverColor: "#ffbb9c" },
+                                        { code: 37, name: "香川", color: "#fb9466", hoverColor: "#ffbb9c" },
+                                        { code: 38, name: "愛媛", color: "#fb9466", hoverColor: "#ffbb9c" },
+                                        { code: 39, name: "高知", color: "#fb9466", hoverColor: "#ffbb9c" },
+                                        { code: 40, name: "福岡", color: "#ff9999", hoverColor: "#ffbdbd" },
+                                        { code: 41, name: "佐賀", color: "#ff9999", hoverColor: "#ffbdbd" },
+                                        { code: 42, name: "長崎", color: "#ff9999", hoverColor: "#ffbdbd" },
+                                        { code: 43, name: "熊本", color: "#ff9999", hoverColor: "#ffbdbd" },
+                                        { code: 44, name: "大分", color: "#ff9999", hoverColor: "#ffbdbd" },
+                                        { code: 45, name: "宮崎", color: "#ff9999", hoverColor: "#ffbdbd" },
+                                        { code: 46, name: "鹿児島", color: "#ff9999", hoverColor: "#ffbdbd" },
+                                        { code: 47, name: "沖縄", color: "#ff9999", hoverColor: "#ffbdbd" },
+                                    ],
+                                    showsPrefectureName: true,
+                                    width: 900,
+                                    height: 800,
+                                    movesIslands: true,
+                                    borderLineColor: "#000000",
+                                    lang: 'ja',
+                                    //onSelect: function (data) {
+                                    //    location.href = areaLinks[data.area.code];
+                                    //}
+                                    onSelect: function (data) {
+                                        count = data.area.name;
+                                    }
+                                });
+                                function sam() {
+                                    document.getElementById('id1').value = count;
+
+                                    if (count != 100) {
+                                        document.getElementById('submit').click();
+                                    }
+                                }
+                            </script>
+                    </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!--  wrapの終わり-->
+
+    <!--  footer始まり-->
+    <footer>
+        <small>090-8405-7088
+        </small>
+    </footer>
+    <!--  footer終わり-->
+
+
+</body>
+
+</html>

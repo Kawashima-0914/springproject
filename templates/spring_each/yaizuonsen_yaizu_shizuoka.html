@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">焼津温泉（やいづ）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1097_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">カツオの街として知られる焼津。焼津駅から程近い場所にあるのが焼津黒潮温泉だ。1983年に天然ガスとともに掘り当てた温泉が、現在では5軒の宿と1軒の日帰り入浴施設に供給されている。静岡駅で乗換1回と、新幹線からのアクセスも良いため、まさに温泉とグルメ両方楽しみたいという人にはもってこいだ。ひとたび降り立てばそこは海の恵みが盛りだくさん。近くにある「大崩海岸」は断崖絶壁の景勝地として知られ、駿河湾越しに富士山や対岸の伊豆半島を眺めることもできる。温泉に浸かって新鮮な海の幸を頂けばカツオのように一生元気に動き続けられるかも…？
+海水の約半分の濃度の塩分を含む塩化物泉で、弱アルカリ性。虚弱体質をはじめ、神経痛、筋肉痛に効き、健康と美容に良いとされている。原則飲泉はできないが、少しだけ舐めるとほんのりしょっぱい海の味がする。1,900万年前の第三紀層から湧き出す温泉は、古代の海水が長い年月をかけて変化したものだ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="usamionsen_usami_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="usamionsen_usami_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.usamionsen_usami_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0444_0001.jpg"/></a><p class="feature">宇佐美温泉（うさみ）<br>類似度:2.398</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yaharaonsen_yawara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="yaharaonsen_yawara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.yaharaonsen_yawara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1900_0001.jpg"/></a><p class="feature">矢原温泉（やわら）<br>類似度:2.335</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="uenoyuonsenkyou_kaminoyu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="uenoyuonsenkyou_kaminoyu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.uenoyuonsenkyou_kaminoyu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2084_0001.jpg"/></a><p class="feature">上の湯温泉郷（かみのゆ）<br>類似度:2.326</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tangookuineonsen_tangookuine_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tangookuineonsen_tangookuine_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tangookuineonsen_tangookuine_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2140_0001.jpg"/></a><p class="feature">丹後奥伊根温泉（たんごおくいね）<br>類似度:2.314</br></p></div></form>
+{% endblock content %}

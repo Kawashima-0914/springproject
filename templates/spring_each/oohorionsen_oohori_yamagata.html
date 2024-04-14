@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">大堀温泉（おおほり）</h2><h3 class="icon"> 所在地：山形県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1185_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">山形県の北東、白川と小国川が合流するあたりに湧く温泉地。最上町には温泉地が多く、「大堀温泉」は町の西側に位置している。小国盆地を一望できる高台にあり、栗駒国定公園神室連峰を四方に望める素晴らしい景観と 、小国川の静かに流れる清流音が、詩情をかき立ててくれる。 夜明けや夕陽、星空を眺めながら、気の向くままに湯浴みを楽しめる。河畔では鮎釣りが楽しめる他、「前森高原」ではアウトドアや工芸も楽しめ、思い思いの 過ごし方で充実した休日を過ごせる点が人気だ。 自然豊かな広大なスポーツ公園もあり、四季を通じて家族連れや若者で賑わいを見せるこの温泉地。風光明媚な白川渓谷も程近いので、ぜひとも一度足を運んでみたいところだ。
+四方を山や囲まれた自然豊かな地に湧く「大堀温泉」。泉質は単純温泉で、リウマチ、神経痛、胃腸病などに効能があり、気軽に利用できる温泉として人気。壮大な最上の景観を見下ろせる露天風呂もあり、夜明けや夕日、星空を眺めながらの湯浴みを楽しめる。透き通るような青空の下、野鳥のさえずりを聞きながらの湯浴みもすがすがしさ抜群で、何とも心地よい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.003</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hiekionsen_hinoemata_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="hiekionsen_hinoemata_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.hiekionsen_hinoemata_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1086_0001.jpg"/></a><p class="feature">檜枝岐温泉（ひのえまた）<br>類似度:1.920</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yamanokamionsen_yamanokami_iwate">{% csrf_token %}<input name="id2" type="hidden" value="yamanokamionsen_yamanokami_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.yamanokamionsen_yamanokami_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1255_0001.jpg"/></a><p class="feature">山の神温泉（やまのかみ）<br>類似度:1.919</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="rurionsen_ruri_shiga">{% csrf_token %}<input name="id2" type="hidden" value="rurionsen_ruri_shiga"/><div class="con2"><a href="../spring_each/" onclick="document.rurionsen_ruri_shiga.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1326_0001.jpg"/></a><p class="feature">るり温泉（るり）<br>類似度:1.919</br></p></div></form>
+{% endblock content %}

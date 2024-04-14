@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">白金温泉黄金の湯（しろかねこがねのゆ）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1813_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">白金温泉　黄金の湯は熊本県菊池市森北字白金にある温泉。「農のオルベルジュ　白金の森」で楽しめる温泉である。天気の良い日にはと鞍岳や八方ケ岳、 遠くには阿蘇の噴煙や長崎の雲仙普賢岳の絶景が一望できる施設だ。近くにある阿蘇外輪山の中腹に広がる菊池渓谷は、天然生広葉樹で覆われており、大小さまざまな瀬と渕と滝をつくり、その景色はまさに絶景。春は新緑、夏は天然クーラーの避暑地として、秋は紅葉と、四季折々の姿が楽しめる。
+白金温泉の黄金の湯の泉質はナトリウム炭酸水素塩泉である。地下1,000mから湧きあがる。湯量も多く温度も49.5℃ある。リラックスルームを備えた全て源泉かけ流し温泉。ナトリウム炭酸水素塩泉はナトリウムイオンが、皮脂と反応し肌の古い角質を乳化し除去してくれる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:2.116</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shintainaionsen_shintainai_niigata">{% csrf_token %}<input name="id2" type="hidden" value="shintainaionsen_shintainai_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.shintainaionsen_shintainai_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2231_0001.jpg"/></a><p class="feature">新胎内温泉（しんたいない）<br>類似度:2.114</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kutchanonsen_kutchan_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="kutchanonsen_kutchan_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.kutchanonsen_kutchan_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1878_0001.jpg"/></a><p class="feature">倶知安温泉（くっちゃん）<br>類似度:2.106</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shikotsukoonsen_shikotsuko_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="shikotsukoonsen_shikotsuko_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.shikotsukoonsen_shikotsuko_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0660_0001.jpg"/></a><p class="feature">支笏湖温泉（しこつこ）<br>類似度:2.077</br></p></div></form>
+{% endblock content %}

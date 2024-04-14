@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">三朝温泉（みささ）</h2><h3 class="icon"> 所在地：鳥取県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0131_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、塩化物泉、ラジウム泉
+</td></tr><tr><th>効能</th><td>美肌、神経痛、リウマチ、胃腸病、動脈硬化、皮膚病、糖尿病、喘息など
+</td></tr></table></div><div class="con1"><p class="feature">日本遺産第1号に認定された温泉地。温泉情緒漂う三朝橋を中心に、昭和レトロな街並みが続く。 標高約90mの断崖絶壁に建つ修験道「三徳山投入堂」約850年前、源義朝の家臣・大久保左馬之祐が三徳山に参詣中に老白狼を救ったところ、妙見菩薩が現れ湯の在りかを教えたのが始まりとか。 青御影石で造られた純和風の三朝橋のたもとには、町のシンボル「河原風呂」（無料、混浴露天）に世界有数のラドン泉が湧き出る。初夏になれば、蛍の光と“かじか蛙”の美しい鳴き声が三朝川付近で楽しめる。
+三朝の湯は、高濃度のラドンを含む世界屈指の放射能泉です。ラドンとは、ラジウムが分解されて生じる弱い放射線のこと。体に浴びると新陳代謝が活発になり、免疫力や自然治癒力が高まります。これが自慢の『ホルミシス効果』です。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.550</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hagionsensato_hagi_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="hagionsensato_hagi_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.hagionsensato_hagi_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0925_0001.jpg"/></a><p class="feature">萩温泉郷（はぎ）<br>類似度:2.517</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="arimaonsen_arima_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="arimaonsen_arima_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.arimaonsen_arima_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0016_0001.jpg"/></a><p class="feature">有馬温泉（ありま）<br>類似度:2.466</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="mitanionsen_miya_aichi">{% csrf_token %}<input name="id2" type="hidden" value="mitanionsen_miya_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.mitanionsen_miya_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0132_0001.jpg"/></a><p class="feature">三谷温泉（みや）<br>類似度:2.452</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">南田温泉（みなみだ）</h2><h3 class="icon"> 所在地：青森県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0785_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">歴史と風光に恵まれた津軽地方の中心都市・弘前の奥座敷として大きな役割を担う温泉地。一年を通して県内外から約500万人もの観光客を集める弘前周辺に点在する温泉群の一つ。 JR「弘前駅」、東北自動車道「大鰐弘前IC」どちらからも車で約15分の場所に一軒宿の「ホテルアップルランド」が建ち、観光拠点として大いに重宝されている。宿の周りは、「アップルランド」の名前のとおり見渡すかぎりのリンゴ畑。 特に、北国の遅い春もたけなわとなる5月中旬ごろには、白いリンゴの花がはるか西の岩木山麓までを埋め尽くす。八甲田や白神の木々の芽吹きともあいまった景観は、まさに筆舌に尽くしがたい美しさ。名物「りんご風呂」で甘酸っぱい香りに包まれて湯浴みを楽しんだ後は、津軽高原の爽涼な風を受けてのどかな田園を散策するのも一興だ。
+津軽平野のほぼ中央、平川市の郊外に建つ「ホテルアップルランド」に湧く温泉。東北随一の美容効果を誇る弱アルカリ性温泉として、女性客を中心に人気を集めている。うっすらと硫黄の香りを漂わせる白濁したお湯は、すべて源泉かけ流し。ところどころに湯の花が浮かび、見るからに名湯としての風情と貫禄を持つ。つるつると滑らかな肌触りで、保湿効果は抜群。浴後にはしっとりとしたすべすべ感が長く楽しめるという。一軒宿の小さな温泉ながら、この優れた美肌作用と浴後感を求めて訪れる湯客が後を絶たない。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="choukaionsen_choukai_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="choukaionsen_choukai_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.choukaionsen_choukai_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1147_0001.jpg"/></a><p class="feature">鳥海温泉（ちょうかい）<br>類似度:2.030</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:2.001</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:1.990</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="iseshimasatoshishimaonsen_iseshimakashikojima_mie">{% csrf_token %}<input name="id2" type="hidden" value="iseshimasatoshishimaonsen_iseshimakashikojima_mie"/><div class="con2"><a href="../spring_each/" onclick="document.iseshimasatoshishimaonsen_iseshimakashikojima_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1238_0001.jpg"/></a><p class="feature">伊勢志摩賢島温泉（いせしまかしこじま）<br>類似度:1.961</br></p></div></form>
+{% endblock content %}

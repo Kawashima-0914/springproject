@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">千倉元湯温泉（ちくらゆもと）</h2><h3 class="icon"> 所在地：千葉県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1902_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">房総半島の東端、温暖な気候と美しい花畑や海辺で知られる千倉町北部の瀬戸浜海水浴場前に位置する温泉地。明るい風光と温暖な気候に恵まれた地域で、一年中春のような海辺で太平洋がもたらす海の幸を堪能できる。雄大で美しい海が眼下に広がり潮の香りを運んでくれ、海岸線を歩けば暖かな心地のよい潮風が通り抜ける。波が穏やかな瀬戸浜海水浴場と並んで人気な「南千倉海水浴場」は海岸の長さが約400mもあり、南の島を思わせる青い海と白い砂浜がまぶしく家族連れにも人気の海水浴場。温暖なエリアにあるので比較的、海水温が高く寒がりの人でも思い切って海に飛び込むことができ、沖合には、サーフィンを楽しむ人々も。
+泉質はナトリウム-塩化物泉。湧出温度が低いため加温して湯舟に注いでいる。神経痛、筋肉痛、関節痛、五十肩、冷え性、疲労回復などに効果が期待できるといわれている。家族で営む小さな宿「青倉亭」は全室オーシャンビュー。天気の良い日は窓から暖かい日差しが入り込み、ついウトウトと眠気を誘う。のんびりだらだらするのも旅の醍醐味だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="iwaiyumotoonsen_iwaiyumoto_chiba">{% csrf_token %}<input name="id2" type="hidden" value="iwaiyumotoonsen_iwaiyumoto_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.iwaiyumotoonsen_iwaiyumoto_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1893_0001.jpg"/></a><p class="feature">岩井湯元温泉（いわいゆもと）<br>類似度:2.200</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kesennumaonsen_kesennuma_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="kesennumaonsen_kesennuma_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.kesennumaonsen_kesennuma_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1225_0001.jpg"/></a><p class="feature">気仙沼温泉（けせんぬま）<br>類似度:2.148</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="chikurasetohamaonsen_chikurasetohama_chiba">{% csrf_token %}<input name="id2" type="hidden" value="chikurasetohamaonsen_chikurasetohama_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.chikurasetohamaonsen_chikurasetohama_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1901_0001.jpg"/></a><p class="feature">千倉瀬戸浜温泉（ちくらせとはま）<br>類似度:2.143</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="misakionsen_misaki_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="misakionsen_misaki_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.misakionsen_misaki_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1197_0001.jpg"/></a><p class="feature">三崎温泉（みさき）<br>類似度:2.142</br></p></div></form>
+{% endblock content %}

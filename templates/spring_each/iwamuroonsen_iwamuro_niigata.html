@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">岩室温泉（いわむろ）</h2><h3 class="icon"> 所在地：新潟県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0570_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">北陸街道と中山道を結ぶ北国街道に位置する温泉地。「新潟市の奥座敷」として、はたまた越後一の宮「弥彦神社」の参拝の拠点として、多くの人々に古くから利用されてきた。現在は老舗旅館を中心に11軒ほどの宿が立ち並び、静かで落ち着いた佇まいを見せている。 小さいながらも情緒にあふれ、隠れ家気分を味わえる温泉地として、温泉ファンの間では根強い人気。昭和38年には国民保養温泉地に指定され、その効能高き泉質と環境の良さはお墨付き。海に近く、日本海の新鮮な魚介類がふんだんに味わえるのも魅力である。 名物は素朴な手焼せんべい。温泉街を歩けばせんべいの香ばしい匂いが鼻をくすぐり、つい一枚二枚と手が伸びる。
+新潟県のほぼ中央に位置し、弥彦神社の北・多宝山の東側に広がる温泉地。開湯時期は定かではないが、慶長3年（1598）の岩室村検地帳に「湯のこし」の地名があることから、すでに当時、湯の湧出があったと考えられている。温泉地としての始まりは江戸時代中期。伝説によると、夢のお告げを受けた庄屋が、温泉で傷を癒す一羽の雁を見つけたのが発祥とか。源泉は52.2℃と高温で、神経痛や関節痛などに効能を発揮。湯上り肌がつややかになると評判で、美肌を期待して訪れる女性客も多い。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="wakuraonsen_wakura_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="wakuraonsen_wakura_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.wakuraonsen_wakura_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0151_0001.jpg"/></a><p class="feature">和倉温泉（わくら）<br>類似度:1.889</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="soukankawaonsen_aimagawa_gunma">{% csrf_token %}<input name="id2" type="hidden" value="soukankawaonsen_aimagawa_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.soukankawaonsen_aimagawa_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1636_0001.jpg"/></a><p class="feature">相間川温泉（あいまがわ）<br>類似度:1.847</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="inawashiroshikinoyuonizumi_inawashiroshikinoyu_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="inawashiroshikinoyuonizumi_inawashiroshikinoyu_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.inawashiroshikinoyuonizumi_inawashiroshikinoyu_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1209_0001.jpg"/></a><p class="feature">猪苗代四季の湯温泉（いなわしろしきのゆ）<br>類似度:1.791</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:1.786</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">佐伯温泉（さいき）</h2><h3 class="icon"> 所在地：大分県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2107_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">九州地方で最も面積の広い市、佐伯市の中心部にあり、佐伯湾や大入塔を望む環境にある佐伯温泉。温泉地周辺は山海の幸に恵まれ、観光地も多く存在する。市のシンボルである豊後二見ヶ浦の「夫婦岩」や「小半鍾乳洞」などの自然が生み出す景色が見られるスポットも、温泉地から遠くない。また、佐伯市は新鮮な魚介類を使ったグルメも豊富。佐伯市の海で採れる地魚で握る寿司は、海外でも通用するという気持ちを込めて「世界一、佐伯寿司」というキャッチフレーズで出される。また、ご当地グルメとして地元に根づいているのが、濃いとんこつスープと柔らかい中太麺が特徴の「佐伯ラーメン」だ。専門店だけではなく居酒屋などでも食べられる。温泉とともに佐伯市の味も楽しんでみたい。
+佐伯温泉の泉質は、きりきずや末梢循環障害、そして冷え性や皮膚乾燥症に効能があるとされる炭酸水素塩泉。海に面しているため、海水を汲み上げて沸かしたお風呂を提供している温泉施設もある。海水なのでミネラルが豊富で、体に良く肌がすべすべになる効果も期待できる。国内では珍しい海水のお風呂を楽しんでみては。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kanoyaoohiraonsen_kanoyataihei_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="kanoyaoohiraonsen_kanoyataihei_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.kanoyaoohiraonsen_kanoyataihei_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2152_0001.jpg"/></a><p class="feature">鹿屋大平温泉（かのやたいへい）<br>類似度:2.047</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kasagionsen_kasagi_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kasagionsen_kasagi_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kasagionsen_kasagi_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2105_0001.jpg"/></a><p class="feature">笠置温泉（かさぎ）<br>類似度:2.035</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ootamaonsen_ootama_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="ootamaonsen_ootama_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.ootamaonsen_ootama_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0916_0001.jpg"/></a><p class="feature">大玉温泉（おおたま）<br>類似度:1.970</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kuginoonsen_kugino_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kuginoonsen_kugino_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kuginoonsen_kugino_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2134_0001.jpg"/></a><p class="feature">久木野温泉（くぎの）<br>類似度:1.946</br></p></div></form>
+{% endblock content %}

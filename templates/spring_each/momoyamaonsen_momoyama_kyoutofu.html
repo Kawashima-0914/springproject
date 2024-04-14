@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">桃山温泉（ももやま）</h2><h3 class="icon"> 所在地：京都府</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1015_0001.jpg"/><table><tr><th>効能</th><td>ラジウム泉
+</td></tr></table></div><div class="con1"><p class="feature">豊臣秀吉が築いた伏見城の城下町として栄えてきた伏見にある温泉地。秀吉の没後は徳川家康が整備を進め、宇治川には三十石船が運行、京都と大阪を結ぶ港町として賑わった。「伏見」という地名が示す通り、伏流水に恵まれた土地で、酒造りも盛ん。町には今も酒蔵が残り、「大倉記念館」では酒造りの歴史に触れることができる。さらに古い時代を偲ばせるのが、稲荷山の西南に位置する深草遺跡。弥生時代中期の遺跡とされ、鋤や鍬といった木製農具が出土している。また点在する神社仏閣も古の歴史に彩られ、古都の香りを漂わせる。
+メタケイ酸を多く含むアルカリ性の単純硫化水素泉で、神経痛やリウマチ、美肌などへの効果が高いとされている。湯はやわらかな肌触りが特徴で、湯上りには肌がツルツルになる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="naumanonsen_nauman_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="naumanonsen_nauman_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.naumanonsen_nauman_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1731_0001.jpg"/></a><p class="feature">ナウマン温泉（なうまん）<br>類似度:1.960</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kakinoonsen_kakino_gifu">{% csrf_token %}<input name="id2" type="hidden" value="kakinoonsen_kakino_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.kakinoonsen_kakino_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1828_0001.jpg"/></a><p class="feature">柿野温泉（かきの）<br>類似度:1.901</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shichijouonsen_shichijou_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="shichijouonsen_shichijou_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.shichijouonsen_shichijou_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2135_0001.jpg"/></a><p class="feature">七城温泉（しちじょう）<br>類似度:1.865</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hamatsumeonsen_hamazume_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="hamatsumeonsen_hamazume_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.hamatsumeonsen_hamazume_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2115_0001.jpg"/></a><p class="feature">浜詰温泉（はまづめ）<br>類似度:1.859</br></p></div></form>
+{% endblock content %}

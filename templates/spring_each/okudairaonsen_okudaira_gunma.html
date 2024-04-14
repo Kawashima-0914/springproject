@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">奥平温泉（おくだいら）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2063_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">奥平温泉は川手山森林公園の中にある温泉地で、猿ヶ京三国温泉郷のひとつである。奥平温泉の湯を楽しめるのは日帰り入浴施設「遊神館」。広大な敷地内で、大浴場のほか薬湯や露天風呂などさまざまな趣の湯を楽しむことができる。食事処で食べられる打ち立てのそばも人気だ。温泉を堪能した後にぜひ味わいたい。温泉地の周囲はのどかな自然に囲まれており、温泉街のような賑わいはないが、ゆったりと湯浴みを楽しみたい人にはにはうってつけ。気心の知れた友人や家族、恋人と訪れ静かで素朴な時間を過ごしてみてはいかがだろうか。
+アルカリ性単純温泉の泉質を持つ奥平温泉は、肌がつるつるすべすべになる美肌の湯としても知られる。そのほかにも神経痛や疲労回復、冷え性や自律神経失調症などさまざまな効能が期待できる。また、遊神館ではゆず湯やリンゴ風呂など四季折々に合わせた薬湯も用意している。こちらも楽しみたいところだ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.143</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuchikeikokuonsen_kikuchikeikoku_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuchikeikokuonsen_kikuchikeikoku_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuchikeikokuonsen_kikuchikeikoku_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1132_0001.jpg"/></a><p class="feature">菊池渓谷温泉（きくちけいこく）<br>類似度:2.133</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yamanokamionsen_yamanokami_iwate">{% csrf_token %}<input name="id2" type="hidden" value="yamanokamionsen_yamanokami_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.yamanokamionsen_yamanokami_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1255_0001.jpg"/></a><p class="feature">山の神温泉（やまのかみ）<br>類似度:2.115</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okutenryuufudouonsen_okutenryuufudou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="okutenryuufudouonsen_okutenryuufudou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.okutenryuufudouonsen_okutenryuufudou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0811_0001.jpg"/></a><p class="feature">奥天竜不動温泉（オクテンリュウフドウ）<br>類似度:2.086</br></p></div></form>
+{% endblock content %}

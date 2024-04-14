@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">あわら温泉（芦原温泉）（あわら）</h2><h3 class="icon"> 所在地：福井県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0007_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">日本海の荒波が造り出した断崖絶壁「東尋坊」。世界三大奇勝にも選ばれ、国の天然記念物にも指定された北陸・福井を代表する名所だ。約1㎞にわたって続く絶壁を波が打ち砕く様は実に豪快。 岩場の先まで出て下を見下ろせば、あまりの高さと迫力に思わず足がすくむ。 その東尋坊から車で約30分。越前観光の拠点として賑わいを見せるのが芦原温泉だ。 近代的な設備を備えた規模の大きい宿は、広い敷地を利用して趣向を凝らした庭園を持つところが多い。京阪神の人たちを中心に人気を呼ぶ「関西の奥座敷」。各宿自慢の庭園を眺めながら、日本海の幸をじっくりと味わう。旬の魚、蟹や若狭牛など福井の豊富な食材と、柔らかな泉質の温泉と共にゆったり寛ぎの時間を過ごしたい。
+温泉街の遊女と竹人形師の悲しい愛をつづった名作、水上勉の「越前竹人形」の舞台としても有名な芦原温泉。温泉が湧出したのは1883年。1人の農民が灌漑用の井戸を掘ったところ、約80℃の温泉が湧き出たのが始まりといわれている。現在もお湯の共同管理は行われておらず、各宿によって温泉の成分が微妙に異なるとか。源泉を持つ宿も多く、飲用も可能。庭園美を眺めながらの湯浴みは、また格別だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="wakuraonsen_wakura_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="wakuraonsen_wakura_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.wakuraonsen_wakura_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0151_0001.jpg"/></a><p class="feature">和倉温泉（わくら）<br>類似度:1.685</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yunokawaonsen_yunokawa_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="yunokawaonsen_yunokawa_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.yunokawaonsen_yunokawa_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0683_0001.jpg"/></a><p class="feature">湯の川温泉（ゆのかわ）<br>類似度:1.651</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="obamaonsen_obama_nagasaki">{% csrf_token %}<input name="id2" type="hidden" value="obamaonsen_obama_nagasaki"/><div class="con2"><a href="../spring_each/" onclick="document.obamaonsen_obama_nagasaki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0168_0001.jpg"/></a><p class="feature">小浜温泉（おばま）<br>類似度:1.645</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hamasakaonsensato_hamasaka_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="hamasakaonsensato_hamasaka_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.hamasakaonsensato_hamasaka_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1023_0001.jpg"/></a><p class="feature">浜坂温泉郷（はまさか）<br>類似度:1.642</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">旭川温泉（あさひかわ）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1503_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">北海道中央部に位置し、道北の経済、産業、文化の中心都市である旭川市。プレミアホテル‐CABIN‐旭川の温泉は旭川中心部で随一の湯量を誇る中性低張性冷泉「かぐらの湯」。 ホテル敷地内の温泉井戸から直接汲み上げている天然温泉はカルシウムやマグネシウムが含まれた炭酸水素塩泉。炭酸水素は肌の新陳代謝を促し本来の美しさを保つといわれている。湯は若干の茶褐色で透き通るような美しさを持ち、湯上りはさっぱりとした清 涼感が特徴。 冷え性の抑制効果もあるので寒暖差の激しい旭川の四季それぞれを楽しめる。旭川駅より徒歩約3分の好立地ながら、ホテル内にはかぐらの湯をはじめレストラン・カラオケ・バー・居酒屋がある。天然温泉かぐらの湯ではアカスリ、エステ、マッサージなどのボディケアも楽しめる。
+豊富な湯量の天然温泉大浴場の他、気泡風呂やサウナがあり、安らぎの気分を味わうことができる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="chirihamayawaragionsen_chirihamayawaragi_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="chirihamayawaragionsen_chirihamayawaragi_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.chirihamayawaragionsen_chirihamayawaragi_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1201_0001.jpg"/></a><p class="feature">千里浜やわらぎ温泉（ちりはまやわらぎ）<br>類似度:2.024</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1120_0001.jpg"/></a><p class="feature">京都竹の郷温泉（きょうとたけのさと）<br>類似度:1.952</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sekidouonsen_ishimichi_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="sekidouonsen_ishimichi_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.sekidouonsen_ishimichi_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1227_0001.jpg"/></a><p class="feature">石道温泉（いしみち）<br>類似度:1.934</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="makubetsuonsen_makubetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="makubetsuonsen_makubetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.makubetsuonsen_makubetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1500_0001.jpg"/></a><p class="feature">幕別温泉（まくべつ）<br>類似度:1.919</br></p></div></form>
+{% endblock content %}

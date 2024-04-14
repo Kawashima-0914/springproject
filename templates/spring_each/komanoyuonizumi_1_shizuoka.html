@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">駒の湯温泉（静岡県）（こまのゆ）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1926_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">畑毛温泉の奥にある、ぬる湯の一軒宿。一時は廃業したが、経営者が変わって2017年にリニューアル。現在は日帰り入浴施設「源泉 駒の湯荘」に生まれ変わった。料金もリーズナブルで、様々な温度の温泉をじっくりと楽しめるのがポイント。毎分200Lという豊富なお湯をぜいたくにかけ流していて、加水・循環は一切行っていない。前身となる旅館は1977年の開業という比較的新しい温泉地ではあるが、お湯へのこだわりと泉質のすばらしさから多くのファンが通う温泉に。森林浴と温泉浴が同時に楽しめるような森の中に佇む露天風呂は格別。
+泉質は弱アルカリ性単純温泉。源泉温度は39℃ほどとぬるめで、一部の浴槽では加温している。ぬる湯にじっくり浸かるもよし、熱い沸かし湯と交互に入って自律神経を活性化させるのもよし、様々な入り方ができるだろう。まろやかなお湯は肌の角質を落としてなめらかにしてくれる。薬草風呂やヨガのイベントなども行っており、健康増進に大いに役立ちそうだ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ashinoonsen_ashino_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="ashinoonsen_ashino_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.ashinoonsen_ashino_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2052_0001.jpg"/></a><p class="feature">芦野温泉（あしの）<br>類似度:1.841</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="uesaiharaonsen_kamisaibara_okayama">{% csrf_token %}<input name="id2" type="hidden" value="uesaiharaonsen_kamisaibara_okayama"/><div class="con2"><a href="../spring_each/" onclick="document.uesaiharaonsen_kamisaibara_okayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1292_0001.jpg"/></a><p class="feature">上齋原温泉（かみさいばら）<br>類似度:1.825</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shirasawakougenonsen_shirasawakougen_gunma">{% csrf_token %}<input name="id2" type="hidden" value="shirasawakougenonsen_shirasawakougen_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.shirasawakougenonsen_shirasawakougen_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1815_0001.jpg"/></a><p class="feature">白沢高原温泉（しらさわこうげん）<br>類似度:1.816</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yamanokamionsen_yamanokami_iwate">{% csrf_token %}<input name="id2" type="hidden" value="yamanokamionsen_yamanokami_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.yamanokamionsen_yamanokami_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1255_0001.jpg"/></a><p class="feature">山の神温泉（やまのかみ）<br>類似度:1.767</br></p></div></form>
+{% endblock content %}

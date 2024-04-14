@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">別所温泉（べっしょ）</h2><h3 class="icon"> 所在地：長野県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0555_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">JR「上田駅」で上田電鉄別所線に乗り換える。塩田平ののどかな田園風景の中をコトコト進んだその先が、“信州の鎌倉”こと別所温泉だ。「別所温泉駅」から徒歩約10分。厄除け観音として名高い「北向観音」を中心に、狭い路地が入り組む温泉街が広がる。 観音様を取り囲むように、慈覚大師が愛した「大師湯」、『真田太平記』にも登場する「石湯」、木曽義仲が入浴したと伝わる「大湯」と由緒ある共同浴場が点在。それぞれ門前に飲泉処も設置されているので、硫黄の香り漂う名湯を飲み比べてみるのもよい。 温泉街を脇にそれれば、国宝の八角三重塔で知られる安楽寺などの古刹が信州最古の歴史を誇る別所の湯を静かに見守り続けている。
+『枕草子』にも登場する信州最古の温泉地。日本武尊が東征の折に発見したと伝えられ、かつては「七久里（七苦離＝ななくり）の湯」と呼ばれていた。現在は地下350mから湧き出る新源泉から各湯宿に分湯されているが、木曽義仲が愛妾・葵の前と一緒に入浴したと伝わる共同浴場「大湯」には、今も850年前から湧き続ける源泉が注がれる。湧出量は毎分1000L。無色透明の単純硫黄泉で、飲泉すれば卵の味が口いっぱいに広がる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="yunomineonsen_yunomine_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="yunomineonsen_yunomine_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.yunomineonsen_yunomine_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0745_0001.jpg"/></a><p class="feature">湯の峰温泉（ゆのみね）<br>類似度:1.907</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="haratsuruonsen_harazuru_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="haratsuruonsen_harazuru_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.haratsuruonsen_harazuru_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0628_0001.jpg"/></a><p class="feature">原鶴温泉（はらづる）<br>類似度:1.858</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="zaouonsen_zaou_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="zaouonsen_zaou_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.zaouonsen_zaou_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0057_0001.jpg"/></a><p class="feature">蔵王温泉（ざおう）<br>類似度:1.849</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="chuuzenjionsen_chuuzenji_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="chuuzenjionsen_chuuzenji_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.chuuzenjionsen_chuuzenji_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0091_0001.jpg"/></a><p class="feature">中禅寺温泉（ちゅうぜんじ）<br>類似度:1.836</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯村温泉（ゆむら）</h2><h3 class="icon"> 所在地：山梨県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0738_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、関節痛、婦人病、冷え性、皮膚病、痔疾など
+</td></tr></table></div><div class="con1"><p class="feature">甲府の北西に位置する温泉地。戦国武将・武田信玄の隠し湯とも呼ばれ、江戸後期には人気画家・葛飾北斎の団扇絵に“勝景奇覧　甲州湯村”として登場。さらに明治以降になると、井伏鱒二、太宰治など多数の文化人も逗留する人気温泉地。 探偵小説の挿絵画家として人気を博した竹中英太郎は、居を構えたほど当地をこよなく愛した一人。また、温泉地周辺には自然豊かな景勝地が点在し、峡谷「昇仙峡」はその代表格。 日本有数の渓谷美を誇り、覚円峰や仙娥滝、石門、長潭橋など見所の数々に圧倒される。この他、フルーツ栽培が盛んで、様々な果物狩りを楽しめるのも魅力。良質の温泉と観光名所、瑞々しい旬の味覚に恵まれた自然の中の温泉地だ。
+戦国武将や多くの文化人も湯浴みに訪れた歴史ある温泉。昔この地に飛来した一羽の鷲が、日に何度も萱の中に入っては飛び去りを繰り返し、一週間ほどで姿を見せなくなった。不思議に思った地元の人々が萱の辺りを探ってみると、白い湯気が立ち上っており、掘り返すと熱い湯が湧き出したとの開湯伝説が残る。地層の違いから3種類の泉質があるが、いずれも湯は柔らかく、無色澄明・無味無臭で、子供からお年寄りまで安心して入れる。肌がすべすべになり、湯冷めしにくいとの評判も高い。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:2.458</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinosekionsensato_ichinoseki_iwate">{% csrf_token %}<input name="id2" type="hidden" value="ichinosekionsensato_ichinoseki_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.ichinosekionsensato_ichinoseki_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1076_0001.jpg"/></a><p class="feature">一関温泉郷（いちのせき）<br>類似度:2.451</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="oogoonsen_daigo_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="oogoonsen_daigo_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.oogoonsen_daigo_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0261_0001.jpg"/></a><p class="feature">大子温泉（だいご）<br>類似度:2.418</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="harunamizuumionsen_harunako_gunma">{% csrf_token %}<input name="id2" type="hidden" value="harunamizuumionsen_harunako_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.harunamizuumionsen_harunako_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1193_0001.jpg"/></a><p class="feature">榛名湖温泉（はるなこ）<br>類似度:2.406</br></p></div></form>
+{% endblock content %}

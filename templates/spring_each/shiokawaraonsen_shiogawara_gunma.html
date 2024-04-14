@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">塩河原温泉（しおがわら）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2072_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">皮膚病や傷などによく効くとされ、湯治場として栄えた、源泉かけ流し、天然自噴の湯である湯河原温泉。沼田ICから車で約10分の場所にある「みやた館」は、その湯河原温泉を唯一楽しめる施設である。日帰り入浴も可能な当施設は、昭和の大水で一度廃業を余儀なくされた後、40年ぶりの再開、さらに時を経て2018年に復活を遂げた。アットホームな雰囲気で、家族や親戚同士の集まりなどでも重宝されている。施設から徒歩5分程度の場所にある道の駅「川場田園プラザ」は、カフェやレストランをはじめ、地元で採れた野菜や地酒を購入できる店舗、陶芸教室やプレイゾーンなど一日いても飽きない充実の設備がある。こちらで川場村のよさを存分に味わった後、湯河原温泉でゆったりと過ごしてみてはいかがだろうか。
+アルカリ性低調性温泉という泉質の塩河原温泉は、皮膚炎ややけど、切り傷、術後の傷口など外傷に高い効能を持つとされている。さらに便秘や肌のキメを細かくするなど、美容に効果が期待できる成分も含まれている。湯は肌にまとわりつくような柔らかな感触が特徴で、肌を優しく癒やしてくれそう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="mezuonsen_batou_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="mezuonsen_batou_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.mezuonsen_batou_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0778_0001.jpg"/></a><p class="feature">馬頭温泉（ばとう）<br>類似度:1.917</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shinyabaonsen_shinyaba_ooita">{% csrf_token %}<input name="id2" type="hidden" value="shinyabaonsen_shinyaba_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.shinyabaonsen_shinyaba_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0302_0001.jpg"/></a><p class="feature">深耶馬温泉（しんやば）<br>類似度:1.912</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hirayamaonsen_hirayama_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="hirayamaonsen_hirayama_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.hirayamaonsen_hirayama_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1035_0001.jpg"/></a><p class="feature">平山温泉（ひらやま）<br>類似度:1.900</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kawabaonsen_kawaba_gunma">{% csrf_token %}<input name="id2" type="hidden" value="kawabaonsen_kawaba_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.kawabaonsen_kawaba_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1348_0001.jpg"/></a><p class="feature">川場温泉（かわば）<br>類似度:1.895</br></p></div></form>
+{% endblock content %}

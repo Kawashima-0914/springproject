@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯野浜温泉（ゆのはま）</h2><h3 class="icon"> 所在地：山形県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0147_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">庄内砂丘の南端沿い、日本海に面して高層の宿が並び建つ温泉地。目の前の湯野浜海水浴場は県内屈指の規模を誇り、海水浴はもちろん、ウィンドサーフィンや水上バイクなどのマリンスポーツを楽しむ人たちで賑わいを見せる。 自慢は、何といっても海に沈む幻想的な夕日。さらに、日本海の漁場と肥沃な庄内平野を併せ持つ湯野浜は、春の竹の子、夏のだだちゃ豆、冬の寒ダラ汁と一年を通して海の幸・山の幸が目白押し。 温泉街から南に下れば、藤沢周平文学のモデルにもなった城下町・鶴岡。江戸時代からの町割りがほぼそのまま残されている。歴史と文学の薫りを全身で感じた後は、見事な夕日と海沿いの温泉、郷土料理で鶴岡の旅を締めくくりたい。
+天喜年間（1053～58）、大きな海亀が砂浜に湧き出す温泉で傷を癒すのを見て発見されたとの言い伝えが残り、古くは「亀の湯」と呼ばれた古湯。歓楽地の温泉として栄えた歴史を持ち、かみのやま（山形）、東山（福島）と並び「奥羽三楽郷」の一つに数えられる。共同浴場は2カ所。湯野浜海岸沿いにこじんまりと建つ円筒形の建物「上区共同浴場」は、広い湯船に熱めで無色透明の源泉がかけ流される地元の人たちの社交場。一方、かつて温泉街と鶴岡市街をつないでいた旧湯野浜線の駅舎跡地にあるのが「下区共同浴場」。目の前には足湯と飲泉所も設
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="obamaonsen_obama_nagasaki">{% csrf_token %}<input name="id2" type="hidden" value="obamaonsen_obama_nagasaki"/><div class="con2"><a href="../spring_each/" onclick="document.obamaonsen_obama_nagasaki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0168_0001.jpg"/></a><p class="feature">小浜温泉（おばま）<br>類似度:1.641</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ogaonsen_oga_akita">{% csrf_token %}<input name="id2" type="hidden" value="ogaonsen_oga_akita"/><div class="con2"><a href="../spring_each/" onclick="document.ogaonsen_oga_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0229_0001.jpg"/></a><p class="feature">男鹿温泉（おが）<br>類似度:1.633</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="wakuraonsen_wakura_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="wakuraonsen_wakura_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.wakuraonsen_wakura_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0151_0001.jpg"/></a><p class="feature">和倉温泉（わくら）<br>類似度:1.630</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kaminoyamaonsen_kaminoyama_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="kaminoyamaonsen_kaminoyama_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.kaminoyamaonsen_kaminoyama_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0097_0001.jpg"/></a><p class="feature">かみのやま温泉（かみのやま）<br>類似度:1.625</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">岩手湯本温泉（いわてゆもと）</h2><h3 class="icon"> 所在地：岩手県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0879_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>婦人病、動脈硬化、皮膚病など
+</td></tr></table></div><div class="con1"><p class="feature">しばしば「温泉峡」と表記されるように、至るところから湯が湧き出る奥羽山脈の最奥部、和賀川峡谷の中に点在する湯田温泉郷の一つ。温泉郷の中心を成す温泉街は渓流沿いに大小4軒ほどの湯宿が建ち並び、北国の山の湯治場らしい静かで落ち着いた佇まいを見せる。 入浴設備を備えたJR「ほっとゆだ駅」や大規模な温泉プールなどユニークで近代的な施設も完備されており、滞在中の楽しみにはこと欠かない。明治26年晩夏のある夕暮れ、秋田県から峠を越えてこの地に到着したのが、俳人・正岡子規。 旅の疲れを湯で癒しながら、「山の温泉（ゆ）や裸の上の天の河」など珠玉の3句を遺した。そのとき子規も見たであろう温泉街の風情は、今も変わらず息づいている。湯あがりに清涼な川風を受けながら灯ともし頃の街を歩けば、かつては子規も味わった山里の素朴な旅情を、ふと実感できる。
+秋田県との県境近く、和賀川の清流沿いに点在する湯田温泉郷の中心となる温泉。開湯は江戸前期の万治元年（1658年）と、温泉郷の中で最も古い歴史を誇る。地元の伝説によれば、耕作中の田んぼに座り込んだ牛の下から温泉が湧き出たのだとか。以後、その場所は「丑の湯」と名づけられて薬師神社が建ち、周辺一帯の地名も「湯田」となったという。この薬師神社内の源泉から今も湧き出る湯は、飲泉すると微かに塩味がするが無色無臭でまったくクセがない良泉。源泉温度は約90℃と高く、各入浴施設でもやや熱めの湯が多い。さらさらとした肌ざわり
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:2.357</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinosekionsensato_ichinoseki_iwate">{% csrf_token %}<input name="id2" type="hidden" value="ichinosekionsensato_ichinoseki_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.ichinosekionsensato_ichinoseki_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1076_0001.jpg"/></a><p class="feature">一関温泉郷（いちのせき）<br>類似度:2.348</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shimaonsen_shima_gunma">{% csrf_token %}<input name="id2" type="hidden" value="shimaonsen_shima_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.shimaonsen_shima_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0398_0001.jpg"/></a><p class="feature">四万温泉（しま）<br>類似度:2.335</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="atsumionsen,atsumionsen_atsumi_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="atsumionsen,atsumionsen_atsumi_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.atsumionsen,atsumionsen_atsumi_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0706_0001.jpg"/></a><p class="feature">温海温泉,あつみ温泉（あつみ）<br>類似度:2.328</br></p></div></form>
+{% endblock content %}

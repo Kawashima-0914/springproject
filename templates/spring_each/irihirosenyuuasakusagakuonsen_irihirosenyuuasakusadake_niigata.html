@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">入広瀬ニュー浅草岳温泉（いりひろせにゅーあさくさだけ）</h2><h3 class="icon"> 所在地：新潟県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0850_0001.jpg"/><table><tr><th>効能</th><td>ラジウム泉
+</td></tr></table></div><div class="con1"><p class="feature">浅草岳の山麓に広がる都市公園の只中で入れる宿泊施設の温泉「入広瀬ニュー浅草岳温泉」。全国にその名を知られた銘柄米・魚沼産コシヒカリの産地である南魚沼市の中でも大自然の緑に囲まれた大広瀬地区にあり、浅草岳、守門岳に囲まれた施設で、破間川の清流をのぞむ大自然を堪能できる。宿泊施設に宿泊した人のための食事は、清流が育んだ日本一の米と、魚沼市の旬の作物をふんだんに使う料理。春には花と緑と雪の里で「芝桜まつり」が開かれ、夏は月岡公園に10,000本のユリが咲き誇り、蛍が飛び交う四季の光景も美しい。
+泉質はナトリウム-硫酸塩・塩化物泉（等張性弱アルカリ性温泉）。神経痛、筋肉痛、関節痛、肩こり、慢性消化器病、慢性婦人病、冷え性、きりきず、やけど、動脈硬化などへの効能が期待できる。鉄分豊かな湯が疲れを癒やしてくれると好評だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="esashionsen_esashi_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="esashionsen_esashi_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.esashionsen_esashi_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1863_0001.jpg"/></a><p class="feature">枝幸温泉（えさし）<br>類似度:2.137</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kaminoyuonizumi_kaminoyu_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="kaminoyuonizumi_kaminoyu_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.kaminoyuonizumi_kaminoyu_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2001_0001.jpg"/></a><p class="feature">神の湯温泉（かみのゆ）<br>類似度:2.127</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.120</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okudougoonsen_okudougo_ehime">{% csrf_token %}<input name="id2" type="hidden" value="okudougoonsen_okudougo_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.okudougoonsen_okudougo_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0288_0001.jpg"/></a><p class="feature">奥道後温泉（おくどうご）<br>類似度:2.109</br></p></div></form>
+{% endblock content %}

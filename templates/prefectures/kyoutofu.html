@@ -1,0 +1,415 @@
+{% extends 'base-prefecture.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">京都府</h2>
+<form action="{% url 'appname:springs' %}" method="post" name="yuuhikeuraonsen_yuuhigaura_kyoutofu">{% csrf_token
+    %}<input name="id2" type="hidden" value="yuuhikeuraonsen_yuuhigaura_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.yuuhikeuraonsen_yuuhigaura_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_0822_0001.jpg" /></a>
+        <p>夕日ヶ浦温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="yunohanaonsen_yunohana_kyoutofu">{% csrf_token %}<input
+        name="id2" type="hidden" value="yunohanaonsen_yunohana_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.yunohanaonsen_yunohana_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_0370_0001.jpg" /></a>
+        <p>湯ノ花温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="miyazuonsen_miyazu_kyoutofu">{% csrf_token %}<input
+        name="id2" type="hidden" value="miyazuonsen_miyazu_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.miyazuonsen_miyazu_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_0829_0001.jpg" /></a>
+        <p>宮津温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="amanohashidateonsen_amanohashidate_kyoutofu">{%
+    csrf_token %}<input name="id2" type="hidden" value="amanohashidateonsen_amanohashidate_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.amanohashidateonsen_amanohashidate_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0855_0001.jpg" /></a>
+        <p>天橋立温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="tangoonsen_tango_kyoutofu">{% csrf_token %}<input
+        name="id2" type="hidden" value="tangoonsen_tango_kyoutofu" />
+    <div class="con"><a href="./spring_each/" onclick="document.tangoonsen_tango_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1008_0001.jpg" /></a>
+        <p>丹後温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="kyoutoonsen_kyouto_kyoutofu">{% csrf_token %}<input
+        name="id2" type="hidden" value="kyoutoonsen_kyouto_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.kyoutoonsen_kyouto_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_1632_0001.jpg" /></a>
+        <p>京都温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="asamogawaurashimaonsen_asamogawaurashima_kyoutofu">{%
+    csrf_token %}<input name="id2" type="hidden" value="asamogawaurashimaonsen_asamogawaurashima_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.asamogawaurashimaonsen_asamogawaurashima_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0864_0001.jpg" /></a>
+        <p>浅茂川浦島温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="yurayuraonsensato_yurayura_kyoutofu">{% csrf_token
+    %}<input name="id2" type="hidden" value="yurayuraonsensato_yurayura_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.yurayuraonsensato_yurayura_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_0875_0001.jpg" /></a>
+        <p>湯らゆら温泉郷</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="rurikeionsen_rurikei_kyoutofu">{% csrf_token %}<input
+        name="id2" type="hidden" value="rurikeionsen_rurikei_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.rurikeionsen_rurikei_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_0891_0001.jpg" /></a>
+        <p>るり渓温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="hatchouhamaobamaonsen_hatchouhamakobama_kyoutofu">{%
+    csrf_token %}<input name="id2" type="hidden" value="hatchouhamaobamaonsen_hatchouhamakobama_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.hatchouhamaobamaonsen_hatchouhamakobama_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1013_0001.jpg" /></a>
+        <p>八丁浜小浜温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="arashiyamaonsen_arashiyama_kyoutofu">{% csrf_token
+    %}<input name="id2" type="hidden" value="arashiyamaonsen_arashiyama_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.arashiyamaonsen_arashiyama_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_1104_0001.jpg" /></a>
+        <p>嵐山温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu">{%
+    csrf_token %}<input name="id2" type="hidden" value="kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1120_0001.jpg" /></a>
+        <p>京都竹の郷温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post"
+    name="amanohashidatenariaikannononsen_amanohashidatenariaikannon_kyoutofu">{% csrf_token %}<input name="id2"
+        type="hidden" value="amanohashidatenariaikannononsen_amanohashidatenariaikannon_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.amanohashidatenariaikannononsen_amanohashidatenariaikannon_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1127_0001.jpg" /></a>
+        <p>天橋立・成相観音温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="kumihamakaminoonsen_kanno_kyoutofu">{% csrf_token
+    %}<input name="id2" type="hidden" value="kumihamakaminoonsen_kanno_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.kumihamakaminoonsen_kanno_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_1180_0001.jpg" /></a>
+        <p>久美浜神の温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="kamaionsen_kamai_kyoutofu">{% csrf_token %}<input
+        name="id2" type="hidden" value="kamaionsen_kamai_kyoutofu" />
+    <div class="con"><a href="./spring_each/" onclick="document.kamaionsen_kamai_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1325_0001.jpg" /></a>
+        <p>蒲井温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="kumihamaonsen_kumihama_kyoutofu">{% csrf_token %}<input
+        name="id2" type="hidden" value="kumihamaonsen_kumihama_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.kumihamaonsen_kumihama_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_1530_0001.jpg" /></a>
+        <p>久美浜温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="shoutenkyouonsen_shoutenkyou_kyoutofu">{% csrf_token
+    %}<input name="id2" type="hidden" value="shoutenkyouonsen_shoutenkyou_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.shoutenkyouonsen_shoutenkyou_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_1576_0001.jpg" /></a>
+        <p>小天橋温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="tangomokkyouonsen_tangokihashi_kyoutofu">{% csrf_token
+    %}<input name="id2" type="hidden" value="tangomokkyouonsen_tangokihashi_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.tangomokkyouonsen_tangokihashi_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_1692_0001.jpg" /></a>
+        <p>丹後木橋温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="ayabefukuchiyamaonsen_ayabefukuchiyama_kyoutofu">{%
+    csrf_token %}<input name="id2" type="hidden" value="ayabefukuchiyamaonsen_ayabefukuchiyama_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.ayabefukuchiyamaonsen_ayabefukuchiyama_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1713_0001.jpg" /></a>
+        <p>綾部・福知山温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="arashiyamasaganoonsen_arashiyamasagano_kyoutofu">{%
+    csrf_token %}<input name="id2" type="hidden" value="arashiyamasaganoonsen_arashiyamasagano_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.arashiyamasaganoonsen_arashiyamasagano_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0015_0001.jpg" /></a>
+        <p>嵐山嵯峨野温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="iwatakionsen_iwataki_kyoutofu">{% csrf_token %}<input
+        name="id2" type="hidden" value="iwatakionsen_iwataki_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.iwatakionsen_iwataki_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_0368_0001.jpg" /></a>
+        <p>岩滝温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="kizuonsen_kitsu_kyoutofu">{% csrf_token %}<input
+        name="id2" type="hidden" value="kizuonsen_kitsu_kyoutofu" />
+    <div class="con"><a href="./spring_each/" onclick="document.kizuonsen_kitsu_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0369_0001.jpg" /></a>
+        <p>木津温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="kumihamashiisaidoonsen_kumihamashiisaido_kyoutofu">{%
+    csrf_token %}<input name="id2" type="hidden" value="kumihamashiisaidoonsen_kumihamashiisaido_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.kumihamashiisaidoonsen_kumihamashiisaido_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0858_0001.jpg" /></a>
+        <p>久美浜シーサイド温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="ooharaonsen_oohara_kyoutofu">{% csrf_token %}<input
+        name="id2" type="hidden" value="ooharaonsen_oohara_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.ooharaonsen_oohara_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_0947_0001.jpg" /></a>
+        <p>大原温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="kuramaonsen_kurama_kyoutofu">{% csrf_token %}<input
+        name="id2" type="hidden" value="kuramaonsen_kurama_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.kuramaonsen_kurama_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_1007_0001.jpg" /></a>
+        <p>鞍馬温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="tachibananosatouenoonsen_tachibananosatoueno_kyoutofu">{%
+    csrf_token %}<input name="id2" type="hidden" value="tachibananosatouenoonsen_tachibananosatoueno_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.tachibananosatouenoonsen_tachibananosatoueno_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1009_0001.jpg" /></a>
+        <p>橘の郷上野温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post"
+    name="shoutenkyouonsenkiraranoyu_shoutenkyoukiraranoyu_kyoutofu">{% csrf_token %}<input name="id2" type="hidden"
+        value="shoutenkyouonsenkiraranoyu_shoutenkyoukiraranoyu_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.shoutenkyouonsenkiraranoyu_shoutenkyoukiraranoyu_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1010_0001.jpg" /></a>
+        <p>小天橋温泉きららの湯</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="nitsukaonsen_nitsuka_kyoutofu">{% csrf_token %}<input
+        name="id2" type="hidden" value="nitsukaonsen_nitsuka_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.nitsukaonsen_nitsuka_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_1011_0001.jpg" /></a>
+        <p>二塚温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="kuminohamaonsensato_kuminohama_kyoutofu">{% csrf_token
+    %}<input name="id2" type="hidden" value="kuminohamaonsensato_kuminohama_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.kuminohamaonsensato_kuminohama_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_1012_0001.jpg" /></a>
+        <p>久美の浜温泉郷</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="momoyamaonsen_momoyama_kyoutofu">{% csrf_token %}<input
+        name="id2" type="hidden" value="momoyamaonsen_momoyama_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.momoyamaonsen_momoyama_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_1015_0001.jpg" /></a>
+        <p>桃山温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post"
+    name="amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu">{% csrf_token %}<input name="id2"
+        type="hidden" value="amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1128_0001.jpg" /></a>
+        <p>天橋立・宮津温泉ピント湯</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="okuineonsen_okuine_kyoutofu">{% csrf_token %}<input
+        name="id2" type="hidden" value="okuineonsen_okuine_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.okuineonsen_okuine_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_1179_0001.jpg" /></a>
+        <p>奥伊根温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="tangohanaremizuumionsen_tangohanareko_kyoutofu">{%
+    csrf_token %}<input name="id2" type="hidden" value="tangohanaremizuumionsen_tangohanareko_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.tangohanaremizuumionsen_tangohanareko_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1214_0001.jpg" /></a>
+        <p>丹後はなれ湖温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="tennenonsenmahorobanoyu_tennenmahorobanoyu_kyoutofu">{%
+    csrf_token %}<input name="id2" type="hidden" value="tennenonsenmahorobanoyu_tennenmahorobanoyu_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.tennenonsenmahorobanoyu_tennenmahorobanoyu_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1245_0001.jpg" /></a>
+        <p>天然温泉まほろばの湯</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="tangomatsushimaonsen_tangomatsushima_kyoutofu">{%
+    csrf_token %}<input name="id2" type="hidden" value="tangomatsushimaonsen_tangomatsushima_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.tangomatsushimaonsen_tangomatsushima_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1323_0001.jpg" /></a>
+        <p>丹後松島温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="rimizuumibentenonsen_hanarekobenten_kyoutofu">{%
+    csrf_token %}<input name="id2" type="hidden" value="rimizuumibentenonsen_hanarekobenten_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.rimizuumibentenonsen_hanarekobenten_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1472_0001.jpg" /></a>
+        <p>離湖弁天温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="onokomachionsen_ononokomachi_kyoutofu">{% csrf_token
+    %}<input name="id2" type="hidden" value="onokomachionsen_ononokomachi_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.onokomachionsen_ononokomachi_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/common/no-image.jpg" /></a>
+        <p>小野小町温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="ryouzenshinonsen_ryouzenshin_kyoutofu">{% csrf_token
+    %}<input name="id2" type="hidden" value="ryouzenshinonsen_ryouzenshin_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.ryouzenshinonsen_ryouzenshin_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_2096_0001.jpg" /></a>
+        <p>りょうぜん新温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="tangokotobikionsen_tangokotobiki_kyoutofu">{% csrf_token
+    %}<input name="id2" type="hidden" value="tangokotobikionsen_tangokotobiki_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.tangokotobikionsen_tangokotobiki_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_2099_0001.jpg" /></a>
+        <p>丹後琴引温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post"
+    name="kitashirakawatennenrajiumuonsen_kitashirakawatennenrajiumu_kyoutofu">{% csrf_token %}<input name="id2"
+        type="hidden" value="kitashirakawatennenrajiumuonsen_kitashirakawatennenrajiumu_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.kitashirakawatennenrajiumuonsen_kitashirakawatennenrajiumu_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2104_0001.jpg" /></a>
+        <p>北白川天然ラジウム温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="kasagionsen_kasagi_kyoutofu">{% csrf_token %}<input
+        name="id2" type="hidden" value="kasagionsen_kasagi_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.kasagionsen_kasagi_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_2105_0001.jpg" /></a>
+        <p>笠置温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="yumegenkyouonsen_mugenkyou_kyoutofu">{% csrf_token
+    %}<input name="id2" type="hidden" value="yumegenkyouonsen_mugenkyou_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.yumegenkyouonsen_mugenkyou_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_2106_0001.jpg" /></a>
+        <p>夢絃峡温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="miyazuhagoromoonsen_1_kyoutofu">{% csrf_token %}<input
+        name="id2" type="hidden" value="miyazuhagoromoonsen_1_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.miyazuhagoromoonsen_1_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_2109_0001.jpg" /></a>
+        <p>宮津羽衣温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="okuhashidateineonsen_okuhashidateine_kyoutofu">{%
+    csrf_token %}<input name="id2" type="hidden" value="okuhashidateineonsen_okuhashidateine_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.okuhashidateineonsen_okuhashidateine_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2112_0001.jpg" /></a>
+        <p>奥橋立伊根温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="hamatsumeonsen_hamazume_kyoutofu">{% csrf_token %}<input
+        name="id2" type="hidden" value="hamatsumeonsen_hamazume_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.hamatsumeonsen_hamazume_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_2115_0001.jpg" /></a>
+        <p>浜詰温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="kounotsuruonsen_1_kyoutofu">{% csrf_token %}<input
+        name="id2" type="hidden" value="kounotsuruonsen_1_kyoutofu" />
+    <div class="con"><a href="./spring_each/" onclick="document.kounotsuruonsen_1_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2116_0001.jpg" /></a>
+        <p>鴻の鶴温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="hiyoshionsen_hiyoshi_kyoutofu">{% csrf_token %}<input
+        name="id2" type="hidden" value="hiyoshionsen_hiyoshi_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.hiyoshionsen_hiyoshi_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_2118_0001.jpg" /></a>
+        <p>ひよし温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="kumihamaonsen_1_kyoutofu">{% csrf_token %}<input
+        name="id2" type="hidden" value="kumihamaonsen_1_kyoutofu" />
+    <div class="con"><a href="./spring_each/" onclick="document.kumihamaonsen_1_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2121_0001.jpg" /></a>
+        <p>久美浜温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="kuramaonsen_2_kyoutofu">{% csrf_token %}<input name="id2"
+        type="hidden" value="kuramaonsen_2_kyoutofu" />
+    <div class="con"><a href="./spring_each/" onclick="document.kuramaonsen_2_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2129_0001.jpg" /></a>
+        <p>くらま温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="kannoonsen_1_kyoutofu">{% csrf_token %}<input name="id2"
+        type="hidden" value="kannoonsen_1_kyoutofu" />
+    <div class="con"><a href="./spring_each/" onclick="document.kannoonsen_1_kyoutofu.submit(); return false;"><img
+                class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2137_0001.jpg" /></a>
+        <p>神野温泉</p>
+    </div>
+</form>
+<form action="{% url 'appname:springs' %}" method="post" name="tangookuineonsen_tangookuine_kyoutofu">{% csrf_token
+    %}<input name="id2" type="hidden" value="tangookuineonsen_tangookuine_kyoutofu" />
+    <div class="con"><a href="./spring_each/"
+            onclick="document.tangookuineonsen_tangookuine_kyoutofu.submit(); return false;"><img class="spring_img"
+                src="https://static.yukoyuko.net/images/onsen/onsen_2140_0001.jpg" /></a>
+        <p>丹後奥伊根温泉</p>
+    </div>
+</form>
+{% endblock content %}

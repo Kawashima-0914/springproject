@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">京都温泉（きょうと）</h2><h3 class="icon"> 所在地：京都府</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1632_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、関節痛、疲労、婦人病、冷え性、皮膚病、痔疾など
+</td></tr></table></div><div class="con1"><p class="feature">京都駅徒歩約5分、交通利便性の良い立地にありながらも京都駅エリアでは唯一の自家源泉を持つのが京都温泉。ホテルの地下からこんこんと湧き出ている炭酸水素塩泉が楽しめる。炭酸水素塩泉は「美肌の湯」ともいわれて いる。 どっしりとした落ち着いた空間の「岩の湯」と湯気とともに木の香りに包まれる「木の湯」で豊富な効能を持つ温泉を堪能し、全身の筋肉がほぐれていく至福の時を過ごせる。 日帰り入浴も可能なので、町歩きで疲れたときや新幹線待ちのちょっとした間に入れるのが何とも嬉しい。気軽にふらっと立ち寄りたい。観光拠点として、ビジネス拠点として幅広いニーズに対応できるほか、これから増加していく外国人観光客にも愛される温泉となるに違いない。
+循環ろ過・加水・加温。炭酸水素塩泉は美肌に、塩化物泉は保温効果が高い。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="marukomaonsen_marukoma_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="marukomaonsen_marukoma_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.marukomaonsen_marukoma_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0681_0001.jpg"/></a><p class="feature">丸駒温泉（まるこま）<br>類似度:2.602</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="chirihamayawaragionsen_chirihamayawaragi_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="chirihamayawaragionsen_chirihamayawaragi_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.chirihamayawaragionsen_chirihamayawaragi_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1201_0001.jpg"/></a><p class="feature">千里浜やわらぎ温泉（ちりはまやわらぎ）<br>類似度:2.540</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="minabeonsen_minabe_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="minabeonsen_minabe_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.minabeonsen_minabe_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0743_0001.jpg"/></a><p class="feature">みなべ温泉（みなべ）<br>類似度:2.527</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:2.525</br></p></div></form>
+{% endblock content %}

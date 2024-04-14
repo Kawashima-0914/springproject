@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">千倉海岸温泉（ちくらかいがん）</h2><h3 class="icon"> 所在地：千葉県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0090_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫黄泉
+</td></tr><tr><th>効能</th><td>神経痛、リウマチ、疲労、皮膚病、美肌
+</td></tr></table></div><div class="con1"><p class="feature">太平洋に面した千倉海岸でのサイクリングや海歩き、町中にはオシャレな雑貨店やカフェがポツポツあるので、散策してみるのも楽しい。全国で唯一、料理の神様をまつる「高家神社」での「庖丁式」は、古式に則った庖丁さばきが披露される。 アワビや伊勢エビなど、神様が与えてくれる新鮮な海の幸も楽しみの1つ。「潮風王国」には、海産物の店をはじめ飲食店も揃っているので、太平洋の味覚を頬張りに出かけたい。 町の南部には、早春の花たちが咲き誇る花畑。サーファーと共に紺碧の海からの朝日は絶景です。山の夕日、満天の夜空、大自然と豊富な食材で癒されます。
+房総半島の南東端に湧く温泉。源頼朝が負傷した愛馬の傷を治し、自らも湯に浸かったという伝説が残る古湯。塩化物泉や含硫黄などが湧く温泉施設を総称して「千倉温泉郷」と呼ぶ。「美肌の湯」が多くサーフィンや磯釣り、花摘みなどで太陽の下にさらした肌を優しく包み込んでくれる。果てしなく続く水平線を眺めながら、ゆっくり疲れを癒したい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="futamionsen_futami_mie">{% csrf_token %}<input name="id2" type="hidden" value="futamionsen_futami_mie"/><div class="con2"><a href="../spring_each/" onclick="document.futamionsen_futami_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1280_0001.jpg"/></a><p class="feature">二見温泉（ふたみ）<br>類似度:2.487</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.405</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="chuuzenjionsen_chuuzenji_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="chuuzenjionsen_chuuzenji_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.chuuzenjionsen_chuuzenji_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0091_0001.jpg"/></a><p class="feature">中禅寺温泉（ちゅうぜんじ）<br>類似度:2.386</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinomataonsen_ichinomata_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="ichinomataonsen_ichinomata_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.ichinomataonsen_ichinomata_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1123_0001.jpg"/></a><p class="feature">一の俣温泉（いちのまた）<br>類似度:2.374</br></p></div></form>
+{% endblock content %}

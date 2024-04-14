@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">石道温泉（いしみち）</h2><h3 class="icon"> 所在地：兵庫県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1227_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">大阪から車で約30分、阪神高速「川西小花IC」を下りて約8㎞という都会から好アクセスの場所に良質の温泉が湧き出ている。湯けむりを上げるのは、一軒宿のホテル「天然温泉石道」。 背後には自然豊かな山々が、すぐそばには野尻川が流れる山里の魅力あふれたエリアである。近隣には清和源氏発祥の地と伝えられている「多田神社」や、“足柄山の金太郎”が安置されている「万願寺」などがあり、歴史の深さを肌で感じることが できる。 アクティブ派には、ホテル併設のゲートボール場や近隣のゴルフコース、川釣りのポイントなど爽やかな汗を流せる場所も多数。また、宝塚へは約15㎞、神戸へは約50㎞といずれも観光圏内なので足を延ばすのも良いだろう。
+こんこんと湧き出るのは、鉄分と塩分、そして炭酸を含む「炭酸水素塩泉」。日によって温泉の色が変わり、透明から茶褐色のとろりとした肌触りの湯が楽しめる。男女別の湯殿にはそれぞれ6つの浴槽とサウナが用意され、中でも鮮度の良い源泉が惜しみなく注がれている岩風呂が人気。茶色く変色した岩肌が温泉成分の豊富さを物語っているようだ。湯あがり後はいつまでも体の芯がホカホカと温かく冷え性に効果が高い。また浴室から眺められる日本庭園も美しく整備され、ゆったりとした温泉時間を演出してくれる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="mitsunorionsen_koutoku_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="mitsunorionsen_koutoku_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.mitsunorionsen_koutoku_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0494_0001.jpg"/></a><p class="feature">光徳温泉（こうとく）<br>類似度:1.760</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="arimaonsen_arima_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="arimaonsen_arima_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.arimaonsen_arima_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0016_0001.jpg"/></a><p class="feature">有馬温泉（ありま）<br>類似度:1.746</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ushitakionsen_ushitaki_oosakafu">{% csrf_token %}<input name="id2" type="hidden" value="ushitakionsen_ushitaki_oosakafu"/><div class="con2"><a href="../spring_each/" onclick="document.ushitakionsen_ushitaki_oosakafu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1240_0001.jpg"/></a><p class="feature">牛滝温泉（うしたき）<br>類似度:1.722</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kaiooizumionsen_kaiooizumi_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="kaiooizumionsen_kaiooizumi_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.kaiooizumionsen_kaiooizumi_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0852_0001.jpg"/></a><p class="feature">甲斐大泉温泉（かいおおいずみ）<br>類似度:1.717</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">猪の倉温泉（いのくら）</h2><h3 class="icon"> 所在地：三重県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1589_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">三重県津市。「津」には「港」という意味合いもあり、かつての平安京にとっては重要な港だったという。現在、海沿いには造船所や製鉄所が建ち並び、官公庁街の間には伊勢国の片鱗を残す「津城」や「長野城」などの史 跡が点在している。 猪の倉温泉は市街地から内陸に入った白山町に湧く温泉だ。元々は「井ノクラ」と呼ばれており、人々が集まる井戸の「井」を、後に住み着いた「猪」に変え、それらを保存する意味を込めて「倉」にし たと伝えられている。 現在は温泉宿と日帰り入浴施設の2カ所でこの湯を楽しむことができる。温泉は美肌の湯として評判で、肌触りなめらかな湯心地を楽しめる。青山高原の澄んだ空気と緑豊かなカントリークラブに囲まれた温泉地で天然の恵みを享受したい。
+19.7℃、メタケイ酸、炭酸水素イオンが豊富。とろとろで優しい肌触り。特にアトピー性皮膚炎に悩む方に人気だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ryuumononsen_ryuumon_ooita">{% csrf_token %}<input name="id2" type="hidden" value="ryuumononsen_ryuumon_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.ryuumononsen_ryuumon_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0310_0001.jpg"/></a><p class="feature">竜門温泉（りゅうもん）<br>類似度:1.794</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hiekionsen_hinoemata_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="hiekionsen_hinoemata_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.hiekionsen_hinoemata_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1086_0001.jpg"/></a><p class="feature">檜枝岐温泉（ひのえまた）<br>類似度:1.790</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="wadoukousen_wadoukousen_saitama">{% csrf_token %}<input name="id2" type="hidden" value="wadoukousen_wadoukousen_saitama"/><div class="con2"><a href="../spring_each/" onclick="document.wadoukousen_wadoukousen_saitama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0774_0001.jpg"/></a><p class="feature">和銅鉱泉（わどうこうせん）<br>類似度:1.756</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shigiyamaonsen_shigisan_nara">{% csrf_token %}<input name="id2" type="hidden" value="shigiyamaonsen_shigisan_nara"/><div class="con2"><a href="../spring_each/" onclick="document.shigiyamaonsen_shigisan_nara.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0065_0001.jpg"/></a><p class="feature">信貴山温泉（しぎさん）<br>類似度:1.748</br></p></div></form>
+{% endblock content %}

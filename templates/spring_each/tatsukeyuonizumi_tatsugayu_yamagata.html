@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">辰ケ湯温泉（たつがゆ）</h2><h3 class="icon"> 所在地：山形県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2268_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">最上川沿いの丘陵にひっそりと佇む温泉地で、発見は文化3年(1806)とも伝えられる、非常に歴史ある古湯が湧出する。この湯に浸かれるのは、昔ながらの湯治宿の雰囲気を残す「辰ケ湯旅館」だ。豊かな効能で、昔から湯治や療養目的の宿として親しまれている。周囲の観光としては、東北屈指の巨大な望遠鏡が設置されている「天体観測館コスモス童夢」や、美しい景色やスキーを楽しめる「眺海の森」、5月に庄内三大祭の一つ酒田まつりが開催される「日枝神社」などがおすすめ。自然豊かな景色のなか、温泉に観光に、体と心を癒やす旅となるだろう。
+泉質は、含硫黄-ナトリウム-塩化物泉で、慢性皮膚病、神経痛、慢性婦人病、糖尿病、アトピー性皮膚炎などによいとされている。古くから湯治や療養として使用されていた湯で、近隣の農家からは皮膚病に効果のある湯治場として愛されている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kokonoeonsensato_kujuu_ooita">{% csrf_token %}<input name="id2" type="hidden" value="kokonoeonsensato_kujuu_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.kokonoeonsensato_kujuu_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0197_0001.jpg"/></a><p class="feature">九重温泉郷（くじゅう）<br>類似度:2.023</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yanagawaonsen_yanagawa_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="yanagawaonsen_yanagawa_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.yanagawaonsen_yanagawa_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1033_0001.jpg"/></a><p class="feature">柳川温泉（やながわ）<br>類似度:2.001</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1128_0001.jpg"/></a><p class="feature">天橋立・宮津温泉ピント湯（あまのはしだて・みやづぴんとゆ）<br>類似度:2.000</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="onokawaonsen_onogawa_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="onokawaonsen_onogawa_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.onokawaonsen_onogawa_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0718_0001.jpg"/></a><p class="feature">小野川温泉（おのがわ）<br>類似度:1.959</br></p></div></form>
+{% endblock content %}

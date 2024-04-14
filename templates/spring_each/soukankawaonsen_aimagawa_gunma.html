@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">相間川温泉（あいまがわ）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1636_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">国道406号、高崎市倉渕町烏川の支流、相間川の奥に位置する源泉かけ流しの秘湯。源泉温度62℃と高温で塩分、鉄分を多く含む水質のため、身体が温まると評判の温泉。 榛名山の西側に位置し、緑豊かな自然の中、美味しい空気とマイナスイオン効果を直接肌で感じとることができ、癒しを求めに来る人達で賑わう。また、高崎市の国民健康保険、後期高齢者医療保険の温泉地にも指定され、その効能高き水質と環境の良さはお墨付き。 近くには、東善寺（小栗上野介の菩提寺）、榛名神社、世界遺産の富岡製糸場などがある。名物は地産地消の注文が入ってから一つずつ作る「釜飯定食」、「元祖おきりこみ（冬季のみ）」は、またぜひ食べたいと遠方からも足を運ぶ人がいるほど絶品。
+群馬県の西北に位置し榛名山の西側の烏川の支流、相間川の奥にある源泉かけ流しの秘湯。水酸化鉄を含む源泉温度62℃のお湯は空気に触れると金色に輝き露天風呂（金泉）に注がれている。また、内湯は金泉をろ過し銀泉になっている。関節痛、アトピー、リウマチ、冷え症などに効能を発揮するといわれる。湯上りは湯冷めしにくく肌がつやつやになると評判で、美肌を期待して訪れる女性客も多い。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:1.833</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:1.829</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="choukaionsen_choukai_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="choukaionsen_choukai_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.choukaionsen_choukai_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1147_0001.jpg"/></a><p class="feature">鳥海温泉（ちょうかい）<br>類似度:1.820</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinosekionsensato_ichinoseki_iwate">{% csrf_token %}<input name="id2" type="hidden" value="ichinosekionsensato_ichinoseki_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.ichinosekionsensato_ichinoseki_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1076_0001.jpg"/></a><p class="feature">一関温泉郷（いちのせき）<br>類似度:1.798</br></p></div></form>
+{% endblock content %}

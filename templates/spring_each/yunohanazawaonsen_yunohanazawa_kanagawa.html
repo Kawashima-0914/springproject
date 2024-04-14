@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯の花沢温泉（ゆのはなざわ）</h2><h3 class="icon"> 所在地：神奈川県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0878_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">数ある箱根の温泉の中でも、最も高所に位置する一軒宿「箱根湯の花プリンスホテル」を擁する温泉地。 標高約935mの高原に位置し眼下一面に広がるゴルフ場と、箱根駒ヶ岳などの山々や相模湾、房総半島まで見渡すことができる。 ホテル周辺は「箱根湯の花ゴルフ場」が併設されておりゴルフリゾートらしいお洒落な雰囲気に満ち、豊かに広がるコースの芝生が美しい。丘陵コースでの爽快なプレーを楽しんだ後、にごり湯の温泉で疲れを癒すのが、ここを訪れるゴルファーの過ごし方の定番だとか。
+箱根十七湯で最も標高の高い、にごり湯の露天風呂。晴天時には雲が手に届きそうな程近くに、夜は満天の星が降るように美しくご覧いただけます。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="nasuonsen_nasu_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="nasuonsen_nasu_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.nasuonsen_nasu_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0103_0001.jpg"/></a><p class="feature">那須温泉（なす）<br>類似度:1.726</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:1.696</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="mitsunorionsen_koutoku_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="mitsunorionsen_koutoku_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.mitsunorionsen_koutoku_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0494_0001.jpg"/></a><p class="feature">光徳温泉（こうとく）<br>類似度:1.683</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tazawakokougenonsensato_tazawakokougen_akita">{% csrf_token %}<input name="id2" type="hidden" value="tazawakokougenonsensato_tazawakokougen_akita"/><div class="con2"><a href="../spring_each/" onclick="document.tazawakokougenonsensato_tazawakokougen_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0239_0001.jpg"/></a><p class="feature">田沢湖高原温泉郷（たざわここうげん）<br>類似度:1.660</br></p></div></form>
+{% endblock content %}

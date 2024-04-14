@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">箱根芦ノ湯温泉（はこねあしのゆ）</h2><h3 class="icon"> 所在地：神奈川県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1600_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、炭酸水素塩泉、硫黄泉
+</td></tr><tr><th>効能</th><td>にごり、にごり（乳白色）、美肌、関節痛、冷え性、高血圧、美肌
+</td></tr></table></div><div class="con1"><p class="feature">芦ノ湖畔の小盆地にある、歴史ある温泉地。江戸時代には「七湯廻り」（現在の「箱根七湯」）の一角として人気を博し、物見遊山に興じる多くの庶民にまざって、文人墨客も多く訪れたという。鎌倉時代の文献にも記載があるというから、歴史の長さがうかがえる。鎌倉時代に造られた石仏群も近くにある。明治になっても、西郷隆盛などの偉人や皇族が訪れていたという。硫黄の濁り湯で中性という珍しい泉質の温泉など、複数の泉質が楽しめる。江戸時代は「七湯で最も効能が高い」といわれ、2015年には国民保養温泉地に指定されたほどの、実力ある温泉地である。
+源泉は4本あり、硫黄泉が2本にくわえて、硫酸塩泉と弱アルカリ性単純温泉が1本ずつ。泉質や温度、pHがそれぞれ異なり、多彩な泉質を一ヶ所で楽しめるめずらしい温泉地だ。硫黄泉といっても酸性ではなく、ピリピリとした感じがしないため肌に優しいまろやかなお湯となっている。いずれの湯も美肌効果をもつが、作用は異なる。泉質を組み合わせて、美肌を目指してみては。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="nakayamaheionizumi_nakayamadaira_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="nakayamaheionizumi_nakayamadaira_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.nakayamaheionizumi_nakayamadaira_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0946_0001.jpg"/></a><p class="feature">中山平温泉（なかやまだいら）<br>類似度:2.673</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="haratsuruonsen_harazuru_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="haratsuruonsen_harazuru_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.haratsuruonsen_harazuru_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0628_0001.jpg"/></a><p class="feature">原鶴温泉（はらづる）<br>類似度:2.596</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="narukoonsen_1_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="narukoonsen_1_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.narukoonsen_1_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0105_0001.jpg"/></a><p class="feature">鳴子温泉（鳴子温泉郷）（ナルコ）<br>類似度:2.499</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenkeseonsen_amagase_ooita">{% csrf_token %}<input name="id2" type="hidden" value="tenkeseonsen_amagase_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.tenkeseonsen_amagase_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0010_0001.jpg"/></a><p class="feature">天ヶ瀬温泉（あまがせ）<br>類似度:2.463</br></p></div></form>
+{% endblock content %}

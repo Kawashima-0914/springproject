@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">倉真温泉（くらみ）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1821_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">「くらみおんせん」と読む。掛川の市街地からはなれた山中の秘湯。日本最大級の茶畑が広がる牧之原を見下ろす「粟ヶ岳」の西麓に位置する。粟ヶ岳には大きく「茶」と書いてあるのが面白い。遠州七不思議の一つ、つくと現世は金持ちになれるが来世は無間地獄に堕ちるという「無間の鐘」がある。また、日清戦争の出征兵士を思って造られた「百観音」は1996年に再生された。戦死者を出さなかったという霊験あらたかな観音様である。温泉街には3軒の旅館が並んでおり、自噴する源泉資源を大事に使っている。アユやヤマメなど、清流で育った山の幸も味わえる。
+400年以上前から知られていたという由緒正しい温泉だ。岩の割れ目から湧き出していたのを湯治に利用したのが始まりだとか。泉質はアルカリ性の硫黄泉で、とろみのあるまろやかな温泉水は肌を優しく包み込み美肌に仕上げてくれる。髪もツヤツヤになると評判の温泉だ。湧出温度は低いが、成分をしっかりと実感できる名湯だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tsukiokaonsen_tsukioka_niigata">{% csrf_token %}<input name="id2" type="hidden" value="tsukiokaonsen_tsukioka_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.tsukiokaonsen_tsukioka_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0589_0001.jpg"/></a><p class="feature">月岡温泉（つきおか）<br>類似度:1.991</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="unzenonsen_unzen_nagasaki">{% csrf_token %}<input name="id2" type="hidden" value="unzenonsen_unzen_nagasaki"/><div class="con2"><a href="../spring_each/" onclick="document.unzenonsen_unzen_nagasaki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0525_0001.jpg"/></a><p class="feature">雲仙温泉（うんぜん）<br>類似度:1.939</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okudougoonsen_okudougo_ehime">{% csrf_token %}<input name="id2" type="hidden" value="okudougoonsen_okudougo_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.okudougoonsen_okudougo_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0288_0001.jpg"/></a><p class="feature">奥道後温泉（おくどうご）<br>類似度:1.909</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:1.903</br></p></div></form>
+{% endblock content %}

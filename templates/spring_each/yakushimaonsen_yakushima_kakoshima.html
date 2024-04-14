@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">屋久島温泉（やくしま）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1703_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">面積約504.29k㎡、日本で7番目に大きな島となる鹿児島屋久島。屋久杉が自生する森林を含めた島の面積の約21％がユネスコの世界遺産に登録されている。 ネイチャーウォークやマリンスポーツを目的とした根強いファンが多く、全国から多くの観光客を集めている。屋久島温泉は屋久島空港より徒歩約1分という空路組には嬉しい立地にある温泉地だ。 リラクゼーション施設が充実しているほか、「観光ベースキャンプ」と称して、トレッキング、ダイビング、フィッシング、自然観察（ウミガメの産卵など）など、各種アクティビティの相談にも乗ってくれるサービスもある。森と思い切り遊んだ後は温泉で身体を癒してあげるのも忘れずに。
+pH9.44、循環ろ過式・加温。日帰り入浴可能。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="mazekawaonsen_mazegawa_gifu">{% csrf_token %}<input name="id2" type="hidden" value="mazekawaonsen_mazegawa_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.mazekawaonsen_mazegawa_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1668_0001.jpg"/></a><p class="feature">馬瀬川温泉（まぜがわ）<br>類似度:1.964</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kouenonsen_takatoo_nagano">{% csrf_token %}<input name="id2" type="hidden" value="kouenonsen_takatoo_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.kouenonsen_takatoo_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1469_0001.jpg"/></a><p class="feature">高遠温泉（たかとお）<br>類似度:1.913</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hiekionsen_hinoemata_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="hiekionsen_hinoemata_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.hiekionsen_hinoemata_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1086_0001.jpg"/></a><p class="feature">檜枝岐温泉（ひのえまた）<br>類似度:1.906</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="namarionsen_namari_iwate">{% csrf_token %}<input name="id2" type="hidden" value="namarionsen_namari_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.namarionsen_namari_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0283_0001.jpg"/></a><p class="feature">鉛温泉（なまり）<br>類似度:1.891</br></p></div></form>
+{% endblock content %}

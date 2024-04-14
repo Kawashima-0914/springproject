@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">小布施温泉（おぶせ）</h2><h3 class="icon"> 所在地：長野県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1835_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫黄泉
+</td></tr><tr><th>効能</th><td>腰痛、冷え性、動脈硬化、皮膚病、美肌
+</td></tr></table></div><div class="con1"><p class="feature">栗と北斎で有名な小布施町。千曲川の水運で江戸時代から栄えた交通の要衝で、歴史的な町並みが残る。北斎以外にも、さまざまなテーマの美術館・博物館があり、町民が善意で整備し開放する庭とともに町歩きを充実させてくれる。また、江戸時代は将軍家に献上していたという栗だけでなく、リンゴなどの栽培も盛ん。中心部から離れた丘の上に、2軒の温泉施設が立っている。日帰り専用の「穴観音の湯」と宿泊もできる「あけびの湯」。高台にあるため、「北信五岳」（斑尾山・妙高山・黒姫山・戸隠山・飯縄山）や北アルプスを露天風呂から一望できる。どちらの施設も食事処をそなえており、ゆったりと過ごせそうだ。
+日によって色が変わるという温泉の泉質は「含硫黄-塩化物泉」。透明の日もあれば、緑になったり白濁したりする日もあるという。塩分も含んでおり、ポカポカと温まる。弱アルカリ性で、硫黄泉と言ってもまろやかで入りやすいのが特徴。湯の華も浮かぶ本格的な泉質のお湯だ。穴観音のお告げに従って掘り当てたという温泉である。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ichinomataonsen_ichinomata_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="ichinomataonsen_ichinomata_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.ichinomataonsen_ichinomata_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1123_0001.jpg"/></a><p class="feature">一の俣温泉（いちのまた）<br>類似度:2.411</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="akagawaonsen_akagawa_ooita">{% csrf_token %}<input name="id2" type="hidden" value="akagawaonsen_akagawa_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.akagawaonsen_akagawa_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1038_0001.jpg"/></a><p class="feature">赤川温泉（あかがわ）<br>類似度:2.399</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="mitsunorionsen_koutoku_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="mitsunorionsen_koutoku_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.mitsunorionsen_koutoku_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0494_0001.jpg"/></a><p class="feature">光徳温泉（こうとく）<br>類似度:2.363</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.360</br></p></div></form>
+{% endblock content %}

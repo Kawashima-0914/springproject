@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">美唄温泉（びばい）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1322_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">札幌と旭川の中間に位置する美唄市は、明治から昭和にかけて屯田兵による開拓が行われた歴史ある町で、かつては国内最大の炭鉱の町としても栄えた。廃鉱となった今は、当時の施設が記念館として残されている。現在は北海道産のブランド米を生産するなど稲作を中心とした一大穀倉地となっており、壮大な北海道の大地を堪能できる。高台に作られた温泉地であり、市民の憩いの場ともなっている。日帰り温泉も楽しめる温泉施設「ピパの湯　ゆ?りん館」は、イタリア・カプリ島の「青の洞窟」をイメージし、露天風呂は幻想的な雰囲気を醸し出している。
+とろみを感じられるナトリウム‐炭酸水素塩泉。神経痛、関節痛、打ち身、くじき、疲労回復、冷え性などによいとされている。湯は肌なじみがよく、「化粧水のよう」と評されるほど肌をつるつるすべすべにしてくれる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="marukomaonsen_marukoma_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="marukomaonsen_marukoma_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.marukomaonsen_marukoma_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0681_0001.jpg"/></a><p class="feature">丸駒温泉（まるこま）<br>類似度:2.258</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:2.201</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="senbinoyu_funaonoyu_gunma">{% csrf_token %}<input name="id2" type="hidden" value="senbinoyu_funaonoyu_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.senbinoyu_funaonoyu_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2082_0001.jpg"/></a><p class="feature">船尾の湯（ふなおのゆ）<br>類似度:2.185</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tougenoyu_tougenoyu_gunma">{% csrf_token %}<input name="id2" type="hidden" value="tougenoyu_tougenoyu_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.tougenoyu_tougenoyu_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2077_0001.jpg"/></a><p class="feature">峠の湯（とうげのゆ）<br>類似度:2.164</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">高山温泉（たかやま）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2074_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">「星を見るために訪れる人が日本で最も多い」と言われる、群馬県高山村の天文台「県立ぐんま天文台」。美しい星空に近づける村には、豊かな自然の中に高山温泉が湧く。入浴施設としては「高山温泉ふれあいプラザ」と「高山温泉いぶきの湯」があり、どちらも日帰り入浴ができる。露天風呂では「県立ぐんま天文台」で眺めることのできる星空を見ながらお湯に浸かれる。天文台でも夜間に天体観測などのイベントが開催され、その美しい星空を体験することができる。ほかにもスコットランドの古城を移築し復元した「ロックハート城」では、中世の町並みを再現した協会やレストランのほか、ドレスを着て撮影をするプリンセス体験も人気。
+泉質は体が芯から温まり、冷めにくいという特徴を持つナトリウム・カルシウム・塩化物温泉（弱アルカリ性低張性高温泉）。きりきずややけどなどの治癒に効果があるとされるほか、慢性皮膚炎や美肌にも効能があるとされている。入浴後は肌がスベスベになることから、女性にも人気がある。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kiyosatoonsen_kiyosato_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="kiyosatoonsen_kiyosato_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.kiyosatoonsen_kiyosato_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1578_0001.jpg"/></a><p class="feature">清里温泉（きよさと）<br>類似度:2.031</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tangookuineonsen_tangookuine_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tangookuineonsen_tangookuine_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tangookuineonsen_tangookuine_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2140_0001.jpg"/></a><p class="feature">丹後奥伊根温泉（たんごおくいね）<br>類似度:2.027</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shihoroonsen_shihoro_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="shihoroonsen_shihoro_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.shihoroonsen_shihoro_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1501_0001.jpg"/></a><p class="feature">しほろ温泉（しほろ）<br>類似度:2.022</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:2.017</br></p></div></form>
+{% endblock content %}

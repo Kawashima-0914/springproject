@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">角館温泉（かくのだて）</h2><h3 class="icon"> 所在地：秋田県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1672_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">仙北市は三方を山々に囲まれた盆地であり、秋田県内で最も1日の寒暖の差が大きな地域である。冬季には市内全域で平均気温が氷点下を下回るほど寒さが厳しい。降雪量も多く特別豪雪地帯に指定されており、平野部でも 積雪が1mを超えることもある。 しかし、西は桧木内川、南は玉川が堀となって天然の要害を成すことから城下町を形成するのに適していた。武家屋敷の立ち並ぶ一帯は明治の近代化の影響を受けず残されてきたため、19 76年「重要伝統的建造物群保存地区」に選定された。 見どころの多い武家屋敷散策の後には、湯量豊富な天然温泉の温もりに包まれて旅の疲れを癒したい。周辺には名湯が数多く点在しており、スポーツやレジャーのみならず、湯巡りを楽しみたい方にもおすすめ。
+無色透明、かけ流しの天然温泉、柔らかな湯触り。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ugusuonsen_ugusu_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="ugusuonsen_ugusu_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.ugusuonsen_ugusu_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0443_0001.jpg"/></a><p class="feature">宇久須温泉（うぐす）<br>類似度:1.773</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hakubaryuujinonsen_hakubaryuujin_nagano">{% csrf_token %}<input name="id2" type="hidden" value="hakubaryuujinonsen_hakubaryuujin_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.hakubaryuujinonsen_hakubaryuujin_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1820_0001.jpg"/></a><p class="feature">白馬龍神温泉（はくばりゅうじん）<br>類似度:1.753</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tottorionsen_tottori_tottori">{% csrf_token %}<input name="id2" type="hidden" value="tottorionsen_tottori_tottori"/><div class="con2"><a href="../spring_each/" onclick="document.tottorionsen_tottori_tottori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0506_0001.jpg"/></a><p class="feature">鳥取温泉（とっとり）<br>類似度:1.735</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="harunamizuumionsen_harunako_gunma">{% csrf_token %}<input name="id2" type="hidden" value="harunamizuumionsen_harunako_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.harunamizuumionsen_harunako_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1193_0001.jpg"/></a><p class="feature">榛名湖温泉（はるなこ）<br>類似度:1.728</br></p></div></form>
+{% endblock content %}

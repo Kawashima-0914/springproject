@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">新安比温泉（しんあっぴ）</h2><h3 class="icon"> 所在地：岩手県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0792_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">岩手県の秀峰「七時雨山」の西麓に涌く温泉。安比高原や安代町の中心にも近く、最寄の安代ICから車で約3分と交通至便な場所にあるが、緑深い里山の中で秘湯ムードたっぷり。 近隣の「天台寺」元住職（2005年6月住職退任）で作家の瀬戸内寂聴氏に、開眼を受けた観音像が建てられている温泉宿もある。ご利益がある観音様として、訪れる人々から親しまれ、湯治客にとっても心癒されると評判。周囲は四角岳、高倉山など、1000mクラスの山々が連なり、大半は山林地帯。 春や秋は樹木や草花が周囲の景観を美しく染め、冬はスキー場でのレジャーと、四季を通して豊かな自然と親しめるエリア。また、お土産ものでは「安比舞茸」と、使い込むほど色艶が増す漆器の安比塗りが人気。
+塩分が海水の2倍以上といわれる日本でも屈指の強食塩泉。岩手の内陸にも関わらず、湯からは海水の潮の香りが漂う。その成分の濃さゆえに、浴槽が変形、変色するほど。また、泉質は医学博士も推奨している天然薬湯として評判高い。体を芯から温めて湯ざめしにくく、特にアトピー性皮膚炎などの慢性皮膚疾患の改善に効果があるといわれている。遠方からの湯治客も多く、効能の確かさを感じられる良泉だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:1.957</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="choukaionsen_choukai_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="choukaionsen_choukai_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.choukaionsen_choukai_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1147_0001.jpg"/></a><p class="feature">鳥海温泉（ちょうかい）<br>類似度:1.941</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="soukankawaonsen_aimagawa_gunma">{% csrf_token %}<input name="id2" type="hidden" value="soukankawaonsen_aimagawa_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.soukankawaonsen_aimagawa_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1636_0001.jpg"/></a><p class="feature">相間川温泉（あいまがわ）<br>類似度:1.936</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:1.921</br></p></div></form>
+{% endblock content %}

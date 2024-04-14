@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">天草パール温泉（あまくさぱーる）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1610_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">有明海と八代海の接点に位置する天草地方には大小120あまりの島々が点在し、1年を通して穏やかなこの海域は古くから海の交通の要とされてきた。上天草市はほぼ全体が雲仙天草国立公園に含まれ景勝地として名高い 。 特に、天草五橋の天門橋（1号橋）から松島橋（5号橋）までの国道266号線沿いは天草パールラインと呼ばれ、風光明媚な景観で特に有名。天草諸島の北端、大矢野島にかかる大矢野橋（2号橋）の手前に位置する「亀屋 ホテル華椿」では、そんな絶景を眺めながらの湯浴みを楽しめる。 目の前に広がる天草の海や島々、自然と溶け合うその光景はまさに感動もの。露天風呂では潮風に吹かれながら、大浴場で湯に浸かればまるで海に浮かんでいるような心地よさを楽しめる。
+展望大浴場、展望露天風呂、檜風呂、サウナあり。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="uharaonsen_ubara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="uharaonsen_ubara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.uharaonsen_ubara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0195_0001.jpg"/></a><p class="feature">鵜原温泉（うばら）<br>類似度:2.196</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yokoteekimaeonsen_yokoteekimae_akita">{% csrf_token %}<input name="id2" type="hidden" value="yokoteekimaeonsen_yokoteekimae_akita"/><div class="con2"><a href="../spring_each/" onclick="document.yokoteekimaeonsen_yokoteekimae_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1063_0001.jpg"/></a><p class="feature">横手駅前温泉（よこてえきまえ）<br>類似度:2.191</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shirahamaonnaraishimaonsen_shirahamameraijima_chiba">{% csrf_token %}<input name="id2" type="hidden" value="shirahamaonnaraishimaonsen_shirahamameraijima_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.shirahamaonnaraishimaonsen_shirahamameraijima_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0172_0001.jpg"/></a><p class="feature">白浜女来島温泉（しらはまめらいじま）<br>類似度:2.135</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ookawaonsen_ookawa_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="ookawaonsen_ookawa_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.ookawaonsen_ookawa_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0446_0001.jpg"/></a><p class="feature">大川温泉（おおかわ）<br>類似度:2.124</br></p></div></form>
+{% endblock content %}

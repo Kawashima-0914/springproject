@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">吉良温泉（きら）</h2><h3 class="icon"> 所在地：愛知県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0051_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">「日本の水浴場八十八選」に選ばれた宮崎海水浴場と、漁港を挟んで西側に広がる恵比寿海水浴場。南国情緒が漂う通称「吉良ワイキキビーチ」沿いに、リゾートホテルのほか小さな宿や素朴な民宿が立ち並ぶ。 また吉良町は「忠臣蔵」で有名な吉良上野介ゆかりの地。悪役として描かれることの多い上野介だが、吉良町では領民から厚い信頼を得ていた名君だったとか。塩田開発や治水などの善政を施し、一晩で築いたという約180mの「黄金堤」は今も健在。 非業に倒れた殿様を慕うように、春には桜が咲き乱れる。菩提寺「華厳寺」など、数多く残る上野介にまつわる史跡。「忠臣蔵」のもう1人の主役の生涯を見つめ直してみるのもよい。
+美しい海岸と、新鮮な海の幸が出迎えてくれるリゾート地。3～5月には、沖に浮かぶ梶島に渡り潮干狩りを楽しむこともできる。近年、これまで湧出していた放射能泉が枯渇。温泉地として危機に陥ったが、2003年に吉良観光ホテルによって新たな源泉の掘削に成功。2004年から営業を開始した。吉良氏ゆかりの史跡をはじめ、多くの歴史的名所と美しい自然に囲まれた吉良温泉が再出発を切る。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="senamionsen_senami_niigata">{% csrf_token %}<input name="id2" type="hidden" value="senamionsen_senami_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.senamionsen_senami_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0586_0001.jpg"/></a><p class="feature">瀬波温泉（せなみ）<br>類似度:1.578</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shiganosatoonsen_shikanosato_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="shiganosatoonsen_shikanosato_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.shiganosatoonsen_shikanosato_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0928_0001.jpg"/></a><p class="feature">志賀の郷温泉（しかのさと）<br>類似度:1.550</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="utoroonsen_utoro_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="utoroonsen_utoro_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.utoroonsen_utoro_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0787_0001.jpg"/></a><p class="feature">ウトロ温泉（うとろ）<br>類似度:1.532</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yunohamaonsen_yunohama_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="yunohamaonsen_yunohama_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.yunohamaonsen_yunohama_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0147_0001.jpg"/></a><p class="feature">湯野浜温泉（ゆのはま）<br>類似度:1.532</br></p></div></form>
+{% endblock content %}

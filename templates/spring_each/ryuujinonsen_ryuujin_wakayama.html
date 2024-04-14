@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">龍神温泉（りゅうじん）</h2><h3 class="icon"> 所在地：和歌山県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0746_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">紀伊半島の真ん中、高野山連峰に源を発し御坊へと注ぐ日高川。その上流、高野龍神国定公園の自然豊かな渓谷沿いに15軒の宿が点在する。若葉や桜が奥山に遅い春の訪れを告げ、ホタルの光が夏の始まりを演出。 秋の真っ赤に燃える紅葉に冬の象徴・樹氷と、日本の四季の美しさが自然そのままに広がる。約1300年の歴史を誇り、江戸時代には徳川御三家・紀州藩主にも愛された。 藩主の別荘として造られた「上御殿」、家臣の宿泊所となった「下御殿」は温泉街のシンボル。歴代の藩主によって保護され、今なお格式高く受け継がれている。大自然と歴史、そして「日本三美人の湯」として名高い名湯が、山深い秘境で静かに出迎えてくれる。
+飛鳥時代末期の8世紀初め、役の行者・小角（おづぬ）によって発見されたと伝わる古湯。後に弘法大師が龍王の夢のお告げによって開湯したことから「龍神温泉」と名付けられたとか。豊富なラジウムを含み、皮膚をきれいにする湯として名高い名湯は、川中温泉（群馬県）、湯の川温泉（島根県）とともに「日本三美人の湯」に数えられる。深山のいで湯を心静かに堪能した後は、森が育む名水で造られた地酒で一杯も、また格別。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="fukurodaonsen_fukuroda_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="fukurodaonsen_fukuroda_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.fukurodaonsen_fukuroda_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0262_0001.jpg"/></a><p class="feature">袋田温泉（ふくろだ）<br>類似度:1.978</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="utoroonsen_utoro_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="utoroonsen_utoro_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.utoroonsen_utoro_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0787_0001.jpg"/></a><p class="feature">ウトロ温泉（うとろ）<br>類似度:1.915</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hitoyoshionsen_hitoyoshi_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="hitoyoshionsen_hitoyoshi_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.hitoyoshionsen_hitoyoshi_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0382_0001.jpg"/></a><p class="feature">人吉温泉（ひとよし）<br>類似度:1.912</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sasakuraonsen_sasakura_niigata">{% csrf_token %}<input name="id2" type="hidden" value="sasakuraonsen_sasakura_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.sasakuraonsen_sasakura_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1129_0001.jpg"/></a><p class="feature">笹倉温泉（ささくら）<br>類似度:1.910</br></p></div></form>
+{% endblock content %}

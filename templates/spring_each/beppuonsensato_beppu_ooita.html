@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">別府温泉郷（べっぷ）</h2><h3 class="icon"> 所在地：大分県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1327_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、二酸化炭素泉、炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>神経痛、リウマチ、筋肉痛、婦人病、胃腸病、冷え性、高血圧、動脈硬化、皮膚病
+</td></tr></table></div><div class="con1"><p class="feature">日本一の規模を誇る別府温泉。別府、鉄輪、明礬、観海寺、亀川、柴石、堀田、浜脇温泉を「別府八湯」と呼ぶ。日本一の湧出量は1日約9万5728L。源泉数は約2850本。町のあちこちから湯煙が立ち上る。 共同浴場約170軒、宿は約1000軒。さらに、存在する11の泉質のうち放射能泉を除く10種類が湧く。阿蘇から島原へ続く火山活動によって生じた断層が、別府に豊富な温泉をもたらしたとか。その象徴が「別府地 獄めぐり」。 赤い「血の池地獄」や青い「海地獄」、白い「白池地獄」や間欠泉が豪快に噴き出す「龍巻地獄」、別名ワニ地獄とも呼ばれている「鬼山地獄」など、1000年以上も前から噴出しているという9つの“地獄”。別府の町を歩けば、自然の威力にひたすら圧倒される。
+奈良時代の『豊後風土記』や『伊予国風土記』にも登場する古湯。鎌倉時代には、元寇の役で負傷した武士たちの療養所も作られたという。別府八湯のうち、最大の規模を誇るのが別府温泉。大型ホテルから小さな宿までが所狭しと建ち並び、繁華街の中に木造温泉建築として貴重な竹瓦温泉など多くの共同浴場が佇む。街角から立ち上る湯煙とともに、日本が世界に誇る大温泉郷の風格が漂う。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="arimaonsen_arima_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="arimaonsen_arima_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.arimaonsen_arima_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0016_0001.jpg"/></a><p class="feature">有馬温泉（ありま）<br>類似度:3.068</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kirishimaonsensato_kirishima_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="kirishimaonsensato_kirishima_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.kirishimaonsensato_kirishima_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0329_0001.jpg"/></a><p class="feature">霧島温泉郷（きりしま）<br>類似度:3.020</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenkeseonsen_amagase_ooita">{% csrf_token %}<input name="id2" type="hidden" value="tenkeseonsen_amagase_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.tenkeseonsen_amagase_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0010_0001.jpg"/></a><p class="feature">天ヶ瀬温泉（あまがせ）<br>類似度:2.718</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="awajishimanandanroonsenkyou_awajishimaminamiawaji_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="awajishimanandanroonsenkyou_awajishimaminamiawaji_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.awajishimanandanroonsenkyou_awajishimaminamiawaji_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0923_0001.jpg"/></a><p class="feature">淡路島・南淡路温泉郷（あわじしま・みなみあわじ）<br>類似度:2.649</br></p></div></form>
+{% endblock content %}

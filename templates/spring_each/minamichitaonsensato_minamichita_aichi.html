@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">南知多温泉郷（みなみちた）</h2><h3 class="icon"> 所在地：愛知県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0136_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">知多半島の南西海岸に湧く温泉を総称して「南知多温泉郷」と呼ぶ。伊勢湾を望む5軒の源泉宿をはじめ大型ホテルや民宿などが点在。遠浅の海水浴場が広範囲に続き、中でも「日本の渚百選」に選ばれた「千鳥ヶ浜」は有名。 世界で最も小粒の砂浜といわれ、東海随一の美しさを誇る。半島の先端は、国の天然記念物であるウバメガシの群生地「羽豆神社の社叢」。暖かい海岸地帯に野生するという小高木の「ウバメガシトンネル」を抜けると、大海原に篠島や日間賀島が浮かぶ。 この辺りは、三方を海に囲まれているため豊富な海の幸が水揚げされる。
+1600万年前には深海底にあったといわれる南知多。その地下1300mに眠る化石水を源泉とするのが南知多温泉郷だ。お湯はなめると塩辛い。湧出量を誇り、源泉宿は5軒。太古の時代から続く温泉に浸かりながら伊勢湾に沈む夕日を眺めれば、どこか神秘的な気分になる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="matsuizumimiyaonsen_shousenkyuu_miyazaki">{% csrf_token %}<input name="id2" type="hidden" value="matsuizumimiyaonsen_shousenkyuu_miyazaki"/><div class="con2"><a href="../spring_each/" onclick="document.matsuizumimiyaonsen_shousenkyuu_miyazaki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1622_0001.jpg"/></a><p class="feature">松泉宮温泉（しょうせんきゅう）<br>類似度:2.236</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kinkesakionsen_kanagasaki_akita">{% csrf_token %}<input name="id2" type="hidden" value="kinkesakionsen_kanagasaki_akita"/><div class="con2"><a href="../spring_each/" onclick="document.kinkesakionsen_kanagasaki_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1283_0001.jpg"/></a><p class="feature">金ヶ崎温泉（かながさき）<br>類似度:2.123</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="wakuraonsen_wakura_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="wakuraonsen_wakura_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.wakuraonsen_wakura_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0151_0001.jpg"/></a><p class="feature">和倉温泉（わくら）<br>類似度:2.119</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="iseshimasatoshishimaonsen_iseshimakashikojima_mie">{% csrf_token %}<input name="id2" type="hidden" value="iseshimasatoshishimaonsen_iseshimakashikojima_mie"/><div class="con2"><a href="../spring_each/" onclick="document.iseshimasatoshishimaonsen_iseshimakashikojima_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1238_0001.jpg"/></a><p class="feature">伊勢志摩賢島温泉（いせしまかしこじま）<br>類似度:2.113</br></p></div></form>
+{% endblock content %}

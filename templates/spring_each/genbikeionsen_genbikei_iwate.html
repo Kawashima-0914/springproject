@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">厳美渓温泉（げんびけい）</h2><h3 class="icon"> 所在地：岩手県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1724_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>神経痛、関節痛、冷え性、皮膚病、美肌
+</td></tr></table></div><div class="con1"><p class="feature">磐井川の中流部、およそ2kmにわたって続く名勝「厳美渓」。奇岩や甌穴（おうけつ）、深淵などが続くダイナミックな景観は、天然記念物のお墨つきだ。対岸からロープ伝いに届けられる「空飛ぶ団子」でも知られるほか、道の駅、ガラスのテーマパーク、市立博物館、江戸時代初期の農家といった観光スポットがそろっている。人気観光地のすぐ近くにある一軒宿「いつくし園」は、明治創業の伝統ある宿。和風旅館の伝統を大事にしながら、奥州・三陸の山海の幸を活かした料理や檜の露天風呂といった充実したサービスも提供している。世界遺産にも登録された「平泉」や、舟下りで有名な「猊鼻渓（げいびけい）」などの観光地も車で数十分の距離にある。
+毎分120L湧出する温泉は、無色透明のまろやかな「塩化物-炭酸水素塩泉」。美肌に良いとされるメタケイ酸を豊富に含むほか、肌のクレンジングを促す重曹と、保湿が期待できる塩分も含む「美肌の湯」である。平安時代創建で須川温泉の湯の神を祀る温泉神社があるが、厳美渓温泉がそのすぐ近くに湧くのは偶然ではないだろう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="senganishionsen_senganishi_iwate">{% csrf_token %}<input name="id2" type="hidden" value="senganishionsen_senganishi_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.senganishionsen_senganishi_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1810_0001.jpg"/></a><p class="feature">千貫石温泉（せんがんいし）<br>類似度:2.567</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kisoonsen_kiso_nagano">{% csrf_token %}<input name="id2" type="hidden" value="kisoonsen_kiso_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.kisoonsen_kiso_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1198_0001.jpg"/></a><p class="feature">木曽温泉（きそ）<br>類似度:2.558</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tangookuineonsen_tangookuine_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tangookuineonsen_tangookuine_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tangookuineonsen_tangookuine_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2140_0001.jpg"/></a><p class="feature">丹後奥伊根温泉（たんごおくいね）<br>類似度:2.544</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="senbinoyu_funaonoyu_gunma">{% csrf_token %}<input name="id2" type="hidden" value="senbinoyu_funaonoyu_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.senbinoyu_funaonoyu_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2082_0001.jpg"/></a><p class="feature">船尾の湯（ふなおのゆ）<br>類似度:2.541</br></p></div></form>
+{% endblock content %}

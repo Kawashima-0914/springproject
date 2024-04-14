@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">赤根温泉（あかね）</h2><h3 class="icon"> 所在地：大分県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2100_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">神社の八幡様と天台宗の修験者が融合して発達した独自の宗教文化「六郷満山文化」で知られる国東半島。赤根温泉はこの半島の中にある人里離れた温泉地。周辺には国東半島最大級の石造仁王像や、かつての六郷満山中山本寺である両子寺など、その独自の文化に触れることのできるスポットが点在している。夏場でも涼しく秋には紅葉が美しい両子寺のほかに、半島には寺や神社が数多く点在する、パワースポットでもある。放浪の俳人・種田山頭火が霊場巡りの途で体を休めたとされる温泉地でもあり、それを示す句碑が建てられている。赤根温泉は山里にありながら海にも近いため新鮮な地魚を楽しむこともできる。温泉施設や宿泊施設では地魚を使用した料理を出すところも多い。
+硫黄の香りが漂うカルシウム-硫酸塩泉のお湯は、アトピー性皮膚炎などの皮膚症に良いとされている。別名「傷の湯」「痛風の湯」とも呼ばれ、高血圧症や動脈硬化症、脳卒中、慢性関節性リウマチなどにも効果的と言われる。無色透明で無味のさらっとしたお湯で、施設によっては飲泉として提供しているところもある。地元の人はもちろん観光客に人気のある温泉だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:2.238</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hatonoyuonizumi_hatonoyu_gunma">{% csrf_token %}<input name="id2" type="hidden" value="hatonoyuonizumi_hatonoyu_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.hatonoyuonizumi_hatonoyu_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2080_0001.jpg"/></a><p class="feature">鳩の湯温泉（はとのゆ）<br>類似度:2.183</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yudakawaonsen_yudagawa_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="yudakawaonsen_yudagawa_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.yudakawaonsen_yudagawa_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0854_0001.jpg"/></a><p class="feature">湯田川温泉（ゆだがわ）<br>類似度:2.178</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tottorionsen_tottori_tottori">{% csrf_token %}<input name="id2" type="hidden" value="tottorionsen_tottori_tottori"/><div class="con2"><a href="../spring_each/" onclick="document.tottorionsen_tottori_tottori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0506_0001.jpg"/></a><p class="feature">鳥取温泉（とっとり）<br>類似度:2.065</br></p></div></form>
+{% endblock content %}

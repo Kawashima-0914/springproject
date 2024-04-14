@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">御殿場東田中温泉（ごてんばひがしたなか）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1936_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">東名御殿場インターのすぐ近くという絶好のアクセスでありながら、2000坪の広大な庭園を有する広々とした造りでリラックスできるリゾート施設となっている。最上階からは富士山を一望でき、夜には御殿場の市街地の夜景と富士山が同時に楽しめる。この温泉は、「マースガーデンウッド」でのみ使われている。富士山だけでなく、富士五湖や箱根にも車ですぐに行ける立地を生かして、ドライブを楽しんだ後に温泉に入るといった滞在ができそうだ。エステやスパなども充実していて、美を磨く絶好の機会が得られることだろう。夜は噴水ショーが行われ、幻想的な光の芸術を満喫できる。
+弱アルカリ性の単純温泉で、地下1,500mからくみ上げている。広大な庭園の一角にある足湯と、一部客室にある温泉浴槽はかけ流しで使われていて、湯量は多い方だと言える。露天風呂、サウナ、ジェットバスがあるのも嬉しい。ロッカーなどの設備も充実している。源泉温度は36℃と低めのため、加温している。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="gotenbakougenonsen_gotenbakougen_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="gotenbakougenonsen_gotenbakougen_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.gotenbakougenonsen_gotenbakougen_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0769_0001.jpg"/></a><p class="feature">御殿場高原温泉（ごてんばこうげん）<br>類似度:1.526</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gotenbaotomeonsenotome2gouizumi_gotenbaotomeotomenigousen_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="gotenbaotomeonsenotome2gouizumi_gotenbaotomeotomenigousen_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.gotenbaotomeonsenotome2gouizumi_gotenbaotomeotomenigousen_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1935_0001.jpg"/></a><p class="feature">御殿場乙女温泉乙女2号泉（ごてんばおとめおとめにごうせん）<br>類似度:1.496</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="igaaoyamaasazumaonsen_asatsuma_mie">{% csrf_token %}<input name="id2" type="hidden" value="igaaoyamaasazumaonsen_asatsuma_mie"/><div class="con2"><a href="../spring_each/" onclick="document.igaaoyamaasazumaonsen_asatsuma_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1633_0001.jpg"/></a><p class="feature">伊賀青山朝妻温泉（あさつま）<br>類似度:1.477</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ikenoheionizumi_ikenotaira_nagano">{% csrf_token %}<input name="id2" type="hidden" value="ikenoheionizumi_ikenotaira_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.ikenoheionizumi_ikenotaira_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0568_0001.jpg"/></a><p class="feature">池の平温泉（いけのたいら）<br>類似度:1.458</br></p></div></form>
+{% endblock content %}

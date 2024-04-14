@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">蒲郡温泉（がまごおり）</h2><h3 class="icon"> 所在地：愛知県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、塩化物泉、ラジウム泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、関節痛、疲労、婦人病、冷え性、高血圧、動脈硬化、痔疾
+</td></tr></table></div><div class="con1"><p class="feature">東名高速音羽蒲郡ICから三河湾オレンジロード、国道473号と23号経由で約10㎞ 、JR蒲郡駅から車で5分ほど。蒲郡市は愛知県の中でも有数の温泉観光地で、中でも最大といわれる規模を誇る「蒲郡温泉」は三河湾の名勝・竹島周辺に湧く温泉。 国の天然記念物にも指定されている蒲郡のシンボル・竹島が絵画のような借景となり、古くから皇族や多くの著名な作家が好んで逗留した。春にはつつじ祭り、夏は 納涼船と、四季を通じて風景を楽しむことができる。 「竹島水族館」や「ラグーナテンボス」、「ラグーナフェスティバルマーケット」などレジャー施設も充実。レジャーを楽しんだ後、肌にやさしいと評判のお湯で、ゆっくりと疲れを癒したい。
+愛知県で最大といわれる温泉観光地の「蒲郡温泉」。三河湾の名勝・竹島付近のロケーションに湧くだけあり、三河湾の美しい景色を望める眺めの良い湯浴みが楽しめる。無色透明の温泉は、アルカリ性のため、ツルツルして肌にやさしいと評判も高い。神経痛、筋肉痛、関節痛、五十肩、打ち身、慢性消化器病、痔疾、冷え性、疲労回復など 効能は多岐にわたり、湯治に利用する人々も多いとか。三河湾の美しい眺めと良質の温泉が日頃の疲れを癒してくれる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="hagionsensato_hagi_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="hagionsensato_hagi_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.hagionsensato_hagi_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0925_0001.jpg"/></a><p class="feature">萩温泉郷（はぎ）<br>類似度:2.831</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="mitanionsen_miya_aichi">{% csrf_token %}<input name="id2" type="hidden" value="mitanionsen_miya_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.mitanionsen_miya_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0132_0001.jpg"/></a><p class="feature">三谷温泉（みや）<br>類似度:2.829</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="arimaonsen_arima_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="arimaonsen_arima_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.arimaonsen_arima_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0016_0001.jpg"/></a><p class="feature">有馬温泉（ありま）<br>類似度:2.672</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="misasaonsen_misasa_tottori">{% csrf_token %}<input name="id2" type="hidden" value="misasaonsen_misasa_tottori"/><div class="con2"><a href="../spring_each/" onclick="document.misasaonsen_misasa_tottori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0131_0001.jpg"/></a><p class="feature">三朝温泉（みささ）<br>類似度:2.634</br></p></div></form>
+{% endblock content %}

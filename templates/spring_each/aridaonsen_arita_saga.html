@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">有田温泉（ありた）</h2><h3 class="icon"> 所在地：佐賀県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0739_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">ヌルヌルのお湯が特徴。2011年に開業したばかりだが、地元の人を中心に人気が広がっている期待の新顔である。山の中に建てられた木造の日帰り温泉だが、隣接してRVパークが整備されているのでキャンピングカーで泊まることができる。有田といえば焼き物の町。江戸時代から代々受け継がれてきた柿右衛門で知られる赤絵が特に有名だ。九州の陶磁器の歴史が学べる「九州陶磁美術館」や、登り窯の壁に使われていた耐火レンガの廃材などを再利用した「トンバイ塀」の並ぶ景観など、陶磁器の文化を様々な場所で体験できる。ドイツのバロック建築の宮殿を模した「有田ポーセリンパーク」では、陶芸体験もできる。
+源泉温度17.7℃という冷鉱泉だが、泉質は周辺の「美肌の湯」と言われる温泉を上回るとも言われる。ナトリウムー炭酸水素塩泉で、美肌効果が期待できる泉質だ。冷鉱泉もあるが、適温の沸かし湯も用意されている。シャワーまで温泉水を使っているという贅沢さもうれしい。湯上りは肌がしっとりすると好評だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ashibetsuonsen_ashibetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="ashibetsuonsen_ashibetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.ashibetsuonsen_ashibetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">芦別温泉（あしべつ）<br>類似度:2.225</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hasamionsen_hasami_nagasaki">{% csrf_token %}<input name="id2" type="hidden" value="hasamionsen_hasami_nagasaki"/><div class="con2"><a href="../spring_each/" onclick="document.hasamionsen_hasami_nagasaki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0528_0001.jpg"/></a><p class="feature">波佐見温泉（はさみ）<br>類似度:2.216</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="makubetsuonsen_makubetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="makubetsuonsen_makubetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.makubetsuonsen_makubetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1500_0001.jpg"/></a><p class="feature">幕別温泉（まくべつ）<br>類似度:2.177</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="haratsuruonsen_harazuru_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="haratsuruonsen_harazuru_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.haratsuruonsen_harazuru_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0628_0001.jpg"/></a><p class="feature">原鶴温泉（はらづる）<br>類似度:2.139</br></p></div></form>
+{% endblock content %}

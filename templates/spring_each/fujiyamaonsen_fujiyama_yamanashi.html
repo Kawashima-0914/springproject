@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">ふじやま温泉（ふじやま）</h2><h3 class="icon"> 所在地：山梨県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2261_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">日本のシンボル、富士山。その麓にある遊園地、富士急ハイランドには「FUJIYAMA」や富士山ビュースポットなど、富士山に関連するアトラクション・レジャースポットがあちこちにある。同じく富士山の名を冠した「ふじやま温泉」は、遊園地の隣、純和風温浴施設の中に湧く天然温泉。河口湖ICから車で約1分という好立地に位置する施設は、「飛騨の匠」が築いたとされる岐阜県高山市の国指定重要文化財建築「日下部民芸館（日下部住宅）」をモチーフに、伝統工法を駆使して「町屋造り」を再現したもの。温浴棟は総面積100坪超を誇る、日本最大級の浴室。館内には、天然温泉の温浴棟や、富士山麓で湧出する天然水「バナジウム水」風呂など7種のお風呂がある。
+国内にあるほぼすべての泉質がブレンドされた、珍しい「マグネシウム・カルシウム・ナトリウム-炭酸水素塩・硫酸塩・塩化物泉」。神経痛、筋肉痛、関節痛、慢性消化器、痔疾、冷え性、疲労回復、きりきず、やけど、慢性婦人病などに効能があるとされる。炭酸カルシウムやメタケイ酸が多く含まれているため、入浴後の肌はすべすべになる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="rusutsuonsen_rusutsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="rusutsuonsen_rusutsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.rusutsuonsen_rusutsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2066_0001.jpg"/></a><p class="feature">ルスツ温泉（るすつ）<br>類似度:1.493</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="marukomaonsen_marukoma_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="marukomaonsen_marukoma_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.marukomaonsen_marukoma_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0681_0001.jpg"/></a><p class="feature">丸駒温泉（まるこま）<br>類似度:1.488</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tsutsujinoyu_tsutsujinoyu_gunma">{% csrf_token %}<input name="id2" type="hidden" value="tsutsujinoyu_tsutsujinoyu_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.tsutsujinoyu_tsutsujinoyu_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2076_0001.jpg"/></a><p class="feature">つつじの湯（つつじのゆ）<br>類似度:1.478</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yakumoonsen_1_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="yakumoonsen_1_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.yakumoonsen_1_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2050_0001.jpg"/></a><p class="feature">八雲温泉（北海道）（やくも）<br>類似度:1.463</br></p></div></form>
+{% endblock content %}

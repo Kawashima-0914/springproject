@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">宮津温泉（みやづ）</h2><h3 class="icon"> 所在地：京都府</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0829_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">京都府宮津市は日本三景の天橋立を擁する市で、京都市を除く観光都市としては府内随一。年間100万人以上の観光客が訪れている。宮津市内にはいくつかの温泉があるが、宮津温泉は比較的古く昭和35年頃からあったという。 いつしか湯脈が切れて一時消滅したが、街が一丸となって復興に乗り出し、平成13年には24年ぶりに名称も新たに開湯した。現在は7軒の宿泊施設が温泉を引いており、天橋立の松並木と宮津湾を望める露天風呂が自慢の宿もある。 また中心街には江戸時代の商家や国登録有形文化財の宿など昔ながらの町並みが残されている。
+
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1128_0001.jpg"/></a><p class="feature">天橋立・宮津温泉ピント湯（あまのはしだて・みやづぴんとゆ）<br>類似度:1.594</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ayabefukuchiyamaonsen_ayabefukuchiyama_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="ayabefukuchiyamaonsen_ayabefukuchiyama_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.ayabefukuchiyamaonsen_ayabefukuchiyama_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1713_0001.jpg"/></a><p class="feature">綾部・福知山温泉（あやべふくちやま）<br>類似度:1.594</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="miyazuhagoromoonsen_1_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="miyazuhagoromoonsen_1_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.miyazuhagoromoonsen_1_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2109_0001.jpg"/></a><p class="feature">宮津羽衣温泉（宮津の湯らゆら）（みやづはごろも）<br>類似度:1.592</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hagionsensato_hagi_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="hagionsensato_hagi_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.hagionsensato_hagi_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0925_0001.jpg"/></a><p class="feature">萩温泉郷（はぎ）<br>類似度:1.591</br></p></div></form>
+{% endblock content %}

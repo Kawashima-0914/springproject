@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">水分温泉（みずわき）</h2><h3 class="icon"> 所在地：大分県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2120_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、硫黄泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、関節痛
+</td></tr></table></div><div class="con1"><p class="feature">大分県南西部にある水分（みずわき）峠に近い温泉地。湯布院温泉で知られる由布市との町境に近い国道沿いにあり、後続道路からのアクセスも良い。自然に包まれた温泉地には、日帰り温泉施設や民宿、食事処などがある。水分温泉は九重町内にある筋湯温泉や宝泉寺温泉、壁湯温泉などからなる温泉郷「九重”夢”温泉郷」のひとつで、それぞれ違う泉質のお湯を楽しむことができる。付近にはペットの宿泊が可能な宿泊施設もあり、ペット連れの観光客にも人気がある。食事処では大分のブランド牛である「豊後牛」や大分のご当地グルメである「だんご汁」などを堪能することができる。
+無色透明の単純硫黄泉で、源泉の温度が99度と高温であることも特徴だ。神経痛やリウマチ、冷え性などにも効能があるとされている。周囲を豊かな自然に囲まれた温泉地なので、ゆっくりと温泉に浸かりながら過ごせば日頃の疲れを癒やすこともできるだろう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.821</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kokonoeonsensato_kujuu_ooita">{% csrf_token %}<input name="id2" type="hidden" value="kokonoeonsensato_kujuu_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.kokonoeonsensato_kujuu_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0197_0001.jpg"/></a><p class="feature">九重温泉郷（くじゅう）<br>類似度:2.738</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="myoukouonsen_myoukou_niigata">{% csrf_token %}<input name="id2" type="hidden" value="myoukouonsen_myoukou_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.myoukouonsen_myoukou_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1098_0001.jpg"/></a><p class="feature">妙高温泉（みょうこう）<br>類似度:2.737</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinomataonsen_ichinomata_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="ichinomataonsen_ichinomata_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.ichinomataonsen_ichinomata_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1123_0001.jpg"/></a><p class="feature">一の俣温泉（いちのまた）<br>類似度:2.725</br></p></div></form>
+{% endblock content %}

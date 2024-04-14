@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">城ケ崎温泉（じょうがさき）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0799_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>美肌、神経痛、筋肉痛、関節痛、冷え性
+</td></tr></table></div><div class="con1"><p class="feature">伊豆急行線、伊豆高原駅から歩いてほど近い場所に広がる温泉地。近くには伊豆テディベア・ミュージアムやギャラリーぶなの木、おもしろ博物館、創作人形館ミワドールなど多くの施設があり、伊豆の豊かな芸術文化に触れることができる。特にテディベアミュージアムは外装がかわいらしく、まるで異世界に迷い込んだかのような幻想的な世界観である。世界各国のテディベアが展示されており、お土産にかわいらしい "家族" を増やして帰るのも楽しいだろう。また、駅近くには多数の桜の木が植栽される伊豆高原桜並木通りは桜の名所として知られ、開花時期にはイベントも開催される。
+泉質はナトリウム - カルシウム - 塩化物・硫酸塩泉。適応症は、筋肉痛、関節痛、五十肩、関節のこわばりなど。肌に潤いをもたらすアンチエイジング効果や、塩分の保温作用による冷え症の改善なども期待できる。女性に嬉しい美肌温泉だ。伊豆高原の自然とともに、温泉をゆったりと楽しめそうだ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="hakubaryuujinonsen_hakubaryuujin_nagano">{% csrf_token %}<input name="id2" type="hidden" value="hakubaryuujinonsen_hakubaryuujin_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.hakubaryuujinonsen_hakubaryuujin_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1820_0001.jpg"/></a><p class="feature">白馬龍神温泉（はくばりゅうじん）<br>類似度:2.572</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="oogoonsen_daigo_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="oogoonsen_daigo_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.oogoonsen_daigo_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0261_0001.jpg"/></a><p class="feature">大子温泉（だいご）<br>類似度:2.543</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yaharaonsen_yawara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="yaharaonsen_yawara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.yaharaonsen_yawara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1900_0001.jpg"/></a><p class="feature">矢原温泉（やわら）<br>類似度:2.461</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hakonesengokuharatawaraishionsen_hakonesengokuharahyouseki_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="hakonesengokuharatawaraishionsen_hakonesengokuharahyouseki_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.hakonesengokuharatawaraishionsen_hakonesengokuharahyouseki_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0917_0001.jpg"/></a><p class="feature">箱根仙石原俵石温泉（はこねせんごくはらひょうせき）<br>類似度:2.452</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">天橋立温泉（あまのはしだて）</h2><h3 class="icon"> 所在地：京都府</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0855_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、含鉄泉、ラジウム泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、関節痛、疲労、婦人病、冷え性、高血圧、動脈硬化、皮膚病、痔疾など
+</td></tr></table></div><div class="con1"><p class="feature">みちのく松島、安芸の宮島とともに日本三景のひとつに数えられる天下の奇観、天橋立。海の流れで運ばれた砂が堆積し、宮津湾をほぼふさぐほど長く伸びた白砂の架け橋の南の端に、新しく開かれた温泉地が広がる。 いにしえより歌枕にもされた絶景は、深くえぐれた宮津湾の地形のために東西南北どの方角からも絶好のビューポイントがあり、「斜め一文字」や「飛龍観」などそれぞれ趣きある姿を見せる。 また、入り江に面した宮津は細川家、京極家らが治め、今もなお、かつての城下町の風情を残した街並みを見ることができる。中でも重要文化財旧三上家住宅は有名。
+全国随一の景勝地「天橋立」のある宮津湾のほとりにある温泉。しっとりとした泉質は、お肌に優しく、美容にも良いといわれ、別名「美人の湯」として知られる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.818</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="arimaonsen_arima_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="arimaonsen_arima_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.arimaonsen_arima_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0016_0001.jpg"/></a><p class="feature">有馬温泉（ありま）<br>類似度:2.618</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="esanonsensato_esan_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="esanonsensato_esan_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.esanonsensato_esan_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">恵山温泉郷（えさん）<br>類似度:2.347</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tsuchiyuonsen_tsuchiyu_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="tsuchiyuonsen_tsuchiyu_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.tsuchiyuonsen_tsuchiyu_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0092_0001.jpg"/></a><p class="feature">土湯温泉（つちゆ）<br>類似度:2.259</br></p></div></form>
+{% endblock content %}

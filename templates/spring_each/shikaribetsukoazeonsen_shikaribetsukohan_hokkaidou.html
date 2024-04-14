@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">然別湖畔温泉（しかりべつこはん）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0659_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>にごり、にごり（褐色）、神経痛、筋肉痛、関節痛、疲労、婦人病、冷え性、打撲、痔疾など
+</td></tr></table></div><div class="con1"><p class="feature">北海道十勝・大雪山国立公園「然別湖」の湖畔に建つ1軒のホテルに注がれる温泉。法律によって開発が制限されている周辺は手つかずのままの自然が保たれており、ホテルの営業を認められているのも1軒のみ。 陽光にきらめく湖水、ウサギの甲高い鳴き声、木をつつくクマゲラのリズミカルな音など、大自然の色と音に包まれた空間が出迎えてくれる。四季折々の表情を見せる然別湖の夏は、波のない夜の星を見られた人はいいことがあるという。 また冬には、標高が高いため早くから湖面が全面結氷し、すべてが雪と氷で作られた「しかりべつ湖コタン」が出現する。
+火山活動で出来たといわれる然別湖の西岸に湧く温泉。源泉を3本持ち、温度は70℃前後の高温泉。十分な湯量を誇り、1軒のホテルに引かれる。名物は、長く厳しい冬の氷結期間を利用した「氷上露天風呂」。然別湖上に雪と氷でできた村が造られ「然別湖コタン」の一番の目玉として人気を集める。湖面上にしつらえられた露天風呂には源泉がかけ流され、ちょっと寒いのを我慢して湯浴みすれば、たちまち体の芯から温まる。眼前には白雲山、天望山の雪化粧した美しい山影。ここでしか味わえない究極の露天風呂だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="chuuzenjionsen_chuuzenji_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="chuuzenjionsen_chuuzenji_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.chuuzenjionsen_chuuzenji_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0091_0001.jpg"/></a><p class="feature">中禅寺温泉（ちゅうぜんじ）<br>類似度:2.391</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.390</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenkeseonsen_amagase_ooita">{% csrf_token %}<input name="id2" type="hidden" value="tenkeseonsen_amagase_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.tenkeseonsen_amagase_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0010_0001.jpg"/></a><p class="feature">天ヶ瀬温泉（あまがせ）<br>類似度:2.377</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kurohimeonsen_kurohime_nagano">{% csrf_token %}<input name="id2" type="hidden" value="kurohimeonsen_kurohime_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.kurohimeonsen_kurohime_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1519_0001.jpg"/></a><p class="feature">黒姫温泉（くろひめ）<br>類似度:2.356</br></p></div></form>
+{% endblock content %}

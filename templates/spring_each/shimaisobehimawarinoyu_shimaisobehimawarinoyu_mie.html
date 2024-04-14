@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">志摩磯部ひまわりの湯（しまいそべひまわりのゆ）</h2><h3 class="icon"> 所在地：三重県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1509_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">昭和21年に戦後初の国立公園として指定を受けた「伊勢志摩国立公園」。風光明媚な志摩半島のほぼ中央に位置する磯部町は、海と山の自然を存分に満喫できるスポットだ。主な産業である水産業の要は三重が誇るブラン ド牡蠣「的矢かき」の生産。 町の東側には一見すると湖のようであり、波静かな入り江である伊雑ノ浦があり的矢湾へと続く。また、青海苔（あおさ）や磯部みかん、志摩いちごの産地として有名。当温泉地はスペインをテ ーマにした志摩スペイン村が開業した7年後に完成。 目の前に広がる伊雑ノ浦を見下ろす露天風呂は、自然の懐に抱かれたような緑豊かな絶景のロケーションが楽しめる。夕暮れ時には、彼方に沈む夕陽を望め、贅沢なひとときを満喫できる。
+1分間に160Lの湧出量がある地下約1800mから湧き出す温泉を41.8℃に加温し、pH値は8.6。さらっとした湯は肌に優しくすべすべ、しっとりとした湯上り。泉質はアルカリ性単純温泉で、健康増進をはじめ冷え症や神経痛などに効能があるといわれる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="okudairaonsen_okudaira_gunma">{% csrf_token %}<input name="id2" type="hidden" value="okudairaonsen_okudaira_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.okudairaonsen_okudaira_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2063_0001.jpg"/></a><p class="feature">奥平温泉（おくだいら）<br>類似度:2.282</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuchikeikokuonsen_kikuchikeikoku_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuchikeikokuonsen_kikuchikeikoku_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuchikeikokuonsen_kikuchikeikoku_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1132_0001.jpg"/></a><p class="feature">菊池渓谷温泉（きくちけいこく）<br>類似度:2.253</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tamagenryuukosugenoyu_tamagenryuukosugenoyu_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="tamagenryuukosugenoyu_tamagenryuukosugenoyu_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.tamagenryuukosugenoyu_tamagenryuukosugenoyu_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2366_0001.jpg"/></a><p class="feature">多摩源流小菅の湯（たまげんりゅうこすげのゆ）<br>類似度:2.242</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenmokuyamaonsen_tenmokuzan_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="tenmokuyamaonsen_tenmokuzan_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.tenmokuyamaonsen_tenmokuzan_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2055_0001.jpg"/></a><p class="feature">天目山温泉（てんもくざん）<br>類似度:2.222</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">松の湯温泉（まつのゆ）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2083_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">吾妻川の支流である雁ヶ沢沿いにある温泉地に、一軒宿「松の湯温泉松渓館」がある。周囲は素朴な自然に囲まれており、静養地としても最適。車で5分程度の場所には、上毛かるたで「耶馬渓しのぐ吾妻峡」と詠まれた美しい渓谷「吾妻峡」がある。ハイキング客も多く、大自然を満喫するのに外せないスポットとなっている。また、2014年にオープンした「道の駅吾妻峡」では、特産品のこんにゃくやみょうが、なす、トマトなどが販売されており、蕎麦やこんにゃくを使った料理などを堪能できる。大きな商業施設はないが、素朴で穏やかな温泉地で、硫黄の香る山中のぬる湯でほっとする風景を眺めよう。
+無力透明で、卵に似た硫黄の香りが強い硫酸塩泉。入った瞬間に体に細かい気泡がつくのが大きな特徴だ。きりきず、やけど、慢性皮膚病、動脈硬化症などに効能がある32度のぬる湯なので、時間をかけてゆっくりと温まろう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="hatonoyuonizumi_hatonoyu_gunma">{% csrf_token %}<input name="id2" type="hidden" value="hatonoyuonizumi_hatonoyu_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.hatonoyuonizumi_hatonoyu_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2080_0001.jpg"/></a><p class="feature">鳩の湯温泉（はとのゆ）<br>類似度:1.727</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shintainaionsen_shintainai_niigata">{% csrf_token %}<input name="id2" type="hidden" value="shintainaionsen_shintainai_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.shintainaionsen_shintainai_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2231_0001.jpg"/></a><p class="feature">新胎内温泉（しんたいない）<br>類似度:1.700</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekowaisukougenonsen_nisekowaisukougen_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1877_0001.jpg"/></a><p class="feature">ニセコワイス高原温泉（にせこわいすこうげん）<br>類似度:1.628</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kumihamakaminoonsen_kanno_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kumihamakaminoonsen_kanno_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kumihamakaminoonsen_kanno_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1180_0001.jpg"/></a><p class="feature">久美浜神の温泉（かんの）<br>類似度:1.620</br></p></div></form>
+{% endblock content %}

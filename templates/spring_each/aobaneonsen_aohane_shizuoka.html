@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">青羽根温泉（あおはね）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1151_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>神経痛、関節痛、冷え性、痔疾
+</td></tr></table></div><div class="con1"><p class="feature">”湯の国”と呼ばれる天城湯ケ島にある、全く異なる源泉から生まれる7つの温泉「天城七湯」のうちの1つ。「青羽根」という名前の由来はその昔、この地で青みがかった埴輪が出土したため、それを祀って神社を建てられたことがはじまりだという。神社の名前は地名にもなり、青埴が変化して青羽根になったのだとか。しっとりとしたお湯が特徴で「美人の湯」とも呼ばれている。伊豆半島の真ん中に位置しており、マイカーでのアクセスも良好。きらびやかな温泉地とは言えないが、こじんまりとした温かい佇まいがどこか懐かしい。
+泉質は、肌に潤いを与えてくれるナトリウム硫酸塩泉と、肌の角質を落としてくれるアルカリ性単純温泉。２種類の泉質はどちらも美肌効果が望める。肌になじむしっとりとしたお湯が特徴的で、「美人の湯」とも呼ばれている。天城湯ヶ島きっての美人の湯に浸かれば湯けむり美人になれるかもしれない。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="hirayamaonsen_hirayama_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="hirayamaonsen_hirayama_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.hirayamaonsen_hirayama_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1035_0001.jpg"/></a><p class="feature">平山温泉（ひらやま）<br>類似度:2.692</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nakayamaheionizumi_nakayamadaira_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="nakayamaheionizumi_nakayamadaira_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.nakayamaheionizumi_nakayamadaira_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0946_0001.jpg"/></a><p class="feature">中山平温泉（なかやまだいら）<br>類似度:2.493</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ninoheionizumi_ninotaira_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="ninoheionizumi_ninotaira_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.ninoheionizumi_ninotaira_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0355_0001.jpg"/></a><p class="feature">二ノ平温泉（にのたいら）<br>類似度:2.462</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tetsurinonsen_1_ooita">{% csrf_token %}<input name="id2" type="hidden" value="tetsurinonsen_1_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.tetsurinonsen_1_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0299_0001.jpg"/></a><p class="feature">鉄輪温泉（別府温泉郷）（かんなわ（べっぷ））<br>類似度:2.420</br></p></div></form>
+{% endblock content %}

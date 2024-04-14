@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">蛸川温泉（たこがわ）</h2><h3 class="icon"> 所在地：神奈川県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0819_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、関節痛
+</td></tr></table></div><div class="con1"><p class="feature">「江戸の奥座敷」と呼ばれ、昔から日本人の憧れの保養地として発展してきた箱根。色褪せない四季の彩りや観光施設の充実ぶりから、長年幅広い層に不動の人気を誇ってきた。 また、芦ノ湖と駒ケ岳に挟まれた総合レジャースポット「箱根園」を中心に、景観自慢の湯があり、「箱根園水族館」や「富士芦ノ湖パノラマパーク」、ロープウェー、子供から大人まで楽しめる一大温泉リゾート地だ。 湖畔沿いに伸びる遊歩道からは芦ノ湖と、その背後に霊峰富士を望み、ウォーキングはもちろん、箱根の爽やかな風を感じながらのサイクリングも心地良い。都心から約2時間の箱根・蛸川には、アクティブ派ものんびり派も満足の、魅力的な休日が待っている。
+温泉地としての始まりは平成5年、箱根十七湯の中で最も新しい温泉。昭和62年に駒ケ岳ロープウェーの北側から噴出し、現在2つの源泉から毎分約128Lの天然温泉が湧出している。当初は芦ノ湖温泉とともに「元箱根温泉」として親しまれていたが、後に「蛸川温泉」として独立。約5軒の温泉施設から形成され、いずれも芦ノ湖畔の眺めが堪能できる好ロケーションの温泉として人気が高い。眺望の良い露天風呂に浸かれば、芦ノ湖の水面と一体になったような開放的な気分も楽しめる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="sengokuharaubakoonsen_sengokuharaubako_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="sengokuharaubakoonsen_sengokuharaubako_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.sengokuharaubakoonsen_sengokuharaubako_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0344_0001.jpg"/></a><p class="feature">仙石原姥子温泉（せんごくはらうばこ）<br>類似度:2.687</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hakonesengokuharaonsen_hakonesengokubara_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="hakonesengokuharaonsen_hakonesengokubara_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.hakonesengokuharaonsen_hakonesengokubara_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0112_0001.jpg"/></a><p class="feature">箱根仙石原温泉（はこねせんごくばら）<br>類似度:2.624</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hoshikawaonsen_hoshikawa_nagano">{% csrf_token %}<input name="id2" type="hidden" value="hoshikawaonsen_hoshikawa_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.hoshikawaonsen_hoshikawa_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1952_0001.jpg"/></a><p class="feature">星川温泉（ほしかわ）<br>類似度:2.621</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shibaishionsen_shibaseki_ooita">{% csrf_token %}<input name="id2" type="hidden" value="shibaishionsen_shibaseki_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.shibaishionsen_shibaseki_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1967_0001.jpg"/></a><p class="feature">柴石温泉（しばせき）<br>類似度:2.587</br></p></div></form>
+{% endblock content %}

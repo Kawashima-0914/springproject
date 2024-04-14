@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">尾之間温泉（おのあいだ）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0326_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、硫黄泉
+</td></tr><tr><th>効能</th><td>神経痛、リウマチ、疲労、婦人病、冷え性、美肌
+</td></tr></table></div><div class="con1"><p class="feature">世界遺産の島である屋久島の本富岳南西側山麓に位置する集落の中の温泉地、尾之間温泉。数百年前に、地元の猟師に鉄砲で撃たれた大鹿が傷を癒やした地という言い伝えがある。集落の住民によって作られた温泉地でもあり、住民の中には自宅の風呂を使わず、毎日のように尾之間温泉に訪れる人も多い。奥岳への登山道が近くにあり、足湯も用意されているため、登山の疲れを癒やしに訪れる観光客も多い。温泉の周辺で野生の動物に遭遇することも珍しくない、屋久島の大自然に日がな一日触れて、集落の人が築いたお湯の熱さを感じれば、心の癒しになるだろう。
+ほのかに硫黄臭が感じられる単純硫黄泉で、リウマチや神経痛、筋肉痛や皮膚病などに効果があるとされている。源泉が49度と高めで、かけ流しのお湯は少々熱いので、しっかりとかけ湯をして体を慣らしてからゆっくりと浸かると良いだろう。優しい肌触りのお湯は、季節によって変動はあるものの浴槽からあふれるほどに湧き出す豊かな湯量を保っている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.578</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hirayamaonsen_hirayama_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="hirayamaonsen_hirayama_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.hirayamaonsen_hirayama_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1035_0001.jpg"/></a><p class="feature">平山温泉（ひらやま）<br>類似度:2.530</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yuyukigenonizumi_yunomoto_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="yuyukigenonizumi_yunomoto_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.yuyukigenonizumi_yunomoto_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0339_0001.jpg"/></a><p class="feature">湯之元温泉（ゆのもと）<br>類似度:2.472</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="haratsuruonsen_harazuru_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="haratsuruonsen_harazuru_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.haratsuruonsen_harazuru_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0628_0001.jpg"/></a><p class="feature">原鶴温泉（はらづる）<br>類似度:2.464</br></p></div></form>
+{% endblock content %}

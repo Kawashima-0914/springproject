@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">泉ヶ岳温泉（いずみがたけ）</h2><h3 class="icon"> 所在地：宮城県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1639_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">仙台市泉区の北西部に位置する泉ヶ岳は標高約1175mの山。ニリンソウやミズバショウなどの高山植物、ニホンカモシカやニホンヤマネなど野生動物、色鮮やかな野鳥や昆虫など、手つかずの大自然が残っており、市街 地からも近いため日帰り登山やハイキングの場として人気だ。 泉ヶ岳温泉は、そんなロケーションに湧く天然温泉で、平成元年にボーリング調査をしたことから温泉が湧出したという比較的新しい温泉地。東北でも貴重な天 然温泉を季節ごとに色鮮やかな姿を見せてくれる山々を眺めながら堪能できる。 日帰り入浴も可能なので、ツーリングやサイクリングの帰りに軽く汗を流していく客も多い。たっぷりのお湯で身体を癒したら澄んだ空気を胸いっぱいに吸い込んで、身体の中からリフレッシュしたい。
+無色透明、無臭、塩気と苦味がある。等張性なのでナトリウム・カルシウムなどの温泉成分を身体に無理なく吸収できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:2.178</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="inokashiraonsen_igashira_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="inokashiraonsen_igashira_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.inokashiraonsen_igashira_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1448_0001.jpg"/></a><p class="feature">井頭温泉（いがしら）<br>類似度:2.135</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:2.131</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kesennumaonsen_kesennuma_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="kesennumaonsen_kesennuma_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.kesennumaonsen_kesennuma_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1225_0001.jpg"/></a><p class="feature">気仙沼温泉（けせんぬま）<br>類似度:2.109</br></p></div></form>
+{% endblock content %}

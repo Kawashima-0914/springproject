@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">たまの温泉（たまの）</h2><h3 class="icon"> 所在地：岡山県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1483_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">大小あわせて3000もの島が浮かぶ瀬戸内海は古くから海運の要所であるばかりではなく、豊かな生態系を持ち、天然記念物に指定されている魚類が多く生息している。 1934年に雲仙、霧島とともに日本初の国立公園「瀬戸内海国立公園」となった、陸域・海域を含めると日本一広大な国立公園である。「日本の渚100選」、「快水浴場100選」にも選ばれた渋川海岸からは白砂青松の海岸線の向う側に陽が沈み、島と海が描く美しい 水墨画のような情景を望むことができる。 そんな温暖な瀬戸内の浜辺に湧く天然泉が「たまの温泉」である。瀬戸内の多島美のロケーションと温泉のコラボレーション。浜辺に湧く出で湯を楽しんだ後は、瀬戸内の豊かな自然が育んだ恵みを存分に味わいたい。
+無色澄明・無臭・塩味、pH値は7.2。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="amakusayanagiminatoonsen_amakusayanagikou_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="amakusayanagiminatoonsen_amakusayanagikou_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.amakusayanagiminatoonsen_amakusayanagikou_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1287_0001.jpg"/></a><p class="feature">天草柳港温泉（あまくさやなぎこう）<br>類似度:2.390</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="matsudaishibatougeonsen_matsudaishibatouge_niigata">{% csrf_token %}<input name="id2" type="hidden" value="matsudaishibatougeonsen_matsudaishibatouge_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.matsudaishibatougeonsen_matsudaishibatouge_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0944_0001.jpg"/></a><p class="feature">まつだい芝峠温泉（まつだいしばとうげ）<br>類似度:2.314</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="uharaonsen_ubara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="uharaonsen_ubara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.uharaonsen_ubara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0195_0001.jpg"/></a><p class="feature">鵜原温泉（うばら）<br>類似度:2.309</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yumuraonsen_yumura_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="yumuraonsen_yumura_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.yumuraonsen_yumura_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0738_0001.jpg"/></a><p class="feature">湯村温泉（ゆむら）<br>類似度:2.251</br></p></div></form>
+{% endblock content %}

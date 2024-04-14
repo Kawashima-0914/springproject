@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">嬬恋バラギ温泉（つまごいばらぎ）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1349_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">標高700m～1400m、冷涼で爽やかな高原地帯に位置する嬬恋村。「日本百名山」の浅間山、四阿山、草津白根山を望むバラギ湖があり、嬬恋バラギ温泉はその湖畔にある温泉地だ。森に囲まれ、鳥のさえずりに耳を傾けながらの入浴は、体の内側まで洗い流してくれるよう。周囲には「無印良品カンパーニャ嬬恋キャンプ場」があり、釣り体験やカヤック、さらにバードウォッチングといったアウトドア教室が充実。バラギ湖はフライ・ルアー、ボート釣りなどができる釣り好きにはたまらないスポット。冬には氷上でのワカサギ釣りも楽しめる。
+アルカリ性単純温泉の泉質を持つ嬬恋バラギ温泉は、無色透明、無味無臭の湯が特徴で、湯のあたりが柔らかい。神経痛、関節痛、慢性消化器病などにも効果的とされている。疲労回復にも効果が期待できるため、周囲のスキー場などで1日遊んで疲れた体を癒やすのにも最適。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="bimataonsen_mimata_shimane">{% csrf_token %}<input name="id2" type="hidden" value="bimataonsen_mimata_shimane"/><div class="con2"><a href="../spring_each/" onclick="document.bimataonsen_mimata_shimane.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1205_0001.jpg"/></a><p class="feature">美又温泉（みまた）<br>類似度:1.886</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="minamiasotawarayamaonsen_1_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="minamiasotawarayamaonsen_1_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.minamiasotawarayamaonsen_1_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1560_0001.jpg"/></a><p class="feature">南阿蘇俵山温泉（阿蘇温泉郷）（みなみあそたわらやま（あそ））<br>類似度:1.838</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tachibananosatouenoonsen_tachibananosatoueno_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tachibananosatouenoonsen_tachibananosatoueno_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tachibananosatouenoonsen_tachibananosatoueno_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1009_0001.jpg"/></a><p class="feature">橘の郷上野温泉（たちばなのさとうえの）<br>類似度:1.833</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kawabaonsen_kawaba_gunma">{% csrf_token %}<input name="id2" type="hidden" value="kawabaonsen_kawaba_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.kawabaonsen_kawaba_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1348_0001.jpg"/></a><p class="feature">川場温泉（かわば）<br>類似度:1.816</br></p></div></form>
+{% endblock content %}

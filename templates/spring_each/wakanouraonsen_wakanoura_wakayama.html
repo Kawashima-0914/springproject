@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">和歌の浦温泉（わかのうら）</h2><h3 class="icon"> 所在地：和歌山県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0070_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">「和歌の浦」は万葉の歌人・山部赤人が、聖武天皇の玉津島行幸に供奉した折、玉津島の景観を讃歎して詠んだ長歌の友歌の第二首目に「わかの浦に潮満ち来れば潟をなみ葦辺をさして鶴鳴き渡る」とうたったのに始まり、ついに「和歌の浦」と称された。 また、古代国家の最盛期である奈良時代に、聖武天皇と称徳天皇がそろって即位の直後に和歌の浦を訪れている重要な地である。 湾近くにある片男波公園には、和歌の浦ゆかりの歌碑が並んだ「万葉の小路」が約280mにわたって続き、歴史の香りを感じさせる。潮干狩りや海水浴も楽しめる、長い時を経てなお美しい自然の宝庫だ。
+和歌山市郊外の風光明媚な景勝地に湧く温泉。万葉の古人も愛した和歌の浦湾の海岸線や、湾を一望できる高台に数軒の温泉宿が建ち並び、絶景を望みながらの湯浴みを楽しめる。源泉から湧きだす無色透明の湯は肌に柔らかく、神経痛、冷え性、火傷など様々な疾病に効果があるとされる。立ち寄り入浴可能な宿も多いので、海水浴や潮干狩りを楽しんだ後に訪れるのもよし。のんびりと湯に浸かり、静かに目を閉じれば、潮騒の音が耳に優しく響いてくる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.312</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1251_0001.jpg"/></a><p class="feature">紀州みなべ千里浜温泉（きしゅうみなべせんりはま）<br>類似度:2.302</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kinkesakionsen_kanagasaki_akita">{% csrf_token %}<input name="id2" type="hidden" value="kinkesakionsen_kanagasaki_akita"/><div class="con2"><a href="../spring_each/" onclick="document.kinkesakionsen_kanagasaki_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1283_0001.jpg"/></a><p class="feature">金ヶ崎温泉（かながさき）<br>類似度:2.286</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="iseshimasatoshishimaonsen_iseshimakashikojima_mie">{% csrf_token %}<input name="id2" type="hidden" value="iseshimasatoshishimaonsen_iseshimakashikojima_mie"/><div class="con2"><a href="../spring_each/" onclick="document.iseshimasatoshishimaonsen_iseshimakashikojima_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1238_0001.jpg"/></a><p class="feature">伊勢志摩賢島温泉（いせしまかしこじま）<br>類似度:2.283</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">薬王寺温泉（やくおうじ）</h2><h3 class="icon"> 所在地：福岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0488_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、ラジウム泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、胃腸病、美肌
+</td></tr></table></div><div class="con1"><p class="feature">「薬王寺温泉」という名前は、薬師如来の伝説にちなんでいる。清和天皇の子孫、京王と鬼王を連れた侍が都を追われてこの地に住むようになったが、侍はある日病に伏してしまう。夢に薬師如来が出てきて、薬湯を流したと告げた。侍は出家して各地を修業したのち、戻って薬王寺を建立した、というものだ。現在は2軒の温泉旅館と、1軒の温浴施設がある小さな温泉地。しかし、温泉ファンも多く訪れる知る人ぞ知る温泉でもある。薬王寺温泉の位置する古賀市は、福岡市からのアクセスに恵まれている。古賀海岸は玄界灘を一望する美しい白砂青松の砂浜で知られており、山の中の温泉だけでなく海の景色でも癒されるだろう。
+大正時代に、信心深い神学者が薬師如来の神託を受けたことで掘削がはじまり、1920年に放射能を含む温泉が湧き出した。微量の放射能が持つ健康効果を求めて、戦前は満洲からも湯治客が訪れたという。現在は、放射能泉とpH9.6のアルカリ性単純温泉の2つの源泉があり、2軒の旅館で異なる源泉を用いている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kawakamikyouonsen_kawakamikyou_saga">{% csrf_token %}<input name="id2" type="hidden" value="kawakamikyouonsen_kawakamikyou_saga"/><div class="con2"><a href="../spring_each/" onclick="document.kawakamikyouonsen_kawakamikyou_saga.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0433_0001.jpg"/></a><p class="feature">川上峡温泉（かわかみきょう）<br>類似度:2.405</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tamanaonsen_tamana_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="tamanaonsen_tamana_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.tamanaonsen_tamana_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0380_0001.jpg"/></a><p class="feature">玉名温泉（たまな）<br>類似度:2.387</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.341</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yumenonsen_yumen_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="yumenonsen_yumen_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.yumenonsen_yumen_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0727_0001.jpg"/></a><p class="feature">湯免温泉（ゆめん）<br>類似度:2.338</br></p></div></form>
+{% endblock content %}

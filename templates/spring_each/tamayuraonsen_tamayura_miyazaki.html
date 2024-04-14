@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">たまゆら温泉（たまゆら）</h2><h3 class="icon"> 所在地：宮崎県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1071_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">宮崎市の中心部を流れる大淀川、その河畔の橘公園沿いに湧出している温泉地。温泉地名となっている「たまゆら（玉響）」とは、古代のアクセサリー勾玉（まがたま）が互いに触れ合ってかすかに音を立てる響きのことで 、“しばしの時間”や“ほのかな風情”を表す言葉。 ノーベル賞作家の川端康成がその美しい情景に惚れ込み、小説『たまゆら』の舞台として書き下ろしたことでも有名。市の中心地に位置する温泉街は、公園や繁華街・海岸線に近く、観光の拠点として便利な場所で、県内で一番多い観光客が訪れる。 市内のイベントも盛んで、温泉街では例年3月に、複数のホテルが神楽宿になる「かぐらまつり」を開催。県内各地の迫力ある神楽を間近で鑑賞することができ、人気を集めている。
+大淀川の河畔に立ち並ぶホテルが共同で掘削。温泉街の中心に湧出した天然温泉。泉温約45.6℃、肌触りの良い弱アルカリ性ナトリウム塩化物泉の湯は、筋肉痛や五十肩、関節痛をはじめ、美肌効果のある美人湯として人気。引湯する3軒のホテルで楽しめるほか、温泉街には「足湯」もあり、街を散策する観光客の憩いのスポットとして親しまれている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="minamidaonsen_minamida_aomori">{% csrf_token %}<input name="id2" type="hidden" value="minamidaonsen_minamida_aomori"/><div class="con2"><a href="../spring_each/" onclick="document.minamidaonsen_minamida_aomori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0785_0001.jpg"/></a><p class="feature">南田温泉（みなみだ）<br>類似度:2.072</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gojouribaasaidoonsen_gojouribaasaido_nara">{% csrf_token %}<input name="id2" type="hidden" value="gojouribaasaidoonsen_gojouribaasaido_nara"/><div class="con2"><a href="../spring_each/" onclick="document.gojouribaasaidoonsen_gojouribaasaido_nara.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1207_0001.jpg"/></a><p class="feature">五條リバーサイド温泉（ごじょうりばーさいど）<br>類似度:2.063</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hamasakaonsensato_hamasaka_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="hamasakaonsensato_hamasaka_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.hamasakaonsensato_hamasaka_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1023_0001.jpg"/></a><p class="feature">浜坂温泉郷（はまさか）<br>類似度:2.047</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.034</br></p></div></form>
+{% endblock content %}

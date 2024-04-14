@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯の峰温泉（ゆのみね）</h2><h3 class="icon"> 所在地：和歌山県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0745_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">四村川の支流・湯の谷川沿いに宿が並ぶ閑静な温泉街。街の中心に位置する湯元橋のたもとには源泉の湯筒があり、ほのかに硫黄の香り漂う湯煙が上がっている。湯温およそ92℃の湯筒は地元の人が野菜などを茹でるのに利用しており、観光客も温泉卵などを作ることができる。湯筒の側にあるのは一般湯、くすり湯などからなる「湯の峰温泉公衆浴場」。 くすり湯は高温の源泉に水を加えることなく自然に冷ましたもので、まさに手つかずの湯を楽しめる。浴場の隣にある「東光寺」には湯の花が化石となってできたと伝えられる本尊の薬師如来が安置されている。 高さ約3ｍの薬師如来の胸のあたりから湯が湧きだしていたことから、「湯胸薬師（ゆのむねやくし）」と呼ばれ、その名が当地「湯の峰」の由来になったとか。熊野参詣の際に身を清める湯垢離場（ゆごりば）として古くから多くの人に愛されてきた温泉。その思いは今なお脈々と受け継がれている。
+約1800年前、第13代成務天皇の御代に発見されたと伝えられる日本最古の温泉。熊野参詣に訪れた人々が湯垢離場として利用してきた聖なる湯であり、昭和32年には関西で初めて国民保養温泉に、平成16年には世界遺産に登録された。約92℃という高温の源泉は湯筒と呼ばれ、近くに建つ小さな小屋には岩風呂「つぼ湯」がある。このつぼ湯は1日に7回も湯の色が変わるといわれ、小栗判官が蘇生した湯とも語り継がれる古湯だ。熊野参詣の折に湯の峰に立ち寄った中世の貴族たちも、湯の素晴らしさを日記に書き記しているとか。時代を超えて人々を
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="besshoonsen_bessho_nagano">{% csrf_token %}<input name="id2" type="hidden" value="besshoonsen_bessho_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.besshoonsen_bessho_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0555_0001.jpg"/></a><p class="feature">別所温泉（べっしょ）<br>類似度:1.938</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="zaouonsen_zaou_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="zaouonsen_zaou_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.zaouonsen_zaou_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0057_0001.jpg"/></a><p class="feature">蔵王温泉（ざおう）<br>類似度:1.897</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="myoukoukougentsubameonsen_myoukoukougentsubame_niigata">{% csrf_token %}<input name="id2" type="hidden" value="myoukoukougentsubameonsen_myoukoukougentsubame_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.myoukoukougentsubameonsen_myoukoukougentsubame_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0139_0001.jpg"/></a><p class="feature">妙高高原燕温泉（みょうこうこうげんつばめ）<br>類似度:1.895</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shionoeonsen_shionoe_kagawa">{% csrf_token %}<input name="id2" type="hidden" value="shionoeonsen_shionoe_kagawa"/><div class="con2"><a href="../spring_each/" onclick="document.shionoeonsen_shionoe_kagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0319_0001.jpg"/></a><p class="feature">塩江温泉（しおのえ）<br>類似度:1.871</br></p></div></form>
+{% endblock content %}

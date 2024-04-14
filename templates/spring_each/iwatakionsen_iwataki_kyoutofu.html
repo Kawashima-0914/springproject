@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">岩滝温泉（いわたき）</h2><h3 class="icon"> 所在地：京都府</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0368_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">日本海に面した京丹後市（旧丹後町）、難読地名「間人（たいざ）」港の近くに佇む温泉地。間人港といえば、“究極の”と枕詞がつく高級松葉ガニ「間人ガニ」で知られる。数日停泊する沖合いカニ漁に対し、間人では地元漁協の小型船が近海に繰り出し、その日のうちに水揚げする「日帰り操業」を実践。緑色のタグ（識別票）が付けられた新鮮なカニだけが晴れて「間人ガニ」を名乗る事ができる。海が荒れる冬場は供給も不安定で、基本的には地元でしか食べられない幻のカニだ。
+岩滝温泉の泉質は、解毒作用もあるとされる塩化物・硫黄泉。金属中毒、慢性皮膚病、慢性リウマチ、糖尿病、便秘などへの効果が期待できる。また、湯上がりは肌がすべすべになる美肌効果も高いと言われ、女性にも人気が高い。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="outokuonsen_outoku_gunma">{% csrf_token %}<input name="id2" type="hidden" value="outokuonsen_outoku_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.outokuonsen_outoku_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1271_0001.jpg"/></a><p class="feature">応徳温泉（おうとく）<br>類似度:2.150</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okudougoonsen_okudougo_ehime">{% csrf_token %}<input name="id2" type="hidden" value="okudougoonsen_okudougo_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.okudougoonsen_okudougo_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0288_0001.jpg"/></a><p class="feature">奥道後温泉（おくどうご）<br>類似度:2.070</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kurikawaonsen_kurikawa_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="kurikawaonsen_kurikawa_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.kurikawaonsen_kurikawa_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1973_0001.jpg"/></a><p class="feature">栗川温泉（くりかわ）<br>類似度:2.024</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yanagawaonsen_yanagawa_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="yanagawaonsen_yanagawa_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.yanagawaonsen_yanagawa_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1033_0001.jpg"/></a><p class="feature">柳川温泉（やながわ）<br>類似度:2.007</br></p></div></form>
+{% endblock content %}

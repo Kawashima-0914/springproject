@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">武田尾温泉（たけだお）</h2><h3 class="icon"> 所在地：兵庫県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1022_0001.jpg"/><table><tr><th>効能</th><td>ラジウム泉
+</td></tr></table></div><div class="con1"><p class="feature">宝塚市の山間、武庫川の渓谷沿いに位置する温泉地、武田尾温泉。「武田尾」の名は、豊臣秀吉に仕えていた武将・武田尾直蔵の名に由来する。江戸時代に入ってから、落ち武者となって生きていた武田尾が、薪を拾っていたときにこの湯を発見したとされる。現代作家・水上勉の小説「櫻守」は、この温泉を舞台にした作品。周囲を大自然に囲まれた風光明媚な温泉地は、宝塚市街からのアクセスが良く、新緑や紅葉も楽しめることから、人気の高い観光地でもある。関西では珍しいラドン含有の湯が楽しめることでも知られ、現在は4軒の温泉宿が点在する。ボタン鍋などを楽しめる宿もあり、温泉だけではなく食事も見逃せないポイントだ。
+「日本三古湯」の有馬温泉に近い、単純弱放射能温泉。ラドンを含有しており、自然治癒力や免疫力などの向上に役立つとされる。疲労回復、胃腸病、皮膚病、打ち身、冷え性、婦人病、高血圧、痛風などへの効果が期待できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.159</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kaminoyuonizumi_kaminoyu_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="kaminoyuonizumi_kaminoyu_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.kaminoyuonizumi_kaminoyu_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2001_0001.jpg"/></a><p class="feature">神の湯温泉（かみのゆ）<br>類似度:2.143</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okudougoonsen_okudougo_ehime">{% csrf_token %}<input name="id2" type="hidden" value="okudougoonsen_okudougo_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.okudougoonsen_okudougo_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0288_0001.jpg"/></a><p class="feature">奥道後温泉（おくどうご）<br>類似度:2.096</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ashizurionsensato_ashizuri_kouchi">{% csrf_token %}<input name="id2" type="hidden" value="ashizurionsensato_ashizuri_kouchi"/><div class="con2"><a href="../spring_each/" onclick="document.ashizurionsensato_ashizuri_kouchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0893_0001.jpg"/></a><p class="feature">あしずり温泉郷（あしずり）<br>類似度:2.088</br></p></div></form>
+{% endblock content %}

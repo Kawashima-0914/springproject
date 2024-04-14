@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">荒尾温泉（あらお）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0859_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">火の国・熊本の西北端、荒尾市のほぼ中央部に広大な敷地を擁して広がる一大レジャー施設「三井グリーンランド」に隣接する温泉。温暖で過ごしやすく、レジャー施設の整ったリゾート地として多くの人が訪れる。一方で、昔から続く歴史や文化の息吹をそこかしこに感じる趣き深い一面ものぞかせる。日露戦争後の明治41年から戦後の復興を見守り続けた国指定重要文化財・史跡の「万田坑」をはじめ、古墳や古塔など静かに歴史の変遷を見守るスポットが点在。荒尾の風土を表すように素朴で力強く、そして美しい作風の「小代焼（しょうだいやき）」は国の経済産業省指定伝統的工芸品に指定されている。
+硫黄を含む微乳白色のお湯が楽しめる荒尾温泉は、すべすべヌルヌルとした感触とほのかな硫黄の香りが特徴。源泉温度が40.5度のため加水せず、循環装置を使用しない100％源泉かけ流しの温泉を楽しむことができる。また、豊富な湯量も魅力で、1400ｍの地下から毎分400リットルものお湯が湧き出す贅沢な温泉となっている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="yoshiionsen_yoshii_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="yoshiionsen_yoshii_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.yoshiionsen_yoshii_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0631_0001.jpg"/></a><p class="feature">吉井温泉（よしい）<br>類似度:1.837</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shikishimaonsen_shikishima_gunma">{% csrf_token %}<input name="id2" type="hidden" value="shikishimaonsen_shikishima_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.shikishimaonsen_shikishima_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1476_0001.jpg"/></a><p class="feature">敷島温泉（しきしま）<br>類似度:1.818</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tennenonsenmahorobanoyu_tennenmahorobanoyu_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tennenonsenmahorobanoyu_tennenmahorobanoyu_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tennenonsenmahorobanoyu_tennenmahorobanoyu_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1245_0001.jpg"/></a><p class="feature">天然温泉まほろばの湯（てんねんまほろばのゆ）<br>類似度:1.815</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yoshioonsen_yoshio_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="yoshioonsen_yoshio_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.yoshioonsen_yoshio_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1133_0001.jpg"/></a><p class="feature">吉尾温泉（よしお）<br>類似度:1.806</br></p></div></form>
+{% endblock content %}

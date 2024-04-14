@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">鹿児島温泉（かごしま）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0328_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">明治維新でその名を馳せた西郷隆盛や大久保利通、大河ドラマで有名になった篤姫などを輩出したここ鹿児島。 市街地の眼前には雄大な桜島が見え、錦江湾が広がるウォーターフロントの都市として、その自然財産を活用した施設などを実現。今も尚発展を続けるのは、現在もさかんに活動を続ける活火山の桜島の影響もあり、中心地に多くの温泉が湧き出し、多くの温泉客が全国より訪れるから。薩摩藩の城下町として栄えた鹿児島は史跡が多く、往時の雰囲気を残している。 薩摩の盟友も利用したであろう温泉に浸かり、その時代に思いを馳せてみたい。
+県庁所在地の源泉数として、日本一の約280の数を誇る鹿児島市。「鹿児島温泉」は広義の意味で鹿児島市に湧く温泉のことを指し、銭湯のお湯も天然温泉が使用されている。鹿児島温泉の一つ「ホテル吹上荘」は、地下650mから湧き出す源泉を利用。泉質は「みょうばん泉」と呼ばれる源泉で、紅茶色なのが特徴。神経痛、リウマチに効能があり、湯治に訪れる人々も多いとか。温泉で日頃の疲れをゆっくり癒した後は、宿自慢のさつま黒豚料理に舌鼓を打ちたい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ainonoonsen_ainono_akita">{% csrf_token %}<input name="id2" type="hidden" value="ainonoonsen_ainono_akita"/><div class="con2"><a href="../spring_each/" onclick="document.ainonoonsen_ainono_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1253_0001.jpg"/></a><p class="feature">あいのの温泉（あいのの）<br>類似度:2.366</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yudakawaonsen_yudagawa_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="yudakawaonsen_yudagawa_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.yudakawaonsen_yudagawa_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0854_0001.jpg"/></a><p class="feature">湯田川温泉（ゆだがわ）<br>類似度:2.360</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="takaseonsen_takase_niigata">{% csrf_token %}<input name="id2" type="hidden" value="takaseonsen_takase_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.takaseonsen_takase_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0587_0001.jpg"/></a><p class="feature">高瀬温泉（たかせ）<br>類似度:2.318</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="asoonsen_aso_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="asoonsen_aso_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.asoonsen_aso_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1468_0001.jpg"/></a><p class="feature">阿蘇温泉（あそ）<br>類似度:2.304</br></p></div></form>
+{% endblock content %}

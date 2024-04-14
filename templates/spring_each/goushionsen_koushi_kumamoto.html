@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">合志温泉（こうし）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2133_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">合志温泉は合志市の北部に位置し、熊本観光にも便利な温泉地。県内最大級の総合レジャー施設があることから、温泉とともに、地元の名産品を購入したり地元産素材で作ったソフトクリームなどを食べたりして、合志市の観光地として楽しむ人も多い。温泉地付近には「くまもと緑の100景」にも選定された緑自慢の公園「弁天山公園」がある。ここにはアスレチックフィールドや展望台、キャンプ場などがあり、ファミリー層が多く訪れる。家族や仲間と楽しんだ後、合志温泉でゆっくりと体を休めるのも良さそうだ。ホタルの名所としても知られる竹迫城跡公園も近く、初夏には公園北側を流れる東谷川でホタルの乱舞を見ることができる。
+泉質は美肌効果があると言われるナトリウム塩化物炭酸水素塩泉でサラサラした肌ざわりが特徴。殺菌力が高いとされる塩化物を多く含み、疲労回復や健康増進、筋肉痛や切り傷、やけど、慢性皮膚病にも効果が期待できる。湯冷めしにくいという特徴もあるので、寒い時期にもおすすめだ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tsutsujinoyu_tsutsujinoyu_gunma">{% csrf_token %}<input name="id2" type="hidden" value="tsutsujinoyu_tsutsujinoyu_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.tsutsujinoyu_tsutsujinoyu_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2076_0001.jpg"/></a><p class="feature">つつじの湯（つつじのゆ）<br>類似度:2.543</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="iseshimasatoshishimaonsen_iseshimakashikojima_mie">{% csrf_token %}<input name="id2" type="hidden" value="iseshimasatoshishimaonsen_iseshimakashikojima_mie"/><div class="con2"><a href="../spring_each/" onclick="document.iseshimasatoshishimaonsen_iseshimakashikojima_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1238_0001.jpg"/></a><p class="feature">伊勢志摩賢島温泉（いせしまかしこじま）<br>類似度:2.538</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tamagawaonsen_tamagawa_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="tamagawaonsen_tamagawa_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.tamagawaonsen_tamagawa_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1956_0001.jpg"/></a><p class="feature">田万川温泉（たまがわ）<br>類似度:2.503</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:2.487</br></p></div></form>
+{% endblock content %}

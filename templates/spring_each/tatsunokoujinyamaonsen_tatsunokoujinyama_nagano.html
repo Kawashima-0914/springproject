@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">たつの荒神山温泉（たつのこうじんやま）</h2><h3 class="icon"> 所在地：長野県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1333_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">長野県は諏訪湖の南西に位置する辰野町。総面積の85％が森林で、多い時には1万匹以上のゲンジボタルが舞うという松尾峡では、例年6月中旬頃に「信州辰野ほたる祭り」が開催される。期間中はさまざまな屋台や催し 物が並び多くの人で賑わう。 幻想的な光が舞う光景はきっと忘れられない思い出になるはず。辰野町のほぼ中央には荒神山公園という標高約764mの小高い丘があり、その約35haの敷地にはレジャー施設が集積し ている。 たつの荒神山温泉はそこに湧く天然温泉で、公園内の宿泊施設と隣接している日帰り入浴施設が引いている。ぬるめの炭酸水素塩泉がスポーツやレクリエーションを楽しんだあとの身体をじっくり癒してくれると地元客に評判だ。
+無色透明、泉温37.2℃、pH7.85の肌がすべすべになるナトリウム炭酸水素塩泉。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kutchanonsen_kutchan_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="kutchanonsen_kutchan_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.kutchanonsen_kutchan_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1878_0001.jpg"/></a><p class="feature">倶知安温泉（くっちゃん）<br>類似度:2.168</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="oushuuhiraizumionsen_oushuuhiraizumi_iwate">{% csrf_token %}<input name="id2" type="hidden" value="oushuuhiraizumionsen_oushuuhiraizumi_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.oushuuhiraizumionsen_oushuuhiraizumi_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1119_0001.jpg"/></a><p class="feature">奥州平泉温泉（おうしゅうひらいずみ）<br>類似度:2.129</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:2.128</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenpyounoyuonizumi_tenpyounoyu_nara">{% csrf_token %}<input name="id2" type="hidden" value="tenpyounoyuonizumi_tenpyounoyu_nara"/><div class="con2"><a href="../spring_each/" onclick="document.tenpyounoyuonizumi_tenpyounoyu_nara.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1026_0001.jpg"/></a><p class="feature">天平の湯温泉（てんぴょうのゆ）<br>類似度:2.123</br></p></div></form>
+{% endblock content %}

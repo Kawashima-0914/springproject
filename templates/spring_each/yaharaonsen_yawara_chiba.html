@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">矢原温泉（やわら）</h2><h3 class="icon"> 所在地：千葉県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1900_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>にごり、にごり（褐色）、神経痛、筋肉痛、関節痛、冷え性
+</td></tr></table></div><div class="con1"><p class="feature">南房総温泉郷のひとつに数えられる、漁師町の風情が残る海と花のまち・南房総千倉町にある温泉地。千倉には、魚や貝などが棲みやすい豊かな漁場があるため新鮮な魚介類がいつでも味わえる。 あわびやさざえ、伊勢海老はもちろん、くじら肉などここでしか食べられないグルメも必見だ。美味しい海の幸をいただき、ゆっくりと温泉に浸かって、海ののどかな景色に心癒されるだろう。南房総千倉町に佇む高家神社は、日本で唯一料理の祖神を祀る神社として、料理関係者や味噌醤油などの醸造業者からの信仰を集めており、現在でも、毎年行われる「庖丁式」を中心に多くの料理関係者が参拝に訪れている。
+自家源泉を利用する「自家源泉の宿　矢原荘」は、茶褐色のお湯で泉質はナトリウム-炭酸水素塩・塩化物・硫酸塩泉。湧出温度が低いため、温めて湯舟に注いでいる。湯量豊富で効能豊かな温泉は神経痛、筋肉痛、関節痛、五十肩、運動麻痺、関節のこわばり、うちみ、くじき、慢性消化病、痔、冷え性、健康促進などに効果が期待できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekowaisukougenonsen_nisekowaisukougen_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1877_0001.jpg"/></a><p class="feature">ニセコワイス高原温泉（にせこわいすこうげん）<br>類似度:2.782</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="esanonsensato_esan_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="esanonsensato_esan_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.esanonsensato_esan_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">恵山温泉郷（えさん）<br>類似度:2.656</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekoougononsen_nisekokogane_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekoougononsen_nisekokogane_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekoougononsen_nisekokogane_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1876_0001.jpg"/></a><p class="feature">ニセコ黄金温泉（にせここがね）<br>類似度:2.643</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="amatsukominatoonsen_amatsukominato_chiba">{% csrf_token %}<input name="id2" type="hidden" value="amatsukominatoonsen_amatsukominato_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.amatsukominatoonsen_amatsukominato_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0014_0001.jpg"/></a><p class="feature">天津小湊温泉（あまつこみなと）<br>類似度:2.633</br></p></div></form>
+{% endblock content %}

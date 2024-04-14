@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">舞子温泉（まいこ）</h2><h3 class="icon"> 所在地：新潟県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1438_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">魚沼産コシヒカリの産地として有名な新潟県南魚沼市。美味しいお米と磨き上げられた上質な酒が楽しめるとしてグルメ旅行に選ぶ人も多い。三国街道塩沢宿「牧之通り」は雪国の文化と歴史を感じられる通り。 平成23年には都市景観大賞を受賞している。さまざまな魅力あふれる地にある舞子温泉「飯士の湯」は舞子高原に湧くリゾート温泉地。春から秋はバーベキューやキャンプ、ゴルフにハイキング、冬はスキーやスノーボードと、1年中 楽しめる土地として人気である。 レジャーで遊び疲れた身体を癒すのもよし、美食美酒を堪能したあとに極楽のひとときを迎えるのもよし。高原の爽やかな風に吹かれながら心と身体を解きほぐし、思う存分くつろぎ癒される旅にしたい。
+柔らかな肌触りの弱アルカリ性の湯。源泉温度 38.7度
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ikenoheionizumi_ikenotaira_nagano">{% csrf_token %}<input name="id2" type="hidden" value="ikenoheionizumi_ikenotaira_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.ikenoheionizumi_ikenotaira_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0568_0001.jpg"/></a><p class="feature">池の平温泉（いけのたいら）<br>類似度:2.344</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kawabaonsen_kawaba_gunma">{% csrf_token %}<input name="id2" type="hidden" value="kawabaonsen_kawaba_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.kawabaonsen_kawaba_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1348_0001.jpg"/></a><p class="feature">川場温泉（かわば）<br>類似度:2.268</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuchikeikokuonsen_kikuchikeikoku_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuchikeikokuonsen_kikuchikeikoku_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuchikeikokuonsen_kikuchikeikoku_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1132_0001.jpg"/></a><p class="feature">菊池渓谷温泉（きくちけいこく）<br>類似度:2.262</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shikishimaonsen_shikishima_gunma">{% csrf_token %}<input name="id2" type="hidden" value="shikishimaonsen_shikishima_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.shikishimaonsen_shikishima_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1476_0001.jpg"/></a><p class="feature">敷島温泉（しきしま）<br>類似度:2.243</br></p></div></form>
+{% endblock content %}

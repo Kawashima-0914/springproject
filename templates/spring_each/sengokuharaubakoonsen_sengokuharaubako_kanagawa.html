@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">仙石原姥子温泉（せんごくはらうばこ）</h2><h3 class="icon"> 所在地：神奈川県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0344_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、関節痛、疲労、冷え性など
+</td></tr></table></div><div class="con1"><p class="feature">「1個食べれば7年長生き」で有名な大涌谷の「黒たまご」。箱根ロープウェー最高峰の「大涌谷駅」に近づくと、強い硫黄の香りが立ち込める。はるか上空から赤茶けた岩肌に立ち上る白い噴煙を見下ろすと、躍動する大地の生命が広がる。 その大涌谷から芦ノ湖方面へロープウェーで下ること約9分。深い林に囲まれて、800年以上も前から湧き続ける「箱根十七湯」のひとつ、姥子温泉が広がる。足柄山の金太郎が枯れ枝で目を刺して見えなくなったとき、山姥が箱根権現のお告げで温泉を発見し金太郎の目を完治させたとの伝説が残る古湯。 時間が止まったような静寂が広がる山の中。途中、突如目の前に現れた富士山の美しさに、思わず言葉を失った。
+足柄山の金太郎と山姥との伝説から「姥子」という名前が付けられたといわれる、800年以上の歴史を誇る古湯。眼病に効く湯として有名で、江戸時代に書かれた『七湯の枝折』にも「明礬湯にして専ら眼病によし」との記載が残る。湯治場としての開発は明治以降。かの夏目漱石も湯治に訪れたといわれ、著書『吾輩は猫である』の中にも登場する。総源泉数は5本。湧出量は毎分762Lで、現在も自然湧出する温泉が使用される。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="hakonesengokuharaonsen_hakonesengokubara_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="hakonesengokuharaonsen_hakonesengokubara_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.hakonesengokuharaonsen_hakonesengokubara_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0112_0001.jpg"/></a><p class="feature">箱根仙石原温泉（はこねせんごくばら）<br>類似度:2.426</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hirayamaonsen_hirayama_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="hirayamaonsen_hirayama_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.hirayamaonsen_hirayama_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1035_0001.jpg"/></a><p class="feature">平山温泉（ひらやま）<br>類似度:2.392</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kuroishionsensato_kuroishi_aomori">{% csrf_token %}<input name="id2" type="hidden" value="kuroishionsensato_kuroishi_aomori"/><div class="con2"><a href="../spring_each/" onclick="document.kuroishionsensato_kuroishi_aomori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">黒石温泉郷（くろいし）<br>類似度:2.327</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shimosuwaonsensuwamizuumionsensato_1_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimosuwaonsensuwamizuumionsensato_1_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimosuwaonsensuwamizuumionsensato_1_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0547_0001.jpg"/></a><p class="feature">下諏訪温泉諏訪湖温泉郷（しもすわ（すわこ））<br>類似度:2.316</br></p></div></form>
+{% endblock content %}

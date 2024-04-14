@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">鬼首温泉（鳴子温泉郷）（おにこうべ（なるこ））</h2><h3 class="icon"> 所在地：宮城県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0691_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、塩化物泉
+</td></tr><tr><th>効能</th><td>神経痛、婦人病、胃腸病、皮膚病など
+</td></tr></table></div><div class="con1"><p class="feature">JR「鳴子温泉駅」から車で約30分、かんけつ泉や地獄谷などブナ自然林に囲まれた太古のカルデラの山々に囲まれた温泉郷。 その昔、当地で朝廷に逆らっていた鬼（蝦夷）討伐を命じられた坂上田村麻呂が首長の首を落としたところ、空を飛び大岩にかじり付いたという伝説から「鬼首」の名がついたといわれる。 周囲にそびえる禿岳（かむろだけ）や荒雄岳、須金岳の麓にはテニスコートやキャンプ場、スキー場などのスポーツ施設も充実。登山客はもちろん、グループやファミリーにも人気を集めている。湯上がりにオススメなのが、地発泡酒「鳴子の風」。
+全国にその名を知られる「鳴子温泉郷」の一つに数えられる温泉。荒雄川沿いに位置する閑静な轟温泉、宮沢の渓流沿いに佇む宮沢温泉、間欠泉で有名な吹上温泉など、複数の温エリアからなる。湯量豊富で、泉温は100℃近く。一帯には多数の源泉が湧き出ており、「鬼首かんけつ泉」や「地獄谷」など噴き上げる湯や立ち上がる湯けむりが、大自然の息吹を身近に感じさせる。大地のエネルギーがあふれる、自然豊かで素朴な温泉だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="hirayuonsen_1_gifu">{% csrf_token %}<input name="id2" type="hidden" value="hirayuonsen_1_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.hirayuonsen_1_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0119_0001.jpg"/></a><p class="feature">平湯温泉（奥飛騨温泉郷）（ひらゆ（おくひだ））<br>類似度:2.392</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sakunamionsen_sakunami_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sakunamionsen_sakunami_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sakunamionsen_sakunami_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0695_0001.jpg"/></a><p class="feature">作並温泉（さくなみ）<br>類似度:2.390</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="itouonsen_itou_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="itouonsen_itou_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.itouonsen_itou_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0023_0001.jpg"/></a><p class="feature">伊東温泉（いとう）<br>類似度:2.366</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hagionsensato_hagi_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="hagionsensato_hagi_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.hagionsensato_hagi_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0925_0001.jpg"/></a><p class="feature">萩温泉郷（はぎ）<br>類似度:2.363</br></p></div></form>
+{% endblock content %}

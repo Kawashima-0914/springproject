@@ -1,0 +1,13 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">泉温泉健康センター（いずみけんこうせんたー）</h2><h3 class="icon"> 所在地：山梨県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2248_0001.jpg"/></div><div class="con1"><p class="feature">八ヶ岳の豊かな自然の中にあり、富士山と南アルプスを見渡せる立地に温泉が湧く。この温泉は、日帰り温浴施設「泉温泉健康センター」で入ることができる。北杜市内在住者は料金が割安になるため、地元の人の姿が多い。広い大浴場のほか、プライベート空間で温泉を楽しめる事前予約制の家族風呂は、要介護者の家族限定で入れるバリアフリー仕様。館内には食事処、休憩室、整体などの設備があるほか、温泉スタンドが設置されているため、温泉を持ち帰って自宅の浴室で同じ温泉の湯を楽しむこともできる。パターゴルフ場やゲートボール場など、スポーツ施設も敷地内にあり、温泉のあるレクリエーション施設としても楽しめる。
+多くの効能が期待できるナトリウム炭酸水素塩・塩化物泉。神経痛、筋肉痛、五十肩、うちみ、くじき、慢性消化器病、痔、冷え性、きりきず、火傷、慢性皮膚病などに効果があるとされる。入浴後の肌がつるつるすべすべになる美肌の湯としても知られ、保温効果が高いため体の芯まで温まる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kiyosatoonsen_kiyosato_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="kiyosatoonsen_kiyosato_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.kiyosatoonsen_kiyosato_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1578_0001.jpg"/></a><p class="feature">清里温泉（きよさと）<br>類似度:1.156</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="naumanonsen_nauman_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="naumanonsen_nauman_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.naumanonsen_nauman_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1731_0001.jpg"/></a><p class="feature">ナウマン温泉（なうまん）<br>類似度:1.117</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shirasawakougenonsen_shirasawakougen_gunma">{% csrf_token %}<input name="id2" type="hidden" value="shirasawakougenonsen_shirasawakougen_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.shirasawakougenonsen_shirasawakougen_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1815_0001.jpg"/></a><p class="feature">白沢高原温泉（しらさわこうげん）<br>類似度:1.117</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yakumoonsen_1_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="yakumoonsen_1_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.yakumoonsen_1_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2050_0001.jpg"/></a><p class="feature">八雲温泉（北海道）（やくも）<br>類似度:1.113</br></p></div></form>
+{% endblock content %}

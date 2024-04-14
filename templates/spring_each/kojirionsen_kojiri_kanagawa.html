@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湖尻温泉（こじり）</h2><h3 class="icon"> 所在地：神奈川県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1911_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>美肌、神経痛、筋肉痛、関節痛、冷え性
+</td></tr></table></div><div class="con1"><p class="feature">箱根温泉郷のひとつであり、箱根山の堰止湖である「芦ノ湖」の北の湖畔「桃源台港」近くに湧き、箱根温泉郷の中でも比較的歴史の浅い温泉地だ。芦ノ湖の水源の大部分が湖底からの湧き水で、大きさは神奈川県内最大である。芦ノ湖の南の湖畔「箱根街港」には「箱根駅伝ミュージアム」があり、目の前には箱根駅伝の往路ゴール・復路スタート地点の石碑が建つ。駅伝当日は多くのギャラリーで賑わう。芦ノ湖の南の湖畔「元箱根港」の近くには関東屈指のパワースポット「箱根神社」があり、隣には恋愛の神様「九頭龍神社」の新宮が鎮座している。それぞれの港を結ぶ「箱根海賊船」は世界遺産・富士山を望みながらゆったりと船旅を楽しめる。
+湖尻温泉にある「箱根高原ホテル」では二種類の泉質の温泉を楽しめる。露天風呂は美肌の湯、大浴場は温もりの湯と名付けられている。大浴場の泉質はナトリウム・カルシウム・マグネシウム・硫酸塩・炭酸水素塩泉。箱根温泉郷の中でも珍しい炭酸を含んでいる温泉である。神経痛、筋肉痛、関節痛、五十肩、冷え性、切り傷など、様々な病気に効果があると言われている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekowaisukougenonsen_nisekowaisukougen_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1877_0001.jpg"/></a><p class="feature">ニセコワイス高原温泉（にせこわいすこうげん）<br>類似度:2.488</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shintainaionsen_shintainai_niigata">{% csrf_token %}<input name="id2" type="hidden" value="shintainaionsen_shintainai_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.shintainaionsen_shintainai_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2231_0001.jpg"/></a><p class="feature">新胎内温泉（しんたいない）<br>類似度:2.460</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yaharaonsen_yawara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="yaharaonsen_yawara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.yaharaonsen_yawara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1900_0001.jpg"/></a><p class="feature">矢原温泉（やわら）<br>類似度:2.420</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.399</br></p></div></form>
+{% endblock content %}

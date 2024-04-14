@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">永岡温泉（ながおか）</h2><h3 class="icon"> 所在地：岩手県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1803_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">岩手県南部・金ヶ崎町の山の中にある温泉。「夢の湯」という一軒宿が建っており、名湯を求めて通う人もいる。「栗駒ゴルフ倶楽部」が隣接しており、ゴルフ終わりに温泉を楽しむ人も多い。車で20分ほどのところにある「和光展望台」からは、焼石連峰と胆沢平野が360°見渡せる。奥州藤原氏の歴史を体験できる「えさし藤原の郷」や、世界遺産の「平泉」、奇岩が織りなす絶景「厳美渓」や舟下りで有名な「猊鼻渓（げいびけい）」などの観光スポットへのアクセスも、いずれも車で30分程度。また、車で約15分の「金ヶ崎要害」は、伊達氏の歴史を伝える貴重な町並みだ。食堂もあるので日帰り利用も楽しめる。
+毎分720Lもの豊富な湧出量を誇る源泉が、一軒の宿だけで使われている。43℃と適温で湧き出してきているため、そのまま利用できて新鮮な湯に浸かれるのがポイント。泉質は塩化物泉で、湯上がりも温まりが持続すると評判のお湯。加水や薬品の添加は一切行わず、源泉かけ流しで使われる湯は、泡付きが良く繊細な泡が全身を包み込む。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="senganishionsen_senganishi_iwate">{% csrf_token %}<input name="id2" type="hidden" value="senganishionsen_senganishi_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.senganishionsen_senganishi_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1810_0001.jpg"/></a><p class="feature">千貫石温泉（せんがんいし）<br>類似度:2.157</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="genbikeionsen_genbikei_iwate">{% csrf_token %}<input name="id2" type="hidden" value="genbikeionsen_genbikei_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.genbikeionsen_genbikei_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1724_0001.jpg"/></a><p class="feature">厳美渓温泉（げんびけい）<br>類似度:2.101</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="akashionsen_akashi_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="akashionsen_akashi_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.akashionsen_akashi_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1126_0001.jpg"/></a><p class="feature">明石温泉（あかし）<br>類似度:2.041</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="inawashiroshikinoyuonizumi_inawashiroshikinoyu_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="inawashiroshikinoyuonizumi_inawashiroshikinoyu_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.inawashiroshikinoyuonizumi_inawashiroshikinoyu_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1209_0001.jpg"/></a><p class="feature">猪苗代四季の湯温泉（いなわしろしきのゆ）<br>類似度:2.025</br></p></div></form>
+{% endblock content %}

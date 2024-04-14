@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">鯵ヶ沢高原温泉（あじがさわこうげん）</h2><h3 class="icon"> 所在地：青森県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1062_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、関節痛、婦人病、冷え性、痔疾など
+</td></tr></table></div><div class="con1"><p class="feature">JR五能線「鯵ヶ沢駅」から車で約20分、古くから漁師町として栄えてきた海辺の町にある温泉地。浜辺には、人気の海水浴場「はまなす公園」があります。人気力士・舞の海を輩出するなど相撲が盛んな町としても知られ、「鰺ヶ沢相撲館」では大相撲の歴史に触れることができる。 食の楽しみは何と言っても新鮮な魚介類。食膳いっぱいに並ぶ海の幸は圧巻だ。中でも町で養殖している「イトウ」は幻の魚といわれ、鯵ヶ沢の名物となっている。 また、町の中心部から30分ほど南下したところには、ブナの原生林が広がる「ミニ白神」があり、自然を身近に感じながらの散策を楽しめる。海・山の自然と良質な温泉、新鮮な海の幸が至福のときを運んでくれる、恵みいっぱいの温泉地だ。
+津軽平野と日本海を望むことができる大浴場は、大きな窓があり、見晴らし抜群。露天風呂も完備しており、天気が良ければ日中には北海道、夜は日本海の漁火と夜景を眺める事ができる。解放感を味わいながらゆっくりと疲れた体を癒し、リフレッシュすることができる。春夏は新緑と津軽海峡が望め、水色の空と海、緑豊かな大自然を見下ろすことができる。秋は紅葉が楽しめ、冬は一面銀世界。夜は星空を眺めながらゆっくりと温泉に浸かることができる。日本の四季を目で見て体感できる絶景の露天風呂。泉質に含まれるナトリウム・炭酸水素塩は、クレンジ
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="uharaonsen_ubara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="uharaonsen_ubara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.uharaonsen_ubara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0195_0001.jpg"/></a><p class="feature">鵜原温泉（うばら）<br>類似度:2.682</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="mitsunorionsen_koutoku_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="mitsunorionsen_koutoku_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.mitsunorionsen_koutoku_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0494_0001.jpg"/></a><p class="feature">光徳温泉（こうとく）<br>類似度:2.625</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kurohimeonsen_kurohime_nagano">{% csrf_token %}<input name="id2" type="hidden" value="kurohimeonsen_kurohime_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.kurohimeonsen_kurohime_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1519_0001.jpg"/></a><p class="feature">黒姫温泉（くろひめ）<br>類似度:2.556</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="katsuuraonsen_katsuura_chiba">{% csrf_token %}<input name="id2" type="hidden" value="katsuuraonsen_katsuura_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.katsuuraonsen_katsuura_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0472_0001.jpg"/></a><p class="feature">勝浦温泉（かつうら）<br>類似度:2.536</br></p></div></form>
+{% endblock content %}

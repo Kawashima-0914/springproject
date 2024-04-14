@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">三浦マホロバ温泉（みうらまほろば）</h2><h3 class="icon"> 所在地：神奈川県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0130_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">東京・品川から電車で約60分。京浜急行「三浦海岸」駅から徒歩約5分の場所に、「三浦マホロバ温泉」が湧く。関東からなら昼に出発すれば、夕方には到着できるのが嬉しい。三崎港直送の海の幸を堪能した後は、天然温泉と海の見えるお部屋でリゾート気分を満喫。 翌朝は、日本有数のマグロ水揚げ量を誇る三崎港へ。周辺には寿司屋や料亭が並んでいるので、ぜひ新鮮なマグロをいただきたい。時間があれば、詩人・北原白秋も愛した城ヶ島もおすすめ。 磯まで出られる遊歩道が整備され、島を1周する観光船も走っている。潮風を全身に浴びながら、太平洋の大海原を楽しみたい。
+約8㎞にわたり弓なりの砂浜が続く三浦海岸。そのすぐ目の前に、一軒宿「マホロバ・マインズ三浦」が建つ。地下1200mから湧き出る温泉は、少し塩辛い塩化物泉。大浴場に潮風香る露天風呂（女性のみ）、温泉利用指導者が常駐する「クアパーク」で楽しめる。もう1つの楽しみは、何と言っても三崎港直送の鮮魚。マグロをはじめ、遠洋漁業の基地として古くから発展してきた同港の海の幸を、心ゆくまで満喫できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kinkesakionsen_kanagasaki_akita">{% csrf_token %}<input name="id2" type="hidden" value="kinkesakionsen_kanagasaki_akita"/><div class="con2"><a href="../spring_each/" onclick="document.kinkesakionsen_kanagasaki_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1283_0001.jpg"/></a><p class="feature">金ヶ崎温泉（かながさき）<br>類似度:2.102</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shoushimaonsen_terushima_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="shoushimaonsen_terushima_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.shoushimaonsen_terushima_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0162_0001.jpg"/></a><p class="feature">照島温泉（てるしま）<br>類似度:2.058</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kesennumaonsen_kesennuma_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="kesennumaonsen_kesennuma_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.kesennumaonsen_kesennuma_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1225_0001.jpg"/></a><p class="feature">気仙沼温泉（けせんぬま）<br>類似度:2.045</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hirakataminatoonsen_hiragata_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="hirakataminatoonsen_hiragata_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.hirakataminatoonsen_hiragata_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0825_0001.jpg"/></a><p class="feature">平潟港温泉（ひらがた）<br>類似度:2.045</br></p></div></form>
+{% endblock content %}

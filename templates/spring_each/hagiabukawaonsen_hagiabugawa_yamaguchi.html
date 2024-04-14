@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">萩阿武川温泉（はぎあぶがわ）</h2><h3 class="icon"> 所在地：山口県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1955_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">豊かな水と美しい自然に囲まれた阿武川沿いにある温泉地だ。1966年から始まった阿武川ダムの建設に際して、ダム下流部に雪の積もらない一角があるのを関係者が見つけ、そこをボーリングしたところ温泉が湧出し発見された。「萩・長門峡観光遊覧船」は、阿武川ダム湖の上流湖面から四季折々に変化するダム湖の自然景観を眺めながら乗船を楽しめる。近くには、国選定重要伝統的建造物群保存地区に選定された農村地区「萩市佐々並市地区」がある。萩からの重要街道である萩往還の宿場町として栄え、江戸～昭和初期のに建てられた建物がそのまま残っており、面影を残した街並みは昔にタイムスリップしたような気持ちで散策を楽しめるだろう。
+地下1000ｍより湧き出る温泉は1日176トンの湯量を誇る。お湯は柔らかく、美人の湯として親しまれている。湯の花が舞う温泉からはかすかに温泉臭を感じる。日帰り温泉施設「ふれあい会館」は広く取られた露天風呂や、サウナも完備。のんびり湯船につかって雄大なダムの姿を眺めるのもまた楽しみの一つだ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="iidashiroonsen_iidajou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="iidashiroonsen_iidajou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.iidashiroonsen_iidajou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0753_0001.jpg"/></a><p class="feature">飯田城温泉（いいだじょう）<br>類似度:2.038</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hayatarouonsen_hayatarou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="hayatarouonsen_hayatarou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.hayatarouonsen_hayatarou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0861_0001.jpg"/></a><p class="feature">早太郎温泉（はやたろう）<br>類似度:2.013</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="donkawaonsen_nibukawa_ehime">{% csrf_token %}<input name="id2" type="hidden" value="donkawaonsen_nibukawa_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.donkawaonsen_nibukawa_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0292_0001.jpg"/></a><p class="feature">鈍川温泉（にぶかわ）<br>類似度:1.993</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yujouonsen_yumori_nara">{% csrf_token %}<input name="id2" type="hidden" value="yujouonsen_yumori_nara"/><div class="con2"><a href="../spring_each/" onclick="document.yujouonsen_yumori_nara.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1705_0001.jpg"/></a><p class="feature">湯盛温泉（ゆもり）<br>類似度:1.985</br></p></div></form>
+{% endblock content %}

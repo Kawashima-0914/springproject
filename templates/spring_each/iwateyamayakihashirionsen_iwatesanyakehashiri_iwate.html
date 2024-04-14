@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">岩手山焼走り温泉（いわてさんやけはしり）</h2><h3 class="icon"> 所在地：岩手県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1484_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">日本百名山のひとつである岩手山の麓に湧き出る焼走りの湯。火山である岩手山では、噴火によって吹き出した熔岩が固まってできた熔岩流が北東斜面山腹から山麓にかけて広がっており、国の特別天然記念物にも指定されている。 岩手山焼走り国際交流村では、これらの熔岩流の観察ができるほか、キャンプ場やキャビン棟が点在し、自然豊かな風景の中で、アウトドアや日帰り温泉が楽しめる。 また一軒宿の「いこいの村岩手」では、眺望の良さもさることながら、アルカリ単純泉の41℃のぬるめのお湯が老廃物などを流し、美肌効果にもつながるといわれている。地元の厳選食材を使った美味しい料理に舌鼓を打ちながら、ゆったりした温泉ライフを堪能できる。
+岩手山からこんこんと湧くpH値8.0の弱アルカリ単純泉は「美人の湯」や 「美肌の湯」と呼ばれ、多数のリピーターがいるほど人気。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="mezuonsen_batou_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="mezuonsen_batou_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.mezuonsen_batou_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0778_0001.jpg"/></a><p class="feature">馬頭温泉（ばとう）<br>類似度:1.945</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kannononsen_kannon_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="kannononsen_kannon_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.kannononsen_kannon_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1919_0001.jpg"/></a><p class="feature">観音温泉（かんのん）<br>類似度:1.941</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hakubahappouonsen_hakubahappou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="hakubahappouonsen_hakubahappou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.hakubahappouonsen_hakubahappou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0110_0001.jpg"/></a><p class="feature">白馬八方温泉（はくばはっぽう）<br>類似度:1.930</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="etchuutsurugionsen_etchuutsurugi_toyama">{% csrf_token %}<input name="id2" type="hidden" value="etchuutsurugionsen_etchuutsurugi_toyama"/><div class="con2"><a href="../spring_each/" onclick="document.etchuutsurugionsen_etchuutsurugi_toyama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1168_0001.jpg"/></a><p class="feature">越中つるぎ温泉（えっちゅうつるぎ）<br>類似度:1.922</br></p></div></form>
+{% endblock content %}

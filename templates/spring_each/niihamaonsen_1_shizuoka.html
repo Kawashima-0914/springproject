@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">新居浜温泉（静岡県）（あらいはま）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1947_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">浜名湖と太平洋に挟まれた新居浜温泉。雄大な景色だけではなく、湖の幸、海の幸を楽しむことができる。浜松市内にあって、国道１号線のすぐ近く、東名高速からも十数分ほどとアクセスも良く、周辺にはプール施設や、汽水湖の切れ目という立地を活かした好釣場もあり、大人も子どももレジャーを満喫できる。外で遊んだ後は、じっくり温泉で温まれるのがうれしい。新居浜温泉はすぐ目の前に海が広がることもあって、泉質も海らしい塩化物泉。塩化物泉は、上がった後も体に熱が残り湯冷めしにくいのが特徴。たくさん遊んで温かい温泉に入って心身ともに新居浜温泉で癒されたい。
+周囲を太平洋と汽水湖である浜名湖に囲まれているため、泉質は塩分を豊富に含む「ナトリウムー塩化物強塩泉」となっている。塩化物泉は別名「熱の湯」とも呼ばれ、温泉から上がった後もじんわりと汗が溢れ出てくる感覚には病みつきになることだろう。保湿効果もあるので、乾燥肌の人にもすすめたい泉質だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="iseshimasatoshishimaonsen_iseshimakashikojima_mie">{% csrf_token %}<input name="id2" type="hidden" value="iseshimasatoshishimaonsen_iseshimakashikojima_mie"/><div class="con2"><a href="../spring_each/" onclick="document.iseshimasatoshishimaonsen_iseshimakashikojima_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1238_0001.jpg"/></a><p class="feature">伊勢志摩賢島温泉（いせしまかしこじま）<br>類似度:2.344</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="misakionsen_misaki_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="misakionsen_misaki_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.misakionsen_misaki_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1197_0001.jpg"/></a><p class="feature">三崎温泉（みさき）<br>類似度:2.327</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="inubouzakionsen_inubousaki_chiba">{% csrf_token %}<input name="id2" type="hidden" value="inubouzakionsen_inubousaki_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.inubouzakionsen_inubousaki_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0025_0001.jpg"/></a><p class="feature">犬吠埼温泉（いぬぼうさき）<br>類似度:2.318</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="utsumionsen_utsumi_aichi">{% csrf_token %}<input name="id2" type="hidden" value="utsumionsen_utsumi_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.utsumionsen_utsumi_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1482_0001.jpg"/></a><p class="feature">内海温泉（うつみ）<br>類似度:2.317</br></p></div></form>
+{% endblock content %}

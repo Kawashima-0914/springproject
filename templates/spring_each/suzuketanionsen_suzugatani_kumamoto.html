@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">鈴ヶ谷温泉（すずがたに）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1963_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">わいた温泉郷のひとつで、森の中にひっそりと佇む1軒宿「田舎の宿　おかもと」の敷地内に湧く温泉だ。明治時代から涌蓋山の伏流水を使った豆腐をつくる老舗「岡本とうふ店」が経営している。食事処でいただける人気メニュー「とうふ定食」の優しい味わいに舌鼓。ヘルシーな豆腐のスイーツで心までほっこりと温まろう。豆腐屋に隣接した喫茶とおみやげ店「となりの岡本」では人気の豆乳ソフトクリームや豆腐スイーツを楽しめる。手作り豆腐とともにやわらかい肌触りの温泉。車で40分ほどの場所には、普段は立ち入ることが出来ない南小国町の秘密の渓谷「マゼノ渓谷」がある。一般公開される新緑の春と紅葉の秋にはぜひ立ち寄ってみて。
+老舗豆腐店が営む「田舎の宿おかもと」の敷地内に湧く温泉は、豆腐のようにやわらかく、泉質は単純温泉。山の中にある露天風呂に浸かれば、優しい肌触りのお湯が疲れた体をそっと包み込んでくれるだろう。飽きの来ないサラサラした湯に浸かり、体の中にある老廃物を出すように、木々の呼吸リズムと合わせて深い呼吸をしてみよう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kikuchikeikokuonsen_kikuchikeikoku_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuchikeikokuonsen_kikuchikeikoku_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuchikeikokuonsen_kikuchikeikoku_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1132_0001.jpg"/></a><p class="feature">菊池渓谷温泉（きくちけいこく）<br>類似度:2.302</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="donkawaonsen_nibukawa_ehime">{% csrf_token %}<input name="id2" type="hidden" value="donkawaonsen_nibukawa_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.donkawaonsen_nibukawa_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0292_0001.jpg"/></a><p class="feature">鈍川温泉（にぶかわ）<br>類似度:2.295</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yuseonsen_yuze_akita">{% csrf_token %}<input name="id2" type="hidden" value="yuseonsen_yuze_akita"/><div class="con2"><a href="../spring_each/" onclick="document.yuseonsen_yuze_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0786_0001.jpg"/></a><p class="feature">湯瀬温泉（ゆぜ）<br>類似度:2.261</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hakoneyumotoonsen_hakoneyumoto_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="hakoneyumotoonsen_hakoneyumoto_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.hakoneyumotoonsen_hakoneyumoto_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0356_0001.jpg"/></a><p class="feature">箱根湯本温泉（はこねゆもと）<br>類似度:2.243</br></p></div></form>
+{% endblock content %}

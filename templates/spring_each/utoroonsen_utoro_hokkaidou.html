@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">ウトロ温泉（うとろ）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0787_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、冷え性など
+</td></tr></table></div><div class="con1"><p class="feature">平成17年4月、世界遺産に認定されて人類共通の至宝となった知床半島の大自然。その半島の西側、日本百名山のひとつ羅臼岳を真東にのぞむ海岸沿いに、6軒の大型ホテルと1軒の共同入浴施設、複数の民宿や旅館が建ち並び温泉街を形成している。 半島最大のウトロ港を持ち、知床横断道路で東海岸の羅臼市街とも直結。オホーツクを真紅に染めながら沈む夕日、厳冬期に押し寄せる神秘的な流氷、そして昭和33年に目撃された日本では珍しいオーロラと、圧巻の規模を誇る大自然の雄姿が最大の目玉。 港から出る知床観光船での眺望や、車で行く「オシンコシンの滝」「知床五湖」などの雄大な景観に、地名の由来が迫力をもって実感できる。
+知床半島の西側、オホーツク海に面したウトロ港周辺に湧く温泉。昭和40年代の前半、ボウリングによって源泉開発がなされ、46年に正式に開湯した。最初の源泉は海を見おろす高台にあり、以降、海岸沿いに4系統10カ所以上の源泉が湧出。合計毎分約1100Lの豊富な湯量を誇る。塩味を含んだやや茶褐色がかるお湯は、肌に心地よいつるつるした感触。弱アルカリ性特有の肌触りで、じっくりと湯浴みすれば体の内側からほんわかと温まり、肌にも爽快なうるおい感が残る。知床の大自然やオホーツクの海と一緒に堪能したい、最果ての地に湧く癒しの
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.855</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="amatsukominatoonsen_amatsukominato_chiba">{% csrf_token %}<input name="id2" type="hidden" value="amatsukominatoonsen_amatsukominato_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.amatsukominatoonsen_amatsukominato_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0014_0001.jpg"/></a><p class="feature">天津小湊温泉（あまつこみなと）<br>類似度:2.851</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ajikesawakougenonsen_ajigasawakougen_aomori">{% csrf_token %}<input name="id2" type="hidden" value="ajikesawakougenonsen_ajigasawakougen_aomori"/><div class="con2"><a href="../spring_each/" onclick="document.ajikesawakougenonsen_ajigasawakougen_aomori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1062_0001.jpg"/></a><p class="feature">鯵ヶ沢高原温泉（あじがさわこうげん）<br>類似度:2.842</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="chuuzenjionsen_chuuzenji_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="chuuzenjionsen_chuuzenji_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.chuuzenjionsen_chuuzenji_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0091_0001.jpg"/></a><p class="feature">中禅寺温泉（ちゅうぜんじ）<br>類似度:2.825</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">原城温泉（はらじょう）</h2><h3 class="icon"> 所在地：長崎県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1538_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">原城温泉は長崎県南島原市南有馬町丁にある温泉。天草四郎で知られる島原の乱がおこった原城跡のすぐ近くにある。原城温泉がある南有馬には温泉のほかにも、自然、歴史、芸術など様々な楽しみ方ができる。有明海には多数のイルカが生息しており、イルカの声が聞こえるほど近づいて見学ができる。また、近くの原城跡は、キリシタン弾圧の悲惨な歴史を語り継ぐ史跡文化財であり、ツアーに申し込めば専属ガイド付きで歴史を学ぶことができる。南島原市の原城本丸沖合に年に数回、最干潮時に「白洲」といわれる浅瀬が姿を現す。普段は海中に沈んでいて見ることができない。世界中でも珍しく、インド洋、イギリス海岸と原城沖の3ヶ所でしか見ることのできない貴重な場所だ。
+温泉の始まりは、大正11年の島原半島南部を中心とした大地震によって湯煙をあげたことだ。原城温泉の泉質はナトリウム炭酸水素塩泉。神経痛、筋肉痛、関節痛、慢性消化器病、痔疾、冷え性、疲労回復、うちみ、くじき、病後回復、健康増進などに効能があるとされる。美肌効果がある泉質で別名「美人の湯」とも呼ばれる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:2.233</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="uenoyuonsenkyou_kaminoyu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="uenoyuonsenkyou_kaminoyu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.uenoyuonsenkyou_kaminoyu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2084_0001.jpg"/></a><p class="feature">上の湯温泉郷（かみのゆ）<br>類似度:2.069</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kojirionsen_kojiri_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="kojirionsen_kojiri_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.kojirionsen_kojiri_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1911_0001.jpg"/></a><p class="feature">湖尻温泉（こじり）<br>類似度:2.037</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shikotsukoonsen_shikotsuko_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="shikotsukoonsen_shikotsuko_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.shikotsukoonsen_shikotsuko_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0660_0001.jpg"/></a><p class="feature">支笏湖温泉（しこつこ）<br>類似度:2.030</br></p></div></form>
+{% endblock content %}

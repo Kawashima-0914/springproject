@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">みなべ温泉（みなべ）</h2><h3 class="icon"> 所在地：和歌山県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0743_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、関節痛、疲労、婦人病、冷え性、皮膚病、打撲など
+</td></tr></table></div><div class="con1"><p class="feature">みなべ町は、和歌山県日高郡にある町で梅の生産高日本一として知られている。「一目百万、香り十里」と称され、名実ともに日本一の「南部梅林」、約30haと大パノラマが壮観な「岩代大梅林」、千里の浜を見下ろす「千里梅林」と、最大規模の梅林を擁している。 梅の代表品種の「南高梅」は最高級品とされており、FAO（国連食糧農業機関）より400年前から続く梅の栽培システムが世界農業遺産（GIAHS）に認定された。 みなべ温泉は、田辺南部白浜海岸県立自然公園内に建ち、潮風が心地よいオーシャンビューが絶景である。世界遺産に登録された熊野古道は唯一白砂青松の浜を歩くところであり、距離もほど近く、見どころスポットも多い。
+炭酸水素塩泉はお肌がつるつるになり、塩化物泉は保温効果が高く、お湯から出てもポカポカが続く。海を眺めながら二つの泉質が混合されている贅沢なお湯で身も心も満たされたい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:2.459</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="amatsukominatoonsen_amatsukominato_chiba">{% csrf_token %}<input name="id2" type="hidden" value="amatsukominatoonsen_amatsukominato_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.amatsukominatoonsen_amatsukominato_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0014_0001.jpg"/></a><p class="feature">天津小湊温泉（あまつこみなと）<br>類似度:2.415</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="marukomaonsen_marukoma_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="marukomaonsen_marukoma_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.marukomaonsen_marukoma_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0681_0001.jpg"/></a><p class="feature">丸駒温泉（まるこま）<br>類似度:2.413</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="senganishionsen_senganishi_iwate">{% csrf_token %}<input name="id2" type="hidden" value="senganishionsen_senganishi_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.senganishionsen_senganishi_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1810_0001.jpg"/></a><p class="feature">千貫石温泉（せんがんいし）<br>類似度:2.389</br></p></div></form>
+{% endblock content %}

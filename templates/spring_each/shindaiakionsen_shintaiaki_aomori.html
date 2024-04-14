@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">新大秋温泉（しんたいあき）</h2><h3 class="icon"> 所在地：青森県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>美肌、リウマチ、腰痛、関節痛、冷え性、皮膚病
+</td></tr></table></div><div class="con1"><p class="feature">白神山地の玄関口「西目屋村」にある温泉で、一軒宿の「ブナの里 白神館」が営業している。夏から秋の間しか行けない「暗門渓谷」や、「マザーツリー」と呼ばれるブナの巨木などの、白神山地の定番スポットへのトレッキングをする際には拠点となる。白神山地は、冬になると雪に閉ざされる原生林。そのおかげで豊かな水がもたらされている。冬の間はじっくり温泉を満喫したり、車で1時間弱の弘前市まで足を延ばしても良いだろう。地元の食材を中心に作った和洋折衷料理や源泉かけ流しの温泉などの、質の高い設備・サービスを良心的な価格で提供しているので、滞在しているだけでも十分満足できる。
+2017年に新しくなった源泉は、「塩化物-炭酸水素塩泉」という、塩分と重曹を含む美肌の湯だ。重曹が肌の汚れを落としてくれて、塩のヴェールが保湿をしてくれると言われている。pH8.5のアルカリ性なので、クレンジング効果はさらに期待できる。源泉かけ流しのお湯に浸かれば、自然の力を肌で感じられるだろう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="genbikeionsen_genbikei_iwate">{% csrf_token %}<input name="id2" type="hidden" value="genbikeionsen_genbikei_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.genbikeionsen_genbikei_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1724_0001.jpg"/></a><p class="feature">厳美渓温泉（げんびけい）<br>類似度:2.588</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nakayamaheionizumi_nakayamadaira_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="nakayamaheionizumi_nakayamadaira_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.nakayamaheionizumi_nakayamadaira_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0946_0001.jpg"/></a><p class="feature">中山平温泉（なかやまだいら）<br>類似度:2.509</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kutchanonsen_kutchan_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="kutchanonsen_kutchan_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.kutchanonsen_kutchan_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1878_0001.jpg"/></a><p class="feature">倶知安温泉（くっちゃん）<br>類似度:2.507</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="senganishionsen_senganishi_iwate">{% csrf_token %}<input name="id2" type="hidden" value="senganishionsen_senganishi_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.senganishionsen_senganishi_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1810_0001.jpg"/></a><p class="feature">千貫石温泉（せんがんいし）<br>類似度:2.454</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">ルスツ温泉（るすつ）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2066_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">北海道最大級の高原リゾート地とされる留寿都町のリゾートスポット、ルスツリゾート。国内外から多くの観光客が訪れる巨大リゾート地に登場した日帰り温泉施設が「ルスツ温泉」。日本百名山のひとつに選定されている「羊蹄山」を望む、周囲を畑に囲まれた温泉で、全面ガラス貼りの大浴場からはルスツリゾートと支笏洞爺国立公園の山並みを眺めることができる。夜になると周囲の木々がライトアップされるため、露天風呂ではないのに露天風呂に入っているような感覚で楽しめる。
+神経痛、筋肉痛、関節痛、五十肩、うちみ、くじき、疲労回復、慢性消化器病、痔疾、冷え症、慢性皮膚病、きりきず、やけどなどに効くといわれるナトリウム-炭酸水素塩泉(中性低張性高温泉)。なめらかな湯はジェット水流で血行促進も期待できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="marukomaonsen_marukoma_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="marukomaonsen_marukoma_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.marukomaonsen_marukoma_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0681_0001.jpg"/></a><p class="feature">丸駒温泉（まるこま）<br>類似度:2.201</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tomuraushionsen_tomuraushi_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="tomuraushionsen_tomuraushi_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.tomuraushionsen_tomuraushi_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0670_0001.jpg"/></a><p class="feature">トムラウシ温泉（とむらうし）<br>類似度:2.196</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yakumoonsen_1_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="yakumoonsen_1_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.yakumoonsen_1_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2050_0001.jpg"/></a><p class="feature">八雲温泉（北海道）（やくも）<br>類似度:2.180</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tangookuineonsen_tangookuine_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tangookuineonsen_tangookuine_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tangookuineonsen_tangookuine_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2140_0001.jpg"/></a><p class="feature">丹後奥伊根温泉（たんごおくいね）<br>類似度:2.173</br></p></div></form>
+{% endblock content %}

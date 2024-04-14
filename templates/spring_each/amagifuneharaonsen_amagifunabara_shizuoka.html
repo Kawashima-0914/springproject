@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">天城船原温泉（あまぎふなばら）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0877_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">”湯の国”と呼ばれる天城湯ケ島にある全く異なる源泉から生まれる7つの温泉・天城七湯のうちの1つ。大仁鉱山の跡地がある温泉地。大仁鉱山は天正年間に発見され、伊豆金山の開発に注力した江戸幕府金山奉行・大久保長安によって慶長年間に最盛期を迎えたものの、その後は休山した。1935年、坑内をボーリングした際、温泉が湧出。さらに1942年には鹿之原坑の採掘中に温泉が噴出した。休山後も、湧出した温泉は愛され続けており、天城流湯治法といった独自の湯治を行う宿があったり、湯治専門の日帰り温泉などが存在し、湯治文化にも触れることができる。
+泉質は単純温泉。湧出量は毎分150リットルで、源泉温度はおよそ45度。この45度というのは加水加温がほぼ不要のまま利用できるため、源泉温度としては非常に優秀で奇跡に近い温度である。神経痛、筋肉痛、関節炎、五十肩、運動麻痩、関節のこわばりなどに効果が期待され、湯治を行う人も多い。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="miyazawaonsen_miyazawa_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="miyazawaonsen_miyazawa_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.miyazawaonsen_miyazawa_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1890_0001.jpg"/></a><p class="feature">宮沢温泉（みやざわ）<br>類似度:2.370</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="higashitorokoonsen_higashitoroko_akita">{% csrf_token %}<input name="id2" type="hidden" value="higashitorokoonsen_higashitoroko_akita"/><div class="con2"><a href="../spring_each/" onclick="document.higashitorokoonsen_higashitoroko_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1888_0001.jpg"/></a><p class="feature">東トロコ温泉（ひがしとろこ）<br>類似度:2.359</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenmokuyamaonsen_tenmokuzan_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="tenmokuyamaonsen_tenmokuzan_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.tenmokuyamaonsen_tenmokuzan_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2055_0001.jpg"/></a><p class="feature">天目山温泉（てんもくざん）<br>類似度:2.357</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kawabaonsen_kawaba_gunma">{% csrf_token %}<input name="id2" type="hidden" value="kawabaonsen_kawaba_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.kawabaonsen_kawaba_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1348_0001.jpg"/></a><p class="feature">川場温泉（かわば）<br>類似度:2.354</br></p></div></form>
+{% endblock content %}

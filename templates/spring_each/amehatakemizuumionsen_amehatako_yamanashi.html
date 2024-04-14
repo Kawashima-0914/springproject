@@ -1,0 +1,13 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">雨畑湖温泉（あめはたこ）</h2><h3 class="icon"> 所在地：山梨県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2258_0001.jpg"/></div><div class="con1"><p class="feature">雨畑湖の目の前、療養や休養にも最適な人里離れた閑静な温泉地・雨畑湖温泉。「すず里の湯」のみで、その湯を堪能できる。小・中学校の跡地を利用して建てられた施設で、日帰り入浴はもちろん、隣接するヴィラ雨畑に宿泊も可能。ヴィラの宿泊客の入浴は無料だ。施設にはバーベキュー場や食事処、そして体育館の貸し出しと、小・中学校跡地ならではの活用法もある。また、南アルプスへのハイキングや早川渓谷を巡る自然探訪の拠点としてもぴったり。秋には見事な紅葉が楽しめる。さらに「早川町ジビエシカ肉」や「生芋こんにゃく」「山ぶどうワイン」「南アルプスハム」など、多彩な特産品を求めてグルメ巡りをしてみるのもおすすめだ。
+泉質は単純硫黄冷鉱泉（低張性中性冷鉱泉）で、豊富な温泉成分を含む「療養泉」と認められている。神経痛、筋肉痛、運動麻痺、うちみ、くじき、慢性消化器病、痔疾、冷え性、慢性皮膚病、慢性婦人病、糖尿病など効能は多岐にわたる。特に肌への効能が高いとされ、慢性皮膚病やきりきず、やけどによい湯として知られている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="yunogenonizumi_yunomoto_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="yunogenonizumi_yunomoto_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.yunogenonizumi_yunomoto_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1840_0001.jpg"/></a><p class="feature">湯の元温泉（ゆのもと）<br>類似度:1.222</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="koufushouwaonsen_koufushouwa_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="koufushouwaonsen_koufushouwa_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.koufushouwaonsen_koufushouwa_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2262_0001.jpg"/></a><p class="feature">甲府昭和温泉（こうふしょうわ）<br>類似度:1.190</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okuyamaonsen_okuyama_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="okuyamaonsen_okuyama_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.okuyamaonsen_okuyama_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">奥山温泉（おくやま）<br>類似度:1.184</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shiobetsuonsen_shiobetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="shiobetsuonsen_shiobetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.shiobetsuonsen_shiobetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1979_0001.jpg"/></a><p class="feature">塩別温泉（しおべつ）<br>類似度:1.175</br></p></div></form>
+{% endblock content %}

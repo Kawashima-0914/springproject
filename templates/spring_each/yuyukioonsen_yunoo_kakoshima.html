@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯之尾温泉（ゆのお）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2188_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">栗野ICから車で約15分、川内川沿いに位置する温泉地。日本最大の金鉱山である「菱刈金山」の採掘によって湧出した温泉である。いわば金鉱の副産物で、温泉の湯には金を含んでいるとも言われる。江戸時代から本格的に温泉地として開発が進められ、いちどは温泉が枯渇したものの、専門の設備を造ったことにより熱い源泉を鉱山から入浴施設へ直接届けられるようになった。温泉地の伊佐市は焼酎の蔵元が多い酒どころ。周辺の旅館や民宿でも地元の焼酎を提供しているところがある。温泉地からほど近い場所にある「湯之尾神社」では、毎年11月23日に無形民俗文化財に登録されている「湯之尾神社の神舞」が行われる。
+泉質はナトリウム-炭酸水素塩泉。神経痛や関節痛、うちみ、消化器病、冷え性などに効能があるとされている。無色透明で無臭のやわらかな湯が特徴。肌がすべすべになる美肌効果も期待できる。入浴施設の露天風呂からは「日本の星空百選」に選出された北薩地方の星空を満喫しながら入浴できる。「黄金の湯」とも呼ばれる温泉に入れば、なんだか贅沢な気分になれそう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="iwaobetsuonsen_iwaobetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="iwaobetsuonsen_iwaobetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.iwaobetsuonsen_iwaobetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1833_0001.jpg"/></a><p class="feature">岩尾別温泉（いわおべつ）<br>類似度:2.364</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yaharaonsen_yawara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="yaharaonsen_yawara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.yaharaonsen_yawara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1900_0001.jpg"/></a><p class="feature">矢原温泉（やわら）<br>類似度:2.354</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:2.351</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="oobokeiyaawaonsen_oobokeiyaawa_tokushima">{% csrf_token %}<input name="id2" type="hidden" value="oobokeiyaawaonsen_oobokeiyaawa_tokushima"/><div class="con2"><a href="../spring_each/" onclick="document.oobokeiyaawaonsen_oobokeiyaawa_tokushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0970_0001.jpg"/></a><p class="feature">大歩危祖谷阿波温泉（おおぼけいやあわ）<br>類似度:2.348</br></p></div></form>
+{% endblock content %}

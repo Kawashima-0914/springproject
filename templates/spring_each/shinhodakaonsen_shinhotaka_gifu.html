@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">新穂高温泉（しんほたか）</h2><h3 class="icon"> 所在地：岐阜県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0921_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">北アルプスに囲まれた奥飛騨温泉郷の中でも、最も奥に位置する大自然の中の温泉地。標高約1000mを超える場所に広がる清清しい高原温泉だ。川底から源泉が湧き出る蒲田川の川沿いに温泉街が広がり、まさに“日本のふるさと”といった山里ならではの郷愁誘う風情が漂う。 一方で、白樺林の中にホテルやペンションが建ち並び、リゾートムードもたっぷり。温泉街の奥には「新穂高ロープウェイ」の発着駅があり、昔から北アルプス槍ヶ岳・穂高岳の登山基地として親しまれてきた。「日本の屋根」とも謳われる北アルプスのパノラマは圧巻。 大自然の威力を目前に佇めば、心が大きく強くなっていくのを確かに感じられるはずだ。
+平湯、福地、新平湯、栃尾、新穂高の5つの温泉からなる奥飛騨温泉郷の一つ。温泉街を流れる蒲田川の川床より豊富な湯がこんこんと湧き出ている。施設ごとに山の湧き水や地下水などで調整している。「露天風呂天国」ともいわれ、多くの宿が見晴らし抜群の露天風呂を完備。その数は40カ所を数えるという。川のせせらぎに耳を傾けながら澄んだ空気を肌で感じ、広い露天風呂で心の底からリラックスしたい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kisoonsen_kiso_nagano">{% csrf_token %}<input name="id2" type="hidden" value="kisoonsen_kiso_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.kisoonsen_kiso_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1198_0001.jpg"/></a><p class="feature">木曽温泉（きそ）<br>類似度:1.968</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="himegawaonsen_himekawa_niigata">{% csrf_token %}<input name="id2" type="hidden" value="himegawaonsen_himekawa_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.himegawaonsen_himekawa_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0996_0001.jpg"/></a><p class="feature">姫川温泉（ひめかわ）<br>類似度:1.932</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:1.932</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ooyamaonsen_daisen_tottori">{% csrf_token %}<input name="id2" type="hidden" value="ooyamaonsen_daisen_tottori"/><div class="con2"><a href="../spring_each/" onclick="document.ooyamaonsen_daisen_tottori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0758_0001.jpg"/></a><p class="feature">大山温泉（だいせん）<br>類似度:1.930</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">青島温泉（あおしま）</h2><h3 class="icon"> 所在地：宮崎県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0700_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、関節痛、婦人病、冷え性、皮膚病、痔疾、美肌など
+</td></tr></table></div><div class="con1"><p class="feature">日本神話「海幸彦山幸彦」の舞台として伝わる、宮崎を代表する観光スポット、青島。その青島に面し、太陽光がさんさんと降り注ぐ日南海岸に位置する南国情緒あふれる温泉地。白浜のビーチサイドに椰子の木が立ち並ぶ光景は「日本のハワイ」と呼ばれるにふさわしい。 昭和40年代に海岸沿いのホテルや旅館に温泉が引かれてからは、日南観光の拠点として多くの観光客で賑わうようになった。九州屈指の日の出スポットとしても有名。沖に浮かぶ青島の向こう、エメラルドグリーンの太平洋からオレンジ色に輝く太陽が昇る姿は幻想的。 神話の国に湧き出る名湯に身を委ね、南国の風に吹かれながら日の出を迎えた瞬間、言葉にならない感動が全身を包み込む。
+江戸時代に飫肥（おび）藩の殿様が入湯した温泉として名高く、地元では別名「殿湯」と呼ばれている由緒ある温泉。豊富に湧き出る湯はヌルヌルとした肌ざわりが特徴で、数ある効能の中でも特に美肌効果が高いと評判。湯上がりには、化粧水が要らないほどのしっとり感が味わえる。飲泉をすれば利尿作用に働き、体の老廃物を排出できる点も女性客を中心に人気だ。紺碧の日向灘を望みながら湯に浸かれば、体の中から浄化され、心身ともに開放されていくのを感じる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:2.591</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="amatsukominatoonsen_amatsukominato_chiba">{% csrf_token %}<input name="id2" type="hidden" value="amatsukominatoonsen_amatsukominato_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.amatsukominatoonsen_amatsukominato_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0014_0001.jpg"/></a><p class="feature">天津小湊温泉（あまつこみなと）<br>類似度:2.555</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.554</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tangookuineonsen_tangookuine_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tangookuineonsen_tangookuine_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tangookuineonsen_tangookuine_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2140_0001.jpg"/></a><p class="feature">丹後奥伊根温泉（たんごおくいね）<br>類似度:2.531</br></p></div></form>
+{% endblock content %}

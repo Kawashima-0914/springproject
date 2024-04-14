@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯免温泉（ゆめん）</h2><h3 class="icon"> 所在地：山口県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0727_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、ラジウム泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、皮膚病
+</td></tr></table></div><div class="con1"><p class="feature">長門市三隅に位置する温泉地。一軒宿「湯免観光ホテル」内には、地元の人たちも足しげく通う大衆浴場を併設。 三隅出身の画家・香月泰男の美術館まで徒歩約3分。シベリヤでの抑留体験から生まれた「シベリヤシリーズ」で知られる香月は、三隅を「私の地球」と呼びこよなく愛したという。また、同じく当地出身の村田清風は、明治維新の基礎を築いたと語り継がれる賢人。江戸時代の後期、経済的窮地に陥っていた長州藩を産業の開発や人材の育成・登用などによって立て直した。 旧宅・三隅山荘が現存し、武家の暮らしを今に伝えている。先人たちが愛し、多くの才能を輩出してきた三隅。今なお豊かな自然が残り、受け継がれる名湯が訪れる者を優しく包み込む。
+その昔、弘法大師が唐からの帰途に立ち寄った際、温泉が湧く夢を見たことから発見されたとの言い伝えが残る古湯。そのため「ゆめ温泉」と呼ばれていたのが転じて、「ゆめん」となったとか。また一説には、傷ついたウサギが傷を癒したことから、「湯免（兎）」と名がついたともいわれている。通常の4倍ものラジウムを含んだ湯は神経痛や筋肉痛、皮膚病などに効果があり、美肌の湯として女性を中心に人気が高い。入浴施設は公営の「湯免ふれあいセンター」と「湯免観光ホテル」の2カ所のみ。規模は決して大きくないが、多くの人に親しまれてきた温泉
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tamanaonsen_tamana_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="tamanaonsen_tamana_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.tamanaonsen_tamana_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0380_0001.jpg"/></a><p class="feature">玉名温泉（たまな）<br>類似度:2.811</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.688</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hagionsensato_hagi_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="hagionsensato_hagi_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.hagionsensato_hagi_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0925_0001.jpg"/></a><p class="feature">萩温泉郷（はぎ）<br>類似度:2.650</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shinshuumatsukawaonsen_shinshuumatsukawa_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shinshuumatsukawaonsen_shinshuumatsukawa_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shinshuumatsukawaonsen_shinshuumatsukawa_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1494_0001.jpg"/></a><p class="feature">信州まつかわ温泉（しんしゅうまつかわ）<br>類似度:2.569</br></p></div></form>
+{% endblock content %}

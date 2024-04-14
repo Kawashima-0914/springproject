@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">鳴子温泉（鳴子温泉郷）（ナルコ）</h2><h3 class="icon"> 所在地：宮城県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0105_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、炭酸水素塩泉、塩化物泉、硫酸塩泉、硫黄泉
+</td></tr><tr><th>効能</th><td>にごり、にごり（乳白色）、にごり（褐色）、美肌、婦人病、胃腸病、高血圧、動脈硬化、皮膚病、糖尿病など
+</td></tr></table></div><div class="con1"><p class="feature">「奥州三名湯」と言われ、鳴子温泉郷の中で屈指の規模と豊富な湯量と効能を誇る鳴子温泉。立ち上る湯煙と漂う硫黄の香り、細い路地と軒を連ねる土産物屋が温泉情緒を一気に盛り上げる。 安定感のあるシルエットと写実的な模様が特徴の「鳴子こけし」。店頭に並ぶこけしや「鳴子漆器」が、東北の名湯に来た喜びを再確認させてくれる。 宿に着いたら浴衣と下駄を借りて、共同浴場にも向かうのもよい。代表的な「滝の湯」は、1000年以上の歴史を持つ古湯。源泉100％の硫黄泉がじっくり肌に沁みこんでいく。 深さ100メートルに及ぶ大渓谷・鳴子峡は例年10月中旬から11月上旬にかけて、赤や黄色の紅葉に美しく染まる。「鳴子峡レストハウス」や「大深沢橋」からの眺めは東北随一の絶景。
+栗駒山の山すそに鬼首、中山平、鳴子、東鳴子、川渡温泉が連なる「鳴子温泉郷」。日本にある天然温泉の11種類の泉質のうち9種類の泉質を持ち、源泉数は370本以上。恵まれた泉質と湯量を生かし、外湯も充実。55軒ある宿や共同浴場のほとんどが源泉かけ流しだ。温泉街の中心から東鳴子温泉方面に向かい、大きく分類するだけでも硫黄泉、塩化物泉、炭酸水素塩泉と湧き出る湯の泉質が変化。それぞれ異なる湯の香に包まれれば、ここがケタ外れの名湯であることを実感できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="nakayamaheionizumi_nakayamadaira_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="nakayamaheionizumi_nakayamadaira_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.nakayamaheionizumi_nakayamadaira_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0946_0001.jpg"/></a><p class="feature">中山平温泉（なかやまだいら）<br>類似度:3.572</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kirishimaonsensato_kirishima_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="kirishimaonsensato_kirishima_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.kirishimaonsensato_kirishima_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0329_0001.jpg"/></a><p class="feature">霧島温泉郷（きりしま）<br>類似度:3.430</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kurokawaonsen_kurokawa_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kurokawaonsen_kurokawa_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kurokawaonsen_kurokawa_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0378_0001.jpg"/></a><p class="feature">黒川温泉（くろかわ）<br>類似度:3.429</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:3.128</br></p></div></form>
+{% endblock content %}

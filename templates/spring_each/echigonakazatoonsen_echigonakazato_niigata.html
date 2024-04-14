@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">越後中里温泉（えちごなかざと）</h2><h3 class="icon"> 所在地：新潟県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0869_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">新潟県最南端に位置する町、湯沢町。その昔は、越後と江戸とを結ぶ三国街道の宿場町として栄えてきた。また、川端康成の代表作のひとつ『雪国』の舞台としても知られる。 現在の湯沢町は、温泉地としてはもちろん14カ所のスキー場もあり、年間約430万人もの人達が訪れる大リゾート地。越後の山々に囲まれ、湖や渓流など風光明媚な景色を魅せるスポットが点在しており、四季を通じて豊かな自然美にあふれている。 その越後湯沢の中心から少し離れた場所に、15階建ての大型リゾートホテルが建つ温泉地。
+温泉地として名高い越後湯沢温泉から、少し離れた場所に湧き続けている温泉。この温泉名を知っている人は、かなりの温泉通といえよう。無色透明で一見個性がない湯に見えるが、じっくりと浸かってみると、肌にすうっと吸い付いてくる柔らかな感触がたまらない。周囲を手付かずの自然に抱かれた露天風呂で、木漏れ日の中に響く鳥のさえずりを聞きながら、はたまた少し時雨れている中で、湯を浴びる最高のひととき。のんびりと、ゆるりとした時の流れとともに、体の芯まで癒されていく。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="oohorionsen_oohori_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="oohorionsen_oohori_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.oohorionsen_oohori_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1185_0001.jpg"/></a><p class="feature">大堀温泉（おおほり）<br>類似度:1.933</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sekiahiruzuonsen_sekiahiruzu_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="sekiahiruzuonsen_sekiahiruzu_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.sekiahiruzuonsen_sekiahiruzu_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0189_0001.jpg"/></a><p class="feature">セキアヒルズ温泉（せきあひるず）<br>類似度:1.881</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yuseonsen_yuze_akita">{% csrf_token %}<input name="id2" type="hidden" value="yuseonsen_yuze_akita"/><div class="con2"><a href="../spring_each/" onclick="document.yuseonsen_yuze_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0786_0001.jpg"/></a><p class="feature">湯瀬温泉（ゆぜ）<br>類似度:1.876</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:1.867</br></p></div></form>
+{% endblock content %}

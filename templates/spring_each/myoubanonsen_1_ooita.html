@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">明礬温泉（別府温泉郷）（みょうばん（べっぷ））</h2><h3 class="icon"> 所在地：大分県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0306_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">明礬温泉は別府八湯の中でも最も高いところにあり、最も落ち着きのある温泉地といわれている。江戸時代に明礬（湯の花）が採取されてきた山の温泉街。大昔の住居のようなかやぶき小屋が並んでいるのが湯の花小屋で、明礬温泉の風物詩である。別府石の石垣が築かれ、湯の花小屋が建ち並び、湯けむりの立ち込める明礬温泉の景観は、鉄輪温泉とともに別府の湯けむり・温泉地景観として国の重要文化的景観に、また別府明礬温泉の湯の花製造技術は、国の重要無形民俗文化財に指定されている。
+明礬温泉は、神経痛・リューマチ・皮膚病に効能があるといわれており、強酸性のお湯は、殺菌力が強くアトピー性皮膚炎に効くと言われている。湯が目に入るとしみたり、長時間入浴すると肌が乾燥するほど酸性度が強いのが特徴。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1128_0001.jpg"/></a><p class="feature">天橋立・宮津温泉ピント湯（あまのはしだて・みやづぴんとゆ）<br>類似度:1.709</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="maruoonsen_maruo_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="maruoonsen_maruo_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.maruoonsen_maruo_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0170_0001.jpg"/></a><p class="feature">丸尾温泉（まるお）<br>類似度:1.658</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="namerikawaonsen_namekawa_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="namerikawaonsen_namekawa_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.namerikawaonsen_namekawa_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1811_0001.jpg"/></a><p class="feature">滑川温泉（なめかわ）<br>類似度:1.656</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="unagionsen_unagi_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="unagionsen_unagi_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.unagionsen_unagi_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1039_0001.jpg"/></a><p class="feature">鰻温泉（うなぎ）<br>類似度:1.655</br></p></div></form>
+{% endblock content %}

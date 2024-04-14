@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">咲花温泉（さきはな）</h2><h3 class="icon"> 所在地：新潟県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0581_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">「日本観光地百選」にも上位入賞した景勝地、阿賀野川ラインのほとりに7軒の旅館・ホテルが立ち並ぶ。 眼下には静かに流れ行く雄大な大河、背後には秀麗な菅名岳などの山並みをひかえる渓谷美が見事。湯量豊富なエメラルドグリーンに輝く美肌の湯。 宿泊客はもちろん、湯めぐりや日帰り入浴を楽しむ観光客も多数訪れる。春には桜が咲き誇り、夏には咲花温泉水中花火大会なども開催。心休まる川岸の温泉地として、自然と温泉を楽しむ人々に親しまれている。
+1954年に開湯され、その昔は「先花地」と呼ばれ、湯花が噴出していたことから「咲花温泉」と名づけられたという。湯量豊富なエメラルドグリーンに輝く幻想的な温泉で、美肌の湯としても知られている。美肌効果のあるお湯の条件とは、「弱アルカリ性」で、なおかつ「炭酸水素塩泉」・「硫黄泉」・「硫酸塩泉」のいずれかの泉質であること。咲花温泉は弱アルカリ性で硫黄泉。さらに硫酸塩泉成分も含んでおり、美肌の4つの条件のうち3つを満たす欲張りなお湯。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="okudougoonsen_okudougo_ehime">{% csrf_token %}<input name="id2" type="hidden" value="okudougoonsen_okudougo_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.okudougoonsen_okudougo_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0288_0001.jpg"/></a><p class="feature">奥道後温泉（おくどうご）<br>類似度:2.053</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="haratsuruonsen_harazuru_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="haratsuruonsen_harazuru_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.haratsuruonsen_harazuru_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0628_0001.jpg"/></a><p class="feature">原鶴温泉（はらづる）<br>類似度:2.009</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="norikurakougenonsen_norikurakougen_nagano">{% csrf_token %}<input name="id2" type="hidden" value="norikurakougenonsen_norikurakougen_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.norikurakougenonsen_norikurakougen_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1330_0001.jpg"/></a><p class="feature">乗鞍高原温泉（のりくらこうげん）<br>類似度:2.009</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinomataonsen_ichinomata_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="ichinomataonsen_ichinomata_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.ichinomataonsen_ichinomata_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1123_0001.jpg"/></a><p class="feature">一の俣温泉（いちのまた）<br>類似度:1.982</br></p></div></form>
+{% endblock content %}

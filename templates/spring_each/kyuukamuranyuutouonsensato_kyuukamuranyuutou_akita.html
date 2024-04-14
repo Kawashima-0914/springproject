@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">休暇村乳頭温泉郷（きゅうかむらにゅうとう）</h2><h3 class="icon"> 所在地：秋田県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1885_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、硫黄泉
+</td></tr><tr><th>効能</th><td>にごり、にごり（乳白色）、にごり（褐色）、疲労、高血圧、動脈硬化
+</td></tr></table></div><div class="con1"><p class="feature">十和田八幡平国立公園に位置する四季の美しいブナ林にたたずむ温泉地だ。「休暇村乳頭温泉郷」は、秘湯のムードが漂う乳頭温泉郷の他の宿に比べ、最も近代的なホテルらしい建物「休暇村乳頭温泉郷」が一軒あるのみ。施設のフロントでは、乳頭温泉郷内の七湯をめぐることが出来る「湯めぐり帖」を販売している。七湯すべてめぐれば万病に効くと言われている。近くには日本百景に選ばれた、日本で最も深い湖「田沢湖」がある。田沢湖を周遊する遊覧船では名勝・御座石やたつこ像をめぐり、船内ではたつこ姫伝説を聴くことが出来る。美しいブルーの湖面と黄金に輝くたつこ像を見つけたらぜひシャッターを押したい。
+「休暇村乳頭温泉郷」は2種の異なる源泉を持つ。単純硫黄泉は、動脈硬化症や高血圧症などに効果を発揮し、ナトリウム・炭酸水素塩泉は切傷や火傷、慢性疲労病などに効果を発揮する。四季折々の美しいブナの森に囲まれた露天風呂は日頃の疲れを癒してくれます。新緑や紅葉の時期は息をのむ絶景に癒されるだろう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="nyuutouonsensato_nyuutou_akita">{% csrf_token %}<input name="id2" type="hidden" value="nyuutouonsensato_nyuutou_akita"/><div class="con2"><a href="../spring_each/" onclick="document.nyuutouonsensato_nyuutou_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0244_0001.jpg"/></a><p class="feature">乳頭温泉郷（にゅうとう）<br>類似度:2.364</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.112</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="haratsuruonsen_harazuru_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="haratsuruonsen_harazuru_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.haratsuruonsen_harazuru_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0628_0001.jpg"/></a><p class="feature">原鶴温泉（はらづる）<br>類似度:2.096</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="chuuzenjionsen_chuuzenji_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="chuuzenjionsen_chuuzenji_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.chuuzenjionsen_chuuzenji_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0091_0001.jpg"/></a><p class="feature">中禅寺温泉（ちゅうぜんじ）<br>類似度:2.036</br></p></div></form>
+{% endblock content %}

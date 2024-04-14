@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">赤川温泉（あかがわ）</h2><h3 class="icon"> 所在地：大分県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1038_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫黄泉
+</td></tr><tr><th>効能</th><td>にごり、にごり（乳白色）、神経痛、筋肉痛、胃腸病、冷え性、皮膚病、打撲、糖尿病、美肌
+</td></tr></table></div><div class="con1"><p class="feature">久住山の南麓、標高600?900mに位置する久住高原に湧く温泉地。赤川谷奥の10数箇所で源泉が自然に湧出している。辺りは、樹木が生い茂り草花が咲きほころぶ自然の豊かさに恵まれ、静かで穏やかな環境。見上げれば聳え立つ久住山、遠くには阿蘇五岳も望み、広大な高原の開放感とひっそりとした秘境の雰囲気をも感じられる。春から冬にかけて、季節の色に染め変えられていく景観が感動的なほどに美しく、旅人の心を躍らせ優しく癒す。温泉宿の近くには、かつて僧侶や修験者の「行者滝」と呼ばれていた「雄飛の滝」もある。
+硫黄分を多く含み白濁したお湯で、青みがかかった美しい乳白色をしているのが特徴。泉質は硫黄泉で、アトピー性皮膚炎にも良いとされている。鎌倉時代初期に発見されたと伝えられており、古くは「くされ湯」と呼ばれていた。これは、昔「できもの」をくされと読んでいたため、そのくされに効能があることに由来しているものとされ、古くから皮膚に良いとされ親しまれていたようだ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="outokuonsen_outoku_gunma">{% csrf_token %}<input name="id2" type="hidden" value="outokuonsen_outoku_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.outokuonsen_outoku_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1271_0001.jpg"/></a><p class="feature">応徳温泉（おうとく）<br>類似度:2.428</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="chuuzenjionsen_chuuzenji_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="chuuzenjionsen_chuuzenji_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.chuuzenjionsen_chuuzenji_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0091_0001.jpg"/></a><p class="feature">中禅寺温泉（ちゅうぜんじ）<br>類似度:2.412</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="mitsunorionsen_koutoku_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="mitsunorionsen_koutoku_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.mitsunorionsen_koutoku_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0494_0001.jpg"/></a><p class="feature">光徳温泉（こうとく）<br>類似度:2.403</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinomataonsen_ichinomata_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="ichinomataonsen_ichinomata_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.ichinomataonsen_ichinomata_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1123_0001.jpg"/></a><p class="feature">一の俣温泉（いちのまた）<br>類似度:2.363</br></p></div></form>
+{% endblock content %}

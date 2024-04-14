@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯の児温泉（ゆのこ）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0810_0001.jpg"/><table><tr><th>効能</th><td>二酸化炭素泉
+</td></tr></table></div><div class="con1"><p class="feature">熊本県南部、「九州の地中海」と呼ばれる不知火海（しらぬいかい）に面したのんびり開放的な温泉地。海を挟んで天草諸島、さらに向こうに雲仙岳の雄姿を望む風光明媚な場所だ。 中でも、例年3月下旬～4月上旬の桜のシーズンがおすすめ。「チェリーライン」と呼ばれる海岸沿い約27㎞の桜街道が一斉に開花し、温泉街付近の約4㎞は特に桜の名所として人気が高い。 「日本のさくら名所百選」にも選ばれており、海の藍と桜の淡いピンクのコントラストが見事。シーズン中には花見船も運航され、海から眺める桜色の断崖絶壁も趣きがある。
+第12代景行天皇が九州平定の際に発見したという説、もしくは海亀が湯浴みをしていたところを発見されたという説が残る古湯。後説から別名「亀の湯温泉」と呼ばれ、亀が温泉街の象徴として親しまれている。陸続きの湯の児島には、「願かけ亀」のモニュメントをはじめ亀の造形が多数点在する。弱アルカリ性の湯は、湯上りの肌がツルツルなることから別名「美人の湯」。海を眺める露天風呂や洞窟風呂など趣向を凝らした湯船で、不知火海の絶景とともに楽しみたい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="yukawaonsen_yugawa_iwate">{% csrf_token %}<input name="id2" type="hidden" value="yukawaonsen_yugawa_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.yukawaonsen_yugawa_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1131_0001.jpg"/></a><p class="feature">湯川温泉（ゆがわ）<br>類似度:1.648</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="minamigisofuukihatakekougenonsensato_nagisofukibatakougen_nagano">{% csrf_token %}<input name="id2" type="hidden" value="minamigisofuukihatakekougenonsensato_nagisofukibatakougen_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.minamigisofuukihatakekougenonsensato_nagisofukibatakougen_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1704_0001.jpg"/></a><p class="feature">南木曽富貴畑高原温泉郷（なぎそふきばたこうげん）<br>類似度:1.645</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="arimaonsen_arima_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="arimaonsen_arima_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.arimaonsen_arima_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0016_0001.jpg"/></a><p class="feature">有馬温泉（ありま）<br>類似度:1.635</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="higashikaguraonsen_higashikagura_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="higashikaguraonsen_higashikagura_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.higashikaguraonsen_higashikagura_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1320_0001.jpg"/></a><p class="feature">東神楽温泉（ひがしかぐら）<br>類似度:1.625</br></p></div></form>
+{% endblock content %}

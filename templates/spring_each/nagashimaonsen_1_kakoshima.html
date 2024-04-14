@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">長島温泉（鹿児島県）（ながしま）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2176_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">雲仙天草国立公園の一角に位置し、素晴らしい眺望が楽しめる温泉地。また、海岸沿いでもあるため夕景の美しいサンセットライン沿いにある入浴施設の露天風呂から眺める夕焼けは格別だ。館内のレストランでは毎朝市場で仕入れた新鮮な海の幸を味わうことができ、売店では特産品である焼酎などを購入できる。付近には道の駅があり、ドライブの休憩や食事に立ち寄るのにぴったり。温泉地から車ですぐの場所には小浜海水浴場と一体になった町営のキャンプ場「長島青少年旅行村」がある。ここはウミガメの産卵地でもあり、夏は海水浴や地引網が楽しめる。バンガローなどもあるので、温泉と共に楽しんでみると良いだろう。
+泉質は無色透明で無味のナトリウム-塩化物・炭酸水素塩泉で、神経痛や関節痛、消化不良や冷え性などの広い効能があるとされる。天然の弱アルカリ性の湯で、入ると肌がぬるぬる・つるつるになることから「美人の湯」とも呼ばれている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kannoonsen_1_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kannoonsen_1_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kannoonsen_1_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2137_0001.jpg"/></a><p class="feature">神野温泉（久美の浜温泉郷）（じんの（くみのはま））<br>類似度:2.556</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tangookuineonsen_tangookuine_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tangookuineonsen_tangookuine_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tangookuineonsen_tangookuine_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2140_0001.jpg"/></a><p class="feature">丹後奥伊根温泉（たんごおくいね）<br>類似度:2.540</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:2.494</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tangohanaremizuumionsen_tangohanareko_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tangohanaremizuumionsen_tangohanareko_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tangohanaremizuumionsen_tangohanareko_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1214_0001.jpg"/></a><p class="feature">丹後はなれ湖温泉（たんごはなれこ）<br>類似度:2.455</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">たんげ温泉（たんげ）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2091_0001.jpg"/><table><tr><th>効能</th><td>神経痛、疲労、冷え性、皮膚病、打撲、糖尿病、痔疾
+</td></tr></table></div><div class="con1"><p class="feature">反下川の渓流沿いに位置し、山あいにひっそりと佇む一軒宿に湧く温泉地。四季折々の彩りを見せる景色と、清流の音に包まれる中で入る湯は、まさに秘湯の趣。木材を贅沢に使って作られており、周囲の自然に溶け込むような施設で、ゆっくりと体を休めよう。静かな環境で温泉を楽しみたいという人に支持されており、何度も足を運ぶリピーターも多いという。館内で楽しめる食事は、地元で採れる旬の食材をふんだんに使い、都会では味わえない素朴な贅沢さを堪能できる。周辺の自然公園では、千手観音や展望台をめぐる散策コースが整備されている。野鳥や野生生物、四季折々の花を楽しみながらゆったりとした時間を過ごしたい。
+泉質はカルシウム硫酸塩温泉で、ぬるめの湯が毎分120リットル湧出する。きりきず、末梢循環障害、冷え性、うつ状態、皮膚乾燥症などのほか、一般適応症に効能がある。浴室から見える美しい滝や、川のせせらぎ音が、体だけではなく心までゆっくりとほぐしてくれるだろう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kasagionsen_kasagi_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kasagionsen_kasagi_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kasagionsen_kasagi_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2105_0001.jpg"/></a><p class="feature">笠置温泉（かさぎ）<br>類似度:1.942</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="minamiasotochigionsen_minamiasotochinoki_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="minamiasotochigionsen_minamiasotochinoki_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.minamiasotochigionsen_minamiasotochinoki_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1221_0001.jpg"/></a><p class="feature">南阿蘇栃木温泉（みなみあそとちのき）<br>類似度:1.894</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:1.887</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okudougoonsen_okudougo_ehime">{% csrf_token %}<input name="id2" type="hidden" value="okudougoonsen_okudougo_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.okudougoonsen_okudougo_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0288_0001.jpg"/></a><p class="feature">奥道後温泉（おくどうご）<br>類似度:1.872</br></p></div></form>
+{% endblock content %}

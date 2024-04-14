@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">白川温泉（しらかわ）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1733_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫酸塩泉、硫黄泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、関節痛、婦人病、皮膚病
+</td></tr></table></div><div class="con1"><p class="feature">白川温泉は熊本県阿蘇郡南小国町満願寺白川にある、自然が主役の温泉郷。黒川温泉から瀬の本高原へ行く途中、細い道を入った場所にあり、小田温泉と黒川温泉の中間にある南小国町で最も新しい。小田川の流域に3軒の宿とキャンプ場がひっそりと点在している。小さな温泉地ながら、野趣あふれる露天風呂を持つ宿あり、離れ形式露天風呂付きの和風旅館や、露天風呂付きのキャンプ場などと、注目される温泉地となった。近くには阿蘇ファンタジーの森があり、豊かな自然の中で、1年中キャンプを楽しむことができる。またニジマス釣りが楽しめる釣り堀や開放感抜群の屋外プールなどの子どもが遊べる施設があり、子どもと一緒に楽しむことができる。阿蘇五岳の一つである烏帽子岳の北麓に広がる火口跡にある大草原と、雨水が溜まってできたといわれる池「草千里ヶ浜」は人気のスポットだ。
+白川温泉の泉質は塩化物泉、炭酸水素塩泉、硫黄泉。一般的適応症、やけど・切り傷・慢性皮膚病・動脈硬化・慢性婦人病・虚弱児童に効能があるとされる。塩化物泉は入浴すると皮膚に塩分が付着して汗の蒸発を防ぐ。そのため保湿効果があると言われ、体が温まりやすく湯冷めしにくいという特徴をもつ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.788</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kirishimaonsensato_kirishima_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="kirishimaonsensato_kirishima_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.kirishimaonsensato_kirishima_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0329_0001.jpg"/></a><p class="feature">霧島温泉郷（きりしま）<br>類似度:2.775</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="higashinarukoonsen_1_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="higashinarukoonsen_1_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.higashinarukoonsen_1_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0896_0001.jpg"/></a><p class="feature">東鳴子温泉（鳴子温泉郷）（ひがしなるこ（なるこ））<br>類似度:2.755</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sakuranbohigashineonsen_sakuranbohigashine_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="sakuranbohigashineonsen_sakuranbohigashine_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.sakuranbohigashineonsen_sakuranbohigashine_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0059_0001.jpg"/></a><p class="feature">さくらんぼ東根温泉（さくらんぼひがしね）<br>類似度:2.747</br></p></div></form>
+{% endblock content %}

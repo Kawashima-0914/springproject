@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">下田蓮台寺温泉（しもだれんだいじ）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0155_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">幕末、吉田松陰が皮膚病の湯治をした温泉としても有名な蓮台寺温泉。石畳の「蓮台寺湯の華小路」を歩けば、歴史情緒をたっぷり味わえる。 古い石垣が並び、天狗の絵を本尊として祀る伝説の「下の湯権現」や、密航を企てた吉田松陰が身を寄せた「村山邸」など歴史を物語る名所が点在。歩いて約30分ほどの道のりなので、散歩がてらに出かけたい。 また稲生沢川の「お吉ヶ淵」は、婚約者がいながらも政策のためアメリカの初代駐日総領事ハリスの侍妾にされたお吉が、入水して命を断った場所。激動の時代も悲しい歴史も見守ってきた蓮台寺温泉。往時をしのびながら、静かに過ごしたい人にはおすすめ。
+約1300年前、僧行基が夢で天狗のお告げを受けて開湯したと伝えられる古湯。伊豆でも有数の湧出量を誇り、ほとんどの宿が自家源泉を持つ。下田への引き湯も発達。2階建て和風建築の街並みが維持され、長い歴史を感じさせてくれる。伊豆急下田駅からバスで約10分という距離にありながら、山あいの静かで素朴な温泉郷の姿を残す穴場。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="hakoneyumotoonsen_hakoneyumoto_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="hakoneyumotoonsen_hakoneyumoto_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.hakoneyumotoonsen_hakoneyumoto_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0356_0001.jpg"/></a><p class="feature">箱根湯本温泉（はこねゆもと）<br>類似度:2.010</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shuzenjionsen_shuzenji_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="shuzenjionsen_shuzenji_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.shuzenjionsen_shuzenji_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0071_0001.jpg"/></a><p class="feature">修善寺温泉（しゅぜんじ）<br>類似度:2.008</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="biwamizuumiogotoonsen_biwakoogoto_shiga">{% csrf_token %}<input name="id2" type="hidden" value="biwamizuumiogotoonsen_biwakoogoto_shiga"/><div class="con2"><a href="../spring_each/" onclick="document.biwamizuumiogotoonsen_biwakoogoto_shiga.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0438_0001.jpg"/></a><p class="feature">びわ湖おごと温泉（びわこおごと）<br>類似度:1.998</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tamanaonsen_tamana_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="tamanaonsen_tamana_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.tamanaonsen_tamana_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0380_0001.jpg"/></a><p class="feature">玉名温泉（たまな）<br>類似度:1.995</br></p></div></form>
+{% endblock content %}

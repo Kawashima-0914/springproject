@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">山鹿温泉（やまが）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0142_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">温泉街の中心に建つ芝居小屋「八千代座」。そのどっしりとした風格に思わず圧倒される。桟敷席や桝席、廻り舞台にスッポンといった明治43年建築当時の姿を今に残す国の重要文化財。 昭和40年代に閉鎖に追い込まれたが、地元の人たちの努力によって平成2年からは坂東玉三郎の定期公演も開催されている。江戸時代には豊前街道を参勤交代の大名たちが行き来し、菊池川の水運を利用した米の集散地として発展した山鹿。 今も街の一角には白壁土蔵造りの家並みが残り、酒・味噌・米蔵を巡る「米米惣門ツアー」も人気だ。毎年8月には、頭に金灯籠を載せ千人もの女性が踊る「千人灯籠踊り」などのイベントがある「山鹿灯籠祭り」が開催される。
+「山鹿千軒たらい無し」と唄われるほどに豊富な湯量を誇る山鹿温泉。源泉の深さは平均200mと浅く、昔ながらの玄関を残す共同浴場「さくら湯」では源泉かけ流しが楽しめる。柔らかな肌触りのお湯は、別名「乙女の柔肌」。約800年前、手負い鹿が傷を癒しているのを見て発見されたと伝わるが、平安初期の「和妙抄」にすでに「湯泉郷」との記載が残る。歴史ある町でいにしえから人々を癒し続けてきた古湯に出会える。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="okutsuonsen_okutsu_okayama">{% csrf_token %}<input name="id2" type="hidden" value="okutsuonsen_okutsu_okayama"/><div class="con2"><a href="../spring_each/" onclick="document.okutsuonsen_okutsu_okayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0312_0001.jpg"/></a><p class="feature">奥津温泉（おくつ）<br>類似度:1.931</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="haratsuruonsen_harazuru_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="haratsuruonsen_harazuru_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.haratsuruonsen_harazuru_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0628_0001.jpg"/></a><p class="feature">原鶴温泉（はらづる）<br>類似度:1.931</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kizuonsen_kitsu_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kizuonsen_kitsu_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kizuonsen_kitsu_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0369_0001.jpg"/></a><p class="feature">木津温泉（きつ）<br>類似度:1.909</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yudaonsen_yuda_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="yudaonsen_yuda_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.yudaonsen_yuda_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0724_0001.jpg"/></a><p class="feature">湯田温泉（ゆだ）<br>類似度:1.902</br></p></div></form>
+{% endblock content %}

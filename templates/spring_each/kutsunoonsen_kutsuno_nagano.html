@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">沓野温泉（くつの）</h2><h3 class="icon"> 所在地：長野県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1950_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、塩化物泉、硫黄泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、関節痛
+</td></tr></table></div><div class="con1"><p class="feature">湯田中渋温泉郷のひとつで、志賀高原の美しい山並に囲まれた由緒ある素朴な温泉地だ。靴（くつ）の形をした野（の）として沓野（くつの）という地名となったと言われている。志賀高原から流れる横湯川と角間川の清流に挟まれた台地にある静かな環境の地である。1818年、沓野村坪根地籍の川縁に源泉が発見され、その泉温の高さから熱の湯と称された。板葺き屋根の「熱の湯」が造られたのが温泉地の始まり。観光温泉街という雰囲気では無く、各所に地元民が生活に利用する共同浴場、お湯汲み場が点在するという素朴な街並みである。横湯川上流にはニホンザルが温泉入浴を観察できる場所「地獄谷野猿公苑」がある。
+泉質は単純温泉、塩化物泉、硫黄泉など。旅館「くつの館」はヒノキの湯舟にかけ流しで注がれている。透明のお湯には細かい湯の華が舞う、ヒノキの香りとかすかに感じる温泉臭を心地よく感じながら、じっくりと温泉に浸かると身も心も次第にほぐされていくのを感じる。日々のストレスを解放して自分との対話をするのにオススメの場所だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ichinomataonsen_ichinomata_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="ichinomataonsen_ichinomata_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.ichinomataonsen_ichinomata_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1123_0001.jpg"/></a><p class="feature">一の俣温泉（いちのまた）<br>類似度:3.015</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hagionsensato_hagi_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="hagionsensato_hagi_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.hagionsensato_hagi_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0925_0001.jpg"/></a><p class="feature">萩温泉郷（はぎ）<br>類似度:3.007</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="minamiogunionsensato_minamioguni_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="minamiogunionsensato_minamioguni_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.minamiogunionsensato_minamioguni_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1036_0001.jpg"/></a><p class="feature">南小国温泉郷（みなみおぐに）<br>類似度:2.993</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenkeseonsen_amagase_ooita">{% csrf_token %}<input name="id2" type="hidden" value="tenkeseonsen_amagase_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.tenkeseonsen_amagase_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0010_0001.jpg"/></a><p class="feature">天ヶ瀬温泉（あまがせ）<br>類似度:2.978</br></p></div></form>
+{% endblock content %}

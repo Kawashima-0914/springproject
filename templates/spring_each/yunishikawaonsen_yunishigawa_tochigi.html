@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯西川温泉（ゆにしがわ）</h2><h3 class="icon"> 所在地：栃木県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0500_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">湯西川沿いに立ち並ぶ茅葺き屋根の家々。ここ湯西川は、壇ノ浦の戦いに敗れた平家落人が隠れ住んだとの伝説が残る落人の里。近年では近代的なホテルも建ったが、落人伝説は今も息づく。 平家落人の生活様式や古い史料を展示した「平家の里」「平家落人民俗資料館」、平家落人の菩提寺と伝わる「慈光寺」、平家落人の子孫が発見したといわれる温泉…。そして、この地域では現在もこいのぼりは上げず、ニワトリを飼わない。平家落人が身を隠すために工夫した風習だ。 「味噌べら」などの落人料理を囲炉裏端でいただき、渓谷沿いの露天風呂に身を委ねる。ひたすらに息をひそめ時代の流れを待ち続けた平家落人の生活を思う時、何ともいえない哀愁が漂ってくる。
+1573年（天正元年）、平家落人の子孫が発見したと伝わる古湯。「露天風呂天国」との異名をとるほど渓谷沿いの露天風呂が多く、温泉街全体で100人入ってもまだ余裕とか。味噌の中に野鳥をすりつぶして入れた「味噌べら」や、焼いた岩魚を大盃に入れた「岩魚の骨酒」など、囲炉裏端で川魚や野鳥を焼いていただく落人料理が名物。落人の里の名残が今も残る静かな山里で、郷愁感じる旅もよい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="yunokoyaonsen_1_gunma">{% csrf_token %}<input name="id2" type="hidden" value="yunokoyaonsen_1_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.yunokoyaonsen_1_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0415_0001.jpg"/></a><p class="feature">湯ノ小屋温泉（水上温泉郷）（ゆのこや（みなかみ））<br>類似度:1.925</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ooharaonsen_oohara_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="ooharaonsen_oohara_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.ooharaonsen_oohara_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0947_0001.jpg"/></a><p class="feature">大原温泉（おおはら）<br>類似度:1.890</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="haratsuruonsen_harazuru_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="haratsuruonsen_harazuru_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.haratsuruonsen_harazuru_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0628_0001.jpg"/></a><p class="feature">原鶴温泉（はらづる）<br>類似度:1.843</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="igaonsen_iga_mie">{% csrf_token %}<input name="id2" type="hidden" value="igaonsen_iga_mie"/><div class="con2"><a href="../spring_each/" onclick="document.igaonsen_iga_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1470_0001.jpg"/></a><p class="feature">伊賀温泉（いが）<br>類似度:1.823</br></p></div></form>
+{% endblock content %}

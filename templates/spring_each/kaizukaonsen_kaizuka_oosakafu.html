@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">かいづか温泉（かいづか）</h2><h3 class="icon"> 所在地：大阪府</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1620_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">大阪府南西部・泉南地域に位置する温泉。貝塚市は浄土真宗本願寺派の寺院である「願泉寺」の地内町を中心に発展してきた町である。土蔵や格子戸など、町のところどころに歴史の面影が見られ、かつての町の繁栄を物語 る姿が数多く残る。 秋に行なわれる「だんじり祭り」をはじめとする伝統行事も見所のひとつ。勇ましく駆け抜けるだんじりは圧巻の光景。効能豊かな温泉は「ぬるっ」とした感触が独特の泉質で「美人の湯」としてリピー ターも多く評判の湯。 温泉を楽しみながら、歴史を感じる旅を求める観光客も多い。自然を楽しみ、地元農家で採れた新鮮な野菜を使った料理に舌鼓をし、四季を味わいながら温泉に浸かる。ゆったり過ごし、ほのぼの寛ぐ休日を満喫したい。
+源泉20.8℃を41.8℃に加温。美人の湯といわれるアルカリ性の天然水。ぬるりとした感触があり、美肌効果・保温効果に優れている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ootamaonsen_ootama_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="ootamaonsen_ootama_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.ootamaonsen_ootama_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0916_0001.jpg"/></a><p class="feature">大玉温泉（おおたま）<br>類似度:1.734</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nakatsugawaonsen_nakatsugawa_gifu">{% csrf_token %}<input name="id2" type="hidden" value="nakatsugawaonsen_nakatsugawa_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.nakatsugawaonsen_nakatsugawa_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0895_0001.jpg"/></a><p class="feature">中津川温泉（なかつがわ）<br>類似度:1.613</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yoshiionsen_yoshii_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="yoshiionsen_yoshii_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.yoshiionsen_yoshii_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0631_0001.jpg"/></a><p class="feature">吉井温泉（よしい）<br>類似度:1.592</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="senganishionsen_senganishi_iwate">{% csrf_token %}<input name="id2" type="hidden" value="senganishionsen_senganishi_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.senganishionsen_senganishi_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1810_0001.jpg"/></a><p class="feature">千貫石温泉（せんがんいし）<br>類似度:1.586</br></p></div></form>
+{% endblock content %}

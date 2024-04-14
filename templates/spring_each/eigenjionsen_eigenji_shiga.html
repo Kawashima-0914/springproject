@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">永源寺温泉（えいげんじ）</h2><h3 class="icon"> 所在地：滋賀県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1658_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">鈴鹿山脈から琵琶湖岸まで、東西に広がる東近江市に永源寺はある。永源寺は臨済宗永源寺派の本山で、地区内から平成22年に国内最古級とされる約13000年前の土偶が発掘されて話題を呼んだ。 また、例年10月1日に行われる開山忌には、毎年多くの参拝客が訪れ、賑わいを見せる。その門前に位置するのが永源寺温泉だ。泉質は弱アルカリ性温泉だか、温泉に六種類の生薬を混ぜた薬湯が人気で、古来より湯治として利用されてきたとい う。 また古くから精進料理に利用されてきた「永源寺こんにゃく」は、滋賀県の伝統食品としても有名だ。こんにゃくやそばなど、永源寺らしい名産品に舌鼓を打つだけではなく、薬湯の効能を身体の芯からじっくりと噛みしめたい。
+pH値8.38、微弱黄色。微弱水素臭・微塩味で低刺激。子どもから高齢者まで入りやすいのが特徴だ。露天風呂からは愛知川の自然が一望できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="bimataonsen_mimata_shimane">{% csrf_token %}<input name="id2" type="hidden" value="bimataonsen_mimata_shimane"/><div class="con2"><a href="../spring_each/" onclick="document.bimataonsen_mimata_shimane.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1205_0001.jpg"/></a><p class="feature">美又温泉（みまた）<br>類似度:1.969</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:1.968</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shinshuumatsukawaonsen_shinshuumatsukawa_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shinshuumatsukawaonsen_shinshuumatsukawa_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shinshuumatsukawaonsen_shinshuumatsukawa_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1494_0001.jpg"/></a><p class="feature">信州まつかわ温泉（しんしゅうまつかわ）<br>類似度:1.955</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yamanokamionsen_yamanokami_iwate">{% csrf_token %}<input name="id2" type="hidden" value="yamanokamionsen_yamanokami_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.yamanokamionsen_yamanokami_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1255_0001.jpg"/></a><p class="feature">山の神温泉（やまのかみ）<br>類似度:1.947</br></p></div></form>
+{% endblock content %}

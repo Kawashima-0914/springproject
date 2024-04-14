@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">立久恵峡温泉（たちくえきょう）</h2><h3 class="icon"> 所在地：島根県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0467_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">島根県出雲市の南部にある県立自然公園「立久恵峡」のすぐそばに湧き出る温泉地。宿泊施設、日帰り入浴施設があり、立久恵峡を間近に眺めながらの湯浴みができるダイナミックな露天風呂が評判を集めている。「立久恵峡」は、神戸川の清流にそって約2kmにわたり高さ100～200mもの岩壁がそそり立つ。この集塊岩の渓谷は神戸川の浸食や風化によってできたもので、左岸には神亀岩、烏帽子岩、ろうそく岩などの名で呼ばれる見事な奇岩が連なっている。下流にかかる不老橋から浮嵐橋の間は自然観察モデルコースとして遊歩道が設置されており、途中には展望台や五百羅漢、霊光寺などの見所もたくさんある。橋から橋まで回遊すると1周約1時間。鳥のさえずりを聞きながらの自然散策もお楽しみ。
+ここ立久恵にはリュウマチや神経痛などに効く良質の温泉があり、その昔、この辺りが海の底だった名残りで塩分を多く含み、さらっと浸透する肌触りが特徴。「山陰の耶馬渓」と呼ばれ国の名勝天然記念物に指定されている一大渓谷「立久恵渓」は四季折々に美しい表情を見せ、耳をすませばかじかの鳴き声も聞こえる。そんな自然豊かで贅沢なひとときが過ごしてみては。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="enakyouonsen_enakyou_gifu">{% csrf_token %}<input name="id2" type="hidden" value="enakyouonsen_enakyou_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.enakyouonsen_enakyou_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0361_0001.jpg"/></a><p class="feature">恵那峡温泉（えなきょう）<br>類似度:1.787</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ajikesawakougenonsen_ajigasawakougen_aomori">{% csrf_token %}<input name="id2" type="hidden" value="ajikesawakougenonsen_ajigasawakougen_aomori"/><div class="con2"><a href="../spring_each/" onclick="document.ajikesawakougenonsen_ajigasawakougen_aomori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1062_0001.jpg"/></a><p class="feature">鯵ヶ沢高原温泉（あじがさわこうげん）<br>類似度:1.756</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sadoshimashiizakionsen_sadogashimashiizaki_niigata">{% csrf_token %}<input name="id2" type="hidden" value="sadoshimashiizakionsen_sadogashimashiizaki_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.sadoshimashiizakionsen_sadogashimashiizaki_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0060_0001.jpg"/></a><p class="feature">佐渡島椎崎温泉（さどがしましいざき）<br>類似度:1.741</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinosekionsensato_ichinoseki_iwate">{% csrf_token %}<input name="id2" type="hidden" value="ichinosekionsensato_ichinoseki_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.ichinosekionsensato_ichinoseki_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1076_0001.jpg"/></a><p class="feature">一関温泉郷（いちのせき）<br>類似度:1.737</br></p></div></form>
+{% endblock content %}

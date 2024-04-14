@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">伊東市赤沢対島温泉（いとうしあかざわたじま）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1526_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">伊豆半島・東海岸の中心部。伊東市赤沢対馬温泉は相模湾に向かって開けた景色と豊かな食に恵まれたリゾート地に位置するホテルに湧く温泉だ。 ペットも泊まれる施設のため、ドッグランをはじめ「ペット専用温水プール」「ペットと共に入れる温泉貸切風呂」などの設備が充実。愛犬と過ごす楽しい休日、ゆとりの時間をわんちゃんとエンジョイできる。 伊豆高原は、火山活動で作られた山から海へと変化に富んだ美しい景観が広がり、四季を通じて多くの観光客を魅了している。 また伊豆最大の漁港・伊東湾をはじめ、数々の漁港から水揚げされる新鮮な魚を旬の食材とともに堪能できる。広々と落ち着いた雰囲気の中、伊豆高原の温泉にゆったりと浸かって日頃の疲れを癒そう。
+湯温37.7℃に加温、pH8.6、無色透明。肌の角質をとる成分が含まれるため、美肌効果が期待できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="hikigawaonsen_hikigawa_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="hikigawaonsen_hikigawa_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.hikigawaonsen_hikigawa_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1300_0001.jpg"/></a><p class="feature">日置川温泉（ひきがわ）<br>類似度:2.416</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="uekionsen_ueki_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="uekionsen_ueki_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.uekionsen_ueki_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0375_0001.jpg"/></a><p class="feature">植木温泉（うえき）<br>類似度:2.368</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shimaisobehimawarinoyu_shimaisobehimawarinoyu_mie">{% csrf_token %}<input name="id2" type="hidden" value="shimaisobehimawarinoyu_shimaisobehimawarinoyu_mie"/><div class="con2"><a href="../spring_each/" onclick="document.shimaisobehimawarinoyu_shimaisobehimawarinoyu_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1509_0001.jpg"/></a><p class="feature">志摩磯部ひまわりの湯（しまいそべひまわりのゆ）<br>類似度:2.355</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tamagenryuukosugenoyu_tamagenryuukosugenoyu_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="tamagenryuukosugenoyu_tamagenryuukosugenoyu_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.tamagenryuukosugenoyu_tamagenryuukosugenoyu_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2366_0001.jpg"/></a><p class="feature">多摩源流小菅の湯（たまげんりゅうこすげのゆ）<br>類似度:2.345</br></p></div></form>
+{% endblock content %}

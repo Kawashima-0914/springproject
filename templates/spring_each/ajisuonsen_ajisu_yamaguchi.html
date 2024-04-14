@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">阿知須温泉（あじす）</h2><h3 class="icon"> 所在地：山口県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0719_0001.jpg"/><table><tr><th>効能</th><td>ラジウム泉
+</td></tr></table></div><div class="con1"><p class="feature">山口宇部有料道路「阿知須IC」より車で約5分、山口市と宇部市の境界に近いエリアに湯けむりを上げる温泉地。のどかな丘陵地帯にあり、近隣には池沼や西日本最大級のゴルフ場「宇部72カントリークラブ」、山口きらら博記念公演など、アウトドアレジャー環境が整う。 5㎞ほど離れた海岸に近い場所には、江戸時代から昭和にかけて廻船業の港として栄えた縄田地区があり、「居蔵造り」と呼ばれるなまこ壁の町並みが残る。タイムスリップしたような景観の中を気の向くままに散策するのも楽しいだろう。 街を包み込む清涼感あふれる空気は、自然豊かな阿知須ならでは。
+世界有数のラジウム含有量を誇る、無色透明・無味無臭の単純弱放射能冷鉱泉。浴用では神経系統諸病などに、飲用では胃腸障害などに効能が高いといわれている。体を芯から温めるため、湯上がり後のポカポカ感が持続。ゴルフやテニスなどで疲れた体を優しく労わるのにおすすめだ。温泉地内にある「宇部72アジススパホテル」では日帰り入浴にも対応している。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kintaihashionsen_kintaikyou_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="kintaihashionsen_kintaikyou_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.kintaihashionsen_kintaikyou_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0894_0001.jpg"/></a><p class="feature">錦帯橋温泉（きんたいきょう）<br>類似度:2.333</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kumanokawaonsen_kumanokawa_saga">{% csrf_token %}<input name="id2" type="hidden" value="kumanokawaonsen_kumanokawa_saga"/><div class="con2"><a href="../spring_each/" onclick="document.kumanokawaonsen_kumanokawa_saga.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0434_0001.jpg"/></a><p class="feature">熊の川温泉（くまのかわ）<br>類似度:2.327</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nekoteionsen_nekonaki_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="nekoteionsen_nekonaki_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.nekoteionsen_nekonaki_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0637_0001.jpg"/></a><p class="feature">猫啼温泉（ねこなき）<br>類似度:2.291</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="takedaoonsen_takedao_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="takedaoonsen_takedao_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.takedaoonsen_takedao_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1022_0001.jpg"/></a><p class="feature">武田尾温泉（たけだお）<br>類似度:2.289</br></p></div></form>
+{% endblock content %}

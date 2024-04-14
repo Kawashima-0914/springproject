@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">十和田湖畔温泉（とわだこはん）</h2><h3 class="icon"> 所在地：青森県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0171_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>神経痛、リウマチ、筋肉痛、関節痛、疲労など
+</td></tr></table></div><div class="con1"><p class="feature">「住まば日の本　遊ばば十和田　歩きゃ奥入瀬　三里半」。明治の詩人・大町桂月は、軽快な語呂に乗せて十和田湖を世に紹介した。約12万年前に形成されたという二重カルデラ湖、十和田湖。透明度約12.5m、周囲約46.2㎞。田沢湖、支笏湖に次ぐ約327mの深さ（最深部）を誇る。 1936年には十和田八幡平国立公園に指定された。さらに、十和田湖に源を発する全長約14㎞の奥入瀬渓流。深い自然林に覆われた渓谷は、変幻自在に表情を変える流れと絶壁を滑り落ちる幾多の滝が、遊歩道を散策する人々を魅了する。 その奥入瀬渓流の入口、子ノ口から十和田湖上遊覧船で渡った休屋地区に湧くのが十和田湖畔温泉である。
+十和田湖上遊覧船の発着地、十和田湖のシンボル「乙女の像」（高村光太郎作）など、十和田湖観光の中心として多くの観光客で賑わう休屋地区。この一角に2002年（平成14年）誕生したのが、十和田湖畔温泉だ。青森駅から車で約3時間。2002年に開通した東北新幹線・八戸駅と2010年に開通した七戸十和田駅からバスも出ており、アクセスも便利に。遊覧船や遊歩道で四季折々に彩りを変える美しい景観をご堪能ください。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.682</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="amatsukominatoonsen_amatsukominato_chiba">{% csrf_token %}<input name="id2" type="hidden" value="amatsukominatoonsen_amatsukominato_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.amatsukominatoonsen_amatsukominato_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0014_0001.jpg"/></a><p class="feature">天津小湊温泉（あまつこみなと）<br>類似度:2.667</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekoonsensato_niseko_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekoonsensato_niseko_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekoonsensato_niseko_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1074_0001.jpg"/></a><p class="feature">ニセコ温泉郷（にせこ）<br>類似度:2.653</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekowaisukougenonsen_nisekowaisukougen_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1877_0001.jpg"/></a><p class="feature">ニセコワイス高原温泉（にせこわいすこうげん）<br>類似度:2.647</br></p></div></form>
+{% endblock content %}

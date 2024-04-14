@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">旭岳温泉（あさひだけ）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0644_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">“北海道の屋根”こと大雪山連峰の中でもひときわ高い、標高約2291mの旭岳。その尾根が、手が届きそうなくらい近くに見える場所に広がる温泉地。ホテルの庭で高山植物のミズバショウが見られるほどの全国でもトップクラスの高地温泉だ。 山頂に向かうロープウェーに乗れば、毎年6月下旬でも残雪に触れることができる。雄大な原生林の中にロッジや山小屋風のホテル、旅館が散在し温泉地を形成。大雪山をはさんで東側にある層雲峡温泉の華やかな繁華街とは対照的な野趣に満ちた景観を作り出す。 一帯はその昔、アイヌの人々が「カムイミンタラ（神々の遊ぶ庭）」と名づけ守り続けてきた聖地。神秘的な大自然の息吹を堪能できる。
+北海道のほぼ中央にそびえる巨峰、大雪山の主峰である旭岳の西側中腹、標高約1050mの高所に湧く温泉。2系統6カ所の源泉を持ち、あわせて毎分約1560Lの豊富な湯量を誇る。ほんのり緑がかった透明なお湯は、肌ざわりがとてもさらさらしていてクセがなく、誰でもすぐに親しむことができると評判。その泉質の良さを証明するように多くの登山客や観光客に愛され、遠方から繰り返し訪れる人々も多いとか。北海道でも有数の深い原生林の中に湧き出ており、湯浴みとともに森林浴が楽しめるのも大きな魅力だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shiroganeonsen_shirogane_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="shiroganeonsen_shirogane_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.shiroganeonsen_shirogane_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0662_0001.jpg"/></a><p class="feature">白金温泉（しろがね）<br>類似度:2.399</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kirinyamaonsen_kirinzan_niigata">{% csrf_token %}<input name="id2" type="hidden" value="kirinyamaonsen_kirinzan_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.kirinyamaonsen_kirinzan_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0579_0001.jpg"/></a><p class="feature">麒麟山温泉（きりんざん）<br>類似度:2.395</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="towadakosaikoazeonsen_towadakonishikohan_akita">{% csrf_token %}<input name="id2" type="hidden" value="towadakosaikoazeonsen_towadakonishikohan_akita"/><div class="con2"><a href="../spring_each/" onclick="document.towadakosaikoazeonsen_towadakonishikohan_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0754_0001.jpg"/></a><p class="feature">十和田湖西湖畔温泉（とわだこにしこはん）<br>類似度:2.392</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinosekionsensato_ichinoseki_iwate">{% csrf_token %}<input name="id2" type="hidden" value="ichinosekionsensato_ichinoseki_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.ichinosekionsensato_ichinoseki_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1076_0001.jpg"/></a><p class="feature">一関温泉郷（いちのせき）<br>類似度:2.385</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">塔ノ沢温泉（とうのさわ）</h2><h3 class="icon"> 所在地：神奈川県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0353_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">歴史ある箱根七湯の一角。江戸時代の初期に弾誓上人が修行中に発見したとも、長興山紹太寺の雲谷和尚が発見したとも言われる温泉。民の儒者である朱舜水は、「民国一の温泉、驪山(りざん)に勝る温泉」と賞賛し、『勝驪山』と名付けたと云われている。伊藤博文や夏目漱石らが訪れた温泉地でもあり、その歴史的価値は十分である。近くには徳川家に嫁いだ皇女が事物とした黒阿弥陀を安置する、阿弥陀寺が存在する。この寺はあじさい寺の名で知られ、梅雨時には色鮮やかな紫陽花を楽しむことができることも魅力の一つ。多くの著名人が足を運んだ、自然豊かな山奥の温泉地で、極上の湯を楽しんでみてはいかがだろうか。
+pH9前後というアルカリ性単純泉のこの温泉は、クセが少なく多くの人に親しみやすい無色透明で無臭の温泉が特徴である。江戸時代にこの地を発見したとされる弾誓上人は病人の治療にこの温泉を使用したと言われており、古くから人々の疲れや疾患を癒してきた源泉を楽しむことができる。美肌の効果も期待できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="bimataonsen_mimata_shimane">{% csrf_token %}<input name="id2" type="hidden" value="bimataonsen_mimata_shimane"/><div class="con2"><a href="../spring_each/" onclick="document.bimataonsen_mimata_shimane.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1205_0001.jpg"/></a><p class="feature">美又温泉（みまた）<br>類似度:2.102</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kawauraonsen_kawaura_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="kawauraonsen_kawaura_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.kawauraonsen_kawaura_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0840_0001.jpg"/></a><p class="feature">川浦温泉（かわうら）<br>類似度:2.067</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kawabaonsen_kawaba_gunma">{% csrf_token %}<input name="id2" type="hidden" value="kawabaonsen_kawaba_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.kawabaonsen_kawaba_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1348_0001.jpg"/></a><p class="feature">川場温泉（かわば）<br>類似度:2.049</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="amanohashidatenariaikannononsen_amanohashidatenariaikannon_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="amanohashidatenariaikannononsen_amanohashidatenariaikannon_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.amanohashidatenariaikannononsen_amanohashidatenariaikannon_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1127_0001.jpg"/></a><p class="feature">天橋立・成相観音温泉（あまのはしだて・なりあいかんのん）<br>類似度:2.016</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">盃温泉郷（さかずき）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0656_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">北海道西部、積丹半島の西海岸に湧く温泉地。奇岩が連なり迫力あふれる海岸線に位置し、10数軒の宿が静かな温泉街を形成している。温泉地のある泊村は古くからニシンの漁場として賑わい、現在では北海道唯一の原子力発電所を有する村。日本海と山々に囲まれ、ニセコ・積丹・小樽海岸国定公園に指定されている。海と山に囲まれた自然豊かな環境の中、湯に浸かりながら雄大な日本海に沈む夕日を望めるのも魅力だ。宿で湯を楽しんだあとは、盃漁港など近港で揚がったばかりの新鮮な海の幸をゆっくりと味わいたい。
+カルシウム・ナトリウム－硫酸塩泉（含芒硝石膏泉）やカルシウム硫酸塩泉(石膏泉)など。環境庁より国民保養温泉地に指定されている。神経痛、リウマチ、アレルギー性皮膚炎、糖尿病、不妊症など、広い効能が期待でき、保温効果が高い。無色透明の湯で苦味があり、飲泉で慢性便秘の改善や胆汁の分泌を促すとされている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ugusuonsen_ugusu_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="ugusuonsen_ugusu_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.ugusuonsen_ugusu_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0443_0001.jpg"/></a><p class="feature">宇久須温泉（うぐす）<br>類似度:2.049</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekowaisukougenonsen_nisekowaisukougen_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1877_0001.jpg"/></a><p class="feature">ニセコワイス高原温泉（にせこわいすこうげん）<br>類似度:2.018</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kannoonsen_1_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kannoonsen_1_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kannoonsen_1_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2137_0001.jpg"/></a><p class="feature">神野温泉（久美の浜温泉郷）（じんの（くみのはま））<br>類似度:2.015</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yaharaonsen_yawara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="yaharaonsen_yawara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.yaharaonsen_yawara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1900_0001.jpg"/></a><p class="feature">矢原温泉（やわら）<br>類似度:2.009</br></p></div></form>
+{% endblock content %}

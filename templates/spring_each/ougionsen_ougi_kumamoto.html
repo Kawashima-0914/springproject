@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">扇温泉（おうぎ）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2126_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">阿蘇の山並みを見渡すように、人里離れた山里にひっそりと佇む温泉地。温泉地としては比較的新しく、開湯は1991年。他の二つの温泉の中間にあり、周囲を山々に囲まれていることから、温泉地内にある食事処では、山菜や川魚を使った会席料理を味わうことができる。付近には通年利用できるオートキャンプ場があり、キャンプと温泉の両方を楽しむ場所として家族連れにも好評。周辺の観光地として、鍋ヶ滝公園にある「鍋ヶ滝」が有名で、春にはライトアップイベントを行う。落差が10m、横幅が20mもある大きな滝は、昼間も迫力満点。豊かな自然の中で体験できるレジャーで一日遊んだら、ゆっくりと扇温泉に浸かり旅の疲れを癒やしたい。
+ナトリウム-炭酸水素塩・塩化物・硫酸塩泉の貴重な炭酸水素塩泉で、64.7度の高い泉温が特徴。動脈硬化やきりきず、やけど、慢性皮膚病などに効能があるとされる。肌がツルツルになるお湯としても人気だ。天然温泉100%の源泉かけ流しの温泉で、自然の木々に囲まれた中、ゆったりと浸かりたい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tangookuineonsen_tangookuine_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tangookuineonsen_tangookuine_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tangookuineonsen_tangookuine_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2140_0001.jpg"/></a><p class="feature">丹後奥伊根温泉（たんごおくいね）<br>類似度:1.872</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekowaisukougenonsen_nisekowaisukougen_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1877_0001.jpg"/></a><p class="feature">ニセコワイス高原温泉（にせこわいすこうげん）<br>類似度:1.833</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="oobokeiyaawaonsen_oobokeiyaawa_tokushima">{% csrf_token %}<input name="id2" type="hidden" value="oobokeiyaawaonsen_oobokeiyaawa_tokushima"/><div class="con2"><a href="../spring_each/" onclick="document.oobokeiyaawaonsen_oobokeiyaawa_tokushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0970_0001.jpg"/></a><p class="feature">大歩危祖谷阿波温泉（おおぼけいやあわ）<br>類似度:1.830</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="iwaobetsuonsen_iwaobetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="iwaobetsuonsen_iwaobetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.iwaobetsuonsen_iwaobetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1833_0001.jpg"/></a><p class="feature">岩尾別温泉（いわおべつ）<br>類似度:1.820</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯田温泉（ゆだ）</h2><h3 class="icon"> 所在地：山口県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0724_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">今も昔も、盛り場として人々が集う賑やかな温泉街。飲食店が並び、夜にはネオンが輝く。江戸時代末期、新しい日本の誕生を夢見る若き青年たちが夜な夜な訪れ、理想の未来について熱く語り合ったという。 後に、明治維新の立役者となり後世に名を残す高杉晋作、伊藤博文、坂本龍馬など多くの志士がこの地で酒盛りをし、この地に生まれた近代詩人・中原中也と、放浪の俳人・種田山頭火が旅すがら立ち寄った際に、偶然この地で酒を酌み交わしたというエピソードは、今でも語り継がれている。 山口市内屈指の繁華街。華やかな町の風景とは裏腹にどこか懐かしい空気が漂うのは、先人たちが紡いできた時間が今なお、息づいているからかもしれない。
+田園から湯が湧き出ていたことから、「湯田」の名がついた湯量豊かな温泉地。山陽路随一の温泉郷として栄え、現在も約72℃の湯が1日約2000tもこんこんと湧き出ている。無色透明のアルカリ性単純泉は、柔らかく肌にしっとりと馴染むのが特徴。温泉独特の癖がなく長湯もできるので、体の疲れをのんびりと癒すことができる。その昔、一匹の白狐が町の寺の境内に毎晩のように姿を現し、小池に足を浸して傷を治したという「白狐伝説」が残り、今も温泉街のマスコットになっている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="haratsuruonsen_harazuru_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="haratsuruonsen_harazuru_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.haratsuruonsen_harazuru_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0628_0001.jpg"/></a><p class="feature">原鶴温泉（はらづる）<br>類似度:2.065</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="bimataonsen_mimata_shimane">{% csrf_token %}<input name="id2" type="hidden" value="bimataonsen_mimata_shimane"/><div class="con2"><a href="../spring_each/" onclick="document.bimataonsen_mimata_shimane.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1205_0001.jpg"/></a><p class="feature">美又温泉（みまた）<br>類似度:2.031</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yuseonsen_yuze_akita">{% csrf_token %}<input name="id2" type="hidden" value="yuseonsen_yuze_akita"/><div class="con2"><a href="../spring_each/" onclick="document.yuseonsen_yuze_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0786_0001.jpg"/></a><p class="feature">湯瀬温泉（ゆぜ）<br>類似度:2.018</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shihinoonsen_ichihino_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="shihinoonsen_ichihino_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.shihinoonsen_ichihino_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0323_0001.jpg"/></a><p class="feature">市比野温泉（いちひの）<br>類似度:1.998</br></p></div></form>
+{% endblock content %}

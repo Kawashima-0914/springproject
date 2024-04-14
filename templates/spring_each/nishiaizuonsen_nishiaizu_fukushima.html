@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">西会津温泉（にしあいづ）</h2><h3 class="icon"> 所在地：福島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1652_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">福島県の西北に位置し、会津の西の玄関口として古くから越後街道の宿場町として栄えた西会津町。古くから山岳信仰の場として崇められてきた霊峰飯豊山の南麓に位置し、中央を阿賀川が悠然と流れる自然と歴史に恵まれ た町である。 大山祇神社や鳥追観音如法寺など、古い歴史を持つ神社仏閣が数多くあり今もなお信仰を集める。豊かな自然が育てる美味しい山菜やミネラル分を多く含んだ土壌で育てられる野菜などの農林産物、職人の技が 光る民芸品、そして秘湯の雰囲気漂う山間の湯など、多くの資源に恵まれている。 温泉で身体をほぐし、お腹が空いたら美味しい料理に舌鼓。ゆったり寛ぎ、のんびり休む。疲れた心も身体も生き返る、明日への活力を充電できる場所。
+源泉温度51.1℃、湧出量毎分162L、一部循環、かけ流しあり、ナトリウムを多く含む強塩泉。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="amakusashimodaonsen_amakusashimoda_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="amakusashimodaonsen_amakusashimoda_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.amakusashimodaonsen_amakusashimoda_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0374_0001.jpg"/></a><p class="feature">天草下田温泉（あまくさしもだ）<br>類似度:2.509</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="seirouonsen_seirou_niigata">{% csrf_token %}<input name="id2" type="hidden" value="seirouonsen_seirou_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.seirouonsen_seirou_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1203_0001.jpg"/></a><p class="feature">聖籠温泉（せいろう）<br>類似度:2.498</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hiyoshionsen_hiyoshi_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="hiyoshionsen_hiyoshi_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.hiyoshionsen_hiyoshi_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2118_0001.jpg"/></a><p class="feature">ひよし温泉（ひよし）<br>類似度:2.479</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yaharaonsen_yawara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="yaharaonsen_yawara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.yaharaonsen_yawara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1900_0001.jpg"/></a><p class="feature">矢原温泉（やわら）<br>類似度:2.472</br></p></div></form>
+{% endblock content %}

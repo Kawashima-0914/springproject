@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">ひみ阿尾の浦温泉（ひみあおのうら）</h2><h3 class="icon"> 所在地：富山県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0830_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">氷見市内の海岸線の北部に点在する温泉の総称。JR「氷見駅」より車で約15分で辿り着く。雄大な日本海の眺めや、晴れた日には水平線に浮かぶ3000m級の立山連峰の美しい大パノラマを望む眺望が見事。 潮風に包まれて、美しい景観を眺めながら湯を浴びれば、少し塩辛い温泉が肌に染み入る感覚が、何とも心地よい。また、氷見の日の出は「日本の朝日百選」に選ばれているほどの美しさ。ちょっと早起きして、日の出の美しさに酔いしれてみるのもよい。 さらに、北陸随一の漁場である氷見沖に仕掛けられた定置網漁で水揚げされる魚は鮮度がよく、冬の寒ブリや春のイワシ、夏のマグロなど年中新鮮な魚が堪能できる。絶景に癒され、食通をも唸らせる満足度の高い温泉郷だ。
+富山県氷見市内沿岸北部に湧く「氷見温泉郷」の一つ。800mのボウリングで得られた温泉は、泉温50℃前後のナトリウム塩化物泉塩辛いのが特徴だ。火傷、創傷、慢性婦人病などに効能があり、「美人になる湯」ともいわれている。海岸沿いの宿が多く、富山湾の向こうに浮かぶ北アルプス立山連峰の絶景を望みながらの入浴は格別。雄大な景色とほのかに塩薫る湯が、旅情をより一層豊かにしてくれる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="himionsensato_himi_toyama">{% csrf_token %}<input name="id2" type="hidden" value="himionsensato_himi_toyama"/><div class="con2"><a href="../spring_each/" onclick="document.himionsensato_himi_toyama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1056_0001.jpg"/></a><p class="feature">氷見温泉郷（ひみ）<br>類似度:1.885</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kinkesakionsen_kanagasaki_akita">{% csrf_token %}<input name="id2" type="hidden" value="kinkesakionsen_kanagasaki_akita"/><div class="con2"><a href="../spring_each/" onclick="document.kinkesakionsen_kanagasaki_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1283_0001.jpg"/></a><p class="feature">金ヶ崎温泉（かながさき）<br>類似度:1.502</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kuminohamaonsensato_kuminohama_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kuminohamaonsensato_kuminohama_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kuminohamaonsensato_kuminohama_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1012_0001.jpg"/></a><p class="feature">久美の浜温泉郷（くみのはま）<br>類似度:1.471</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="itsuuraonsen_itsuura_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="itsuuraonsen_itsuura_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.itsuuraonsen_itsuura_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0836_0001.jpg"/></a><p class="feature">五浦温泉（いつうら）<br>類似度:1.468</br></p></div></form>
+{% endblock content %}

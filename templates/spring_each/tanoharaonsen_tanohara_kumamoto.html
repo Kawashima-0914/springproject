@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">田の原温泉（たのはら）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1110_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">数多くの温泉地が点在する熊本県の中でも有数の名湯、秘湯が揃う南小国町。人気温泉地「黒川温泉」のすぐ西隣に位置し、筑後川の源流・田の原川沿いに5軒ほどの温泉施設が軒を連ねる静かな佇まいの温泉地だ。 のんびりと温泉を楽しみたい方には最適の場所。周囲には田園風景が広がり、初夏にはホタルの乱舞や風情あるカジカの鳴き声が。四季折々で楽しめる豊かな自然が魅力。 縁結びの滝として知られる「夫婦滝」、恋人探しに御利益があるといわれる「小萩山稲荷神社」などもあり、カップルや若い女性など、多くの人が訪れるとか。開湯は鎌倉時代と伝えられているが、縄文時代の遺跡も発見されているため、縄文人たちも温泉を利用していたという説もある。
+鎌倉時代に、田の原川の底から湯が湧き出ているのを発見されたのが始まりとされる古湯。江戸時代には肥後細川藩の武士たちが傷を癒す湯治場として賑わい、「病を養うには必ずしも金丹（薬名）を必要としない…」と効能の高さを記した文書も残っている。今もなお、神経痛やリウマチをはじめ、美肌効果も高いと評判。源泉は「地獄元湯」と呼ばれ、地底からコバルトブルーの高温の湯がボコボコと湧き出ている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kizuonsen_kitsu_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kizuonsen_kitsu_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kizuonsen_kitsu_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0369_0001.jpg"/></a><p class="feature">木津温泉（きつ）<br>類似度:2.034</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kotouonsen_furuyu_saga">{% csrf_token %}<input name="id2" type="hidden" value="kotouonsen_furuyu_saga"/><div class="con2"><a href="../spring_each/" onclick="document.kotouonsen_furuyu_saga.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0436_0001.jpg"/></a><p class="feature">古湯温泉（ふるゆ）<br>類似度:2.011</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="fukurodaonsen_fukuroda_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="fukurodaonsen_fukuroda_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.fukurodaonsen_fukuroda_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0262_0001.jpg"/></a><p class="feature">袋田温泉（ふくろだ）<br>類似度:1.985</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:1.976</br></p></div></form>
+{% endblock content %}

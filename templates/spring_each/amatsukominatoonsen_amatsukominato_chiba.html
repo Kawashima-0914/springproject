@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">天津小湊温泉（あまつこみなと）</h2><h3 class="icon"> 所在地：千葉県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0014_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、関節痛、疲労、冷え性、皮膚病、美肌など
+</td></tr></table></div><div class="con1"><p class="feature">南房総一の透明度を誇るといわれる城崎海岸に湧く温泉。ビーチには約300mにも渡る真っ白な砂浜が広がり、太陽の光が降り注ぐ夏には若者を中心にたくさんの海水浴客が訪れる。 鮮やかな夕日を見ることができる絶景スポットとしても知られ、青く透明な海を茜色に染めながら沈む夕日は思わず見入ってしまうほどの美しさ。またこの地は、日蓮宗の開祖、日蓮上人の誕生の地としても有名。 本来、水深が深いところで群れをなさずに生息する鯛が浅いところで群れ泳ぐ「国の特別天然記念物・鯛の浦タイ生息地」があり、この鯛は日蓮上人の化身とされ古くから禁漁、保護されてきた。足を延ばせば鴨川シーワールドや仁右衛門島などの観光スポットも充実。
+東京からのアクセスも至便な南房総鴨川市の城崎海岸に湧く温泉。塩分を含んだ湯は、お肌がすべすべになる“美人の湯”として女性を中心に人気が高い。2002年に「宿中屋」の敷地内から湧出した新しい温泉で、宿の湯殿では源泉かけ流しの湯を楽しむことができる。目の前は海という立地を生かした開放感抜群のお風呂で、頬に潮風を受けながら爽快な湯浴みを楽しみたい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:3.093</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="esanonsensato_esan_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="esanonsensato_esan_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.esanonsensato_esan_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">恵山温泉郷（えさん）<br>類似度:3.057</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekoonsensato_niseko_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekoonsensato_niseko_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekoonsensato_niseko_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1074_0001.jpg"/></a><p class="feature">ニセコ温泉郷（にせこ）<br>類似度:2.998</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yaharaonsen_yawara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="yaharaonsen_yawara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.yaharaonsen_yawara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1900_0001.jpg"/></a><p class="feature">矢原温泉（やわら）<br>類似度:2.923</br></p></div></form>
+{% endblock content %}

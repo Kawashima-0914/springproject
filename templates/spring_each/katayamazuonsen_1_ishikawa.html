@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">片山津温泉（加賀温泉郷）（かたやまづ（かが））</h2><h3 class="icon"> 所在地：石川県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0038_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">日に7度、湖面の色を変えると伝わる「柴山潟」と霊峰・白山。片山津温泉は、美しい景観が自慢の温泉地だ。加賀温泉郷の中では最も新しい1653年の開湯。最大約70mの高さまで噴き上げる噴水や、夜になるとライトアップされる浮御堂。 さらには夏の夜空を連日飾る花火と、湖畔のサイクリングコースを走りながら柴山潟のさまざまな顔を楽しみたい。源平橋の近くには「首洗池」と「実盛塚」。源平合戦の中でも凄惨を極めた「篠原の戦い」。 木曽義仲軍に敗れ、壮絶な最期を遂げた斎藤別当実盛の首を洗ったとされる池と塚が静かに佇む。サイクリングの後、共同浴場「総湯」で地元の人たちが語り継ぐ昔話に耳を傾けてみるのも良い。
+共同浴場「総湯」を中心に温泉街が広がる片山津温泉。1653年、大聖寺2代目藩主・前田利明が鷹狩りに出かけた時に湖で水鳥が群れをなしているのを見て発見したと伝えられる。以後、開発を続け明治9年には温泉地として整備されたとか。湯冷めしにくいと評判の少し塩辛いお湯は、飲用すれば痛風、慢性便秘に効くといわれる。効能豊かな73℃の高温泉が、現在でも毎分400L、1日576tと豊富に湧き出ている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="sakunamionsen_sakunami_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sakunamionsen_sakunami_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sakunamionsen_sakunami_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0695_0001.jpg"/></a><p class="feature">作並温泉（さくなみ）<br>類似度:1.697</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="netsuenonsen_atsushio_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="netsuenonsen_atsushio_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.netsuenonsen_atsushio_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0632_0001.jpg"/></a><p class="feature">熱塩温泉（あつしお）<br>類似度:1.673</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ooyuonsen_ooyu_niigata">{% csrf_token %}<input name="id2" type="hidden" value="ooyuonsen_ooyu_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.ooyuonsen_ooyu_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0772_0001.jpg"/></a><p class="feature">大湯温泉（おおゆ）<br>類似度:1.666</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="takaseonsen_takase_niigata">{% csrf_token %}<input name="id2" type="hidden" value="takaseonsen_takase_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.takaseonsen_takase_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0587_0001.jpg"/></a><p class="feature">高瀬温泉（たかせ）<br>類似度:1.662</br></p></div></form>
+{% endblock content %}

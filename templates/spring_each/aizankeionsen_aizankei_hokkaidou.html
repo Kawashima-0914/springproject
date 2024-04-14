@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">愛山渓温泉（あいざんけい）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0641_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">大雪山国立公園・永山岳の麓、アンタロマ川沿い位置する温泉地。旭川方面より国道39号線を上川方面へ向かい、愛山渓ドライブイン付近の愛山渓入口から約20km。のどかな風景の中、渓流沿いの舗装された快適な道を走ると、10kmほど過ぎたところからダートと舗装道の繰り返しになる。そして、道の突き当たりにアカエゾマツに覆われて見えてくるのが一軒宿の『愛山渓倶楽部』。一般客用の宿泊施設と登山客用の山小屋施設があるが、山奥のため電気も水道も自給自足だとか。
+複数の泉質を持つナトリウム・マグネシウム-炭酸水素塩・硫酸塩泉（低張性中性高温泉）。効能は神経痛、筋肉痛、関節痛、五十肩、運動麻痺、疲労回復、慢性消化器病、痔疾、冷え症、動脈硬化など。茶褐色で、苦みを含む湯が特徴。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kannoonsen_1_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kannoonsen_1_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kannoonsen_1_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2137_0001.jpg"/></a><p class="feature">神野温泉（久美の浜温泉郷）（じんの（くみのはま））<br>類似度:1.912</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekowaisukougenonsen_nisekowaisukougen_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1877_0001.jpg"/></a><p class="feature">ニセコワイス高原温泉（にせこわいすこうげん）<br>類似度:1.893</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yunotanionsen_yunotani_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="yunotanionsen_yunotani_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.yunotanionsen_yunotani_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1965_0001.jpg"/></a><p class="feature">湯の谷温泉（ゆのたに）<br>類似度:1.872</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kirizumionsen_kirizumi_gunma">{% csrf_token %}<input name="id2" type="hidden" value="kirizumionsen_kirizumi_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.kirizumionsen_kirizumi_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0395_0001.jpg"/></a><p class="feature">霧積温泉（きりづみ）<br>類似度:1.844</br></p></div></form>
+{% endblock content %}

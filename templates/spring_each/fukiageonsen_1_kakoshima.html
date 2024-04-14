@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">吹上温泉（鹿児島県）（ふきあげ）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2183_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">日本三大砂丘の1つに数えられる吹上浜に近い、湯ノ浦川沿いに位置する温泉地。戦国時代に当地の勇将・島津義弘公が入った温泉としても知られる。以前は「伊作温泉」という名で現地の人の間で親しまれてきた温泉で、西郷隆盛もこの温泉に滞在したことがある。県内有数の良質な泉質を誇る温泉には、斎藤茂吉や野口雨情などの文化人も湯治に訪れたとされる。吹上温泉としては5件の宿があり、日帰り温泉が楽しめる施設もある。また、近くにはウミガメの産卵地として全国的に有名な吹上海浜公園のほか、サッカー場やローラースケート場、キャンプ場などもあり、スポーツやレクリエーションを楽しむこともできる。
+神経痛、筋肉痛、冷え性や皮膚病、婦人病などに効能があるとされる単純硫黄泉。源泉の温度は40.5～60度、ほのかな硫黄臭がある。湯治場として親しまれてきた歴史があるため、保養として訪れるのも良いだろう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="oyukikanonsen_onoaida_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="oyukikanonsen_onoaida_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.oyukikanonsen_onoaida_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0326_0001.jpg"/></a><p class="feature">尾之間温泉（おのあいだ）<br>類似度:2.496</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yuyukigenonizumi_yunomoto_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="yuyukigenonizumi_yunomoto_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.yuyukigenonizumi_yunomoto_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0339_0001.jpg"/></a><p class="feature">湯之元温泉（ゆのもと）<br>類似度:2.469</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="higashihachimantaionsen_higashihachimantai_iwate">{% csrf_token %}<input name="id2" type="hidden" value="higashihachimantaionsen_higashihachimantai_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.higashihachimantaionsen_higashihachimantai_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1880_0001.jpg"/></a><p class="feature">東八幡平温泉（ひがしはちまんたい）<br>類似度:2.460</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shiobetsuonsen_shiobetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="shiobetsuonsen_shiobetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.shiobetsuonsen_shiobetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1979_0001.jpg"/></a><p class="feature">塩別温泉（しおべつ）<br>類似度:2.452</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">三翠園温泉（さんすいえん）</h2><h3 class="icon"> 所在地：高知県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1124_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">かつて坂本龍馬も泳いだという美しさを誇る鏡川湖畔、土佐藩の下屋敷跡地に建つ「三翠園」に湧く温泉地。敷地内には、重要文化財となっている「藩主別邸長屋」が現存している。全国でも珍しい本格的な武家長屋を、無 料で見学することができるのも嬉しい。 さらに、周辺には「高知城」や「山内神社」、少し足を延ばせば坂本龍馬の銅像でお馴染みの「桂浜」などもあり、史跡めぐりを気軽に楽しめる。思い思いに観光名所を歩き回ってお 腹が空いたら、約40cmの大皿に旬の品々が盛られた土佐の郷土料理「皿鉢（さわち）料理」を食すのはいかがだろうか。 豪快に並ぶ鰹のタタキには、薬味と分厚いニンニクを挟んで口にほおばるのが本場の流儀。本場ならではの味覚を本場の流儀で味わおう。
+平成9年、老舗旅館「三翠園」の敷地内に湧出。別館温泉施設「水哉閣」で堪能できる高知県初の天然高温泉。明治末期、当時は皇太子であった大正天皇が鏡川の美しさを「水良き哉（かな）」とお褒めになったことから名付けられた由緒ある温泉だ。泉温48℃、湯量432t/日。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tosaryuuonsen_tosaryuu_kouchi">{% csrf_token %}<input name="id2" type="hidden" value="tosaryuuonsen_tosaryuu_kouchi"/><div class="con2"><a href="../spring_each/" onclick="document.tosaryuuonsen_tosaryuu_kouchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1342_0001.jpg"/></a><p class="feature">土佐龍温泉（とさりゅう）<br>類似度:1.830</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hakoneyumotoonsen_hakoneyumoto_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="hakoneyumotoonsen_hakoneyumoto_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.hakoneyumotoonsen_hakoneyumoto_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0356_0001.jpg"/></a><p class="feature">箱根湯本温泉（はこねゆもと）<br>類似度:1.827</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="usukionsen_usuki_ooita">{% csrf_token %}<input name="id2" type="hidden" value="usukionsen_usuki_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.usukionsen_usuki_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1233_0001.jpg"/></a><p class="feature">臼杵温泉（うすき）<br>類似度:1.753</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hamasakaonsensato_hamasaka_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="hamasakaonsensato_hamasaka_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.hamasakaonsensato_hamasaka_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1023_0001.jpg"/></a><p class="feature">浜坂温泉郷（はまさか）<br>類似度:1.733</br></p></div></form>
+{% endblock content %}

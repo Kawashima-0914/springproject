@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">河内温泉（かわち）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2130_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">有明海に突き出した小さな岬に位置する温泉地。肥後藩主細川氏が新地開拓の際に発見したと伝えられている。河内温泉のある河内町には、「ナルシストの丘」と呼ばれる絶景ポイントが存在する。有明海と雲仙普賢岳を一望できることから、ドライブやサイクリングなどで立ち寄る場所として最適。海と山にも囲まれた温泉地なので、宿泊施設などでも新鮮な海の幸や山の幸を楽しめる。また、河内町はみかんの産地。温泉の周辺には多くのみかん農園がある。美しい景色を見て温泉に入ったら、海と山の幸、そしてご当地のみかんを食べたい。
+河内温泉の泉質は自律神経不安定症、不眠症、うつ状態などに効能があるとされる弱アルカリ性、低張性の単純温泉。温度の低い低温泉なので加熱のみ行い、加水はしないので、ほぼ源泉100％のお湯を楽しめる。有明海を目前にした温泉地で、自然の光景を見ながらゆったりと浸かれる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ikenoheionizumi_ikenotaira_nagano">{% csrf_token %}<input name="id2" type="hidden" value="ikenoheionizumi_ikenotaira_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.ikenoheionizumi_ikenotaira_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0568_0001.jpg"/></a><p class="feature">池の平温泉（いけのたいら）<br>類似度:2.464</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="naifuneonsen_uchibuna_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="naifuneonsen_uchibuna_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.naifuneonsen_uchibuna_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2360_0001.jpg"/></a><p class="feature">内船温泉（うちぶな）<br>類似度:2.458</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shinyabaonsen_shinyaba_ooita">{% csrf_token %}<input name="id2" type="hidden" value="shinyabaonsen_shinyaba_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.shinyabaonsen_shinyaba_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0302_0001.jpg"/></a><p class="feature">深耶馬温泉（しんやば）<br>類似度:2.452</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="urayabakeionsen_urayabakei_ooita">{% csrf_token %}<input name="id2" type="hidden" value="urayabakeionsen_urayabakei_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.urayabakeionsen_urayabakei_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2102_0001.jpg"/></a><p class="feature">裏耶馬渓温泉（うらやばけい）<br>類似度:2.450</br></p></div></form>
+{% endblock content %}

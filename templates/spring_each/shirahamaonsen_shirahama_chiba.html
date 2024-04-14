@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">白浜温泉（しらはま）</h2><h3 class="icon"> 所在地：千葉県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0074_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">房総半島最南端、白浜町に湧く温泉。1年を通して温暖な白浜には1月から一足先に春が訪れる。海沿いをドライブしていると花摘みのできる施設が現れる。その一つが写真の「館山ファミリーパーク」だ。キンギョソウやポピーなど、色鮮やかな花が咲き誇る景観は美しいのひとこと。 また、日本最古の洋式8灯台の1つ「野島埼灯台」の展望台から眺める太平洋の大パノラマも圧巻だ。灯台のある野島崎公園は約20分で回れる遊歩道が整備され、岩崖に打ち寄せる荒波が間近に迫る。岩場には磯釣りを楽しむ人の姿もみられる。 昔、南房総で肉よりもサザエの方が安かったことから生まれた「サザエカレー」が名物。海の町・白浜の家庭の食卓に当たり前のように並んでいたかつての庶民の味をぜひお試しあれ。
+紺碧の大海原を望む南房総白浜温泉、白浜女来島温泉、白浜南国温泉などを総称して「南房総白浜温泉郷」と称す。海の近くに多くの源泉があり、自家源泉を持つ一軒宿も数軒ある。泉質も源泉によりさまざま。個性的な大型ホテルが建ち並び、宿によっては太平洋の水平線を一望できる。明るい太陽と潮風を浴びて、波の音を聞きながら湯浴み。南国リゾート気分が満喫できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kushimotoonsen_kushimoto_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="kushimotoonsen_kushimoto_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.kushimotoonsen_kushimoto_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1250_0001.jpg"/></a><p class="feature">串本温泉（くしもと）<br>類似度:2.176</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kinkesakionsen_kanagasaki_akita">{% csrf_token %}<input name="id2" type="hidden" value="kinkesakionsen_kanagasaki_akita"/><div class="con2"><a href="../spring_each/" onclick="document.kinkesakionsen_kanagasaki_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1283_0001.jpg"/></a><p class="feature">金ヶ崎温泉（かながさき）<br>類似度:2.175</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="misakionsen_misaki_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="misakionsen_misaki_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.misakionsen_misaki_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1197_0001.jpg"/></a><p class="feature">三崎温泉（みさき）<br>類似度:2.114</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shirahamanojimaonsen_shirahamanojima_chiba">{% csrf_token %}<input name="id2" type="hidden" value="shirahamanojimaonsen_shirahamanojima_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.shirahamanojimaonsen_shirahamanojima_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1234_0001.jpg"/></a><p class="feature">白浜野嶋温泉（しらはまのじま）<br>類似度:2.112</br></p></div></form>
+{% endblock content %}

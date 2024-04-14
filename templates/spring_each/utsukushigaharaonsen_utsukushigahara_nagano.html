@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">美ヶ原温泉（うつくしがはら）</h2><h3 class="icon"> 所在地：長野県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0177_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">西に北アルプス、東に美ヶ原高原を望む松本市に点在する大小の温泉郷のひとつ。松本市街地から車で約15分、美ヶ原高原とビーナスラインの麓に宿が軒を連ねる。温泉街の中心に建つのは、地元の人々に親しまれてきた公衆浴場「白糸の湯」。 現在は、「ふれあい山辺館」としてリニューアルされ、蔵の町・松本の風情を受け継ぐ瓦屋根に漆喰の白壁といった蔵造りの建物が印象的だ。 また、温泉が湧く山辺エリアはぶどうの産地としても知られ、秋にはぶどう狩りも楽しめる。奈良時代より1200年以上の年月を重ねてきた温泉と豊かな自然。のんびりと湯に浸かりながら、紡いできた歴史に思いを馳せるのも、また一興。
+松本市の郊外に湧く国民保養温泉にも指定されている名湯。その歴史は古く、奈良時代初めにまで遡る。『日本書紀』に、天武天皇が「束間の温湯」に行幸するために信濃の国の地形図を献上させたとの記述が残っており、この「束間の温湯」こそが現在の美ヶ原温泉といわれている。平安時代の歌人・源重之が『後拾遺集』の中で「白糸の湯」と詠み、安土桃山～江戸時代にかけて松本城主の保養地だったことから「御殿の湯」とも呼ばれた歴史を持つ。寛永・正保の頃に入浴施設「山辺茶屋」が作られ、明治に入って「山辺温泉」と改名し湯治場として発展。昭和
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="asamaonsen_asama_nagano">{% csrf_token %}<input name="id2" type="hidden" value="asamaonsen_asama_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.asamaonsen_asama_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0005_0001.jpg"/></a><p class="feature">浅間温泉（あさま）<br>類似度:2.356</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yamagaonsen_yamaga_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="yamagaonsen_yamaga_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.yamagaonsen_yamaga_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0142_0001.jpg"/></a><p class="feature">山鹿温泉（やまが）<br>類似度:2.247</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nagatoyumotoonsen_nagatoyumoto_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="nagatoyumotoonsen_nagatoyumoto_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.nagatoyumotoonsen_nagatoyumoto_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0101_0001.jpg"/></a><p class="feature">長門湯本温泉（ながとゆもと）<br>類似度:2.214</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yuharaonsen_yubara_okayama">{% csrf_token %}<input name="id2" type="hidden" value="yuharaonsen_yubara_okayama"/><div class="con2"><a href="../spring_each/" onclick="document.yuharaonsen_yubara_okayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0148_0001.jpg"/></a><p class="feature">湯原温泉（ゆばら）<br>類似度:2.212</br></p></div></form>
+{% endblock content %}

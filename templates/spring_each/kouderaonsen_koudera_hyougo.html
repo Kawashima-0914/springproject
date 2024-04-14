@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">こうでら温泉（こうでら）</h2><h3 class="icon"> 所在地：兵庫県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1673_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">奈良時代に播磨国の国府が置かれていた姫路市。国宝であり世界遺産でもある姫路城を筆頭にたくさんの史跡や古刹を有しているほか、植物園や美術館などの文化施設も豊富だ。 こうでら温泉は姫路駅から内陸に入った香寺町に湧く温泉でJR溝口駅から車で約10分とアクセスも良好。姫路市街地で観光を楽しんでから電車で香寺町に向かい、緑の中で疲れた身体を癒すのも良いだろう。お湯はゆったり浸かれる大浴場が単純泉、露天風呂が炭 酸温泉と2種類の源泉を楽しめる。 ゆっくり湯浴みを楽しめる低めの温度、炭酸のプチプチとした気泡が肌につき、身体の芯から温まる。京阪神からの客は日帰りが多いというが、たまには姫路市の郊外でゆったり過ごすのもおすすめだ。
+pH6.3、低刺激、とろとろの肌触り。例年11月下旬～12月上旬は大浴場から見事な紅葉が見られる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="yamagaonsen_yamaga_ooita">{% csrf_token %}<input name="id2" type="hidden" value="yamagaonsen_yamaga_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.yamagaonsen_yamaga_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1337_0001.jpg"/></a><p class="feature">山香温泉（やまが）<br>類似度:2.397</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="narukoonsen_1_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="narukoonsen_1_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.narukoonsen_1_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0105_0001.jpg"/></a><p class="feature">鳴子温泉（鳴子温泉郷）（ナルコ）<br>類似度:2.293</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shiramineonsen_shiramine_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="shiramineonsen_shiramine_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.shiramineonsen_shiramine_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1103_0001.jpg"/></a><p class="feature">白峰温泉（しらみね）<br>類似度:2.267</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tsutsujinoyu_tsutsujinoyu_gunma">{% csrf_token %}<input name="id2" type="hidden" value="tsutsujinoyu_tsutsujinoyu_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.tsutsujinoyu_tsutsujinoyu_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2076_0001.jpg"/></a><p class="feature">つつじの湯（つつじのゆ）<br>類似度:2.262</br></p></div></form>
+{% endblock content %}

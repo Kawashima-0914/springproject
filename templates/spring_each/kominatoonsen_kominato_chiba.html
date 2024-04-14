@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">小湊温泉（こみなと）</h2><h3 class="icon"> 所在地：千葉県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0153_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>神経痛、リウマチ、肩こり、冷え性、皮膚病など
+</td></tr></table></div><div class="con1"><p class="feature">日蓮宗の開祖、日蓮上人誕生の地に湧く小湊温泉。市東部にある古刹「清澄寺」で、日蓮が初めて「南無妙法蓮華経」を唱えたといわれている。1222年、日蓮が貧しい漁師の家で誕生した瞬間に起こった「三奇瑞」。 突如庭先から清水が湧き、海上には蓮華が咲き乱れ、海中では鯛が群れ集まったとか。現在、「誕生寺」境内には「誕生水の石柱」がまつられ、大弁天島・小弁天島一帯は別名「蓮華ケ渕」。 さらに「鯛の浦」のマダイは天然記念物に指定され、本来は深海を回遊するはずのマダイが水深20m付近を群れ泳ぐ。地元では、このマダイを決して捕獲しないという。学術的には解明されていない神秘が、今もこの地で生き続けている。
+房総半島の南東部、わずかに内にくびれた辺りに広がる小湊温泉。1276年、日蓮上人誕生の地を記念して建立された「誕生寺」の参道には、土産物店や茶屋が軒を連ね多くの人で賑わう。この誕生寺の近くに湧くのが、弱アルカリ性重炭酸ソーダ泉の「満願の湯」。一方、内浦地域から湧出しているのが塩化物泉のお湯だ。海を眺望する宿が多く、真っ赤に染まる夕日を眺めながらの湯浴みが一層旅情を誘う。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="amatsukominatoonsen_amatsukominato_chiba">{% csrf_token %}<input name="id2" type="hidden" value="amatsukominatoonsen_amatsukominato_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.amatsukominatoonsen_amatsukominato_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0014_0001.jpg"/></a><p class="feature">天津小湊温泉（あまつこみなと）<br>類似度:2.487</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="chuuzenjionsen_chuuzenji_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="chuuzenjionsen_chuuzenji_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.chuuzenjionsen_chuuzenji_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0091_0001.jpg"/></a><p class="feature">中禅寺温泉（ちゅうぜんじ）<br>類似度:2.341</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="uharaonsen_ubara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="uharaonsen_ubara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.uharaonsen_ubara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0195_0001.jpg"/></a><p class="feature">鵜原温泉（うばら）<br>類似度:2.267</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nankishirahamaonsen_nankishirahama_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="nankishirahamaonsen_nankishirahama_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.nankishirahamaonsen_nankishirahama_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0107_0001.jpg"/></a><p class="feature">南紀白浜温泉（なんきしらはま）<br>類似度:2.234</br></p></div></form>
+{% endblock content %}

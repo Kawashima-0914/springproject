@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">橘の郷上野温泉（たちばなのさとうえの）</h2><h3 class="icon"> 所在地：京都府</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1009_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">京丹後市・旧網野町、八丁浜海水浴場と浅茂川漁港を望む高台に位置する温泉地。八丁浜から琴引浜に続く「掛津?小浜遊歩道」を歩けば、海の浸食により造られた岩場の造形美が目を楽しませてくれる。八丁浜は長い砂浜、きれいな水、遠浅の広がりが生む青緑の海の色が独特な美しい海岸として知られ、バーベキューを楽しめるキャンプ場も完備。春から秋にかけては良質な波を求めて集まる多くのサーファーでにぎわい、サーフィン日本選手権も開催される。また、温泉地周辺は海釣り・湖釣りの両方が楽しめる事で釣りファンの間で有名だ。
+一般的に入りやすい弱アルカリ性の単純泉で、無色透明で無味無臭。神経痛、筋肉痛、五十肩、疲労回復 うちみ、慢性消化器病などへの効能が期待できる。地元民から「美人の湯」と讃えられ、しっとりとした湯ざわりで、湯上がりには肌をスベスベにしてくれる。湯冷めしにくいことでも有名で、幅広い層に支持されている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="bimataonsen_mimata_shimane">{% csrf_token %}<input name="id2" type="hidden" value="bimataonsen_mimata_shimane"/><div class="con2"><a href="../spring_each/" onclick="document.bimataonsen_mimata_shimane.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1205_0001.jpg"/></a><p class="feature">美又温泉（みまた）<br>類似度:2.209</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tamagenryuukosugenoyu_tamagenryuukosugenoyu_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="tamagenryuukosugenoyu_tamagenryuukosugenoyu_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.tamagenryuukosugenoyu_tamagenryuukosugenoyu_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2366_0001.jpg"/></a><p class="feature">多摩源流小菅の湯（たまげんりゅうこすげのゆ）<br>類似度:2.137</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenmokuyamaonsen_tenmokuzan_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="tenmokuyamaonsen_tenmokuzan_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.tenmokuyamaonsen_tenmokuzan_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2055_0001.jpg"/></a><p class="feature">天目山温泉（てんもくざん）<br>類似度:2.127</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shimaisobehimawarinoyu_shimaisobehimawarinoyu_mie">{% csrf_token %}<input name="id2" type="hidden" value="shimaisobehimawarinoyu_shimaisobehimawarinoyu_mie"/><div class="con2"><a href="../spring_each/" onclick="document.shimaisobehimawarinoyu_shimaisobehimawarinoyu_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1509_0001.jpg"/></a><p class="feature">志摩磯部ひまわりの湯（しまいそべひまわりのゆ）<br>類似度:2.118</br></p></div></form>
+{% endblock content %}

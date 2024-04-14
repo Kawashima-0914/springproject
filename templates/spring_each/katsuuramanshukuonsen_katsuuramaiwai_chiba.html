@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">勝浦万祝温泉（かつうらまいわい）</h2><h3 class="icon"> 所在地：千葉県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1651_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>にごり、にごり（褐色）、神経痛、冷え性など
+</td></tr></table></div><div class="con1"><p class="feature">都心からのアクセスもよく、太平洋に面した温暖な気候で、房総半島の中でも人気が高い千葉県勝浦市。古くから漁師町として栄えてきており、過去に日本一の水揚げ高を記録したカツオをはじめ、アジ・イカなど毎日の食 卓に欠かせない新鮮な魚が捕れる。 海沿いには複数の海水浴場や大型温泉旅館が集まっており、シーズンを通して多くの観光客で賑わっている。万祝温泉は、朝市が賑わう港町の中に湧く温泉地だ。ぬるっとした黒褐色の湯が特 徴で肌荒れにもいいと評判。 日帰り入浴も行っているので、忙しい方や気軽に温泉を堪能したい方におすすめ。美肌の湯とともに風光明媚な景観と太平洋の恵みを思い切り堪能したい。心を洗う海の眺め、水揚げされたばかりの新鮮な海の幸。どれも新鮮な感動を運んでくれる。
+pH8.3で弱アルカリ性。メタケイ酸を豊富に含む黒褐色の源泉100％で独特のぬめりがある。肌荒れ、アトピーに効果があるとされている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="utoroonsen_utoro_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="utoroonsen_utoro_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.utoroonsen_utoro_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0787_0001.jpg"/></a><p class="feature">ウトロ温泉（うとろ）<br>類似度:2.455</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tangookuineonsen_tangookuine_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tangookuineonsen_tangookuine_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tangookuineonsen_tangookuine_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2140_0001.jpg"/></a><p class="feature">丹後奥伊根温泉（たんごおくいね）<br>類似度:2.375</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yaharaonsen_yawara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="yaharaonsen_yawara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.yaharaonsen_yawara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1900_0001.jpg"/></a><p class="feature">矢原温泉（やわら）<br>類似度:2.368</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="senganishionsen_senganishi_iwate">{% csrf_token %}<input name="id2" type="hidden" value="senganishionsen_senganishi_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.senganishionsen_senganishi_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1810_0001.jpg"/></a><p class="feature">千貫石温泉（せんがんいし）<br>類似度:2.358</br></p></div></form>
+{% endblock content %}

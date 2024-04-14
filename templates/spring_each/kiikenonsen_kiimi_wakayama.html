@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">紀伊見温泉（きいみ）</h2><h3 class="icon"> 所在地：和歌山県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1478_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">交通の要衝である和歌山県橋本市は、京都や奈良の都文化、高野山や伊勢神宮などの仏教文化が融合した独自の文化を背景に霊峰高野山の宿場町として発展してきた。 市内を横断する紀の川沿いをはじめ市内の北東部には城跡や寺社仏閣が多数点在しており、縄文時代に人が住んでいたことをうかがわせる遺構にもいにしえの姿を偲ぶことができる。玉川峡は鮎やアマゴが釣れる渓流。蛍が飛び交う雄大な自然も残されており、ハイキングコース、 キャンプ地としても利用されている。 紀伊見温泉は国道371号線から約1㎞ほど入った「金剛生駒紀泉国定公園」に湧く温泉で、周囲は豊かな緑に包まれている。近隣には高野山とともに世界遺産に登録された「慈尊院」があり見所豊富だ。
+加温、循環濾過式の天然温泉pH7.5～pH10の値のアルカリ性。しっとり馴染む冷鉱泉に肌の角質層が剥がれてしっとりとした肌触りに生まれ変わるようだ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="makotosawaonsen_sanazawa_gunma">{% csrf_token %}<input name="id2" type="hidden" value="makotosawaonsen_sanazawa_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.makotosawaonsen_sanazawa_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2070_0001.jpg"/></a><p class="feature">真沢温泉（さなざわ）<br>類似度:2.531</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="igaonsen_iga_mie">{% csrf_token %}<input name="id2" type="hidden" value="igaonsen_iga_mie"/><div class="con2"><a href="../spring_each/" onclick="document.igaonsen_iga_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1470_0001.jpg"/></a><p class="feature">伊賀温泉（いが）<br>類似度:2.530</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="besshoonsen_1_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="besshoonsen_1_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.besshoonsen_1_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1910_0001.jpg"/></a><p class="feature">別所温泉（神奈川県）（べっしょ）<br>類似度:2.517</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hakubahappouonsen_hakubahappou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="hakubahappouonsen_hakubahappou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.hakubahappouonsen_hakubahappou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0110_0001.jpg"/></a><p class="feature">白馬八方温泉（はくばはっぽう）<br>類似度:2.516</br></p></div></form>
+{% endblock content %}

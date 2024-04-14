@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">龍温泉（りゅう）</h2><h3 class="icon"> 所在地：広島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1285_0001.jpg"/><table><tr><th>効能</th><td>ラジウム泉
+</td></tr></table></div><div class="con1"><p class="feature">広島県北広島町は島根県との県境に位置し、周囲は中国山地の1000m級の山々に囲まれた高原に広がる芸北地域のほぼ中央に位置している。龍温泉は標高300～800mにある温泉地で、泉質は痛風や高血圧症などにも効能があるとされている単純弱放射能泉。 四季折々、多彩に表情を変える大自然も楽しむことができ、ビジネス客や家族連れなど多くの人々を癒してきた。また、古き良き昭和の面影が残る温泉地はスキーやゴルフをは じめ、釣りやキャンプなど、様々なレジャーを楽むことができる。 観光地も「吉川家の史跡」をはじめ、「今田城跡」や「壬生城址公園（高峰城址）」など多くの史跡や文化財が残っている。歴史にふれ、いにしえに思いを馳せよう。
+仏陀の湯（男湯） は単純弱放射能泉で、神経痛、筋肉痛、関節痛、冷え性、慢性消化器病に。龍神の湯（女湯） 乳酸美人の湯で、入浴により皮膚の毛穴に住み着いた乳酸菌が、脂質製の老廃物を分解して増殖し、皮膚に住み着いている病原菌・腐敗菌の増殖を抑えて、ニキビ・アトピー、腫れ物など、皮膚からの病原菌感染を防ぐ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:1.868</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="esashionsen_esashi_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="esashionsen_esashi_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.esashionsen_esashi_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1863_0001.jpg"/></a><p class="feature">枝幸温泉（えさし）<br>類似度:1.840</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kenbuchionsen_kenbuchi_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="kenbuchionsen_kenbuchi_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.kenbuchionsen_kenbuchi_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1861_0001.jpg"/></a><p class="feature">剣淵温泉（けんぶち）<br>類似度:1.823</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okudougoonsen_okudougo_ehime">{% csrf_token %}<input name="id2" type="hidden" value="okudougoonsen_okudougo_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.okudougoonsen_okudougo_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0288_0001.jpg"/></a><p class="feature">奥道後温泉（おくどうご）<br>類似度:1.800</br></p></div></form>
+{% endblock content %}

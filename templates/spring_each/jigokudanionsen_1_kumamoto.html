@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">地獄谷温泉（熊本県）（じごくだに）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1961_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">わいた温泉郷のひとつで、森の中に佇む湯屋「天句松裕花」が1軒ある温泉地だ。「玖珠富士」や「小国富士」の名でも知られる涌蓋山の麓に広がり豊かな自然に囲まれたこの地は「阿蘇の秘湯」とも呼ばれている。地元の人々は、温泉成分を含んだ高温の蒸気を生活にうまく取り入れている。蒸気を通したこたつで暖をとり、洗濯物や農産物を乾燥させ、ハウス栽培や地熱発電にも利用しているそう。温泉蒸気を利用した蒸し料理「地獄蒸し」は是非いただきたい名物料理だ。
+泉質は含硫黄ナトリウム塩化物泉。ナトリウム成分を多く含んだ温泉は湯あがり肌をしっとりとさせ、ポカポカが持続する保湿の湯である。四方を自然に囲まれた「天句松裕花」の露天風呂から眺める山々は開放感が素晴らしく、夜は満天の星空を仰ぎながら自然と一体となって温泉三昧ができ、贅沢な時間を感じさせてくれる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="gakunoyuonizumi_1_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="gakunoyuonizumi_1_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.gakunoyuonizumi_1_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">岳の湯温泉（熊本県）（たけのゆ）<br>類似度:2.102</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ajikesawakougenonsen_ajigasawakougen_aomori">{% csrf_token %}<input name="id2" type="hidden" value="ajikesawakougenonsen_ajigasawakougen_aomori"/><div class="con2"><a href="../spring_each/" onclick="document.ajikesawakougenonsen_ajigasawakougen_aomori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1062_0001.jpg"/></a><p class="feature">鯵ヶ沢高原温泉（あじがさわこうげん）<br>類似度:2.027</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hagenoyuonizumi_hagenoyu_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="hagenoyuonizumi_hagenoyu_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.hagenoyuonizumi_hagenoyu_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1960_0001.jpg"/></a><p class="feature">はげの湯温泉（はげのゆ）<br>類似度:1.990</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="mitsunorionsen_koutoku_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="mitsunorionsen_koutoku_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.mitsunorionsen_koutoku_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0494_0001.jpg"/></a><p class="feature">光徳温泉（こうとく）<br>類似度:1.985</br></p></div></form>
+{% endblock content %}

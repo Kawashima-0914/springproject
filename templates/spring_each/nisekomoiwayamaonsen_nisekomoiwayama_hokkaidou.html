@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">ニセコモイワ山温泉（にせこもいわやま）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>筋肉痛、関節痛、疲労、皮膚病
+</td></tr></table></div><div class="con1"><p class="feature">標高839mの「ニセコモイワ山」の麓にある温泉地。ニセコモイワ山は、大正時代から続くニセコの中でも有数の伝統を持つスキー場である。リフトなどを備えたスキー場として整備されたのも、1966年と隣のアンヌプリよりも早い。カプセルホテルからリゾートホテルまで幅広いニーズに応える宿がある中で、「ワン・ニセコ・リゾート・タワーズ」が「ニセコモイワ山温泉」に入れる唯一の宿。バルコニー・キッチンを備えた広々とした客室が揃えられており、贅沢な時間を過ごせる。ニセコモイワ山は夏の登山シーズンも人気。車で周辺に出れば、花の名所や紅葉の名所などもたくさんあって通年楽しめる。
+泉質は「塩化物-炭酸水素塩泉」。北海道らしい泉質で、無色透明のくせのないお湯だ。脱衣所をはじめとして、随所に隈研吾氏によるデザインが取り入れられた癒しの空間が展開している。泉質の多彩なニセコ温泉郷にあって、近くの温泉には硫黄泉や濁り湯もある。湯めぐりを楽しむならば、最後に入りたいさっぱりとしたお湯だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="nisekoannupurionsen_nisekoannupuri_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekoannupurionsen_nisekoannupuri_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekoannupurionsen_nisekoannupuri_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">ニセコアンヌプリ温泉（にせこあんぬぷり）<br>類似度:2.578</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekoonsensato_niseko_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekoonsensato_niseko_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekoonsensato_niseko_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1074_0001.jpg"/></a><p class="feature">ニセコ温泉郷（にせこ）<br>類似度:2.553</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kutchanonsen_kutchan_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="kutchanonsen_kutchan_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.kutchanonsen_kutchan_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1878_0001.jpg"/></a><p class="feature">倶知安温泉（くっちゃん）<br>類似度:2.489</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekokusurishionsen_nisekoyakushi_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekokusurishionsen_nisekoyakushi_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekokusurishionsen_nisekoyakushi_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1874_0001.jpg"/></a><p class="feature">ニセコ薬師温泉（にせこやくし）<br>類似度:2.436</br></p></div></form>
+{% endblock content %}

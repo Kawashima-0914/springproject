@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯の川温泉（ゆのかわ）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0683_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>美肌、神経痛、リウマチ、婦人病、胃腸病、冷え性
+</td></tr></table></div><div class="con1"><p class="feature">標高約334m、函館のシンボル「函館山」。有名な“日本三大夜景”の1つに数えられる山頂からの夜景は、まさに息を呑む美しさ。その函館山から車で約30分、函館市郊外に広がるのが湯の川温泉だ。 市街地からなら車で約10分、函館空港からは約5分という近さ。函館観光の拠点として、多くの湯客で賑わう“北海道三大温泉郷”。目の前に津軽海峡が広がり、夏から秋にかけては露天風呂や宿のお部屋から名物のイカ漁の漁火が眺められる。 函館産のイカといえば、松前漬。スルメイカと高級昆布を伝統の味で漬け込んだ、北海道の味覚の代表格。
+1653年（承応2年）、松前藩主の嫡子が重病にかかった際に、藩主の命により探し当てたのが始まりといわれる古湯。幕末には、五稜郭を舞台とした箱館戦争の兵士が傷を癒したとの記録も残る。アイヌ語の「ユ（＝温泉）」「ベット（＝川）」から「ユベツ」となり、「湯の川」になったとか。スベスベした肌触りのお湯は湯冷めしにくいと評判。大型ホテルが立ち並ぶ一方で、今も残る老舗旅館がその長い歴史を物語る風情あふれる温泉地だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.422</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ureshinoonsen_ureshino_saga">{% csrf_token %}<input name="id2" type="hidden" value="ureshinoonsen_ureshino_saga"/><div class="con2"><a href="../spring_each/" onclick="document.ureshinoonsen_ureshino_saga.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0028_0001.jpg"/></a><p class="feature">嬉野温泉（うれしの）<br>類似度:2.352</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:2.292</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekokonbuonsen_konbu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekokonbuonsen_konbu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekokonbuonsen_konbu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0655_0001.jpg"/></a><p class="feature">ニセコ昆布温泉（こんぶ）<br>類似度:2.285</br></p></div></form>
+{% endblock content %}

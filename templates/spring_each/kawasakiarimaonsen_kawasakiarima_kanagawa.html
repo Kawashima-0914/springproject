@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">川崎有馬温泉（かわさきありま）</h2><h3 class="icon"> 所在地：神奈川県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1903_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、含鉄泉
+</td></tr><tr><th>効能</th><td>にごり、にごり（褐色）、リウマチ、関節痛、胃腸病、冷え性、皮膚病
+</td></tr></table></div><div class="con1"><p class="feature">川崎市の住宅地に佇む一軒宿。名前からして兵庫県の有馬温泉を想像される方も多いだろうが、命名は無関係だという。しかし、大都市の中にある鉄分豊富な湯という点では共通している。歴史は古く、1300年前から有馬西明寺の霊泉として知られている。都内からとても近くにあるにも関わらず、まるで山奥の秘湯のような神々しい金色のお湯を楽しむことができる。宿はとてもアットホームな雰囲気で、浴室や休憩室では地元の方々がくつろいでいる姿が見受けられる。アクセスの良さ、お湯の素晴らしさ、宿の和やかな雰囲気、どれを取っても日頃から通いたくなる温泉だ。
+1300年以上の歴史もあり、過去には皇族も療養に訪れたと言われる古湯。お湯は湧き出た時には無色透明だが、温泉に含まれる鉄分が酸化するため、浴槽に注がれるにつれて金色に変化する。その日の天気などによってお湯の色や質感は変化する。冬の朝には油膜が張るという。鉄分を含むため貧血にも効果があり、また『子宝の湯』としても知られている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="arimaonsen_arima_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="arimaonsen_arima_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.arimaonsen_arima_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0016_0001.jpg"/></a><p class="feature">有馬温泉（ありま）<br>類似度:1.975</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="miyabaruonsen_miyabaru_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="miyabaruonsen_miyabaru_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.miyabaruonsen_miyabaru_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1981_0001.jpg"/></a><p class="feature">みやばる温泉（みやばる）<br>類似度:1.934</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tentokuonsen_tentoku_nagano">{% csrf_token %}<input name="id2" type="hidden" value="tentokuonsen_tentoku_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.tentokuonsen_tentoku_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1475_0001.jpg"/></a><p class="feature">天徳温泉（てんとく）<br>類似度:1.929</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kirishimaonsensato_kirishima_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="kirishimaonsensato_kirishima_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.kirishimaonsensato_kirishima_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0329_0001.jpg"/></a><p class="feature">霧島温泉郷（きりしま）<br>類似度:1.909</br></p></div></form>
+{% endblock content %}

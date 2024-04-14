@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">妖精の泉温泉（ようせいのいずみ）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1486_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">札幌市北部の茨戸川沿岸に湧く温泉。札幌市中心部からも近く、道内観光の拠点としても便利な家族に優しいリゾートホテル「シャトレーゼガトーキングダムサッポロ」に湧く温泉。 泉質は、ナトリウム‐塩化物強塩泉で、やけどや切り傷、慢性的な皮膚病に効果があるといわれる。湯巡り気分が楽しめる9つの浴槽が魅力の大浴場には、強塩泉の露天風呂と陶器風呂も。お肌がつるつるになると評判の美人の湯でじっくりと温まるのもいいだ ろう。 多彩なお風呂の他にも、 広大で多彩なプール、高温サウナやスチームサウナ、珍しい塩サウナも。また、和・洋・中の個性派レストランやスイーツショップも充実しており、一日中楽しめる。日頃の疲れを温泉でゆったりとほぐしたい。
+各種温水プールと天然温泉が一年中楽しめるビックスケールのプール＆スパリゾート。キッズプールや幼児プールなど、プール＆スパでも家族に優しいリゾートだ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="gotenonsen_goten_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="gotenonsen_goten_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.gotenonsen_goten_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1301_0001.jpg"/></a><p class="feature">碁点温泉（ごてん）<br>類似度:2.159</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hiroshimaonsen_hiroshima_hiroshima">{% csrf_token %}<input name="id2" type="hidden" value="hiroshimaonsen_hiroshima_hiroshima"/><div class="con2"><a href="../spring_each/" onclick="document.hiroshimaonsen_hiroshima_hiroshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1200_0001.jpg"/></a><p class="feature">広島温泉（ひろしま）<br>類似度:2.130</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="minamikirishimahayatoonsen_minamikirishimahayato_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="minamikirishimahayatoonsen_minamikirishimahayato_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.minamikirishimahayatoonsen_minamikirishimahayato_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1688_0001.jpg"/></a><p class="feature">南霧島隼人温泉（みなみきりしまはやと）<br>類似度:2.078</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="odawaraonsen_odawara_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="odawaraonsen_odawara_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.odawaraonsen_odawara_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0767_0001.jpg"/></a><p class="feature">小田原温泉（おだわら）<br>類似度:2.023</br></p></div></form>
+{% endblock content %}

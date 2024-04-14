@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>温泉ガイド-QualityExp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="../static/shasin2.ico" rel="shortcut icon">
+</head>
+
+<body id="qualityexp">
+
+    <!-- headerの始まり-->
+    <header>
+        <div class="logo">
+            <a href="/startspring/"><img src="../static/images/logo.jpg"></a>
+        </div>
+        <nav>
+            <ul class="global-nav">
+                <li><a href="ranking.html">Ranking</a></li>
+                <li><a href="springlist.html">SpringList</a></li>
+                <li>QualityExp</li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--  headerの終わり-->
+
+    <!--  wrapの始まり-->
+    <div id="wrap">
+        <div class="content">
+            <div class="main-center">
+                <h1>QualityExp</h1>
+                <p>温泉の泉質についての説明のページです。
+                    <br>泉質は合計で10種類あります。
+                </p>
+                <section class="access clearfix">
+                    <h2 class="icon">Quality</h2>
+                    <table>
+                        <tr>
+                            <td valign="middle" width="100">泉質の名前</td>
+                            <td>基準</td>
+                            <td>特徴・効能</td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" width="100"><b>単純温泉</b></td>
+                            <td>温泉水1kg中の溶存物質量(ガス性のものを除く)が1000mg未満で、湧出時の泉温が25℃以上
+                                <br>このうちpH8.5以上のものを「アルカリ性単純温泉」と呼ぶ
+                            </td>
+                            <td>肌触りが柔らかく、癖がなく肌への刺激が少ない
+                                <br>不眠症、うつ状態など
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" width="100"><b>塩化物泉</b></td>
+                            <td>温泉水1kg中に溶存物質量(ガス性のものを除く)が1000mg以上あり、陰イオンの主成分が塩化物イオンのもの
+                                <br>陽イオンの主成分により、さらに分類
+                            </td>
+                            <td>飲用すると塩辛い
+                                <br>きりきず、冷え性、便秘など
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" width="100"><b>炭酸水素塩泉</b></td>
+                            <td>温泉水1kg中の溶存物質量(ガス性のものを除く)が1000mg以上あり、陰イオンの主成分が炭酸水素イオンのもの
+                                <br>陽イオンの主成分により、さらに分類
+                            </td>
+                            <td>きりきず、冷え性、糖尿病など</td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" width="100"><b>硫酸塩泉</b></td>
+                            <td>温泉水1kg中に溶存物質量(ガス性のものを除く)が1,000mg以上あり、陰イオンの主成分が硫酸イオンのもの
+                                <br>陽イオンの主成分により、さらに分類
+                            </td>
+                            <td>きりきず、冷え性、便秘など</td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" width="100"><b>二酸化炭素泉</b></td>
+                            <td>温泉水1kg中に遊離炭酸(二酸化炭素)が1,000mg以上含まれているもの</td>
+                            <td>全身に炭酸の泡が付着して爽快感がある
+                                <br>飲用すると炭酸の爽やかな喉越し
+                                <br>日本では比較的少ない
+                                <br>きりきず、冷え性、末梢循環障害など
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" width="100"><b>含鉄泉</b></td>
+                            <td>温泉水1kg中に総鉄イオン(鉄Ⅱまたは鉄Ⅲ)が20mg以上含まれているもの
+                                <br>陰イオンによって炭酸水素塩型と硫酸塩型に分類
+                            </td>
+                            <td>温泉が湧出して空気に触れると、鉄の酸化が進み赤褐色になる
+                                <br>鉄欠乏性貧血症
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" width="100"><b>酸性泉</b></td>
+                            <td>温泉水1kg中に水素イオンが 1mg以上含まれているもの
+                            </td>
+                            <td>口にすると酸味があり、殺菌効果もある
+                                <br>ヨーロッパ諸国ではほとんど見られない
+                                <br>アトピー、表皮化膿症など
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" width="100"><b>含よう素泉</b></td>
+                            <td>温泉水1kg中によう化物イオンが10mg以上含有するもの
+                            </td>
+                            <td>非火山性の温泉に多く、時間がたつと黄色く変色
+                                <br>高コレステロール血症
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" width="100"><b>硫黄泉</b></td>
+                            <td>温泉水1kg中に総硫黄が2mg以上含まれているもの
+                            </td>
+                            <td>硫黄型と硫化水素型に分類され、日本では比較的多い
+                                <br>腐卵臭に似た特有の匂い
+                                <br>アトピー、表皮化膿症、高コレステロール血症など
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" width="100"><b>放射能泉(ラジウム泉)</b></td>
+                            <td>温泉水1kg中にラドンが30×10<sup>-10</sup>キュリー以上(8.25マッへ単位以上)含まれているもの
+                                <br>人体に悪影響と考えられがちだが、とても少量でむしろ人体に良い影響がある
+                            </td>
+                            <td>痛風、間接リウマチなど
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!--  wrapの終わり-->
+
+    <!--  footer始まり-->
+    <footer>
+        <small>(C)090-8405-7088
+        </small>
+    </footer>
+    <!--  footer終わり-->
+
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">芦ノ湖温泉（あしのこ）</h2><h3 class="icon"> 所在地：神奈川県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0340_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、硫黄泉
+</td></tr><tr><th>効能</th><td>神経痛、疲労、冷え性、皮膚病など
+</td></tr></table></div><div class="con1"><p class="feature">「♪箱根の山は天下の険」で始まる軽快なリズムの『箱根八里』。小田原から三島に抜ける箱根旧街道（約32㎞）の峠越えを歌ったこの歌の中にも登場する、旧街道沿いの“杉並木”から程近い場所に広がる温泉地。 江戸時代には宿場町として栄え、明治時代になると富士山と芦ノ湖に抱かれた避暑に適した地として多くの観光客が訪れるようになった。 昭和41年（1966年）に温泉が登場してからはサービスの整った約10軒の閑静な宿が建ち、箱根の関所や箱根神社などの名所旧跡巡り、芦ノ湖遊覧に便利な箱根観光の中心地として人気が集中。風の穏やかな日には、湖面に映る雄大な逆さ富士を望めるエリアとしても知られる。
+芦ノ湖の東南岸に位置する「箱根十七湯」のひとつ。箱根周辺では「富士山の見えるところに温泉は湧かない」というジンクスがあったが、昭和41（1966）年に湯の花沢温泉からの引き湯に成功。疲労回復や美肌効果のある硫黄泉が注がれ、温泉地らしい独特の香りをわずかに漂わせる。箱根の凛とした環境はリラックス効果も抜群。いくつかの宿からは芦ノ湖とその背後にそびえる霊峰富士が望め、景観の良さはまさに見事の一言だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.635</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="haratsuruonsen_harazuru_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="haratsuruonsen_harazuru_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.haratsuruonsen_harazuru_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0628_0001.jpg"/></a><p class="feature">原鶴温泉（はらづる）<br>類似度:2.631</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinomataonsen_ichinomata_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="ichinomataonsen_ichinomata_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.ichinomataonsen_ichinomata_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1123_0001.jpg"/></a><p class="feature">一の俣温泉（いちのまた）<br>類似度:2.603</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenkeseonsen_amagase_ooita">{% csrf_token %}<input name="id2" type="hidden" value="tenkeseonsen_amagase_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.tenkeseonsen_amagase_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0010_0001.jpg"/></a><p class="feature">天ヶ瀬温泉（あまがせ）<br>類似度:2.573</br></p></div></form>
+{% endblock content %}

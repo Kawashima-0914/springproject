@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯田中温泉（ゆだなか）</h2><h3 class="icon"> 所在地：長野県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0146_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫黄泉
+</td></tr><tr><th>効能</th><td>神経痛、リウマチ、胃腸病、冷え性、皮膚病、糖尿病、美肌など
+</td></tr></table></div><div class="con1"><p class="feature">「やせがえる負けるな一茶これにあり」「雀の子そこのけそこのけお馬が通る」…。庶民の生活を詠み、弱い者の立場に立った句で今でも多くの支持を集める俳人・小林一茶。その一茶が愛した地が、ここ湯田中温泉だ。 長野盆地の東、志賀高原の入り口に広がる温泉地は、小さい昔ながらの宿が建ち並び素朴な温泉情緒がたっぷり。田んぼの中から湧き出る湯ということから「湯田中」という名前が付いたとか。 かつて共同浴場番付で「東の湯田中、西の道後」と並び称された「大湯」の前には一茶の句碑。「雪ちるや　わき捨ててある　湯のけぶり」。
+旧草津街道の宿場町、現志賀草津高原ルート沿いに広がる温泉地。天智天皇の時代、僧智由が発見したと伝えられる古湯。「大湯」をはじめ9つの共同浴場が軒を連ね、大湯以外は町民と宿泊客しか利用できない。源泉も多く、それぞれ泉質が少しずつ異なる。少し熱めのお湯は湯量豊富で、源泉かけ流しを楽しめる宿も。志賀高原の美しい自然を満喫した後は、のんびり湯浴みで疲れを癒す。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="mitsunorionsen_koutoku_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="mitsunorionsen_koutoku_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.mitsunorionsen_koutoku_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0494_0001.jpg"/></a><p class="feature">光徳温泉（こうとく）<br>類似度:2.346</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.325</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenkeseonsen_amagase_ooita">{% csrf_token %}<input name="id2" type="hidden" value="tenkeseonsen_amagase_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.tenkeseonsen_amagase_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0010_0001.jpg"/></a><p class="feature">天ヶ瀬温泉（あまがせ）<br>類似度:2.325</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinomataonsen_ichinomata_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="ichinomataonsen_ichinomata_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.ichinomataonsen_ichinomata_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1123_0001.jpg"/></a><p class="feature">一の俣温泉（いちのまた）<br>類似度:2.277</br></p></div></form>
+{% endblock content %}

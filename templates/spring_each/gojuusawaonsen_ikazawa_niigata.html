@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">五十沢温泉（いかざわ）</h2><h3 class="icon"> 所在地：新潟県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1511_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">新潟県中越地方、越後山脈から流れる清冽な雪解け水が米をはじめ数々の名産を生み出す地に位置する温泉地「五十沢（いかざわ）」は、日本百名山のひとつ「巻機山」や、金城山、中ノ岳、丹後山といった美しい山々に囲 まれ、今も豊かな自然を残している。　 これらの自然は、登山や釣り、キャンプなどに利用され、多くの人たちに癒しを与えている。春の山菜からはじまり、夏の川遊び、秋はきのこ、冬が終わる頃には雪国ならではの「し みわたり」を楽しむこともできる。 1976年に湯脈が発見されて以来、スキーを楽しみに訪れる観光客や地元住民の身体を温める健康の湯として親しまれている。四季折々に表情を変える大自然に、身も心も解き放たれる経験ができる。
+県内でも珍しい岩風呂で源泉かけ流し。湯温52.0℃、pH9.4　無色透明。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="nishikionsen_nishiki_akita">{% csrf_token %}<input name="id2" type="hidden" value="nishikionsen_nishiki_akita"/><div class="con2"><a href="../spring_each/" onclick="document.nishikionsen_nishiki_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1626_0001.jpg"/></a><p class="feature">西木温泉（にしき）<br>類似度:1.960</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kawauraonsen_kawaura_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="kawauraonsen_kawaura_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.kawauraonsen_kawaura_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0840_0001.jpg"/></a><p class="feature">川浦温泉（かわうら）<br>類似度:1.872</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinomataonsen_ichinomata_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="ichinomataonsen_ichinomata_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.ichinomataonsen_ichinomata_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1123_0001.jpg"/></a><p class="feature">一の俣温泉（いちのまた）<br>類似度:1.870</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nishitanzawanakagawaonsen_nishitanzawanakagawa_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="nishitanzawanakagawaonsen_nishitanzawanakagawa_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.nishitanzawanakagawaonsen_nishitanzawanakagawa_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0089_0001.jpg"/></a><p class="feature">西丹沢・中川温泉（にしたんざわ・なかがわ）<br>類似度:1.827</br></p></div></form>
+{% endblock content %}

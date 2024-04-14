@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">臼杵温泉（うすき）</h2><h3 class="icon"> 所在地：大分県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1233_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">「臼杵温泉」が湧く臼杵市は、古くはキリシタン大名として知られた大友宗麟が1563年に築城した臼杵城の城下町として栄えた歴史を持つ。 今も多くの寺院が残っており、二王座を代表とする城下町の街並みは、歴史の息吹を感じる落ち着いた雰囲気だ。街歩きを楽しむのも良いだろう。また、臼杵は大日如来像に代表される国宝の「臼杵石仏」や醤油の製造地と しても有名。 他にも、農業体験や臼杵煎餅作り体験、醸造工場の見学など子供から大人まで楽しむことができる。2007年には待望の天然温泉もオープンし、多くの観光客で賑わう。歴史ある町を散策した後、天然温泉に浸かりゆっくりと旅の疲れを癒したい。
+臼杵初の天然温泉として2007年にオープンした「臼杵温泉」。温泉の代表者が金色の光が輝いている夢を見たことから掘削してみると温泉が出たとか。夢の通り琥珀色をした源泉は、古代植物などの堆積物や、雨・雪がしみ込み、温度や成分を得て、地下1300mより地上に湧き出ている。広々とした女性専用の露天風呂は開放感にあふれ、心地よいと人気だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:1.862</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="iwamuroonsen_iwamuro_niigata">{% csrf_token %}<input name="id2" type="hidden" value="iwamuroonsen_iwamuro_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.iwamuroonsen_iwamuro_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0570_0001.jpg"/></a><p class="feature">岩室温泉（いわむろ）<br>類似度:1.838</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gojouribaasaidoonsen_gojouribaasaido_nara">{% csrf_token %}<input name="id2" type="hidden" value="gojouribaasaidoonsen_gojouribaasaido_nara"/><div class="con2"><a href="../spring_each/" onclick="document.gojouribaasaidoonsen_gojouribaasaido_nara.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1207_0001.jpg"/></a><p class="feature">五條リバーサイド温泉（ごじょうりばーさいど）<br>類似度:1.828</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tennenyamatoonsen_tennenyamato_nara">{% csrf_token %}<input name="id2" type="hidden" value="tennenyamatoonsen_tennenyamato_nara"/><div class="con2"><a href="../spring_each/" onclick="document.tennenyamatoonsen_tennenyamato_nara.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1159_0001.jpg"/></a><p class="feature">天然大和温泉（てんねんやまと）<br>類似度:1.828</br></p></div></form>
+{% endblock content %}

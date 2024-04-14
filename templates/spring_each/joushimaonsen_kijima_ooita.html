@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">城島温泉（きじま）</h2><h3 class="icon"> 所在地：大分県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0809_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">阿蘇くじゅう国立公園内に広がる城島高原に位置する温泉地。別府温泉まで車で約20分、由布院温泉まで約15分とちょうど中間に位置しており、「奥別府」として親しまれている。間近に望む雄大な鶴見・由布岳、静かに佇む志高湖。 大自然に抱かれた高原にはゆったりとした時間が流れ、疲れた心と体をリフレッシュするのにおすすめだ。この高原リゾートの中心にあるのが、一軒宿の「城島高原ホテル」。 豊富に湧き出る温泉を利用した入浴施設はもちろん、遊園地やゴルフ場などの総合レジャー施設とも隣接しており、様々な楽しみ方ができるのも魅力。
+標高約700ｍの城島高原に建つ「城島高原ホテル」に豊かに湧出する温泉。地底約1500mの源泉から約62℃前後の温泉が毎分約230L湧き出ている。ほのかな湯の香りと滑らかな肌触りを楽しめ、美肌の湯としても人気がある。桧造りの男性風呂と大理石造りの女性風呂の内湯と男女それぞれ露天風呂も備えている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ikenoheionizumi_ikenotaira_nagano">{% csrf_token %}<input name="id2" type="hidden" value="ikenoheionizumi_ikenotaira_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.ikenoheionizumi_ikenotaira_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0568_0001.jpg"/></a><p class="feature">池の平温泉（いけのたいら）<br>類似度:2.206</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="igaonsen_iga_mie">{% csrf_token %}<input name="id2" type="hidden" value="igaonsen_iga_mie"/><div class="con2"><a href="../spring_each/" onclick="document.igaonsen_iga_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1470_0001.jpg"/></a><p class="feature">伊賀温泉（いが）<br>類似度:2.165</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1120_0001.jpg"/></a><p class="feature">京都竹の郷温泉（きょうとたけのさと）<br>類似度:2.157</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="rurionsen_ruri_shiga">{% csrf_token %}<input name="id2" type="hidden" value="rurionsen_ruri_shiga"/><div class="con2"><a href="../spring_each/" onclick="document.rurionsen_ruri_shiga.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1326_0001.jpg"/></a><p class="feature">るり温泉（るり）<br>類似度:2.148</br></p></div></form>
+{% endblock content %}

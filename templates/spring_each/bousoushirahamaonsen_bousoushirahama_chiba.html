@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">房総白浜温泉（ぼうそうしらはま）</h2><h3 class="icon"> 所在地：千葉県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1895_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">南房総市白浜に位置し、朝日と夕陽と星空の大パノラマを楽しむことが出来る温泉地。ホテルの目の前が塩浦海水浴場があり、海まで徒歩30秒と海水浴にぴったりなロケーション。周辺にはマザー牧場があり、広大な牧場でゆったり暮す羊やアルパカなどの姿が愛らしい。動物たちにより接近できる ファームツアーも人気。ふれあい牧場ではカピバラやマーラ、リクガメなどここでしか会えない動物がたくさん。ヤギやうまにはエサやり体験もできる。毎年６月〜10月は千葉県生まれのペニチュアの一種である桃色吐息も楽しむことが出来る。２万５千株が花の谷を彩り、うっとりする絶景が広がる。
+泉質は、無色透明のお湯は単純温泉。美肌成分である「メタケイ酸」を含んでおり、湯につかれば肌のうるおいが感じられる。神経痛、筋肉痛、関節痛、五十肩、関節のこわばり、冷え性、疲労回復、健康増進、病後回復期などに効果が期待できるといわれている。身体の芯から温まることで血行が良くなるので、疲れた体が癒される。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="okudairaonsen_okudaira_gunma">{% csrf_token %}<input name="id2" type="hidden" value="okudairaonsen_okudaira_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.okudairaonsen_okudaira_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2063_0001.jpg"/></a><p class="feature">奥平温泉（おくだいら）<br>類似度:2.094</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuchikeikokuonsen_kikuchikeikoku_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuchikeikokuonsen_kikuchikeikoku_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuchikeikokuonsen_kikuchikeikoku_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1132_0001.jpg"/></a><p class="feature">菊池渓谷温泉（きくちけいこく）<br>類似度:2.091</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="higashitorokoonsen_higashitoroko_akita">{% csrf_token %}<input name="id2" type="hidden" value="higashitorokoonsen_higashitoroko_akita"/><div class="con2"><a href="../spring_each/" onclick="document.higashitorokoonsen_higashitoroko_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1888_0001.jpg"/></a><p class="feature">東トロコ温泉（ひがしとろこ）<br>類似度:2.089</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenmokuyamaonsen_tenmokuzan_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="tenmokuyamaonsen_tenmokuzan_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.tenmokuyamaonsen_tenmokuzan_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2055_0001.jpg"/></a><p class="feature">天目山温泉（てんもくざん）<br>類似度:2.086</br></p></div></form>
+{% endblock content %}

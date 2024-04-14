@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">稲取温泉（いなとり）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0024_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">もともと良港で知られた稲取港で賑わう町だけに、豊富な海の幸が自慢。中でも、「稲取キンメ」とブランド化されている金目鯛の料理は欠かせない。他にもあわびや、昔からお祝いの席で食べられていた郷土料理「げんなり寿司」などが有名。 また、稲取は1年を彩るお祭りも多い。例年1月下旬から3月末にかけて行われるのが「雛のつるし飾りまつり」。雛祭りの際、雛壇の両脇に一対のつるし飾りを飾るという江戸時代から伝わる風習を受け継ぐお祭りだ。 そのほか、天下の奇祭といわれる「どんつく祭」（6月上旬）や秋の「細野高原すすき」などがおすすめ。
+温泉地としての歴史は伊豆の中でも浅く、昭和31年に約57℃の天然温泉が湧出したのが始まり。その後、急速に近代リゾート地に成長した。相模湾に小さく突き出た岬にある稲取。そのロケーションを生かして、伊豆七島を一望できる露天風呂のある宿も多い。少し早起きをして、朝日を眺めながらの入浴もおすすめだ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="futamionsen_futami_mie">{% csrf_token %}<input name="id2" type="hidden" value="futamionsen_futami_mie"/><div class="con2"><a href="../spring_each/" onclick="document.futamionsen_futami_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1280_0001.jpg"/></a><p class="feature">二見温泉（ふたみ）<br>類似度:1.833</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="odawaraonsen_odawara_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="odawaraonsen_odawara_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.odawaraonsen_odawara_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0767_0001.jpg"/></a><p class="feature">小田原温泉（おだわら）<br>類似度:1.805</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ookawaonsen_ookawa_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="ookawaonsen_ookawa_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.ookawaonsen_ookawa_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0446_0001.jpg"/></a><p class="feature">大川温泉（おおかわ）<br>類似度:1.793</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="itsuuraonsen_itsuura_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="itsuuraonsen_itsuura_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.itsuuraonsen_itsuura_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0836_0001.jpg"/></a><p class="feature">五浦温泉（いつうら）<br>類似度:1.758</br></p></div></form>
+{% endblock content %}

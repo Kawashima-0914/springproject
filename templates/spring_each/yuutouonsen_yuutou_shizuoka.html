@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">雄踏温泉（ゆうとう）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1192_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">風光明媚な浜名湖の景勝地に湧く温泉。静岡県の名所・浜名湖の雄大な景色を借景にした地に立つ「浜名湖ロイヤルホテル」が一軒宿の温泉。「雄踏温泉」という温泉名は地元の雄踏（ゆうとう）町、その地名から名付けら れたもの。 地下約500mから湧き出す、豊富な湯量の源泉はナトリウム・カルシウム‐塩化物泉。肌に優しく、神経痛、打ち身、疲労回復と幅広い適応症を持つ。ゆとりの大きさな大浴場や湯量たっぷりな露天風呂は とても風情があり、優れた効能を心ゆくまで楽しませてくれる。 夜は夜空の星々を眺めながら、朝・昼は青空を眺めながら、のんびり湯浴みを楽しめば、旅の疲れもそっと癒される。非日常の空間でリラックスを堪能。
+静岡県の名所・浜名湖を借景にした地に立つ「浜名湖ロイヤルホテル」が一軒宿の温泉。温泉名はその地名から名付けられた。地下約500mから湧き出す源泉はナトリウム・カルシウム‐塩化物泉で、神経痛、打ち身、疲労回復と幅広い適応症を持つ。湯量たっぷりな大浴場や露天風呂はとても風情があり、優れた効能を心ゆくまで楽しませてくれる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1251_0001.jpg"/></a><p class="feature">紀州みなべ千里浜温泉（きしゅうみなべせんりはま）<br>類似度:2.237</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.200</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shirahamanojimaonsen_shirahamanojima_chiba">{% csrf_token %}<input name="id2" type="hidden" value="shirahamanojimaonsen_shirahamanojima_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.shirahamanojimaonsen_shirahamanojima_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1234_0001.jpg"/></a><p class="feature">白浜野嶋温泉（しらはまのじま）<br>類似度:2.142</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kinkesakionsen_kanagasaki_akita">{% csrf_token %}<input name="id2" type="hidden" value="kinkesakionsen_kanagasaki_akita"/><div class="con2"><a href="../spring_each/" onclick="document.kinkesakionsen_kanagasaki_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1283_0001.jpg"/></a><p class="feature">金ヶ崎温泉（かながさき）<br>類似度:2.126</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">久米川温泉（くめがわ）</h2><h3 class="icon"> 所在地：長野県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0807_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">「飯田IC」より車で約10分の山間に、一軒宿「湯元久米川温泉」が建つ。2005年には、長野県で創設された「『安心、安全、正直』な信州の温泉表示認定制度」にも登録された、信州の隠れた名湯の一つ。第2次大戦中には、疎開してきた子供たちの生活水として利用されていたともいわれる。 年間を通して多くの野菜や果物、山菜などが収穫される南信州ならではの豊かな食材を使った郷土料理も魅力の一つ。祖先から伝わる伝統的かつ普遍的な知恵を今に受け継ぐ料理が、身体の内から元気にしてくれる。 玄人好みと評判の湯に浸かり、新鮮な自然の恵みをいただけば、知らず知らずのうちに心身ともに癒されていく。
+四季折々の田園風景に抱かれて、大自然の中にたたずむ一軒宿に湧く温泉。宿のオープンが1996年10月と、歴史は新しい。泉質はアルカリ性単純温泉で、源泉の温度は25℃と低め。水素イオン濃度がpH10を超えているため肌がつるつるになると評判で、飯田地方には珍しく飲泉もできる。満天の星の下、静かに湯に浸かれば、しっとり美肌の湯がじわじわと染み渡っていくのを感じる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="okutenryuufudouonsen_okutenryuufudou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="okutenryuufudouonsen_okutenryuufudou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.okutenryuufudouonsen_okutenryuufudou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0811_0001.jpg"/></a><p class="feature">奥天竜不動温泉（オクテンリュウフドウ）<br>類似度:2.505</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="akanmizuumionsen_akanko_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="akanmizuumionsen_akanko_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.akanmizuumionsen_akanko_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1545_0001.jpg"/></a><p class="feature">阿寒湖温泉（あかんこ）<br>類似度:2.503</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.424</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="donkawaonsen_nibukawa_ehime">{% csrf_token %}<input name="id2" type="hidden" value="donkawaonsen_nibukawa_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.donkawaonsen_nibukawa_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0292_0001.jpg"/></a><p class="feature">鈍川温泉（にぶかわ）<br>類似度:2.421</br></p></div></form>
+{% endblock content %}

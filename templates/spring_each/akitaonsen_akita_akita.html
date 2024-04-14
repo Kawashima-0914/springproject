@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">秋田温泉（あきた）</h2><h3 class="icon"> 所在地：秋田県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0915_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">秋田市は歴史ある城下町。市街を二分して流れる旭川は、かつて川の東を「侍町」、西を「町人町」に分かち、今でも東側が官庁ビジネス街、西は「東北随一の食処」と名を馳せる繁華街「川反（かわばた）」と表情を異にする。その市街地から旭川を4キロほど北にさかのぼった田園地帯に温泉が湧き出る一帯が広がる。 秋田市内にありながら温泉情緒が味わえる奥座敷として、観光客だけでなく市民にも人気の温泉地だ。水堀と緑が美しい憩いの場「千秋公園」は、かつてこの地を治めた佐竹氏の居城「久保田城」の跡。竿燈まつりや土崎港曳山まつりは息づく人々の熱気の表れ。 江戸時代に華ひらいた「秋田蘭画」をはじめとするアートの香りただよう街でもある。きりたんぽやしょっつる鍋、ハタハタ、清酒など秋田の郷土料理も見逃したくない。男鹿半島や十和田湖など周辺観光の基点としても便利だ。
+色白で肌のきれいな秋田美人で有名な秋田市郊外に湧き出る温泉。源泉温は約41.7℃で無色透明、肌がツルツルすべすべになる「美人の湯」として知られ、湯上り感も気持ちがよい。和風で落ち着いた雰囲気の「秋田温泉プラザ」と、大衆浴場風の様々な入浴施設をそなえた「秋田温泉さとみ」があり、どちらも日帰り入浴が可能。身体が温まる“ぬくもりの湯”として、特に週末は多くの市民も訪れて疲れを癒している。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tottorionsen_tottori_tottori">{% csrf_token %}<input name="id2" type="hidden" value="tottorionsen_tottori_tottori"/><div class="con2"><a href="../spring_each/" onclick="document.tottorionsen_tottori_tottori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0506_0001.jpg"/></a><p class="feature">鳥取温泉（とっとり）<br>類似度:2.248</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="iwateyumotoonsen_iwateyumoto_iwate">{% csrf_token %}<input name="id2" type="hidden" value="iwateyumotoonsen_iwateyumoto_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.iwateyumotoonsen_iwateyumoto_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0879_0001.jpg"/></a><p class="feature">岩手湯本温泉（いわてゆもと）<br>類似度:2.212</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinosekionsensato_ichinoseki_iwate">{% csrf_token %}<input name="id2" type="hidden" value="ichinosekionsensato_ichinoseki_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.ichinosekionsensato_ichinoseki_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1076_0001.jpg"/></a><p class="feature">一関温泉郷（いちのせき）<br>類似度:2.178</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ashinomakionsen_ashinomaki_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="ashinomakionsen_ashinomaki_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.ashinomakionsen_ashinomaki_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0006_0001.jpg"/></a><p class="feature">芦ノ牧温泉（あしのまき）<br>類似度:2.174</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">川中温泉（かわなか）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2067_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">川中温泉は雁ヶ沢川沿いに位置する閑静な温泉地で、和歌山県の龍神温泉、島根県の湯の川温泉と並び「日本三美人の湯」のひとつ。美肌効果が期待できるこの湯は、一軒宿「かど半旅館」のみで入浴できる。「川中」の名の通り、旅館の目の前の川底から厳選が自然湧出しており、鎌倉時代以前に発見されたとも言われている。源泉温度は約35℃とぬるめで、1回の入浴を30分～1時間として、出たり入ったりを繰り返すことで、より効能を感じられる。日帰り入浴はできないため、休暇を取って訪れよう。夕食では、名物の「おきりっこみ」を堪能できる。
+カルシウムを含む硫酸塩泉の泉質で、皮脂を洗い流し、美肌への効能が高いとされる美人の湯。とくに肌を白くする効果があるとされ、女性に高い人気を誇る。そのほか神経痛や筋肉痛、冷え性や疲労などの広い効果も期待できる。湯あたりしにくい湯だが、体調に注意しながら入浴したい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="oogoonsen_daigo_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="oogoonsen_daigo_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.oogoonsen_daigo_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0261_0001.jpg"/></a><p class="feature">大子温泉（だいご）<br>類似度:2.323</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shintainaionsen_shintainai_niigata">{% csrf_token %}<input name="id2" type="hidden" value="shintainaionsen_shintainai_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.shintainaionsen_shintainai_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2231_0001.jpg"/></a><p class="feature">新胎内温泉（しんたいない）<br>類似度:2.255</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kojirionsen_kojiri_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="kojirionsen_kojiri_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.kojirionsen_kojiri_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1911_0001.jpg"/></a><p class="feature">湖尻温泉（こじり）<br>類似度:2.180</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="oosawaonsen_oosawa_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="oosawaonsen_oosawa_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.oosawaonsen_oosawa_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1065_0001.jpg"/></a><p class="feature">大沢温泉（おおさわ）<br>類似度:2.143</br></p></div></form>
+{% endblock content %}

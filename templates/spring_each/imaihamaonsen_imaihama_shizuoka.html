@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">今井浜温泉（いまいはま）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0442_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">伊豆半島の東海岸・南寄りの海岸沿いに位置する温泉地。すぐ目の前の今井浜海岸はマリンレジャーのメッカ。 また、温暖な気候により様々な花が咲き誇る花の里としても知られている。 紺碧の海と鮮やかな花々のコントラストを楽しみ、近くの漁港で水揚げされる新鮮な海の幸に舌鼓。
+河津川中流の南側河畔に湧く峰温泉から引湯して生まれた弱食塩泉の温泉。昔から保養地として親しまれ、多くの文豪にも愛された。『陽のあたる坂道』を著した小説家・石坂洋次郎もこの地を愛した文豪の一人で、彼の作品の多くはこの地で執筆されたという。海岸沿いの温泉地だけに、日の出や夕日など美しい海の景色を眺めながら温浴みを楽しめる宿が多い。冬は暖かく、夏は涼しい穏やかな気候も魅力で、休養を目的としたのんびりしたリゾートライフにはまさに最適と言えよう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kamogawaonsen_kamogawa_chiba">{% csrf_token %}<input name="id2" type="hidden" value="kamogawaonsen_kamogawa_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.kamogawaonsen_kamogawa_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0043_0001.jpg"/></a><p class="feature">鴨川温泉（かもがわ）<br>類似度:1.987</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shirahamaonsen_shirahama_chiba">{% csrf_token %}<input name="id2" type="hidden" value="shirahamaonsen_shirahama_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.shirahamaonsen_shirahama_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0074_0001.jpg"/></a><p class="feature">白浜温泉（しらはま）<br>類似度:1.976</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shirahamaonnaraishimaonsen_shirahamameraijima_chiba">{% csrf_token %}<input name="id2" type="hidden" value="shirahamaonnaraishimaonsen_shirahamameraijima_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.shirahamaonnaraishimaonsen_shirahamameraijima_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0172_0001.jpg"/></a><p class="feature">白浜女来島温泉（しらはまめらいじま）<br>類似度:1.971</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="itsuuraonsen_itsuura_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="itsuuraonsen_itsuura_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.itsuuraonsen_itsuura_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0836_0001.jpg"/></a><p class="feature">五浦温泉（いつうら）<br>類似度:1.927</br></p></div></form>
+{% endblock content %}

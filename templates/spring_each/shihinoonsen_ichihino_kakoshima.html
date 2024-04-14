@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">市比野温泉（いちひの）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0323_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">市比野温泉は鹿児島県薩摩川内市樋脇町市比野にある温泉。1662年に開湯し。薩摩藩主の島津光久が「天下の名湯」と称賛したほどの由緒ある温泉地。江戸時代から大衆のための湯治場として栄えた。市比野川沿いの田園地帯に湧く温泉地で泉源は10ヶ所と非常に多い。その周りに数件の旅館があるが、旅館の規模はそれほど大きくなく、近郷の湯治向けという昔ながらのスタイルを守っている。また格安の公衆浴場もあり、美人湯としても知られ観光客も多く訪れる。市比野温泉の名前の由来は、昔、市比野温泉一帯に、イチイの木が多く茂っていたことから来ている。温泉街の中心を流れる市比野川沿いにある「湯の滝公園」では落差6メートル、清々しい音を立てて流れ落ちる湯の滝が見物できる。
+市比野温泉の泉質は弱アルカリ単純泉。触れてすぐ実感できるトロっとした感触とあがった後のお肌のしっとりスベスベ感という特徴から、「美人の湯」と呼ばれる。慢性間接・筋肉リュウマチ、神経痛神経炎などに効用があるとされる。島津光久がこの近くで猟を楽しんでいたところ、いで湯を発見し、「これぞ天下の名泉」と湯治場を作らせたという歴史がある。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="bimataonsen_mimata_shimane">{% csrf_token %}<input name="id2" type="hidden" value="bimataonsen_mimata_shimane"/><div class="con2"><a href="../spring_each/" onclick="document.bimataonsen_mimata_shimane.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1205_0001.jpg"/></a><p class="feature">美又温泉（みまた）<br>類似度:2.132</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="geroonsen_gero_gifu">{% csrf_token %}<input name="id2" type="hidden" value="geroonsen_gero_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.geroonsen_gero_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0053_0001.jpg"/></a><p class="feature">下呂温泉（げろ）<br>類似度:2.041</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tachibananosatouenoonsen_tachibananosatoueno_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tachibananosatouenoonsen_tachibananosatoueno_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tachibananosatouenoonsen_tachibananosatoueno_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1009_0001.jpg"/></a><p class="feature">橘の郷上野温泉（たちばなのさとうえの）<br>類似度:2.032</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="manganteraonsen_manganji_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="manganteraonsen_manganji_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.manganteraonsen_manganji_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1111_0001.jpg"/></a><p class="feature">満願寺温泉（まんがんじ）<br>類似度:2.024</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">丹後琴引温泉（たんごことびき）</h2><h3 class="icon"> 所在地：京都府</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2099_0001.jpg"/><table><tr><th>効能</th><td>神経痛、リウマチ、疲労、冷え性
+</td></tr></table></div><div class="con1"><p class="feature">歩くと「キュッキュッ」と音がする鳴き砂の浜として有名な、全長1.8㎞にわたる白砂青松の景勝地、琴引浜。山陰海岸国立公園の一部で、海岸一帯は国内初の天然記念物に指定されている。この美しい砂浜の中と周辺の温泉施設で入れる天然温泉が、丹後琴引温泉。砂浜の地下600ｍから湧き出る天然温泉は、厳冬期以外は男女問わず水着で入浴ができる。周辺の宿泊施設では、海に面した露天風呂や内湯などで天然温泉を提供するほか、日本海でとれた海の幸や京都産の野菜など地場の味をふんだんに使った料理も出し、お湯と味覚の両方で美しい砂浜を楽しませてくれる。
+57度と高温のアルカリ性単純温泉で、熱いお湯は肌を美しく活性化するとされる。他、自律神経不安定症、不眠症、うつ状態のほか、神経痛や冷え性などの一般適応症に効能があるとされる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kasagionsen_kasagi_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kasagionsen_kasagi_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kasagionsen_kasagi_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2105_0001.jpg"/></a><p class="feature">笠置温泉（かさぎ）<br>類似度:1.750</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kawauchishigaichionsen_sendaishigaichi_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="kawauchishigaichionsen_sendaishigaichi_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.kawauchishigaichionsen_sendaishigaichi_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0333_0001.jpg"/></a><p class="feature">川内市街地温泉（せんだいしがいち）<br>類似度:1.725</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:1.701</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kounotsuruonsen_1_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kounotsuruonsen_1_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kounotsuruonsen_1_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2116_0001.jpg"/></a><p class="feature">鴻の鶴温泉（丹後町間人温泉郷）（こうのつる（たんごちょうたいざ））<br>類似度:1.687</br></p></div></form>
+{% endblock content %}

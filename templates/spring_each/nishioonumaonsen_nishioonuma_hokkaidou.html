@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">西大沼温泉（にしおおぬま）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1282_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">道南観光のハイライト・大沼を存分に楽しめる立地。付近には優美な山容の駒ケ岳がそびえ立ち、その火山活動でできた堰止湖の「大沼・小沼・蓴菜沼」の屈曲の多い湖岸線と、多くの小島とによって形成された日本庭園的 な景観はとても美しい。 大自然が作り出した大沼の自然は「大沼国定公園」として人々に愛され続けている。森と水辺が混在した大沼の豊かな環境は、自然を育み、晩春から夏にかけ、ヒツジグサやコウホネなどの水草類が 、凛とした花を咲かせる様子もまた美しい。 泉質は単純泉で、外傷、湿疹、神経痛、疲労回復などに効能がある。大沼の自然の中をアクティブに散策し、良質な温泉で湯浴みをすれば日頃の疲れをより一層癒してくれるに違いない。
+豊かな湯に恵まれた西大沼温泉は、男女問わない幅広い層に親しまれている。雄大な自然の景色が広がる環境での湯浴みは、温泉情緒をさらに豊かにしてくれる。血行促進効果の高い泉質のお湯はお肌にやさしい。大沼の自然を散策した後、温泉でゆっくりその疲れを癒したい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="yamanokamionsen_yamanokami_iwate">{% csrf_token %}<input name="id2" type="hidden" value="yamanokamionsen_yamanokami_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.yamanokamionsen_yamanokami_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1255_0001.jpg"/></a><p class="feature">山の神温泉（やまのかみ）<br>類似度:2.370</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.366</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinomataonsen_ichinomata_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="ichinomataonsen_ichinomata_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.ichinomataonsen_ichinomata_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1123_0001.jpg"/></a><p class="feature">一の俣温泉（いちのまた）<br>類似度:2.317</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hiekionsen_hinoemata_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="hiekionsen_hinoemata_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.hiekionsen_hinoemata_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1086_0001.jpg"/></a><p class="feature">檜枝岐温泉（ひのえまた）<br>類似度:2.269</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">大歩危祖谷阿波温泉（おおぼけいやあわ）</h2><h3 class="icon"> 所在地：徳島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0970_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">徳島県北西部の山奥に流れる吉野川の両岸に続く、約8㎞の険しい渓谷“大歩危（おおぼけ）”。深く削られた淵と奇岩が、勇壮な景観を魅せている。川の水流によって削り取られた岩石は、約2億年前の地層が形成された「含礫片岩（がんれきへんがん）」として徳島県の天然記念物にも指定。木々や花々が色を添える新緑の春から紅葉の秋にかけて、特に美しい風景を堪能できる。 その渓谷美あふれる吉野川のほとりに、温泉が湧き出る一軒宿が建つ。秘湯ムード満点なうえ、車で20～40分圏内は観光スポットに事欠かない。渓谷を見上げながら遊覧船で川下りをする「大歩危舟下り」の始発点、平家の資料を展示する「平家落人の里」、雲辺寺山山頂に建つ「雲辺寺」などが点在。 さらに足を延ばせば、重要有形民族文化財の吊橋「祖谷のかずら橋」や、四国で最も歴史あるスキー場「井川スキー場」もある。この地を訪れる時には、旅のプランをじっくりと練り、ゆとりのある休日を。
+疲労回復効果が高いとされるナトリウム炭酸水素塩泉で、湯にはぬめりがあり、肌触りが優しく柔らかな質感が特徴。神経痛や筋肉痛、関節痛などの不快な症状やストレスを和らげてくれる効果が高い。皮膚の余分な脂肪分を溶解する作用もあり、肌の角質が取り除かれてスベスベの美肌になると評判だ。秘境の地ならではの静けさと美しい自然の風景に心が癒され、体は芯まで温まってポカポカ。過ぎ行く時間を惜しみながら、頭の中を空っぽにして至福の時に浸りつくしたい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shiramineonsen_shiramine_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="shiramineonsen_shiramine_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.shiramineonsen_shiramine_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1103_0001.jpg"/></a><p class="feature">白峰温泉（しらみね）<br>類似度:2.082</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="uenoharaonsen_1_gunma">{% csrf_token %}<input name="id2" type="hidden" value="uenoharaonsen_1_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.uenoharaonsen_1_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0199_0001.jpg"/></a><p class="feature">上の原温泉（水上温泉郷）（うえのはら（みなかみ））<br>類似度:2.050</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="fukurodaonsen_fukuroda_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="fukurodaonsen_fukuroda_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.fukurodaonsen_fukuroda_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0262_0001.jpg"/></a><p class="feature">袋田温泉（ふくろだ）<br>類似度:2.025</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kasagionsen_kasagi_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kasagionsen_kasagi_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kasagionsen_kasagi_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2105_0001.jpg"/></a><p class="feature">笠置温泉（かさぎ）<br>類似度:2.009</br></p></div></form>
+{% endblock content %}

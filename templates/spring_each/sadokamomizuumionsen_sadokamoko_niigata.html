@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">佐渡加茂湖温泉（さどかもこ）</h2><h3 class="icon"> 所在地：新潟県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0898_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">佐渡を代表する景勝地のひとつで、両津港の奥に広がる加茂湖の湖畔に湧き出す風光明媚な温泉地。景色の美しさは特筆もので、とりわけ加茂湖から眺める雄大な金北山の眺めは絶景。佐渡の表玄関口にある両津港から近く、佐渡市の市街地にも近いことから、佐渡観光の拠点としても最適な温泉地だ。 また、春は「花と鬼太鼓」、夏は「海と薪能」、秋は「紅葉と新米」、冬は「魚介類や新酒」と、年間を通じて佐渡ならではの様々な楽しみを満喫できるのも大きな魅力と言えよう。 そして忘れてはならないのが、周辺で捕れた魚介類と名物の牡蠣の養殖。冬場には、ぜひ新鮮な牡蠣料理を心ゆくまで味わい尽くしたい。
+平成8年12月に加茂湖のほとりに湧出した、佐渡で一番新しい天然温泉。別名「若返りの湯」ともいわれる茶褐色の湯は柔らかく、入浴すると肌がすべすべになると評判だ。露天風呂から目の前に広がる佐渡随一の大きさを誇る加茂湖を眺めながら、ゆっくりと過ぎていく時間を楽しみたい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shiramineonsen_shiramine_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="shiramineonsen_shiramine_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.shiramineonsen_shiramine_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1103_0001.jpg"/></a><p class="feature">白峰温泉（しらみね）<br>類似度:2.144</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sasakuraonsen_sasakura_niigata">{% csrf_token %}<input name="id2" type="hidden" value="sasakuraonsen_sasakura_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.sasakuraonsen_sasakura_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1129_0001.jpg"/></a><p class="feature">笹倉温泉（ささくら）<br>類似度:2.126</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="isoharaonsen_isohara_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="isoharaonsen_isohara_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.isoharaonsen_isohara_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0260_0001.jpg"/></a><p class="feature">磯原温泉（いそはら）<br>類似度:2.115</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="amatsukominatoonsen_amatsukominato_chiba">{% csrf_token %}<input name="id2" type="hidden" value="amatsukominatoonsen_amatsukominato_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.amatsukominatoonsen_amatsukominato_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0014_0001.jpg"/></a><p class="feature">天津小湊温泉（あまつこみなと）<br>類似度:2.109</br></p></div></form>
+{% endblock content %}

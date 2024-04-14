@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">阿蘇白水温泉（あそはくすい）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1118_0001.jpg"/><table><tr><th>効能</th><td>美肌
+</td></tr></table></div><div class="con1"><p class="feature">世界有数の大カルデラ、阿蘇山に湧く温泉地。今だ中岳の火山活動が続く南阿蘇は“火”のイメージを多く持たれているが、実は、至る所で湧水が流れる“水の生まれる里”として知られている。なかでも「白川水源」は“日本の名水百選”に選ばれた名水で、水を汲みに遠方からも人が訪れるほど。一度はその美味しさを賞味してみたい。また、ぜひオススメしたいのが高森から立野駅を走るトロッコ列車の旅。一面に広がる大自然を体感できるのはもちろん、「一心行の大桜」や「高森湧水トンネル」などの見所も楽しめる。
+大自然が作り出した阿蘇白水温泉の泉質は、とろっとしており肌がツルツルになる。またすべすべとした質感をもたらすため『美人の湯』とも言われる。神経痛や慢性消化器病・痔疾・冷え性・慢性皮膚病など豊かな効能を持った泉質である。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="okutenryuufudouonsen_okutenryuufudou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="okutenryuufudouonsen_okutenryuufudou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.okutenryuufudouonsen_okutenryuufudou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0811_0001.jpg"/></a><p class="feature">奥天竜不動温泉（オクテンリュウフドウ）<br>類似度:1.161</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ougionsen_ougi_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="ougionsen_ougi_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.ougionsen_ougi_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2126_0001.jpg"/></a><p class="feature">扇温泉（おうぎ）<br>類似度:1.144</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hottarakashionsen_hottarakashi_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="hottarakashionsen_hottarakashi_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.hottarakashionsen_hottarakashi_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0991_0001.jpg"/></a><p class="feature">ほったらかし温泉（ほったらかし）<br>類似度:1.127</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ozetokuraonsen_ozetokura_gunma">{% csrf_token %}<input name="id2" type="hidden" value="ozetokuraonsen_ozetokura_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.ozetokuraonsen_ozetokura_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0390_0001.jpg"/></a><p class="feature">尾瀬戸倉温泉（おぜとくら）<br>類似度:1.124</br></p></div></form>
+{% endblock content %}

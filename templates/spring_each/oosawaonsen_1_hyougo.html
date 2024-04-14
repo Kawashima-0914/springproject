@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">大沢温泉（兵庫県）（おおぞう）</h2><h3 class="icon"> 所在地：兵庫県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1655_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、含鉄泉
+</td></tr><tr><th>効能</th><td>にごり、にごり（褐色）、神経痛、筋肉痛、肩こり、関節痛、疲労、婦人病、冷え性、皮膚病、痔疾など
+</td></tr></table></div><div class="con1"><p class="feature">六甲山の麓に位置する神戸市北区は豊かな緑に囲まれた街。面積は神戸市全体の約44％を占めるが、区の中では人口密度が最も低く、広大な土地を活かしたレジャー施設が集積している。 ゴルフ場、ショッピングモール、スタジアム、自然公園、宿泊施設など、週末レジャーに最適なエリアとなっている。大沢温泉は「神戸フルーツフラワーパーク」内に湧く、源泉かけ流し温泉だ。 この「神戸フルーツフラワーパーク」には、美しい建物、季節の花々を楽しむことができる庭園、フルーツ狩り、遊園地、バーベキュー、ホテル、温泉、レストランなど、日帰りでは遊びきれないほどの充実した施設をようしている。ご家族・カップル・グループ、自然をゆっくり楽しみたい方におすすめ。
+源泉（加温・加水）かけ流し。お湯は赤褐色で塩気が強い。泉質鉄分を多く含むので湯治に訪れるリピーターも多い。他にはワイン、どくだみ、ローズマリー、ラベンダーなど週替わりの薬湯もある。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:2.400</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="akashionsen_akashi_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="akashionsen_akashi_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.akashionsen_akashi_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1126_0001.jpg"/></a><p class="feature">明石温泉（あかし）<br>類似度:2.382</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="esanonsensato_esan_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="esanonsensato_esan_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.esanonsensato_esan_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">恵山温泉郷（えさん）<br>類似度:2.295</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.276</br></p></div></form>
+{% endblock content %}

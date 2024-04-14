@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">泉崎さつき温泉（いずみざきさつき）</h2><h3 class="icon"> 所在地：福島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1758_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">奥州街道の宿場もあったという村は、しだれ桜の古木がシンボル。「昌健寺」「常願寺」「愛宕神社」という3つの寺社の境内に、それぞれ樹齢数百年のしだれ桜が立っている。春になると、地面につきそうなほどの大ぶりな枝にたくさんの花を咲かせ、訪れる人を喜ばせる。また、近くには日本で唯一国際基準を満たした競輪施設をはじめとしたスポーツ施設が集まる「泉崎スポーツガーデン」も。「泉崎カントリーヴィレッジ」という公営の一軒宿が営業している。ログハウスもあり、幅広いニーズに応えてくれるのもうれしい。スポーツパークに近い上、バーベキュー設備があることから、スポーツ合宿でも人気が高い。
+pH9.8というなかなかのアルカリ性。石鹸と同じように肌の角質を落としてくれる美人の湯である。湯の華が漂う温泉は、源泉かけ流し。毎分350Lも湧き出す豊富な源泉を、加水も循環もせず自然のまま使っている贅沢な湯が特徴。「こがねの湯」の名の通り淡い琥珀色で、ほんのり硫黄の香りもする。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="okuyamaonsen_okuyama_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="okuyamaonsen_okuyama_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.okuyamaonsen_okuyama_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">奥山温泉（おくやま）<br>類似度:1.904</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ubuyamaonsen_ubuyama_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="ubuyamaonsen_ubuyama_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.ubuyamaonsen_ubuyama_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2125_0001.jpg"/></a><p class="feature">産山温泉（うぶやま）<br>類似度:1.881</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="bimataonsen_mimata_shimane">{% csrf_token %}<input name="id2" type="hidden" value="bimataonsen_mimata_shimane"/><div class="con2"><a href="../spring_each/" onclick="document.bimataonsen_mimata_shimane.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1205_0001.jpg"/></a><p class="feature">美又温泉（みまた）<br>類似度:1.879</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shikishimaonsen_shikishima_gunma">{% csrf_token %}<input name="id2" type="hidden" value="shikishimaonsen_shikishima_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.shikishimaonsen_shikishima_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1476_0001.jpg"/></a><p class="feature">敷島温泉（しきしま）<br>類似度:1.866</br></p></div></form>
+{% endblock content %}

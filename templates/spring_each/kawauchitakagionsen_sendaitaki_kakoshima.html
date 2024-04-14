@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">川内高城温泉（せんだいたき）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1040_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">薩摩川内市の市街地より北西に約12km、鹿児島の山間に流れる湯田川沿いに佇む小さな温泉場。自炊設備のある昔ながらの湯治宿や旅館、ホテルが10軒弱と1軒の素朴な共同湯が点在。その合間にレトロな土産物屋が軒を連ね、温泉街を形成している。このノスタルジックな温泉情緒に惹かれてリピーターになる湯客も多い。当初は「湯川内（ゆごうち）温泉」「川内温泉」または「高城温泉」などと呼ばれていたが、昭和42年の川内温泉開発協同組合設立を機に「川内高城温泉」と呼ばれるようになったという。また、西郷隆盛愛好の温泉としても知られており、数多くの逸話が残っている。
+アルカリ性単純硫黄泉の川内高城温泉は、アトピー性皮膚炎、尋常性乾癬、慢性湿疹、表皮化膿症など皮膚の疾病に効能が高いとされる。高いアルカリ性の泉質を持ち、無色透明のトロトロとした湯が特徴で美人の湯とも言われている。全ての温泉がかけ流しとなりる温泉王国鹿児島屈指の名泉だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kurinogakuonsen_kurinodake_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="kurinogakuonsen_kurinodake_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.kurinogakuonsen_kurinodake_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2159_0001.jpg"/></a><p class="feature">栗野岳温泉（くりのだけ）<br>類似度:2.396</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="maruoonsen_maruo_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="maruoonsen_maruo_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.maruoonsen_maruo_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0170_0001.jpg"/></a><p class="feature">丸尾温泉（まるお）<br>類似度:2.360</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="namerikawaonsen_namekawa_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="namerikawaonsen_namekawa_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.namerikawaonsen_namekawa_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1811_0001.jpg"/></a><p class="feature">滑川温泉（なめかわ）<br>類似度:2.322</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hideyukioonsen_1_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="hideyukioonsen_1_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.hideyukioonsen_1_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2161_0001.jpg"/></a><p class="feature">栄之尾温泉（霧島温泉郷）（さかえのお（きりしま））<br>類似度:2.309</br></p></div></form>
+{% endblock content %}

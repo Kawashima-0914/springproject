@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">万座温泉（まんざ）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0410_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">標高約1800mの天空の温泉郷、万座温泉。緑に囲まれた上信越高原国立公園内の高山温泉地は草津白根山の山麓に位置し、一年を通して訪れることのできる温泉地としては日本最高峰を誇っている（冬季一部のルートは通行止めになるので注意）。軽井沢の奥座敷として古くから多くの人が湯治に訪れてきた。源泉は硫黄泉で約80℃の高温。硫黄がびっしりと付着した岩の下から白濁の湯と白い煙が吹き出る「湯畑」を中心に、大小さまざまな温泉宿が立ち並ぶ。その湧出量は1日に540万Lにも達している。また、春は残雪と新緑、夏は避暑、秋は紅葉、そして冬はスキーと、四季折々の楽しみ方を提供してくれる。手を伸ばせば届きそうな満天の星もまた格別だ。
+雄大な眺望と大自然に恵まれた万座温泉は日本屈指の硫黄含有量を誇ります。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ichinomataonsen_ichinomata_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="ichinomataonsen_ichinomata_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.ichinomataonsen_ichinomata_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1123_0001.jpg"/></a><p class="feature">一の俣温泉（いちのまた）<br>類似度:1.936</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="futamionsen_futami_mie">{% csrf_token %}<input name="id2" type="hidden" value="futamionsen_futami_mie"/><div class="con2"><a href="../spring_each/" onclick="document.futamionsen_futami_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1280_0001.jpg"/></a><p class="feature">二見温泉（ふたみ）<br>類似度:1.929</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:1.915</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okushiobaraarayuonsen_okushiobaraarayu_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="okushiobaraarayuonsen_okushiobaraarayu_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.okushiobaraarayuonsen_okushiobaraarayu_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0800_0001.jpg"/></a><p class="feature">奥塩原新湯温泉（おくしおばらあらゆ）<br>類似度:1.897</br></p></div></form>
+{% endblock content %}

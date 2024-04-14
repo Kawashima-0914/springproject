@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">妙義温泉（みょうぎ）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0412_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、肩こり、関節痛、疲労、ねんざ、婦人病、冷え性、動脈硬化、皮膚病、打撲、貧血、痔疾など
+</td></tr></table></div><div class="con1"><p class="feature">赤城山、榛名山とともに上毛三山の一つに数えられる妙義山、その麓に湧く温泉地。妙義山は、四国小豆島の寒霞渓、九州大分県の耶馬渓と並ぶ、日本三奇勝の一つ。白雲山、金洞山、金鶏山の三峰からなり、南側の表妙義と北側の裏妙義に分かれている。 非常に険しい独特な景観が特徴で、その景観を形成しているのが石門群、大砲岩などの奇岩奇石。妙義山東面中腹には老杉に囲まれ妙義神社が荘厳な姿を見せて佇み、山複に見える大きな「大の字」からの展望が素晴らしい。　　　　　　　　　　　　　 山を見渡す露天風呂にゆったりと浸かり、絶壁を覆う新緑や、秋の紅葉を眺めるのは風情たっぷり。不思議な雰囲気を漂わすこの温泉に魅せられ、何度も訪れる根強いファンも多いという。
+高濃度の重曹食塩泉で、ツルツルした肌触りが魅力の温泉。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="marukomaonsen_marukoma_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="marukomaonsen_marukoma_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.marukomaonsen_marukoma_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0681_0001.jpg"/></a><p class="feature">丸駒温泉（まるこま）<br>類似度:2.600</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:2.585</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="genbikeionsen_genbikei_iwate">{% csrf_token %}<input name="id2" type="hidden" value="genbikeionsen_genbikei_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.genbikeionsen_genbikei_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1724_0001.jpg"/></a><p class="feature">厳美渓温泉（げんびけい）<br>類似度:2.573</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shizukuishitakakuraonsen_shizukuishitakakura_iwate">{% csrf_token %}<input name="id2" type="hidden" value="shizukuishitakakuraonsen_shizukuishitakakura_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.shizukuishitakakuraonsen_shizukuishitakakura_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1060_0001.jpg"/></a><p class="feature">雫石高倉温泉（しずくいしたかくら）<br>類似度:2.559</br></p></div></form>
+{% endblock content %}

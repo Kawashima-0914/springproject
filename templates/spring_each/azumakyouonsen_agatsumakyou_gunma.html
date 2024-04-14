@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">吾妻峡温泉（あがつまきょう）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1058_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>にごり、にごり（褐色）、神経痛、関節痛など
+</td></tr></table></div><div class="con1"><p class="feature">関越自動車道「渋川伊香保IC」より車で約40分、静かな山間に湯けむりを上げる癒しの温泉地。近隣には国指定名勝「吾妻峡（あがつまきょう）」と、奇石・怪石が点在する「岩櫃山（いわびつやま・標高約802ｍ）」の二つの景勝地があり、雄大な大自然を肌で感じるにはぴったりの環境だ。 いずれも遊歩道やハイキングコースが整っており、山歩きのビギナーや家族連れも安心して森林浴を楽しめる。四季折々の自然の中でも特に吾妻峡の紅葉は素晴らしく、ゴツゴツとした岩肌と渓流、燃える紅葉のコントラストは圧巻。 古くから若山牧水をはじめ、吉野秀雄や与謝野晶子などの文人墨客に愛されていたのも頷ける。都会の喧騒を離れ新鮮な空気を胸いっぱいに深呼吸。吐息とともに日頃の疲れが浄化し、みるみるうちに活力があふれ出してくる。
+八ツ場ダムの建設に伴い、地元住民のために掘削された温泉のひとつ。同時期に掘削された「林温泉」「横壁温泉」「温井温泉」と合わせて“八ツ場4兄弟”と呼ばれることも。ダム関係者のための共同浴場「天狗の湯」の他、10㎞ほど離れた「リゾートホテルコニファーいわびつ」で楽しめる温泉は、泉質の良さが評判だ。豊富に湧き出る無色透明の湯には黒い湯の花が混じり、ほのかに硫黄臭の香り。湯口にはびっしりと茶色い析出物が付着し、温泉ファンに嬉しい成分の濃さを物語る。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="takaseonsen_takase_niigata">{% csrf_token %}<input name="id2" type="hidden" value="takaseonsen_takase_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.takaseonsen_takase_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0587_0001.jpg"/></a><p class="feature">高瀬温泉（たかせ）<br>類似度:1.980</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="momosawaonsen_momosawa_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="momosawaonsen_momosawa_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.momosawaonsen_momosawa_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1785_0001.jpg"/></a><p class="feature">桃沢温泉（ももさわ）<br>類似度:1.980</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:1.979</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sakunamionsen_sakunami_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sakunamionsen_sakunami_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sakunamionsen_sakunami_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0695_0001.jpg"/></a><p class="feature">作並温泉（さくなみ）<br>類似度:1.973</br></p></div></form>
+{% endblock content %}

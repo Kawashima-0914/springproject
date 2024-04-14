@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">脇田温泉（わきた）</h2><h3 class="icon"> 所在地：福岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1032_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">福岡市と北九州市の中間に位置し、都市部からわずか1時間ほどのアクセスの良い温泉地。歴史に名を連ねる名士たちも訪れ、奈良時代には歌人・大伴旅人が、江戸時代には黒田藩の学者・貝原益軒が入湯した記録が残る由緒正しい名湯である。 現在は周囲を山に囲まれた犬鳴川の清流沿いに5軒ほどの温泉施設が点在し、「福岡の奥座敷」と呼ばれる静かな佇まいが心を落ち着かせる。 また、周囲は美しい自然にあふれており、春は桜や新緑、夏は乱舞するホタル、秋は紅葉、冬は雪景色と四季折々の美しい景観を眺めながら何とも贅沢な空間で温泉を堪能できる。
+温泉地としての歴史は古く、開湯は奈良時代までさかのぼる。宿泊はもとより、立ち寄り湯のプランや、10種類の露天風呂や5種類の家族湯が整った日帰り入浴施設もあり、気軽に楽しめるのも魅力的だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kotouonsen_furuyu_saga">{% csrf_token %}<input name="id2" type="hidden" value="kotouonsen_furuyu_saga"/><div class="con2"><a href="../spring_each/" onclick="document.kotouonsen_furuyu_saga.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0436_0001.jpg"/></a><p class="feature">古湯温泉（ふるゆ）<br>類似度:2.031</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="donkawaonsen_nibukawa_ehime">{% csrf_token %}<input name="id2" type="hidden" value="donkawaonsen_nibukawa_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.donkawaonsen_nibukawa_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0292_0001.jpg"/></a><p class="feature">鈍川温泉（にぶかわ）<br>類似度:1.986</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="haratsuruonsen_harazuru_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="haratsuruonsen_harazuru_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.haratsuruonsen_harazuru_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0628_0001.jpg"/></a><p class="feature">原鶴温泉（はらづる）<br>類似度:1.952</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="genkaisatsukionsen_genkaisatsuki_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="genkaisatsukionsen_genkaisatsuki_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.genkaisatsukionsen_genkaisatsuki_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0949_0001.jpg"/></a><p class="feature">玄海さつき温泉（げんかいさつき）<br>類似度:1.950</br></p></div></form>
+{% endblock content %}

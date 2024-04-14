@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">鉄輪温泉（別府温泉郷）（かんなわ（べっぷ））</h2><h3 class="icon"> 所在地：大分県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0299_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、塩化物泉、硫酸塩泉、含鉄泉
+</td></tr><tr><th>効能</th><td>神経痛、リウマチ、筋肉痛
+</td></tr></table></div><div class="con1"><p class="feature">大分県別府市にあり、別府の中で最も温泉源がある温泉地。湯治場としての面影を強く残し、レトロな街並みを楽しめる。また別府地獄めぐりが有名で鬼石坊主地獄や鬼山地獄などと名付けられた地獄が、噴気、熱泥、熱湯を噴出する姿はまさに「地獄」。地上に吹き上げる高温の沸騰泉は気液分離装置により温泉水と温泉蒸気とに分離され、温泉水は配管で各集落へ。高温の蒸気は「湯けむり」となり空中に高く排出され、温泉場らしい雰囲気を醸成している。2012年にはこの湯けむりが上がる別府の町並の景観が「別府の湯けむり・温泉地景観」として重要文化的景観に選定された。
+鉄輪温泉はさまざまな泉質があり、塩化物泉は塩分を含むため保温効果が高く湯冷めしにくいのが特徴。よく温まり、湯冷めもしにくいという性質から「熱の湯」とも呼ばれる。また弱アルカリ性温泉は、絹をまとうような心地よいお湯で素肌にやさしく潤いを与えてくれるそう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kirishimaonsensato_kirishima_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="kirishimaonsensato_kirishima_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.kirishimaonsensato_kirishima_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0329_0001.jpg"/></a><p class="feature">霧島温泉郷（きりしま）<br>類似度:3.107</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="arimaonsen_arima_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="arimaonsen_arima_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.arimaonsen_arima_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0016_0001.jpg"/></a><p class="feature">有馬温泉（ありま）<br>類似度:3.104</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kurokawaonsen_kurokawa_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kurokawaonsen_kurokawa_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kurokawaonsen_kurokawa_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0378_0001.jpg"/></a><p class="feature">黒川温泉（くろかわ）<br>類似度:2.904</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kuroishionsensato_kuroishi_aomori">{% csrf_token %}<input name="id2" type="hidden" value="kuroishionsensato_kuroishi_aomori"/><div class="con2"><a href="../spring_each/" onclick="document.kuroishionsensato_kuroishi_aomori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">黒石温泉郷（くろいし）<br>類似度:2.711</br></p></div></form>
+{% endblock content %}

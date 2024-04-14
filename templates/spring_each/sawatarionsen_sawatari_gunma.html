@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">沢渡温泉（さわたり）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0397_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">中之条から草津へ向かう「日本ロマンチック街道」の暮坂峠より10㎞ほど手前、四万川支流の上信越高原国立連峰の南麓、標高約600mのところに広がる風光明媚な温泉地。 江戸時代には、暮坂峠を越えて草津へ通じる要路として賑わい、草津の酸性泉で湯ただれをおこした湯治客が沢渡のアルカリ成分の高い湯で癒し、湯治の仕上げをしたことから「草津のなおし湯、仕上げ湯」としても知られている。 背後に秋葉山、近くに有笠山、遠くに榛名・浅間を望み、閑静で素朴な湯治場の雰囲気を今に残す温泉街には、俗化しない人情味があふれる。湯に人に癒され安らぐことのできる、まさに“心のふるさと”のような湯の里だ。
+上信越高原国立公園と日光国立公園を結んだ「日本ロマンチック街道」の真ん中に湧く温泉。開湯年代は定かではないが、縄文文化が栄えた頃に開かれたといわれている。その長い歴史の中で、木曽義仲や源頼朝といった武将も湯を浴びたと伝えられ、江戸末期の蘭学者・高野長英や歌人の若山牧水、詩人のサトウハチローを始め多くの著名人もこの地を訪れたとか。無色透明の硫酸塩泉は、軟らかい肌ざわりが特徴。一度入浴すると肌がツルツルになることから「一浴玉の肌」といわれ、草津温泉の仕上げ湯として古くから知られている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="sanchuuonsen_1_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="sanchuuonsen_1_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.sanchuuonsen_1_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0257_0001.jpg"/></a><p class="feature">山中温泉（加賀温泉郷）（やまなか（かが））<br>類似度:1.740</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="souunkyouonsen_souunkyou_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="souunkyouonsen_souunkyou_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.souunkyouonsen_souunkyou_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0663_0001.jpg"/></a><p class="feature">層雲峡温泉（そううんきょう）<br>類似度:1.680</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hirayamaonsen_hirayama_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="hirayamaonsen_hirayama_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.hirayamaonsen_hirayama_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1035_0001.jpg"/></a><p class="feature">平山温泉（ひらやま）<br>類似度:1.667</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shiroganeonsen_shirogane_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="shiroganeonsen_shirogane_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.shiroganeonsen_shirogane_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0662_0001.jpg"/></a><p class="feature">白金温泉（しろがね）<br>類似度:1.656</br></p></div></form>
+{% endblock content %}

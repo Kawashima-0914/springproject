@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">塩ノ沢温泉（しおのさわ）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1289_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">上信道「下仁田IC」より車で約30分、西上州の深い山々と平成の名水百選の神流川源流域に恵まれた自然環境の中に湧く上野村温泉郷。4カ所の源泉に、その効能はもちろん、それらの源泉にひとつの温泉施設 と、贅沢な利用方法を取っている。 「塩ノ沢温泉」はその温泉郷の一つだ。付近には天狗岩、笠丸山があり、その季節には登山客で賑わいを見せ、渓流釣りや秋には紅葉を楽しみたい人々が多く訪れる。名物は「イノブタ料 理」で、イノブタとはイノシシと豚を掛け合わせたもの。 山間の秘湯の雰囲気漂う温泉で、日頃の疲れを癒した後は、名物「イノブタ料理」をはじめ、「十石みそ」、「きのこ」などの地元の旬な食材を使った料理に舌鼓を打ちたい。
+群馬県上野村の北部、塩ノ沢に臨む静かな山峡に湧く「塩ノ沢温泉」は国民宿舎「やまびこ荘」が一軒宿。泉質はナトリウム‐塩化物鉱泉で、効能は神経痛、筋肉痛、関節痛、五十肩と多岐にわたる。塩分を含んだお湯は体温の蒸発を防ぎ、保湿効果が高いので、別名「あたたまりの湯」ともいわれている。露天風呂や洞窟風呂と色々なお風呂が楽しめるのも魅力。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1251_0001.jpg"/></a><p class="feature">紀州みなべ千里浜温泉（きしゅうみなべせんりはま）<br>類似度:2.390</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yaharaonsen_yawara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="yaharaonsen_yawara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.yaharaonsen_yawara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1900_0001.jpg"/></a><p class="feature">矢原温泉（やわら）<br>類似度:2.330</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kinkesakionsen_kanagasaki_akita">{% csrf_token %}<input name="id2" type="hidden" value="kinkesakionsen_kanagasaki_akita"/><div class="con2"><a href="../spring_each/" onclick="document.kinkesakionsen_kanagasaki_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1283_0001.jpg"/></a><p class="feature">金ヶ崎温泉（かながさき）<br>類似度:2.328</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="iwaiyumotoonsen_iwaiyumoto_chiba">{% csrf_token %}<input name="id2" type="hidden" value="iwaiyumotoonsen_iwaiyumoto_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.iwaiyumotoonsen_iwaiyumoto_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1893_0001.jpg"/></a><p class="feature">岩井湯元温泉（いわいゆもと）<br>類似度:2.320</br></p></div></form>
+{% endblock content %}

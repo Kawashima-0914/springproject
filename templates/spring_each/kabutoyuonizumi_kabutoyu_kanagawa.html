@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">かぶと湯温泉（かぶとゆ）</h2><h3 class="icon"> 所在地：神奈川県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1908_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">かぶと湯温泉は七沢温泉郷に含まれるが、全く別の独自の源泉を用いていて、この温泉に入ることのできる一軒宿が山水楼である。山水楼は厚木市の山中にあり、宿のレトロな雰囲気と生い茂る木々は、首都圏にいながら山奥の秘湯に来たかのような印象を思わせる。宿に入ると、たくさんのだるまと、鹿の剥製が出迎えてくれる。温泉には、こじんまりとした内湯と、生い茂る木々を眺めることのできる露天風呂があり、熱めの内湯では日々の疲れを癒し、露天風呂では温泉に浸かりながら、首都圏にいるとは思えないくらいの澄んだ空気を吸って精神的にリラックスすることができる。東京からほど近いため、日帰りで都会の喧騒から離れてリラックスするのも良いだろう。
+かぶと湯温泉は、大正十二年の関東大震災の時に兜の形をした岩の麓から湧き出した温泉である。この温泉は、ボーリングや機械動力による組み上げを一切行わず、循環器等も使用せずに、地表まで自噴した源泉を浴槽からあがり湯まで掛け流しで使用している。源泉は、温度が約23℃でpH値がおよそ10ほどあってアルカリ性が強く、またお湯の触感はとろみがあり、とてもヌルヌルしている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="namarionsen_namari_iwate">{% csrf_token %}<input name="id2" type="hidden" value="namarionsen_namari_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.namarionsen_namari_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0283_0001.jpg"/></a><p class="feature">鉛温泉（なまり）<br>類似度:2.145</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="uesaiharaonsen_kamisaibara_okayama">{% csrf_token %}<input name="id2" type="hidden" value="uesaiharaonsen_kamisaibara_okayama"/><div class="con2"><a href="../spring_each/" onclick="document.uesaiharaonsen_kamisaibara_okayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1292_0001.jpg"/></a><p class="feature">上齋原温泉（かみさいばら）<br>類似度:2.130</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="manganteraonsen_manganji_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="manganteraonsen_manganji_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.manganteraonsen_manganji_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1111_0001.jpg"/></a><p class="feature">満願寺温泉（まんがんじ）<br>類似度:2.098</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kitaonsen_kita_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="kitaonsen_kita_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.kitaonsen_kita_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1891_0001.jpg"/></a><p class="feature">北温泉（きた）<br>類似度:2.089</br></p></div></form>
+{% endblock content %}

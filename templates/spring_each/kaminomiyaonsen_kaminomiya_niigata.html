@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">神の宮温泉（かみのみや）</h2><h3 class="icon"> 所在地：新潟県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1487_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">長野県に隣接している新潟県妙高市。日本百名山のひとつである妙高山の山岳レジャーを含め、温泉やスキー場など自然豊かな観光資源を持つ。上杉家ゆかりの地としても有名で、南葉山のふもとに築城した鮫ヶ尾城は平成 20年（2008年）7月28日に国の史跡に指定された。 その鮫ヶ尾城跡から徒歩約30分の場所に湧くのが神の宮温泉だ。ゆるやかで心地よいお湯は、美肌効果が高い泉質も多く含まれ（美肌成分メタケイ酸が基準値の約 3倍）、湯上りの肌をしっとりとなめらかにする効能がある。 女性客のリピーターも多い。徒歩圏内には大規模な古墳群として価値の高い「観音平・天神堂古墳群」など国の史跡が多く点在しているので、湯浴みとともに歴史巡りも楽しみたい。
+美肌成分メタケイ酸が基準値の約3倍も含まれている。ドライサウナ・ミストサウナ・源泉シャワー完備。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="nishikionsen_nishiki_akita">{% csrf_token %}<input name="id2" type="hidden" value="nishikionsen_nishiki_akita"/><div class="con2"><a href="../spring_each/" onclick="document.nishikionsen_nishiki_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1626_0001.jpg"/></a><p class="feature">西木温泉（にしき）<br>類似度:2.077</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yamanakakoonsen_yamanakako_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="yamanakakoonsen_yamanakako_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.yamanakakoonsen_yamanakako_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1473_0001.jpg"/></a><p class="feature">山中湖温泉（やまなかこ）<br>類似度:2.076</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hatorimizuumionsen_hatoriko_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="hatorimizuumionsen_hatoriko_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.hatorimizuumionsen_hatoriko_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1298_0001.jpg"/></a><p class="feature">羽鳥湖温泉（はとりこ）<br>類似度:2.064</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yamanokamionsen_yamanokami_iwate">{% csrf_token %}<input name="id2" type="hidden" value="yamanokamionsen_yamanokami_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.yamanokamionsen_yamanokami_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1255_0001.jpg"/></a><p class="feature">山の神温泉（やまのかみ）<br>類似度:2.054</br></p></div></form>
+{% endblock content %}

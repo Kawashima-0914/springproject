@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">大塩裏磐梯温泉（おおしおうらばんだい）</h2><h3 class="icon"> 所在地：福島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0031_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">裏磐梯高原と喜多方の中間に位置する山あいの閑静な温泉地。大塩川沿いに5軒ほどの宿が点在し、秘境の雰囲気が漂う。1000年以上の歴史を持つ温泉は、塩分を多く含んだお湯が特徴。 昔、会津藩へ献上していた大変貴重な会津山塩。日本中ただ一つの会津山塩はこの大塩裏磐梯温泉が源泉として作られている。 高原の新鮮な空気と塩辛い温泉が、日頃の疲れを癒してくれる。会津山塩の湯に浸かり心も体もくつろいでみては。
+別名「塩姫の湯」と呼ばれ、塩分を多く含んだ泉質が特徴のしょっぱい温泉。今から1200年ほど前に、弘法大師が一夜の宿の厚意に報いるために塩水を湧き出させたのが始まりとされる。塩化物泉は、保温効果が高いことで有名。ゆっくり過ごして、体の芯から温まりたい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:1.714</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="wakuraonsen_wakura_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="wakuraonsen_wakura_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.wakuraonsen_wakura_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0151_0001.jpg"/></a><p class="feature">和倉温泉（わくら）<br>類似度:1.707</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="netsuenonsen_atsushio_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="netsuenonsen_atsushio_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.netsuenonsen_atsushio_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0632_0001.jpg"/></a><p class="feature">熱塩温泉（あつしお）<br>類似度:1.707</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="inawashiroshikinoyuonizumi_inawashiroshikinoyu_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="inawashiroshikinoyuonizumi_inawashiroshikinoyu_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.inawashiroshikinoyuonizumi_inawashiroshikinoyu_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1209_0001.jpg"/></a><p class="feature">猪苗代四季の湯温泉（いなわしろしきのゆ）<br>類似度:1.699</br></p></div></form>
+{% endblock content %}

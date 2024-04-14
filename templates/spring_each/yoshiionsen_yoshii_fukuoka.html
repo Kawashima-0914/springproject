@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">吉井温泉（よしい）</h2><h3 class="icon"> 所在地：福岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0631_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、炭酸水素塩泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、疲労、冷え性、美肌
+</td></tr></table></div><div class="con1"><p class="feature">筑後川を挟んだ対岸には「原鶴温泉」があるが、吉井温泉は旅館が2軒と日帰り温泉が1軒のみの小規模な温泉地で、歴史も短い。しかし、何といっても吉井温泉の魅力はお湯の良さである。落ち着いた環境と泉質の良さから、環境省の「国民保養温泉地」に指定されているほど。筑後川で行われている鵜飼いによって取られた天然の鮎料理が名物で、四季折々の自然の恵みを堪能できる。近くの筑後吉井地区は「重要伝統的建造物群保存地区」に指定されており、白壁の蔵が続く町並みは、博多と天領日田を結んだ宿場町の面影を色濃く残している。また、柿や梨、ブドウなどの観光農園が多く、秋には果物狩りが楽しめる。
+3つの温泉で泉質は少しずつ異なっているが、いずれも無色透明でほんのり硫黄の香りがするお湯である。それぞれに自家源泉を有し、源泉かけ流しで温泉を提供しているため、新鮮なお湯が楽しめる。美肌に良いとされる炭酸水素塩泉と、肌のクレンジング作用に期待できるアルカリ性ないし弱アルカリ性のお湯である。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1120_0001.jpg"/></a><p class="feature">京都竹の郷温泉（きょうとたけのさと）<br>類似度:2.800</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hidatakayamaonsen_hidatakayama_gifu">{% csrf_token %}<input name="id2" type="hidden" value="hidatakayamaonsen_hidatakayama_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.hidatakayamaonsen_hidatakayama_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0761_0001.jpg"/></a><p class="feature">飛騨高山温泉（ひだたかやま）<br>類似度:2.745</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="haratsuruonsen_harazuru_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="haratsuruonsen_harazuru_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.haratsuruonsen_harazuru_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0628_0001.jpg"/></a><p class="feature">原鶴温泉（はらづる）<br>類似度:2.730</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="manganteraonsen_manganji_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="manganteraonsen_manganji_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.manganteraonsen_manganji_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1111_0001.jpg"/></a><p class="feature">満願寺温泉（まんがんじ）<br>類似度:2.717</br></p></div></form>
+{% endblock content %}

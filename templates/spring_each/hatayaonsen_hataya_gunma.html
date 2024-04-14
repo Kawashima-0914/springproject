@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">幡谷温泉（はたや）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2092_0001.jpg"/><table><tr><th>効能</th><td>神経痛、筋肉痛、肩こり、関節痛、ねんざ、打撲、痔疾
+</td></tr></table></div><div class="con1"><p class="feature">武尊山麓、国道120号線から花咲温泉に向かう途中にある温泉地。猟師だった先代のケガから発見に至った場所で、地元で評判の比較的新しい温泉地である。温泉地から車で40分ほどの場所には、日本最大級の高層湿原地帯である尾瀬ヶ原がある。そのほか、15km圏内に日光白根山ロープウェー、丸沼、菅沼と、自然の景観が美しいスポットがそろう。また、ウォータースポーツを体験したいのなら、プロのガイドが案内する「フィールドアース尾瀬」へ。天然スライダーや天然プール、またキャニオニングや水上ラフティングなども楽しめ、特に夏場に人気のスポットだ。水遊びで疲れた体を、幡谷温泉で温め癒やす旅行プランはいかがだろうか。
+泉質は匂いが少なく無色透明、一般的に入りやすい単純温泉。神経痛、筋肉痛、関節痛、五十肩、運動まひ、くじき、打ち身など幅広い効能を持つ。その確かな効能で、地元の人に愛されている。入浴後はしっとりとスベスベした肌になるとして、女性にも人気。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:1.349</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okuyamaonsen_okuyama_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="okuyamaonsen_okuyama_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.okuyamaonsen_okuyama_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">奥山温泉（おくやま）<br>類似度:1.292</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kitahiroshimaonsen_kitahiroshima_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="kitahiroshimaonsen_kitahiroshima_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.kitahiroshimaonsen_kitahiroshima_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1279_0001.jpg"/></a><p class="feature">北広島温泉（きたひろしま）<br>類似度:1.291</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="rurionsen_ruri_shiga">{% csrf_token %}<input name="id2" type="hidden" value="rurionsen_ruri_shiga"/><div class="con2"><a href="../spring_each/" onclick="document.rurionsen_ruri_shiga.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1326_0001.jpg"/></a><p class="feature">るり温泉（るり）<br>類似度:1.288</br></p></div></form>
+{% endblock content %}

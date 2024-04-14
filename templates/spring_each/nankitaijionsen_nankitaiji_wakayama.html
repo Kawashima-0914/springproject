@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">南紀太地温泉（なんきたいじ）</h2><h3 class="icon"> 所在地：和歌山県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0180_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">温暖な黒潮の影響を受けた豊かな漁場として知られる太地町。江戸時代の初めに網取り法による捕鯨が考案されたことから“古式捕鯨発祥の地”としても名高く、町のいたるところに捕鯨の歴史を感じられる。 太地駅のザトウクジラ壁画、道にかかるクジラのアーチ、古式捕鯨の指揮所にあたる山見台、くじら供養碑など「くじらの町」ならではのスポットが点在。人気のくじら浜公園には、セミクジラの実物大模型などを展示した「くじらの博物館」、実際に捕鯨に使った船を展示した「捕鯨船資料館」などがあり、さらに燈明崎から梶取までの約1.6㎞の遊歩道にはクジラの生態板も設置されている。 捕鯨規制を受け、今では貴重品となったクジラ料理がしっかりと受け継がれているのも太地ならでは。定番の竜田揚げ、珍しいお造りなど、さまざまな料理も忘れずに堪能したい。
+紀伊半島の南端に広がるリアス式海岸の熊野灘。その沿岸に位置する二股の崎に広がる小規模な町、太地町に湧く温泉。眼下に広がる雄大な海岸線、沖を行き交う漁船…。海岸沿いに建つ宿で、風光明媚な眺めを望みながら湯浴みをすれば最高の気分が味わえる。また、沿岸に位置する「くじら浜公園」は地元住民や観光客の散策の場。豊かな自然を生かして造られた遊歩道で、きらめく太平洋と黄金色の夕日に照らされながら、湯上りの散策を楽しむのもよい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="iwakishioyasakionsen_iwakishioyazaki_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="iwakishioyasakionsen_iwakishioyazaki_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.iwakishioyasakionsen_iwakishioyazaki_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1208_0001.jpg"/></a><p class="feature">いわき塩屋崎温泉（いわきしおやざき）<br>類似度:1.877</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="uharaonsen_ubara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="uharaonsen_ubara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.uharaonsen_ubara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0195_0001.jpg"/></a><p class="feature">鵜原温泉（うばら）<br>類似度:1.860</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shoushimaonsen_terushima_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="shoushimaonsen_terushima_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.shoushimaonsen_terushima_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0162_0001.jpg"/></a><p class="feature">照島温泉（てるしま）<br>類似度:1.835</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kushimotoonsen_kushimoto_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="kushimotoonsen_kushimoto_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.kushimotoonsen_kushimoto_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1250_0001.jpg"/></a><p class="feature">串本温泉（くしもと）<br>類似度:1.821</br></p></div></form>
+{% endblock content %}

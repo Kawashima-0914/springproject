@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">松島温泉（まつしま）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1109_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">松島温泉は、熊本県上天草市にある温泉。 松島というと、宮城県の「日本三景の松島」が有名であることから、観光PRなどでは「天草松島」から名を取り、天草松島温泉という表記を用い天草の温泉であることをアピールする場合が多い。源泉開発は1979年に始まったが、当初は400mボーリングを実施したものの温泉法を満たした温泉は湧出しなかった。その後1981年に700mボーリングを実施したところ、源泉温度36℃の温泉を開発。そして開湯に至った。 1998年には高温源泉の開発を行い、1330mボーリングを実施して現在の源泉温度44℃の源泉を開発した。
+松島温泉の泉質はナトリウム塩化物泉。まろやかな泉質の湯は美人温泉と呼ばれる。海峡に島が点在する景勝地にあり、とくに夕日の美しさは格別。泉温は43度、効能は神経痛、慢性消化器病、疲労回復、きりきず、慢性婦人病。「天草　天空の船」では全客室から海が見え、天草ならではの温泉を存分に楽しめる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="wakuraonsen_wakura_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="wakuraonsen_wakura_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.wakuraonsen_wakura_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0151_0001.jpg"/></a><p class="feature">和倉温泉（わくら）<br>類似度:2.073</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shiganosatoonsen_shikanosato_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="shiganosatoonsen_shikanosato_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.shiganosatoonsen_shikanosato_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0928_0001.jpg"/></a><p class="feature">志賀の郷温泉（しかのさと）<br>類似度:2.033</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hagionsen_hagi_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="hagionsen_hagi_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.hagionsen_hagi_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1954_0001.jpg"/></a><p class="feature">はぎ温泉（はぎ）<br>類似度:2.017</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekoekimaeonsen_nisekoekimae_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekoekimaeonsen_nisekoekimae_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekoekimaeonsen_nisekoekimae_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1871_0001.jpg"/></a><p class="feature">ニセコ駅前温泉（にせこえきまえ）<br>類似度:2.017</br></p></div></form>
+{% endblock content %}

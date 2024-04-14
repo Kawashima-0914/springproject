@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">白浜元湯温泉（しらはまもとゆ）</h2><h3 class="icon"> 所在地：千葉県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1896_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">房総半島の最南端である白浜の太平洋に面した高台にあり、遠くに伊豆七島を眺望出来る温泉地だ。日本最古の洋式8灯台の1つである「野島埼灯台」の展望台からは、朝日と夕陽が眺めることができる絶景スポットとしても有名。岬の先端には「最南端の碑」があり、ラバーズベンチという名のベンチはカップルに人気。灯台のある野島崎公園には20分程度で楽しめる遊歩道が整備されており、岩崖に打ち寄せる荒波が間近で感じられる。岩場には磯釣りを楽しむ人の姿も。 昔、南房総で肉よりもサザエの方が安価だったことから生まれた「サザエカレー」が名物。白浜の家庭の食卓に当たり前のように並んでいたかつての家庭の味をぜひ楽しみたい。
+やわらかくさらさらとしたお湯は、美肌の湯と言われる良質な温泉。泉質は炭酸水素塩泉で、体の芯までじんわりと温まることで知られる。神経痛・筋肉痛・関節痛・冷え性・疲労回復に効果が期待できる。お肌がつるつるになる湯を堪能してみては。ただし温泉に含まれる成分がお肌の水分を蒸発させるので、湯上がりには乾燥に注意して。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kasagionsen_kasagi_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kasagionsen_kasagi_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kasagionsen_kasagi_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2105_0001.jpg"/></a><p class="feature">笠置温泉（かさぎ）<br>類似度:2.134</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="marukomaonsen_marukoma_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="marukomaonsen_marukoma_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.marukomaonsen_marukoma_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0681_0001.jpg"/></a><p class="feature">丸駒温泉（まるこま）<br>類似度:2.116</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:2.090</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tateyamaonsensato_tateyama_chiba">{% csrf_token %}<input name="id2" type="hidden" value="tateyamaonsensato_tateyama_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.tateyamaonsensato_tateyama_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0882_0001.jpg"/></a><p class="feature">たてやま温泉郷（たてやま）<br>類似度:2.049</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">南紀田辺温泉（なんきたなべ）</h2><h3 class="icon"> 所在地：和歌山県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1690_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">どこまでも続く青い海、太陽に煌めく白い砂。南紀白浜は和歌山県屈指のリゾート地だ。海岸線には海水浴場や景勝地がどこまでも連なり、南紀白浜の魅力を余すところなく満喫できる。 南紀白浜には温泉地がたくさんあり、温泉郷をはじめ一軒宿を含めるとその数はかなりのもの。南紀田辺温泉は内ノ浦湾を望む新庄町に湧く一軒宿で、白浜からは車で約10分とアクセスも良好。 太平洋を一望できる温泉大浴場、潮風を感じながら浸かる野趣豊かな露天風呂、室内プール、室外プール、テニスコート、パターゴルフなどレジャー施設も多彩。潮騒を感じながら思い切り身体を動かしたら、良質な天然温泉でゆったりと湯浴みを楽しみ、一日の疲れも吹き飛ぶリラックスタイムを過ごそう。
+pH8.3、トロトロの肌触りが嬉しい美肌のお湯。オーシャンビューの露天風呂は絶景だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kitahiroshimaonsen_kitahiroshima_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="kitahiroshimaonsen_kitahiroshima_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.kitahiroshimaonsen_kitahiroshima_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1279_0001.jpg"/></a><p class="feature">北広島温泉（きたひろしま）<br>類似度:2.338</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="enakyouonsen_enakyou_gifu">{% csrf_token %}<input name="id2" type="hidden" value="enakyouonsen_enakyou_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.enakyouonsen_enakyou_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0361_0001.jpg"/></a><p class="feature">恵那峡温泉（えなきょう）<br>類似度:2.261</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1251_0001.jpg"/></a><p class="feature">紀州みなべ千里浜温泉（きしゅうみなべせんりはま）<br>類似度:2.250</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="soukankawaonsen_aimagawa_gunma">{% csrf_token %}<input name="id2" type="hidden" value="soukankawaonsen_aimagawa_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.soukankawaonsen_aimagawa_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1636_0001.jpg"/></a><p class="feature">相間川温泉（あいまがわ）<br>類似度:2.220</br></p></div></form>
+{% endblock content %}

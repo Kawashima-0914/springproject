@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯川温泉（ゆがわ）</h2><h3 class="icon"> 所在地：岩手県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1131_0001.jpg"/><table><tr><th>泉質</th><td>二酸化炭素泉、塩化物泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、疲労、冷え性、美肌
+</td></tr></table></div><div class="con1"><p class="feature">JR「ほっとゆだ駅」から湯川温泉行きバスで約15分。「出途の湯」「中ノ湯」「奥ノ湯」の湯量豊富な三つの温泉からなる、湯田温泉峡の一つ。昔から岩手・秋田両県の湯治場として親しまれ、賑わってきたと歴史 でも知られる有名な温泉。 各地より多くの湯治客が訪れては交流を深めては、情報を交換し合ったのだとか。緑豊かな峡谷に軒を連ねる温泉街はひなびた雰囲気を醸し出し、それが哀愁を深め、風情たっぷり。個性にあふれ る旅館が点在している。 周辺には「湯川沼の浮島」や中尊寺から譲渡されたハスの花などの自然を楽しめるスポットも豊富に点在する。自然の中を散策して心にエネルギーを蓄えた後は、歴史ある温泉でゆっくり疲れを癒したい。
+何千年もの昔から自然に湧き出している古湯で、出途の湯、中ノ湯、奥ノ湯の3つの温泉からなる。泉質はナトリウム‐硫酸塩・塩化物泉の泉質は、神経痛、打ち身、冷え性などに効能を発揮。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="sarukawaonsen_sarukawa_gunma">{% csrf_token %}<input name="id2" type="hidden" value="sarukawaonsen_sarukawa_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.sarukawaonsen_sarukawa_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2071_0001.jpg"/></a><p class="feature">猿川温泉（さるかわ）<br>類似度:2.740</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="arimaonsen_arima_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="arimaonsen_arima_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.arimaonsen_arima_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0016_0001.jpg"/></a><p class="feature">有馬温泉（ありま）<br>類似度:2.669</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="beppuonsensato_beppu_ooita">{% csrf_token %}<input name="id2" type="hidden" value="beppuonsensato_beppu_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.beppuonsensato_beppu_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1327_0001.jpg"/></a><p class="feature">別府温泉郷（べっぷ）<br>類似度:2.598</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="romantopiaonsen_romantopia_aomori">{% csrf_token %}<input name="id2" type="hidden" value="romantopiaonsen_romantopia_aomori"/><div class="con2"><a href="../spring_each/" onclick="document.romantopiaonsen_romantopia_aomori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1524_0001.jpg"/></a><p class="feature">ロマントピア温泉（ろまんとぴあ）<br>類似度:2.511</br></p></div></form>
+{% endblock content %}

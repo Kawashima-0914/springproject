@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">ねじめ温泉（ねじめ）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2178_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">鹿児島県大隅半島の南部、根占港から徒歩で約1分の場所に位置する豊かな自然に恵まれた温泉地。この温泉地にには「ねじめ温泉ネッピー館」という施設があり、温泉への入浴はもちろん宿泊や食事ができる設備も整っている。この施設の温泉は全国でも珍しい「バイタル還元水（マイナスイオン）風呂」があることでも知られており、美肌が効果が抜群とされ女性に人気がある。他にも低周波風呂や歩行浴槽など様々な種類の湯を楽しむことができる。また食事処では、大隅産うなぎを使用した定食など地元の食材を使った料理を味わえる。また、錦江湾の入り口にあたる「大浜海浜公園」という公園が付近にあり、バンガローやテントサイトでレジャーを満喫することもできる。
+地下約1,200mから湧出するナトリウム塩化物強塩泉の天然温泉。やけどや皮膚病、慢性消化器病や婦人病などに効能があるとされている。茶褐色で無臭。ヌルヌル感はなくさっぱりとした感触で、夏場は爽やかな湯上がり、冬場は体の芯から温まるとして好評。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shihoroonsen_shihoro_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="shihoroonsen_shihoro_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.shihoroonsen_shihoro_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1501_0001.jpg"/></a><p class="feature">しほろ温泉（しほろ）<br>類似度:1.997</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="uenoyuonsenkyou_kaminoyu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="uenoyuonsenkyou_kaminoyu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.uenoyuonsenkyou_kaminoyu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2084_0001.jpg"/></a><p class="feature">上の湯温泉郷（かみのゆ）<br>類似度:1.992</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kansuisawaonsen_kansuizawa_aomori">{% csrf_token %}<input name="id2" type="hidden" value="kansuisawaonsen_kansuizawa_aomori"/><div class="con2"><a href="../spring_each/" onclick="document.kansuisawaonsen_kansuizawa_aomori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1145_0001.jpg"/></a><p class="feature">寒水沢温泉（かんすいざわ）<br>類似度:1.945</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="enakyouonsen_enakyou_gifu">{% csrf_token %}<input name="id2" type="hidden" value="enakyouonsen_enakyou_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.enakyouonsen_enakyou_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0361_0001.jpg"/></a><p class="feature">恵那峡温泉（えなきょう）<br>類似度:1.935</br></p></div></form>
+{% endblock content %}

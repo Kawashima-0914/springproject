@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">三富温泉郷（みとみ）</h2><h3 class="icon"> 所在地：山梨県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2351_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、塩化物泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、肩こり、疲労、冷え性
+</td></tr></table></div><div class="con1"><p class="feature">三富温泉郷は笛吹川上流の三富地区に湧く「一の橋温泉」「川浦温泉」「三富温泉」の総称である。日帰り温泉を含め4軒の入浴施設が点在し、趣の違う温泉が楽しめる。国内屈指の景勝地「西沢渓谷」にも近く、ハイキングやトレッキング、また療養としても最適な温泉地だ。周囲には国宝に指定されている「清白寺」や伝統ある神社「大井俣窪八幡神社」など、重要文化財や史跡も多い。これらを巡る温泉旅を計画するのもおすすめだ。さらに山梨といえば郷土料理「ほうとう」や桃、ぶどう、さくらんぼなどのグルメが外せない。ほうとうを提供する食事処は多いので、食べ比べをしてみるのもおすすめだ。
+施設によって引かれている温泉が違うため、いくつかの施設に立ち寄ってみるのもおすすめだ。神経痛、筋肉痛、冷え性、疲労などによいとされるアルカリ性単純温泉と、きりきず、皮膚病、婦人病、動脈硬化、便秘などによいとされるナトリウム・カルシウム−硫酸塩・塩化物泉がある。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kuroishionsensato_kuroishi_aomori">{% csrf_token %}<input name="id2" type="hidden" value="kuroishionsensato_kuroishi_aomori"/><div class="con2"><a href="../spring_each/" onclick="document.kuroishionsensato_kuroishi_aomori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">黒石温泉郷（くろいし）<br>類似度:2.840</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shibaishionsen_shibaseki_ooita">{% csrf_token %}<input name="id2" type="hidden" value="shibaishionsen_shibaseki_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.shibaishionsen_shibaseki_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1967_0001.jpg"/></a><p class="feature">柴石温泉（しばせき）<br>類似度:2.759</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="arimaonsen_arima_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="arimaonsen_arima_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.arimaonsen_arima_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0016_0001.jpg"/></a><p class="feature">有馬温泉（ありま）<br>類似度:2.731</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kirishimaonsensato_kirishima_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="kirishimaonsensato_kirishima_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.kirishimaonsensato_kirishima_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0329_0001.jpg"/></a><p class="feature">霧島温泉郷（きりしま）<br>類似度:2.687</br></p></div></form>
+{% endblock content %}

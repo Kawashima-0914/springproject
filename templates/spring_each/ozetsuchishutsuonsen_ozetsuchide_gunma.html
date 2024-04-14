@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">尾瀬・土出温泉（おぜ・つちで）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1246_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">ミズバショウの花咲く光景をうたう歌曲『夏の思い出』の舞台は、群馬県片品村の高層湿原、尾瀬ヶ原。片品村にはウインタースポーツがメインのリゾート地として人気の尾瀬岩鞍高原もある。尾瀬・土出温泉は、この高原のスキー場に隣接するリゾートホテルの大浴場で入れる温泉。源泉である尾瀬岩鞍高原の湧出泉「市山の湯」から引いており、この源泉の名で呼ばれることもある。レトロ感覚にもあふれるホテルのほかに、この源泉を引いている施設は村内に点在しており、宿泊での入浴も日帰り入浴も可能。スキーで疲れた体の癒やしも美肌効果も期待できる。
+土出温泉の泉質はアルカリ性単純温泉で、神経痛や疲労回復、冷え性まで幅広い効能が期待できる。アルカリ性のため美肌効果も高いとされる。女性にうれしい泉質も持つ。宿泊施設の中には日帰り入浴ができるところもあり、旅の途中で源泉市山の湯を楽しむこともできる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.193</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kawabaonsen_kawaba_gunma">{% csrf_token %}<input name="id2" type="hidden" value="kawabaonsen_kawaba_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.kawabaonsen_kawaba_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1348_0001.jpg"/></a><p class="feature">川場温泉（かわば）<br>類似度:2.192</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="uesaiharaonsen_kamisaibara_okayama">{% csrf_token %}<input name="id2" type="hidden" value="uesaiharaonsen_kamisaibara_okayama"/><div class="con2"><a href="../spring_each/" onclick="document.uesaiharaonsen_kamisaibara_okayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1292_0001.jpg"/></a><p class="feature">上齋原温泉（かみさいばら）<br>類似度:2.158</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="igaonsen_iga_mie">{% csrf_token %}<input name="id2" type="hidden" value="igaonsen_iga_mie"/><div class="con2"><a href="../spring_each/" onclick="document.igaonsen_iga_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1470_0001.jpg"/></a><p class="feature">伊賀温泉（いが）<br>類似度:2.150</br></p></div></form>
+{% endblock content %}

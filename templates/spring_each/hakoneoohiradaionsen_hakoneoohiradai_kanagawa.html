@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">箱根大平台温泉（はこねおおひらだい）</h2><h3 class="icon"> 所在地：神奈川県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0345_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">戦国時代からの歴史ある場所で、箱根十七湯の一つと知られている。芦ノ湖では、逆さ富士を見られることもある。「かながわの景勝50選」に選ばれている大涌谷から眺める富士山や、運が良ければ逆さ富士が見られる芦ノ湖など、周辺では富士山の絶景が楽しめる。さらに旧跡も多く、「林泉寺」や「山神神社」などの神社やお寺を巡ることもできる。「蛙の滝」「姫の水」「仙元の泉」など伝承のある場所も多く、きれいな水と山の緑が楽しめそうだ。大平台そのものが、村人が大蛇を退治しようとしたときに大蛇がのたうち回って作ったという伝説がある。観光をして動き疲れたら、温泉に入って、汗を流そう。きっとリラックスできるだろう。
+大平台温泉郷は戦国時代からの古い村落でしたが、昭和24年地元の有志たちによって、温泉が掘り当てられ、箱根十七湯に数えられるようになりました。湧き水や滝など水が自慢の観光スポットがあるほど水がきれいな地域で、そんな場所で湧き出た温泉を楽しむことができます。温泉は無色透明で、泉質はナトリウム塩化物泉になります。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="bandaiinawashirohayamaonsen_bandaiinawashirohayama_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="bandaiinawashirohayamaonsen_bandaiinawashirohayama_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.bandaiinawashirohayamaonsen_bandaiinawashirohayama_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0115_0001.jpg"/></a><p class="feature">磐梯猪苗代はやま温泉（ばんだいいなわしろはやま）<br>類似度:1.840</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:1.825</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="jouzankeionsen_jouzankei_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="jouzankeionsen_jouzankei_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.jouzankeionsen_jouzankei_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0661_0001.jpg"/></a><p class="feature">定山渓温泉（じょうざんけい）<br>類似度:1.823</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hamasakaonsensato_hamasaka_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="hamasakaonsensato_hamasaka_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.hamasakaonsensato_hamasaka_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1023_0001.jpg"/></a><p class="feature">浜坂温泉郷（はまさか）<br>類似度:1.817</br></p></div></form>
+{% endblock content %}

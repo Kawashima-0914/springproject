@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">岩尾別温泉（いわおべつ）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1833_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>神経痛、リウマチ、疲労、ねんざ、冷え性、皮膚病、痔疾
+</td></tr></table></div><div class="con1"><p class="feature">岩尾別温泉は知床半島・羅臼岳の北麓に位置する原生林に囲まれた温泉地。岩尾別というのはアイヌ語で「硫黄の川」という意味で、古くからアイヌの人に知られる温泉地でもあった。羅臼岳は登山客が多く訪れる山でもあり、日本百名山の一つにも数えられている。険しい登山道で野生のクマやエゾ鹿と遭遇する可能性もあるので、しっかりと対策をして臨みたいところだ。ホテルのレストランや周囲の食事処では、オホーツク海で育ったカニやホタテなどをはじめとした海の幸を堪能できる。訪れた際は、旬の海鮮と温泉で日頃の疲れを癒やしたい。4月下旬頃から11月上旬ごろまでの営業であるため、事前に要確認だ。
+ナトリウム・カルシウム-塩化物・炭酸水素塩泉の泉質を持つ温泉で、日によってターコイズブルーやグリーンなどの幻想的な色を見せる。リウマチ、神経痛、筋肉痛、関節痛、五十肩、うちみ、くじき、慢性消化器病、冷え性、きりきず、皮膚乾燥症など多くの効能を持つとされる。とろみのある青みがかかった湯が特徴で、体を包みこむような湯ざわりを堪能できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="marukomaonsen_marukoma_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="marukomaonsen_marukoma_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.marukomaonsen_marukoma_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0681_0001.jpg"/></a><p class="feature">丸駒温泉（まるこま）<br>類似度:2.546</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="senbinoyu_funaonoyu_gunma">{% csrf_token %}<input name="id2" type="hidden" value="senbinoyu_funaonoyu_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.senbinoyu_funaonoyu_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2082_0001.jpg"/></a><p class="feature">船尾の湯（ふなおのゆ）<br>類似度:2.481</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tangookuineonsen_tangookuine_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tangookuineonsen_tangookuine_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tangookuineonsen_tangookuine_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2140_0001.jpg"/></a><p class="feature">丹後奥伊根温泉（たんごおくいね）<br>類似度:2.457</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekowaisukougenonsen_nisekowaisukougen_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1877_0001.jpg"/></a><p class="feature">ニセコワイス高原温泉（にせこわいすこうげん）<br>類似度:2.445</br></p></div></form>
+{% endblock content %}

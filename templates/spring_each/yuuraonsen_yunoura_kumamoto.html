@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯浦温泉（ゆのうら）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0384_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">湯浦川沿いにある湯浦温泉は、開湯が奈良末期の宝亀年間（770年から780年）といわれ1300年の歴史を持つ由緒ある温泉地だ。古くは宿場町として栄えた街の温泉でもあり、今も地元住民から親しまれている。周囲には群馬県みどり市にある富弘美術館の姉妹館である「芦北町立星野富弘美術館」や、ゴーカートやローラーリュージュなどが楽しめる「芦北海浜総合公園」などがあり、観光後の癒やしスポットとして訪れる人も多いようだ。道の駅では名物のデコポンや地元特産のあしきた牛など、地元のグルメも楽しめる。
+良質な単純温泉である湯浦温泉は、神経痛やリウマチ、筋肉痛や関節痛に動脈硬化など幅広い効果があるとされる。豊富な湯量と柔らかな泉質で、つるつるすべすべなお肌になれると人気。湯温は少しぬるめなのが特徴で、ゆっくりと長く浸かれるので体の芯まで温まりそう。日帰り温泉施設も多いため、温泉巡りも楽しめる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="bimataonsen_mimata_shimane">{% csrf_token %}<input name="id2" type="hidden" value="bimataonsen_mimata_shimane"/><div class="con2"><a href="../spring_each/" onclick="document.bimataonsen_mimata_shimane.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1205_0001.jpg"/></a><p class="feature">美又温泉（みまた）<br>類似度:1.988</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:1.983</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="rurionsen_ruri_shiga">{% csrf_token %}<input name="id2" type="hidden" value="rurionsen_ruri_shiga"/><div class="con2"><a href="../spring_each/" onclick="document.rurionsen_ruri_shiga.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1326_0001.jpg"/></a><p class="feature">るり温泉（るり）<br>類似度:1.941</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="geroonsen_gero_gifu">{% csrf_token %}<input name="id2" type="hidden" value="geroonsen_gero_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.geroonsen_gero_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0053_0001.jpg"/></a><p class="feature">下呂温泉（げろ）<br>類似度:1.930</br></p></div></form>
+{% endblock content %}

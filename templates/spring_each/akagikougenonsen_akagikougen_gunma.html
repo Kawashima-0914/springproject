@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">赤城高原温泉（あかぎこうげん）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0749_0001.jpg"/><table><tr><th>効能</th><td>含鉄泉
+</td></tr></table></div><div class="con1"><p class="feature">群馬県のほぼ中央、上毛三山に数えられる赤城山の南面、標高約400メートルの麓に一軒宿「山屋蒼月」が建つ。広い庭園内に小屋がけの源泉があり、遊歩道を散策しながら温泉が湧き出る様子を観察することもできる。山上にカルデラ湖や湿原を持つ自然深い赤城山を背後に、冬にはその赤城山から空っ風が吹きおろし、若き日の萩原朔太郎や山村暮鳥らが叙情の精神を研ぎ澄ましたという前橋の市街地を眼下にするロケーション。
+宝川温泉は4つの源泉を持ち、その温度は40度〜68度。日本でも有数の湯量を誇り、毎分1800リットルが湧き出ている。無色透明の単純温泉は柔らかく、リウマチや関節痛、ストレス解消、病後回復や冷え性、消化器病など多くの効能を持つ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="juutanionsen_jikkoku_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="juutanionsen_jikkoku_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.juutanionsen_jikkoku_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2357_0001.jpg"/></a><p class="feature">十谷温泉（じっこく）<br>類似度:1.272</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="aokikousen_aokikousen_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="aokikousen_aokikousen_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.aokikousen_aokikousen_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2355_0001.jpg"/></a><p class="feature">青木鉱泉（あおきこうせん）<br>類似度:1.199</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:1.173</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yumegenkyouonsen_mugenkyou_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="yumegenkyouonsen_mugenkyou_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.yumegenkyouonsen_mugenkyou_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2106_0001.jpg"/></a><p class="feature">夢絃峡温泉（むげんきょう）<br>類似度:1.172</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">禰宜ノ畑温泉（ねぎのはた）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1925_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">西天城の近く、仁科川中流部にある「大沢里（おおそうり）集落」に湧く温泉。平家の落人伝説もあるという山あいの集落だ。1973年に廃校になった小学校を利用した町営の温泉宿泊施設が一軒ある。2011年にリニューアルした際にユニバーサルデザインを取り入れて誰でも使いやすくきれいな施設に生まれ変わった。その一方でノスタルジックな雰囲気をよく残している。一帯はモリアオガエルも生息するほどの美しい自然が残されている場所。格安で泊まれるため部活の合宿での利用が多いと言うが、本格的な温泉と大自然は、誰にとっても素晴らしいものだろう。
+pH8.9とアルカリ性の温泉。泉質は美肌に良いとされる硫酸塩泉。源泉温度が39℃ほどと適温で、加水加温をせず源泉かけ流しのお湯を満喫できる。豊富な温泉はプールにも利用されていて、「巨大な露天風呂」の中で泳ぐこともできる。運動と温泉成分によって、絶大な健康効果が得られそうだ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="komuroonsen_komuro_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="komuroonsen_komuro_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.komuroonsen_komuro_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1918_0001.jpg"/></a><p class="feature">小室温泉（こむろ）<br>類似度:1.927</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yudakawaonsen_yudagawa_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="yudakawaonsen_yudagawa_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.yudakawaonsen_yudagawa_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0854_0001.jpg"/></a><p class="feature">湯田川温泉（ゆだがわ）<br>類似度:1.919</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tateshinamimuroonsen_tateshinamimuro_nagano">{% csrf_token %}<input name="id2" type="hidden" value="tateshinamimuroonsen_tateshinamimuro_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.tateshinamimuroonsen_tateshinamimuro_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1814_0001.jpg"/></a><p class="feature">蓼科三室温泉（たてしなみむろ）<br>類似度:1.898</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nekomaonsen_nekoma_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="nekomaonsen_nekoma_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.nekomaonsen_nekoma_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1217_0001.jpg"/></a><p class="feature">猫魔温泉（ねこま）<br>類似度:1.886</br></p></div></form>
+{% endblock content %}

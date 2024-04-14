@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ajaxテスト(jquery)</title>
+</head>
+<body>
+  <p>ajaxテスト(jquery)</p>
+  <input id="button-get" type="button" value="テスト(GET通信)">
+  <input id="button-post" type="button" value="テスト(POST通信)">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+      // テスト(GET通信)ボタンクリック時のイベント
+      $("#button-get").click(
+          function () {
+              $.ajax({
+                  // 渡したいデータをurlのクエリパラメータで指定
+                  url: "https://httpbin.org/get?param1=p1&param2=p2",
+                  type: "GET",
+                  dataType: "json"
+              })
+                  .done(function (data, testStatus, jqXHR) {
+                      // 正常レスポンス
+                      console.log(data);
+                  })
+                  .fail(function (jqXHR, textStatus, erorThrown) {
+                      console.log("通信エラー");
+                  });
+          }
+      );
+
+      // テスト(POST通信)ボタンクリック時のイベント
+      $("#button-post").click(
+          function () {
+              $.ajax({
+                  url: "https://httpbin.org/post",
+                  type: "POST",
+                  dataType: "json",
+                  // 渡したいデータを指定
+                  data: {"param1" : "p1", "param2" : "p2"}
+              })
+                  .done(function (data, testStatus, jqXHR) {
+                      // 正常レスポンス
+                      console.log(data);
+                  })
+                  .fail(function (jqXHR, textStatus, erorThrown) {
+                      console.log("通信エラー");
+                  });
+          }
+      );
+  </script>
+</body>
+</html>

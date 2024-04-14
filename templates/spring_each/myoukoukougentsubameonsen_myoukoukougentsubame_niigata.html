@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">妙高高原燕温泉（みょうこうこうげんつばめ）</h2><h3 class="icon"> 所在地：新潟県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0139_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">妙高山の麓、標高約1160mの場所に広がる燕温泉。乳白色のお湯とほのかに香る硫黄臭。古くは湯治専門の温泉だったこともあり、良質なお湯が自慢だ。イワツバメの群生地として知られ、大田切渓谷をはじめとする美しい自然に囲まれた秘湯。 落差約80mの大瀑布「惣滝」など渓谷をめぐる散策コースや、妙高山のトレッキングコースなども充実している。歩き疲れたら、香ばしい香りがたまらない「山もち」を食べて一休み。 地元産のコシヒカリを固く握り甘辛いクルミ味噌をつけて炭火であぶったもので、収穫を祝い人々にふるまった焼きもち。
+弘法大師が発見したと伝えられ、7つの温泉からなる妙高高原温泉郷の中で最も古い歴史を持つ古湯。自慢の乳白色のお湯は、無料の露天風呂「河原の湯」「黄金の湯」で源泉を楽しめる。岩崖から湯が流れ落ちる音と小川のせせらぎが心地よい。“白い湯の花”が、秘湯の雰囲気を盛り上げる。車で約5分の場所にある“赤い湯の花”の関温泉と、紅白のお湯を入り比べてみるのもよい。ただし雪のため冬季は休業、「河原の湯」は混浴なのでご注意を。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="okunikkouyumotoonsen_okunikkouyumoto_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="okunikkouyumotoonsen_okunikkouyumoto_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.okunikkouyumotoonsen_okunikkouyumoto_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0183_0001.jpg"/></a><p class="feature">奥日光湯元温泉（おくにっこうゆもと）<br>類似度:1.780</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="zaouonsen_zaou_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="zaouonsen_zaou_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.zaouonsen_zaou_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0057_0001.jpg"/></a><p class="feature">蔵王温泉（ざおう）<br>類似度:1.747</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="unzenonsen_unzen_nagasaki">{% csrf_token %}<input name="id2" type="hidden" value="unzenonsen_unzen_nagasaki"/><div class="con2"><a href="../spring_each/" onclick="document.unzenonsen_unzen_nagasaki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0525_0001.jpg"/></a><p class="feature">雲仙温泉（うんぜん）<br>類似度:1.734</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yunomineonsen_yunomine_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="yunomineonsen_yunomine_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.yunomineonsen_yunomine_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0745_0001.jpg"/></a><p class="feature">湯の峰温泉（ゆのみね）<br>類似度:1.718</br></p></div></form>
+{% endblock content %}

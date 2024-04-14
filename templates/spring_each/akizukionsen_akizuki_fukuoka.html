@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">秋月温泉（あきづき）</h2><h3 class="icon"> 所在地：福岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1611_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">数百年前に秋月氏が古処山のふもとに築いた城下町は、「筑前の小京都」と呼ばれるほど歴史ある町並みをよく残しており、町全体が「重要伝統的建造物群保存地区（重伝建）」に指定されている。「杉の馬場」は春には桜の並木道となる。秋は、鎌倉時代に造られたという「黒門」のまわりに植えられたモミジが紅葉する。武家屋敷やかつて秋月城で使われていた門などの歴史的な建物が多く残っている。そのほか、町のシンボルである「目鏡橋」や、江戸時代後期に建てられた「長屋門」、秋月藩初代藩主を祀る「垂裕神社」なども人気。秋月温泉は「料亭旅館 清流庵」という一軒宿の温泉地。2,400坪の広大な敷地の中に6室のみを設けており、贅沢な時間が過ごせるだろう。
+pH9.6を誇るなかなかのアルカリ性のお湯が特徴。アルカリ単純温泉は、肌の角質をとかして美肌にしてくれることが期待できる。無色透明・無味無臭で入りやすく、敏感肌の人にもやさしい。すべての客室に風呂がそなえてあり、岩盤浴を備えた客室もある。プライベートな空間で温泉をじっくりと満喫すれば、すっかり疲れが癒されるだろう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kikuchikeikokuonsen_kikuchikeikoku_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuchikeikokuonsen_kikuchikeikoku_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuchikeikokuonsen_kikuchikeikoku_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1132_0001.jpg"/></a><p class="feature">菊池渓谷温泉（きくちけいこく）<br>類似度:2.361</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.327</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="igaonsen_iga_mie">{% csrf_token %}<input name="id2" type="hidden" value="igaonsen_iga_mie"/><div class="con2"><a href="../spring_each/" onclick="document.igaonsen_iga_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1470_0001.jpg"/></a><p class="feature">伊賀温泉（いが）<br>類似度:2.322</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="bimataonsen_mimata_shimane">{% csrf_token %}<input name="id2" type="hidden" value="bimataonsen_mimata_shimane"/><div class="con2"><a href="../spring_each/" onclick="document.bimataonsen_mimata_shimane.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1205_0001.jpg"/></a><p class="feature">美又温泉（みまた）<br>類似度:2.313</br></p></div></form>
+{% endblock content %}

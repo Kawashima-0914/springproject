@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">植木温泉（うえき）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0375_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">熊本県北部、九州自動車道「植木IC」から車で約10分、“熊本の奥座敷”として田園風景の中に湯けむりを上げるのどかな温泉地。古くは「平島温泉」と呼ばれていたが、昭和44年の町村合併の際に改名。植木町は、激戦が繰り広げられた「田原坂」をはじめ、西南戦争の戦跡が30近くも残る町として有名である。現在は、15軒ほどの旅館や鄙びた雰囲気の共同浴場、家族湯が点在している。一軒一軒が自家源泉をもっており、施設ごとに泉質が少しずつ異なるというなんとも贅沢な温泉地である。また、ゲートボール発祥の地としても名高く、ほとんどの宿にゲートボール場が設置されているのだという。
+pH8.0前後のアルカリ性単純温泉で、肌表面の角質を取って新陳代謝を促すピーリング効果が高いとされている。この、適度にアルカリ性が高い泉質により、美肌効果が期待でき、アトピー性皮膚炎などにも効果があるとされる。トロトロの湯心地が癖になる人も多いようだ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.214</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="miyabaruonsen_miyabaru_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="miyabaruonsen_miyabaru_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.miyabaruonsen_miyabaru_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1981_0001.jpg"/></a><p class="feature">みやばる温泉（みやばる）<br>類似度:2.207</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kawabaonsen_kawaba_gunma">{% csrf_token %}<input name="id2" type="hidden" value="kawabaonsen_kawaba_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.kawabaonsen_kawaba_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1348_0001.jpg"/></a><p class="feature">川場温泉（かわば）<br>類似度:2.180</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hoshinoonsen_hoshino_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="hoshinoonsen_hoshino_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.hoshinoonsen_hoshino_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1537_0001.jpg"/></a><p class="feature">星野温泉（ほしの）<br>類似度:2.166</br></p></div></form>
+{% endblock content %}

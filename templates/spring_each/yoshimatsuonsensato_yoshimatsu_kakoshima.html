@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">吉松温泉郷（よしまつ）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2191_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">鹿児島県湧水町を流れる川内川に沿って並ぶ温泉を総称して吉松温泉郷と呼ぶ。この温泉郷には全国でも珍しい、植物由来の有機物を含む「モール泉」を楽しめる入浴施設が点在している。湧水町はその名の通り、霧島山系に降った雨が町内のいたるところに湧き出ている町。中でも名水・疎水百選に選ばれた「丸池湧水」「筒羽野の疏水」は、ミネラルが豊富で美容と健康に効果があるとされ地元の特産品となっている。絶景スポットとして訪れたいのが吉松温泉郷から車で20分程度の場所にある「魚野フライトエリア」だ。パラグライダーのテイクオフ場として整備されているところで、気象条件が合うと壮大な雲海が広がる光景を目にすることができる。
+日本国内でほとんど類を見ない、植物由来の有機物を含む湯「モール泉」。湯の色が黒っぽいことから、地元では「コーヒー温泉」とも呼ばれている。ゆるゆるとした肌触りの良い湯が特徴で、皮膚病、きりきず、汗疹などに効能があるとされ美人湯としても評判が高い。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="donkawaonsen_nibukawa_ehime">{% csrf_token %}<input name="id2" type="hidden" value="donkawaonsen_nibukawa_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.donkawaonsen_nibukawa_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0292_0001.jpg"/></a><p class="feature">鈍川温泉（にぶかわ）<br>類似度:2.424</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hirayamaonsen_hirayama_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="hirayamaonsen_hirayama_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.hirayamaonsen_hirayama_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1035_0001.jpg"/></a><p class="feature">平山温泉（ひらやま）<br>類似度:2.407</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="anaharaonsen_anabara_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="anaharaonsen_anabara_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.anaharaonsen_anabara_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0178_0001.jpg"/></a><p class="feature">穴原温泉（あなばら）<br>類似度:2.375</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="izunagaokaonsen_izunagaoka_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="izunagaokaonsen_izunagaoka_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.izunagaokaonsen_izunagaoka_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0021_0001.jpg"/></a><p class="feature">伊豆長岡温泉（いずながおか）<br>類似度:2.372</br></p></div></form>
+{% endblock content %}

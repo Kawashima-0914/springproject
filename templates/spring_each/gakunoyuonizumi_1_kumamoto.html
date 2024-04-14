@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">岳の湯温泉（熊本県）（たけのゆ）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">大分県・熊本県の境にそびえる湧蓋山の熊本県側、標高720ｍの高台にある温泉地だ。わいた温泉郷のひとつとして数えられる。農家の集落の広場に噴気孔がたくさんあり、吹き出す蒸気であたりは一瞬で真っ白になる。民家には噴気孔を利用した蒸し釜があり、石垣や倉庫の下からなどそこらじゅうで湯煙が上がっている。湯煙ただよう街並みと、小国富士とも呼ばれる涌蓋山麓に広がる棚田の風景はどこか懐かしく故郷をも思い出す。春は新緑、梅雨時期はホタル鑑賞、夏場は避暑地、秋は紅葉、冬は雪景色と四季折々の風景を堪能することができる。
+鮮やかなホワイトブルーの100パーセント天然自噴温泉。「豊礼の湯」の露天風呂からは雄大な涌蓋山を眺めることがで出来、開放感が抜群。皮膚病に効くといわれた温泉は、ほのかに硫黄の香りが漂う。湯上がりはつるんとしたたまご肌になることから美肌の湯とも言われている。ゆっくりと心と体を癒す至福のひとときを過ごせるだろう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="enakyouonsen_enakyou_gifu">{% csrf_token %}<input name="id2" type="hidden" value="enakyouonsen_enakyou_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.enakyouonsen_enakyou_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0361_0001.jpg"/></a><p class="feature">恵那峡温泉（えなきょう）<br>類似度:1.911</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kansuisawaonsen_kansuizawa_aomori">{% csrf_token %}<input name="id2" type="hidden" value="kansuisawaonsen_kansuizawa_aomori"/><div class="con2"><a href="../spring_each/" onclick="document.kansuisawaonsen_kansuizawa_aomori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1145_0001.jpg"/></a><p class="feature">寒水沢温泉（かんすいざわ）<br>類似度:1.903</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinomataonsen_ichinomata_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="ichinomataonsen_ichinomata_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.ichinomataonsen_ichinomata_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1123_0001.jpg"/></a><p class="feature">一の俣温泉（いちのまた）<br>類似度:1.902</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hakubaryuujinonsen_hakubaryuujin_nagano">{% csrf_token %}<input name="id2" type="hidden" value="hakubaryuujinonsen_hakubaryuujin_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.hakubaryuujinonsen_hakubaryuujin_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1820_0001.jpg"/></a><p class="feature">白馬龍神温泉（はくばりゅうじん）<br>類似度:1.896</br></p></div></form>
+{% endblock content %}

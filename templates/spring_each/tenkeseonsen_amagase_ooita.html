@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">天ヶ瀬温泉（あまがせ）</h2><h3 class="icon"> 所在地：大分県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0010_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、炭酸水素塩泉、塩化物泉、硫黄泉
+</td></tr><tr><th>効能</th><td>美肌、神経痛、リウマチ、筋肉痛、肩こり、腰痛、関節痛、疲労、婦人病、冷え性、皮膚病、美肌
+</td></tr></table></div><div class="con1"><p class="feature">九重連山の水を集めて水郷・日田に向かって流れる清流、玖珠（くす）川。わずかに川幅が広くなる人里離れた山あいに広がるのが天ヶ瀬温泉だ。1300年の歴史を誇り別府、由布院と並ぶ豊後三大温泉。川岸に5つの共同露天風呂があり、立ち上る湯煙が温泉情緒を一層高める。 江戸時代には天領・日田の代官たちが、幕末には日田で私塾を開いた広瀬淡窓や門下生の大村益次郎などが湯治に訪れたとか。水面と同じ視線で、川のせせらぎを聞きながら浸かる露天風呂は格別。 見上げれば、昭和初期の洋館を思わせる建物や情緒あふれる架け橋。夜には満天の星が迫ってくる。蛍の光に酔いしれながら、どこか懐かしい日本の夏を感じてみるのもよい。
+「豊後国風土記」に「天武天皇の時代、大地震でこの辺りの山が崩れ熱湯が湧き出した」との記載が残る古湯。5つの共同露天風呂を持ち、古くから湯治場として発展した。湯量は豊富で、泉質も多彩。露天風呂では80℃前後の源泉をかけ流しで楽しめる。肌寒い川岸で熱いお湯の露天風呂に浸かる瞬間は、まさに至福のひととき。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="hirayuonsen_1_gifu">{% csrf_token %}<input name="id2" type="hidden" value="hirayuonsen_1_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.hirayuonsen_1_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0119_0001.jpg"/></a><p class="feature">平湯温泉（奥飛騨温泉郷）（ひらゆ（おくひだ））<br>類似度:3.386</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="narukoonsen_1_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="narukoonsen_1_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.narukoonsen_1_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0105_0001.jpg"/></a><p class="feature">鳴子温泉（鳴子温泉郷）（ナルコ）<br>類似度:3.305</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nakayamaheionizumi_nakayamadaira_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="nakayamaheionizumi_nakayamadaira_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.nakayamaheionizumi_nakayamadaira_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0946_0001.jpg"/></a><p class="feature">中山平温泉（なかやまだいら）<br>類似度:3.182</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kokonoeonsensato_kujuu_ooita">{% csrf_token %}<input name="id2" type="hidden" value="kokonoeonsensato_kujuu_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.kokonoeonsensato_kujuu_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0197_0001.jpg"/></a><p class="feature">九重温泉郷（くじゅう）<br>類似度:3.148</br></p></div></form>
+{% endblock content %}

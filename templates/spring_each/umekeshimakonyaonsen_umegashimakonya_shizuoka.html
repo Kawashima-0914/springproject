@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">梅ヶ島コンヤ温泉（うめがしまこんや）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1940_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">静岡市内ではあるがほぼ山梨県との県境に位置し、近くに安倍川が流れる温泉地。近くに梅ヶ島キャンプ場があり、夏は多くの家族連れでにぎわう。また、長さ約55メートル、幅約１メートルのコンヤの吊り橋があり、安倍川の絶景を楽しむことが出来る。近くには「鯉ヶ滝」などもあり、人気のハイキングコースにもなっている。また、傷ついた武田の将兵が傷の治療に使用したといわれており、最初はコンヤ沢の永蓮寺前の鉱泉を引湯していた。この湯は打撲傷や切り傷によく利くと言われていたため、傷が快方したという噂を聞きつけ多方面から多くの人が湯を求めて汲みに来ていたという。
+泉質はアルカリ性単純硫黄温泉。PH10.25という、国内有数の強アルカリ温泉である。泉温は31.2℃で、湧出量は毎分、162Lである。お湯はほとんど無色、透明、無味で。効能は慢性婦人病、慢性消化器病、糖尿病などの慢性疾患や、アトピー性皮膚炎・尋常性乾癬などの皮膚病が中心。ほかに切り傷などにも効果が期待される。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shinyabaonsen_shinyaba_ooita">{% csrf_token %}<input name="id2" type="hidden" value="shinyabaonsen_shinyaba_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.shinyabaonsen_shinyaba_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0302_0001.jpg"/></a><p class="feature">深耶馬温泉（しんやば）<br>類似度:2.418</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="amiharionsen_amihari_iwate">{% csrf_token %}<input name="id2" type="hidden" value="amiharionsen_amihari_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.amiharionsen_amihari_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0264_0001.jpg"/></a><p class="feature">網張温泉（あみはり）<br>類似度:2.406</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="mahoranoyu_mahoranoyu_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="mahoranoyu_mahoranoyu_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.mahoranoyu_mahoranoyu_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2368_0001.jpg"/></a><p class="feature">まほらの湯（まほらのゆ）<br>類似度:2.399</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.332</br></p></div></form>
+{% endblock content %}

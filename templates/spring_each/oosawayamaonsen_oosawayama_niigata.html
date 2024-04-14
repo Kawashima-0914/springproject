@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">大沢山温泉（おおさわやま）</h2><h3 class="icon"> 所在地：新潟県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1188_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">日本一の評価を受ける銘柄米「魚沼産コシヒカリ」の生産地、新潟県南魚沼市。雪深い街は人気の「大沢山温泉」が湧く地でもある。大沢駅から徒歩で約6分、上越国際スキー場の大沢ゲレンデにも近い温泉地で、周囲を自然に囲まれているので、夏になると緑豊かで閑静な温泉地になることから人気を呼んでいる。江戸時代初期の寛永期に開業したと伝えられる歴史の長い温泉地は「秘湯」とされ、3件の宿が営業している。風情豊かな温泉宿は、シーズンには予約が取りにくくなるほど人気が高い。
+泉質はナトリウム-塩化物炭酸水素泉(アルカリ性低張性温泉)。神経痛、関節痛、冷え性などのほか、きりきず、やけど、慢性皮膚病、美肌など肌への効能が高いとされている。無色透明の湯は、つるつるとした感触で肌によいと女性に人気。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tomuraushionsen_tomuraushi_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="tomuraushionsen_tomuraushi_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.tomuraushionsen_tomuraushi_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0670_0001.jpg"/></a><p class="feature">トムラウシ温泉（とむらうし）<br>類似度:2.511</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tangookuineonsen_tangookuine_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tangookuineonsen_tangookuine_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tangookuineonsen_tangookuine_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2140_0001.jpg"/></a><p class="feature">丹後奥伊根温泉（たんごおくいね）<br>類似度:2.485</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yakumoonsen_1_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="yakumoonsen_1_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.yakumoonsen_1_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2050_0001.jpg"/></a><p class="feature">八雲温泉（北海道）（やくも）<br>類似度:2.481</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="marukomaonsen_marukoma_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="marukomaonsen_marukoma_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.marukomaonsen_marukoma_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0681_0001.jpg"/></a><p class="feature">丸駒温泉（まるこま）<br>類似度:2.445</br></p></div></form>
+{% endblock content %}

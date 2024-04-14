@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">由良温泉（ゆら）</h2><h3 class="icon"> 所在地：山形県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1580_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>にごり、にごり（褐色）、神経痛、リウマチ、筋肉痛、腰痛、関節痛、疲労、冷え性、皮膚病、糖尿病、痔疾、気管支炎、喘息
+</td></tr></table></div><div class="con1"><p class="feature">江戸時代には庄内藩の城下町として盛えた鶴岡市。この地を訪れたら東北地方に現存する唯一の藩校建築「庄内藩校 致道館」に立ち寄りたい。1805年、酒井家九代目藩主・忠徳公により創建された藩校で、国指定史跡 に指定されている。 近隣には致道館博物館や大宝館などの見どころもある。 市内には4つの温泉郷があり、その中の一つの由良温泉は日本の渚100選、日本の快水浴場100選に選ばれた美しい由良海岸に面している。 由良海岸のシンボル・白山島と日本海に沈む夕日のコントラストは絶景。海の釣り堀も整備されており、県内外から多くの人で賑わう。ホテルや民宿などでは由良漁港で水揚げされた新鮮な魚を味わえる。たっぷりとしたお湯と日本海に沈む美しい夕日で非日常を楽しみたい。
+お湯は無色で肌触りが良いと評判。共同浴場「由良温泉センター お釈迦さまの湯」では日帰り入浴が楽しめる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:2.418</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yumuraonsen_yumura_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="yumuraonsen_yumura_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.yumuraonsen_yumura_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0738_0001.jpg"/></a><p class="feature">湯村温泉（ゆむら）<br>類似度:2.302</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.233</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="amatsukominatoonsen_amatsukominato_chiba">{% csrf_token %}<input name="id2" type="hidden" value="amatsukominatoonsen_amatsukominato_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.amatsukominatoonsen_amatsukominato_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0014_0001.jpg"/></a><p class="feature">天津小湊温泉（あまつこみなと）<br>類似度:2.220</br></p></div></form>
+{% endblock content %}

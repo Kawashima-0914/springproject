@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">石井温泉（いしい）</h2><h3 class="icon"> 所在地：兵庫県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1558_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">日本海に面している兵庫県香美町。町全域が山陰海岸ジオパークの一部となっているほか、海岸・滝・渓谷など自然にあふれている町だ。黒毛和牛の「但馬牛」、ズワイガニの地域ブランドである「松葉ガニ」などの絶品グル メもあり観光資源に恵まれている。 また内陸に入るとスキー客で賑わうハチ北高原が広がっており温泉地も豊富だ。同地区で代表的なのは「村岡温泉」や「ハチ北温泉」だが、「石井温泉」はそこには属さない個人所有 の源泉だ。 本来ならば個人で楽しむべきところを、所有者のご好意により宿泊施設の「リゾートヴィラハチ北」で入れるようになっている。香美町に来たらごくごく一部の人にしか知られてない貴重な湯を体験して温泉通を気取ってみよう。
+
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="nishikionsen_nishiki_akita">{% csrf_token %}<input name="id2" type="hidden" value="nishikionsen_nishiki_akita"/><div class="con2"><a href="../spring_each/" onclick="document.nishikionsen_nishiki_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1626_0001.jpg"/></a><p class="feature">西木温泉（にしき）<br>類似度:1.666</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="maniwaonsen_maniwa_okayama">{% csrf_token %}<input name="id2" type="hidden" value="maniwaonsen_maniwa_okayama"/><div class="con2"><a href="../spring_each/" onclick="document.maniwaonsen_maniwa_okayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1302_0001.jpg"/></a><p class="feature">まにわ温泉（まにわ）<br>類似度:1.647</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kawauraonsen_kawaura_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="kawauraonsen_kawaura_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.kawauraonsen_kawaura_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0840_0001.jpg"/></a><p class="feature">川浦温泉（かわうら）<br>類似度:1.645</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="mazekawaonsen_mazegawa_gifu">{% csrf_token %}<input name="id2" type="hidden" value="mazekawaonsen_mazegawa_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.mazekawaonsen_mazegawa_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1668_0001.jpg"/></a><p class="feature">馬瀬川温泉（まぜがわ）<br>類似度:1.639</br></p></div></form>
+{% endblock content %}

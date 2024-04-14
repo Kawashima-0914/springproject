@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">箱根強羅温泉（はこねごうら）</h2><h3 class="icon"> 所在地：神奈川県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0111_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、塩化物泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>リウマチ、婦人病、冷え性、高血圧、動脈硬化、皮膚病、糖尿病など
+</td></tr></table></div><div class="con1"><p class="feature">箱根登山鉄道の終着駅、ケーブルカーの始発駅で賑わう強羅温泉。そもそも大正時代に避暑地を兼ねた高級別荘地として開発されただけに、今でも洋館やホテルなど昔ながらの建物が点在し、坂道沿いには優雅なたたずまいの寮や別荘が並ぶ。 「強羅（ごうら）」という珍しい名称は、大きな岩がゴロゴロしていたことから「ゴーラ」となったという説、深山に囲まれた姿が亀の甲羅に似ていたことから付いたという説がある。 2003年6月には、温泉療法に詳しい医師が常駐し相談を受ける「アドバイスプラザ」が開業。欧州の滞在型温泉療養地をモデルに、新たな温泉リゾート地への挑戦を始めている。
+早雲山の東斜面、標高600mの所に広がる箱根強羅温泉。もともとは明治26年、早雲地獄からの引き湯で始まったが、昭和25年に良質で大量の温泉が発掘。今では、箱根で第2の規模を誇る温泉街に成長した。お湯は大別すると酸性硫酸塩泉、ナトリウム塩化物泉、単純泉、アルカリ性泉などに分類され、箱根でも珍しい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kuroishionsensato_kuroishi_aomori">{% csrf_token %}<input name="id2" type="hidden" value="kuroishionsensato_kuroishi_aomori"/><div class="con2"><a href="../spring_each/" onclick="document.kuroishionsensato_kuroishi_aomori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">黒石温泉郷（くろいし）<br>類似度:2.755</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sakunamionsen_sakunami_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sakunamionsen_sakunami_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sakunamionsen_sakunami_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0695_0001.jpg"/></a><p class="feature">作並温泉（さくなみ）<br>類似度:2.736</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="narukoonsen_1_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="narukoonsen_1_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.narukoonsen_1_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0105_0001.jpg"/></a><p class="feature">鳴子温泉（鳴子温泉郷）（ナルコ）<br>類似度:2.721</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nakayamaheionizumi_nakayamadaira_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="nakayamaheionizumi_nakayamadaira_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.nakayamaheionizumi_nakayamadaira_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0946_0001.jpg"/></a><p class="feature">中山平温泉（なかやまだいら）<br>類似度:2.709</br></p></div></form>
+{% endblock content %}

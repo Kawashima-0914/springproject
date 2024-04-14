@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">奥利根温泉（水上温泉郷）（おくとね（みなかみ））</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0929_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">関東の最北端、山深い利根川の源流地域に位置する水上高原に点在する温泉郷。日本一の流域面積を誇る利根川の源流にあり、第一級の山々に囲まれた雄大な自然の中で秘湯風情を満喫できる。温泉地の中心は、周辺の民宿などの殆どが温泉を引く藤原地区。 地名の「藤原」とは、源頼朝に滅ぼされた奥州藤原氏の残党が落ち延びてこの地に住みついたのが由来だとか。周辺にはそれを裏付ける古墳やお堂、砦跡、供養塔なども残されており、歴史散策を楽しめる。 深山の秘湯に身体をあずけて川のせせらぎに耳を傾けながら、この地にひっそりと隠れ住んだ平家の落人たちにしみじみと思いを馳せてみるのも一興。
+保温性が高く肌触りが柔らかい温泉で、源泉は3つ。アルカリ性単純泉であるが、メタケイ酸の含有率が多くとても温まりやすい。少し湯に浸かっているだけでもじんわりと身体の芯から温まり、汗が滲んでくる。泉温は50～80℃で適温、毎分約2300Lと湯量も豊富。また、群馬県随一の豪雪地帯であり、冬には真っ白に降り積もった雪の中での「雪見風呂」が楽しめる。白銀の世界に湯気が立ち上る様は情緒満点だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="azumayaonsen_azumaya_nagano">{% csrf_token %}<input name="id2" type="hidden" value="azumayaonsen_azumaya_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.azumayaonsen_azumaya_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0827_0001.jpg"/></a><p class="feature">あずまや温泉（あずまや）<br>類似度:1.760</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="rurionsen_ruri_shiga">{% csrf_token %}<input name="id2" type="hidden" value="rurionsen_ruri_shiga"/><div class="con2"><a href="../spring_each/" onclick="document.rurionsen_ruri_shiga.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1326_0001.jpg"/></a><p class="feature">るり温泉（るり）<br>類似度:1.755</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="minamigisoonsen_nagiso_nagano">{% csrf_token %}<input name="id2" type="hidden" value="minamigisoonsen_nagiso_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.minamigisoonsen_nagiso_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0957_0001.jpg"/></a><p class="feature">南木曽温泉（なぎそ）<br>類似度:1.754</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kinosakimaruyamakawaonsen_kinosakimaruyamagawa_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="kinosakimaruyamakawaonsen_kinosakimaruyamagawa_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.kinosakimaruyamakawaonsen_kinosakimaruyamagawa_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1024_0001.jpg"/></a><p class="feature">城崎円山川温泉（きのさきまるやまがわ）<br>類似度:1.742</br></p></div></form>
+{% endblock content %}

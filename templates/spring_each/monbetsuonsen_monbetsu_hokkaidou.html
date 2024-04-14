@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">紋別温泉（もんべつ）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1587_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">オホーツク海に面した北海道北東岸のほぼ中央に位置し、海外との重要な貿易港でもある紋別港を擁する紋別市。西部は南北に連なる北見山地に、南部は東西に起伏する千島山系に囲まれている。 冬季にはオホーツク海の7割ほどが氷に覆われ、例年1月下旬～3月初旬には流氷が接岸する。オホーツク海に近いことから、一年を通して新鮮な魚介類が楽しめる。 北海道を代表する水産都市だが、漁業と並び農林業も盛んで酪農や畜産、畑作が営まれており新鮮な乳製品の他古くから生産が盛んなビートやスイートコーン、じゃがいもが特産品である。そんな紋別市に湧くあふれる天然の湯はつるつる美肌の湯。そっと旅の疲れを癒してくれる。温泉を楽しむ合間に流氷とグルメも楽しもう。
+加温・循環ろ過式、つるつるした湯当たりで、肌に優しくなめらかな感触の湯。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kiikenonsen_kiimi_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="kiikenonsen_kiimi_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.kiikenonsen_kiimi_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1478_0001.jpg"/></a><p class="feature">紀伊見温泉（きいみ）<br>類似度:1.341</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hoshinoonsen_hoshino_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="hoshinoonsen_hoshino_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.hoshinoonsen_hoshino_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1537_0001.jpg"/></a><p class="feature">星野温泉（ほしの）<br>類似度:1.340</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ubuyamaonsen_ubuyama_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="ubuyamaonsen_ubuyama_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.ubuyamaonsen_ubuyama_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2125_0001.jpg"/></a><p class="feature">産山温泉（うぶやま）<br>類似度:1.328</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuchionsen_kikuchi_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuchionsen_kikuchi_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuchionsen_kikuchi_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0377_0001.jpg"/></a><p class="feature">菊池温泉（きくち）<br>類似度:1.304</br></p></div></form>
+{% endblock content %}

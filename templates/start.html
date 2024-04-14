@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>温泉ガイド</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="../static/shasin2.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body id="index">
+
+    <!-- headerの始まり-->
+    <header>
+        <div class="logo">
+            <a href="/startspring/"><img src="../static/images/logo.jpg"></a>
+        </div>
+        <nav>
+            <ul class="global-nav">
+                <li><a href="ranking.html">Ranking</a></li>
+                <li><a href="springlist.html">SpringList</a></li>
+                <li><a href="qualityexp.html">QualityExp</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--  headerの終わり-->
+
+    <!--  wrapの始まり-->
+    <div id="wrap">
+        <div class="content">
+            <h1>温泉を探せ</h1>
+            <p>このサイトは、新しい温泉地の開拓を目的としています
+                <br>温泉地のランキング、温泉地の情報、泉質の説明を主としています
+                <br>また、温泉地の一覧ではその温泉地に似ている温泉を探すことができます
+                <br>面倒と感じる方は下の検索欄で、温泉名を入力してください
+                <br>左上の温泉マークでいつでもこのページに戻れます
+            </p>
+        </div>
+    </div>
+    <div class="content2">
+        <form action="{% url 'appname:spring_search' %}" method="post">
+            {% csrf_token %}
+            <input type="search" name="search" placeholder="温泉名を入力してください" size="40">
+            <button id="sbtn2" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
+    <!--  wrapの終わり-->
+
+    <!--  footer始まり-->
+    <footer>
+        <small>(C)090-8405-7088
+        </small>
+    </footer>
+    <!--  footer終わり-->
+
+
+</body>
+
+</html>

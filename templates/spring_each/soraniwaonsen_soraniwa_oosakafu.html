@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">空庭温泉（そらにわ）</h2><h3 class="icon"> 所在地：大阪府</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2051_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">関西地方最大級の規模を持つ温泉型テーマパーク「空庭温泉」。弁天町駅に直結するビル「OSAKA BAY TOWER」ノースの2階から5階まですべてのフロアを使っており、総面積は5,000平方メートルを超える。安土桃山時代をコンセプトにした館内の5階が、天然温泉を引いた大浴場と貸切風呂「空庭温泉」のフロア。地下1,000mからくみ上げる天然温泉を源泉かけ流しで提供している。4階の庭園を見下ろす風呂や炭酸泉、サウナなど、バラエティに富む構成で、日帰りでも日常を忘れられる空間になっている。館内ではグルメコーナーやショーなどを楽しむこともでき、一日中いても飽きない。
+「美肌の湯」と言われる弱アルカリ性の湯が特徴。5階の「弁天湯町」で入れる。毛穴に詰まった老廃物を排出する乳白色の湯、血流を促進し新陳代謝をアップすると言われる炭酸風呂など、趣向を凝らしたさまざまな湯が出迎えてくれる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kikuchikeikokuonsen_kikuchikeikoku_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuchikeikokuonsen_kikuchikeikoku_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuchikeikokuonsen_kikuchikeikoku_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1132_0001.jpg"/></a><p class="feature">菊池渓谷温泉（きくちけいこく）<br>類似度:1.924</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kawabaonsen_kawaba_gunma">{% csrf_token %}<input name="id2" type="hidden" value="kawabaonsen_kawaba_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.kawabaonsen_kawaba_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1348_0001.jpg"/></a><p class="feature">川場温泉（かわば）<br>類似度:1.920</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="geroonsen_gero_gifu">{% csrf_token %}<input name="id2" type="hidden" value="geroonsen_gero_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.geroonsen_gero_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0053_0001.jpg"/></a><p class="feature">下呂温泉（げろ）<br>類似度:1.908</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yamanokamionsen_yamanokami_iwate">{% csrf_token %}<input name="id2" type="hidden" value="yamanokamionsen_yamanokami_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.yamanokamionsen_yamanokami_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1255_0001.jpg"/></a><p class="feature">山の神温泉（やまのかみ）<br>類似度:1.907</br></p></div></form>
+{% endblock content %}

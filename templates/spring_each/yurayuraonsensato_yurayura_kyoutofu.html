@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯らゆら温泉郷（ゆらゆら）</h2><h3 class="icon"> 所在地：京都府</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0875_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">京都丹後鉄道宮津駅から車で約12分、「宮津の湯らゆら温泉」は森?外著「山椒太夫」の舞台となった丹後由良の浜に湧く温泉。温泉宿は日本三景の一つである「天橋立」を真一文字に見下ろすことができる絶好のローケーションに位置する。 天に舞う白い架け橋といわれる「天橋立」には全長3.6㎞にも及ぶ松並木があり、日本の名松百選にも指定されている。 付近には海水浴場も点在し、夏は海水浴を楽しむ人々で賑わいを見せる。
+「宮津の湯らゆら温泉」は日本三景の一つ「天橋立」を一望できる、総客室数331室を誇る近代的な外観が特徴の「天橋立宮津ロイヤルホテル」に湧く温泉。泉質はナトリウム‐塩化物強塩冷鉱泉で、効能は神経痛、筋肉痛、関節痛、五十肩、慢性消化器病と多岐にわたり、岩で施された露天風呂は温泉情緒をよりかき立ててくれると人気が高い。温泉で疲れを癒し、天橋立の絶景を鑑賞した後は、宿自慢の料理をゆっくりと楽しみたい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shirahamanojimaonsen_shirahamanojima_chiba">{% csrf_token %}<input name="id2" type="hidden" value="shirahamanojimaonsen_shirahamanojima_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.shirahamanojimaonsen_shirahamanojima_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1234_0001.jpg"/></a><p class="feature">白浜野嶋温泉（しらはまのじま）<br>類似度:2.455</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="misakionsen_misaki_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="misakionsen_misaki_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.misakionsen_misaki_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1197_0001.jpg"/></a><p class="feature">三崎温泉（みさき）<br>類似度:2.417</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="miyazuhagoromoonsen_1_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="miyazuhagoromoonsen_1_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.miyazuhagoromoonsen_1_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2109_0001.jpg"/></a><p class="feature">宮津羽衣温泉（宮津の湯らゆら）（みやづはごろも）<br>類似度:2.413</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1251_0001.jpg"/></a><p class="feature">紀州みなべ千里浜温泉（きしゅうみなべせんりはま）<br>類似度:2.396</br></p></div></form>
+{% endblock content %}

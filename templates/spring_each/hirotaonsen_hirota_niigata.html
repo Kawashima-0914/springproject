@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">広田温泉（ひろた）</h2><h3 class="icon"> 所在地：新潟県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2197_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">古くから小千谷街道を行く旅人の湯治場として多くの人を癒やしてきた温泉地で、「奥の湯 湯元館」が一軒宿。150年の歴史を持つ温泉地でもあり、地元では奥の湯と呼ばれ、屈指の薬湯としても愛されている。また、アルカリ度が高く肌がつるつるすべすべになることから、美人の湯としても人気だ。周囲には観光スポットも多く、大正15年に造られた美しい日本庭園で知られる「木村茶道美術館」、恋愛成就の名所として知られる「恋人岬」、地域のアイドルとして大人気のアルパカを見られる「山古志アルパカ牧場」など、どんな年代の人でも楽しめそうな場所ばかり。地域の名所を周り、湯治湯でゆっくり湯につかれば日頃の疲れも吹き飛びそう。
+冷源泉を加温した塩化物泉。昔から県内屈指の薬湯として農作業の疲れを癒してきた歴史もある。また、新潟県では珍しいＰＨ9以上とアルカリ度が高い湯で、入ると肌がつるつるすべすべになる「美人の湯」としても親しまれている。神経痛、胃腸病、婦人病、リウマチなどに効能。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:2.101</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="uenoyuonsenkyou_kaminoyu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="uenoyuonsenkyou_kaminoyu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.uenoyuonsenkyou_kaminoyu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2084_0001.jpg"/></a><p class="feature">上の湯温泉郷（かみのゆ）<br>類似度:2.094</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="wakuraonsen_wakura_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="wakuraonsen_wakura_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.wakuraonsen_wakura_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0151_0001.jpg"/></a><p class="feature">和倉温泉（わくら）<br>類似度:2.062</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="outokuonsen_outoku_gunma">{% csrf_token %}<input name="id2" type="hidden" value="outokuonsen_outoku_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.outokuonsen_outoku_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1271_0001.jpg"/></a><p class="feature">応徳温泉（おうとく）<br>類似度:2.058</br></p></div></form>
+{% endblock content %}

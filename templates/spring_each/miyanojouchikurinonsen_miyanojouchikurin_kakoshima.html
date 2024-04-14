@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">宮之城ちくりん温泉（みやのじょうちくりん）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2184_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">総面積約600ヘクタールの竹林があり、タケノコの産地として知られる鹿児島県薩摩郡さつま町。地元では旧地名の「宮之城」を取って町のことを「みやんじょちくりん村」と呼ぶこともある。宮之城ちくりん温泉は、この「ちくりん村」にある温泉。鹿児島市街地、霧島など、鹿児島の各観光地にも近いため、観光の中継地点としても適している。家族風呂が9部屋あり、家族や友達同士、カップルなどでプライベートな時間を過ごせる。近くには「宮之城ちくりん館」という道の駅があり、新鮮な農産物や加工品の販売所、ランチバイキングが人気の食事処も併設されている。
+低張性、弱アルカリ性、高温泉の炭酸水素塩泉で、きりきず、やけど、慢性皮膚病などに効能があるとされる。また、美肌にも効果抜群と言われている。飲用も可能で、入浴施設では飲用温泉を無料で持ち帰れるようにしている。飲用にすれば慢性消化器病、糖尿病、通風、肝臓病への効能が期待できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shiroyamaonsen_shiroyama_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="shiroyamaonsen_shiroyama_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.shiroyamaonsen_shiroyama_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2167_0001.jpg"/></a><p class="feature">城山温泉（しろやま）<br>類似度:1.572</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yoshidaonsen_1_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="yoshidaonsen_1_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.yoshidaonsen_1_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2190_0001.jpg"/></a><p class="feature">吉田温泉（鹿児島県）（よしだ）<br>類似度:1.522</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:1.506</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="usaonsen_usa_ooita">{% csrf_token %}<input name="id2" type="hidden" value="usaonsen_usa_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.usaonsen_usa_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1660_0001.jpg"/></a><p class="feature">宇佐温泉（うさ）<br>類似度:1.496</br></p></div></form>
+{% endblock content %}

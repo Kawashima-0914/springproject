@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">麒麟山温泉（きりんざん）</h2><h3 class="icon"> 所在地：新潟県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0579_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">磐越自動車道「津川IC」より車で約5～10分、JR「鹿瀬駅」より徒歩約20分。麒麟山の麓、雄大な阿賀野川に面した閑静な温泉地。周辺の風景は「欧州のライン川」や「日本のスイス」と謳われるほどの絶景で、阿賀野川ラインとも呼ばれる。 雪の降り積もる美しい冬景色は、地元出身の作家・藤沢周によって小説に描かれた事も。麒麟山の渓谷美は「日本の桂林」とも呼ばれるほどの絶景。川沿いの宿からは、その雄大な自然景観が手に取るように一望できる。 また、この地に古くから伝わる「狐火伝説」にちなんだ「狐の嫁入り行列」は阿賀町のユニークな人気イベント。108匹の狐に扮した嫁入り行列が町を練り歩き、豊作を祈願する。
+麒麟山の麓、阿賀野川沿いに湧き出す温泉。大河のようにゆったりと流れる阿賀野川に沿って温泉宿が建つ。慢性皮膚病・婦人病・神経痛・筋肉痛などに効能があるといわれる塩化物・硫酸塩泉の透明な湯に浸かると、日頃の疲れがすーっと抜け出してゆくよう。露天風呂からは飯豊連峰と阿賀野川が織りなす景色を望む事ができ、感動のあまりその絶景を作品のモチーフに用いた画家も多いとか。春夏の緑、秋の紅葉、冬の雪景色など、四季折々の自然美は秀逸。また、朝に阿賀野川を包む川霧も神秘的な美しさで、温泉情緒をさらに豊かなものにしてくれる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekowaisukougenonsen_nisekowaisukougen_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1877_0001.jpg"/></a><p class="feature">ニセコワイス高原温泉（にせこわいすこうげん）<br>類似度:2.277</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hoshikawaonsen_hoshikawa_nagano">{% csrf_token %}<input name="id2" type="hidden" value="hoshikawaonsen_hoshikawa_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.hoshikawaonsen_hoshikawa_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1952_0001.jpg"/></a><p class="feature">星川温泉（ほしかわ）<br>類似度:2.265</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ainonoonsen_ainono_akita">{% csrf_token %}<input name="id2" type="hidden" value="ainonoonsen_ainono_akita"/><div class="con2"><a href="../spring_each/" onclick="document.ainonoonsen_ainono_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1253_0001.jpg"/></a><p class="feature">あいのの温泉（あいのの）<br>類似度:2.210</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="oogoonsen_daigo_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="oogoonsen_daigo_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.oogoonsen_daigo_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0261_0001.jpg"/></a><p class="feature">大子温泉（だいご）<br>類似度:2.193</br></p></div></form>
+{% endblock content %}

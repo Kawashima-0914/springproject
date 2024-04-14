@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">上九の湯（かみくのゆ）</h2><h3 class="icon"> 所在地：山梨県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2367_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">甲府市の谷あいを流れる芦川沿いの温泉地「上九の湯」。市営の公共温浴施設「上九の湯ふれあいセンター」で入ることができる。地元の人向けの施設だが、市外・県外在住者も入れる。ゆったりした大浴場を中心に高い温浴効果が期待され、地元の人に愛される施設では、年間を通してハイキングツアーやグラウンドゴルフ大会など地元密着型のイベントが開催され、夏季はプールも開設される。徒歩1分程度のところには「上九ふれあい農産物直売所」があり、無農薬の朝採れ野菜や山菜、きのこなど新鮮な季節の食材を購入できる。また、地元の主婦が交代で作る「よもぎまんじゅう」や「山菜おこわ」も人気。
+より高い温浴効果が得られるとされる高アルカリ性の硫酸塩泉。神経痛、筋肉痛、打撲、慢性消化器病などに効能があるとされる。温泉スタンドが設置されており、10リットルから購入できるため、持ち帰って自宅で温泉を楽しむことができる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ashianonsen_ashiyasu_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="ashianonsen_ashiyasu_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.ashianonsen_ashiyasu_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1114_0001.jpg"/></a><p class="feature">芦安温泉（あしやす）<br>類似度:2.066</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sannaikyouonsen_sannaikyou_akita">{% csrf_token %}<input name="id2" type="hidden" value="sannaikyouonsen_sannaikyou_akita"/><div class="con2"><a href="../spring_each/" onclick="document.sannaikyouonsen_sannaikyou_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1787_0001.jpg"/></a><p class="feature">三内峡温泉（さんないきょう）<br>類似度:2.058</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kirinyamaonsen_kirinzan_niigata">{% csrf_token %}<input name="id2" type="hidden" value="kirinyamaonsen_kirinzan_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.kirinyamaonsen_kirinzan_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0579_0001.jpg"/></a><p class="feature">麒麟山温泉（きりんざん）<br>類似度:2.051</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="oomuraonsen_oomura_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="oomuraonsen_oomura_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.oomuraonsen_oomura_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2150_0001.jpg"/></a><p class="feature">大村温泉（おおむら）<br>類似度:2.044</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">あづまね温泉（あづまね）</h2><h3 class="icon"> 所在地：岩手県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1467_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">歴史的にも古く、平安末期から鎌倉初期に至るまで奥州藤原氏との関係も深く、遺跡・史跡や寺社仏閣も多く、落ち着いた街並が続く紫波町。五郎沼は四季の花を楽しめるスポット。 春は桜の名所として人気があり、例年7月中旬には古代蓮が咲き、冬は白鳥が飛来し、湖面を彩る様も美しい。 東根山の麓にある「あづまね温泉」は、目の前に特産の高級洋なし「ラ・フランス」の果樹園が広がるのどかな風景に囲まれた場所。 彼方には早池峰山を抱く北上山地が広がり、四季折々の表情を見せる美しい景観も楽しめる。宿泊施設では、山間に湧く天然温泉に浸かりながら、ゆったりとした時間を過ごせる。泉質はアルカリ成分を含む単純温泉でpH9.0の肌に優しい美人の湯ともいわれている。
+こんこんと湧く、肌に優しいアルカリ性温泉。日差しまぶしい露天風呂をはじめ、和洋の大浴場、岩風呂、檜風呂、サウナなど「美人の湯」が楽しめる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="hatorimizuumionsen_hatoriko_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="hatorimizuumionsen_hatoriko_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.hatorimizuumionsen_hatoriko_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1298_0001.jpg"/></a><p class="feature">羽鳥湖温泉（はとりこ）<br>類似度:2.338</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="igaonsen_iga_mie">{% csrf_token %}<input name="id2" type="hidden" value="igaonsen_iga_mie"/><div class="con2"><a href="../spring_each/" onclick="document.igaonsen_iga_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1470_0001.jpg"/></a><p class="feature">伊賀温泉（いが）<br>類似度:2.306</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuchikeikokuonsen_kikuchikeikoku_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuchikeikokuonsen_kikuchikeikoku_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuchikeikokuonsen_kikuchikeikoku_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1132_0001.jpg"/></a><p class="feature">菊池渓谷温泉（きくちけいこく）<br>類似度:2.277</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="uesaiharaonsen_kamisaibara_okayama">{% csrf_token %}<input name="id2" type="hidden" value="uesaiharaonsen_kamisaibara_okayama"/><div class="con2"><a href="../spring_each/" onclick="document.uesaiharaonsen_kamisaibara_okayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1292_0001.jpg"/></a><p class="feature">上齋原温泉（かみさいばら）<br>類似度:2.275</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">ニセコ東山温泉（にせこひがしやま）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1873_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、関節痛、疲労
+</td></tr></table></div><div class="con1"><p class="feature">温泉地には壮大なリゾートに位置するプレミアムマウンテンリゾート「ヒルトンニセコビレッジ（旧：ニセコ東山プリンスホテル）」がある。北海道西部にあるニセコ温泉郷の一つだ。夏期間のみオープンするニセコビレッジの自然体験グラウンド「ピュア」は、木から木へと吊り橋やロープを渡ったり、滑車の付いたワイヤーにぶら下がって空中飛行したり木々の中を探検するようなツリートレッキング、ジップラインでの空中飛行など緑の天井の中で林の中の冒険を楽しめるので満喫するにはぴったりの施設だ。冬は、降雪量が13mにも達するスキーリゾートとして国際的に有名。パウダースノーを求めて世界各地から大勢のスキーヤー＆スノーボーダーが訪れる。
+泉質はナトリウム-炭酸水素塩-硫酸塩泉。雄大な羊蹄山を眺めながら、のんびりと湯に浸かってリラックスが出来る。露天風呂は大きな池と隣接しており、開放感が抜群！疲労回復に効果の高い成分が多く含まれているため、ゴルフやスキーなどのリゾートアクティビティのあとは疲れた身体を優しく癒してみては。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekowaisukougenonsen_nisekowaisukougen_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1877_0001.jpg"/></a><p class="feature">ニセコワイス高原温泉（にせこわいすこうげん）<br>類似度:2.505</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekoannupurionsen_nisekoannupuri_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekoannupurionsen_nisekoannupuri_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekoannupurionsen_nisekoannupuri_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">ニセコアンヌプリ温泉（にせこあんぬぷり）<br>類似度:2.421</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekoougononsen_nisekokogane_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekoougononsen_nisekokogane_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekoougononsen_nisekokogane_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1876_0001.jpg"/></a><p class="feature">ニセコ黄金温泉（にせここがね）<br>類似度:2.413</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekoonsensato_niseko_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekoonsensato_niseko_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekoonsensato_niseko_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1074_0001.jpg"/></a><p class="feature">ニセコ温泉郷（にせこ）<br>類似度:2.406</br></p></div></form>
+{% endblock content %}

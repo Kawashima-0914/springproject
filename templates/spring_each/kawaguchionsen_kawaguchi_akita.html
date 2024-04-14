@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">川口温泉（かわぐち）</h2><h3 class="icon"> 所在地：秋田県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1336_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">奥羽山脈のうち、標高約1000mの山々といくつかの渓谷からなる、真昼山地から湧き上がる無色透明の天然温泉。 真木真昼県立自然公園の中にある一軒宿の「奥羽山荘」では、延長約7㎞の真木渓谷をはじめ、大自然の中に包まれた温泉保養施設である。敷地内には、国内屈指の広さを誇る専用コースでのびのびとプレーを楽しめるグランド・ゴルフ場がある。 その他にもバーベキューハウスや動物ふれあい広場などが併設されており、アウトドアも思う存分楽しむことができる。オリジナルの地ビールも製造しており、旬の味覚と一緒に美味しい地ビールが楽しめる。温泉は日帰り入浴で利用することもできるため、地元の人々の癒しの場ともなっている。
+無色透明のさらっとした肌触りの温泉で自然の空気を感じながら泡風呂を満喫。また手すりやスロープがついてバリアフリーも整っておりご高齢の方も安心して入浴できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:1.865</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:1.825</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ainonoonsen_ainono_akita">{% csrf_token %}<input name="id2" type="hidden" value="ainonoonsen_ainono_akita"/><div class="con2"><a href="../spring_each/" onclick="document.ainonoonsen_ainono_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1253_0001.jpg"/></a><p class="feature">あいのの温泉（あいのの）<br>類似度:1.803</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yudakawaonsen_yudagawa_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="yudakawaonsen_yudagawa_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.yudakawaonsen_yudagawa_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0854_0001.jpg"/></a><p class="feature">湯田川温泉（ゆだがわ）<br>類似度:1.775</br></p></div></form>
+{% endblock content %}

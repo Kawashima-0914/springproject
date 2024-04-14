@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">平戸温泉（ひらど）</h2><h3 class="icon"> 所在地：長崎県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0118_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">日本の陸路最西端にある長崎県平戸市。鮮やかな朱色の平戸大橋を渡って平戸島に入れば、そこは異国情緒あふれる城下町。かつて、日本最初の西洋貿易の舞台としてオランダ、イギリスなどと交易が行われた港街。 現代でも街の随所に異国文化の名残を残している。市内には復元された平戸オランダ商館や14のカトリック教会、世界遺産候補の潜伏キリシタン史跡が点在。 歴史的な魅力もさることながら、港町ならではの新鮮な魚介や貿易で伝わった南蛮菓子などが味わえるのも魅力の一つ。平戸温泉に入りながら、歴史探索や食の魅力もご堪能を。
+平戸島内の地下1200mから1日約288tのお湯が湧出しており、「平戸温泉給湯センター」から利用を希望するホテル、旅館、民宿などに配湯している。一般の方もお湯を購入することが可能。無色透明の湯で、保湿効果が高く、「美人の湯」と呼ばれることも。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.099</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hiradotabiraonsen_hiradotabira_nagasaki">{% csrf_token %}<input name="id2" type="hidden" value="hiradotabiraonsen_hiradotabira_nagasaki"/><div class="con2"><a href="../spring_each/" onclick="document.hiradotabiraonsen_hiradotabira_nagasaki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1264_0001.jpg"/></a><p class="feature">平戸たびら温泉（ひらどたびら）<br>類似度:2.068</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ushitakionsen_ushitaki_oosakafu">{% csrf_token %}<input name="id2" type="hidden" value="ushitakionsen_ushitaki_oosakafu"/><div class="con2"><a href="../spring_each/" onclick="document.ushitakionsen_ushitaki_oosakafu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1240_0001.jpg"/></a><p class="feature">牛滝温泉（うしたき）<br>類似度:2.044</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:2.040</br></p></div></form>
+{% endblock content %}

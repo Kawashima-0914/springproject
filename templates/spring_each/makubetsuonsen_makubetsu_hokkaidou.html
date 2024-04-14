@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">幕別温泉（まくべつ）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1500_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">モール温泉で有名な十勝平野の丘陵に湧く温泉地。帯広市内から車で約15分と、アクセスも良く、観光の拠点ともなっている。「十勝が丘公園」や「十勝ネイチャーセンター」など、北海道の大自然を堪能する観光スポッ トも近く、四季折々の風景が楽しめ、リゾート気分も満喫できる。 また「ばんえい競走」で有名な帯広競馬場、花畑牧場などが存在する。地下約600mから湧出した琥珀色のモール温泉が、源泉かけ流しで楽しめる温泉地で 、十勝平野を一望できる素晴らしい立地となっている。 高台にあるため、温泉宿からの地平線を眺めながらの夕景は素晴らしい。日本のウクライナと呼ばれるほどの肥沃な大地の十勝平野では、大地の恵みも豊富で、北海道グルメが楽しめるのも魅力。
+北海道遺産のモール温泉。豊富な湯量の自家源泉を持ち、全浴槽加水・加温・循環一切なし。良質な天然温泉をそのまま浴槽へ。100％かけ流し美肌の湯を堪能できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:1.910</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="chirihamayawaragionsen_chirihamayawaragi_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="chirihamayawaragionsen_chirihamayawaragi_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.chirihamayawaragionsen_chirihamayawaragi_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1201_0001.jpg"/></a><p class="feature">千里浜やわらぎ温泉（ちりはまやわらぎ）<br>類似度:1.883</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ashibetsuonsen_ashibetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="ashibetsuonsen_ashibetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.ashibetsuonsen_ashibetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">芦別温泉（あしべつ）<br>類似度:1.870</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:1.870</br></p></div></form>
+{% endblock content %}

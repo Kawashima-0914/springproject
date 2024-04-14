@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯郷温泉（ゆのごう）</h2><h3 class="icon"> 所在地：岡山県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0145_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">湯郷温泉は中国地方きってのいで湯の里「岡山県美作三湯」のひとつ。歴史は古く、いまから1200年ほど昔の平安時代、慈覚大円仁法師が白鷺に導かれ発見したと伝えられ、別名「鷺の湯（さぎのゆ）」と呼ばれる全国に知られた名湯だ。 温泉はナトリウム、カルシウム塩化物泉で、効能は消化器病、神経痛、リウマチ、貧血症、婦人病、皮膚病などに効果がある。美肌づくりの湯としても女性に人気の温泉だ。 また、美作牛をはじめ、旬の山の幸は美味。特に秋の味覚の王様“マツタケ”の産地として有名で、上品な香りとシャキシャキした歯ごたえがたまらない。
+吉野川にかかる鷺湯橋が入り口。湯郷を発見した円仁法師像がシンボル。約10軒ほどの旅館、ホテルが軒を並べる。ボウリング場やおもちゃの三館などがあり、その中の現代玩具博物館での工作教室をはじめガラス工房や陶芸窯元などの体験型の施設も点在する。毎年5月下旬頃から6月中旬頃まで徒歩で行ける大谷川にてホタルが舞い、10月中旬頃からは大山展望台より雲海を見ることもできる。冬の湯郷温泉は雪はほとんど降らない。料理は地元の山の幸に加え、瀬戸内海、日本海両方の海の幸が届けられる。公衆浴場は湯郷鷺温泉館や療養湯、足湯、市営露
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ureshinoonsen_ureshino_saga">{% csrf_token %}<input name="id2" type="hidden" value="ureshinoonsen_ureshino_saga"/><div class="con2"><a href="../spring_each/" onclick="document.ureshinoonsen_ureshino_saga.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0028_0001.jpg"/></a><p class="feature">嬉野温泉（うれしの）<br>類似度:1.894</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kaikeonsen_kaike_tottori">{% csrf_token %}<input name="id2" type="hidden" value="kaikeonsen_kaike_tottori"/><div class="con2"><a href="../spring_each/" onclick="document.kaikeonsen_kaike_tottori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0133_0001.jpg"/></a><p class="feature">皆生温泉（かいけ）<br>類似度:1.890</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yunokawaonsen_yunokawa_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="yunokawaonsen_yunokawa_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.yunokawaonsen_yunokawa_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0683_0001.jpg"/></a><p class="feature">湯の川温泉（ゆのかわ）<br>類似度:1.862</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sakunamionsen_sakunami_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sakunamionsen_sakunami_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sakunamionsen_sakunami_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0695_0001.jpg"/></a><p class="feature">作並温泉（さくなみ）<br>類似度:1.854</br></p></div></form>
+{% endblock content %}

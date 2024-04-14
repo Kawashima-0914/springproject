@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">剣淵温泉（けんぶち）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1861_0001.jpg"/><table><tr><th>効能</th><td>ラジウム泉
+</td></tr></table></div><div class="con1"><p class="feature">剣淵町の西端、桜岡公園の大自然に囲まれた温泉地である剣淵温泉。桜岡湖を一望できる美しい環境にある温泉施設「剣淵温泉レークサイド桜岡」が一軒宿。日帰り入浴も可能で、レストランやカラオケなども併設されている。剣淵町は「絵本の町」とも呼ばれ、温泉施設から車で10分程度の場所に、世界中の絵本約4万冊を収蔵した施設「絵本の館」もある。こちらでは絵本原画展や読み聞かせ、絵本作りなどの体験もできるため家族連れにもおすすめだ。ほかにも桜岡パークゴルフ場やビバアルパカ牧場など、周囲には観光やレジャーに最適なスポットが集まっている。
+神経痛、筋肉痛、関節痛、五十肩、冷え性、疲労回復などへの効能があるとされる単純温泉（弱アルカリ性低張性低温泉）。無色透明で無臭の湯は、女性や肌の弱い人も入りやすいpH7.8の弱アルカリ性。循環式なので飲泉はできない。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ryuuonsen_ryuu_hiroshima">{% csrf_token %}<input name="id2" type="hidden" value="ryuuonsen_ryuu_hiroshima"/><div class="con2"><a href="../spring_each/" onclick="document.ryuuonsen_ryuu_hiroshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1285_0001.jpg"/></a><p class="feature">龍温泉（りゅう）<br>類似度:2.171</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.162</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hamatsumeonsen_hamazume_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="hamatsumeonsen_hamazume_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.hamatsumeonsen_hamazume_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2115_0001.jpg"/></a><p class="feature">浜詰温泉（はまづめ）<br>類似度:2.156</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shibetsukawaonsen_shibetsugawa_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="shibetsukawaonsen_shibetsugawa_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.shibetsukawaonsen_shibetsugawa_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2048_0001.jpg"/></a><p class="feature">標津川温泉（しべつがわ）<br>類似度:2.122</br></p></div></form>
+{% endblock content %}

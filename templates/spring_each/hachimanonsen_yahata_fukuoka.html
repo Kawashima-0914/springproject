@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">八幡温泉（やはた）</h2><h3 class="icon"> 所在地：福岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1165_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">北九州都市高速「枝光IC」より車で約3分、北九州市の一大レジャー施設「スペースワールド」の程近くに湯けむりを上げる温泉地。昔から八幡製鉄所があったエリアとして栄え、現在でも第一高炉として活躍した「東 田第一高炉」は、八幡東区の歴史的シンボルとして親しまれている。 温泉地から北西に車で約15分の位置には“100万ドルの夜景”と称され、新日本三大夜景にも選ばれた「皿倉山」が鎮座。麓から山頂までは「帆柱ケ ーブルカー」で全長約1100mの空中散歩を楽しみたい。 四季の彩りを添えた大パノラマが広がり、夜の帳が下りたころには宝石箱をひっくり返したようなロマンティックな光景が楽しめる。同市内には、レトロな建物が集まった「門司港レトロ」や風格ある「小倉城」など見どころ満載。
+九州へのエントランス、北九州市に湧く一軒宿の温泉。「アクティブリゾーツ 福岡八幡」内の「八幡ひまわり温泉」に、無色透明・無味無臭の単純泉が注がれている。温泉付きホテルが少ない北九州市の中で貴重な存在と言えるだろう。サウナルームを併設した広い大浴場は旅の疲れを癒す格好の場。心ゆくまでゆったりと温泉を楽しみたい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="hachimanhimawarionsen_yahatahimawari_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="hachimanhimawarionsen_yahatahimawari_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.hachimanhimawarionsen_yahatahimawari_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0950_0001.jpg"/></a><p class="feature">八幡ひまわり温泉（やはたひまわり）<br>類似度:2.342</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="genkaisatsukionsen_genkaisatsuki_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="genkaisatsukionsen_genkaisatsuki_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.genkaisatsukionsen_genkaisatsuki_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0949_0001.jpg"/></a><p class="feature">玄海さつき温泉（げんかいさつき）<br>類似度:2.270</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.238</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="haratsuruonsen_harazuru_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="haratsuruonsen_harazuru_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.haratsuruonsen_harazuru_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0628_0001.jpg"/></a><p class="feature">原鶴温泉（はらづる）<br>類似度:2.234</br></p></div></form>
+{% endblock content %}

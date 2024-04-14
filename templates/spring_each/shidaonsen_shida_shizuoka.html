@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">志太温泉（しだ）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1948_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">藤枝の郊外にありながら、地元の人でも知っている人はわずかという町の中の秘湯。現在は「潮生館」一軒のみが営業している。全８室の小さな宿には、浴室が２つも。温泉にこだわるご主人の心意気を感じられる。「割烹旅館」というだけあって、料理も趣向を凝らしたものが味わえる。本館は明治中期、離れの香梅荘も昭和初期に建てられたもので、木造のぬくもりある建物は登録文化財にも指定されている。犬養毅や後藤新平など、数多くの政財界の中心的人物が疲れを癒したという歴史ある温泉地。伝統と職人の心意気を引き継ぎながら、心の底から落ち着ける空間を作り上げている。
+昔から存在が知られていたという塩分を含む冷鉱泉を沸かして使っている。泥の層に含まれるガスと塩分が地下水に溶け出し、鉱泉として湧いているのだという。古くから皮膚病への効果があると言われており、明治時代に宿を構えて本格的に温泉地としての歴史を歩み始めた。敷地内で自噴する源泉を、鮮度を損なわぬよう加温してかけ流して使っているのも嬉しい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="iwamuroonsen_iwamuro_niigata">{% csrf_token %}<input name="id2" type="hidden" value="iwamuroonsen_iwamuro_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.iwamuroonsen_iwamuro_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0570_0001.jpg"/></a><p class="feature">岩室温泉（いわむろ）<br>類似度:2.312</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.295</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ashibetsuonsen_ashibetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="ashibetsuonsen_ashibetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.ashibetsuonsen_ashibetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">芦別温泉（あしべつ）<br>類似度:2.291</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nashikionsen_nashigi_gunma">{% csrf_token %}<input name="id2" type="hidden" value="nashikionsen_nashigi_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.nashikionsen_nashigi_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2078_0001.jpg"/></a><p class="feature">梨木温泉（なしぎ）<br>類似度:2.286</br></p></div></form>
+{% endblock content %}

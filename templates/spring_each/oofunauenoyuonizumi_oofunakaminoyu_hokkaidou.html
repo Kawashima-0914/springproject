@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">大船上の湯温泉（おおふなかみのゆ）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1695_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、硫黄泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、関節痛、疲労、婦人病、冷え性、高血圧、動脈硬化、皮膚病、糖尿病、痔疾、美肌など
+</td></tr></table></div><div class="con1"><p class="feature">本州と北海道を結ぶ函館市。道南地域の中心都市で観光名所も多いことから、主に本州からの北海道旅行の拠点として、毎年約500万人近い観光客が訪れる人気の観光地。 箱館山の夜景、歴史を感じる町歩き、海鮮丼や函館ラーメンなどのご当地グルメなど、魅力は尽きることがない。温泉は市内に数カ所あるが、大船上の湯温泉は函館港のちょうど反対側、内浦湾に面する大船町に湧く温泉だ。 日帰り温泉と宿泊施設用温泉は別棟になっており、日帰り温泉・露天風呂は硫黄泉、宿泊施設用温泉・露天風呂・内風呂は含重曹食塩泉と二種類の源泉かけ流しが楽しめる。山間部のこじんまりとした温泉宿で、捕れたての海の幸とともにたっぷりの湯浴みを堪能したい。
+泉温は57.1℃。加熱なし（加水あり）源泉100％のかけ流しの天然温泉。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="mitsunorionsen_koutoku_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="mitsunorionsen_koutoku_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.mitsunorionsen_koutoku_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0494_0001.jpg"/></a><p class="feature">光徳温泉（こうとく）<br>類似度:2.633</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.612</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="chuuzenjionsen_chuuzenji_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="chuuzenjionsen_chuuzenji_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.chuuzenjionsen_chuuzenji_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0091_0001.jpg"/></a><p class="feature">中禅寺温泉（ちゅうぜんじ）<br>類似度:2.488</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenkeseonsen_amagase_ooita">{% csrf_token %}<input name="id2" type="hidden" value="tenkeseonsen_amagase_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.tenkeseonsen_amagase_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0010_0001.jpg"/></a><p class="feature">天ヶ瀬温泉（あまがせ）<br>類似度:2.459</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">板留温泉（いたどめ）</h2><h3 class="icon"> 所在地：青森県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>神経痛、関節痛、冷え性、皮膚病、美肌
+</td></tr></table></div><div class="con1"><p class="feature">歴史ある湯治場のそろう「黒石温泉郷」の一角をなす温泉地。浅瀬石川のほとりに6軒の宿が立ち並ぶ、小さな温泉地だ。「板留」の名は、約400年前の江戸時代初期に川狩りに出かけた花山院忠長が川に湧き出す温泉に入ろうとした際に村人に川の水を板で留めさせたことによるという。徒歩10分ほどのところにある「中野もみじ山」は、坂上田村麻呂が蝦夷平定のときに建立したという神社の境内にある紅葉の景勝地。津軽藩主が京都から取り寄せたという様々な品種のモミジの木々が山を彩るさまは「小嵐山」とも呼ばれる。紅葉の時期は10月中旬～下旬で、ライトアップされた山を見られるのは宿泊してこその特権だろう。
+川の水を留めた伝説があるほどで、源泉温度は60℃弱と高くはない。泉質右はまろやかな硫酸塩泉・塩化物泉で、昔から「漆かぶれ」に効くといわれてきた。肌になじむ無色透明のマイルドなお湯で、炭酸カルシウムやメタケイ酸などの美肌成分も含まれている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kuroishionsensato_kuroishi_aomori">{% csrf_token %}<input name="id2" type="hidden" value="kuroishionsensato_kuroishi_aomori"/><div class="con2"><a href="../spring_each/" onclick="document.kuroishionsensato_kuroishi_aomori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">黒石温泉郷（くろいし）<br>類似度:2.476</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinosekionsensato_ichinoseki_iwate">{% csrf_token %}<input name="id2" type="hidden" value="ichinosekionsensato_ichinoseki_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.ichinosekionsensato_ichinoseki_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1076_0001.jpg"/></a><p class="feature">一関温泉郷（いちのせき）<br>類似度:2.468</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hatonoyuonizumi_hatonoyu_gunma">{% csrf_token %}<input name="id2" type="hidden" value="hatonoyuonizumi_hatonoyu_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.hatonoyuonizumi_hatonoyu_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2080_0001.jpg"/></a><p class="feature">鳩の湯温泉（はとのゆ）<br>類似度:2.415</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yumuraonsen_yumura_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="yumuraonsen_yumura_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.yumuraonsen_yumura_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0738_0001.jpg"/></a><p class="feature">湯村温泉（ゆむら）<br>類似度:2.408</br></p></div></form>
+{% endblock content %}

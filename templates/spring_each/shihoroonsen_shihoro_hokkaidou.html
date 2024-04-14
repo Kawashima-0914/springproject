@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">しほろ温泉（しほろ）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1501_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">手つかずの天然広葉樹林が広がる、自然豊かな地に佇むしほろ温泉。道の駅に併設されている施設「しほろ温泉プラザ緑風」が一軒宿だ。日帰り入浴も可能で、国際公認パークゴルフ場やレストランといったのレジャー施設、地場産品の販売コーナーなどがあり、地元民・リピーターに愛されている、しほろ温泉は茶褐色のモール温泉が大きな特徴で、美肌の湯としても知られ女性に人気。周囲の自然を思い切り堪能したいなら、士幌高原ヌプカの里での天体観測や、夏場は朝陽公園（ほたるの里）でホタルの観賞をするのがおすすめだ。
+泉質は神経痛、筋肉痛、慢性皮膚病、慢性婦人病、切り傷などに効能があるとされるナトリウム塩化物泉。大きな特徴は北海道遺産としても指定されている植物性の「モール温泉（モール泉）」であること。琥珀色の湯は有機物を多く含み、肌への刺激が少ないのが特徴で、更に石鹸効果が強く肌がスベスベになる美肌の湯として知られている。天然の保湿成分も高く、女性にうれしい湯となっている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="oogoonsen_daigo_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="oogoonsen_daigo_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.oogoonsen_daigo_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0261_0001.jpg"/></a><p class="feature">大子温泉（だいご）<br>類似度:2.191</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="uenoyuonsenkyou_kaminoyu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="uenoyuonsenkyou_kaminoyu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.uenoyuonsenkyou_kaminoyu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2084_0001.jpg"/></a><p class="feature">上の湯温泉郷（かみのゆ）<br>類似度:2.191</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="enakyouonsen_enakyou_gifu">{% csrf_token %}<input name="id2" type="hidden" value="enakyouonsen_enakyou_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.enakyouonsen_enakyou_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0361_0001.jpg"/></a><p class="feature">恵那峡温泉（えなきょう）<br>類似度:2.186</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuminamionsen_kikunan_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuminamionsen_kikunan_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuminamionsen_kikunan_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0196_0001.jpg"/></a><p class="feature">菊南温泉（きくなん）<br>類似度:2.165</br></p></div></form>
+{% endblock content %}

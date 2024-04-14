@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">下諏訪温泉諏訪湖温泉郷（しもすわ（すわこ））</h2><h3 class="icon"> 所在地：長野県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0547_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>神経痛、関節痛、疲労、皮膚病など
+</td></tr></table></div><div class="con1"><p class="feature">長野県のほぼ中央、南に諏訪湖、北に筑摩山地を望んで広がる温泉地。全国に10000社余りの分社を持つ諏訪大社下社の門前町として発展してきた。下杜秋宮の鳥居をくぐると樹齢600年以上の御神木「寝入りの杉」がそびえ立つ。 温泉街には9カ所の共同浴場が点在。昭和初期に建てられた「新湯」や入り口に番台が残る「菅野温泉」など、古き良き時代の銭湯を思わせる佇まいが懐かしい風情を醸し出す。また、江戸時代には中山道随一の温泉宿場町として栄えたため、数多くの文人墨客もこの地を訪れたとか。 島崎藤村や芥川龍之介らが投宿したという歴史ある宿が今も残る。伝統と格式、文学と歴史が薫る温泉地をゆっくりと散歩してみるのもよい。
+中山道と甲州街道が合流する交通の要衝として江戸時代から栄えた中山道唯一の温泉地。『古事記』には、諏訪大社上社の女神・八坂刀売神が下社に渡る際に、持っていた綿からこぼれた湯が温泉になったという「綿の湯伝説」の記述があり、開湯は約2000年前という説が残る。現在の共同浴場「旦過の湯」の源泉は、鎌倉時代に寺湯として使われていたとか。源泉は全部で20カ所、毎分約5100Lもの豊富な湯量が自慢。泉質も、肌に優しい単純温泉、動脈硬化の予防に効く硫酸塩泉、保温力の高い塩化物泉など各源泉により異なる。温泉街にある10カ所
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="yamashiroonsen_1_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="yamashiroonsen_1_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.yamashiroonsen_1_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0143_0001.jpg"/></a><p class="feature">山代温泉（加賀温泉郷）（やましろ（かが））<br>類似度:2.369</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sengokuharaubakoonsen_sengokuharaubako_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="sengokuharaubakoonsen_sengokuharaubako_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.sengokuharaubakoonsen_sengokuharaubako_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0344_0001.jpg"/></a><p class="feature">仙石原姥子温泉（せんごくはらうばこ）<br>類似度:2.300</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kuroishionsensato_kuroishi_aomori">{% csrf_token %}<input name="id2" type="hidden" value="kuroishionsensato_kuroishi_aomori"/><div class="con2"><a href="../spring_each/" onclick="document.kuroishionsensato_kuroishi_aomori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">黒石温泉郷（くろいし）<br>類似度:2.271</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sakunamionsen_sakunami_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sakunamionsen_sakunami_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sakunamionsen_sakunami_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0695_0001.jpg"/></a><p class="feature">作並温泉（さくなみ）<br>類似度:2.227</br></p></div></form>
+{% endblock content %}

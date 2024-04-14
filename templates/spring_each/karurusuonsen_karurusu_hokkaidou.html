@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">カルルス温泉（かるるす）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0651_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">賑やかな登別温泉と対照的に、奥座敷と呼ばれるにふさわしく、落ち着いてゆったりとくつろげる湯治場としても名高い温泉地。 三方を高い山々に囲まれた峡谷にあり、自然豊かで静寂に満ちた環境は旅人の心を和ませてくれる雰囲気だ。現在は旅館が4軒ある。 登別温泉からは約8㎞、バスで約25分なので、観光をしたり両方の温泉巡りをするお客さんも多い。すぐ隣にはサンライバスキー場があり、冬にはスキーを楽しんだ後に温泉に浸かって体を癒すことができる。
+明治32年に開湯、薬効の素晴らしさから昭和32年に北海道で最初の国民保養温泉地として指定された温泉。ヨーロッパの有名な温泉、チェコのカルルスバード（現在はカルロビ・バリ）の泉質に非常によく似ていることからその名が付いた。泉質は単純泉で無色透明、無味無臭。肌触りが柔らかく刺激もない。主な成分は硫酸ナトリウム、硫酸カルシウム、重曹、塩化ナトリウムからなり、泉温は約55～65℃。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ichinomataonsen_ichinomata_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="ichinomataonsen_ichinomata_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.ichinomataonsen_ichinomata_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1123_0001.jpg"/></a><p class="feature">一の俣温泉（いちのまた）<br>類似度:1.715</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hiekionsen_hinoemata_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="hiekionsen_hinoemata_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.hiekionsen_hinoemata_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1086_0001.jpg"/></a><p class="feature">檜枝岐温泉（ひのえまた）<br>類似度:1.708</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ikenoheionizumi_ikenotaira_nagano">{% csrf_token %}<input name="id2" type="hidden" value="ikenoheionizumi_ikenotaira_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.ikenoheionizumi_ikenotaira_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0568_0001.jpg"/></a><p class="feature">池の平温泉（いけのたいら）<br>類似度:1.702</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="akanmizuumionsen_akanko_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="akanmizuumionsen_akanko_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.akanmizuumionsen_akanko_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1545_0001.jpg"/></a><p class="feature">阿寒湖温泉（あかんこ）<br>類似度:1.698</br></p></div></form>
+{% endblock content %}

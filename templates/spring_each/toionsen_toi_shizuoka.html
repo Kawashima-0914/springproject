@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">土肥温泉（とい）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0095_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>神経痛、リウマチ、筋肉痛、高血圧、動脈硬化
+</td></tr></table></div><div class="con1"><p class="feature">西伊豆の中でも最古、最大の温泉地。温泉や金が湧き、二毛作にも適した“肥沃な土地”を持つことから「土肥」という名称がついたといわれる。 温泉だけではなく、三方を天城山系に囲まれ西は駿河湾に面する風光明媚な自然、四季を通じた温暖な気候で若山牧水、川端康成など多くの文人にも愛された。また、土肥を訪れたならばぜひとも拝みたいのが美しい夕日。 ギネスブックに登録されている「世界一の花時計」でも有名な松原公園から眺める黄金の夕日はまさに絶景。また、駿河湾で獲れるイセエビやサザエ、アワビといった新鮮な魚介類もぜひ味わいたい。
+江戸時代、土肥金山の採掘中に湧き出したと伝えられているのが土肥温泉発祥の湯“まぶ湯”。病気にかかった隣仙大和尚が、安楽寺の薬師如来尊に21日間お参りをしたら、夢で“汝にいで湯を授けん”というお告げがあり、岩の間から湧く温泉に入浴したところ病気が治ったという。現在も安楽寺の境内でまぶ湯の見学ができる（入浴は不可）。源泉は6本と少ないが、その効能の豊富さで有名。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.456</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yaharaonsen_yawara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="yaharaonsen_yawara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.yaharaonsen_yawara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1900_0001.jpg"/></a><p class="feature">矢原温泉（やわら）<br>類似度:2.404</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:2.389</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kuroisoonsen_kuroiso_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="kuroisoonsen_kuroiso_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.kuroisoonsen_kuroiso_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1702_0001.jpg"/></a><p class="feature">黒磯温泉（くろいそ）<br>類似度:2.368</br></p></div></form>
+{% endblock content %}

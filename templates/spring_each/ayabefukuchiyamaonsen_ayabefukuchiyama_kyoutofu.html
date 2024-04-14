@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">綾部・福知山温泉（あやべふくちやま）</h2><h3 class="icon"> 所在地：京都府</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1713_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">京都府北部の中丹地方に属する京都府福知山市。数々の出土品より縄文時代から人が居住していた様子がうかがえるが、特に発展を見せたのが16世紀に入ってから。 明智光秀が当地の有力豪族を倒し、その城を福知山城と名を変えて手中に納め城下町としたことが現在の福知山市を形成している。旧市街地は江戸時代の町割りが今もそのまま残っており、昔の面影を今に感じることができる。 藍染め、丹波うるし、黒大豆、丹波栗などの全国的に有名な特産品も多い。綾部・福知山温泉は、工業団地が立ち並ぶエリアにある温泉で、近隣ホテルはビジネス・リゾート・宴会・婚礼などで利用されている。塩化物泉なので切り傷などの治癒にも効果が期待できる。良質な泉質のなめらかな温泉でゆっくり湯浴みを堪能したい。
+自家源泉、加水なし、加温あり、循環あり、ろ過あり。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kashiharanoyu_kashiharanoyu_nara">{% csrf_token %}<input name="id2" type="hidden" value="kashiharanoyu_kashiharanoyu_nara"/><div class="con2"><a href="../spring_each/" onclick="document.kashiharanoyu_kashiharanoyu_nara.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1616_0001.jpg"/></a><p class="feature">かしはらの湯（かしはらのゆ）<br>類似度:2.075</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kuroisoonsen_kuroiso_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="kuroisoonsen_kuroiso_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.kuroisoonsen_kuroiso_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1702_0001.jpg"/></a><p class="feature">黒磯温泉（くろいそ）<br>類似度:2.074</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kishuuonsen_kishuu_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="kishuuonsen_kishuu_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.kishuuonsen_kishuu_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1570_0001.jpg"/></a><p class="feature">紀州温泉（きしゅう）<br>類似度:2.055</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="chirihamayawaragionsen_chirihamayawaragi_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="chirihamayawaragionsen_chirihamayawaragi_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.chirihamayawaragionsen_chirihamayawaragi_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1201_0001.jpg"/></a><p class="feature">千里浜やわらぎ温泉（ちりはまやわらぎ）<br>類似度:2.032</br></p></div></form>
+{% endblock content %}

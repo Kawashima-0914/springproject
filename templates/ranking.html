@@ -1,0 +1,197 @@
+{% load mathfilters %}
+{% load static %}
+
+<!DOCTYPE HTML>
+
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>温泉ガイド</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="../static/shasin2.ico" rel="shortcut icon">
+</head>
+
+<body id="ranking">
+
+    <header>
+        <div class="logo">
+            <a href="/startspring/"><img src="../static/images/logo.jpg"></a>
+        </div>
+        <nav>
+            <ul class="global-nav">
+                <li>Ranking</li>
+                <li><a href="springlist.html">SpringList</a></li>
+                <li><a href="qualityexp.html">QualityExp</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="wrap">
+        <div class="main-center clearbox">
+            <h1>Ranking</h1>
+            <p>温泉地のランキングのページです。
+                <br>総合ランキング、雰囲気のランキング、食べ物ランキング、泉質ランキングの４つがあります。
+            </p>
+            <section class="access clearfix">
+                <h2 class="icon">総合ランキング</h2>
+                <table id="table1">
+                    {% for item in tweets|slice:":153" %}
+                    {% if forloop.counter0|mod:3 == 0 %} <tr> {% endif %}
+                        {% if forloop.counter0 == 0 or forloop.counter0 == 1 or forloop.counter0 == 2 %}
+                        <td align="center">
+                            <b>{{item}}</b>
+                        </td>
+                        {% else %}
+                        <td align="center">
+                            {{item}}
+                        </td>
+                        {% endif %}
+                        {% if forloop.counter0|mod:3 == 2 %}
+                    </tr> {% endif %}
+                    {% endfor %}
+                </table>
+                <table id="table2">
+                    {% for item in tweets|slice:"153:306" %}
+                    {% if forloop.counter0|mod:3 == 0 %} <tr> {% endif %}
+                        {% if forloop.counter0 == 0 or forloop.counter0 == 1 or forloop.counter0 == 2 %}
+                        <td align="center">
+                            <b>{{item}}</b>
+                        </td>
+                        {% else %}
+                        <td align="center">
+                            {{item}}
+                        </td>
+                        {% endif %}
+                        {% if forloop.counter0|mod:3 == 2 %}
+                    </tr> {% endif %}
+                    {% endfor %}
+                </table>
+            </section>
+        </div>
+
+        <div class="main-center clearbox">
+            <section class="access clearfix">
+                <h2 class="icon">雰囲気ランキング</h2>
+                <table id="table1">
+                    {% for item in tweets|slice:"306:459" %}
+                    {% if forloop.counter0|mod:3 == 0 %} <tr> {% endif %}
+                        {% if forloop.counter0 == 0 or forloop.counter0 == 1 or forloop.counter0 == 2 %}
+                        <td align="center">
+                            <b>{{item}}</b>
+                        </td>
+                        {% else %}
+                        <td align="center">
+                            {{item}}
+                        </td>
+                        {% endif %}
+                        {% if forloop.counter0|mod:3 == 2 %}
+                    </tr> {% endif %}
+                    {% endfor %}
+                </table>
+                <table id="table2">
+                    {% for item in tweets|slice:"459:612" %}
+                    {% if forloop.counter0|mod:3 == 0 %} <tr> {% endif %}
+                        {% if forloop.counter0 == 0 or forloop.counter0 == 1 or forloop.counter0 == 2 %}
+                        <td align="center">
+                            <b>{{item}}</b>
+                        </td>
+                        {% else %}
+                        <td align="center">
+                            {{item}}
+                        </td>
+                        {% endif %}
+                        {% if forloop.counter0|mod:3 == 2 %}
+                    </tr> {% endif %}
+                    {% endfor %}
+                </table>
+            </section>
+        </div>
+
+        <div class="main-center clearbox">
+            <section class="access clearfix">
+                <h2 class="icon">食べ物ランキング</h2>
+                <table id="table1">
+                    {% for item in tweets|slice:"612:765" %}
+                    {% if forloop.counter0|mod:3 == 0 %} <tr> {% endif %}
+                        {% if forloop.counter0 == 0 or forloop.counter0 == 1 or forloop.counter0 == 2 %}
+                        <td align="center">
+                            <b>{{item}}</b>
+                        </td>
+                        {% else %}
+                        <td align="center">
+                            {{item}}
+                        </td>
+                        {% endif %}
+                        {% if forloop.counter0|mod:3 == 2 %}
+                    </tr> {% endif %}
+                    {% endfor %}
+                </table>
+                <table id="table2">
+                    {% for item in tweets|slice:"765:918" %}
+                    {% if forloop.counter0|mod:3 == 0 %} <tr> {% endif %}
+                        {% if forloop.counter0 == 0 or forloop.counter0 == 1 or forloop.counter0 == 2 %}
+                        <td align="center">
+                            <b>{{item}}</b>
+                        </td>
+                        {% else %}
+                        <td align="center">
+                            {{item}}
+                        </td>
+                        {% endif %}
+                        {% if forloop.counter0|mod:3 == 2 %}
+                    </tr> {% endif %}
+                    {% endfor %}
+                </table>
+            </section>
+        </div>
+
+        <div class="main-center clearbox">
+            <section class="access clearfix">
+                <h2 class="icon">泉質ランキング</h2>
+                <table id="table1">
+                    {% for item in tweets|slice:"918:1071" %}
+                    {% if forloop.counter0|mod:3 == 0 %} <tr> {% endif %}
+                        {% if forloop.counter0 == 0 or forloop.counter0 == 1 or forloop.counter0 == 2 %}
+                        <td align="center">
+                            <b>{{item}}</b>
+                        </td>
+                        {% else %}
+                        <td align="center">
+                            {{item}}
+                        </td>
+                        {% endif %}
+                        {% if forloop.counter0|mod:3 == 2 %}
+                    </tr> {% endif %}
+                    {% endfor %}
+                </table>
+                <table id="table2">
+                    {% for item in tweets|slice:"1071:1224" %}
+                    {% if forloop.counter0|mod:3 == 0 %} <tr> {% endif %}
+                        {% if forloop.counter0 == 0 or forloop.counter0 == 1 or forloop.counter0 == 2 %}
+                        <td align="center">
+                            <b>{{item}}</b>
+                        </td>
+                        {% else %}
+                        <td align="center">
+                            {{item}}
+                        </td>
+                        {% endif %}
+                        {% if forloop.counter0|mod:3 == 2 %}
+                    </tr> {% endif %}
+                    {% endfor %}
+                </table>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <small>(C)090-8405-7088
+        </small>
+    </footer>
+</body>
+
+</html>

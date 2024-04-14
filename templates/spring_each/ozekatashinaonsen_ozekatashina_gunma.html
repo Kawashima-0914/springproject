@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">尾瀬片品温泉（おぜかたしな）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1565_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">日本百名山に選定されている至仏山や燧ヶ岳など、2000m級の山々からなる山岳地帯に囲まれた大湿原で名高い尾瀬国立公園。その玄関口にあたるこの地は標高850～1600mの避暑地である。 付近には吹割の滝や片品渓谷など自然の魅力あふれる名所も多い。尾瀬岩鞍ゆり園は夏になると広大なゲレンデに約300万輪ものゆりが咲き乱れる風景が人気を集めている。早咲きの「すかしゆり」は例年7月中旬から、遅咲きの「ハ イブリッド系」は例年8月からが見頃。 また片品村内を南西に貫く片品川は利根川水系の一級河川で、そのほとりには旅館やホテルが立ち並び温泉地を形成している。地元の山菜や野菜など、豊饒な山の恵みに舌鼓を打った後は、「美肌の湯」で名高い当地の湯に浸かり身も心もリフレッシュしたい。
+pH値の高い「美肌の湯」
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="hikimikyouonsen_hikimikyou_shimane">{% csrf_token %}<input name="id2" type="hidden" value="hikimikyouonsen_hikimikyou_shimane"/><div class="con2"><a href="../spring_each/" onclick="document.hikimikyouonsen_hikimikyou_shimane.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1564_0001.jpg"/></a><p class="feature">匹見峡温泉（ひきみきょう）<br>類似度:1.420</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kawauraonsen_kawaura_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="kawauraonsen_kawaura_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.kawauraonsen_kawaura_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0840_0001.jpg"/></a><p class="feature">川浦温泉（かわうら）<br>類似度:1.417</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="roukamionsen_oigami_gunma">{% csrf_token %}<input name="id2" type="hidden" value="roukamionsen_oigami_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.roukamionsen_oigami_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0032_0001.jpg"/></a><p class="feature">老神温泉（おいがみ）<br>類似度:1.415</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ozetsuchishutsuonsen_ozetsuchide_gunma">{% csrf_token %}<input name="id2" type="hidden" value="ozetsuchishutsuonsen_ozetsuchide_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.ozetsuchishutsuonsen_ozetsuchide_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1246_0001.jpg"/></a><p class="feature">尾瀬・土出温泉（おぜ・つちで）<br>類似度:1.406</br></p></div></form>
+{% endblock content %}

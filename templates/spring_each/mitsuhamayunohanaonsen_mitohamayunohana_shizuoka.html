@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">三津浜・湯の花温泉（みとはま・ゆのはな）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1150_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">駿河湾に面する沼津の温泉地。近くには「あわしまマリンパーク」があり、年中多くの観光客でにぎわっており、海の生き物と直接触れ合えるコーナーが人気だ。また、太宰治が滞在したという宿もあり、資料館が併設されている。アニメ「ラブライブ！サンシャイン！！」の舞台となった場所でもあり、主人公の家のモデルとなった宿では実際に入浴することも可能。雄大な富士山と美しい海を背に、物語の世界へトリップするのもよいだろう。淡島神社の長い石段を駆け上がった後は、みかんサイダーを片手にゆっくり温泉に浸かりたい。
+泉質はアルカリ性単純泉。神経痛や関節痛にもよく、観光で一日歩き回った後、疲れてこわばった身体を癒してくれる。さらに、肌の角質を落としてくれる美肌効果も望める。どこからか聞こえる海の音は日頃の疲れを癒してくれるだろう。美しい駿河湾を眺めたあとは沼津の海の幸をたっぷりいただくのが至高。去りゆく漁船に向かってヨーソロー！
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.470</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="asamogawaurashimaonsen_asamogawaurashima_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="asamogawaurashimaonsen_asamogawaurashima_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.asamogawaurashimaonsen_asamogawaurashima_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0864_0001.jpg"/></a><p class="feature">浅茂川浦島温泉（あさもがわうらしま）<br>類似度:2.415</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="rurionsen_ruri_shiga">{% csrf_token %}<input name="id2" type="hidden" value="rurionsen_ruri_shiga"/><div class="con2"><a href="../spring_each/" onclick="document.rurionsen_ruri_shiga.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1326_0001.jpg"/></a><p class="feature">るり温泉（るり）<br>類似度:2.397</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kokonoeonsensato_kujuu_ooita">{% csrf_token %}<input name="id2" type="hidden" value="kokonoeonsensato_kujuu_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.kokonoeonsensato_kujuu_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0197_0001.jpg"/></a><p class="feature">九重温泉郷（くじゅう）<br>類似度:2.392</br></p></div></form>
+{% endblock content %}

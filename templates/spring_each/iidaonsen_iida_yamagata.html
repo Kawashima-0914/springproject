@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">飯田温泉（いいだ）</h2><h3 class="icon"> 所在地：山形県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2265_0001.jpg"/><table><tr><th>効能</th><td>ラジウム泉
+</td></tr></table></div><div class="con1"><p class="feature">山形駅に最も近い天然温泉「飯田温泉」。同名のビジネス旅館で入れる、非加水・非加熱の自家源泉掛け流し天然温泉で、24時間営業なので早朝でも深夜でもお風呂に入れる。宿泊者だけでなく温浴施設のみの日帰り利用もできる。昭和の風情が感じられる全室和室のビジネス旅館は、大きな窓から外が見えるシンプルな浴室も和風でくつろげる。飯田温泉がある山形市内は自然の観光スポットも多い。桜の名所として知られる薬師公園、夏はキャンプが楽しめる山形市西公園キャンプ場や古竜湖キャンプ場、秋の紅葉が美しい山寺やもみじ公園などが近く、ご当地グルメの人気店も周辺に点在している。
+メタケイ酸が多く含まれている、無色透明のナトリウム−硫酸塩泉。主に皮膚病やアトピー性皮膚炎、美肌効果など肌への効能が高いとされていることから、美肌の湯としても知られる。入ると肌がつるつる・すべすべになる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="esashionsen_esashi_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="esashionsen_esashi_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.esashionsen_esashi_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1863_0001.jpg"/></a><p class="feature">枝幸温泉（えさし）<br>類似度:1.555</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="wataseonsen_wataze_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="wataseonsen_wataze_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.wataseonsen_wataze_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1028_0001.jpg"/></a><p class="feature">渡瀬温泉（わたぜ）<br>類似度:1.543</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sanokawaonsen_sanogawa_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="sanokawaonsen_sanogawa_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.sanokawaonsen_sanogawa_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2361_0001.jpg"/></a><p class="feature">佐野川温泉（さのがわ）<br>類似度:1.540</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="naumanonsen_nauman_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="naumanonsen_nauman_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.naumanonsen_nauman_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1731_0001.jpg"/></a><p class="feature">ナウマン温泉（なうまん）<br>類似度:1.518</br></p></div></form>
+{% endblock content %}

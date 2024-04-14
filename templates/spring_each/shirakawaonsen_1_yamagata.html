@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">白川温泉（山形）（しらかわ）</h2><h3 class="icon"> 所在地：山形県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2267_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">白川ダムの湖畔に位置し、飯豊連峰と白川湖の四季折々の風景を楽しめるのが白川温泉だ。白川温泉を堪能できる一軒宿「白川荘」では、飯豊連峰や白川湖畔が一望。開放感ある湯浴みが、心身の疲れを癒やしてくれる。この温泉地のある飯豊町は、どぶろくの製造とその場で消費する場合に限った販売が許可された「どぶろく特区」に認定されており、白川荘でもどぶろくを製造している。温泉のあとは、宿で作るどぶろくと地物食材の郷土料理はいかがだろうか。すぐ近くには「白川ダム湖畔オートキャンプ場」や「白川湖岸公園」などがあり、キャンプはもちろん、公園ではパークゴルフなどのレジャーを体験できる。自然いっぱいの中で過ごした後の温泉はまた格別だ。
+単純冷鉱泉という珍しい泉質で、美人の湯とも呼ばれる。神経痛、筋肉痛、関節痛、五十肩、慢性消化器病、 痔疾、冷え症、疲労など幅広い効能が期待できる。湯治目的での入浴の場合は、入浴回数などの心得がある。はじめに確認しておくとよいだろう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="okuyamaonsen_okuyama_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="okuyamaonsen_okuyama_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.okuyamaonsen_okuyama_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">奥山温泉（おくやま）<br>類似度:1.461</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:1.452</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="minamigisoonsen_nagiso_nagano">{% csrf_token %}<input name="id2" type="hidden" value="minamigisoonsen_nagiso_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.minamigisoonsen_nagiso_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0957_0001.jpg"/></a><p class="feature">南木曽温泉（なぎそ）<br>類似度:1.452</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sagaenkouizumi_sagashio_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="sagaenkouizumi_sagashio_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.sagaenkouizumi_sagashio_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2061_0001.jpg"/></a><p class="feature">嵯峨塩鉱泉（さがしお）<br>類似度:1.451</br></p></div></form>
+{% endblock content %}

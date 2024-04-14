@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">鬼怒川温泉（きぬがわ）</h2><h3 class="icon"> 所在地：栃木県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0049_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">関東屈指の人気温泉地「鬼怒川温泉」。開湯は古く、江戸時代に日光詣の僧侶・大名のみが利用を許された由緒ある温泉地。明治時代の一般開放を経て、交通アクセスの便利さから関東有数の大型温泉地としての地位を確立。 周辺一帯が日光国立公園に指定されている鬼怒川の上流に広がり、その渓谷美を求めて、毎年多くの観光客が訪れる。鬼怒川温泉駅～鬼怒川公園駅までの約2㎞の間に鬼怒川を挟んで両岸に大型ホテル・温泉旅館が立ち並ぶ。 鬼怒川観光に欠かせないのは「鬼怒川ライン下り」。渓流沿いの奇岩や断崖絶壁、生い茂る新緑や紅葉を見上げる迫力は圧巻。急流や水しぶきなどスリル満点で、約40分間の船旅を船頭さんが愉しませてくれる。
+温泉の発見は江戸時代の1692年と伝えられる歴史ある名湯。当初は、日光御神領だったため大名や僧侶といった位の高い人しか入浴できなかったが、明治以降は一般にも開放。「滝の湯」の名で親しまれた。1927年に「鬼怒川温泉」に改名。昭和4年の東武日光線開通と同時に、関東でも有数の大温泉地へと成長した。「東京の奥座敷」として、今も変わらず多くの観光客を迎え続けている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kawauraonsen_kawaura_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="kawauraonsen_kawaura_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.kawauraonsen_kawaura_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0840_0001.jpg"/></a><p class="feature">川浦温泉（かわうら）<br>類似度:1.788</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="haratsuruonsen_harazuru_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="haratsuruonsen_harazuru_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.haratsuruonsen_harazuru_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0628_0001.jpg"/></a><p class="feature">原鶴温泉（はらづる）<br>類似度:1.767</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="fukurodaonsen_fukuroda_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="fukurodaonsen_fukuroda_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.fukurodaonsen_fukuroda_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0262_0001.jpg"/></a><p class="feature">袋田温泉（ふくろだ）<br>類似度:1.766</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yuseonsen_yuze_akita">{% csrf_token %}<input name="id2" type="hidden" value="yuseonsen_yuze_akita"/><div class="con2"><a href="../spring_each/" onclick="document.yuseonsen_yuze_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0786_0001.jpg"/></a><p class="feature">湯瀬温泉（ゆぜ）<br>類似度:1.757</br></p></div></form>
+{% endblock content %}

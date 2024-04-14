@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">小砂温泉（こいさご）</h2><h3 class="icon"> 所在地：栃木県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1816_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">「日本で最も美しい村連合」に加盟する山村・小砂地区にある温泉地。奈良時代から続く「小砂焼」は、「金結晶」と呼ばれる独自の風合いが特徴。陶器づくりの伝統と豊かな山林を活かした環境に配慮した「芸術の森」づくりも行われている。ほかにも、トレラン大会や農村体験などのイベントも精力的に行っており、早くから都市住民との関係を築いてきた。小砂温泉が属する馬頭温泉郷は5つの小さな温泉地の総称であり、温泉水を使ったフグの養殖はそのうちの1つで行われている。しかし、もちろん小砂でも「温泉トラフグ」の料理を味わえる。まろやかな地下水で炊き上げた地元の米とともに味わえば、都会での疲れを癒してくれるだろう。
+泉質はアルカリ性単純泉。地下1,200mから湧き出す温泉は、湯量豊富で適温のため、加水も加温もせず、源泉をそのままにかけ流している。新鮮な湯を引くのは「美玉の湯」一軒のみ。贅沢な湯使いによって、地元の人から遠方の温泉ファンまで幅広く愛されている。微量のラドンも含み、健康効果が期待できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="okutenryuufudouonsen_okutenryuufudou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="okutenryuufudouonsen_okutenryuufudou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.okutenryuufudouonsen_okutenryuufudou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0811_0001.jpg"/></a><p class="feature">奥天竜不動温泉（オクテンリュウフドウ）<br>類似度:1.877</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1120_0001.jpg"/></a><p class="feature">京都竹の郷温泉（きょうとたけのさと）<br>類似度:1.848</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="etchuutsurugionsen_etchuutsurugi_toyama">{% csrf_token %}<input name="id2" type="hidden" value="etchuutsurugionsen_etchuutsurugi_toyama"/><div class="con2"><a href="../spring_each/" onclick="document.etchuutsurugionsen_etchuutsurugi_toyama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1168_0001.jpg"/></a><p class="feature">越中つるぎ温泉（えっちゅうつるぎ）<br>類似度:1.845</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tanigawaonsen_1_gunma">{% csrf_token %}<input name="id2" type="hidden" value="tanigawaonsen_1_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.tanigawaonsen_1_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0402_0001.jpg"/></a><p class="feature">谷川温泉（水上温泉郷）（たにがわ（みなかみ））<br>類似度:1.833</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">竹倉温泉（たけくら）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1931_0001.jpg"/><table><tr><th>効能</th><td>含鉄泉
+</td></tr></table></div><div class="con1"><p class="feature">三島市の郊外にある温泉。田園地帯に一軒の日帰り施設があるのみの小さな温泉だが、「町中の秘湯」として多くのファンが訪れる。1935年の開湯以来多くの湯治客が病を癒したというが、かつてあった3軒の旅館はすべて店を畳み、そのうちの1軒「みなくち荘」は日帰り施設として営業を続けている。レトロな雰囲気の建物で、気さくな女将が出迎えてくれる。三嶋大社や三島スカイウォークなどの観光地も近く、散策で疲れた体を休めるのに立ち寄れるのがうれしい。往時の面影を感じられる休憩室で、おいしい湧き水を飲みながらくつろぐのがおすすめだ。
+「赤湯」と呼ばれる畑の真ん中から湧き出す源泉は、鉄分を含み湯船の中で赤褐色に濁る。冷鉱泉を加温した風呂では、泡付きもよい新鮮なお湯を味わえる。濃厚な温泉は特に痛みに効くと評判で、旅館をやっていた頃は関節痛やリウマチなどの療養に訪れる人が多かったという。美肌に良いとされるメタケイ酸も多く含まれている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="gatsunoyuonizumi_tsukinoyu_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="gatsunoyuonizumi_tsukinoyu_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.gatsunoyuonizumi_tsukinoyu_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1932_0001.jpg"/></a><p class="feature">月の湯温泉（つきのゆ）<br>類似度:1.663</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="akashionsen_akashi_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="akashionsen_akashi_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.akashionsen_akashi_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1126_0001.jpg"/></a><p class="feature">明石温泉（あかし）<br>類似度:1.635</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="esanonsensato_esan_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="esanonsensato_esan_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.esanonsensato_esan_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">恵山温泉郷（えさん）<br>類似度:1.598</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="aokikousen_aokikousen_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="aokikousen_aokikousen_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.aokikousen_aokikousen_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2355_0001.jpg"/></a><p class="feature">青木鉱泉（あおきこうせん）<br>類似度:1.597</br></p></div></form>
+{% endblock content %}

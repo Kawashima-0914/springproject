@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">月岡温泉（つきおか）</h2><h3 class="icon"> 所在地：新潟県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0589_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">新潟市街から車で約40分の場所に広がる「新潟の奥座敷」。硫黄の香りに包まれる温泉街には、大小12の旅館のほか飲食店や土産物屋などが立ち並ぶ。歩いて楽しい温泉地として様々なお店やスポットが誕生し、足湯も観光客に人気だ。 また、自称「日本一まずい温泉」が飲める手湯も話題となっている。飲んでみると、硫黄臭さが何とも言えないとのこと…。月丘温泉を訪れた際には、ぜひ一度試してみてほしい。 周辺には遠く五頭連峰や飯豊山地を望む田園地帯が広がっており、辺り一面を夕焼けに染める“田んぼに沈む夕陽”は一見の価値あり。
+月岡温泉は源泉51℃。泉質は「含硫黄ーナトリウムー塩化物温泉」で「美人になれる温泉」として名高く、入浴後は肌がつるつるになると評判で、長時間湯冷め知らずで過ごせることから「不老長寿の湯」としても親しまれている。開湯は1914年（大正4年）。石油の掘削中に突如源泉が湧出し、湯小屋が建てられたのが始まりとか。当時は家一軒ない場所だったが、効能の高さを聞きつけた多くの湯治客が鍋や米、野菜を持参して訪れるようになったという。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="unzenonsen_unzen_nagasaki">{% csrf_token %}<input name="id2" type="hidden" value="unzenonsen_unzen_nagasaki"/><div class="con2"><a href="../spring_each/" onclick="document.unzenonsen_unzen_nagasaki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0525_0001.jpg"/></a><p class="feature">雲仙温泉（うんぜん）<br>類似度:2.008</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:1.941</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="haratsuruonsen_harazuru_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="haratsuruonsen_harazuru_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.haratsuruonsen_harazuru_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0628_0001.jpg"/></a><p class="feature">原鶴温泉（はらづる）<br>類似度:1.932</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="futamionsen_futami_mie">{% csrf_token %}<input name="id2" type="hidden" value="futamionsen_futami_mie"/><div class="con2"><a href="../spring_each/" onclick="document.futamionsen_futami_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1280_0001.jpg"/></a><p class="feature">二見温泉（ふたみ）<br>類似度:1.923</br></p></div></form>
+{% endblock content %}

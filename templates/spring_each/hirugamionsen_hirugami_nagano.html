@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">昼神温泉（ひるがみ）</h2><h3 class="icon"> 所在地：長野県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0120_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">「日本一の星空」に認められた阿智川村にある昼神温泉。中央アルプス南端を流れる阿智川沿いに広がる山里の閑静な温泉地に「美肌の湯」と言われる程の良質な泉質を誇る。 約250年前の古文書に「近世温泉湧出して近郷の人湯治す」との記載がある古湯。その後、豊富な湯量と効能で年間60万人が訪れる信州屈指の大温泉地に成長。 平成18年、環境省認定「星が輝いて見える場所」第1位になっており、村の至る所で満天の星を眺めることができるため、ゆっくり泊まって星空も堪能したい。 季節には街道を彩る花桃が綺麗だ。自慢の温泉でのんびり過ごした翌日は、早起きをして昼神名物の朝市に出かけたい。毎朝6時から地元の人たちとの触れあいを楽しめる。
+約250年前の古文書にも登場する伊那谷随一の名湯。低い泉温が多い一帯では珍しく、43℃の熱いお湯が湧出。浴用、飲用ともに効能が豊かで、独特のとろりとした肌触りの温泉は「美人の湯」としても有名。昼神の由来は、日本武尊が口に噛んでいた蒜を投げつけて山の神を退治したとか、天思兼命が天照大御神を岩戸の中から導き出し昼を取り戻させたという伝説が残る。古代伝説が残る土地が育んできた名湯でゆっくり寛ぎたい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="haratsuruonsen_harazuru_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="haratsuruonsen_harazuru_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.haratsuruonsen_harazuru_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0628_0001.jpg"/></a><p class="feature">原鶴温泉（はらづる）<br>類似度:1.813</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okudougoonsen_okudougo_ehime">{% csrf_token %}<input name="id2" type="hidden" value="okudougoonsen_okudougo_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.okudougoonsen_okudougo_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0288_0001.jpg"/></a><p class="feature">奥道後温泉（おくどうご）<br>類似度:1.763</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinomataonsen_ichinomata_yamaguchi">{% csrf_token %}<input name="id2" type="hidden" value="ichinomataonsen_ichinomata_yamaguchi"/><div class="con2"><a href="../spring_each/" onclick="document.ichinomataonsen_ichinomata_yamaguchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1123_0001.jpg"/></a><p class="feature">一の俣温泉（いちのまた）<br>類似度:1.730</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:1.725</br></p></div></form>
+{% endblock content %}

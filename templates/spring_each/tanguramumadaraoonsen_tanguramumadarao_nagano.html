@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">タングラム斑尾温泉（たんぐらむまだらお）</h2><h3 class="icon"> 所在地：長野県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1046_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">上信越自動車道「信濃町IC」より車で約15分、「斑尾東急リゾートタングラム」内に温泉を楽しめる「タングラム斑尾温泉」がある。東急リゾートが開発した複合リゾート施設の一つで、斑尾高原スキー場に隣接。 スキー客が訪れる冬はもちろんのこと、春は山菜狩り、夏はトレッキングやパラグライダーに乗馬、野尻湖で水上スポーツを楽しむ人々など様々なアクティビティで賑わいを見せる。 秋は、見渡す限りすべての山々が鮮やかに色づく紅葉が見事。野尻湖を見下ろし、妙高山や黒姫山の雄大な自然を望むことができる「野尻湖テラス」も新設され、オールシーズンを楽しめるリゾートとなっている。
+信州斑尾山の北側、自然豊かな斑尾高原に広がる「タングラム斑尾高原リゾート」内の温泉。泉温は約25℃とやや低めで、加温・加水されて利用されている。内湯、サウナ、ジェット風呂、水風呂が揃い、露天風呂もあり。スキーやゴルフ、トレッキングで汗を流した後は、リゾート内の温泉でじっくり疲れを癒したい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shiganosatoonsen_shikanosato_ishikawa">{% csrf_token %}<input name="id2" type="hidden" value="shiganosatoonsen_shikanosato_ishikawa"/><div class="con2"><a href="../spring_each/" onclick="document.shiganosatoonsen_shikanosato_ishikawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0928_0001.jpg"/></a><p class="feature">志賀の郷温泉（しかのさと）<br>類似度:2.488</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kitahiroshimaonsen_kitahiroshima_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="kitahiroshimaonsen_kitahiroshima_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.kitahiroshimaonsen_kitahiroshima_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1279_0001.jpg"/></a><p class="feature">北広島温泉（きたひろしま）<br>類似度:2.450</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="odawaraonsen_odawara_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="odawaraonsen_odawara_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.odawaraonsen_odawara_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0767_0001.jpg"/></a><p class="feature">小田原温泉（おだわら）<br>類似度:2.414</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="choukaionsen_choukai_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="choukaionsen_choukai_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.choukaionsen_choukai_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1147_0001.jpg"/></a><p class="feature">鳥海温泉（ちょうかい）<br>類似度:2.410</br></p></div></form>
+{% endblock content %}

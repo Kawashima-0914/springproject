@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">小涌谷温泉（こわきだに）</h2><h3 class="icon"> 所在地：神奈川県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0348_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、塩化物泉
+</td></tr><tr><th>効能</th><td>神経痛、疲労など
+</td></tr></table></div><div class="con1"><p class="feature">箱根山の中腹、標高約600mの高地に位置する箱根十七湯のひとつ。季節になると数十種、約3万株のツツジとサツキが咲き誇る約2万坪の大庭園「蓬莱園」、浅間山と早雲山の美しい稜線など、見どころが各所に点在。 湯量豊富で良質な温泉が愉しめるのも大きな魅力である。木々に囲まれてゆっくりと湯に身体を沈めれば、心からリフレッシュできる事間違いなし。家族で楽しめる大規模なスパリゾート「箱根小涌園ユネッサン」があり、箱根の温泉をリードする存在として大きな注目を集めている。 四季折々の豊かな自然と、時代の先端を行く新感覚の施設の両方を有する小涌谷には、新旧の箱根の魅力が見事な調和を保ちながら共存している。
+古くは噴煙の上がる荒涼とした地形であり、かつては「大地獄（大涌谷）」に対して「小地獄」と呼ばれていた。江戸時代に発行された箱根の案内書「七湯の枝折」には、「地一めんに熱し巌の間より泥湯玉きりにゆる」と、その地獄のごとき景観が描写されている。明治6年、明治天皇の行幸に合わせて「小涌谷」と改名され、箱根への交通網が急速に発展した明治10年代後半以降、温泉場としての開発が開始された。源泉は全22本、湧出量は毎分約1819Lと豊富。泉質はアルカリ性単純温泉、単純温泉など4種類が味わえる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="hakoneyumotoonsen_hakoneyumoto_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="hakoneyumotoonsen_hakoneyumoto_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.hakoneyumotoonsen_hakoneyumoto_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0356_0001.jpg"/></a><p class="feature">箱根湯本温泉（はこねゆもと）<br>類似度:2.785</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="onikoubeonsen_1_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="onikoubeonsen_1_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.onikoubeonsen_1_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0691_0001.jpg"/></a><p class="feature">鬼首温泉（鳴子温泉郷）（おにこうべ（なるこ））<br>類似度:2.730</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hirayuonsen_1_gifu">{% csrf_token %}<input name="id2" type="hidden" value="hirayuonsen_1_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.hirayuonsen_1_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0119_0001.jpg"/></a><p class="feature">平湯温泉（奥飛騨温泉郷）（ひらゆ（おくひだ））<br>類似度:2.698</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="izukougenonsen_izukougen_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="izukougenonsen_izukougen_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.izukougenonsen_izukougen_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0860_0001.jpg"/></a><p class="feature">伊豆高原温泉（いずこうげん）<br>類似度:2.687</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">雫石高倉温泉（しずくいしたかくら）</h2><h3 class="icon"> 所在地：岩手県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1060_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、関節痛、疲労など
+</td></tr></table></div><div class="con1"><p class="feature">岩手山を望む高倉山東麓に、源泉が湧き出る一軒宿「雫石プリンスホテル」が建つ。ゴルフやテニス、スキーなど高原のリゾートライフが満喫できる地として、近年注目を集めている温泉地だ。スポーツやレジャーの後にゆったりと温泉に浸かれば体の中からリフレッシュでき、売店では温泉水を原料またはモチーフとした様々なグッズも用意されている。 そして、ホテルから望むのが岩手のシンボル、岩手山。奥羽山脈北部にそびえる標高約2038ｍの山で、2つの外輪山からなる複式火山。盛岡側から見る姿は「南部富士」としても名高い均整のとれた「表岩手」、松尾村方面から見る姿は悠然かつ毅然とした「裏岩手」と呼ばれている。 富士山の片裾が削れているように見えることから、別名「南部片富士」とも。古くから山岳信仰の対象であり、岩手の人々の心の故郷でもあった岩手山の美しい姿を眺めながら、高原リゾートで心も体もリセットしたい。
+平成6年、一軒宿の「雫石プリンスホテル」の敷地内にボウリングによって誕生した新興の温泉。別名「高倉の湯」。泉質はナトリウム‐塩化物・炭酸水素塩泉で、泉温約54.8℃、pH約6.8。湧出量は毎分約65Lで源泉かけ流しを楽しめる。緑色透明の湯は温泉特有のアブラの匂いが強く、微かに塩味がするとか。ヌルヌルとした肌触りも好感触。その成分の優秀さから温泉遺産にも認定されている、新たな名湯だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="utoroonsen_utoro_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="utoroonsen_utoro_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.utoroonsen_utoro_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0787_0001.jpg"/></a><p class="feature">ウトロ温泉（うとろ）<br>類似度:2.469</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekoonsensato_niseko_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekoonsensato_niseko_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekoonsensato_niseko_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1074_0001.jpg"/></a><p class="feature">ニセコ温泉郷（にせこ）<br>類似度:2.435</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tsutsujinoyu_tsutsujinoyu_gunma">{% csrf_token %}<input name="id2" type="hidden" value="tsutsujinoyu_tsutsujinoyu_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.tsutsujinoyu_tsutsujinoyu_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2076_0001.jpg"/></a><p class="feature">つつじの湯（つつじのゆ）<br>類似度:2.403</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekoekimaeonsen_nisekoekimae_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekoekimaeonsen_nisekoekimae_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekoekimaeonsen_nisekoekimae_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1871_0001.jpg"/></a><p class="feature">ニセコ駅前温泉（にせこえきまえ）<br>類似度:2.390</br></p></div></form>
+{% endblock content %}

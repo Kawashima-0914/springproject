@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">奥天竜不動温泉（オクテンリュウフドウ）</h2><h3 class="icon"> 所在地：長野県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0811_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">南信州の阿智村、標高約1200mの山間に湧く温泉地。気品と清潔感漂う一軒宿「華菱」では、その良泉を堪能できるほか、地元で採れた山の幸を炭火でじっくり焼く囲炉裏料理を味わえるのが特徴。 信州産馬刺しをはじめ、名物シシ鍋やキジ鍋などもあり、真心こもった田舎料理が旅人の心を満たしてくれる。また、周辺には自然を満喫できる体験スポットが点在。 りんご狩りや天竜川下りなど、グループやファミリーにも最適だ。下伊那郡阿智村は、環境省が行った「全国星空継続観察」で全国で最も明るく、星の観測に適した場所に認定。“日本一の星空“を見上げ、効能あらたかな温泉に浸かる至福の時が待っている。
+昼神温泉よりさらに山間に入った阿智村にある一軒宿「華菱」に湧く温泉。こんこんと湧き出す2本の自家源泉を大自然の中で楽しめるのが魅力だ。約37℃、無色透明のアルカリ性単純温泉は、神経痛や関節痛、リウマチ、糖尿病、冷え性、慢性婦人病など豊かな効能を持ち、お肌がツルツルになる美人の湯としても好評。大浴場のほか、夏の深緑、冬の雪景色など四季の移ろいを身近に感じられる露天風呂があり、心から安らげる時を過ごすことができる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="yamanokamionsen_yamanokami_iwate">{% csrf_token %}<input name="id2" type="hidden" value="yamanokamionsen_yamanokami_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.yamanokamionsen_yamanokami_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1255_0001.jpg"/></a><p class="feature">山の神温泉（やまのかみ）<br>類似度:2.170</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="donkawaonsen_nibukawa_ehime">{% csrf_token %}<input name="id2" type="hidden" value="donkawaonsen_nibukawa_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.donkawaonsen_nibukawa_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0292_0001.jpg"/></a><p class="feature">鈍川温泉（にぶかわ）<br>類似度:2.157</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="igaonsen_iga_mie">{% csrf_token %}<input name="id2" type="hidden" value="igaonsen_iga_mie"/><div class="con2"><a href="../spring_each/" onclick="document.igaonsen_iga_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1470_0001.jpg"/></a><p class="feature">伊賀温泉（いが）<br>類似度:2.157</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="koyamaonsen_koyama_tottori">{% csrf_token %}<input name="id2" type="hidden" value="koyamaonsen_koyama_tottori"/><div class="con2"><a href="../spring_each/" onclick="document.koyamaonsen_koyama_tottori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1202_0001.jpg"/></a><p class="feature">湖山温泉（こやま）<br>類似度:2.147</br></p></div></form>
+{% endblock content %}

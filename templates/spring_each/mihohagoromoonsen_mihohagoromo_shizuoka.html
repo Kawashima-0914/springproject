@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">三保はごろも温泉（みほはごろも）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0910_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">東名高速道路「清水IC」より車で約30分、約3万本もの松が約7㎞の海岸線に生い茂る“日本三大松原”の一つ「三保の松原」に湧く温泉。古代より日本有数の景勝地として知られており、「いほはらの清見の浦の寛けき見つつもの念ひもなし」との歌が『万葉集』に収められている。 大正5年には、「日本新三景」にも選ばれた。とくに波打ち際から松林を挟んで望む富士山は絶景で、与謝野晶子や太宰治、三島由紀夫らもこの地を訪れその美しさを讃えたという。 御穂神社に続く松並木の参道の先には、天女の美しい衣にまつわる「羽衣伝説」で知られる樹齢650年の「羽衣の松」（2代目）が威風堂々と佇み、毎年10月にはここで能楽「羽衣」が披露される。いにしえより人々に愛され、多くの文人墨客の感性を刺激し続けた絶景の地に、新たに温泉という魅力が加わった。
+2006年4月、三保地域で初めて開湯した温泉。一軒宿「三保園ホテル」に湧き出る湯は神経痛や腰痛、打撲にねんざ、冷え性などに効能が高く、塩分を多く含むために体を芯から温めぽっかぽかになると評判。大浴場と解放感あふれる露天風呂、さらには足湯で堪能できる。古くから名勝地として名高く、多くの文人にも愛されてきた「三保の松原」が眼前に広がる眺望の素晴らしさは言うまでもない。海越しに望む富士山の眺めがまた見事で、まさに一幅の絵画のような趣きに酔いしれたい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="itsuuraonsen_itsuura_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="itsuuraonsen_itsuura_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.itsuuraonsen_itsuura_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0836_0001.jpg"/></a><p class="feature">五浦温泉（いつうら）<br>類似度:1.840</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kinkesakionsen_kanagasaki_akita">{% csrf_token %}<input name="id2" type="hidden" value="kinkesakionsen_kanagasaki_akita"/><div class="con2"><a href="../spring_each/" onclick="document.kinkesakionsen_kanagasaki_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1283_0001.jpg"/></a><p class="feature">金ヶ崎温泉（かながさき）<br>類似度:1.826</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hakubahimegawaonsen_hakubahimekawa_nagano">{% csrf_token %}<input name="id2" type="hidden" value="hakubahimegawaonsen_hakubahimekawa_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.hakubahimegawaonsen_hakubahimekawa_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0790_0001.jpg"/></a><p class="feature">白馬姫川温泉（はくばひめかわ）<br>類似度:1.816</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kinoeonsen_kinoe_hiroshima">{% csrf_token %}<input name="id2" type="hidden" value="kinoeonsen_kinoe_hiroshima"/><div class="con2"><a href="../spring_each/" onclick="document.kinoeonsen_kinoe_hiroshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1260_0001.jpg"/></a><p class="feature">きのえ温泉（きのえ）<br>類似度:1.812</br></p></div></form>
+{% endblock content %}

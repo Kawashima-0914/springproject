@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">浜脇温泉（はまわき）</h2><h3 class="icon"> 所在地：大分県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1966_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">朝見川の河口一帯にある温泉街で、鉄輪と並び別府温泉発祥の地と呼ばれている。浜から温泉が湧き出る様子から「浜わき」の地名が生まれたと伝えられているが、現在は砂浜に温泉が湧く様子は見られない。別府市営温泉「浜脇温泉・湯都ピア浜脇」がある他は小さな共同温泉が多い。昔ながらの街並が残り情緒が感じられ、地域住民の生活に密着した温泉として、親しまれている。 近くには「八幡朝見神社」があり境内からは別府市を一望でき、またご神木として大きな楠の木がある。敷石の中に盃の形をした石とひょうたんの形をした石があり、これを踏むと無病息災、縁起がよいと言われている。
+無色透明・ほぼ無味無臭の単純泉。お湯に個性はないものの、肌の弱い方やお子様など多くの人々が楽しめる肌に優しい温泉だ。かぶり湯・気泡浴・全身浴・圧注浴・うたせ湯・運動浴・寝湯などがバラエティ豊かな浴槽がある「湯都ピア浜脇」はお子様から年配の方まで多くの人々で賑わい、地域住民の生活に密着した温泉として、親しまれている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="geroonsen_gero_gifu">{% csrf_token %}<input name="id2" type="hidden" value="geroonsen_gero_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.geroonsen_gero_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0053_0001.jpg"/></a><p class="feature">下呂温泉（げろ）<br>類似度:1.946</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="uesaiharaonsen_kamisaibara_okayama">{% csrf_token %}<input name="id2" type="hidden" value="uesaiharaonsen_kamisaibara_okayama"/><div class="con2"><a href="../spring_each/" onclick="document.uesaiharaonsen_kamisaibara_okayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1292_0001.jpg"/></a><p class="feature">上齋原温泉（かみさいばら）<br>類似度:1.946</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="donkawaonsen_nibukawa_ehime">{% csrf_token %}<input name="id2" type="hidden" value="donkawaonsen_nibukawa_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.donkawaonsen_nibukawa_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0292_0001.jpg"/></a><p class="feature">鈍川温泉（にぶかわ）<br>類似度:1.938</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="rurionsen_ruri_shiga">{% csrf_token %}<input name="id2" type="hidden" value="rurionsen_ruri_shiga"/><div class="con2"><a href="../spring_each/" onclick="document.rurionsen_ruri_shiga.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1326_0001.jpg"/></a><p class="feature">るり温泉（るり）<br>類似度:1.936</br></p></div></form>
+{% endblock content %}

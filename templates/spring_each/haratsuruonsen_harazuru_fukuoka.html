@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">原鶴温泉（はらづる）</h2><h3 class="icon"> 所在地：福岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0628_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、炭酸水素塩泉、硫黄泉
+</td></tr><tr><th>効能</th><td>美肌、神経痛、筋肉痛、関節痛、疲労、婦人病、冷え性、皮膚病、糖尿病、痔疾など
+</td></tr></table></div><div class="con1"><p class="feature">大分自動車道「杷木IC」から約4㎞、福岡と大分の県境に湯けむりが上がる。筑後川の流れに沿って近代的なホテルや純和風の老舗旅館、民宿など15軒ほどの宿泊施設が並び温泉街を形成。古くから“福岡の奥座敷”として親しまれる、県内屈指の規模を誇る温泉地だ。 四季折々の自然環境も良く、春の桜、夏のホタルと鵜飼、秋の紅葉とフルーツ狩り、冬の雪見酒と一年を通して楽しみが満載。中でも、毎年5月20日の筑後川の鮎漁解禁とともに始まる“伝統漁法・鵜飼”は必見。 9月末までのシーズンには日本全国から観光客が多く訪れ、提灯が水面を照らす屋形船や古式ゆかしい鵜飼が情緒ある風景を描き出す。屋形船に乗って鑑賞できる。
+その昔、筑後川へ来た釣り人が雪の積もっていない場所から湯が湧き出ているのを発見したのが始まりといわれる。傷ついた鶴が川の浅瀬に浸かって傷を癒したという言い伝えから「原鶴」と命名された云う。化粧水に浸かったようなヌルヌル感のある単純泉と硫黄泉が絶妙に入り混じった泉質はダブル美肌と呼ばれ、九州屈指の名泉として名高い「美人の湯」。立ち並ぶ温泉旅館には、日本庭園の中にある露天風呂や、ジャングル風呂、畳を敷いた風呂などバリエーション豊か。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tenkeseonsen_amagase_ooita">{% csrf_token %}<input name="id2" type="hidden" value="tenkeseonsen_amagase_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.tenkeseonsen_amagase_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0010_0001.jpg"/></a><p class="feature">天ヶ瀬温泉（あまがせ）<br>類似度:2.958</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tsuchiyuonsen_tsuchiyu_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="tsuchiyuonsen_tsuchiyu_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.tsuchiyuonsen_tsuchiyu_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0092_0001.jpg"/></a><p class="feature">土湯温泉（つちゆ）<br>類似度:2.893</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hirayamaonsen_hirayama_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="hirayamaonsen_hirayama_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.hirayamaonsen_hirayama_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1035_0001.jpg"/></a><p class="feature">平山温泉（ひらやま）<br>類似度:2.852</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nakayamaheionizumi_nakayamadaira_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="nakayamaheionizumi_nakayamadaira_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.nakayamaheionizumi_nakayamadaira_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0946_0001.jpg"/></a><p class="feature">中山平温泉（なかやまだいら）<br>類似度:2.784</br></p></div></form>
+{% endblock content %}

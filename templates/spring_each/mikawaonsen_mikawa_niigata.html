@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">三川温泉（みかわ）</h2><h3 class="icon"> 所在地：新潟県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1443_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">嫁入りは夕刻に行われていたかつての阿賀町。夜になると麒麟山には無数の狐火とともに狐が泣き叫ぶ声が聞こえ、嫁入り行列の提灯と狐火の灯りが重なって見えたことが「狐の嫁入り」の由来である。 それから狐火が多く見られる年は豊作になると口承されてきたという。阿賀町の中央には、阿賀川が流れており季節や気候によってさまざまな表情を見せてくれている。また瓢湖は例年10月頃～3月頃にかけて約6000羽のオオハクチョ ウやコハクチョウが飛来する白鳥の湖。 周囲は公園として整備されており、例年5月頃からはアヤメやハスも見られる。阿賀町内には温泉地が多数あり、三川温泉は昭和初めに自噴し豊富な湯量を誇る温泉として地元からも愛されている。歴史深い温泉に浸かりながら幻想的な夜に心酔したい。
+自噴しているため湯量は豊富。湯温は43℃、天然温泉100％。湯治客も多く、神経痛や胃腸病などに効果があるとの声も。阿賀川の雄大な流れに抱かれながらゆっくりと身体を沈めたい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="yuyukigenonizumi_yunomoto_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="yuyukigenonizumi_yunomoto_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.yuyukigenonizumi_yunomoto_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0339_0001.jpg"/></a><p class="feature">湯之元温泉（ゆのもと）<br>類似度:1.890</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hodakaonsensato_hodaka_nagano">{% csrf_token %}<input name="id2" type="hidden" value="hodakaonsensato_hodaka_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.hodakaonsensato_hodaka_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0557_0001.jpg"/></a><p class="feature">穂高温泉郷（ほだか）<br>類似度:1.832</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="onokawaonsen_onogawa_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="onokawaonsen_onogawa_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.onokawaonsen_onogawa_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0718_0001.jpg"/></a><p class="feature">小野川温泉（おのがわ）<br>類似度:1.750</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okudougoonsen_okudougo_ehime">{% csrf_token %}<input name="id2" type="hidden" value="okudougoonsen_okudougo_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.okudougoonsen_okudougo_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0288_0001.jpg"/></a><p class="feature">奥道後温泉（おくどうご）<br>類似度:1.739</br></p></div></form>
+{% endblock content %}

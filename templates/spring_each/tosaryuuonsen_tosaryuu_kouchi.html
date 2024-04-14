@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">土佐龍温泉（とさりゅう）</h2><h3 class="icon"> 所在地：高知県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1342_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">ゆったりとした雄大な流れが美しい四国で3番目に流域が広い仁淀川河口に位置する土佐市。高知県屈指の人気ドライブコース「横浪黒潮ライン」の土佐市入り口近くに湧く「土佐龍温泉」は「三陽荘」が持つ自家源泉。 平成22年に開湯した新興温泉だ。四国八十八ヶ所の36番札所・青龍寺にも近く、四国お遍路巡りで訪れる人々の立寄り湯として利用される。付近には、ホエールウォッチングができる「宇佐しおかぜ公園」がある。 宇佐漁港から船が出発し、最高のウォッチングポイントまで連れて行ってくれる。また、潮干狩りができる「天王洲」などレジャースポットも多く点在。良質な温泉で日頃の疲れを癒した後は、カツオ、伊勢海老などの料理で舌鼓を打ちたい。
+雄大な太平洋を見ながらドライブが楽しめる横浪黒潮ラインの土佐市入り口付近に湧く「土佐龍温泉」は「三陽荘」で入ることができる。土佐市初の天然温泉としても知られ、四国八十八ヶ所の「お遍路さん」の姿も見られる。塩分を含んだ褐色のにごり湯は「黄金の湯」として讃えられ、保温効果が高いと評判も良い。和の雰囲気たっぷりな庭園の露天風呂や、太平洋を愛でながらの足湯も人気。癒し効果たっぷりの多岐にわたる効能がまた温泉客にはうれしいところ。湯欲みの後は宿自慢の料理を堪能したい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1251_0001.jpg"/></a><p class="feature">紀州みなべ千里浜温泉（きしゅうみなべせんりはま）<br>類似度:2.270</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="iwakishioyasakionsen_iwakishioyazaki_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="iwakishioyasakionsen_iwakishioyazaki_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.iwakishioyasakionsen_iwakishioyazaki_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1208_0001.jpg"/></a><p class="feature">いわき塩屋崎温泉（いわきしおやざき）<br>類似度:2.232</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="misakionsen_misaki_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="misakionsen_misaki_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.misakionsen_misaki_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1197_0001.jpg"/></a><p class="feature">三崎温泉（みさき）<br>類似度:2.230</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yosakoionsen_yosakoi_kouchi">{% csrf_token %}<input name="id2" type="hidden" value="yosakoionsen_yosakoi_kouchi"/><div class="con2"><a href="../spring_each/" onclick="document.yosakoionsen_yosakoi_kouchi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1309_0001.jpg"/></a><p class="feature">よさこい温泉（よさこい）<br>類似度:2.227</br></p></div></form>
+{% endblock content %}

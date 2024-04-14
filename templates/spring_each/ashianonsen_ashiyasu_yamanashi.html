@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">芦安温泉（あしやす）</h2><h3 class="icon"> 所在地：山梨県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1114_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">南アルプスのふもと、雄大な山懐に抱かれた温泉地。白根三山や鳳凰三山などを目指す登山客はもとより、夜叉神峠や高谷山のハイキングを楽しむ人も多く、四季折々に移り変わる美しい自然を堪能できると人気。 さくらんぼや桃、ブドウ、梨、キウイなど一年を通してさまざまなフルーツが実る地としても知られ、地元果樹園では果実狩りが人気。新鮮な果実を贅沢に使ったワインやジャムはお土産に最適だ。 また、湯宿の食膳には地場産の野菜や採れたての山菜、川魚などが並び、野趣満点。南アルプスの玄関口として古くから登山愛好家に親しまれてきた山間の里は、良質の温泉、甘く熟したフルーツなど、多彩な魅力を持ち、多くの旅行客を惹きつけている。
+南アルプスの玄関口にあたる芦安に湧く温泉。原生林や高山植物が生い茂る恵まれた自然環境の中で、のんびり湯浴みを楽しめる。毎分約300Lにも及ぶ湧出量を誇る温泉は神経痛から消化器病、皮膚病、動脈硬化症など効能豊かで、登山や散策で疲れた身体をやさしく癒してくれる。リゾート地としても注目を集める山里の温泉だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kirinyamaonsen_kirinzan_niigata">{% csrf_token %}<input name="id2" type="hidden" value="kirinyamaonsen_kirinzan_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.kirinyamaonsen_kirinzan_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0579_0001.jpg"/></a><p class="feature">麒麟山温泉（きりんざん）<br>類似度:1.799</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekowaisukougenonsen_nisekowaisukougen_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1877_0001.jpg"/></a><p class="feature">ニセコワイス高原温泉（にせこわいすこうげん）<br>類似度:1.796</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="asamainonsensato_asamakakushi_gunma">{% csrf_token %}<input name="id2" type="hidden" value="asamainonsensato_asamakakushi_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.asamainonsensato_asamakakushi_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0388_0001.jpg"/></a><p class="feature">浅間隠温泉郷（あさまかくし）<br>類似度:1.795</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="harunamizuumionsen_harunako_gunma">{% csrf_token %}<input name="id2" type="hidden" value="harunamizuumionsen_harunako_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.harunamizuumionsen_harunako_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1193_0001.jpg"/></a><p class="feature">榛名湖温泉（はるなこ）<br>類似度:1.788</br></p></div></form>
+{% endblock content %}

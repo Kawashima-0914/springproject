@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">ススキノ温泉（すすきの）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1502_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">北海道一の大都会札幌。その中心部で全国的に有名な北の歓楽街ススキノに湧く「ススキノ温泉」。地下鉄や市電の駅名として「ススキノ」は見かけるが、正式な地名として札幌の地図を探しても見つからな い街なのが不思議なところ。 「眠らない街」として夜の人口は約8万人にも及ぶといわれ、治安の良さから女性ばかりで夜飲み明かせる場所でもあるとか。サッポロビール園にジンギスカンやラーメン、新鮮な酪農品で作っ た「さっぽろスイーツ」などグルメな町としても有名な札幌。 「時計台」や南北に走る「大通り公園」での冬の「雪まつり」は町の象徴・風物詩として全国的にも有名なのは言うまでもない。グルメや観光と思いっきり札幌を堪能した後は、良質で湯上りの心地よい温泉でゆっくりと疲れを癒したい。
+天然成分の質の高いお湯の泉質は塩化物泉で神経痛、関節痛、筋肉痛、冷え性と多岐にわたる。なめると少ししょっぱく、汗の蒸発を防ぎ、湯上りは湯冷めしにくく、ポカポカとするのが特徴。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="marukomaonsen_marukoma_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="marukomaonsen_marukoma_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.marukomaonsen_marukoma_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0681_0001.jpg"/></a><p class="feature">丸駒温泉（まるこま）<br>類似度:2.137</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kitahiroshimaonsen_kitahiroshima_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="kitahiroshimaonsen_kitahiroshima_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.kitahiroshimaonsen_kitahiroshima_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1279_0001.jpg"/></a><p class="feature">北広島温泉（きたひろしま）<br>類似度:2.081</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1251_0001.jpg"/></a><p class="feature">紀州みなべ千里浜温泉（きしゅうみなべせんりはま）<br>類似度:2.034</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="inawashiroshikinoyuonizumi_inawashiroshikinoyu_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="inawashiroshikinoyuonizumi_inawashiroshikinoyu_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.inawashiroshikinoyuonizumi_inawashiroshikinoyu_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1209_0001.jpg"/></a><p class="feature">猪苗代四季の湯温泉（いなわしろしきのゆ）<br>類似度:2.033</br></p></div></form>
+{% endblock content %}

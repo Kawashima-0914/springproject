@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">志摩・浜島温泉郷（しま・はまじま）</h2><h3 class="icon"> 所在地：三重県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0034_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>美肌、神経痛、リウマチ、皮膚病
+</td></tr></table></div><div class="con1"><p class="feature">三重県志摩市・伊勢志摩国立公園の南端に位置する温泉地。1985年に伊勢志摩で初めて湧出した「浜島温泉」と、その近くで1997年に開湯した「新浜島温泉」を合わせて「浜島温泉郷」と呼んでいる。 美しいリアス式海岸の英虞湾に囲まれたリゾート地。英虞湾は、真珠養殖の発祥の地としても知られておりかつては「真珠湾」とも呼ばれていた。英虞湾を約50分かけてめぐる遊覧船「エスパーニャクルーズ」では真珠の核入れ作業の見学ができる。市内にある真珠工房では生きたアコヤ貝から真珠を取り出す体験やその真珠を使ったアクセサリー作りの体験も可能。また英虞湾を一望する展望台「横山展望台」は、 「ミシュラン・グリーンガイド・ジャポン」で1つ星を獲得している。
+泉質は「ナトリウム炭酸水素塩泉」「ナトリウム塩化物泉」「アルカリ性単純温泉」など複数存在する。「ナトリウム炭酸水素塩泉」・「アルカリ性単純温泉」は、皮膚表面に付着した汚れを落とす作用があることから湯あがりはつるつるになるといわれている。「ナトリウム塩化物泉」は保湿・保温効果に期待ができる。雄大な熊野灘や、真珠いかだが並ぶ静かな英虞湾を展望する絶景の地にあるため、海を眺めながら夕陽や日の出が堪能できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="nakayamaheionizumi_nakayamadaira_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="nakayamaheionizumi_nakayamadaira_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.nakayamaheionizumi_nakayamadaira_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0946_0001.jpg"/></a><p class="feature">中山平温泉（なかやまだいら）<br>類似度:2.723</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenkeseonsen_amagase_ooita">{% csrf_token %}<input name="id2" type="hidden" value="tenkeseonsen_amagase_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.tenkeseonsen_amagase_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0010_0001.jpg"/></a><p class="feature">天ヶ瀬温泉（あまがせ）<br>類似度:2.677</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="minamikyuushuueia_minamikyuushuuei_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="minamikyuushuueia_minamikyuushuuei_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.minamikyuushuueia_minamikyuushuuei_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1720_0001.jpg"/></a><p class="feature">南九州頴娃（みなみきゅうしゅう・えい）<br>類似度:2.649</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="awajishimanandanroonsenkyou_awajishimaminamiawaji_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="awajishimanandanroonsenkyou_awajishimaminamiawaji_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.awajishimanandanroonsenkyou_awajishimaminamiawaji_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0923_0001.jpg"/></a><p class="feature">淡路島・南淡路温泉郷（あわじしま・みなみあわじ）<br>類似度:2.629</br></p></div></form>
+{% endblock content %}

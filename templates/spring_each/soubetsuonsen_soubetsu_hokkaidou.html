@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">壮瞥温泉（そうべつ）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0664_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">周辺を支笏洞爺国立公園に指定されている「日本百景」のひとつ、洞爺湖。ユネスコの世界ジオパークにも指定された巨大なカルデラ湖の南岸に広がる温泉地が壮瞥温泉（そうべつおんせん）。ホテルや日帰り温泉施設などの入浴施設が点在しており、多くの施設で源泉かけ流しで温泉を提供している。この付近は洞爺カルデラや有珠山、昭和新山など多くの観光スポットがあり、さまざまな果物狩りが体験できる農園も多い。冬は「昭和新山国際雪合戦」という地元ならではのイベントも開催され、観光客も観戦できる。
+活火山から生まれたナトリウム・カルシウム-炭酸水素塩・硫酸塩・塩化物泉。神経痛、筋肉痛、関節痛、慢性消化器病、痔疾、冷え性、慢性皮膚病、動脈硬化症、慢性婦人病などへの効能があるとされる。飲泉にすれば、慢性消化器病、糖尿病、痛風、肝臓病、慢性胆のう炎、胆石症、慢性便秘などへの効果が期待できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="marukomaonsen_marukoma_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="marukomaonsen_marukoma_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.marukomaonsen_marukoma_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0681_0001.jpg"/></a><p class="feature">丸駒温泉（まるこま）<br>類似度:2.335</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kiyosatoonsen_kiyosato_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="kiyosatoonsen_kiyosato_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.kiyosatoonsen_kiyosato_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1578_0001.jpg"/></a><p class="feature">清里温泉（きよさと）<br>類似度:2.295</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekowaisukougenonsen_nisekowaisukougen_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1877_0001.jpg"/></a><p class="feature">ニセコワイス高原温泉（にせこわいすこうげん）<br>類似度:2.284</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="uenoyuonsenkyou_kaminoyu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="uenoyuonsenkyou_kaminoyu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.uenoyuonsenkyou_kaminoyu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2084_0001.jpg"/></a><p class="feature">上の湯温泉郷（かみのゆ）<br>類似度:2.277</br></p></div></form>
+{% endblock content %}

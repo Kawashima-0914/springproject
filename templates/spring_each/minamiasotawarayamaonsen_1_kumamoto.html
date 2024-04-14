@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">南阿蘇俵山温泉（阿蘇温泉郷）（みなみあそたわらやま（あそ））</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1560_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">南阿蘇の名山である俵山のすそ野に位置する南阿蘇俵山温泉は、雄大な田園地帯が広がる場所。訪れれば、都会の喧騒から離れ、心と身体が休まるようなのどかさが感じられる。四季折々の草花が温泉を華やかに飾り、癒やしを与えてくれるだろう。温泉地の1.5km圏内には桜の名所である「一心行の大桜」や、訪れた人が宝くじに高額当選すると言われる「宝来宝来神社」などがあることから、季節を通して観光客が多い。阿蘇に行ったら一度は味わっておきたい「あか牛」を提供しているレストランや旅館もあり、赤身で旨味たっぷりの柔らかい銘柄牛の肉を食べられる。
+肌への刺激が少なく、美肌効果が高いとされるアルカリ単純泉が特徴。無色透明で、無味無臭のため入る人を選ばない。アトピー性皮膚炎やニキビ、肌荒れなどにも効果があり、肥満や冷え性、神経痛や消化器病などにも効能があるとされている。泉温が低いためお湯もぬるめ。じっくりと入浴すれば肌へ潤いを与える効果も期待できそう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="bimataonsen_mimata_shimane">{% csrf_token %}<input name="id2" type="hidden" value="bimataonsen_mimata_shimane"/><div class="con2"><a href="../spring_each/" onclick="document.bimataonsen_mimata_shimane.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1205_0001.jpg"/></a><p class="feature">美又温泉（みまた）<br>類似度:2.321</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.257</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="miyabaruonsen_miyabaru_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="miyabaruonsen_miyabaru_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.miyabaruonsen_miyabaru_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1981_0001.jpg"/></a><p class="feature">みやばる温泉（みやばる）<br>類似度:2.254</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okutenryuufudouonsen_okutenryuufudou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="okutenryuufudouonsen_okutenryuufudou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.okutenryuufudouonsen_okutenryuufudou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0811_0001.jpg"/></a><p class="feature">奥天竜不動温泉（オクテンリュウフドウ）<br>類似度:2.222</br></p></div></form>
+{% endblock content %}

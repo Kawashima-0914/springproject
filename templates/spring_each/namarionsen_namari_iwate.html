@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">鉛温泉（なまり）</h2><h3 class="icon"> 所在地：岩手県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0283_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">花巻市西部、豊沢川沿いに位置する花巻南温泉峡の一つに数えられる温泉。一軒宿「藤三旅館」で入ることができ、開湯は約600年前と伝えられている。宿主藤井家の遠祖が高倉山麓で木こりをしている時、岩窟から出てきた一匹の白猿が桂の木の根元から湧き出す泉で手足の傷を癒しているのを発見。 その後、「白猿の湯（俗名 桂の湯）」として一族が天然風呂として用いるようになったのが始まりとか。現在は、観光目的としてはもちろん、自炊部を持つ湯治場としても利用されている。作家・田宮虎彦が滞在し小説『銀心中』の舞台となったり、宮沢賢治の童話『なめとこ山の熊』では「腹の痛いものにも利けば傷もなおる鉛の湯…」とうたわれた名湯。 温泉郷の「郷」の字が「峡」と表記されているが、それは豊沢川沿いの峡谷にあるからだとか。温泉峡の中でも奥地に位置する、文学の薫り漂う峡谷の秘湯として人気を呼んでいる。
+深山を流れる清流豊沢川沿いに8つの温泉が点在する花巻南温泉峡の一つ。源泉を4つ持ち、高温と低温の湯を混ぜて温度調節している。加熱や循環、差し水など一切なしの100％かけ流し天然温泉が楽しめる。一軒宿「藤三旅館」の名物「白猿の湯」は、深さ平均1.25mの立って入る珍しい温泉。立位浴は、適度な湯圧が循環器系を整え、血行促進に効果があるという。3階の高い吹き抜けの浴室は開放的で、湯船の底の天然岩からはこんこんと湯が湧き出ている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="yokokawaonsen_yokokawa_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="yokokawaonsen_yokokawa_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.yokokawaonsen_yokokawa_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1552_0001.jpg"/></a><p class="feature">横川温泉（よこかわ）<br>類似度:1.738</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kabutoyuonizumi_kabutoyu_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="kabutoyuonizumi_kabutoyu_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.kabutoyuonizumi_kabutoyu_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1908_0001.jpg"/></a><p class="feature">かぶと湯温泉（かぶとゆ）<br>類似度:1.698</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shugojinonsen_shugojin_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="shugojinonsen_shugojin_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.shugojinonsen_shugojin_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1980_0001.jpg"/></a><p class="feature">守護陣温泉（しゅごじん）<br>類似度:1.693</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okutsuonsen_okutsu_okayama">{% csrf_token %}<input name="id2" type="hidden" value="okutsuonsen_okutsu_okayama"/><div class="con2"><a href="../spring_each/" onclick="document.okutsuonsen_okutsu_okayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0312_0001.jpg"/></a><p class="feature">奥津温泉（おくつ）<br>類似度:1.682</br></p></div></form>
+{% endblock content %}

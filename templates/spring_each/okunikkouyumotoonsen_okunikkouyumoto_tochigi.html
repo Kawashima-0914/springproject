@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">奥日光湯元温泉（おくにっこうゆもと）</h2><h3 class="icon"> 所在地：栃木県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0183_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">湯の湖北岸に位置し、奥日光の奥座敷といわれる温泉地。旅館街の奥には源泉小屋があり、ふつふつと湧き出る生きた温泉の姿を目にすることができる。「国民保養温泉地」にも指定され、環境の良さはお墨付き。 白根山、三岳など三方を山々に囲まれた静かな日光国立公園の中にあり、原生林が残る高原の自然を満喫できる。標高約1500mの高地は避暑にも最適で、大湿原「戦場ヶ原」をはじめ自然の魅力が満載。 ヒメマスやイワナが泳ぐ湯の湖は釣り場として人気が高く、スキー場やハイキングコース、アウトドアの施設も備わっている。大自然の中で心地良い汗を流した後は、乳白色の効能豊かな湯に浸かってさっぱりとリフレッシュしたい。
+788年に日光山の開祖、勝道上人が発見したと伝えられる歴史長き温泉。発見第一号の湯は「薬師湯」と名付けられ、その後次々と新しい温泉が発見された。かつては「二荒山温泉」と呼ばれ、江戸時代には湯守が管理する混浴の共同浴場として利用されていた。わずかにとろみをおびた乳白色の湯は硫黄泉特有の匂いで、じんわりと体中にしみ込んでいくのを実感できる。2003年、湯元源泉地近くに無料の足湯「あんよの湯」がオープン。50人はゆうに同時利用できる巨大な足湯で、湯の花舞う白濁の湯が手軽に味わえると地元でも好評。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="myoukoukougentsubameonsen_myoukoukougentsubame_niigata">{% csrf_token %}<input name="id2" type="hidden" value="myoukoukougentsubameonsen_myoukoukougentsubame_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.myoukoukougentsubameonsen_myoukoukougentsubame_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0139_0001.jpg"/></a><p class="feature">妙高高原燕温泉（みょうこうこうげんつばめ）<br>類似度:2.065</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="zaouonsen_zaou_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="zaouonsen_zaou_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.zaouonsen_zaou_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0057_0001.jpg"/></a><p class="feature">蔵王温泉（ざおう）<br>類似度:2.021</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="chuuzenjionsen_chuuzenji_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="chuuzenjionsen_chuuzenji_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.chuuzenjionsen_chuuzenji_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0091_0001.jpg"/></a><p class="feature">中禅寺温泉（ちゅうぜんじ）<br>類似度:2.000</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="unzenonsen_unzen_nagasaki">{% csrf_token %}<input name="id2" type="hidden" value="unzenonsen_unzen_nagasaki"/><div class="con2"><a href="../spring_each/" onclick="document.unzenonsen_unzen_nagasaki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0525_0001.jpg"/></a><p class="feature">雲仙温泉（うんぜん）<br>類似度:1.966</br></p></div></form>
+{% endblock content %}

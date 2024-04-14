@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">鳥海温泉（ちょうかい）</h2><h3 class="icon"> 所在地：山形県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1147_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">山形自動車道「酒田IC」から車で約30分、JR羽越本線「吹浦駅」から車ですぐ。山形県最北部の、別名「出羽冨士」と呼ばれる名峰「鳥海山」の麓に湧き出す温泉地。 温泉のある遊佐町は、鳥海山のほかにも日本三代砂丘の一つである「庄内砂丘」や、清流として名高い「牛渡川」などの名所を有する自然の宝庫として知られる。“日本の快水浴場百選”に指定されている「西浜海水浴場」や、夏スキーができる鳥海山のゲレンデもあり、 レジャーを目当てに訪れる人も数多い。 自然が造り出した芸術と名高い景勝地「出羽二見」へも近く、沈む夕日の美しさは観光客をいつも魅了する。豊かな自然と景色、そして温泉と、日頃の疲れを癒すには絶好の環境だ。
+山形県最北部の豊富な自然に恵まれた遊佐町に湧く温泉。鳥海温泉郷の一つとして、多くの人々に親しまれてきた。源泉は「西浜源泉」と「鳥海源泉」の2つがあり、美肌効果が高まる成分を多く含んでいるので「美肌の湯」として知られる一方、湯冷めしにくい「温まりの湯」とも呼ばれる。源泉温は38℃とやや低めで、塩化物泉には珍しく茶褐色をしているのが特徴。アトピーにも良く効くので、「薬入らずの湯」の異名をとるとか。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="soukankawaonsen_aimagawa_gunma">{% csrf_token %}<input name="id2" type="hidden" value="soukankawaonsen_aimagawa_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.soukankawaonsen_aimagawa_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1636_0001.jpg"/></a><p class="feature">相間川温泉（あいまがわ）<br>類似度:2.285</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="inawashiroshikinoyuonizumi_inawashiroshikinoyu_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="inawashiroshikinoyuonizumi_inawashiroshikinoyu_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.inawashiroshikinoyuonizumi_inawashiroshikinoyu_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1209_0001.jpg"/></a><p class="feature">猪苗代四季の湯温泉（いなわしろしきのゆ）<br>類似度:2.270</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="iseshimasatoshishimaonsen_iseshimakashikojima_mie">{% csrf_token %}<input name="id2" type="hidden" value="iseshimasatoshishimaonsen_iseshimakashikojima_mie"/><div class="con2"><a href="../spring_each/" onclick="document.iseshimasatoshishimaonsen_iseshimakashikojima_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1238_0001.jpg"/></a><p class="feature">伊勢志摩賢島温泉（いせしまかしこじま）<br>類似度:2.225</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinosekionsensato_ichinoseki_iwate">{% csrf_token %}<input name="id2" type="hidden" value="ichinosekionsensato_ichinoseki_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.ichinosekionsensato_ichinoseki_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1076_0001.jpg"/></a><p class="feature">一関温泉郷（いちのせき）<br>類似度:2.221</br></p></div></form>
+{% endblock content %}

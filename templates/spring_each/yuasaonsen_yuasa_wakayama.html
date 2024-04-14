@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯浅温泉（ゆあさ）</h2><h3 class="icon"> 所在地：和歌山県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1685_0001.jpg"/><table><tr><th>泉質</th><td>単純温泉、硫黄泉
+</td></tr><tr><th>効能</th><td>美肌、神経痛、筋肉痛、肩こり、腰痛、関節痛、疲労、ねんざ、婦人病、胃腸病、冷え性、皮膚病、打撲、糖尿病、痔疾、美肌
+</td></tr></table></div><div class="con1"><p class="feature">和歌山県有田郡、有田といえば有田みかんが有名だが、湯浅町にはもうひとつの特産品がある。それは醤油だ。湯浅は熊野街道の要衝となっており、紀州藩の有田代官所が置かれてから始まった醤油醸造の発祥地である。 重要伝統的建造物群保存地区には、醤油や味噌の醸造業に関する町家や蔵などの伝統的建造物が立ち並び中世の趣きを醸している。湯浅温泉は湯浅市街地から少し離れた湯浅城址の向かいに立つ城の形をした国民宿舎だ。 建物は本格的な城を模しており、天守閣の4階には湯浅の歴史を学べる文化財展示室が、5階には紀伊水道まで見渡せる望楼がある。醸造業とともに発展してきた湯浅ををここからしっかり見つめたい。海の幸、山の幸が豊富なグルメの町でもある湯浅町。温泉とともに食も満喫したい。
+2つの泉質がある。日帰り入浴も可能。無料家族風呂はバリアフリー対応。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="haratsuruonsen_harazuru_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="haratsuruonsen_harazuru_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.haratsuruonsen_harazuru_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0628_0001.jpg"/></a><p class="feature">原鶴温泉（はらづる）<br>類似度:2.503</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenkeseonsen_amagase_ooita">{% csrf_token %}<input name="id2" type="hidden" value="tenkeseonsen_amagase_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.tenkeseonsen_amagase_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0010_0001.jpg"/></a><p class="feature">天ヶ瀬温泉（あまがせ）<br>類似度:2.448</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.440</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yoshioonsen_yoshio_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="yoshioonsen_yoshio_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.yoshioonsen_yoshio_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1133_0001.jpg"/></a><p class="feature">吉尾温泉（よしお）<br>類似度:2.417</br></p></div></form>
+{% endblock content %}

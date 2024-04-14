@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">久美浜温泉（くみはま）</h2><h3 class="icon"> 所在地：京都府</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1530_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">京都府の最北端に位置し日本海に接している京丹後市。京丹後市は1868年（慶応4年）に明治政府によって設置されたかつての久美浜県にあたる。 その名を継ぐ久美浜町は山陰海岸国立公園の一部として指定されており、どこまでも続くロングビーチと多数の温泉地が点在するエリアだ。久美浜温泉は久美浜湾の外周に位置する温泉地で、外湯の「湯元館」をはじめ数件の宿泊施設で楽しめる。 グルメも堪能したいのなら、11月～3月がおすすめ。日本海の宝石と呼ばれる松葉蟹、身がぷっくりしていて濃厚な久美浜湾の牡蠣などがシーズンを迎える。雄大な日本海を眺めながら湯浴みを楽しみ、新鮮な魚介料理を堪能する。これこそが日本の温泉旅といえるのではないだろうか。
+日帰り温泉は「湯元館」で入れる。100名が同時に入れる大露天風呂は、北近畿一の広さを誇る。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kumihamakaminoonsen_kanno_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kumihamakaminoonsen_kanno_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kumihamakaminoonsen_kanno_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1180_0001.jpg"/></a><p class="feature">久美浜神の温泉（かんの）<br>類似度:2.114</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hamasakaonsensato_hamasaka_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="hamasakaonsensato_hamasaka_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.hamasakaonsensato_hamasaka_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1023_0001.jpg"/></a><p class="feature">浜坂温泉郷（はまさか）<br>類似度:2.081</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="minamibousoushirahamaonsen_minamibousoushirahama_chiba">{% csrf_token %}<input name="id2" type="hidden" value="minamibousoushirahamaonsen_minamibousoushirahama_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.minamibousoushirahamaonsen_minamibousoushirahama_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1894_0001.jpg"/></a><p class="feature">南房総白浜温泉（みなみぼうそうしらはま）<br>類似度:2.056</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ichinosekionsensato_ichinoseki_iwate">{% csrf_token %}<input name="id2" type="hidden" value="ichinosekionsensato_ichinoseki_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.ichinosekionsensato_ichinoseki_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1076_0001.jpg"/></a><p class="feature">一関温泉郷（いちのせき）<br>類似度:2.040</br></p></div></form>
+{% endblock content %}

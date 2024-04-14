@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">春日温泉（かすが）</h2><h3 class="icon"> 所在地：長野県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1318_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">長野県東信地方に位置する佐久市。中山道の宿場町として発展してきた背景があり、歴史を感じさせる集落が市内に点在する。鯉の生産地としても有名で、江戸時代初期から水田で養殖を行うというユニークな方法で育てら れてきた「佐久鯉」は小諸藩主へ献上されていたともいわれている。 千曲川や八ヶ岳の伏流水による締まった身と生臭さがないのが特徴だ。武重本家酒造は映画のモデルにもなった旧家。建造物30棟は国の録有形文化財 。中山道の古い姿を象徴する杉玉が正面に飾られてあるのが特徴だ。 春日温泉は開湯300年以上の歴史を誇る源泉かけ流しの天然温泉。温泉地で温泉療養に適しているアルカリ性単純温泉で古くより湯治湯として多くの人々の心と身体を癒してる。
+自泉で泉温は41.4℃、pH8.6。ほとんど無色透明、無味無臭。美肌に有効とされている「メタケイ酸」を豊富に含んでおり肌の新陳代謝を促進させる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kaminomiyaonsen_kaminomiya_niigata">{% csrf_token %}<input name="id2" type="hidden" value="kaminomiyaonsen_kaminomiya_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.kaminomiyaonsen_kaminomiya_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1487_0001.jpg"/></a><p class="feature">神の宮温泉（かみのみや）<br>類似度:1.875</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ryuumononsen_ryuumon_ooita">{% csrf_token %}<input name="id2" type="hidden" value="ryuumononsen_ryuumon_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.ryuumononsen_ryuumon_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0310_0001.jpg"/></a><p class="feature">竜門温泉（りゅうもん）<br>類似度:1.865</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shikishimaonsen_shikishima_gunma">{% csrf_token %}<input name="id2" type="hidden" value="shikishimaonsen_shikishima_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.shikishimaonsen_shikishima_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1476_0001.jpg"/></a><p class="feature">敷島温泉（しきしま）<br>類似度:1.860</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okutsuonsen_okutsu_okayama">{% csrf_token %}<input name="id2" type="hidden" value="okutsuonsen_okutsu_okayama"/><div class="con2"><a href="../spring_each/" onclick="document.okutsuonsen_okutsu_okayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0312_0001.jpg"/></a><p class="feature">奥津温泉（おくつ）<br>類似度:1.837</br></p></div></form>
+{% endblock content %}

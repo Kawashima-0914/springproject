@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">藺牟田温泉（いむた）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0324_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">薩摩半島の北西部に位置する薩摩川内市は、東シナ海に面した海岸線や市街地を流れる川内川、藺牟田池などを擁する水の恵みが豊かな地域。 川内川の上流にある藺牟田池は火口湖であり、周囲約3.3㎞、最大水深3.5m、平均水深0.8mと浅い湖。 湖西側の一帯には泥炭層が堆積した湿原が広がり、ラムサール条約に登録されている。「泥炭形成植物群落」は南方地方には珍しいことから国の天然記念物にも指定されており、時間に追われて生きる現代の湯治客を豊かな自然が包み込み癒してくれる。
+pH7.9 弱アルカリ性、無色透明、無臭。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ikenoheionizumi_ikenotaira_nagano">{% csrf_token %}<input name="id2" type="hidden" value="ikenoheionizumi_ikenotaira_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.ikenoheionizumi_ikenotaira_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0568_0001.jpg"/></a><p class="feature">池の平温泉（いけのたいら）<br>類似度:2.350</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shinyabaonsen_shinyaba_ooita">{% csrf_token %}<input name="id2" type="hidden" value="shinyabaonsen_shinyaba_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.shinyabaonsen_shinyaba_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0302_0001.jpg"/></a><p class="feature">深耶馬温泉（しんやば）<br>類似度:2.265</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="genkaisatsukionsen_genkaisatsuki_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="genkaisatsukionsen_genkaisatsuki_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.genkaisatsukionsen_genkaisatsuki_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0949_0001.jpg"/></a><p class="feature">玄海さつき温泉（げんかいさつき）<br>類似度:2.215</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kikuchikeikokuonsen_kikuchikeikoku_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="kikuchikeikokuonsen_kikuchikeikoku_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.kikuchikeikokuonsen_kikuchikeikoku_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1132_0001.jpg"/></a><p class="feature">菊池渓谷温泉（きくちけいこく）<br>類似度:2.209</br></p></div></form>
+{% endblock content %}

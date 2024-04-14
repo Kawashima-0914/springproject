@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯端温泉（ゆばた）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2300_0001.jpg"/><table><tr><th>効能</th><td>神経痛、筋肉痛、冷え性、皮膚病、便秘、美肌
+</td></tr></table></div><div class="con1"><p class="feature">牛伏山麓に自然湧出し、地元では薬湯と呼ばれて愛用される湯端温泉。高度経済成長期に湧出する源泉を引いて開業した民宿が始まり。現在は同名の施設で、時間制の貸切風呂にて入れる。男女別の大浴場はなく、日帰り・宿泊ともに1時間単位の事前予約制で入れる2つの貸切風呂のみ。完全にプライベートな時間を温泉で過ごせるようにしている。周囲は山々の閑静な環境に囲まれており、季節によってはホタルが飛び交う景色を内湯から眺めることもできる。周辺には多くのゴルフ場があるため、ゴルフに興じて疲れた体を癒やすために訪れるのも良さそうだ。
+美肌の湯とも呼ばれる、ナトリウム－塩化物冷鉱泉の泉質を持つ湯端温泉。ほのかに卵の黄身のようなにおいに似た硫黄臭と、少し黄みがかかった湯が特徴だ。美肌効果のほかにも、切り傷、やけど、慢性皮膚病、慢性婦人病、慢性便秘、冷え性などにも良いとされる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="yakumoonsen_1_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="yakumoonsen_1_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.yakumoonsen_1_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2050_0001.jpg"/></a><p class="feature">八雲温泉（北海道）（やくも）<br>類似度:1.942</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="marukomaonsen_marukoma_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="marukomaonsen_marukoma_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.marukomaonsen_marukoma_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0681_0001.jpg"/></a><p class="feature">丸駒温泉（まるこま）<br>類似度:1.930</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kawabaonsen_kawaba_gunma">{% csrf_token %}<input name="id2" type="hidden" value="kawabaonsen_kawaba_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.kawabaonsen_kawaba_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1348_0001.jpg"/></a><p class="feature">川場温泉（かわば）<br>類似度:1.920</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="esashionsen_esashi_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="esashionsen_esashi_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.esashionsen_esashi_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1863_0001.jpg"/></a><p class="feature">枝幸温泉（えさし）<br>類似度:1.910</br></p></div></form>
+{% endblock content %}

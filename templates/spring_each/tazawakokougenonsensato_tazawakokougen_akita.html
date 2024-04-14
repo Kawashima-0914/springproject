@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">田沢湖高原温泉郷（たざわここうげん）</h2><h3 class="icon"> 所在地：秋田県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0239_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">秋田県東部、岩手県との県境に位置する仙北市。日本一の水深約423.4mの田沢湖と、高山植物で有名な標高約1637mの秋田駒ケ岳に挟まれた場所に湯けむりを上げる温泉地。 標高約600mの台地に約15軒のホテルやロッジ、ペンションなどが点在し、静かなブナ林と瑠璃色に輝く田沢湖、そして雄大な秋田駒ケ岳の眺望を楽しめる。田沢湖高原の一部として、高原レジャーの拠点にも最適。 春・秋の駒ケ岳ハイキングや夏の避暑、そして冬のスノーレジャーと年間を通して多くの観光客が訪れる。また、北東に5㎞ほど離れた秘湯・乳頭温泉郷への湯巡りの足場としても格好のロケーション。体の隅々まで染み渡る一服の清涼剤のような光景と、みちのくを代表する名湯秘湯に、心の奥から癒やされてゆく。
+眺望の良い高原リゾートの温泉地として栄え、湯船は天然の岩を配した岩風呂や檜造りの露天風呂、眼下に田沢湖を望む絶景風呂などバラエティ豊かなお風呂が楽しめる源泉かけ流しの温泉です。お湯は透き通ったヌメリのある、体が温まり、香りのよい硫黄泉です。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.106</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.093</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="haratsuruonsen_harazuru_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="haratsuruonsen_harazuru_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.haratsuruonsen_harazuru_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0628_0001.jpg"/></a><p class="feature">原鶴温泉（はらづる）<br>類似度:2.064</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="mitsunorionsen_koutoku_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="mitsunorionsen_koutoku_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.mitsunorionsen_koutoku_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0494_0001.jpg"/></a><p class="feature">光徳温泉（こうとく）<br>類似度:2.062</br></p></div></form>
+{% endblock content %}

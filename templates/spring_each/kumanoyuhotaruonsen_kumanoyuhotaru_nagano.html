@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">熊の湯ほたる温泉（くまのゆほたる）</h2><h3 class="icon"> 所在地：長野県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0759_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">笠ヶ岳と横手山の間を流れる角間川の上流に位置する上信越高原国立公園の中心部、志賀高原に佇む温泉地。標高約2307mの横手山の裾野、標高約1500～1800mの熊の湯エリアに8軒の宿が建つ。山々や神秘的な池や沼に囲まれた美しい志賀高原。 夏の平均気温も20℃前後と過ごしやすく、数々のトレッキングコース、ロープウェーやゴンドラを使うコースなども充実している。また、天然記念物のゲンジボタルの生息地としても有名。 「ほたる温泉」という名前もここからの由来といわれ、例年7月中旬～8月中旬にかけて観賞できる。満天の星を見上げながら、幻想的な空間で湯に浸かれば、次第に穏やかな気持ちになる。
+平成3年、志賀高原の標高1680mの地点に位置する平床大噴泉に湧き出した新興の温泉。もうもうと白い湯煙を上げながら、「シューシュー」と音をたてて激しく水蒸気を噴き出す源泉は迫力満点。熊の湯地区の8軒の宿に引かれている。豊富な湯量を誇り、かけ流しを楽しめる宿も多い。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="norikurakougenonsen_norikurakougen_nagano">{% csrf_token %}<input name="id2" type="hidden" value="norikurakougenonsen_norikurakougen_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.norikurakougenonsen_norikurakougen_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1330_0001.jpg"/></a><p class="feature">乗鞍高原温泉（のりくらこうげん）<br>類似度:2.132</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nasuonsen_nasu_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="nasuonsen_nasu_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.nasuonsen_nasu_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0103_0001.jpg"/></a><p class="feature">那須温泉（なす）<br>類似度:2.132</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.123</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="mitsunorionsen_koutoku_tochigi">{% csrf_token %}<input name="id2" type="hidden" value="mitsunorionsen_koutoku_tochigi"/><div class="con2"><a href="../spring_each/" onclick="document.mitsunorionsen_koutoku_tochigi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0494_0001.jpg"/></a><p class="feature">光徳温泉（こうとく）<br>類似度:2.116</br></p></div></form>
+{% endblock content %}

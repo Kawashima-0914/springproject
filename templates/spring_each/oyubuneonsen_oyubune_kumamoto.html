@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">御湯船温泉（おゆぶね）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2127_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">熊本県と大分県との県境にある久住山の南側山麓、産山川の河畔に位置する温泉地。杉木立に囲まれた、山間部の暮らしが今も残るような地の温泉は、宿泊施設を併設する温浴施設「御湯船温泉館」が提供している。地元の人だけではなく遠方から湯治で訪れる人も多い。 施設内には自炊施設があり、ゆったりとした時の流れを感じながら温泉を楽しめるほか、様々な浴場や食事処もあり、地元のブランド牛である「あか牛」を食べることもできる。周囲のレジャー施設としては「うぶやま牧場」が人気。牧場では、アイスクリーム＆バター作り体験やポニー体験、乳搾り体験などを楽しむことができる。
+ナトリウム・マグネシウム炭酸水素・硫酸塩温泉という泉質で、切り傷や末梢循環障害、冷え性や皮膚病などのほか、気分の落ち込みを回復する効果も期待できる。源泉100%のお湯は泉温46.0℃と少々高め。温泉施設には足湯もあるので、熱めのお湯が苦手な人は足湯で楽しんでみてはいかがだろうか。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="yudakawaonsen_yudagawa_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="yudakawaonsen_yudagawa_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.yudakawaonsen_yudagawa_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0854_0001.jpg"/></a><p class="feature">湯田川温泉（ゆだがわ）<br>類似度:2.481</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekowaisukougenonsen_nisekowaisukougen_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1877_0001.jpg"/></a><p class="feature">ニセコワイス高原温泉（にせこわいすこうげん）<br>類似度:2.455</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="minamiasotochigionsen_minamiasotochinoki_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="minamiasotochigionsen_minamiasotochinoki_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.minamiasotochigionsen_minamiasotochinoki_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1221_0001.jpg"/></a><p class="feature">南阿蘇栃木温泉（みなみあそとちのき）<br>類似度:2.445</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kumihamakaminoonsen_kanno_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kumihamakaminoonsen_kanno_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kumihamakaminoonsen_kanno_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1180_0001.jpg"/></a><p class="feature">久美浜神の温泉（かんの）<br>類似度:2.439</br></p></div></form>
+{% endblock content %}

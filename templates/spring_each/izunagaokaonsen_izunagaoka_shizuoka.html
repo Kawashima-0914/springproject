@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">伊豆長岡温泉（いずながおか）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0021_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">伊豆半島を南北に流れる狩野川の西、源氏山の麓に広がる中伊豆屈指の大温泉地。120以上の源泉を持ち、豊富な湯量を誇る。源氏山の東を古奈、西を長岡と呼ぶ。 1300年以上の歴史を持つ古奈温泉に比べ、長岡温泉は比較的新しく明治末期1907年の開湯。伊豆の玄関口として熱海、伊東に次ぐ温泉地に成長した。源氏山の山頂からは富士山も望める。 年間を通じて温暖な気候でいちご、みかんなど四季折々のフルーツ狩りも有名。人気のいちご狩りは例年12月中旬から5月上旬まで。甘いフルーツを贅沢にいただいた後は、自慢のお湯ですっきりと汗を流そう！
+温泉の飲泉効果は各地で知られているが、その温泉を日本で初めてペットボトルに詰めたのが伊豆長岡温泉だ。昔から無味無臭で癖のない泉質が“飲める温泉”として有名だった当地のお湯を地下水とブレンド。慢性胃腸病などの消化器系疾患に絶大な効能がある。また、「美人の湯」として知られる美肌効果を利用した化粧水も。多様な効能と豊富な湯量で人気を博している。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="bimataonsen_mimata_shimane">{% csrf_token %}<input name="id2" type="hidden" value="bimataonsen_mimata_shimane"/><div class="con2"><a href="../spring_each/" onclick="document.bimataonsen_mimata_shimane.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1205_0001.jpg"/></a><p class="feature">美又温泉（みまた）<br>類似度:1.955</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kawauraonsen_kawaura_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="kawauraonsen_kawaura_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.kawauraonsen_kawaura_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0840_0001.jpg"/></a><p class="feature">川浦温泉（かわうら）<br>類似度:1.929</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="izunagaokaonsenkona_izunagaokakona_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="izunagaokaonsenkona_izunagaokakona_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.izunagaokaonsenkona_izunagaokakona_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0022_0001.jpg"/></a><p class="feature">伊豆長岡温泉古奈（いずながおかこな）<br>類似度:1.915</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tachibananosatouenoonsen_tachibananosatoueno_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tachibananosatouenoonsen_tachibananosatoueno_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tachibananosatouenoonsen_tachibananosatoueno_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1009_0001.jpg"/></a><p class="feature">橘の郷上野温泉（たちばなのさとうえの）<br>類似度:1.880</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">伊豆長岡温泉古奈（いずながおかこな）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0022_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">伊豆半島を南北に流れる狩野川の西、源氏山の麓に広がる中伊豆屈指の大温泉地。120以上の源泉を持ち、豊富な湯量を誇る。源氏山の東を古奈、西を長岡と呼ぶ。高級旅館も多く熱海、伊東に次ぐ伊豆3番目の温泉地に成長。 古奈の温泉は、鎌倉時代の史書『吾妻鏡』にも記載が残っており、源頼朝が伊豆韮山の蛭ケ小島に幽閉されていた時にしばしば訪れたと伝えられる。 また、平安時代に源三位頼政の奥方として宮中に仕え、絶世の美女とうたわれた「あやめ御前」の出身地としても有名。高級旅館や数寄屋造りの宿が多く、落ち着いた雰囲気の街並みが旅情を誘う。
+1300年以上の歴史を持ち、伊豆山の走り湯、修善寺とともに「伊豆三古湯」の1つに数えられる。ちなみに、「古奈（こな）」とは伊豆の先住民アイヌ人の言葉で「熱い水」という意味であるとも。「飲める温泉」「美人の湯」としても知られ、多様な効能と豊富な湯量で人気を博している。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="izunagaokaonsen_izunagaoka_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="izunagaokaonsen_izunagaoka_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.izunagaokaonsen_izunagaoka_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0021_0001.jpg"/></a><p class="feature">伊豆長岡温泉（いずながおか）<br>類似度:2.014</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="itouonsen_itou_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="itouonsen_itou_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.itouonsen_itou_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0023_0001.jpg"/></a><p class="feature">伊東温泉（いとう）<br>類似度:1.999</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shuzenjionsen_shuzenji_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="shuzenjionsen_shuzenji_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.shuzenjionsen_shuzenji_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0071_0001.jpg"/></a><p class="feature">修善寺温泉（しゅぜんじ）<br>類似度:1.958</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yuharaonsen_yubara_okayama">{% csrf_token %}<input name="id2" type="hidden" value="yuharaonsen_yubara_okayama"/><div class="con2"><a href="../spring_each/" onclick="document.yuharaonsen_yubara_okayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0148_0001.jpg"/></a><p class="feature">湯原温泉（ゆばら）<br>類似度:1.954</br></p></div></form>
+{% endblock content %}

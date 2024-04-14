@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">蓬来温泉（よもぎひら）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1943_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">焼津で唯一自噴する源泉を持つ一軒宿の温泉。焼津の市街地にあり、アクセスもバツグン。市内の他の温泉施設は、「やいづ黒潮温泉」という別の源泉を使っており、蓬莱温泉は「蓬莱荘」でしか入れない。焼津港からあがった新鮮な天然マグロを中心とした健康にも良い料理と、日本酒に精通した女将が厳選する日本酒とのマリアージュを楽しめる。新鮮な温泉と新鮮な魚料理で、体の内外からリフレッシュできそうだ。戦後すぐの開業から10年して掘削した温泉。今でも自然に湧き続け、多くの人を温め続けている。割烹料理屋でもあるが、宿泊者しか温泉に入れないので注意を。
+泉質はナトリウムー塩化物泉で弱アルカリ性。入浴に適した40℃近い温度で自噴しているため、加温も加水もせずそのままの新鮮なお湯を味わえる奇跡のような温泉。港町らしい塩分を含んだ温泉で、無色透明な湯は体をポカポカと温めてくれる。1957年に掘削された温泉は、焼津でもっとも歴史がある。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="hamasakaonsensato_hamasaka_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="hamasakaonsensato_hamasaka_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.hamasakaonsensato_hamasaka_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1023_0001.jpg"/></a><p class="feature">浜坂温泉郷（はまさか）<br>類似度:1.835</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hirakataminatoonsen_hiragata_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="hirakataminatoonsen_hiragata_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.hirakataminatoonsen_hiragata_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0825_0001.jpg"/></a><p class="feature">平潟港温泉（ひらがた）<br>類似度:1.827</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tamayuraonsen_tamayura_miyazaki">{% csrf_token %}<input name="id2" type="hidden" value="tamayuraonsen_tamayura_miyazaki"/><div class="con2"><a href="../spring_each/" onclick="document.tamayuraonsen_tamayura_miyazaki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1071_0001.jpg"/></a><p class="feature">たまゆら温泉（たまゆら）<br>類似度:1.812</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nashikionsen_nashigi_gunma">{% csrf_token %}<input name="id2" type="hidden" value="nashikionsen_nashigi_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.nashikionsen_nashigi_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2078_0001.jpg"/></a><p class="feature">梨木温泉（なしぎ）<br>類似度:1.765</br></p></div></form>
+{% endblock content %}

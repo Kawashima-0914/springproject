@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">口之津温泉（くちのつ）</h2><h3 class="icon"> 所在地：長崎県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1628_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">長崎県の島原半島南部に位置する南島原市。島原半島は2009年（平成21年）に日本最初のジオパークに認定されており、科学的特徴のある地形となっている。 市内には雲仙岳に関する資料館もあり、活火山と共に生きてきた人々の軌跡を学べるのもこの土地ならでは。 口之津温泉は白浜海水浴場に隣接する温泉で、晴れた日には天草灘や有明海を一望できる。 早崎海峡に生息する約400頭のイルカのホーエルウォッチング、大潮時に発生するうず潮観測が楽しめる口之津港もすぐそばだ。 新鮮な海の幸はもちろん、あんこをカステラで巻いた「かす巻き」や「島原手延べそうめん」などお土産に嬉しい名産品も多い。地球のロマンを大きなスケールで感じられる南島原市口之津町、ぜひ覚えておきたい。
+浴場から有明海や天草灘を望める。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kinkesakionsen_kanagasaki_akita">{% csrf_token %}<input name="id2" type="hidden" value="kinkesakionsen_kanagasaki_akita"/><div class="con2"><a href="../spring_each/" onclick="document.kinkesakionsen_kanagasaki_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1283_0001.jpg"/></a><p class="feature">金ヶ崎温泉（かながさき）<br>類似度:1.932</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hiroshimaonsen_hiroshima_hiroshima">{% csrf_token %}<input name="id2" type="hidden" value="hiroshimaonsen_hiroshima_hiroshima"/><div class="con2"><a href="../spring_each/" onclick="document.hiroshimaonsen_hiroshima_hiroshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1200_0001.jpg"/></a><p class="feature">広島温泉（ひろしま）<br>類似度:1.930</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="usukionsen_usuki_ooita">{% csrf_token %}<input name="id2" type="hidden" value="usukionsen_usuki_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.usukionsen_usuki_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1233_0001.jpg"/></a><p class="feature">臼杵温泉（うすき）<br>類似度:1.926</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="asasatokawaonsen_asarigawa_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="asasatokawaonsen_asarigawa_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.asasatokawaonsen_asarigawa_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0645_0001.jpg"/></a><p class="feature">朝里川温泉（あさりがわ）<br>類似度:1.917</br></p></div></form>
+{% endblock content %}

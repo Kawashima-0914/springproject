@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">桃の木温泉（もものき）</h2><h3 class="icon"> 所在地：山梨県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2195_0001.jpg"/><table><tr><th>効能</th><td>ラジウム泉
+</td></tr></table></div><div class="con1"><p class="feature">手つかずの自然に包まれる南アルプスの奥地にあることから「秘湯」と呼ばれる桃の木温泉。この湯を楽しめる一軒宿「桃の木温泉さんわそう」は、｢何も足さない、かけ流しの温泉｣をコンセプトに、敷地内で湧出するこの源泉をそのまま入れている。この施設の人気の理由は、自然の中に湧くこの自家噴出温泉と、ペットを同伴する宿泊ができる宿であること。専用ドッグラン付きの部屋や、愛犬と一緒に入れる貸切風呂など、愛犬家にうれしい設備が充実している。食事は、郷土料理やほうとうなべ、馬刺しなどの料理を提供しており、この地の味を堪能できる
+神経痛、筋肉痛、関節痛、慢性消化器病、冷え性、疲労回復、健康増進などによいとされるアルカリ性単純温泉。敷地内の源泉から引かれている温泉は、湯量豊富な100％かけ流しの湯。最初から適温で湧出しているので、加温の必要もない。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="okudougoonsen_okudougo_ehime">{% csrf_token %}<input name="id2" type="hidden" value="okudougoonsen_okudougo_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.okudougoonsen_okudougo_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0288_0001.jpg"/></a><p class="feature">奥道後温泉（おくどうご）<br>類似度:2.036</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="irihirosenyuuasakusagakuonsen_irihirosenyuuasakusadake_niigata">{% csrf_token %}<input name="id2" type="hidden" value="irihirosenyuuasakusagakuonsen_irihirosenyuuasakusadake_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.irihirosenyuuasakusagakuonsen_irihirosenyuuasakusadake_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0850_0001.jpg"/></a><p class="feature">入広瀬ニュー浅草岳温泉（いりひろせにゅーあさくさだけ）<br>類似度:2.024</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ryuuonsen_ryuu_hiroshima">{% csrf_token %}<input name="id2" type="hidden" value="ryuuonsen_ryuu_hiroshima"/><div class="con2"><a href="../spring_each/" onclick="document.ryuuonsen_ryuu_hiroshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1285_0001.jpg"/></a><p class="feature">龍温泉（りゅう）<br>類似度:2.010</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="esashionsen_esashi_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="esashionsen_esashi_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.esashionsen_esashi_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1863_0001.jpg"/></a><p class="feature">枝幸温泉（えさし）<br>類似度:2.006</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">みはらし温泉（みはらし）</h2><h3 class="icon"> 所在地：広島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1236_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">山陽自動車道「福山西IC」より車で約50分または「本郷IC」より車で約30分、JR三原駅よりバスで約15分ほど。三原から呉に向う海岸線沿いで、瀬戸内海に浮かぶ小島の美しい景色が一望できる絶好のロケーショ ンに湧く「みはらし温泉」。 温泉は高濃度塩化物泉で飲んで良し、浸かって良しと評判で良質な温泉を目当てに多くの湯治客が訪れる。瀬戸内海を行き交う豪華客船やフェリーを見ながら、新鮮な瀬戸の海の幸を楽しむのが また格別。 海水浴場も付近にあるので、夏は海水浴を楽しむ家族連れで賑わいを見せる。他にも周辺には、毛利元就公も見物したといわれる「瀑雪の滝」や瀬戸内海随一の多島美が見られる山「筆影山・竜王山」など、観光スポットが多いのも嬉しい。
+瀬戸内海を一望できる場所に湧く「みはらし温泉」は、深度2000mの地下から汲み上げられる。泉質はナトリウム・カルシウム‐塩化物泉で、効能成分の溶存物資は1㎏の中に、27700㎎含まれており、日本でトップクラスの高濃度を誇る天然温泉。保温効果や効能も高く、飲泉効果もあるため、難病を克服した人も居ると評判で、湯治客が多く訪れる温泉だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kesennumaonsen_kesennuma_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="kesennumaonsen_kesennuma_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.kesennumaonsen_kesennuma_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1225_0001.jpg"/></a><p class="feature">気仙沼温泉（けせんぬま）<br>類似度:1.942</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="futamionsen_futami_mie">{% csrf_token %}<input name="id2" type="hidden" value="futamionsen_futami_mie"/><div class="con2"><a href="../spring_each/" onclick="document.futamionsen_futami_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1280_0001.jpg"/></a><p class="feature">二見温泉（ふたみ）<br>類似度:1.908</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:1.900</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="akashionsen_akashi_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="akashionsen_akashi_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.akashionsen_akashi_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1126_0001.jpg"/></a><p class="feature">明石温泉（あかし）<br>類似度:1.891</br></p></div></form>
+{% endblock content %}

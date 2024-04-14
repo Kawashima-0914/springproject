@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">向屋温泉（こうや）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1316_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">群馬県の最西南端に位置し人口約1300人の静かな村、上野村。面積の96％を占める広葉樹の多い森林には巨木が数多く残り、幾多の野生動物が生息する。村の中央を流れる神流川は、平成の名水百選にも選ばれた利根 川の源流の一つ。 上野村立の川和自然公園内にある鍾乳洞は立ち寄りたいスポットの一つ。洞内総延長2.2㎞、約1200年前に発見され、約400年前には修行の場として利用されていたという県指定の天然記念物で ある。 上野村温泉郷は、西上州の深い山々と豊かな森、神流川源流域の恵まれた自然環境の中にある村内4カ所の源泉からなる。4つの源泉はそれぞれ泉質や効能が違い、1つの源泉に1つの温泉施設という贅沢な湯の利用方法が特徴。奥深い自然の懐に抱かれた秘湯体験が味わえる。
+pH9.7、大浴場の他、露天風呂とサウナあり。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="konbukawaonsen_konbugawa_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="konbukawaonsen_konbugawa_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.konbukawaonsen_konbugawa_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1872_0001.jpg"/></a><p class="feature">昆布川温泉（こんぶがわ）<br>類似度:2.884</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="amakusamatsushimaonsen_amakusamatsushima_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="amakusamatsushimaonsen_amakusamatsushima_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.amakusamatsushimaonsen_amakusamatsushima_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1247_0001.jpg"/></a><p class="feature">天草松島温泉（あまくさまつしま）<br>類似度:2.719</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="enakyouonsen_enakyou_gifu">{% csrf_token %}<input name="id2" type="hidden" value="enakyouonsen_enakyou_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.enakyouonsen_enakyou_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0361_0001.jpg"/></a><p class="feature">恵那峡温泉（えなきょう）<br>類似度:2.710</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gakunoyuonizumi_1_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="gakunoyuonizumi_1_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.gakunoyuonizumi_1_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">岳の湯温泉（熊本県）（たけのゆ）<br>類似度:2.696</br></p></div></form>
+{% endblock content %}

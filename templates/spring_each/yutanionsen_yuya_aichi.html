@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯谷温泉（ゆや）</h2><h3 class="icon"> 所在地：愛知県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0201_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">霊山鳳来寺山の麓に湧き出る源泉「鳳液泉」は鳳来寺開山の祖、利修仙人によって1300年ほど前に発見されたと伝えられており、その効能は万病に効くといわれている。 湯谷温泉は、渓谷「板敷川」沿いに9軒ほどの温泉旅館が立ち並ぶ静かな温泉郷で、露天風呂から眺める四季折々の風景は、都会の喧騒を忘れさせ癒しの時間へと誘う。 また、旅館自慢の会席料理は、鮎、山菜、しし肉、鳳来牛などの厳選された地元食材をふんだんに使用しており、この地ならではの旅をより鮮やかに彩る。
+淡黄色の温泉は、成分濃度が高く、神経痛、関節痛、冷え症などに効果があります。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tsutsujinoyu_tsutsujinoyu_gunma">{% csrf_token %}<input name="id2" type="hidden" value="tsutsujinoyu_tsutsujinoyu_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.tsutsujinoyu_tsutsujinoyu_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2076_0001.jpg"/></a><p class="feature">つつじの湯（つつじのゆ）<br>類似度:1.851</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1128_0001.jpg"/></a><p class="feature">天橋立・宮津温泉ピント湯（あまのはしだて・みやづぴんとゆ）<br>類似度:1.841</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="suwaonsen_suwa_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="suwaonsen_suwa_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.suwaonsen_suwa_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2170_0001.jpg"/></a><p class="feature">諏訪温泉（すわ）<br>類似度:1.822</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama">{% csrf_token %}<input name="id2" type="hidden" value="kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama"/><div class="con2"><a href="../spring_each/" onclick="document.kishuuminabechirihamaonsen_kishuuminabesenrihama_wakayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1251_0001.jpg"/></a><p class="feature">紀州みなべ千里浜温泉（きしゅうみなべせんりはま）<br>類似度:1.815</br></p></div></form>
+{% endblock content %}

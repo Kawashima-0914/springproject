@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">板室温泉（いたむろ）</h2><h3 class="icon"> 所在地：栃木県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0490_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">那須から車で約30分、那須連山の西山麓を流れる那珂川の支流沿いに広がる温泉地。江戸時代中期より会津街道の宿場街として栄えていたが、効能豊かな湯が評判を呼び、湯治場として発展を遂げた。現在では貴重となった、観光地化することなく素朴な情緒を守り続ける温泉地のひとつである。 湯治場としての名残を留め、どこか昔懐かしい雰囲気漂う温泉街は、手ぬぐい片手に浴衣姿でそぞろ歩くのがよく似合う。周辺には、沼原湿原、乙女の滝など雄大な自然景観を愉しめる観光スポットも点在。 療養泉に適した泉質と自然豊かな環境が評価され、昭和46年に「国民保養温泉地」として指定され、さらに平成5年には「ふれあい・やすらぎ温泉地」に選定されました。
+約1000年前に、那須三郎宗重によって発見され、「しもつけの薬湯」として古くから親しまれてきた伝統ある温泉。源泉は全22本と県内随一の本数を誇る。40℃前後とややぬるめの湯は、神経痛や高血圧、リウマチ、動脈硬化症などに特効があり、長い時間をかけて湯浴みをすると効果的といわれる。山々に囲まれた美しい自然環境を愉しみつつ、効能あらたかな湯にゆっくりと浸かりたい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.082</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="bimataonsen_mimata_shimane">{% csrf_token %}<input name="id2" type="hidden" value="bimataonsen_mimata_shimane"/><div class="con2"><a href="../spring_each/" onclick="document.bimataonsen_mimata_shimane.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1205_0001.jpg"/></a><p class="feature">美又温泉（みまた）<br>類似度:2.068</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kinosakimaruyamakawahidamarionsen_kinosakimaruyamagawahidamari_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="kinosakimaruyamakawahidamarionsen_kinosakimaruyamagawahidamari_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.kinosakimaruyamakawahidamarionsen_kinosakimaruyamagawahidamari_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1189_0001.jpg"/></a><p class="feature">城崎円山川ひだまり温泉（きのさきまるやまがわひだまり）<br>類似度:2.067</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="uesaiharaonsen_kamisaibara_okayama">{% csrf_token %}<input name="id2" type="hidden" value="uesaiharaonsen_kamisaibara_okayama"/><div class="con2"><a href="../spring_each/" onclick="document.uesaiharaonsen_kamisaibara_okayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1292_0001.jpg"/></a><p class="feature">上齋原温泉（かみさいばら）<br>類似度:2.045</br></p></div></form>
+{% endblock content %}

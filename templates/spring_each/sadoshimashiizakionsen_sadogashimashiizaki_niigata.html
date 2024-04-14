@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">佐渡島椎崎温泉（さどがしましいざき）</h2><h3 class="icon"> 所在地：新潟県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0060_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">佐渡の表玄関として、政治・経済・交通の中心地である両津。新潟からのフェリーの発着場でもある両津港より車で約5分ほど走ると、加茂湖畔の高台に佇む温泉地へ到着する。日本海の水平線や朝日、大佐渡の山々を背景にきらめく加茂湖の眺望が見事。 また忘れてはならないのが、島ならではの美食の数々だ。佐渡名物のイゴネリやおけさ柿はもちろん、夏はアワビにサザエ、秋はズワイガニ、冬は南蛮エビと、そこはまさに食の宝庫。 さらに少し足を延ばせば、並んだ亀に見える島「二ツ亀」で有名な外海府海岸や、島のほとんどを眼下におさめるドンデン高原など見どころが満載。観光の拠点として、年間を通じて多くの旅人が立ち寄る温泉地だ。
+その昔、朱鷺（トキ）が傷を癒したとの言い伝えが残る住吉温泉を引き湯。やわらかく肌にすっとなじむような感触が特徴で、保湿効果にもすぐれた良質の温泉を楽しめる。また、加茂湖畔の高台に佇む温泉地からは、東に両津湾、西に加茂湖を一望。さらに大佐渡・小佐渡の山々を見渡す眺望が、佐渡の旅をより一層豊かなものにしてくれる。島屈指の温泉地として人気を集めている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="iseshimasatoshishimaonsen_iseshimakashikojima_mie">{% csrf_token %}<input name="id2" type="hidden" value="iseshimasatoshishimaonsen_iseshimakashikojima_mie"/><div class="con2"><a href="../spring_each/" onclick="document.iseshimasatoshishimaonsen_iseshimakashikojima_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1238_0001.jpg"/></a><p class="feature">伊勢志摩賢島温泉（いせしまかしこじま）<br>類似度:2.137</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="inawashiroshikinoyuonizumi_inawashiroshikinoyu_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="inawashiroshikinoyuonizumi_inawashiroshikinoyu_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.inawashiroshikinoyuonizumi_inawashiroshikinoyu_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1209_0001.jpg"/></a><p class="feature">猪苗代四季の湯温泉（いなわしろしきのゆ）<br>類似度:2.132</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gamagoorionsen_gamagoori_aichi">{% csrf_token %}<input name="id2" type="hidden" value="gamagoorionsen_gamagoori_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.gamagoorionsen_gamagoori_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1237_0001.jpg"/></a><p class="feature">蒲郡温泉（がまごおり）<br>類似度:2.125</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="choukaionsen_choukai_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="choukaionsen_choukai_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.choukaionsen_choukai_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1147_0001.jpg"/></a><p class="feature">鳥海温泉（ちょうかい）<br>類似度:2.100</br></p></div></form>
+{% endblock content %}

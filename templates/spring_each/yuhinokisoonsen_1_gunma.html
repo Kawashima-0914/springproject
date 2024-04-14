@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯檜曽温泉（水上温泉郷）（ゆびそ（みなかみ））</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0417_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">群馬県利根郡みなかみ町にある水上温泉郷の一つ。湯檜曽川の渓流沿いにある自然に包まれた温泉地。新旧の旅館が５軒並んでおり、駅にも近い。鎌倉時代に落人が発見した伝説がある。水上奥利根、大穴、天神平などのスキー場も近くスキーシーズンも人気のエリア。昭和初期には与謝野晶子も宿泊し、現在も晶子直筆の掛け軸が静かにときを刻んでいる、大正11年創業の老舗旅館がある。また露天風呂に、屋根をあえて付けていない旅館では、プラネタリウムのような星空が楽しめることでも知られている。
+湯檜曽温泉の泉質はアルカリ性単純温泉。肌の角質を取りのぞく効果があるといわれており「美肌の湯」といわれる。成分が薄く優しい温泉なため、湯あたりしにくいのが特徴。赤ちゃんや肌が敏感の方でも安心して入浴できる。ベビーベッドが完備されていたり、貸切も可能なお宿もあるので、ファミリー層にも人気の温泉地。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="hamanoyuonizumi_hamanoyu_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="hamanoyuonizumi_hamanoyu_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.hamanoyuonizumi_hamanoyu_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1748_0001.jpg"/></a><p class="feature">浜の湯温泉（はまのゆ）<br>類似度:2.099</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hirosawateraonsen_koutakuji_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="hirosawateraonsen_koutakuji_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.hirosawateraonsen_koutakuji_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0347_0001.jpg"/></a><p class="feature">広沢寺温泉（こうたくじ）<br>類似度:2.073</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="akizukionsen_akizuki_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="akizukionsen_akizuki_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.akizukionsen_akizuki_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1611_0001.jpg"/></a><p class="feature">秋月温泉（あきづき）<br>類似度:2.071</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="akanmizuumionsen_akanko_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="akanmizuumionsen_akanko_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.akanmizuumionsen_akanko_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1545_0001.jpg"/></a><p class="feature">阿寒湖温泉（あかんこ）<br>類似度:2.066</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯之野温泉（ゆのの）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2189_0001.jpg"/><table><tr><th>効能</th><td>硫黄泉
+</td></tr></table></div><div class="con1"><p class="feature">「神孫降誕の地」である霊峰・高千穂峰の登山口である「高千穂河原」から約4キロ進んだ場所に位置する温泉地。観光地としても有名な霧島神宮の周辺に湧く温泉「霧島神宮温泉」の源泉でもあり、温泉地から神社周辺の温泉施設にお湯を供給している。江戸時代に発見されたと伝えられ、以後、「湯治場があり繁盛していた」という記録が残されるほど地元の人の間で愛されてきた。神宮には樹齢800年の御神木や霧島七不思議などがあり、パワースポットとしても全国的に有名。温泉で癒やされて霧島神宮でパワーチャージすれば、仕事や家事への活力がみなぎりそう。
+泉質は、弱酸性-低張性-高温泉の硫黄泉。慢性皮膚病やきりきず、慢性婦人病、神経痛や痛風など幅広い効能が期待できる。皮膚の保湿効果を高め、身体をしっかりと暖める効果もあると言われる。「湯の花」が大量に浮かぶ湯は、湯の花によって湯が真っ白に見えるほど。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shiobetsuonsen_shiobetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="shiobetsuonsen_shiobetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.shiobetsuonsen_shiobetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1979_0001.jpg"/></a><p class="feature">塩別温泉（しおべつ）<br>類似度:2.393</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yanagawaonsen_yanagawa_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="yanagawaonsen_yanagawa_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.yanagawaonsen_yanagawa_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1033_0001.jpg"/></a><p class="feature">柳川温泉（やながわ）<br>類似度:2.300</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yunogenonizumi_yunomoto_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="yunogenonizumi_yunomoto_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.yunogenonizumi_yunomoto_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1840_0001.jpg"/></a><p class="feature">湯の元温泉（ゆのもと）<br>類似度:2.296</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="oyukikanonsen_onoaida_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="oyukikanonsen_onoaida_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.oyukikanonsen_onoaida_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0326_0001.jpg"/></a><p class="feature">尾之間温泉（おのあいだ）<br>類似度:2.275</br></p></div></form>
+{% endblock content %}

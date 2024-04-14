@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">山川天然砂むし温泉（やまがわてんねんすなむし）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2185_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">山川天然砂むし温泉は、その名のとおり湯ではなく「砂湯里」という天然の砂に入る砂風呂。開聞岳や大隅半島などを望める伏目海岸は、温泉がいたるところで自然に沸き立つ場所であり、砂浜に掘った穴へ体を埋めてもらうことで、温泉熱を全身に浴びる入浴を楽しむことができる。サウナに入ったように、10分～15分で砂の温度と圧力により全身から汗が噴き出し、出た後は体が軽くなる感覚があるほど。伏見海岸一体はその美しさから景勝地としても、また温泉リゾートとしても楽しめる。
+砂風呂には温泉の成分が含まれており、ナトリウム-塩化物泉の性質を持っている。神経痛や腰痛、アトピーや胃腸病、また便秘や肥満など多くの効能が期待できる。また、天然保湿成分のメタケイ酸が全国屈指の含有量を誇り美肌効果が高いことで女性から人気がある。湯を楽しむ温泉とはまた違う感覚を、砂むし温泉で体験してみてはいかがだろうか。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="shirakoonsen_shirako_chiba">{% csrf_token %}<input name="id2" type="hidden" value="shirakoonsen_shirako_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.shirakoonsen_shirako_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0073_0001.jpg"/></a><p class="feature">白子温泉（しらこ）<br>類似度:2.470</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shihoroonsen_shihoro_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="shihoroonsen_shihoro_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.shihoroonsen_shihoro_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1501_0001.jpg"/></a><p class="feature">しほろ温泉（しほろ）<br>類似度:2.414</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tsutsujinoyu_tsutsujinoyu_gunma">{% csrf_token %}<input name="id2" type="hidden" value="tsutsujinoyu_tsutsujinoyu_gunma"/><div class="con2"><a href="../spring_each/" onclick="document.tsutsujinoyu_tsutsujinoyu_gunma.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2076_0001.jpg"/></a><p class="feature">つつじの湯（つつじのゆ）<br>類似度:2.407</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="iseshimasatoshishimaonsen_iseshimakashikojima_mie">{% csrf_token %}<input name="id2" type="hidden" value="iseshimasatoshishimaonsen_iseshimakashikojima_mie"/><div class="con2"><a href="../spring_each/" onclick="document.iseshimasatoshishimaonsen_iseshimakashikojima_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1238_0001.jpg"/></a><p class="feature">伊勢志摩賢島温泉（いせしまかしこじま）<br>類似度:2.404</br></p></div></form>
+{% endblock content %}

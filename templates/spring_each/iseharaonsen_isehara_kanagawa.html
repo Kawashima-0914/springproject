@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">伊勢原温泉（いせはら）</h2><h3 class="icon"> 所在地：神奈川県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0343_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">古くから信仰の場として人々に親しまれた「大山」を望む場所に位置する温泉。標高1252m、日本三百名山の一つとされている大山は三角形の美しい形をしており、秋には紅葉で彩られる。大山は江戸時代から信仰と行楽先としての人気を集める地であり、「大山詣り」と呼ばれ、参拝者が多く訪れた。大山詣りは現在では、日本遺産遺産に登録されている。大山の山頂には阿夫利神社の本社、中腹には阿夫利神社の下社や大山寺が建てられている。大山を登り、神社やお寺を巡ることで、パワーをもらえそうだ。周辺を散策した後は、温泉で汗を流し、リフレッシュしよう。
+無色透明で無臭の温泉となっています。泉質は、アルカリ性単純泉です。アルカリ性単純泉は肌のすべすべする感触を楽しめるのが特徴で、多くの人に入りやすいものとなっています。伊勢原温泉周辺は、「大山」や神社やお寺などがあるため、散策にはぴったりで、その疲れを癒すのにもってこいの温泉と言えるかもしれません。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tsukubasanonsen_tsukubasan_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="tsukubasanonsen_tsukubasan_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.tsukubasanonsen_tsukubasan_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1051_0001.jpg"/></a><p class="feature">筑波山温泉（つくばさん）<br>類似度:1.771</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tounosawaonsen_tounosawa_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="tounosawaonsen_tounosawa_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.tounosawaonsen_tounosawa_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0353_0001.jpg"/></a><p class="feature">塔ノ沢温泉（とうのさわ）<br>類似度:1.753</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tsukubaonsen_tsukuba_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="tsukubaonsen_tsukuba_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.tsukubaonsen_tsukuba_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0186_0001.jpg"/></a><p class="feature">筑波温泉（つくば）<br>類似度:1.752</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kichinaonsen_yoshina_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="kichinaonsen_yoshina_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.kichinaonsen_yoshina_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0460_0001.jpg"/></a><p class="feature">吉奈温泉（よしな）<br>類似度:1.739</br></p></div></form>
+{% endblock content %}

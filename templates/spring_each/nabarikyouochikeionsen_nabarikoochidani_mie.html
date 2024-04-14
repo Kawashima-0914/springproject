@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">名張香落渓温泉（なばりこおちだに）</h2><h3 class="icon"> 所在地：三重県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1700_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">三重県名張市。その語源は古語の「隠（なばり）」といわれている。その名の通り、隠れ里のような緑豊かな自然と、かつて忍者も修行したという歴史の浪漫に抱かれたエリア。 滝百選にも選ばれた「赤目四十八滝」、往時の姿を残す「名張藤堂家」などが有名。「江戸川乱歩」の生誕地でもある。青蓮寺レークホテルの香落渓温泉は青蓮寺湖畔に湧く温泉。アルカリ度が極めて高く、美肌の湯として評判。 地下約300mより自噴した源泉を使用した開放感たっぷりの露天風呂からは眼下に紺碧に輝く湖を見下ろすことができ、自然美を満喫できる。近隣には紅葉の名所でもある「香落渓」があり、例年11月上旬から下旬は燃えるような色彩に染まり多くの観光客の目を楽しませてくれる。
+pH9.5、ナトリウムイオン55.5㎎/1㎏。日帰り入浴可能。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kouenonsen_takatoo_nagano">{% csrf_token %}<input name="id2" type="hidden" value="kouenonsen_takatoo_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.kouenonsen_takatoo_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1469_0001.jpg"/></a><p class="feature">高遠温泉（たかとお）<br>類似度:1.420</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1120_0001.jpg"/></a><p class="feature">京都竹の郷温泉（きょうとたけのさと）<br>類似度:1.415</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ooharaonsen_oohara_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="ooharaonsen_oohara_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.ooharaonsen_oohara_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0947_0001.jpg"/></a><p class="feature">大原温泉（おおはら）<br>類似度:1.402</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="mazekawaonsen_mazegawa_gifu">{% csrf_token %}<input name="id2" type="hidden" value="mazekawaonsen_mazegawa_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.mazekawaonsen_mazegawa_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1668_0001.jpg"/></a><p class="feature">馬瀬川温泉（まぜがわ）<br>類似度:1.399</br></p></div></form>
+{% endblock content %}

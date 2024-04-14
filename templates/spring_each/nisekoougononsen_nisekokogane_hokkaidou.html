@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">ニセコ黄金温泉（にせここがね）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1876_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>にごり、にごり（褐色）、神経痛、筋肉痛、関節痛
+</td></tr></table></div><div class="con1"><p class="feature">北海道西部にあるニセコ温泉郷の一つで、日帰り入浴施設「黄金温泉」が1軒あるのみ。2002年、米農家を営んでいた主人が農業用の井戸水を求めて掘削したところ温泉が湧出した。それから十年以上の歳月をかけて、建物や浴槽から露天風呂の庭に至るまでコツコツとご主人が手づくりしてきたそう。源泉の温度が低いこともあり、加温せずに営業が出来る５月から10月までの期間限定の温泉だ。ご主人自慢の露天風呂からは、羊蹄山やニセコアンヌプリなどの山々を眺めることが出来、開放感抜群！のどかで穏やかな四季を感じながら入浴を楽しめる。隣接した蕎麦屋では毎朝打つ限定食の十割蕎麦をいただこう。
+泉質は、ナトリウム-塩化物・硫酸塩・炭酸水素塩泉。つるつるしっとりの優しい美肌の湯で人気が高い。寝湯と釜風呂はぬるめの温度で長湯にも向いている。温泉に含まれた炭酸ガスは、皮膚から吸収されて末梢血管を広げる作用があり、心臓に負担をかけずに血流をよくするので、ぬるくても体はしっかりとあたたまる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekowaisukougenonsen_nisekowaisukougen_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1877_0001.jpg"/></a><p class="feature">ニセコワイス高原温泉（にせこわいすこうげん）<br>類似度:2.926</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yaharaonsen_yawara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="yaharaonsen_yawara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.yaharaonsen_yawara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1900_0001.jpg"/></a><p class="feature">矢原温泉（やわら）<br>類似度:2.843</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="esanonsensato_esan_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="esanonsensato_esan_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.esanonsensato_esan_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">恵山温泉郷（えさん）<br>類似度:2.748</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekoannupurionsen_nisekoannupuri_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekoannupurionsen_nisekoannupuri_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekoannupurionsen_nisekoannupuri_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">ニセコアンヌプリ温泉（にせこあんぬぷり）<br>類似度:2.714</br></p></div></form>
+{% endblock content %}

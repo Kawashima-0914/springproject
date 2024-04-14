@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">犬吠埼温泉（いぬぼうさき）</h2><h3 class="icon"> 所在地：千葉県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0025_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">関東最東端の犬吠埼に湧く温泉。関東で一番早く日の出を見られる岬として有名で、富士山頂と離島を除いて日本で一番早く初日の出を拝める。毎年、元旦や2日には多くの人で賑わうが、地元の人いわく4日、5日の日の出の方が美しいとか。 見渡す限りの大海原から真っ赤に燃えて昇る朝日は絶景。水平線を見渡せば、地球が丸いことを視覚で実感できる。また、沖は関東で唯一イルカウォッチング（冬季休業）を楽しめる場所。遭遇率平均90％、多いときには5000頭ほどのイルカの群れも。 東京から車で約2時間。人間の心を癒す力があるといわれる野生のイルカに出会える。太平洋が見せてくれる感動に、しばし時間を忘れて酔いしれる。
+太平洋の荒波が造りだす豪快な海岸線沿いにホテルや旅館が立ち並ぶ。犬吠埼遊歩道は、高波を避けながら磯づたいを散策できる。また、この地は源義経が兄・頼朝に追われ奥州へ落ちる際に立ち寄ったと伝わる場所。「犬吠埼」という地名も、取り残された義経の愛犬が主人を慕い7日7晩泣き続けたことから付いたとか。温泉は肌に優しい塩化物強塩泉で、なめると塩辛い。全国有数の水揚げ量を誇る銚子港の海の幸も楽しみの1つだ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="futamionsen_futami_mie">{% csrf_token %}<input name="id2" type="hidden" value="futamionsen_futami_mie"/><div class="con2"><a href="../spring_each/" onclick="document.futamionsen_futami_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1280_0001.jpg"/></a><p class="feature">二見温泉（ふたみ）<br>類似度:2.360</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kinkesakionsen_kanagasaki_akita">{% csrf_token %}<input name="id2" type="hidden" value="kinkesakionsen_kanagasaki_akita"/><div class="con2"><a href="../spring_each/" onclick="document.kinkesakionsen_kanagasaki_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1283_0001.jpg"/></a><p class="feature">金ヶ崎温泉（かながさき）<br>類似度:2.341</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="amatsukominatoonsen_amatsukominato_chiba">{% csrf_token %}<input name="id2" type="hidden" value="amatsukominatoonsen_amatsukominato_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.amatsukominatoonsen_amatsukominato_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0014_0001.jpg"/></a><p class="feature">天津小湊温泉（あまつこみなと）<br>類似度:2.320</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hamasakaonsensato_hamasaka_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="hamasakaonsensato_hamasaka_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.hamasakaonsensato_hamasaka_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1023_0001.jpg"/></a><p class="feature">浜坂温泉郷（はまさか）<br>類似度:2.301</br></p></div></form>
+{% endblock content %}

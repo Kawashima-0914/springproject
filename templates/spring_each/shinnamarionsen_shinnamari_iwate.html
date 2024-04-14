@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">新鉛温泉（しんなまり）</h2><h3 class="icon"> 所在地：岩手県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1882_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">全国的にも有名な、岩手県花巻温泉郷の奥座敷とも呼ばれる温泉地「新鉛温泉」は、鉛温泉の上流300m、豊沢川の最奥に湧く温泉地だ。何度でも訪れてみたい東北地域認定第1号の宿「愛隣館」があり、新鉛温泉はこの一軒のみである。源泉は第1黄金の湯、第2黄金の湯、第3黄金の湯の3本所有している。1989年に発見された当初は、この地にあった金山に因んで黄金温泉という名前であったが、後に新鉛温泉となる。黄金温泉という名前は源泉名「黄金の湯」という名前に残っている。近くには、花巻市出身の詩人・宮沢賢治にまつわる建物が多く存在する。「宮沢賢治童話村」は宮沢賢治の童話をテーマに構成され、ジョバンニや又三郎、山猫がでてきそうなファンタジックな世界を楽しく遊ぶ施設だ。
+泉質はナトリウムカルシウム硫酸塩泉。飲泉が可能で糖尿病や便秘症に効くといわれている。一軒宿「愛隣館」は掛け流しで湯船に注がれており源泉そのままを楽しめる。「陶器風呂」「立ち湯露天」など個性的なお風呂が自慢で、耳をすませば渓流や木々から自然の音色が聴こえてくる。街の喧噪を離れ、薬効効果のある温泉と自然がおりなす日本の風景を楽しんで。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="yudakawaonsen_yudagawa_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="yudakawaonsen_yudagawa_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.yudakawaonsen_yudagawa_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0854_0001.jpg"/></a><p class="feature">湯田川温泉（ゆだがわ）<br>類似度:2.242</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kuramaonsen_kurama_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kuramaonsen_kurama_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kuramaonsen_kurama_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1007_0001.jpg"/></a><p class="feature">鞍馬温泉（くらま）<br>類似度:2.210</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.194</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:2.167</br></p></div></form>
+{% endblock content %}

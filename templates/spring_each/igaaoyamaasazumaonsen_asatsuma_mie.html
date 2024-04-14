@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">伊賀青山朝妻温泉（あさつま）</h2><h3 class="icon"> 所在地：三重県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1633_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">奈良や京都など古都へつながる交通の要衝として、伊勢神宮への参宮者の宿場町として、太古の時代から栄えてきた伊賀市。 京都や奈良の影響を受けながらも独自の文化が醸成されており、伊賀忍者の里や松尾芭蕉の生家、組み紐や伊賀焼など、全国的に知名度の高い観光資源を有している。市内に温泉は何カ所かあるが、朝妻温泉は青山高原の緑に囲まれたリゾート温泉地だ。 アルカリ単純泉の柔らかな湯は肌に優しく女性に人気。特筆すべきは浴場の大きさで、女性用126㎡、男性用180㎡と開放感もひとしお。清々しい高原の空気を胸いっぱいに吸い込んで、身も心もリフレッシュ。温泉の他にも充実した設備を完備した温泉リゾートならではの滞在を満喫しよう。
+泉温27.6℃、湯量66L/分のアルカリ性単純温泉。露天風呂、サウナ、ミストサウナも備えており、ボディケアも充実。夜は庭園がライトアップして幻想的な雰囲気に。日帰り入浴も可能。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="ooharaonsen_oohara_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="ooharaonsen_oohara_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.ooharaonsen_oohara_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0947_0001.jpg"/></a><p class="feature">大原温泉（おおはら）<br>類似度:2.053</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kyoutotakenosatoonsen_kyoutotakenosato_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1120_0001.jpg"/></a><p class="feature">京都竹の郷温泉（きょうとたけのさと）<br>類似度:2.036</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="igaonsen_iga_mie">{% csrf_token %}<input name="id2" type="hidden" value="igaonsen_iga_mie"/><div class="con2"><a href="../spring_each/" onclick="document.igaonsen_iga_mie.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1470_0001.jpg"/></a><p class="feature">伊賀温泉（いが）<br>類似度:2.022</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="genkaisatsukionsen_genkaisatsuki_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="genkaisatsukionsen_genkaisatsuki_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.genkaisatsukionsen_genkaisatsuki_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0949_0001.jpg"/></a><p class="feature">玄海さつき温泉（げんかいさつき）<br>類似度:2.001</br></p></div></form>
+{% endblock content %}

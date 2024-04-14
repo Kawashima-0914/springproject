@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">信貴山温泉（しぎさん）</h2><h3 class="icon"> 所在地：奈良県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0065_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">“信ずべき山、貴ぶべき山”で「信貴山」と号したのは、かの聖徳太子。587年、物部守屋討伐に出た聖徳太子が戦勝祈願に訪れた際、日本で最初に毘沙門天が出現したと伝わる朝護孫子寺。守屋を討った後、聖徳太子自らが毘沙門天の尊像を祀ったといわれる。 貴重な歴史資料として知られる「信貴山縁起絵巻」を収蔵する古刹としても有名。古代から続くシンボルの大寅は、商売繁盛の神様として今も多くの人の信仰を受ける。 その朝護孫子寺をはじめ、いにしえの姿を今に残す霊地・信貴山。四季折々の自然が広がる閑静な山あいに、信貴山温泉が湧く。商都・大阪から車で1時間以内。日頃の喧騒を忘れ、悠久の時間に身を委ねながら心静かに過ごしたい。
+地上に落ちて怪我をした雷神が、助けてくれた心優しい長者の恩に報いて井欄を湧き出させたのが始まりとされる古湯。かつては炭酸鉄泉が湧出していたが、その泉脈が閉塞。平成に入り、現在の単純泉の源泉の掘削に成功した。1日約75tの豊富な湯量を誇る温泉は、無色透明で肌に滑らかな湯質が自慢。信貴山の大自然を眺める露天風呂は、癖のない単純泉のお湯も気持ち良く、ついつい長湯してしまう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tennenonsenmahorobanoyu_tennenmahorobanoyu_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tennenonsenmahorobanoyu_tennenmahorobanoyu_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tennenonsenmahorobanoyu_tennenmahorobanoyu_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1245_0001.jpg"/></a><p class="feature">天然温泉まほろばの湯（てんねんまほろばのゆ）<br>類似度:2.368</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="gessenonsen_tsukikawa_nagano">{% csrf_token %}<input name="id2" type="hidden" value="gessenonsen_tsukikawa_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.gessenonsen_tsukikawa_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1281_0001.jpg"/></a><p class="feature">月川温泉（つきかわ）<br>類似度:2.351</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tsukubasanonsen_tsukubasan_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="tsukubasanonsen_tsukubasan_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.tsukubasanonsen_tsukubasan_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1051_0001.jpg"/></a><p class="feature">筑波山温泉（つくばさん）<br>類似度:2.339</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="genkaisatsukionsen_genkaisatsuki_fukuoka">{% csrf_token %}<input name="id2" type="hidden" value="genkaisatsukionsen_genkaisatsuki_fukuoka"/><div class="con2"><a href="../spring_each/" onclick="document.genkaisatsukionsen_genkaisatsuki_fukuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0949_0001.jpg"/></a><p class="feature">玄海さつき温泉（げんかいさつき）<br>類似度:2.338</br></p></div></form>
+{% endblock content %}

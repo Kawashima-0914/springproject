@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">青木鉱泉（あおきこうせん）</h2><h3 class="icon"> 所在地：山梨県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2355_0001.jpg"/><table><tr><th>効能</th><td>含鉄泉
+</td></tr></table></div><div class="con1"><p class="feature">南アルプス北東部の地蔵ヶ岳・観音ヶ岳・薬師ヶ岳の3山をまとめて「鳳凰三山（ほうおうさんざん）」と呼ぶ。青木鉱泉は、この鳳凰三山を巡る登山コースの入口に建つ一軒宿の温泉。登山ができる期間の、春から秋までに限って営業する。古風な建屋は明治初年に創業した当時の建物を再現した、釘を使わない挿し鴨居造りの木造建築。宿泊がメインだが日帰り入浴もできる。宿泊は、山に自生する山菜や天然の川魚など、自然の恵みをふんだんに使った、宿の女将が手作りする定食。明治時代の文豪も愛した当時の雰囲気もそのままに、明治浪漫の趣が登山口へ集まる登山者を優しく出迎えてくれる。
+心臓病や胃腸病、神経痛、貧血症、胃潰瘍、うっ血などの幅広い効能が期待できる含鉄泉。わずかに白濁した弱酸性・無臭の湯で、淡褐色の沈殿物があり、熱すると沈殿物が浮かんでくる。源泉の温度は20度とややぬるいので、宿では沸かして提供している。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="yumegenkyouonsen_mugenkyou_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="yumegenkyouonsen_mugenkyou_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.yumegenkyouonsen_mugenkyou_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2106_0001.jpg"/></a><p class="feature">夢絃峡温泉（むげんきょう）<br>類似度:1.764</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tokachigakuonsen_tokachidake_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="tokachigakuonsen_tokachidake_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.tokachigakuonsen_tokachidake_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0669_0001.jpg"/></a><p class="feature">十勝岳温泉（とかちだけ）<br>類似度:1.718</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="juutanionsen_jikkoku_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="juutanionsen_jikkoku_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.juutanionsen_jikkoku_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2357_0001.jpg"/></a><p class="feature">十谷温泉（じっこく）<br>類似度:1.716</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="esanonsensato_esan_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="esanonsensato_esan_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.esanonsensato_esan_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">恵山温泉郷（えさん）<br>類似度:1.711</br></p></div></form>
+{% endblock content %}

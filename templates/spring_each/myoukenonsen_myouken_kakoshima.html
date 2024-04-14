@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">妙見温泉（みょうけん）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0338_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">九州自動車道「溝辺鹿児島空港IC」から約10㎞、湯治目的のシンプルな素泊まりの宿から贅を尽くした高級旅館までが立ち並ぶ温泉地。 明治時代中期に妙見神社跡から湯が湧出したのが温泉名の由来とされ、古くは天降川（あもりがわ）沿いのひなびた山の湯治場として繁栄。全国の温泉を巡った歌人・斎藤茂吉は「日当山　妙見　安楽　塩浸　湯は湧きいでて　くすしき国ぞ」と、妙見周辺に湧き出る湯の神秘を歌に残した。 また、中津川をさらに上れば、坂本龍馬が新婚旅行で訪れたという日本一古い天然露天風呂「和気湯」も。現在は、「鹿児島空港」から新川渓谷温泉郷方面への「温泉バス」も通っており、アクセスも便利。
+中津川と天降川が合流する辺りに湧き出る温泉。ほとんどの宿が自家源泉を有し、鮮度の良いかけ流しの湯が楽しめる。源泉ごとに成分や色合いが少しずつ異なるため、便利な温泉手形「湯～路（ゆ～ろ）」を購入して7軒の宿の趣向を凝らした湯殿で湯巡りを楽しむのも良い。温泉街にある「えのき公園」には飲泉場、国道223号線沿いには足湯も備えられており、人気スポットとなっている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="sagadaiwaonsen_sagayamato_saga">{% csrf_token %}<input name="id2" type="hidden" value="sagadaiwaonsen_sagayamato_saga"/><div class="con2"><a href="../spring_each/" onclick="document.sagadaiwaonsen_sagayamato_saga.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1346_0001.jpg"/></a><p class="feature">佐賀大和温泉（さがやまと）<br>類似度:2.305</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nakatsugawaonsen_nakatsugawa_gifu">{% csrf_token %}<input name="id2" type="hidden" value="nakatsugawaonsen_nakatsugawa_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.nakatsugawaonsen_nakatsugawa_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0895_0001.jpg"/></a><p class="feature">中津川温泉（なかつがわ）<br>類似度:2.280</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tenkeseonsen_amagase_ooita">{% csrf_token %}<input name="id2" type="hidden" value="tenkeseonsen_amagase_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.tenkeseonsen_amagase_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0010_0001.jpg"/></a><p class="feature">天ヶ瀬温泉（あまがせ）<br>類似度:2.273</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.258</br></p></div></form>
+{% endblock content %}

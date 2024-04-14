@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">波賀東山温泉（はがひがしやま）</h2><h3 class="icon"> 所在地：兵庫県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1577_0001.jpg"/><table><tr><th>効能</th><td>ラジウム泉
+</td></tr></table></div><div class="con1"><p class="feature">兵庫県中西部に位置する宍粟市。市の大半は山林地帯で、豊かな自然に包まれている。波賀東山温泉は、京都女子大学の理学博士の指導により東山泉源開発事業として掘削した温泉地。 冷泉で通常の倍以上のラドンを含み、飲用するとさまざまな効果が期待できる。敷地内にはこの良質な名水「東山名水」が汲めるコイン給水設備があり、飲用や料理はもちろん水槽の水などの用途で地域の人々から愛されている。 また豊かな緑の中にはコテージ村・天体観測施設・オートキャンプ場なども。ちびっ子広場・キッズクライミングウォールなどの子供向けの施設も多く、家族連れで保養するにはぴったりな温泉地だ。思いっきり遊んだ後に天然ラドンの湯でゆっくりと疲れを癒そう。
+湧出量毎分33L、泉温11.6℃。温泉法基準（5.5マッヘ）の3.6倍、療養泉基準（8.25マッヘ）の2.5倍のラドンを有する。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="umijakuonsen_watatsumi_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="umijakuonsen_watatsumi_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.umijakuonsen_watatsumi_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1455_0001.jpg"/></a><p class="feature">海若温泉（わたつみ）<br>類似度:2.137</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sanageonsen_sanage_aichi">{% csrf_token %}<input name="id2" type="hidden" value="sanageonsen_sanage_aichi"/><div class="con2"><a href="../spring_each/" onclick="document.sanageonsen_sanage_aichi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1002_0001.jpg"/></a><p class="feature">猿投温泉（さなげ）<br>類似度:2.101</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shinshuumatsukawaonsen_shinshuumatsukawa_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shinshuumatsukawaonsen_shinshuumatsukawa_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shinshuumatsukawaonsen_shinshuumatsukawa_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1494_0001.jpg"/></a><p class="feature">信州まつかわ温泉（しんしゅうまつかわ）<br>類似度:2.064</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okudougoonsen_okudougo_ehime">{% csrf_token %}<input name="id2" type="hidden" value="okudougoonsen_okudougo_ehime"/><div class="con2"><a href="../spring_each/" onclick="document.okudougoonsen_okudougo_ehime.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0288_0001.jpg"/></a><p class="feature">奥道後温泉（おくどうご）<br>類似度:2.038</br></p></div></form>
+{% endblock content %}

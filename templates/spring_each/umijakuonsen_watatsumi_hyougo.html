@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">海若温泉（わたつみ）</h2><h3 class="icon"> 所在地：兵庫県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1455_0001.jpg"/><table><tr><th>泉質</th><td>ラジウム泉、その他
+</td></tr><tr><th>効能</th><td>神経痛、筋肉痛、関節痛、疲労、婦人病、冷え性、高血圧、動脈硬化、皮膚病、痔疾など
+</td></tr></table></div><div class="con1"><p class="feature">日本の島の中では11番目、瀬戸内海では最大の面積を誇る淡路島。『古事記』や『日本書紀』にもその名を見ることができ、神話上では淡路島は日本で最初に誕生した島という説がある。 自然の恵みが豊かで、農業や漁業・酪農が盛んであったため、『延喜式』によると、古代から平安時代までは御食国（みけつくに）として朝廷に魚を納めていたという、歴史ある食の宝庫でもある。静の里公園は源義経との悲恋で知られる静御前隠棲の地。 源義経の死後、静御前は淡路島の志筑辺りに住んで義経の供養をし、その後47年の生涯を閉じたと伝えられている。園内には静と義経の墓が並んで建てられている他、史料館や茶室、相輪の宝塔などがある。遠い遠い歴史に思いを馳せながら温泉に浸かり、神話のロマンに浸りたい。
+自然界の物質中最もイオン作用が強いといわれるラドンを豊富に含有する天然ラジウム温泉。敷地内に源泉を持ち、“くすし湯”と名付けられ薬効温泉に認定されている。湯温は38.3℃、pH値は7.7 の弱アルカリ性。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="imaitaonsen_1_niigata">{% csrf_token %}<input name="id2" type="hidden" value="imaitaonsen_1_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.imaitaonsen_1_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1115_0001.jpg"/></a><p class="feature">今板温泉（五頭温泉郷）（いまいた（ごず））<br>類似度:2.458</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.447</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="setooohashionsen_setooohashi_kagawa">{% csrf_token %}<input name="id2" type="hidden" value="setooohashionsen_setooohashi_kagawa"/><div class="con2"><a href="../spring_each/" onclick="document.setooohashionsen_setooohashi_kagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0938_0001.jpg"/></a><p class="feature">瀬戸大橋温泉（せとおおはし）<br>類似度:2.024</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ajionsen_aji_kagawa">{% csrf_token %}<input name="id2" type="hidden" value="ajionsen_aji_kagawa"/><div class="con2"><a href="../spring_each/" onclick="document.ajionsen_aji_kagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0317_0001.jpg"/></a><p class="feature">あじ温泉（あじ）<br>類似度:2.023</br></p></div></form>
+{% endblock content %}

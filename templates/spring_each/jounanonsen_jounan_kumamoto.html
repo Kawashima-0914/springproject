@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">城南温泉（じょうなん）</h2><h3 class="icon"> 所在地：熊本県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1691_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">海にも山にも近い熊本市南区。食糧の調達が容易だったことから阿高貝塚、御領貝塚、塚原古墳群を代表とした古代からの遺跡が存在する。さらに県内最古といわれるのが8世紀初頭頃に建立された陳内廃寺で、市内の中で も最も歴史深い地域となっている。 城南温泉は約200万㎡という広大なゴルフ場に隣接する温泉だ。天然温泉100％ですべての浴槽が贅沢にも源泉かけ流しとなっている。サウナや打たせ湯も完備しており、存分に温泉を 楽しめる。 ゴルフやテニスでストレス解消したあとは、たっぷりとしたお湯で疲れを癒して、仲間との酒宴を楽しみたい。緑豊かな自然に囲まれ、思い切り深呼吸をし、心も身体もじっくり癒される至極のリラクゼーションを堪能しよう。
+100％天然温泉、すべてのお風呂がかけ流し。あつ湯とぬる湯がある。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="takanosuonsen_takasu_fukui">{% csrf_token %}<input name="id2" type="hidden" value="takanosuonsen_takasu_fukui"/><div class="con2"><a href="../spring_each/" onclick="document.takanosuonsen_takasu_fukui.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0997_0001.jpg"/></a><p class="feature">鷹巣温泉（たかす）<br>類似度:1.819</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="noshiroonsen_noshiro_akita">{% csrf_token %}<input name="id2" type="hidden" value="noshiroonsen_noshiro_akita"/><div class="con2"><a href="../spring_each/" onclick="document.noshiroonsen_noshiro_akita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1465_0001.jpg"/></a><p class="feature">能代温泉（のしろ）<br>類似度:1.807</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shugojinonsen_shugojin_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="shugojinonsen_shugojin_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.shugojinonsen_shugojin_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1980_0001.jpg"/></a><p class="feature">守護陣温泉（しゅごじん）<br>類似度:1.792</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yokokawaonsen_yokokawa_ibaraki">{% csrf_token %}<input name="id2" type="hidden" value="yokokawaonsen_yokokawa_ibaraki"/><div class="con2"><a href="../spring_each/" onclick="document.yokokawaonsen_yokokawa_ibaraki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1552_0001.jpg"/></a><p class="feature">横川温泉（よこかわ）<br>類似度:1.788</br></p></div></form>
+{% endblock content %}

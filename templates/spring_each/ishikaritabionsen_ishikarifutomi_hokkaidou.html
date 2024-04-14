@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">石狩太美温泉（いしかりふとみ）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2010_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">石狩川の北側に位置し、石狩平野を一望する立地に湧く温泉地「石狩太美温泉」。「ふとみおんせん」と読み、石狩太美駅にほど近い場所に建つ温泉施設「ふとみ銘泉　万葉の湯」で入ることができる。ほぼ24時間営業で日帰り入浴もできる湯は昭和32年開湯という長い歴史を持ち、露天風呂からは石狩平野が一望できる風光明媚な温泉地でもある。館内では温泉のほかエステやボディケアなどサービスも充実しており、温泉用のアメニティもそろっているので手ぶらで入浴できる。札幌市に隣接しているため、札幌観光の拠点としても最適。
+弱アルカリ性のナトリウム－塩化物・炭酸水素塩泉。皮膚の表面を柔らかくしつるつるにしてくれると評判だ。神経痛、筋肉痛、関節痛、うちみ、くじき、痔疾、慢性消化器病、慢性皮膚病、慢性婦人病、冷え症、きりきず、やけどなどへの効能が期待できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="uenoyuonsenkyou_kaminoyu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="uenoyuonsenkyou_kaminoyu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.uenoyuonsenkyou_kaminoyu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2084_0001.jpg"/></a><p class="feature">上の湯温泉郷（かみのゆ）<br>類似度:2.378</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="marukomaonsen_marukoma_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="marukomaonsen_marukoma_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.marukomaonsen_marukoma_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0681_0001.jpg"/></a><p class="feature">丸駒温泉（まるこま）<br>類似度:2.311</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yakumoonsen_1_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="yakumoonsen_1_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.yakumoonsen_1_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2050_0001.jpg"/></a><p class="feature">八雲温泉（北海道）（やくも）<br>類似度:2.294</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tomuraushionsen_tomuraushi_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="tomuraushionsen_tomuraushi_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.tomuraushionsen_tomuraushi_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0670_0001.jpg"/></a><p class="feature">トムラウシ温泉（とむらうし）<br>類似度:2.229</br></p></div></form>
+{% endblock content %}

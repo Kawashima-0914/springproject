@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">天龍峡温泉（てんりゅうきょう）</h2><h3 class="icon"> 所在地：長野県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0094_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">天竜川随一の名勝地として知られる天龍峡沿いに、10軒ほどの旅館が点在する温泉地。両岸に岩壁や奇岩がそびえ、その間の渓流を船が悠々と行き交う天龍峡。書道家の日下部鳴鶴（くさかべめいかく）が選んだ10の奇岩「天龍峡十勝」をはじめ、まさに山水画を髣髴とさせる情景が広がる。 南信州では昼神温泉と双璧を成すといわれる名湯は、日本有数の天然ラドン温泉。川の上から渓谷美を満喫した後は、ゆっくりと湯に浸かりながら絶景を愛でるのも、また格別だ。 天龍峡の歴史文化に触れる癒しと交流の拠点として、平成29年4月8日に温泉と食事を中心とした日帰り施設「ごゆっくり」がリニューアル。川のせせらぎを楽しみながら、露天風呂やサウナでリラックスできるうえ、休憩室には展望台が設けられており、天龍峡十勝のひとつ龍角峯やつつじ橋を望むことができる。
+平成元年に湧出した天龍峡温泉は、ラドン含有量が豊富。ラドン泉は、呼吸から肺に吸収し血液に溶け込み全身に運ばれる。体ポカポカ・美肌にも効果期待できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="miyabaruonsen_miyabaru_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="miyabaruonsen_miyabaru_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.miyabaruonsen_miyabaru_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1981_0001.jpg"/></a><p class="feature">みやばる温泉（みやばる）<br>類似度:1.940</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="misasaonsen_misasa_tottori">{% csrf_token %}<input name="id2" type="hidden" value="misasaonsen_misasa_tottori"/><div class="con2"><a href="../spring_each/" onclick="document.misasaonsen_misasa_tottori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0131_0001.jpg"/></a><p class="feature">三朝温泉（みささ）<br>類似度:1.925</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kakeyuonsen_kakeyu_nagano">{% csrf_token %}<input name="id2" type="hidden" value="kakeyuonsen_kakeyu_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.kakeyuonsen_kakeyu_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0064_0001.jpg"/></a><p class="feature">鹿教湯温泉（かけゆ）<br>類似度:1.904</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shugojinonsen_shugojin_kumamoto">{% csrf_token %}<input name="id2" type="hidden" value="shugojinonsen_shugojin_kumamoto"/><div class="con2"><a href="../spring_each/" onclick="document.shugojinonsen_shugojin_kumamoto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1980_0001.jpg"/></a><p class="feature">守護陣温泉（しゅごじん）<br>類似度:1.900</br></p></div></form>
+{% endblock content %}

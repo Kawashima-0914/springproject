@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯屋温泉（ゆや）</h2><h3 class="icon"> 所在地：岐阜県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0367_0001.jpg"/><table><tr><th>泉質</th><td>二酸化炭素泉、炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>にごり、にごり（褐色）、肝臓病、婦人病、胃腸病、高血圧、糖尿病、痔疾など
+</td></tr></table></div><div class="con1"><p class="feature">JR高山本線「飛騨小坂駅」より、車で約20分の場所にある静かな温泉地。古くから「胃薬よりも炭酸泉」といわれるほど効能豊かな湯に定評があり、源泉を料理に利用している湯宿もあるほど。 温泉地内には「日本の滝100選」に選ばれた落差約63mの「根尾の滝」をはじめ200カ所もの滝があり、滝めぐりを楽しめる。また、清流・小坂川は天然のアマゴ、イワナ、アユなどが生息する淡水魚の宝庫として有名。 春にはアマゴ釣り大会が開かれ、全国各地から釣り愛好家が訪れる。飛騨の豊かな自然のなかで思いっきりレジャーを楽しんだ後は、効能豊かな湯に浸かって至福のひとときを。さらには飛騨牛の朴葉焼きや源泉を利用した鉱泉粥など、郷土色豊かな料理に舌鼓。旅の楽しみはどこまでも尽きることがない。
+室町時代中期、病に苦しんでいた近隣の住人が薬師如来の導きにより発見し、病を癒したという開湯伝説が残る温泉。源泉は約15℃の冷泉で、もともとは無色透明だが、空気に触れると黄褐色に変化。別名サイダー泉とも呼ばれる飲浴両用の炭酸泉で、湯宿や温泉街に設置されている飲泉場で自由に飲む事ができる。口に含むとピリッとし、飲用すれば胃腸病に効くと評判だ。古くから湯治場として栄えてきた山間の炭酸泉を、浴用・飲用の両方で存分に享受したい。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="beppuonsensato_beppu_ooita">{% csrf_token %}<input name="id2" type="hidden" value="beppuonsensato_beppu_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.beppuonsensato_beppu_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1327_0001.jpg"/></a><p class="feature">別府温泉郷（べっぷ）<br>類似度:2.556</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kirishimaonsensato_kirishima_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="kirishimaonsensato_kirishima_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.kirishimaonsensato_kirishima_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0329_0001.jpg"/></a><p class="feature">霧島温泉郷（きりしま）<br>類似度:2.533</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="arimaonsen_arima_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="arimaonsen_arima_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.arimaonsen_arima_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0016_0001.jpg"/></a><p class="feature">有馬温泉（ありま）<br>類似度:2.499</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="romantopiaonsen_romantopia_aomori">{% csrf_token %}<input name="id2" type="hidden" value="romantopiaonsen_romantopia_aomori"/><div class="con2"><a href="../spring_each/" onclick="document.romantopiaonsen_romantopia_aomori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1524_0001.jpg"/></a><p class="feature">ロマントピア温泉（ろまんとぴあ）<br>類似度:2.475</br></p></div></form>
+{% endblock content %}

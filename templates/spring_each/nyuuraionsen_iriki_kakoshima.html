@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">入来温泉（いりき）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0325_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">九州自動車道「姶良IC」より約30km、鹿児島県中西部の山間に位置し、島津家藩主や大久保利通公が愛用した小さな温泉場を擁する温泉地。3軒の共同浴場を中心に、天然温泉を利用した福祉センターや老舗の温泉旅館が点在し、効能高い湯治場として静かに発展してきた。現在においても、市営の共同浴場「アゼロ湯」には年間約7万5,000人、「柴垣湯」には年間約12万人もの入浴客が訪れることから、近隣に住む人々の生活に“温泉”がいかに密着しているかが伺える。また、周辺には城跡や武家屋敷群などの史跡や美しい棚田が点在し、風情を感じることができる。
+ナトリウム－塩化物泉の泉質で、褐色の湯が特徴。神経痛や関節痛、婦人病やアトピーなどの皮膚病、冷え性や切り傷などの外傷に効能があるとされ、温泉療養、湯治に最適な温泉としても知られている。保温効果も高く湯冷めしにくいため、寒い季節の入浴にも好適。足湯がある入浴施設もあるので、旅の途中に立ち寄るのもおすすめ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="suwaonsen_suwa_kakoshima">{% csrf_token %}<input name="id2" type="hidden" value="suwaonsen_suwa_kakoshima"/><div class="con2"><a href="../spring_each/" onclick="document.suwaonsen_suwa_kakoshima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2170_0001.jpg"/></a><p class="feature">諏訪温泉（すわ）<br>類似度:2.484</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tangohanaremizuumionsen_tangohanareko_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tangohanaremizuumionsen_tangohanareko_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tangohanaremizuumionsen_tangohanareko_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1214_0001.jpg"/></a><p class="feature">丹後はなれ湖温泉（たんごはなれこ）<br>類似度:2.452</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="rokukesakokousen_1_ooita">{% csrf_token %}<input name="id2" type="hidden" value="rokukesakokousen_1_ooita"/><div class="con2"><a href="../spring_each/" onclick="document.rokukesakokousen_1_ooita.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2122_0001.jpg"/></a><p class="feature">六ケ迫鉱泉（鷺ヶ迫温泉）（ろっかさここうせん）<br>類似度:2.442</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.amanohashidatemiyazuonsenpintoyu_amanohashidatemiyazupintoyu_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1128_0001.jpg"/></a><p class="feature">天橋立・宮津温泉ピント湯（あまのはしだて・みやづぴんとゆ）<br>類似度:2.407</br></p></div></form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">冷川温泉（ひえかわ）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1928_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">中伊豆の冷川（ひえかわ）という集落にある小さな温泉宿。1999年に開業したという一軒宿「ごぜんの湯」のみが営業している。自炊湯治のみの受付で、安く泊まることができる。自然派の温泉宿で、テレビは置かず、野菜や米は自家栽培して自給自足にこだわっているという徹底ぶりだ。源泉も加水・循環せず自然のままにかけ流し。温泉マニアの間で知られる趣ある宿だ。かけこみ寺や療養のための長期滞在も受け付けており、自然から離れた都市生活ですさんだ心と身体を回復させてくれそうだ。日帰り入浴も行っているので、宿泊できない人も手軽に楽しめる。
+ナトリウム‐カルシウム硫酸塩泉という「薬湯」と呼ばれる、穏やかながら効能高い温泉。熱交換によって加水せず源泉かけ流しが実現している。源泉は「登龍泉」と名付けられている。飲泉も可能で、便秘など消化器系の不調をととのえてくれる。入浴では、慢性皮膚病や切り傷などに適応がある美肌の湯だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kumihamakaminoonsen_kanno_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kumihamakaminoonsen_kanno_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kumihamakaminoonsen_kanno_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1180_0001.jpg"/></a><p class="feature">久美浜神の温泉（かんの）<br>類似度:1.951</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yudakawaonsen_yudagawa_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="yudakawaonsen_yudagawa_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.yudakawaonsen_yudagawa_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0854_0001.jpg"/></a><p class="feature">湯田川温泉（ゆだがわ）<br>類似度:1.946</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:1.883</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sakuradaonsen_sakurada_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="sakuradaonsen_sakurada_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.sakuradaonsen_sakurada_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1924_0001.jpg"/></a><p class="feature">桜田温泉（さくらだ）<br>類似度:1.877</br></p></div></form>
+{% endblock content %}

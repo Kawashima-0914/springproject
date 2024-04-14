@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">野々湯温泉（ののゆ）</h2><h3 class="icon"> 所在地：鹿児島県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1976_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">霧島連山の標高700m付近に約13万坪という、霧島温泉郷の中でも広大な敷地を有する温泉地。温泉浴場と湯治長屋からはじまり、霧島温泉の中でも珍しいログハウスやプチハウスといったコテージ、オートキャンプ場も。周囲は山に囲まれ、街の喧騒とは無縁の世界が広がり苔むした静謐な森の奥にある源泉の場所には、「常盤」（永遠）と刻まれた石碑が建つ。温泉蒸し機で作る「黒にんにく」や野々湯温泉に湧いた温泉をボトリングした天然アルカリイオン水「きりしま」はぜひお土産に購入したい。空き容器を持参すれば有料で汲んで持って帰ることも可能。
+湧き水のような透明に澄んだ70度近い湯が、この豊かな土地から自然湧出している。美容効果、内臓疾患、切り傷、疲労回復の効果があり、飲用すれば胃腸病、心臓疾患にも効果が期待大。自噴する新鮮な湯は常にかけ流され、温泉蒸気を利用した天然の蒸し風呂「洞窟風呂」など、珍しい湯を楽しめるのも野々湯温泉の自慢だ。大自然の中で温泉を堪能されたい方にオススメ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="yamanokamionsen_yamanokami_iwate">{% csrf_token %}<input name="id2" type="hidden" value="yamanokamionsen_yamanokami_iwate"/><div class="con2"><a href="../spring_each/" onclick="document.yamanokamionsen_yamanokami_iwate.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1255_0001.jpg"/></a><p class="feature">山の神温泉（やまのかみ）<br>類似度:2.081</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="uesaiharaonsen_kamisaibara_okayama">{% csrf_token %}<input name="id2" type="hidden" value="uesaiharaonsen_kamisaibara_okayama"/><div class="con2"><a href="../spring_each/" onclick="document.uesaiharaonsen_kamisaibara_okayama.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1292_0001.jpg"/></a><p class="feature">上齋原温泉（かみさいばら）<br>類似度:2.051</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="shimojouonsen_shimojou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="shimojouonsen_shimojou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.shimojouonsen_shimojou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1286_0001.jpg"/></a><p class="feature">下條温泉（しもじょう）<br>類似度:2.022</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kinosakimaruyamakawahidamarionsen_kinosakimaruyamagawahidamari_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="kinosakimaruyamakawahidamarionsen_kinosakimaruyamagawahidamari_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.kinosakimaruyamakawahidamarionsen_kinosakimaruyamagawahidamari_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1189_0001.jpg"/></a><p class="feature">城崎円山川ひだまり温泉（きのさきまるやまがわひだまり）<br>類似度:2.021</br></p></div></form>
+{% endblock content %}

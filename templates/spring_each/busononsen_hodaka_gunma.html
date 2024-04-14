@@ -1,0 +1,13 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">武尊温泉（ほだか）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0409_0001.jpg"/></div><div class="con1"><p class="feature">関越自動車道「沼田ＩＣ」から約12ｋｍ、標高約850ｍの山間に湧く秘境ムード溢れる温泉地。同じ川場村に湧き出る川場温泉、塩河原温泉、桜川温泉、小住温泉とともに形成する川場温泉郷の中でも、村の最深部に湯けむりを上げている。上州武尊山（ほたかやま・標高約2,158ｍ）を仰ぐ薄根川と赤倉川に育まれた地に、ひっそりと佇む田舎情緒溢れる温泉宿が2軒。武尊山登山やブナ原生林散策、赤倉渓谷散策、渓流釣りの拠点としても利用でき、山のマイナスイオンを含んだ凛とした空気の中で大自然を体感できる。
+PH9.6のアルカリ性で、非常に柔らかな肌ざわりが特徴。入浴後はツルツルスベスベの肌が期待できる。硫黄冷鉱泉の泉質は、神経痛や筋肉痛、消化器病、痔疾、冷え症や皮膚病、婦人病、また糖尿病など幅広い効能を備えている。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="amehatakemizuumionsen_amehatako_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="amehatakemizuumionsen_amehatako_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.amehatakemizuumionsen_amehatako_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2258_0001.jpg"/></a><p class="feature">雨畑湖温泉（あめはたこ）<br>類似度:1.191</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="enakyouonsen_enakyou_gifu">{% csrf_token %}<input name="id2" type="hidden" value="enakyouonsen_enakyou_gifu"/><div class="con2"><a href="../spring_each/" onclick="document.enakyouonsen_enakyou_gifu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0361_0001.jpg"/></a><p class="feature">恵那峡温泉（えなきょう）<br>類似度:1.135</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="tomuraushionsen_tomuraushi_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="tomuraushionsen_tomuraushi_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.tomuraushionsen_tomuraushi_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0670_0001.jpg"/></a><p class="feature">トムラウシ温泉（とむらうし）<br>類似度:1.132</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hottarakashionsen_hottarakashi_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="hottarakashionsen_hottarakashi_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.hottarakashionsen_hottarakashi_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0991_0001.jpg"/></a><p class="feature">ほったらかし温泉（ほったらかし）<br>類似度:1.121</br></p></div></form>
+{% endblock content %}

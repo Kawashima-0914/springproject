@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">湯田上温泉（ゆだがみ）</h2><h3 class="icon"> 所在地：新潟県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0605_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">標高約268.3mの護摩堂山の麓に広がる温泉地。開湯時は源泉の近くに小屋を建てて温泉を提供していたといわれ、当時は約20軒の温泉旅館が軒を連ね賑わいを見せていた。今では古い旅館の姿は残っておらず、近代的なホテルや大型の旅館などが点在。 いずれの宿も護摩堂山の豊かな自然がすぐそばにあり、山頂まで足をのばすと新潟平野を一望でき風光明媚な景色を見渡すことができる。 また、「田上駅」近くの護摩堂山ふれあい広場には温泉スタンドもあり、毎分300Lが自噴。飲用も可能で、湯を持ち帰って家庭での温泉浴を愉しんだりするなど、近隣の住民や自家用車で訪れた観光客に好評を得ている。
+開湯の時期は明らかではないが、1738年（元文3年）に湯治場として許可されたとの記述が古文書に残る歴史ある温泉。護摩堂山の麓に湧き、修行中の山伏達が体を癒すために使っていたとの言い伝えもある。かつては「丑湯」と呼ばれ、土曜丑の日に入浴をすると1年間無病息災で過ごせるといわれていた。よって、当日は効能あらたかな「薬師の湯」を求める湯客であふれ、宿に入りきれず廊下で寝る人がいたほどの大盛況ぶりだったとか。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="noboribetsuonsen_noboribetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="noboribetsuonsen_noboribetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.noboribetsuonsen_noboribetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0675_0001.jpg"/></a><p class="feature">登別温泉（のぼりべつ）<br>類似度:2.277</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sakunamionsen_sakunami_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sakunamionsen_sakunami_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sakunamionsen_sakunami_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0695_0001.jpg"/></a><p class="feature">作並温泉（さくなみ）<br>類似度:2.268</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="obamaonsen_obama_nagasaki">{% csrf_token %}<input name="id2" type="hidden" value="obamaonsen_obama_nagasaki"/><div class="con2"><a href="../spring_each/" onclick="document.obamaonsen_obama_nagasaki.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0168_0001.jpg"/></a><p class="feature">小浜温泉（おばま）<br>類似度:2.228</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="yunokawaonsen_yunokawa_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="yunokawaonsen_yunokawa_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.yunokawaonsen_yunokawa_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0683_0001.jpg"/></a><p class="feature">湯の川温泉（ゆのかわ）<br>類似度:2.225</br></p></div></form>
+{% endblock content %}

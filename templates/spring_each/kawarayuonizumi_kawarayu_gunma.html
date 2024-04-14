@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">川原湯温泉（かわらゆ）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0394_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">吾妻渓谷を西へ進み、国道から山沿いの道へ入った所に佇む温泉地。「川原湯温泉駅」を出て不動滝方面へ向かう通り沿いに旅館が建ち並び、昔ながらの素朴な温泉情緒を漂わせる。登り坂に差し掛かると、坂の途中に見えてくるのが趣きある和風建築の共同浴場「王湯」。ここに湧き出す源泉目当てに訪れる客も多く、温泉街の中心となっている。全国的に名を馳せる奇祭「湯かけ祭り」の会場にもなっており、毎年1月20日(大寒)になると、1年の無病息災と平穏無事を祈ってフンドシ姿の若者達が湯をかけ合う。
+お湯は無色透明・無味無臭のアルカリ性単純温泉で肌に優しい湯あたりが特徴。温泉地内にある病院での温泉療法などに利用されているほどの高い効能を持ち、疾患治癒効果を期待して訪れる人も多い。効能は神経痛や筋肉痛、また疲労回復や冷え性なども含まれている。市街地にあり、フラっと立ち寄れることから、日帰り利用できる温泉施設も多い。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kirinyamaonsen_kirinzan_niigata">{% csrf_token %}<input name="id2" type="hidden" value="kirinyamaonsen_kirinzan_niigata"/><div class="con2"><a href="../spring_each/" onclick="document.kirinyamaonsen_kirinzan_niigata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0579_0001.jpg"/></a><p class="feature">麒麟山温泉（きりんざん）<br>類似度:1.261</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="goshikionsen_1_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="goshikionsen_1_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.goshikionsen_1_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1870_0001.jpg"/></a><p class="feature">五色温泉（北海道）（ごしき）<br>類似度:1.261</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kojirionsen_kojiri_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="kojirionsen_kojiri_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.kojirionsen_kojiri_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1911_0001.jpg"/></a><p class="feature">湖尻温泉（こじり）<br>類似度:1.257</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekowaisukougenonsen_nisekowaisukougen_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekowaisukougenonsen_nisekowaisukougen_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1877_0001.jpg"/></a><p class="feature">ニセコワイス高原温泉（にせこわいすこうげん）<br>類似度:1.247</br></p></div></form>
+{% endblock content %}

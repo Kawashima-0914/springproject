@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">かみのやま温泉（かみのやま）</h2><h3 class="icon"> 所在地：山形県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0097_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>神経痛、関節痛、婦人病、冷え性、美肌
+</td></tr></table></div><div class="con1"><p class="feature">温泉街の中心にそびえ建つ上山城。北側には武家屋敷の家並みが残る。温泉が湧くと語り継がれる「湯出坂」に、眺める月が美しい城へと続く「月待坂」。 袖が触れ合うほど幅の狭い「袖摺坂」など、9つの坂が入り組み城下町の面影を色濃く残す。街のあちこちに足湯が設けられ、共同浴場も6軒点在する。 沢庵和尚も滞在中に入浴したと伝わる最古の「下大湯」や、地元の方との交流も楽しい「あいさつ浴場」など温泉情緒が漂う。まち歩きをしながら、湯めぐりを楽しんで。
+新湯、湯町、葉山など上山市内に湧く6つの温泉の総称。1458年、僧月秀が足の傷を癒す鶴を見て発見したと伝えられる古湯で、「鶴脛の湯」とも呼ばれる。東山、湯野浜温泉と並び「奥羽三楽郷」の1つ。山形市から車で30分前後の場所で、山形観光の拠点。夏の『やまがたワインバルinかみのやま温泉』や、秋の『全国かかし祭』の時季は、多くの人で賑わう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="sakunamionsen_sakunami_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sakunamionsen_sakunami_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sakunamionsen_sakunami_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0695_0001.jpg"/></a><p class="feature">作並温泉（さくなみ）<br>類似度:2.494</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sasayaonsen_sasaya_miyagi">{% csrf_token %}<input name="id2" type="hidden" value="sasayaonsen_sasaya_miyagi"/><div class="con2"><a href="../spring_each/" onclick="document.sasayaonsen_sasaya_miyagi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0816_0001.jpg"/></a><p class="feature">笹谷温泉（ささや）<br>類似度:2.450</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="atamiizuyamaonsen_atamiizusan_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="atamiizuyamaonsen_atamiizusan_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.atamiizuyamaonsen_atamiizusan_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0441_0001.jpg"/></a><p class="feature">熱海伊豆山温泉（あたみいずさん）<br>類似度:2.420</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ginzanonsen_ginzan_yamagata">{% csrf_token %}<input name="id2" type="hidden" value="ginzanonsen_ginzan_yamagata"/><div class="con2"><a href="../spring_each/" onclick="document.ginzanonsen_ginzan_yamagata.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0709_0001.jpg"/></a><p class="feature">銀山温泉（ぎんざん）<br>類似度:2.410</br></p></div></form>
+{% endblock content %}

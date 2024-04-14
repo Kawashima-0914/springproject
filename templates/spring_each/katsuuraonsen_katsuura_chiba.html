@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">勝浦温泉（かつうら）</h2><h3 class="icon"> 所在地：千葉県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0472_0001.jpg"/><table><tr><th>泉質</th><td>炭酸水素塩泉、塩化物泉
+</td></tr><tr><th>効能</th><td>にごり、にごり（褐色）、神経痛、筋肉痛、関節痛、疲労、婦人病、冷え性、皮膚病、痔疾
+</td></tr></table></div><div class="con1"><p class="feature">風光明媚な勝浦湾に面したリゾートホテル。30種類以上のスパメニューが楽しめる「スパドーム アクアパレス」をはじめ、ボウリング場、カラオケサロン、エステルーム、卓球、グラウンド、ゴルフなど充実した施設が揃う。 地上40mより太平洋を一望できる展望大浴場は、天然温泉の心地よさを堪能できる。夕食は目の前で調理をする約60種類オープンキッチンバイキングが人気。南房総の新鮮な魚介を使用した磯会席料理も魅力の一つだ。 また、ワンちゃんにも嬉しいペットホテルも完備。広めの個室に、清潔感あふれる施設となっている。平成25年12月に玄関前にオープンした踊る噴水「ダンシングウォーター」は、光と音による饗宴。勝浦温泉に足を運んだ際には、ぜひ一度ご覧いただきたい。
+地上40mより太平洋を一望する雄大な眺め。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="uharaonsen_ubara_chiba">{% csrf_token %}<input name="id2" type="hidden" value="uharaonsen_ubara_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.uharaonsen_ubara_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0195_0001.jpg"/></a><p class="feature">鵜原温泉（うばら）<br>類似度:2.747</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ajikesawakougenonsen_ajigasawakougen_aomori">{% csrf_token %}<input name="id2" type="hidden" value="ajikesawakougenonsen_ajigasawakougen_aomori"/><div class="con2"><a href="../spring_each/" onclick="document.ajikesawakougenonsen_ajigasawakougen_aomori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1062_0001.jpg"/></a><p class="feature">鯵ヶ沢高原温泉（あじがさわこうげん）<br>類似度:2.513</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kurohimeonsen_kurohime_nagano">{% csrf_token %}<input name="id2" type="hidden" value="kurohimeonsen_kurohime_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.kurohimeonsen_kurohime_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1519_0001.jpg"/></a><p class="feature">黒姫温泉（くろひめ）<br>類似度:2.489</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="awajishimanandanroonsenkyou_awajishimaminamiawaji_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="awajishimanandanroonsenkyou_awajishimaminamiawaji_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.awajishimanandanroonsenkyou_awajishimaminamiawaji_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0923_0001.jpg"/></a><p class="feature">淡路島・南淡路温泉郷（あわじしま・みなみあわじ）<br>類似度:2.453</br></p></div></form>
+{% endblock content %}

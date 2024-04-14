@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">神鍋温泉（かんなべ）</h2><h3 class="icon"> 所在地：兵庫県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0042_0001.jpg"/><table><tr><th>効能</th><td>単純温泉
+</td></tr></table></div><div class="con1"><p class="feature">標高約469mの神鍋山をはじめ、1000m級の山々に囲まれた自然豊かな神鍋高原に湧く温泉地。北近畿豊岡自動車道日高神鍋高原ICが平成29年3月に供用開始され、ますます関西からのアクセスが良くなった。 ファミリーに最適な比較的初心者向けのゲレンデ、春から秋にかけてパラグライダーやテニス、ゴルフなどの様々な高原スポーツを楽しめる施設など、アクティブ派にはたまらない環境だ。 神鍋の雄大な自然に魅了された人々は数多く、日高町出身の冒険家・植村直己もその一人。彼の冒険者精神に満ちた生涯を記念して造られた「植村直己冒険館」は、世代を問わず人気の観光スポットだ。
+豊岡市日高町の高原地帯に湧き出す温泉。筋肉痛や関節痛、冷え性などに高い効能を発揮するアルカリ性単純温泉は、スポーツで疲れた体をリセットするのにぴったりで、冬場はスキー帰りの湯客で賑わう。道の駅神鍋高原、神鍋温泉ゆとろぎを中心に神鍋エリア内に約110軒のホテル、旅館、ペンション、民宿が並ぶ。月ごとに代わる季節湯や四季の風を感じる露天風呂、心から温まるサウナ、身体に心地よいジェット風呂などごゆっくりとおくつろぎください。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="izukougenonsen_izukougen_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="izukougenonsen_izukougen_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.izukougenonsen_izukougen_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0860_0001.jpg"/></a><p class="feature">伊豆高原温泉（いずこうげん）<br>類似度:1.972</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="azumayaonsen_azumaya_nagano">{% csrf_token %}<input name="id2" type="hidden" value="azumayaonsen_azumaya_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.azumayaonsen_azumaya_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0827_0001.jpg"/></a><p class="feature">あずまや温泉（あずまや）<br>類似度:1.942</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="okutenryuufudouonsen_okutenryuufudou_nagano">{% csrf_token %}<input name="id2" type="hidden" value="okutenryuufudouonsen_okutenryuufudou_nagano"/><div class="con2"><a href="../spring_each/" onclick="document.okutenryuufudouonsen_okutenryuufudou_nagano.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0811_0001.jpg"/></a><p class="feature">奥天竜不動温泉（オクテンリュウフドウ）<br>類似度:1.928</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kuzuryuuonsen_kuzuryuu_fukui">{% csrf_token %}<input name="id2" type="hidden" value="kuzuryuuonsen_kuzuryuu_fukui"/><div class="con2"><a href="../spring_each/" onclick="document.kuzuryuuonsen_kuzuryuu_fukui.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0868_0001.jpg"/></a><p class="feature">九頭竜温泉（くずりゅう）<br>類似度:1.923</br></p></div></form>
+{% endblock content %}

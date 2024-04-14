@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">藪塚温泉（やぶつか）</h2><h3 class="icon"> 所在地：群馬県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0141_0001.jpg"/><table><tr><th>効能</th><td>炭酸水素塩泉
+</td></tr></table></div><div class="con1"><p class="feature">「あっしには、かかわりのねぇことでござんす」の名セリフで有名な笹沢左保原作の小説「木枯紋次郎」。テレビドラマや映画にもなり、一世を風靡した股旅ものだ。その紋次郎の故郷を再現したのが、藪塚温泉から徒歩5分のところにある「三日月村」。一文銭に煮売屋など、まるで江戸時代にタイムスリップしたような空間が待っている。藪塚駅を降りると、一面に広がる田園風景。その田園の中を通り抜けた小高い丘の中に佇むのが温泉街だ。各宿からの見晴らしは絶好で、遠くに望む上州の山並みや秋の収穫前に輝く黄金の世界は圧巻。名産・小玉スイカも有名。
+源泉は青みがかった、無味無臭のアルカリ性単純温泉。メタケイ酸が豊富に含まれており、肌の新陳代謝を促進させ若返らせるような効果がある美肌の湯としても有名。すべすべのきめ細かい肌を作るお湯は、天然の化粧水とも言われている。よく温まり湯冷めしにくい温泉なので、冷え性などにも良いとされる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="tangookuineonsen_tangookuine_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="tangookuineonsen_tangookuine_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.tangookuineonsen_tangookuine_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2140_0001.jpg"/></a><p class="feature">丹後奥伊根温泉（たんごおくいね）<br>類似度:1.460</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ashibetsuonsen_ashibetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="ashibetsuonsen_ashibetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.ashibetsuonsen_ashibetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/common/no-image.jpg"/></a><p class="feature">芦別温泉（あしべつ）<br>類似度:1.454</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="ootamaonsen_ootama_fukushima">{% csrf_token %}<input name="id2" type="hidden" value="ootamaonsen_ootama_fukushima"/><div class="con2"><a href="../spring_each/" onclick="document.ootamaonsen_ootama_fukushima.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0916_0001.jpg"/></a><p class="feature">大玉温泉（おおたま）<br>類似度:1.416</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="makubetsuonsen_makubetsu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="makubetsuonsen_makubetsu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.makubetsuonsen_makubetsu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1500_0001.jpg"/></a><p class="feature">幕別温泉（まくべつ）<br>類似度:1.405</br></p></div></form>
+{% endblock content %}

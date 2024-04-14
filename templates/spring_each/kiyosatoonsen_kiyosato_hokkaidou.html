@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">清里温泉（きよさと）</h2><h3 class="icon"> 所在地：北海道</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1578_0001.jpg"/><table><tr><th>効能</th><td>塩化物泉
+</td></tr></table></div><div class="con1"><p class="feature">「清里」というと山梨県のリゾート地が有名だが、北海道の「清里」は、斜里岳山麓にある温泉地。清里町駅から徒歩圏内という好立地にある温泉地で、地元以外から来訪する観光客はもっぱら「緑清荘」や「パパスランド」「緑の湯」などの宿泊施設に備わっている露天風呂などで効能豊かな清里温泉を楽しむことができる。いずれの宿も、お風呂は源泉かけ流し。日帰りで入れる施設もあり、料金は一律で「390（サンキュー）」円。施設によっては宿泊施設のほかに地元のグルメを作るレストランや、日本で初めて作られた清里町の地酒「じゃがいも焼酎」を販売する売店などもある。周囲にはパークゴルフ場などのスポーツ施設が充実しており、景勝地にも恵まれている。
+弱アルカリ性低張性のナトリウム塩化物泉。神経痛、筋肉痛、関節痛、うちみ、くじき、疲労回復、慢性消化器病、冷え性、慢性皮膚病、慢性婦人病、きりきず、やけど、動脈硬化症など幅広い効能が期待できる。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="uenoyuonsenkyou_kaminoyu_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="uenoyuonsenkyou_kaminoyu_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.uenoyuonsenkyou_kaminoyu_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2084_0001.jpg"/></a><p class="feature">上の湯温泉郷（かみのゆ）<br>類似度:2.249</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="juumaisouonsen_juumaisou_yamanashi">{% csrf_token %}<input name="id2" type="hidden" value="juumaisouonsen_juumaisou_yamanashi"/><div class="con2"><a href="../spring_each/" onclick="document.juumaisouonsen_juumaisou_yamanashi.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2359_0001.jpg"/></a><p class="feature">十枚荘温泉（じゅうまいそう）<br>類似度:2.244</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kannoonsen_1_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kannoonsen_1_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kannoonsen_1_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_2137_0001.jpg"/></a><p class="feature">神野温泉（久美の浜温泉郷）（じんの（くみのはま））<br>類似度:2.226</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="nisekoekimaeonsen_nisekoekimae_hokkaidou">{% csrf_token %}<input name="id2" type="hidden" value="nisekoekimaeonsen_nisekoekimae_hokkaidou"/><div class="con2"><a href="../spring_each/" onclick="document.nisekoekimaeonsen_nisekoekimae_hokkaidou.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1871_0001.jpg"/></a><p class="feature">ニセコ駅前温泉（にせこえきまえ）<br>類似度:2.210</br></p></div></form>
+{% endblock content %}

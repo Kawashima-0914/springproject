@@ -1,0 +1,15 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">北川温泉（ほっかわ）</h2><h3 class="icon"> 所在地：静岡県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0458_0001.jpg"/><table><tr><th>泉質</th><td>塩化物泉、硫酸塩泉
+</td></tr><tr><th>効能</th><td>婦人病、冷え性、動脈硬化、皮膚病
+</td></tr></table></div><div class="con1"><p class="feature">「きたがわ」ではなく、「ほっかわ」と読む。伊豆諸島の東岸に位置する温泉街のすぐ目の前には太平洋が広がり、伊豆大島や房総半島も眺めることができる。昭和初期に地元の漁師に発見されたというほど、漁港が近く港町の雰囲気を味わえる。開湯時に作られた「黒根岩風呂」は、北川温泉宿泊者なら無料で入れる人気の露天風呂。海抜０mの波打ち際で、海を眺めながら温泉を楽しめる。キャッチコピーは「海の向こうにアメリカが見える」。真偽の程は、ご自身でご確認を。温泉街には和モダンな建物と街灯が連なり、海を眺めつつ散策するだけで贅沢な気分にさせてくれる。首都圏からも日帰りでアクセスできる北川温泉。海辺の温泉で非日常を体験するのも良いだろう。
+昭和初期に地元の漁師が海底を見て温泉が湧いていると思い、ボーリングをしたのが北川温泉の始まり。太平洋のすぐ目の前ということもあって、海を感じさせる塩化物泉となっています。火傷や切り傷に効くと言われており、雄大な太平洋を眺めながら心身共に北川温泉で癒されましょう。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="hamasakaonsensato_hamasaka_hyougo">{% csrf_token %}<input name="id2" type="hidden" value="hamasakaonsensato_hamasaka_hyougo"/><div class="con2"><a href="../spring_each/" onclick="document.hamasakaonsensato_hamasaka_hyougo.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1023_0001.jpg"/></a><p class="feature">浜坂温泉郷（はまさか）<br>類似度:2.397</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="atamiizuyamaonsen_atamiizusan_shizuoka">{% csrf_token %}<input name="id2" type="hidden" value="atamiizuyamaonsen_atamiizusan_shizuoka"/><div class="con2"><a href="../spring_each/" onclick="document.atamiizuyamaonsen_atamiizusan_shizuoka.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0441_0001.jpg"/></a><p class="feature">熱海伊豆山温泉（あたみいずさん）<br>類似度:2.377</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="hamamuraonsen_hamamura_tottori">{% csrf_token %}<input name="id2" type="hidden" value="hamamuraonsen_hamamura_tottori"/><div class="con2"><a href="../spring_each/" onclick="document.hamamuraonsen_hamamura_tottori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0507_0001.jpg"/></a><p class="feature">浜村温泉（はまむら）<br>類似度:2.342</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="amatsukominatoonsen_amatsukominato_chiba">{% csrf_token %}<input name="id2" type="hidden" value="amatsukominatoonsen_amatsukominato_chiba"/><div class="con2"><a href="../spring_each/" onclick="document.amatsukominatoonsen_amatsukominato_chiba.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0014_0001.jpg"/></a><p class="feature">天津小湊温泉（あまつこみなと）<br>類似度:2.306</br></p></div></form>
+{% endblock content %}

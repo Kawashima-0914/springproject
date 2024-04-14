@@ -1,0 +1,14 @@
+
+{% extends 'base-spring-each.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<h2 class="icon">早雲山温泉（そううんざん）</h2><h3 class="icon"> 所在地：神奈川県</h3><div class="con"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1912_0001.jpg"/><table><tr><th>効能</th><td>硫酸塩泉
+</td></tr></table></div><div class="con1"><p class="feature">箱根ケーブルカーの終着駅・箱根ロープウェイの始発駅である「早雲山駅」の近くにある最乗寺箱根別院に湧く温泉地だ。最乗寺は６００年の歴史を持つ洞宗の大きな寺。境内は山の斜面に沿っていて、緑が多く箱根にあってもとても静かな雰囲気だ。箱根山最高峰の「神山」の北東斜面の爆裂火口を「早雲地獄」と呼び、大涌谷と同様に活発な噴気活動が見られる場所である。早雲地獄の火山性水蒸気を用いて、1分間に560リットルの温泉が造成されている。箱根ロープウェイの途中駅である「大涌谷」には源泉で茹でた黒たまごが販売されており、1つ食べると7年寿命が伸びると言われているので、お土産にぜひ購入してみては。
+寺院内に湧く温泉は、箱根の隠し湯としてマニアに知られている。泉質はカルシウム・マグネシウム・ナトリウム・硫酸塩泉。鉄分が含まれたお湯は体を温め、お肌がしっとりとさせる。お湯は湯の花が舞う。高台にあるので見晴らしも良く、遠くに眺める山々は季節によって彩りを変えるので春夏秋冬いつ行っても楽しめるのが特徴だ。
+</p></div><h2 class="icon">似ている温泉</h2><form action="{% url 'appname:springs' %}" method="post" name="kojirionsen_kojiri_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="kojirionsen_kojiri_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.kojirionsen_kojiri_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1911_0001.jpg"/></a><p class="feature">湖尻温泉（こじり）<br>類似度:1.786</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="makadoonsen_makado_aomori">{% csrf_token %}<input name="id2" type="hidden" value="makadoonsen_makado_aomori"/><div class="con2"><a href="../spring_each/" onclick="document.makadoonsen_makado_aomori.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1135_0001.jpg"/></a><p class="feature">馬門温泉（まかど）<br>類似度:1.736</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="sengokuharaubakoonsen_sengokuharaubako_kanagawa">{% csrf_token %}<input name="id2" type="hidden" value="sengokuharaubakoonsen_sengokuharaubako_kanagawa"/><div class="con2"><a href="../spring_each/" onclick="document.sengokuharaubakoonsen_sengokuharaubako_kanagawa.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_0344_0001.jpg"/></a><p class="feature">仙石原姥子温泉（せんごくはらうばこ）<br>類似度:1.727</br></p></div></form><form action="{% url 'appname:springs' %}" method="post" name="kumihamakaminoonsen_kanno_kyoutofu">{% csrf_token %}<input name="id2" type="hidden" value="kumihamakaminoonsen_kanno_kyoutofu"/><div class="con2"><a href="../spring_each/" onclick="document.kumihamakaminoonsen_kanno_kyoutofu.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1180_0001.jpg"/></a><p class="feature">久美浜神の温泉（かんの）<br>類似度:1.711</br></p></div></form>
+{% endblock content %}
