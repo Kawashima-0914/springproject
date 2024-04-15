@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-vrvs+raiqopb(t=qka)3t%v51v0#26@1j5my2s=5k8hs#2cv$m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['springpioneer.info']
 
 
 # Application definition
