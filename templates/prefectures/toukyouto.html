@@ -7,5 +7,6 @@
 
 {% block content %}
 
-<h2 class="icon">東京都</h2><form action="{% url 'appname:springs' %}" method="post" name="oumeishigamionsen_oumeishigami_toukyouto">{% csrf_token %}<input name="id2" type="hidden" value="oumeishigamionsen_oumeishigami_toukyouto"/><div class="con"><a href="./spring_each/" onclick="document.oumeishigamionsen_oumeishigami_toukyouto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1675_0001.jpg"/></a><p>青梅石神温泉</p></div></form>
+<h2 class="icon">東京都</h2><form action="{% url 'appname:springs' %}" method="post" name="oumeishigamionsen_oumeishigami_toukyouto">
+{% csrf_token %}<input name="id2" type="hidden" value="oumeishigamionsen_oumeishigami_toukyouto"/><div class="con"><a href="./spring_each/" onclick="document.oumeishigamionsen_oumeishigami_toukyouto.submit(); return false;"><img class="spring_img" src="https://static.yukoyuko.net/images/onsen/onsen_1675_0001.jpg"/></a><p>青梅石神温泉</p></div></form>
 {% endblock content %}
